@@ -1,0 +1,147 @@
+tomboy (0.3.2-8) unstable; urgency=low
+
+  * Added 16x16 and 32x32 pixmap xpm icons
+  * Added menu and tomboy.desktop linked to the icons
+
+ -- Dave Beckett <dajobe@debian.org>  Tue, 14 Jun 2005 23:07:01 +0100
+
+tomboy (0.3.2-7) unstable; urgency=low
+
+  * Upload to unstable
+  * Depend on libdbus-cil 0.23.4-3 built with mono in unstable
+  * Remove dependency on mono-mint (Closes: 311956)
+
+ -- Dave Beckett <dajobe@debian.org>  Fri, 10 Jun 2005 16:22:59 +0100
+
+tomboy (0.3.2-6) experimental; urgency=low
+
+  * Merge with ubuntu up to 0.3.2-4ubuntu5:
+    - changed the uudecode line from update-config to post-patches in 
+      debian/rules
+    - not applying Tomboy/Trie.cs patch
+
+ -- Dave Beckett <dajobe@debian.org>  Wed,  1 Jun 2005 20:13:48 +0100
+
+tomboy (0.3.2-5) experimental; urgency=low
+
+  * Rebuild package with source inside changes
+
+ -- Dave Beckett <dajobe@debian.org>  Fri, 27 May 2005 13:20:41 +0100
+
+tomboy (0.3.2-4) experimental; urgency=low
+
+  * Upload of tomboy to experimental (Closes: 272264)
+  * Require mono 1.1.6+
+  * Build-Depends on sharutils for uudecode
+
+ -- Dave Beckett <dajobe@debian.org>  Fri, 27 May 2005 13:09:47 +0100
+
+tomboy (0.3.2-3) experimental; urgency=low
+
+  * Standards-Version 3.6.1.0 and depend on newer debhelper for cdbs
+
+ -- Dave Beckett <dajobe@debian.org>  Fri, 15 Apr 2005 22:21:52 +0100
+
+tomboy (0.3.2-2) experimental; urgency=low
+
+  * Rebuild against mono 1.1 packages.
+  * Require cli-common
+
+ -- Dave Beckett <dajobe@debian.org>  Fri, 15 Apr 2005 22:04:15 +0100
+
+tomboy (0.3.2-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Dave Beckett <dajobe@debian.org>  Sun, 10 Apr 2005 15:48:23 +0100
+
+tomboy (0.3.1-1) experimental; urgency=low
+
+  * Port of the packaging from Ubuntu to Debian
+  * Removed non-distributable image from orig.tar.gz and
+    added debian/README.Debian-source to explain this
+  * Added replacement image debian/tomboy.png.uu from Jacub Steiner
+  * Added patches/01_image_name.patch to rename mentions to the image
+
+ -- Dave Beckett <dajobe@debian.org>  Sun, 10 Apr 2005 15:29:35 +0100
+
+tomboy (0.3.1-0ubuntu6) hoary; urgency=low
+
+  * Rebuilt against new libdbus-cil.
+
+ -- Daniel Holbach <dh@mailempfang.de>  Wed, 16 Mar 2005 21:11:11 +0100
+
+tomboy (0.3.1-0ubuntu5) hoary; urgency=low
+
+  * Rebuild with current libs.
+
+ -- Sebastien Bacher <seb128@canonical.com>  Sat, 19 Feb 2005 14:57:09 +0100
+
+tomboy (0.3.1-0ubuntu4) hoary; urgency=low
+
+  * Er, libpanel-applet2-dev
+
+ -- Matt Zimmerman <mdz@ubuntu.com>  Wed,  2 Feb 2005 20:49:44 -0800
+
+tomboy (0.3.1-0ubuntu3) hoary; urgency=low
+
+  * Build-Depend on libpanel-applet-dev, not libpanel-applet2-0
+
+ -- Matt Zimmerman <mdz@ubuntu.com>  Wed,  2 Feb 2005 11:01:26 -0800
+
+tomboy (0.3.1-0ubuntu2) hoary; urgency=low
+
+  * debian/control
+    build-dep on libpanel-applet2-0 to fix FTBFS.
+
+ -- Brandon Hale <brandon@smarterits.com>  Mon, 31 Jan 2005 23:52:04 -0500
+
+tomboy (0.3.1-0ubuntu1) hoary; urgency=low
+
+  * New upstream release
+    - Made the move to Gnome Panel applet. (TrayIcon mode is still supported).
+    - New plugin system, so anyone can customize their Tomboy notes.
+    - A Note printing plugin
+    - A new preferences dialog
+  * debian/control
+    - Add libdbus-cil to build-deps
+
+ -- Brandon Hale <brandon@smarterits.com>  Thu, 27 Jan 2005 18:35:41 -0500
+
+tomboy (0.2.2-1ubuntu1) hoary; urgency=low
+
+  * Update Build-Dep and fix FTBFS.
+
+ -- Fabio M. Di Nitto <fabbione@fabbione.net>  Mon, 22 Nov 2004 13:10:03 +0100
+
+tomboy (0.2.2-1) hoary; urgency=low
+
+  * New upstream release
+
+ -- Brandon Hale <brandon@localhost.localdomain>  Sun, 21 Nov 2004 15:35:03 -0500
+
+tomboy (0.2.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Brandon Hale <brandon@smarterits.com>  Mon, 11 Oct 2004 09:31:35 -0400
+
+tomboy (0.1.2-2) unstable; urgency=low
+
+  * Fix up build-depends in debian/control, use ${net:Depends} and dh_netdeps
+  as well.
+
+ -- Brandon Hale <brandon@smarterits.com>  Thu,  7 Oct 2004 11:14:29 -0400
+
+tomboy (0.1.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Brandon Hale <brandon.hale@gmail.com>  Sat, 25 Sep 2004 08:59:36 -0400
+
+tomboy (0.1.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Brandon Hale <brandon.hale@gmail.com>  Mon, 20 Sep 2004 20:08:46 -0400
+

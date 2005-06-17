@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=tomboy
+Icon=tomboy
+Terminal=0
+Type=Application
+
+GenericName=Desktop Notes
+
+Name=Tomboy
+
+Categories=Mono;Utility

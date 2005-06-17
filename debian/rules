@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/simple-patchsys.mk
+include /usr/share/cdbs/1/class/gnome.mk
+
+DEB_CONFIGURE_SCRIPT_ENV := LDFLAGS="-Wl,-O1"
+DEB_INSTALL_DOCS_ALL := README NEWS
+
+post-patches::
+	uudecode debian/tomboy.png.uu && mv tomboy.png data/images/tomboy.png
+
+install/tomboy::
+	uudecode debian/tomboy-16.xpm.uu && mv tomboy-16.xpm debian/tomboy/usr/share/pixmaps
+	uudecode debian/tomboy-32.xpm.uu && mv tomboy-32.xpm debian/tomboy/usr/share/pixmaps
+
+	mkdir -p debian/tomboy/usr/share/applications
+	cp debian/tomboy.desktop debian/tomboy/usr/share/applications
+
+common-binary-predeb-arch::
+	dh_makeclilibs
+	dh_clideps
+
+clean::
+	rm -f data/images/tomboy.png
+
+# cdbs leaves junk around after patching
+	if test -r config.guess.cdbs-orig ; then \
+	  mv -f config.guess.cdbs-orig config.guess; \
+	fi
+	if test -r config.sub.cdbs-orig ; then \
+	  mv -f config.sub.cdbs-orig config.sub; \
+	fi
