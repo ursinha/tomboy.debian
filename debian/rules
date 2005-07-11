@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+export MONO_SHARED_DIR=$(CURDIR)
+
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/rules/simple-patchsys.mk
 include /usr/share/cdbs/1/class/gnome.mk
@@ -7,8 +9,12 @@ include /usr/share/cdbs/1/class/gnome.mk
 DEB_CONFIGURE_SCRIPT_ENV := LDFLAGS="-Wl,-O1"
 DEB_INSTALL_DOCS_ALL := README NEWS
 
+common-configure-indep::
+	mkdir -p $(MONO_SHARED_DIR)/.wapi
+
 post-patches::
 	uudecode debian/tomboy.png.uu && mv tomboy.png data/images/tomboy.png
+	uudecode debian/tomboy-24.png.uu && mv tomboy-24.png data/images/tomboy-24.png
 
 install/tomboy::
 	uudecode debian/tomboy-16.xpm.uu && mv tomboy-16.xpm debian/tomboy/usr/share/pixmaps
@@ -18,11 +24,13 @@ install/tomboy::
 	cp debian/tomboy.desktop debian/tomboy/usr/share/applications
 
 common-binary-predeb-arch::
-	dh_makeclilibs
 	dh_clideps
 
 clean::
+	rm -rf $(MONO_SHARED_DIR)/.wapi
+
 	rm -f data/images/tomboy.png
+	rm -f data/images/tomboy-24.png
 
 # cdbs leaves junk around after patching
 	if test -r config.guess.cdbs-orig ; then \

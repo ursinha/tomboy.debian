@@ -13,8 +13,8 @@ License V2.1 can be found in the file `/usr/share/common-licenses/LGPL-2.1'.
 
 ---
 
-The tomboy-16.xpm.uu tomboy-32.xpm.uu and tomboy.png.uu files
-are uuencoding of icons in PNG format that are
+The tomboy-16.xpm.uu, tomboy-32.xpm.uu, tomboy.png.uu and
+tomboy-24.png.uu files are uuencodings of icons in PNG format that are:
 
   Copyright Jakub Steiner, Copyright Novell
   from http://jimmac.musichall.cz/i.php?i=tomboy

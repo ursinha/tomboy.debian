@@ -1,3 +1,17 @@
+tomboy (0.3.2-9) unstable; urgency=low
+
+  * Removed obsolete Build-Depend: on mono-jit and mono-utils
+  * Updated debian/watch file to new location.
+  * Added 24x24 icon from same author as the other icons, cleaned up by
+    Gordon Ingram to help the toolbar icon look better (Closes: 316765)
+  * Rebuild for mono 1.1.8.1
+  * Applied patches from CVS to fix 1.1.8.x builds:
+    02_mono118_Trie.patch and 03_mono118_AppletFactory.patch
+  * Add MONO_SHARED_DIR to stop monodis core dumping when called
+    inside dh_clideps
+
+ -- Dave Beckett <dajobe@debian.org>  Mon, 11 Jul 2005 17:13:26 +0100
+
 tomboy (0.3.2-8) unstable; urgency=low
 
   * Added 16x16 and 32x32 pixmap xpm icons
