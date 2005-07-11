@@ -1,0 +1,11 @@
+--- tomboy-0.3.2.orig/Tomboy/Trie.cs	2005-06-01 20:11:31.000000000 +0100
++++ tomboy-0.3.2/Tomboy/Trie.cs	2005-07-11 15:03:19.000000000 +0100
+@@ -186,8 +186,8 @@
+ 					 MatchHandler match_handler)
+ 		{
+ 			TrieState q = root;
+-			TrieMatch m;
++			TrieMatch m = null;
+ 			int idx = 0, start_idx = 0, last_idx = 0;
+ 
+ 			while (idx < haystack.Length) {
