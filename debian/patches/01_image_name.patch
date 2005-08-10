@@ -1,33 +1,33 @@
-diff -urN tomboy-0.3.1.orig/Tomboy/Makefile.am tomboy-0.3.1/Tomboy/Makefile.am
---- tomboy-0.3.1.orig/Tomboy/Makefile.am	2005-01-18 10:55:19.000000000 +0000
-+++ tomboy-0.3.1/Tomboy/Makefile.am	2005-03-13 20:01:14.000000000 +0000
-@@ -60,7 +60,8 @@
- RESOURCES = 										\
+diff -urN tomboy-0.3.3.orig/Tomboy/Makefile.am tomboy-0.3.3/Tomboy/Makefile.am
+--- tomboy-0.3.3.orig/Tomboy/Makefile.am	2005-08-10 08:47:27.000000000 +0100
++++ tomboy-0.3.3/Tomboy/Makefile.am	2005-08-10 11:15:38.000000000 +0100
+@@ -62,7 +62,8 @@
  	-resource:$(top_srcdir)/data/GNOME_TomboyApplet.xml,GNOME_TomboyApplet.xml	\
  	-resource:$(top_srcdir)/data/Start_Here.note,Start_Here.note			\
+ 	-resource:$(top_builddir)/data/DefaultPlugins.desktop,DefaultPlugins.desktop	\
 -	-resource:$(top_srcdir)/data/images/tintin.png,tintin.png			\
 +	-resource:$(top_srcdir)/data/images/tomboy.png,tomboy.png			\
 +	-resource:$(top_srcdir)/data/images/tomboy-24.png,tomboy-24.png			\
  	-resource:$(top_srcdir)/data/images/stock_notes.png,stock_notes.png		\
  	-resource:$(top_srcdir)/data/images/gnome-stock-searchtool.png,gnome-stock-searchtool.png
  
-diff -urN tomboy-0.3.1.orig/Tomboy/Makefile.in tomboy-0.3.1/Tomboy/Makefile.in
---- tomboy-0.3.1.orig/Tomboy/Makefile.in	2005-01-19 00:10:44.000000000 +0000
-+++ tomboy-0.3.1/Tomboy/Makefile.in	2005-03-13 20:07:34.000000000 +0000
-@@ -269,7 +269,8 @@
- RESOURCES = \
+diff -urN tomboy-0.3.3.orig/Tomboy/Makefile.in tomboy-0.3.3/Tomboy/Makefile.in
+--- tomboy-0.3.3.orig/Tomboy/Makefile.in	2005-08-10 08:53:07.000000000 +0100
++++ tomboy-0.3.3/Tomboy/Makefile.in	2005-08-10 11:16:06.000000000 +0100
+@@ -278,7 +278,8 @@
  	-resource:$(top_srcdir)/data/GNOME_TomboyApplet.xml,GNOME_TomboyApplet.xml	\
  	-resource:$(top_srcdir)/data/Start_Here.note,Start_Here.note			\
+ 	-resource:$(top_builddir)/data/DefaultPlugins.desktop,DefaultPlugins.desktop	\
 -	-resource:$(top_srcdir)/data/images/tintin.png,tintin.png			\
 +	-resource:$(top_srcdir)/data/images/tomboy.png,tomboy.png			\
 +	-resource:$(top_srcdir)/data/images/tomboy-24.png,tomboy-24.png			\
  	-resource:$(top_srcdir)/data/images/stock_notes.png,stock_notes.png		\
  	-resource:$(top_srcdir)/data/images/gnome-stock-searchtool.png,gnome-stock-searchtool.png
  
-diff -urN tomboy-0.3.1.orig/Tomboy/Preferences.cs tomboy-0.3.1/Tomboy/Preferences.cs
---- tomboy-0.3.1.orig/Tomboy/Preferences.cs	2005-01-18 22:19:20.000000000 +0000
-+++ tomboy-0.3.1/Tomboy/Preferences.cs	2005-03-13 20:08:08.000000000 +0000
-@@ -101,17 +101,17 @@
+diff -urN tomboy-0.3.3.orig/Tomboy/Preferences.cs tomboy-0.3.3/Tomboy/Preferences.cs
+--- tomboy-0.3.3.orig/Tomboy/Preferences.cs	2005-05-25 04:10:11.000000000 +0100
++++ tomboy-0.3.3/Tomboy/Preferences.cs	2005-08-10 11:14:43.000000000 +0100
+@@ -110,17 +110,17 @@
  		Gtk.Label font_face;
  		Gtk.Label font_size;
  
@@ -48,9 +48,9 @@ diff -urN tomboy-0.3.1.orig/Tomboy/Preferences.cs tomboy-0.3.1/Tomboy/Preference
  			HasSeparator = false;
  			BorderWidth = 5;
  			Resizable = false;
-diff -urN tomboy-0.3.1.orig/Tomboy/Tray.cs tomboy-0.3.1/Tomboy/Tray.cs
---- tomboy-0.3.1.orig/Tomboy/Tray.cs	2005-01-08 22:08:43.000000000 +0000
-+++ tomboy-0.3.1/Tomboy/Tray.cs	2005-03-13 20:08:47.000000000 +0000
+diff -urN tomboy-0.3.3.orig/Tomboy/Tray.cs tomboy-0.3.3/Tomboy/Tray.cs
+--- tomboy-0.3.3.orig/Tomboy/Tray.cs	2005-07-13 19:09:29.000000000 +0100
++++ tomboy-0.3.3/Tomboy/Tray.cs	2005-08-10 11:14:43.000000000 +0100
 @@ -13,14 +13,14 @@
  		Gtk.Tooltips tips;
  		Gtk.Image image;
@@ -79,7 +79,7 @@ diff -urN tomboy-0.3.1.orig/Tomboy/Tray.cs tomboy-0.3.1/Tomboy/Tray.cs
  
  			this.CanFocus = true;
  			this.ButtonPressEvent += ButtonPress;
-@@ -252,8 +252,8 @@
+@@ -239,8 +239,8 @@
  					authors, 
  					documenters, 
  					translators,
@@ -90,9 +90,9 @@ diff -urN tomboy-0.3.1.orig/Tomboy/Tray.cs tomboy-0.3.1/Tomboy/Tray.cs
  			about.Show ();
  		}
  
-diff -urN tomboy-0.3.1.orig/data/GNOME_TomboyApplet.server.in.in tomboy-0.3.1/data/GNOME_TomboyApplet.server.in.in
---- tomboy-0.3.1.orig/data/GNOME_TomboyApplet.server.in.in	2004-10-31 01:11:30.000000000 +0000
-+++ tomboy-0.3.1/data/GNOME_TomboyApplet.server.in.in	2005-03-13 19:59:17.000000000 +0000
+diff -urN tomboy-0.3.3.orig/data/GNOME_TomboyApplet.server.in.in tomboy-0.3.3/data/GNOME_TomboyApplet.server.in.in
+--- tomboy-0.3.3.orig/data/GNOME_TomboyApplet.server.in.in	2005-03-09 10:21:00.000000000 +0000
++++ tomboy-0.3.3/data/GNOME_TomboyApplet.server.in.in	2005-08-10 11:14:43.000000000 +0100
 @@ -23,7 +23,7 @@
          <oaf_attribute name="name" type="string" _value="Tomboy Notes"/>
          <oaf_attribute name="description" type="string" _value="Simple and easy to use note-taking"/>
@@ -102,9 +102,9 @@ diff -urN tomboy-0.3.1.orig/data/GNOME_TomboyApplet.server.in.in tomboy-0.3.1/da
  
  	<oaf_attribute name="bugzilla:bugzilla" type="string" value="GNOME"/>
          <oaf_attribute name="bugzilla:product" type="string" value="Tomboy"/>
-diff -urN tomboy-0.3.1.orig/data/images/Makefile.am tomboy-0.3.1/data/images/Makefile.am
---- tomboy-0.3.1.orig/data/images/Makefile.am	2004-10-31 01:11:30.000000000 +0000
-+++ tomboy-0.3.1/data/images/Makefile.am	2005-03-13 19:59:45.000000000 +0000
+diff -urN tomboy-0.3.3.orig/data/images/Makefile.am tomboy-0.3.3/data/images/Makefile.am
+--- tomboy-0.3.3.orig/data/images/Makefile.am	2004-10-31 01:11:30.000000000 +0000
++++ tomboy-0.3.3/data/images/Makefile.am	2005-08-10 11:14:43.000000000 +0100
 @@ -1,10 +1,11 @@
  
  pixmapdir = $(datadir)/pixmaps
@@ -119,10 +119,10 @@ diff -urN tomboy-0.3.1.orig/data/images/Makefile.am tomboy-0.3.1/data/images/Mak
 +	tomboy-24.png
  
  EXTRA_DIST = $(noinst_DATA) $(pixmap_DATA)
-diff -urN tomboy-0.3.1.orig/data/images/Makefile.in tomboy-0.3.1/data/images/Makefile.in
---- tomboy-0.3.1.orig/data/images/Makefile.in	2005-01-19 00:10:45.000000000 +0000
-+++ tomboy-0.3.1/data/images/Makefile.in	2005-03-13 20:00:09.000000000 +0000
-@@ -208,11 +208,12 @@
+diff -urN tomboy-0.3.3.orig/data/images/Makefile.in tomboy-0.3.3/data/images/Makefile.in
+--- tomboy-0.3.3.orig/data/images/Makefile.in	2005-08-10 08:37:20.000000000 +0100
++++ tomboy-0.3.3/data/images/Makefile.in	2005-08-10 11:14:43.000000000 +0100
+@@ -215,11 +215,12 @@
  sysconfdir = @sysconfdir@
  target_alias = @target_alias@
  pixmapdir = $(datadir)/pixmaps
@@ -137,10 +137,10 @@ diff -urN tomboy-0.3.1.orig/data/images/Makefile.in tomboy-0.3.1/data/images/Mak
  
  EXTRA_DIST = $(noinst_DATA) $(pixmap_DATA)
  all: all-am
-diff -urN tomboy-0.3.1.orig/tomboy.spec.in tomboy-0.3.1/tomboy.spec.in
---- tomboy-0.3.1.orig/tomboy.spec.in	2005-01-18 10:34:48.000000000 +0000
-+++ tomboy-0.3.1/tomboy.spec.in	2005-03-13 19:58:01.000000000 +0000
-@@ -86,7 +86,8 @@
+diff -urN tomboy-0.3.3.orig/tomboy.spec.in tomboy-0.3.3/tomboy.spec.in
+--- tomboy-0.3.3.orig/tomboy.spec.in	2005-03-09 08:59:57.000000000 +0000
++++ tomboy-0.3.3/tomboy.spec.in	2005-08-10 11:14:43.000000000 +0100
+@@ -83,7 +83,8 @@
  %{_mandir}/man1/%{name}.1.gz
  ###%{_datadir}/applications/tomboy.desktop
  %{_datadir}/gnome-2.0/ui/GNOME_TomboyApplet.xml

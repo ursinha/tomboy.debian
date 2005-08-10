@@ -1,3 +1,14 @@
+tomboy (0.3.3-1) unstable; urgency=low
+
+  * New upstream release
+  * New ExportToHTML plugin
+  * Updated image name fixing patch 01_image_name.patch
+  * Removed Mono 1.1.8.x build patches merged upstream:
+    - 02_mono118_Trie.patch
+    - 03_mono118_AppletFactory.patch
+
+ -- Dave Beckett <dajobe@debian.org>  Wed, 10 Aug 2005 19:33:28 +0100
+
 tomboy (0.3.2-9) unstable; urgency=low
 
   * Removed obsolete Build-Depend: on mono-jit and mono-utils
