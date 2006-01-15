@@ -1,3 +1,16 @@
+tomboy (0.3.3-3) unstable; urgency=low
+
+  * Build against libdbus-1-cil (Closes: #338495)
+
+ -- Dave Beckett <dajobe@debian.org>  Thu, 12 Jan 2006 19:41:41 -0800
+
+tomboy (0.3.3-2) unstable; urgency=low
+
+  * Added patch from CVS to fix Mono 1.1.9.x build (Closes: 337356)
+    -  02_Trie.cs_mcs119.patch from CVS
+
+ -- Dave Beckett <dajobe@debian.org>  Thu,  3 Nov 2005 19:59:02 -0800
+
 tomboy (0.3.3-1) unstable; urgency=low
 
   * New upstream release

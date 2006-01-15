@@ -2,7 +2,7 @@ Source: tomboy
 Section: gnome
 Priority: optional
 Maintainer: Dave Beckett <dajobe@debian.org>
-Build-Depends: cdbs, debhelper (>= 4.1.87), mono-mcs (>= 1.1.8.1) | c-sharp-compiler, libgtk-cil (>= 1.0), libgnome-cil (>= 1.0), libgtkspell-dev (>= 2.0.5), libmono-dev (>= 1.1.8.1), intltool, libdbus-cil (>= 0.23.4-3), libpanel-applet2-dev, cli-common (>= 0.1.3), sharutils, libgnomeprintui2.2-dev
+Build-Depends: cdbs, debhelper (>= 4.1.87), mono-mcs (>= 1.1.8.1) | c-sharp-compiler, libgtk-cil (>= 1.0), libgnome-cil (>= 1.0), libgtkspell-dev (>= 2.0.5), libmono-dev (>= 1.1.8.1), intltool, libdbus-1-cil (>= 0.60), libpanel-applet2-dev, cli-common (>= 0.1.3), sharutils, libgnomeprintui2.2-dev
 Standards-Version: 3.6.2
 
 Package: tomboy
