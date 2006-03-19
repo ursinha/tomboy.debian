@@ -1,3 +1,25 @@
+tomboy (0.3.5-1) unstable; urgency=low
+
+  * New upstream release (Closes: #352531)
+  * Require dbus 0.61-3 to get a non-broken assembly version (see bug #354798)
+  * Packaging updates from Ubuntu 0.3.5-0ubuntu1 thanks to Sebastian Dröge.
+  * 02_Trie.cs_mcs119.patch deleted as merged into upstream.
+
+ -- Dave Beckett <dajobe@debian.org>  Sat, 18 Mar 2006 19:47:02 -0800
+
+tomboy (0.3.5-0ubuntu1) dapper; urgency=low
+
+  * New upstream release
+  * 01_image_name.patch:
+    + Updated for new upstream version
+  * 02_gtk-sharp2.patch:
+    + Use Gtk#2 instead of Gtk#
+  * Tightened and adjusted Build-Depends
+  * Added ${misc:Depends} to Depends
+  * Updated debhelper compat version to 5
+
+ -- Sebastian Dröge <slomo@ubuntu.com>  Fri, 24 Feb 2006 17:01:15 +0100
+
 tomboy (0.3.3-3) unstable; urgency=low
 
   * Build against libdbus-1-cil (Closes: #338495)
