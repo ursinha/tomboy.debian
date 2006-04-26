@@ -9,6 +9,9 @@ include /usr/share/cdbs/1/class/gnome.mk
 DEB_CONFIGURE_SCRIPT_ENV := LDFLAGS="-Wl,-O1"
 DEB_INSTALL_DOCS_ALL := README NEWS
 
+# Add Depend: libgalago-cil to get Galago plugin
+#   However it currently fails to work so don't do that!
+
 common-configure-indep::
 	mkdir -p $(MONO_SHARED_DIR)/.wapi
 
@@ -22,15 +25,18 @@ install/tomboy::
 
 	mkdir -p debian/tomboy/usr/share/applications
 	cp debian/tomboy.desktop debian/tomboy/usr/share/applications
+	rm -f debian/tomboy/usr/lib/tomboy/Plugins/GalagoPresence.dll
 
 common-binary-predeb-arch::
-	dh_clideps
+	dh_clideps -d
 
 clean::
 	rm -rf $(MONO_SHARED_DIR)/.wapi
 
 	rm -f data/images/tomboy.png
 	rm -f data/images/tomboy-24.png
+
+	rm -f Tomboy/Plugins/*.dll*
 
 # cdbs leaves junk around after patching
 	if test -r config.guess.cdbs-orig ; then \

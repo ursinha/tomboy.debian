@@ -1,3 +1,10 @@
+tomboy (0.3.5-2) unstable; urgency=low
+
+  * Add dependencies to native library (Closes: #364778)
+  * Enable Evolution plugin (Closes: #364779)
+
+ -- Dave Beckett <dajobe@debian.org>  Tue, 25 Apr 2006 20:59:25 -0700
+
 tomboy (0.3.5-1) unstable; urgency=low
 
   * New upstream release (Closes: #352531)
