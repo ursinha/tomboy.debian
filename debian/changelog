@@ -1,3 +1,27 @@
+tomboy (0.3.9-1) unstable; urgency=medium
+
+  * New upstream release
+    - Builds against GTK 2.0, removed patch 02_gtk-sharp2.patch
+    - Builds against dbus directly rather than using dbus-sharp.  Change 
+      from Build-Depends on libdbus-cil-1 to libdbus-glib-1-2
+    - Preference dialog modality fixed (Closes: #313295)
+    - Italic pasting fixed (Closes: #329476)
+    - Added StickyNoteImport plugin
+    - Uses gnome document tools. Add Build-Depends on gnome-doc-utils and
+      scrollkeeper
+  * Upstream application icon changed "due to legal restrictions"
+    - Remove the replacement third-party images we were using.
+    - Continue to remove one use of the old icon from the source tarball.
+    - Updated patch 01_image_name to remove the last use of the old icon
+    - Added XPM versions of the new icons
+  * Standards version 3.7.2 (no changes)
+  * Updated to latest Debian Mono Policy.  Build-Depend on cli-common-dev
+  * Build depend on libgmime2.2-cil replacing libgmime2.1-cil which was
+    removed from Debian yesterday fixing FTBFS on arm (Closes: #382653)
+  * Urgency medium due to FTBFS fix.
+
+ -- Dave Beckett <dajobe@debian.org>  Sat, 12 Aug 2006 09:43:31 -0700
+
 tomboy (0.3.5-2) unstable; urgency=low
 
   * Add dependencies to native library (Closes: #364778)
@@ -9,7 +33,7 @@ tomboy (0.3.5-1) unstable; urgency=low
 
   * New upstream release (Closes: #352531)
   * Require dbus 0.61-3 to get a non-broken assembly version (see bug #354798)
-  * Packaging updates from Ubuntu 0.3.5-0ubuntu1 thanks to Sebastian Dröge.
+  * Packaging updates from Ubuntu 0.3.5-0ubuntu1 thanks to Sebastian DrÃ¶ge
   * 02_Trie.cs_mcs119.patch deleted as merged into upstream.
 
  -- Dave Beckett <dajobe@debian.org>  Sat, 18 Mar 2006 19:47:02 -0800
@@ -25,7 +49,7 @@ tomboy (0.3.5-0ubuntu1) dapper; urgency=low
   * Added ${misc:Depends} to Depends
   * Updated debhelper compat version to 5
 
- -- Sebastian Dröge <slomo@ubuntu.com>  Fri, 24 Feb 2006 17:01:15 +0100
+ -- Sebastian DrÃ¶ge <slomo@ubuntu.com>  Fri, 24 Feb 2006 17:01:15 +0100
 
 tomboy (0.3.3-3) unstable; urgency=low
 

@@ -15,10 +15,6 @@ DEB_INSTALL_DOCS_ALL := README NEWS
 common-configure-indep::
 	mkdir -p $(MONO_SHARED_DIR)/.wapi
 
-post-patches::
-	uudecode debian/tomboy.png.uu && mv tomboy.png data/images/tomboy.png
-	uudecode debian/tomboy-24.png.uu && mv tomboy-24.png data/images/tomboy-24.png
-
 install/tomboy::
 	uudecode debian/tomboy-16.xpm.uu && mv tomboy-16.xpm debian/tomboy/usr/share/pixmaps
 	uudecode debian/tomboy-32.xpm.uu && mv tomboy-32.xpm debian/tomboy/usr/share/pixmaps
@@ -32,9 +28,6 @@ common-binary-predeb-arch::
 
 clean::
 	rm -rf $(MONO_SHARED_DIR)/.wapi
-
-	rm -f data/images/tomboy.png
-	rm -f data/images/tomboy-24.png
 
 	rm -f Tomboy/Plugins/*.dll*
 

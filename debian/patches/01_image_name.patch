@@ -1,151 +1,86 @@
-diff -urN tomboy-0.3.3.orig/Tomboy/Preferences.cs tomboy-0.3.3/Tomboy/Preferences.cs
---- tomboy-0.3.3.orig/Tomboy/Preferences.cs	2005-05-25 04:10:11.000000000 +0100
-+++ tomboy-0.3.3/Tomboy/Preferences.cs	2005-08-10 11:14:43.000000000 +0100
-@@ -110,17 +110,17 @@
- 		Gtk.Label font_face;
- 		Gtk.Label font_size;
+diff -urN tomboy-0.3.9.orig/Tomboy/Makefile.am tomboy-0.3.9/Tomboy/Makefile.am
+--- tomboy-0.3.9.orig/Tomboy/Makefile.am	2006-08-06 15:56:12.000000000 -0700
++++ tomboy-0.3.9/Tomboy/Makefile.am	2006-08-12 08:40:45.000000000 -0700
+@@ -58,7 +58,6 @@
+ 	-resource:$(top_srcdir)/data/GNOME_TomboyApplet.xml,GNOME_TomboyApplet.xml	\
+ 	-resource:$(top_builddir)/data/DefaultPlugins.desktop,DefaultPlugins.desktop	\
+ 	-resource:$(top_srcdir)/data/images/tomboy.png,tomboy.png			\
+-	-resource:$(top_srcdir)/data/images/tintin.png,tintin.png			\
+ 	-resource:$(top_srcdir)/data/images/gnome-searchtool.png,gnome-searchtool.png
  
--		static Gdk.Pixbuf tintin;
-+		static Gdk.Pixbuf tomboy;
+ $(TARGET): $(CSFILES) Defines.cs
+diff -urN tomboy-0.3.9.orig/Tomboy/Makefile.in tomboy-0.3.9/Tomboy/Makefile.in
+--- tomboy-0.3.9.orig/Tomboy/Makefile.in	2006-08-07 17:23:09.000000000 -0700
++++ tomboy-0.3.9/Tomboy/Makefile.in	2006-08-12 08:40:56.000000000 -0700
+@@ -306,7 +306,6 @@
+ 	-resource:$(top_srcdir)/data/GNOME_TomboyApplet.xml,GNOME_TomboyApplet.xml	\
+ 	-resource:$(top_builddir)/data/DefaultPlugins.desktop,DefaultPlugins.desktop	\
+ 	-resource:$(top_srcdir)/data/images/tomboy.png,tomboy.png			\
+-	-resource:$(top_srcdir)/data/images/tintin.png,tintin.png			\
+ 	-resource:$(top_srcdir)/data/images/gnome-searchtool.png,gnome-searchtool.png
  
- 		static PreferencesDialog ()
- 		{
--			tintin = new Gdk.Pixbuf (null, "tintin.png");
-+			tomboy = new Gdk.Pixbuf (null, "tomboy.png");
+ tomboylibdir = $(pkglibdir)
+diff -urN tomboy-0.3.9.orig/Tomboy/Tray.cs tomboy-0.3.9/Tomboy/Tray.cs
+--- tomboy-0.3.9.orig/Tomboy/Tray.cs	2006-08-07 02:40:13.000000000 -0700
++++ tomboy-0.3.9/Tomboy/Tray.cs	2006-08-12 08:35:22.000000000 -0700
+@@ -398,27 +398,27 @@
+ 			manager.NoteDeleted += OnNoteDeletedUpdateIcon;
+ 			manager.NoteAdded += OnNoteAddedUpdateIcon;
+ 			manager.NoteRenamed += OnNoteRenamedUpdateIcon;
+-			if (manager.Find ("Tintin") != null)
+-				image.Pixbuf = GuiUtils.GetIcon ("tintin", 22);
++			if (manager.Find ("Tomboy") != null)
++				image.Pixbuf = GuiUtils.GetIcon ("tomboy", 22);
  		}
  
- 		public PreferencesDialog ()
- 			: base ()
+ 		void OnNoteDeletedUpdateIcon (object sender, Note changed)
  		{
--			Icon = tintin;
-+			Icon = tomboy;
- 			HasSeparator = false;
- 			BorderWidth = 5;
- 			Resizable = false;
-diff -urN tomboy-0.3.3.orig/Tomboy/Tray.cs tomboy-0.3.3/Tomboy/Tray.cs
---- tomboy-0.3.3.orig/Tomboy/Tray.cs	2005-07-13 19:09:29.000000000 +0100
-+++ tomboy-0.3.3/Tomboy/Tray.cs	2005-08-10 11:14:43.000000000 +0100
-@@ -13,14 +13,14 @@
- 		Gtk.Tooltips tips;
- 		Gtk.Image image;
- 
--		static Gdk.Pixbuf tintin;
--		static Gdk.Pixbuf tintin_large;
-+		static Gdk.Pixbuf tomboy;
-+		static Gdk.Pixbuf tomboy_large;
- 		static Gdk.Pixbuf stock_notes;
- 
- 		static TomboyTray ()
- 		{
--			tintin = GuiUtils.GetMiniIcon ("tintin.png");
--			tintin_large = GuiUtils.GetIcon ("tintin.png");
-+			tomboy = GuiUtils.GetMiniIcon ("tomboy-24.png");
-+			tomboy_large = GuiUtils.GetIcon ("tomboy.png");
- 			stock_notes = GuiUtils.GetMiniIcon ("stock_notes.png");
+-			if (changed.Title == "Tintin")
++			if (changed.Title == "Tomboy")
+ 				image.Pixbuf = tray_icon;
  		}
  
-@@ -28,7 +28,7 @@
- 			: base ()
+ 		void OnNoteAddedUpdateIcon (object sender, Note changed)
  		{
- 			this.manager = manager;
--			this.image = new Gtk.Image (tintin);
-+			this.image = new Gtk.Image (tomboy);
- 
- 			this.CanFocus = true;
- 			this.ButtonPressEvent += ButtonPress;
-@@ -239,8 +239,8 @@
- 					authors, 
- 					documenters, 
- 					translators,
--					tintin_large);
--			about.Icon = tintin_large;
-+					tomboy_large);
-+			about.Icon = tomboy_large;
- 			about.Show ();
+-			if (changed.Title == "Tintin")
+-				image.Pixbuf = GuiUtils.GetIcon ("tintin", 22);
++			if (changed.Title == "Tomboy")
++				image.Pixbuf = GuiUtils.GetIcon ("tomboy", 22);
  		}
  
-diff -urN tomboy-0.3.3.orig/data/GNOME_TomboyApplet.server.in.in tomboy-0.3.3/data/GNOME_TomboyApplet.server.in.in
---- tomboy-0.3.3.orig/data/GNOME_TomboyApplet.server.in.in	2005-03-09 10:21:00.000000000 +0000
-+++ tomboy-0.3.3/data/GNOME_TomboyApplet.server.in.in	2005-08-10 11:14:43.000000000 +0100
-@@ -23,7 +23,7 @@
-         <oaf_attribute name="name" type="string" _value="Tomboy Notes"/>
-         <oaf_attribute name="description" type="string" _value="Simple and easy to use note-taking"/>
-         <oaf_attribute name="panel:category" type="string" _value="Accessories"/>
--        <oaf_attribute name="panel:icon" type="string" value="tintin.png"/>
-+        <oaf_attribute name="panel:icon" type="string" value="tomboy.png"/>
+ 		void OnNoteRenamedUpdateIcon (Note note, string old_title)
+ 		{
+-			if (note.Title == "Tintin")
+-				image.Pixbuf = GuiUtils.GetIcon ("tintin", 22);
+-			else if (old_title == "Tintin")
++			if (note.Title == "Tomboy")
++				image.Pixbuf = GuiUtils.GetIcon ("tomboy", 22);
++			else if (old_title == "Tomboy")
+ 				image.Pixbuf = tray_icon;
+ 		}
+ 		// GO ABOUT YOUR BUSINESS
+diff -urN tomboy-0.3.9.orig/data/images/Makefile.am tomboy-0.3.9/data/images/Makefile.am
+--- tomboy-0.3.9.orig/data/images/Makefile.am	2006-08-07 16:35:46.000000000 -0700
++++ tomboy-0.3.9/data/images/Makefile.am	2006-08-12 08:52:19.000000000 -0700
+@@ -40,7 +40,6 @@
  
- 	<oaf_attribute name="bugzilla:bugzilla" type="string" value="GNOME"/>
-         <oaf_attribute name="bugzilla:product" type="string" value="Tomboy"/>
-diff -urN tomboy-0.3.3.orig/tomboy.spec.in tomboy-0.3.3/tomboy.spec.in
---- tomboy-0.3.3.orig/tomboy.spec.in	2005-03-09 08:59:57.000000000 +0000
-+++ tomboy-0.3.3/tomboy.spec.in	2005-08-10 11:14:43.000000000 +0100
-@@ -83,7 +83,8 @@
- %{_mandir}/man1/%{name}.1.gz
- ###%{_datadir}/applications/tomboy.desktop
- %{_datadir}/gnome-2.0/ui/GNOME_TomboyApplet.xml
--%{_datadir}/pixmaps/tintin.png
-+%{_datadir}/pixmaps/tomboy.png
-+%{_datadir}/pixmaps/tomboy-24.png
- %{_sysconfdir}/gconf/schemas/tomboy.schemas
- 
- %changelog
-
---- tomboy-0.3.5/data/images/Makefile.am.old	2006-02-24 17:21:55.229489056 +0100
-+++ tomboy-0.3.5/data/images/Makefile.am	2006-02-24 17:22:28.774389456 +0100
-@@ -1,11 +1,12 @@
- 
- pixmapdir = $(datadir)/pixmaps
--pixmap_DATA = tintin.png
-+pixmap_DATA = tomboy.png tomboy-24.png
- 
- noinst_DATA = 				\
- 	gnome-stock-searchtool.png	\
- 	stock_mail.png			\
- 	stock_notes.png			\
+ noinst_DATA = 			\
+ 	gnome-searchtool.png	\
+-	stock_mail.png		\
 -	tintin.png
-+	tomboy.png			\
-+	tomboy-24.png
++	stock_mail.png
  
- EXTRA_DIST = $(noinst_DATA) $(pixmap_DATA)
---- tomboy-0.3.5/data/images/Makefile.in.old	2006-02-24 17:21:58.741955080 +0100
-+++ tomboy-0.3.5/data/images/Makefile.in	2006-02-24 17:22:56.280207936 +0100
-@@ -225,12 +225,13 @@
- sysconfdir = @sysconfdir@
- target_alias = @target_alias@
- pixmapdir = $(datadir)/pixmaps
--pixmap_DATA = tintin.png
-+pixmap_DATA = tomboy.png tomboy-24.png
+ EXTRA_DIST = $(noinst_DATA) $(pixmap_DATA) $(tango_icons)
+diff -urN tomboy-0.3.9.orig/data/images/Makefile.in tomboy-0.3.9/data/images/Makefile.in
+--- tomboy-0.3.9.orig/data/images/Makefile.in	2006-08-07 17:23:11.000000000 -0700
++++ tomboy-0.3.9/data/images/Makefile.in	2006-08-12 08:52:26.000000000 -0700
+@@ -255,8 +255,7 @@
+ gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/hicolor
  noinst_DATA = \
- 	gnome-stock-searchtool.png	\
- 	stock_mail.png			\
- 	stock_notes.png			\
+ 	gnome-searchtool.png	\
+-	stock_mail.png		\
 -	tintin.png
-+	tomboy.png			\
-+	tomboy-24.png
++	stock_mail.png
  
- EXTRA_DIST = $(noinst_DATA) $(pixmap_DATA)
+ EXTRA_DIST = $(noinst_DATA) $(pixmap_DATA) $(tango_icons)
  all: all-am
---- tomboy-0.3.5/Tomboy/Makefile.am.old	2006-02-24 17:20:18.016267712 +0100
-+++ tomboy-0.3.5/Tomboy/Makefile.am	2006-02-24 17:20:49.079545376 +0100
-@@ -63,7 +63,8 @@
- 	-resource:$(top_srcdir)/data/GNOME_TomboyApplet.xml,GNOME_TomboyApplet.xml	\
- 	-resource:$(top_srcdir)/data/Start_Here.note,Start_Here.note			\
- 	-resource:$(top_builddir)/data/DefaultPlugins.desktop,DefaultPlugins.desktop	\
--	-resource:$(top_srcdir)/data/images/tintin.png,tintin.png			\
-+	-resource:$(top_srcdir)/data/images/tomboy.png,tomboy.png			\
-+	-resource:$(top_srcdir)/data/images/tomboy-24.png,tomboy-24.png			\
- 	-resource:$(top_srcdir)/data/images/stock_notes.png,stock_notes.png		\
- 	-resource:$(top_srcdir)/data/images/gnome-stock-searchtool.png,gnome-stock-searchtool.png
- 
---- tomboy-0.3.5/Tomboy/Makefile.in.old	2006-02-24 17:20:21.889678864 +0100
-+++ tomboy-0.3.5/Tomboy/Makefile.in	2006-02-24 17:21:13.458839160 +0100
-@@ -289,7 +289,8 @@
- 	-resource:$(top_srcdir)/data/GNOME_TomboyApplet.xml,GNOME_TomboyApplet.xml	\
- 	-resource:$(top_srcdir)/data/Start_Here.note,Start_Here.note			\
- 	-resource:$(top_builddir)/data/DefaultPlugins.desktop,DefaultPlugins.desktop	\
--	-resource:$(top_srcdir)/data/images/tintin.png,tintin.png			\
-+	-resource:$(top_srcdir)/data/images/tomboy.png,tomboy.png			\
-+	-resource:$(top_srcdir)/data/images/tomboy-24.png,tomboy-24.png			\
- 	-resource:$(top_srcdir)/data/images/stock_notes.png,stock_notes.png		\
- 	-resource:$(top_srcdir)/data/images/gnome-stock-searchtool.png,gnome-stock-searchtool.png
-
