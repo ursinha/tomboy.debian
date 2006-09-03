@@ -1,3 +1,18 @@
+tomboy (0.3.9+dfsg-2) unstable; urgency=medium
+
+  * Added postint to rebuild broken scrollkeeper database using
+    patch to fix it from Loïc Minier - Thanks (Closes: #383201)
+  * Fixes RC bug, thus urgency medium.
+
+ -- Dave Beckett <dajobe@debian.org>  Sun,  3 Sep 2006 09:48:52 -0700
+
+tomboy (0.3.9+dfsg-1) unstable; urgency=medium
+
+  * Provide DFSG version of sources
+  * Disable scrollkeeper from installing into /var (Closes: #382800)
+  
+ -- Dave Beckett <dajobe@debian.org>  Sun, 13 Aug 2006 12:36:00 -0700
+
 tomboy (0.3.9-1) unstable; urgency=medium
 
   * New upstream release
