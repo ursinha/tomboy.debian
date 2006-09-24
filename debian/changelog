@@ -1,3 +1,22 @@
+tomboy (0.4.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Upstream sources now DFSG as last old icon removed.
+    - removed 01_image_name patch
+  * Added D-BUS API change patch 04_dbus0.9.patch. (Closes: #385382)
+  * Acknowledge NMU in 0.3.9+dfsg-2.1 for previous patch.
+  * Depend on libdbus-1-dev (>= 0.90), no longer use libdbus-cil
+  * Packaged new Sticky Notes import plugin
+
+ -- Dave Beckett <dajobe@debian.org>  Sat, 23 Sep 2006 19:30:03 -0700
+
+tomboy (0.3.9+dfsg-2.1) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * Add Patch for deprecated dbus functions (Closes: #385382) 
+
+ -- Michael Ablassmeier <abi@debian.org>  Tue, 19 Sep 2006 09:11:38 +0200
+
 tomboy (0.3.9+dfsg-2) unstable; urgency=medium
 
   * Added postint to rebuild broken scrollkeeper database using
