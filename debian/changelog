@@ -1,3 +1,11 @@
+tomboy (0.4.1-2) unstable; urgency=low
+
+  * Added Build-Depends: on libdbus-glib-1-dev to get D-Bus remote
+    control enabled (Closes: #393484)
+  * Updated Build-Depends: for cli-common-dev to >= 0.4.4
+
+ -- Dave Beckett <dajobe@debian.org>  Thu, 19 Oct 2006 00:02:29 -0700
+
 tomboy (0.4.1-1) unstable; urgency=low
 
   * New upstream release
