@@ -1,3 +1,45 @@
+tomboy (0.6.3-1) unstable; urgency=low
+
+  * New maintainer with permission of the old maintainer. Thanks to Dave
+    Beckett for the work on this package in the past.
+  * New upstream release (Closes: #418566, #415420):
+    + DBus support is fixed and tomboy is single-instance
+      again (Closes: #407744, #313298, #400552)
+    + Fixes crash when opening preferences (Closes: #386271)
+    + Ship fixed width plugin (Closes: #372776)
+    + Fixes interaction with session manager (Closes: #356833)
+    + Fixes bad interaction with different linking mechanisms (Closes: #396177)
+    + debian/control:
+      - Update build dependencies. Tomboy uses C# 2.0 now and also uses the
+        external ndesk-dbus packages.
+      - Suggest evolution as tomboy has a evolution plugin which allows
+        dragging mails from evolution to notes and adds a nice link to the
+        mail in the note.
+    + debian/patches/01-dbus0.9.patch:
+      - Dropped, not needed anymore with the new version.
+  * Acknowledge NMU by Michael Ablassmeier (Closes: #388205)
+  * debian/control:
+    + Set me as maintainer.
+  * debian/rules,
+    debian/tomboy.desktop:
+    + Use upstream's desktop file now as it has proper translations.
+  * debian/rules:
+    + Drop now unecessary restoring of config.{sub,guess} as it is done
+      properly by cdbs since some time already.
+    + Drop unecessary cleaning of the plugins as upstream's build system cares
+      for this now.
+  * debian/watch:
+    + Update watch file for the 0.6 series.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 14 Apr 2007 17:09:41 +0200
+
+tomboy (0.5.0-1) experimental; urgency=low
+
+  * New upstream release
+  * Added new plugins: Bugzilla, FixedWidth, NoteOfTheDay
+
+ -- Dave Beckett <dajobe@debian.org>  Thu, 16 Nov 2006 13:58:37 -0800
+
 tomboy (0.4.1-2) unstable; urgency=low
 
   * Added Build-Depends: on libdbus-glib-1-dev to get D-Bus remote
