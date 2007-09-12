@@ -1,3 +1,13 @@
+tomboy (0.6.3-2) unstable; urgency=low
+
+  * debian/patches/01_define.cs.patch:
+    + Fix FTBFS caused by having an "[assembly: ..." attribute in the end.
+      It's only allowed directly after "using ..." (Closes: #441657).
+  * debian/rules:
+    + Call dh_clifixperms to get proper permissions on all files.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 12 Sep 2007 07:04:21 +0200
+
 tomboy (0.6.3-1) unstable; urgency=low
 
   * New maintainer with permission of the old maintainer. Thanks to Dave

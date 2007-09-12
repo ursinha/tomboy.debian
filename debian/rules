@@ -18,6 +18,7 @@ install/tomboy::
 	uudecode debian/tomboy-32.xpm.uu && mv tomboy-32.xpm debian/tomboy/usr/share/pixmaps
 
 common-binary-predeb-arch::
+	dh_clifixperms
 	dh_clideps -d
 
 clean::
