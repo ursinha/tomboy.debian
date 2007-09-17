@@ -1,3 +1,15 @@
+tomboy (0.8.0-1) unstable; urgency=low
+
+  * New upstream release (Closes: #436809):
+    + Adds sync support (Closes: #313302).
+    + debian/patches/01_define.cs.patch:
+      - Dropped, merged upstream.
+    + debian/tomboy.desktop:
+      - Dropped, upstream's desktop file is usable now and we use it since
+        some time already anyway.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 17 Sep 2007 15:41:26 +0200
+
 tomboy (0.6.3-2) unstable; urgency=low
 
   * debian/patches/01_define.cs.patch:
