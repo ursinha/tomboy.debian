@@ -1,3 +1,13 @@
+tomboy (0.8.0-2) unstable; urgency=low
+
+  * debian/patches/01_external-mono-addins.patch,
+    debian/patches/99_autoreconf.patch,
+    debian/control.in,
+    debian/rules:
+    + Build against an external Mono.Addins. Patch taken from upstream SVN.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 22 Sep 2007 11:23:05 +0200
+
 tomboy (0.8.0-1) unstable; urgency=low
 
   * New upstream release (Closes: #436809):

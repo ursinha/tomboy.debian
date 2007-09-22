@@ -9,6 +9,7 @@ include /usr/share/cdbs/1/class/gnome.mk
 DEB_CONFIGURE_SCRIPT_ENV := LDFLAGS="-Wl,-O1"
 DEB_CONFIGURE_EXTRA_FLAGS := --disable-scrollkeeper
 DEB_INSTALL_DOCS_ALL := README NEWS
+DEB_CONFIGURE_EXTRA_FLAGS += --with-mono-addins=system
 
 common-configure-indep::
 	mkdir -p $(MONO_SHARED_DIR)/.wapi

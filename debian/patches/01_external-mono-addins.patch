@@ -1,0 +1,108 @@
+Index: configure.in
+===================================================================
+--- configure.in	(Revision 1571)
++++ configure.in	(Revision 1572)
+@@ -126,6 +126,22 @@
+ AC_SUBST(DBUS_LIBS)
+ 
+ #
++# Check for external Mono.Addins
++#
++AC_ARG_WITH(mono-addins, [  --with-mono-addins[[=internal/system]]],[mono_addins_v="$withval"],[mono_addins_v=internal])
++if test "x$mono_addins_v" = "xsystem"; then
++	PKG_CHECK_MODULES(MONO_ADDINS, mono-addins > 0.2 \
++		mono-addins-gui > 0.2 \
++		mono-addins-setup > 0.2)
++	AM_CONDITIONAL(EXTERNAL_MONO_ADDINS, true)
++	AC_SUBST(MONO_ADDINS_LIBS)
++else
++	MONO_ADDINS_LIBS=
++	AM_CONDITIONAL(EXTERNAL_MONO_ADDINS, false)
++	AC_SUBST(MONO_ADDINS_LIBS)
++fi
++
++#
+ # Tomboy.exe needs Gtk# Gnome# GConf#
+ #
+ GTKSHARP2_MINIMUM_VERSION=$GTK20_MINIMUM_VERSION
+Index: Makefile.include
+===================================================================
+--- Makefile.include	(Revision 1571)
++++ Makefile.include	(Revision 1572)
+@@ -10,10 +10,15 @@
+ 
+ LINK_TOMBOY_EXE =					\
+ 	-r:$(top_builddir)/Tomboy/Tomboy.exe
++
++if EXTERNAL_MONO_ADDINS
++LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
++else
+ LINK_MONO_ADDINS =					\
+ 	-r:$(DIR_ADDINS_ADDINS)/Mono.Addins.dll		\
+ 	-r:$(DIR_ADDINS_SETUP)/Mono.Addins.Setup.dll	\
+ 	-r:$(DIR_ADDINS_GUI)/Mono.Addins.Gui.dll
++endif
+ 
+ ## Build
+ 
+Index: Mono.Addins/Mono.Addins.Setup/Makefile.am
+===================================================================
+--- Mono.Addins/Mono.Addins.Setup/Makefile.am	(Revision 1571)
++++ Mono.Addins/Mono.Addins.Setup/Makefile.am	(Revision 1572)
+@@ -44,6 +44,7 @@
+ 
+ ASSEMBLY = $(ASSEMBLY_NAME).dll
+ 
++if !EXTERNAL_MONO_ADDINS
+ all: $(ASSEMBLY)
+ 
+ $(ASSEMBLY): $(ASSEMBLY_SOURCES)
+@@ -52,6 +53,7 @@
+ assemblydir = $(pkglibdir)
+ assembly_DATA =			\
+ 	$(ASSEMBLY)		
++endif
+ 
+ EXTRA_DIST = 			\
+ 	$(ASSEMBLY_SOURCES)
+Index: Mono.Addins/Mono.Addins/Makefile.am
+===================================================================
+--- Mono.Addins/Mono.Addins/Makefile.am	(Revision 1571)
++++ Mono.Addins/Mono.Addins/Makefile.am	(Revision 1572)
+@@ -87,6 +87,7 @@
+ 
+ ASSEMBLY = $(ASSEMBLY_NAME).dll
+ 
++if !EXTERNAL_MONO_ADDINS
+ all: $(ASSEMBLY)
+ 
+ $(ASSEMBLY): $(ASSEMBLY_SOURCES)
+@@ -96,6 +97,7 @@
+ assembly_DATA =			\
+ 	$(ASSEMBLY)		\
+ 	$(ASSEMBLY).config
++endif
+ 
+ EXTRA_DIST = 			\
+ 	$(ASSEMBLY_SOURCES)	\
+Index: Mono.Addins/Mono.Addins.Gui/Makefile.am
+===================================================================
+--- Mono.Addins/Mono.Addins.Gui/Makefile.am	(Revision 1571)
++++ Mono.Addins/Mono.Addins.Gui/Makefile.am	(Revision 1572)
+@@ -42,6 +42,8 @@
+ 
+ ASSEMBLY = $(ASSEMBLY_NAME).dll
+ 
++if !EXTERNAL_MONO_ADDINS
++
+ all: $(ASSEMBLY)
+ 
+ $(ASSEMBLY): $(ASSEMBLY_SOURCES)
+@@ -50,6 +52,7 @@
+ assemblydir = $(pkglibdir)
+ assembly_DATA =			\
+ 	$(ASSEMBLY)
++endif
+ 
+ EXTRA_DIST = 						\
+ 	$(ASSEMBLY_SOURCES)				\
