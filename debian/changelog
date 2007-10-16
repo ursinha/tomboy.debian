@@ -1,3 +1,11 @@
+tomboy (0.8.1-1) unstable; urgency=low
+
+  * New upstream bugfix release, with many translation updates.
+  * debian/patches/99_autoreconf.patch:
+    + Updated for the new version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 16 Oct 2007 12:58:54 +0200
+
 tomboy (0.8.0-2) unstable; urgency=low
 
   * debian/patches/01_external-mono-addins.patch,
