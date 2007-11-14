@@ -1,3 +1,17 @@
+tomboy (0.8.1-2) unstable; urgency=high
+
+  * debian/patches/02_CVE-2005-4790-insecure-search-path.patch:
+    + SECURITY, CVE-2005-4790:
+      Multiple untrusted search path vulnerabilities in SUSE Linux 9.3 and
+      10.0, and possibly other distributions, cause the working directory to
+      be added to LD_LIBRARY_PATH, which might allow local users to execute
+      arbitrary code via (1) beagle, (2) tomboy, or (3) blam.
+      NOTE: in August 2007, the tomboy vector was reported for other
+      distributions.
+      Patch taken from upstream SVN.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 14 Nov 2007 05:34:45 +0100
+
 tomboy (0.8.1-1) unstable; urgency=low
 
   * New upstream bugfix release, with many translation updates.
