@@ -1,4 +1,4 @@
-?package(tomboy):needs="X11" section="Apps/Tools" \
+?package(tomboy):needs="X11" section="Applications/Data Management" \
   title="Tomboy" command="/usr/bin/tomboy" \
   longtitle="Tomboy notetaker" \
   description="Take notes on the desktop" \

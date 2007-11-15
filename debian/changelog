@@ -9,6 +9,8 @@ tomboy (0.8.1-2) unstable; urgency=high
       NOTE: in August 2007, the tomboy vector was reported for other
       distributions.
       Patch taken from upstream SVN.
+  * debian/tomboy.menu:
+    + Fix section. It's now "Applications/Data Management".
 
  -- Sebastian Dröge <slomo@debian.org>  Wed, 14 Nov 2007 05:34:45 +0100
 
