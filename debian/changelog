@@ -3,6 +3,8 @@ tomboy (0.8.2-1) unstable; urgency=low
   * New upstream bugfix release:
     + debian/patches/02_CVE-2005-4790-insecure-search-path.patch:
       - Dropped, merged upstream.
+    + debian/patches/99_autoreconf.patch:
+      - Updated for the new version.
 
  -- Sebastian Dröge <slomo@debian.org>  Mon, 26 Nov 2007 17:05:20 +0100
 
