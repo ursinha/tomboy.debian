@@ -1,6 +1,6 @@
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/aclocal.m4 tomboy-0.8.2/aclocal.m4
 --- tomboy-0.8.2.old/aclocal.m4	2007-11-26 16:51:17.000000000 +0100
-+++ tomboy-0.8.2/aclocal.m4	2007-11-26 17:07:37.000000000 +0100
++++ tomboy-0.8.2/aclocal.m4	2007-12-04 15:24:30.000000000 +0100
 @@ -412,6 +412,18 @@
       fi
     fi
@@ -105,7 +105,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/aclocal.m4 tomboy-
  # libtool.m4 - Configure libtool for the host system. -*-Autoconf-*-
  
 -# serial 51 AC_PROG_LIBTOOL
-+# serial 51 Debian 1.5.24-1ubuntu1 AC_PROG_LIBTOOL
++# serial 51 Debian 1.5.24-2 AC_PROG_LIBTOOL
  
  
  # AC_PROVIDE_IFELSE(MACRO-NAME, IF-PROVIDED, IF-NOT-PROVIDED)
@@ -200,7 +200,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/aclocal.m4 tomboy-
  	$1[]_CFLAGS=$pkg_cv_[]$1[]_CFLAGS
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0.8.2/configure
 --- tomboy-0.8.2.old/configure	2007-11-26 16:51:22.000000000 +0100
-+++ tomboy-0.8.2/configure	2007-11-26 17:07:40.000000000 +0100
++++ tomboy-0.8.2/configure	2007-12-04 15:24:33.000000000 +0100
 @@ -856,14 +856,11 @@
  INTLTOOL_SCHEMAS_RULE
  INTLTOOL_THEME_RULE
@@ -822,7 +822,99 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
           test -d po || mkdir po
     if test "x$srcdir" != "x."; then
       if test "x`echo $srcdir | sed 's@/.*@@'`" = "x"; then
-@@ -22987,7 +22896,7 @@
+@@ -22870,12 +22779,14 @@
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= \$GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= \$GTK20_MINIMUM_VERSION
+-		  atk >= \$ATK_MINIMUM_VERSION\"") >&5
++		  atk >= \$ATK_MINIMUM_VERSION
++		  x11\"") >&5
+   ($PKG_CONFIG --exists --print-errors "libgnomeprint-2.2
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+-		  atk >= $ATK_MINIMUM_VERSION") 2>&5
++		  atk >= $ATK_MINIMUM_VERSION
++		  x11") 2>&5
+   ac_status=$?
+   echo "$as_me:$LINENO: \$? = $ac_status" >&5
+   (exit $ac_status); }; then
+@@ -22883,7 +22794,8 @@
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+-		  atk >= $ATK_MINIMUM_VERSION" 2>/dev/null`
++		  atk >= $ATK_MINIMUM_VERSION
++		  x11" 2>/dev/null`
+ else
+   pkg_failed=yes
+ fi
+@@ -22900,12 +22812,14 @@
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= \$GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= \$GTK20_MINIMUM_VERSION
+-		  atk >= \$ATK_MINIMUM_VERSION\"") >&5
++		  atk >= \$ATK_MINIMUM_VERSION
++		  x11\"") >&5
+   ($PKG_CONFIG --exists --print-errors "libgnomeprint-2.2
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+-		  atk >= $ATK_MINIMUM_VERSION") 2>&5
++		  atk >= $ATK_MINIMUM_VERSION
++		  x11") 2>&5
+   ac_status=$?
+   echo "$as_me:$LINENO: \$? = $ac_status" >&5
+   (exit $ac_status); }; then
+@@ -22913,7 +22827,8 @@
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+-		  atk >= $ATK_MINIMUM_VERSION" 2>/dev/null`
++		  atk >= $ATK_MINIMUM_VERSION
++		  x11" 2>/dev/null`
+ else
+   pkg_failed=yes
+ fi
+@@ -22936,13 +22851,15 @@
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+-		  atk >= $ATK_MINIMUM_VERSION"`
++		  atk >= $ATK_MINIMUM_VERSION
++		  x11"`
+         else
+ 	        LIBTOMBOY_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libgnomeprint-2.2
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+-		  atk >= $ATK_MINIMUM_VERSION"`
++		  atk >= $ATK_MINIMUM_VERSION
++		  x11"`
+         fi
+ 	# Put the nasty error message in config.log where it belongs
+ 	echo "$LIBTOMBOY_PKG_ERRORS" >&5
+@@ -22951,7 +22868,8 @@
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+-		  atk >= $ATK_MINIMUM_VERSION) were not met:
++		  atk >= $ATK_MINIMUM_VERSION
++		  x11) were not met:
+ 
+ $LIBTOMBOY_PKG_ERRORS
+ 
+@@ -22966,7 +22884,8 @@
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+-		  atk >= $ATK_MINIMUM_VERSION) were not met:
++		  atk >= $ATK_MINIMUM_VERSION
++		  x11) were not met:
+ 
+ $LIBTOMBOY_PKG_ERRORS
+ 
+@@ -22987,7 +22906,7 @@
  and LIBTOMBOY_LIBS to avoid the need to call pkg-config.
  See the pkg-config man page for more details.
  
@@ -831,7 +923,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  See \`config.log' for more details." >&5
  echo "$as_me: error: The pkg-config script could not be found or is too old.  Make sure it
  is in your PATH or set the PKG_CONFIG environment variable to the full
-@@ -22997,7 +22906,7 @@
+@@ -22997,7 +22916,7 @@
  and LIBTOMBOY_LIBS to avoid the need to call pkg-config.
  See the pkg-config man page for more details.
  
@@ -840,7 +932,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  See \`config.log' for more details." >&2;}
     { (exit 1); exit 1; }; }
  else
-@@ -23275,6 +23184,171 @@
+@@ -23275,6 +23194,171 @@
  
  
  #
@@ -1012,7 +1104,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  # Tomboy.exe needs Gtk# Gnome# GConf#
  #
  GTKSHARP2_MINIMUM_VERSION=$GTK20_MINIMUM_VERSION
-@@ -23369,7 +23443,7 @@
+@@ -23369,7 +23453,7 @@
  and TOMBOY_LIBS to avoid the need to call pkg-config.
  See the pkg-config man page for more details.
  
@@ -1021,7 +1113,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  See \`config.log' for more details." >&5
  echo "$as_me: error: The pkg-config script could not be found or is too old.  Make sure it
  is in your PATH or set the PKG_CONFIG environment variable to the full
-@@ -23379,7 +23453,7 @@
+@@ -23379,7 +23463,7 @@
  and TOMBOY_LIBS to avoid the need to call pkg-config.
  See the pkg-config man page for more details.
  
@@ -1030,7 +1122,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  See \`config.log' for more details." >&2;}
     { (exit 1); exit 1; }; }
  else
-@@ -23910,6 +23984,20 @@
+@@ -23910,6 +23994,20 @@
  Usually this means the macro was only invoked conditionally." >&2;}
     { (exit 1); exit 1; }; }
  fi
@@ -1051,7 +1143,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  if test -z "${ENABLE_EVOLUTION_TRUE}" && test -z "${ENABLE_EVOLUTION_FALSE}"; then
    { { echo "$as_me:$LINENO: error: conditional \"ENABLE_EVOLUTION\" was never defined.
  Usually this means the macro was only invoked conditionally." >&5
-@@ -24391,9 +24479,7 @@
+@@ -24391,9 +24489,7 @@
  AMDEP_TRUE="$AMDEP_TRUE" ac_aux_dir="$ac_aux_dir"
  INTLTOOL_PERL='${INTLTOOL_PERL}' ac_aux_dir='${ac_aux_dir}'
  prefix="$prefix" exec_prefix="$exec_prefix" INTLTOOL_LIBDIR="$libdir"
@@ -1062,7 +1154,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  
  
  _ACEOF
-@@ -24588,14 +24674,14 @@
+@@ -24588,14 +24684,14 @@
  INTLTOOL_SCHEMAS_RULE!$INTLTOOL_SCHEMAS_RULE$ac_delim
  INTLTOOL_THEME_RULE!$INTLTOOL_THEME_RULE$ac_delim
  INTLTOOL_SERVICE_RULE!$INTLTOOL_SERVICE_RULE$ac_delim
@@ -1081,7 +1173,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  _ACEOF
  
    if test `sed -n "s/.*$ac_delim\$/X/p" conf$$subs.sed | grep -c X` = 97; then
-@@ -24637,9 +24723,6 @@
+@@ -24637,9 +24733,6 @@
  ac_delim='%!_!# '
  for ac_last_try in false false false false false :; do
    cat >conf$$subs.sed <<_ACEOF
@@ -1091,7 +1183,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  LDFLAGS!$LDFLAGS$ac_delim
  CPPFLAGS!$CPPFLAGS$ac_delim
  ac_ct_CC!$ac_ct_CC$ac_delim
-@@ -24697,6 +24780,7 @@
+@@ -24697,6 +24790,7 @@
  PO_IN_DATADIR_FALSE!$PO_IN_DATADIR_FALSE$ac_delim
  POFILES!$POFILES$ac_delim
  POSUB!$POSUB$ac_delim
@@ -1099,7 +1191,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  GCONFTOOL!$GCONFTOOL$ac_delim
  GCONF_SCHEMA_CONFIG_SOURCE!$GCONF_SCHEMA_CONFIG_SOURCE$ac_delim
  GCONF_SCHEMA_FILE_DIR!$GCONF_SCHEMA_FILE_DIR$ac_delim
-@@ -24721,6 +24805,10 @@
+@@ -24721,6 +24815,10 @@
  DBUS_LIBS!$DBUS_LIBS$ac_delim
  EXTERNAL_DBUS_TRUE!$EXTERNAL_DBUS_TRUE$ac_delim
  EXTERNAL_DBUS_FALSE!$EXTERNAL_DBUS_FALSE$ac_delim
@@ -1110,7 +1202,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  TOMBOY_CFLAGS!$TOMBOY_CFLAGS$ac_delim
  TOMBOY_LIBS!$TOMBOY_LIBS$ac_delim
  EVOLUTION_CFLAGS!$EVOLUTION_CFLAGS$ac_delim
-@@ -24732,8 +24820,6 @@
+@@ -24732,8 +24830,6 @@
  ENABLE_GALAGO_TRUE!$ENABLE_GALAGO_TRUE$ac_delim
  ENABLE_GALAGO_FALSE!$ENABLE_GALAGO_FALSE$ac_delim
  NUNIT_CFLAGS!$NUNIT_CFLAGS$ac_delim
@@ -1119,7 +1211,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  _ACEOF
  
    if test `sed -n "s/.*$ac_delim\$/X/p" conf$$subs.sed | grep -c X` = 97; then
-@@ -24775,6 +24861,8 @@
+@@ -24775,6 +24871,8 @@
  ac_delim='%!_!# '
  for ac_last_try in false false false false false :; do
    cat >conf$$subs.sed <<_ACEOF
@@ -1128,7 +1220,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
  HAVE_NUNIT_FALSE!$HAVE_NUNIT_FALSE$ac_delim
  NUNIT!$NUNIT$ac_delim
  XGETTEXT_PLUGIN_NAME!$XGETTEXT_PLUGIN_NAME$ac_delim
-@@ -24783,7 +24871,7 @@
+@@ -24783,7 +24881,7 @@
  LTLIBOBJS!$LTLIBOBJS$ac_delim
  _ACEOF
  
@@ -1137,7 +1229,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
      break
    elif $ac_last_try; then
      { { echo "$as_me:$LINENO: error: could not make $CONFIG_STATUS" >&5
-@@ -25354,10 +25442,6 @@
+@@ -25354,10 +25452,6 @@
  for file in intltool-extract intltool-merge intltool-update; do
    sed -e "s|@INTLTOOL_EXTRACT@|`pwd`/intltool-extract|g" \
        -e "s|@INTLTOOL_LIBDIR@|${INTLTOOL_LIBDIR}|g" \
@@ -1150,7 +1242,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/configure tomboy-0
    if cmp -s ${file} ${file}.out 2>/dev/null; then
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/data/images/Makefile.in tomboy-0.8.2/data/images/Makefile.in
 --- tomboy-0.8.2.old/data/images/Makefile.in	2007-11-26 16:51:21.000000000 +0100
-+++ tomboy-0.8.2/data/images/Makefile.in	2007-11-26 17:07:43.000000000 +0100
++++ tomboy-0.8.2/data/images/Makefile.in	2007-12-04 15:24:37.000000000 +0100
 @@ -115,14 +115,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -1187,7 +1279,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/data/images/Makefi
  NUNIT = @NUNIT@
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/data/Makefile.in tomboy-0.8.2/data/Makefile.in
 --- tomboy-0.8.2.old/data/Makefile.in	2007-11-26 16:51:21.000000000 +0100
-+++ tomboy-0.8.2/data/Makefile.in	2007-11-26 17:07:43.000000000 +0100
++++ tomboy-0.8.2/data/Makefile.in	2007-12-04 15:24:37.000000000 +0100
 @@ -138,14 +138,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -1224,7 +1316,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/data/Makefile.in t
  NUNIT = @NUNIT@
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/gnome-doc-utils.make tomboy-0.8.2/gnome-doc-utils.make
 --- tomboy-0.8.2.old/gnome-doc-utils.make	2007-10-15 16:22:59.000000000 +0200
-+++ tomboy-0.8.2/gnome-doc-utils.make	2007-11-26 17:07:32.000000000 +0100
++++ tomboy-0.8.2/gnome-doc-utils.make	2007-12-04 15:24:25.000000000 +0100
 @@ -416,6 +416,11 @@
  	@list='$(_DOC_C_DOCS) $(_DOC_LC_DOCS) $(_DOC_POFILES)'; \
  	for doc in $$list; do \
@@ -1261,7 +1353,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/gnome-doc-utils.ma
  	  fi; \
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/help/Makefile.in tomboy-0.8.2/help/Makefile.in
 --- tomboy-0.8.2.old/help/Makefile.in	2007-11-26 16:51:21.000000000 +0100
-+++ tomboy-0.8.2/help/Makefile.in	2007-11-26 17:07:44.000000000 +0100
++++ tomboy-0.8.2/help/Makefile.in	2007-12-04 15:24:37.000000000 +0100
 @@ -130,14 +130,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -1332,7 +1424,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/help/Makefile.in t
  	  fi; \
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/intltool-extract.in tomboy-0.8.2/intltool-extract.in
 --- tomboy-0.8.2.old/intltool-extract.in	2007-10-15 16:22:59.000000000 +0200
-+++ tomboy-0.8.2/intltool-extract.in	2007-11-26 17:07:32.000000000 +0100
++++ tomboy-0.8.2/intltool-extract.in	2007-12-04 15:24:25.000000000 +0100
 @@ -32,7 +32,7 @@
  ## Release information
  my $PROGRAM      = "intltool-extract";
@@ -1355,7 +1447,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/intltool-extract.i
  }
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/intltool-merge.in tomboy-0.8.2/intltool-merge.in
 --- tomboy-0.8.2.old/intltool-merge.in	2007-10-15 16:22:59.000000000 +0200
-+++ tomboy-0.8.2/intltool-merge.in	2007-11-26 17:07:32.000000000 +0100
++++ tomboy-0.8.2/intltool-merge.in	2007-12-04 15:24:25.000000000 +0100
 @@ -35,7 +35,7 @@
  ## Release information
  my $PROGRAM = "intltool-merge";
@@ -1457,7 +1549,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/intltool-merge.in 
  }
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/intltool-update.in tomboy-0.8.2/intltool-update.in
 --- tomboy-0.8.2.old/intltool-update.in	2007-10-15 16:22:59.000000000 +0200
-+++ tomboy-0.8.2/intltool-update.in	2007-11-26 17:07:32.000000000 +0100
++++ tomboy-0.8.2/intltool-update.in	2007-12-04 15:24:25.000000000 +0100
 @@ -30,7 +30,7 @@
  
  ## Release information
@@ -1690,7 +1782,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/intltool-update.in
  	{
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/libtomboy/Makefile.in tomboy-0.8.2/libtomboy/Makefile.in
 --- tomboy-0.8.2.old/libtomboy/Makefile.in	2007-11-26 16:51:21.000000000 +0100
-+++ tomboy-0.8.2/libtomboy/Makefile.in	2007-11-26 17:07:44.000000000 +0100
++++ tomboy-0.8.2/libtomboy/Makefile.in	2007-12-04 15:24:37.000000000 +0100
 @@ -137,14 +137,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -1727,14 +1819,14 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/libtomboy/Makefile
  NUNIT = @NUNIT@
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/ltmain.sh tomboy-0.8.2/ltmain.sh
 --- tomboy-0.8.2.old/ltmain.sh	2007-09-21 20:28:33.000000000 +0200
-+++ tomboy-0.8.2/ltmain.sh	2007-08-14 19:43:36.000000000 +0200
++++ tomboy-0.8.2/ltmain.sh	2007-11-27 22:23:09.000000000 +0100
 @@ -43,8 +43,8 @@
  
  PROGRAM=ltmain.sh
  PACKAGE=libtool
 -VERSION=1.5.24
 -TIMESTAMP=" (1.1220.2.455 2007/06/24 02:13:29)"
-+VERSION="1.5.24 Debian 1.5.24-1ubuntu1"
++VERSION="1.5.24 Debian 1.5.24-2"
 +TIMESTAMP=" (1.1220.2.456 2007/06/24 02:25:32)"
  
  # Be Bourne compatible (taken from Autoconf:_AS_BOURNE_COMPATIBLE).
@@ -1765,7 +1857,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/ltmain.sh tomboy-0
  	no)
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Makefile.in tomboy-0.8.2/Makefile.in
 --- tomboy-0.8.2.old/Makefile.in	2007-11-26 16:51:21.000000000 +0100
-+++ tomboy-0.8.2/Makefile.in	2007-11-26 17:07:44.000000000 +0100
++++ tomboy-0.8.2/Makefile.in	2007-12-04 15:24:37.000000000 +0100
 @@ -133,14 +133,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -1802,7 +1894,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Makefile.in tomboy
  NUNIT = @NUNIT@
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Mono.Addins/Makefile.in tomboy-0.8.2/Mono.Addins/Makefile.in
 --- tomboy-0.8.2.old/Mono.Addins/Makefile.in	2007-11-26 16:51:19.000000000 +0100
-+++ tomboy-0.8.2/Mono.Addins/Makefile.in	2007-11-26 17:07:41.000000000 +0100
++++ tomboy-0.8.2/Mono.Addins/Makefile.in	2007-12-04 15:24:34.000000000 +0100
 @@ -117,14 +117,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -1839,7 +1931,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Mono.Addins/Makefi
  NUNIT = @NUNIT@
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Mono.Addins/Mono.Addins/Makefile.in tomboy-0.8.2/Mono.Addins/Mono.Addins/Makefile.in
 --- tomboy-0.8.2.old/Mono.Addins/Mono.Addins/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Mono.Addins/Mono.Addins/Makefile.in	2007-11-26 17:07:42.000000000 +0100
++++ tomboy-0.8.2/Mono.Addins/Mono.Addins/Makefile.in	2007-12-04 15:24:35.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -1922,7 +2014,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Mono.Addins/Mono.A
  .NOEXPORT:
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Mono.Addins/Mono.Addins.Gui/Makefile.in tomboy-0.8.2/Mono.Addins/Mono.Addins.Gui/Makefile.in
 --- tomboy-0.8.2.old/Mono.Addins/Mono.Addins.Gui/Makefile.in	2007-11-26 16:51:19.000000000 +0100
-+++ tomboy-0.8.2/Mono.Addins/Mono.Addins.Gui/Makefile.in	2007-11-26 17:07:41.000000000 +0100
++++ tomboy-0.8.2/Mono.Addins/Mono.Addins.Gui/Makefile.in	2007-12-04 15:24:35.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2003,7 +2095,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Mono.Addins/Mono.A
  .NOEXPORT:
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Mono.Addins/Mono.Addins.Setup/Makefile.in tomboy-0.8.2/Mono.Addins/Mono.Addins.Setup/Makefile.in
 --- tomboy-0.8.2.old/Mono.Addins/Mono.Addins.Setup/Makefile.in	2007-11-26 16:51:19.000000000 +0100
-+++ tomboy-0.8.2/Mono.Addins/Mono.Addins.Setup/Makefile.in	2007-11-26 17:07:41.000000000 +0100
++++ tomboy-0.8.2/Mono.Addins/Mono.Addins.Setup/Makefile.in	2007-12-04 15:24:35.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2084,7 +2176,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Mono.Addins/Mono.A
  .NOEXPORT:
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/po/Makefile.in.in tomboy-0.8.2/po/Makefile.in.in
 --- tomboy-0.8.2.old/po/Makefile.in.in	2007-10-15 16:22:59.000000000 +0200
-+++ tomboy-0.8.2/po/Makefile.in.in	2007-11-26 17:07:32.000000000 +0100
++++ tomboy-0.8.2/po/Makefile.in.in	2007-12-04 15:24:25.000000000 +0100
 @@ -133,7 +133,7 @@
  dvi info tags TAGS ID:
  
@@ -2096,7 +2188,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/po/Makefile.in.in 
  	linguas="$(USE_LINGUAS)"; \
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/test/Makefile.in tomboy-0.8.2/test/Makefile.in
 --- tomboy-0.8.2.old/test/Makefile.in	2007-11-26 16:51:21.000000000 +0100
-+++ tomboy-0.8.2/test/Makefile.in	2007-11-26 17:07:44.000000000 +0100
++++ tomboy-0.8.2/test/Makefile.in	2007-12-04 15:24:37.000000000 +0100
 @@ -105,14 +105,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2133,7 +2225,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/test/Makefile.in t
  NUNIT = @NUNIT@
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Backlinks/Makefile.in tomboy-0.8.2/Tomboy/Addins/Backlinks/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/Backlinks/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/Backlinks/Makefile.in	2007-11-26 17:07:42.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/Backlinks/Makefile.in	2007-12-04 15:24:35.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2187,7 +2279,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Back
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Bugzilla/Makefile.in tomboy-0.8.2/Tomboy/Addins/Bugzilla/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/Bugzilla/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/Bugzilla/Makefile.in	2007-11-26 17:07:42.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/Bugzilla/Makefile.in	2007-12-04 15:24:35.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2241,7 +2333,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Bugz
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Evolution/Makefile.in tomboy-0.8.2/Tomboy/Addins/Evolution/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/Evolution/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/Evolution/Makefile.in	2007-11-26 17:07:42.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/Evolution/Makefile.in	2007-12-04 15:24:35.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2295,7 +2387,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Evol
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/ExportToHtml/Makefile.in tomboy-0.8.2/Tomboy/Addins/ExportToHtml/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/ExportToHtml/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/ExportToHtml/Makefile.in	2007-11-26 17:07:42.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/ExportToHtml/Makefile.in	2007-12-04 15:24:35.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2349,7 +2441,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Expo
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/FileSystemSyncService/Makefile.in tomboy-0.8.2/Tomboy/Addins/FileSystemSyncService/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/FileSystemSyncService/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/FileSystemSyncService/Makefile.in	2007-11-26 17:07:42.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/FileSystemSyncService/Makefile.in	2007-12-04 15:24:36.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2403,7 +2495,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/File
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/FixedWidth/Makefile.in tomboy-0.8.2/Tomboy/Addins/FixedWidth/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/FixedWidth/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/FixedWidth/Makefile.in	2007-11-26 17:07:42.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/FixedWidth/Makefile.in	2007-12-04 15:24:36.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2457,7 +2549,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Fixe
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/GalagoPresence/Makefile.in tomboy-0.8.2/Tomboy/Addins/GalagoPresence/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/GalagoPresence/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/GalagoPresence/Makefile.in	2007-11-26 17:07:42.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/GalagoPresence/Makefile.in	2007-12-04 15:24:36.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2511,7 +2603,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Gala
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Makefile.in tomboy-0.8.2/Tomboy/Addins/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/Makefile.in	2007-11-26 17:07:42.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/Makefile.in	2007-12-04 15:24:36.000000000 +0100
 @@ -117,14 +117,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2548,7 +2640,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Make
  NUNIT = @NUNIT@
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/NoteOfTheDay/Makefile.in tomboy-0.8.2/Tomboy/Addins/NoteOfTheDay/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/NoteOfTheDay/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/NoteOfTheDay/Makefile.in	2007-11-26 17:07:43.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/NoteOfTheDay/Makefile.in	2007-12-04 15:24:36.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2602,7 +2694,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Note
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/PrintNotes/Makefile.in tomboy-0.8.2/Tomboy/Addins/PrintNotes/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/PrintNotes/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/PrintNotes/Makefile.in	2007-11-26 17:07:43.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/PrintNotes/Makefile.in	2007-12-04 15:24:36.000000000 +0100
 @@ -141,14 +141,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2656,7 +2748,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Prin
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/SshSyncService/Makefile.in tomboy-0.8.2/Tomboy/Addins/SshSyncService/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/SshSyncService/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/SshSyncService/Makefile.in	2007-11-26 17:07:43.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/SshSyncService/Makefile.in	2007-12-04 15:24:36.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2710,7 +2802,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/SshS
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/StickyNoteImport/Makefile.in tomboy-0.8.2/Tomboy/Addins/StickyNoteImport/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/StickyNoteImport/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/StickyNoteImport/Makefile.in	2007-11-26 17:07:43.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/StickyNoteImport/Makefile.in	2007-12-04 15:24:36.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2764,7 +2856,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/Stic
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/WebDavSyncService/Makefile.in tomboy-0.8.2/Tomboy/Addins/WebDavSyncService/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Addins/WebDavSyncService/Makefile.in	2007-11-26 16:51:20.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Addins/WebDavSyncService/Makefile.in	2007-11-26 17:07:43.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Addins/WebDavSyncService/Makefile.in	2007-12-04 15:24:36.000000000 +0100
 @@ -116,14 +116,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
@@ -2818,7 +2910,7 @@ diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Addins/WebD
  CSC_LIB = $(CSC) -target:library
 diff -x'*config.sub' -x'*config.guess' -Naur tomboy-0.8.2.old/Tomboy/Makefile.in tomboy-0.8.2/Tomboy/Makefile.in
 --- tomboy-0.8.2.old/Tomboy/Makefile.in	2007-11-26 16:51:21.000000000 +0100
-+++ tomboy-0.8.2/Tomboy/Makefile.in	2007-11-26 17:07:43.000000000 +0100
++++ tomboy-0.8.2/Tomboy/Makefile.in	2007-12-04 15:24:37.000000000 +0100
 @@ -131,14 +131,12 @@
  INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
  INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@

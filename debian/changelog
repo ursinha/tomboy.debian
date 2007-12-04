@@ -1,3 +1,15 @@
+tomboy (0.8.2-2) UNRELEASED; urgency=low
+
+  * debian/rules,
+    debian/patches/99_ltmain_as-needed.patch:
+    + Link the native libraries with --as-needed to get fewer dependencies.
+  * debian/patches/02_link-libX11.patch:
+    + Link libtomboy with libX11.
+  * debian/patches/99_autoreconf.patch:
+    + Regenerated for the above change.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 04 Dec 2007 15:03:16 +0100
+
 tomboy (0.8.2-1) unstable; urgency=low
 
   * New upstream bugfix release:

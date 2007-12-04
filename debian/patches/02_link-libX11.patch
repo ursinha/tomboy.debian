@@ -1,0 +1,12 @@
+--- configure.in.old	2007-12-04 15:20:32.000000000 +0100
++++ configure.in	2007-12-04 15:23:00.000000000 +0100
+@@ -52,7 +52,8 @@
+ 		  libgnomeprintui-2.2
+ 		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+ 		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+-		  atk >= $ATK_MINIMUM_VERSION)
++		  atk >= $ATK_MINIMUM_VERSION
++		  x11)
+ AC_SUBST(LIBTOMBOY_CFLAGS)
+ AC_SUBST(LIBTOMBOY_LIBS)
+ 
