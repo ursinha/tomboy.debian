@@ -1,3 +1,10 @@
+tomboy (0.10.0-1) unstable; urgency=low
+
+  * New upstream stable release:
+    + Upload to unstable.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 10 Mar 2008 19:34:31 +0100
+
 tomboy (0.9.8-1) experimental; urgency=low
 
   * New upstream release:
