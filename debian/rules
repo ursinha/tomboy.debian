@@ -15,8 +15,11 @@ common-configure-indep::
 	mkdir -p $(MONO_SHARED_DIR)/.wapi
 
 install/tomboy::
+	mkdir -p debian/tomboy/usr/share/pixmaps
 	uudecode debian/tomboy-16.xpm.uu && mv tomboy-16.xpm debian/tomboy/usr/share/pixmaps
 	uudecode debian/tomboy-32.xpm.uu && mv tomboy-32.xpm debian/tomboy/usr/share/pixmaps
+	mkdir -p debian/tomboy/usr/lib/tomboy/addins
+	cp debian/PrintNotes.dll.config debian/tomboy/usr/lib/tomboy/addins
 
 common-binary-predeb-arch::
 	dh_clifixperms

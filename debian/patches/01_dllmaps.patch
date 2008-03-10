@@ -1,0 +1,10 @@
+--- Tomboy/Tomboy.exe.config.in.old	2008-02-29 08:26:11.000000000 +0100
++++ Tomboy/Tomboy.exe.config.in	2008-02-29 08:26:18.000000000 +0100
+@@ -2,6 +2,6 @@
+   <dllmap dll="libglib-2.0-0.dll" target="libglib-2.0.so.0"/>
+   <dllmap dll="libgtk-win32-2.0-0.dll" target="libgtk-x11-2.0.so.0"/>	
+   <dllmap dll="libgtkspell" target="libgtkspell.so.0"/>
+-  <dllmap dll="libtomboy" target="libtomboy.so"/>
++  <dllmap dll="libtomboy" target="/usr/lib/tomboy/libtomboy.so"/>
+   <dllmap dll="panel-applet-2" target="libpanel-applet-2.so.0"/>
+ </configuration>

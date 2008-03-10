@@ -1,5 +1,32 @@
-tomboy (0.8.2-2) UNRELEASED; urgency=low
+tomboy (0.9.8-1) experimental; urgency=low
 
+  * New upstream release:
+    + debian/patches/02_link-libX11.patch,
+      debian/patches/99_autoreconf.patch:
+      - Dropped, not needed anymore.
+  * debian/rules,
+    debian/PrintNotes.dll.config:
+    + Install dll mappings for the Print Notes addin.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 04 Mar 2008 11:46:34 +0100
+
+tomboy (0.9.7-2) experimental; urgency=low
+
+  * Rebuild against gtk-sharp2 2.10.4-2 (Closes: #468906).
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 03 Mar 2008 05:06:13 +0100
+
+tomboy (0.9.7-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/control:
+      - Updated build dependencies.
+    + debian/patches/01_external-mono-addins.patch:
+      - Dropped, merged upstream.
+    + debian/watch:
+      - Updated for the new release series.
+    + debian/patches/01_dllmaps.patch:
+      - Fix dllmap to point to the correct path.
   * debian/rules,
     debian/patches/99_ltmain_as-needed.patch:
     + Link the native libraries with --as-needed to get fewer dependencies.
@@ -7,8 +34,12 @@ tomboy (0.8.2-2) UNRELEASED; urgency=low
     + Link libtomboy with libX11.
   * debian/patches/99_autoreconf.patch:
     + Regenerated for the above change.
+  * debian/control:
+    + Update Standards-Version to 3.7.3, no additional changes needed.
+    + Use Homepage field.
+    + Build depend on autotools-dev.
 
- -- Sebastian Dröge <slomo@debian.org>  Tue, 04 Dec 2007 15:03:16 +0100
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 29 Feb 2008 08:02:26 +0100
 
 tomboy (0.8.2-1) unstable; urgency=low
 
