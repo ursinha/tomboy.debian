@@ -1,3 +1,9 @@
+tomboy (0.10.2-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 20 May 2008 11:05:10 +0200
+
 tomboy (0.10.1-1) unstable; urgency=low
 
   * New upstream bugfix release.
