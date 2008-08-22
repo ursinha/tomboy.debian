@@ -1,3 +1,9 @@
+tomboy (0.11.3-1) experimental; urgency=low
+
+  * New upstream development release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 22 Aug 2008 10:15:20 +0200
+
 tomboy (0.11.1-1) experimental; urgency=low
 
   * New upstream development release:
