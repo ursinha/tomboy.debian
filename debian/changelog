@@ -1,6 +1,9 @@
 tomboy (0.12.1-1) experimental; urgency=low
 
   * New upstream stable release.
+  * debian/watch:
+    + Fix URL for the upstream taraball for the
+      new versions (Closes: #500284).
 
  -- Sebastian Dröge <slomo@debian.org>  Thu, 20 Nov 2008 13:11:00 +0100
 
