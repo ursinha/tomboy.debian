@@ -1,6 +1,8 @@
 tomboy (0.12.1-1) experimental; urgency=low
 
-  * New upstream stable release.
+  * New upstream stable release:
+    + debian/control:
+      - Add gnomeprint and gnomeprintui to build depends.
   * debian/watch:
     + Fix URL for the upstream taraball for the
       new versions (Closes: #500284).
