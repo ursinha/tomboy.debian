@@ -1,3 +1,15 @@
+tomboy (0.12.1-2) UNRELEASED; urgency=low
+
+  [ Pedro Fragoso ]
+  * Wrap Build-deps Deps and Suggests
+  * Don't install la files
+  * Update debian/copyright to reflect tomboykeybinder tomboyutil
+
+  [ Sebastian Dröge ]
+  * 
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 24 Nov 2008 12:53:03 +0100
+
 tomboy (0.12.1-1) experimental; urgency=low
 
   * New upstream stable release:

@@ -20,6 +20,8 @@ install/tomboy::
 	uudecode debian/tomboy-32.xpm.uu && mv tomboy-32.xpm debian/tomboy/usr/share/pixmaps
 	mkdir -p debian/tomboy/usr/lib/tomboy/addins
 	cp debian/PrintNotes.dll.config debian/tomboy/usr/lib/tomboy/addins
+	rm -rf debian/tomboy/usr/lib/tomboy/libprintnotes.la
+	rm -rf debian/tomboy/usr/lib/tomboy/libtomboy.la
 
 common-binary-predeb-arch::
 	dh_clifixperms
