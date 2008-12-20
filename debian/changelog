@@ -1,14 +1,28 @@
-tomboy (0.12.1-2) UNRELEASED; urgency=low
+tomboy (0.12.2-1) experimental; urgency=low
 
   [ Pedro Fragoso ]
   * Wrap Build-deps Deps and Suggests
   * Don't install la files
   * Update debian/copyright to reflect tomboykeybinder tomboyutil
 
-  [ Sebastian Dröge ]
-  * 
+  [ Iain Lane ]
+  * debian/rules, debian/control,
+    debian/patches/02_configurable_compiler.patch:
+    + Update for Mono 2.0 transition (Closes: #509056).
+    + Replace mono-gmcs build-dep with mono-devel to pull in csc
+    + Remove obsolote libmono-dev build-dep
+    + Pass GMCS=/usr/bin/csc to configure to use csc for the build
+    + Patch the build system to respect the passed compiler (Patch from James
+      Westby)
 
- -- Sebastian Dröge <slomo@debian.org>  Mon, 24 Nov 2008 12:53:03 +0100
+  [ Sebastian Dröge ]
+  * New upstream bugfix release.
+  * debian/patches/03_sm-name.patch:
+    + Register as "tomboy" to the session manager instead
+      of "Tomboy" (Closes: #508995). Thanks to Josselin Mouette
+      for the patch idea.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 20 Dec 2008 12:58:35 +0100
 
 tomboy (0.12.1-1) experimental; urgency=low
 

@@ -1,0 +1,261 @@
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Makefile.include tomboy-0.12.0.new/Makefile.include
+--- tomboy-0.12.0/Makefile.include	2008-09-22 13:11:22.000000000 +0100
++++ tomboy-0.12.0.new/Makefile.include	2008-12-01 00:48:36.000000000 +0000
+@@ -23,7 +23,7 @@
+ ## Build
+ 
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ 
+ ## Runtime
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Mono.Addins/Mono.Addins/Makefile.in tomboy-0.12.0.new/Mono.Addins/Mono.Addins/Makefile.in
+--- tomboy-0.12.0/Mono.Addins/Mono.Addins/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Mono.Addins/Mono.Addins/Makefile.in	2008-12-01 00:49:52.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Mono.Addins/Mono.Addins.Gui/Makefile.in tomboy-0.12.0.new/Mono.Addins/Mono.Addins.Gui/Makefile.in
+--- tomboy-0.12.0/Mono.Addins/Mono.Addins.Gui/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Mono.Addins/Mono.Addins.Gui/Makefile.in	2008-12-01 00:49:46.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Mono.Addins/Mono.Addins.Setup/Makefile.in tomboy-0.12.0.new/Mono.Addins/Mono.Addins.Setup/Makefile.in
+--- tomboy-0.12.0/Mono.Addins/Mono.Addins.Setup/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Mono.Addins/Mono.Addins.Setup/Makefile.in	2008-12-01 00:49:01.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/test/Makefile.am tomboy-0.12.0.new/test/Makefile.am
+--- tomboy-0.12.0/test/Makefile.am	2008-09-22 13:11:13.000000000 +0100
++++ tomboy-0.12.0.new/test/Makefile.am	2008-12-01 00:51:23.000000000 +0000
+@@ -1,4 +1,4 @@
+-CSC = gmcs
++CSC = $(GMCS)
+ 
+ TARGET = TomboyTest.dll
+ 
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/test/Makefile.in tomboy-0.12.0.new/test/Makefile.in
+--- tomboy-0.12.0/test/Makefile.in	2008-09-22 13:11:46.000000000 +0100
++++ tomboy-0.12.0.new/test/Makefile.in	2008-12-01 00:50:00.000000000 +0000
+@@ -230,7 +230,7 @@
+ target_alias = @target_alias@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+-CSC = gmcs
++CSC = $(GMCS)
+ TARGET = TomboyTest.dll
+ CSFLAGS = \
+ 	-debug				\
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/Backlinks/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/Backlinks/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/Backlinks/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/Backlinks/Makefile.in	2008-12-01 00:50:03.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/Bugzilla/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/Bugzilla/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/Bugzilla/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/Bugzilla/Makefile.in	2008-12-01 00:50:08.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/Evolution/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/Evolution/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/Evolution/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/Evolution/Makefile.in	2008-12-01 00:50:10.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/ExportToHtml/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/ExportToHtml/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/ExportToHtml/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/ExportToHtml/Makefile.in	2008-12-01 00:50:13.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/FileSystemSyncService/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/FileSystemSyncService/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/FileSystemSyncService/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/FileSystemSyncService/Makefile.in	2008-12-01 00:50:16.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/FixedWidth/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/FixedWidth/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/FixedWidth/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/FixedWidth/Makefile.in	2008-12-01 00:50:19.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/GalagoPresence/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/GalagoPresence/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/GalagoPresence/Makefile.in	2008-09-22 13:11:44.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/GalagoPresence/Makefile.in	2008-12-01 00:50:23.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/InsertTimestamp/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/InsertTimestamp/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/InsertTimestamp/Makefile.in	2008-09-22 13:11:45.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/InsertTimestamp/Makefile.in	2008-12-01 00:50:26.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/NoteOfTheDay/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/NoteOfTheDay/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/NoteOfTheDay/Makefile.in	2008-09-22 13:11:45.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/NoteOfTheDay/Makefile.in	2008-12-01 00:50:32.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/PrintNotes/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/PrintNotes/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/PrintNotes/Makefile.in	2008-09-22 13:11:45.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/PrintNotes/Makefile.in	2008-12-01 00:50:35.000000000 +0000
+@@ -279,7 +279,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/Sketching/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/Sketching/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/Sketching/Makefile.in	2008-09-22 13:11:45.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/Sketching/Makefile.in	2008-12-01 00:50:39.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/SshSyncService/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/SshSyncService/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/SshSyncService/Makefile.in	2008-09-22 13:11:45.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/SshSyncService/Makefile.in	2008-12-01 00:50:41.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/StickyNoteImport/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/StickyNoteImport/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/StickyNoteImport/Makefile.in	2008-09-22 13:11:45.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/StickyNoteImport/Makefile.in	2008-12-01 00:50:44.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/Tasque/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/Tasque/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/Tasque/Makefile.in	2008-09-22 13:11:45.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/Tasque/Makefile.in	2008-12-01 00:50:46.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Addins/WebDavSyncService/Makefile.in tomboy-0.12.0.new/Tomboy/Addins/WebDavSyncService/Makefile.in
+--- tomboy-0.12.0/Tomboy/Addins/WebDavSyncService/Makefile.in	2008-09-22 13:11:45.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Addins/WebDavSyncService/Makefile.in	2008-12-01 00:50:50.000000000 +0000
+@@ -254,7 +254,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)
+diff -Nur -x '*.orig' -x '*~' tomboy-0.12.0/Tomboy/Makefile.in tomboy-0.12.0.new/Tomboy/Makefile.in
+--- tomboy-0.12.0/Tomboy/Makefile.in	2008-09-22 13:11:45.000000000 +0100
++++ tomboy-0.12.0.new/Tomboy/Makefile.in	2008-12-01 00:50:55.000000000 +0000
+@@ -269,7 +269,7 @@
+ 
+ @EXTERNAL_MONO_ADDINS_TRUE@LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+ CSC_FLAGS = -debug
+-CSC = gmcs $(CSC_FLAGS) -target:exe
++CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+ CSC_LIB = $(CSC) -target:library
+ MONO_DEBUGFLAGS = --debug
+ RUNTIME = mono $(MONO_DEBUGFLAGS)

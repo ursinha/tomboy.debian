@@ -1,0 +1,11 @@
+--- Tomboy/Utils.cs.old	2008-12-20 12:57:14.000000000 +0100
++++ Tomboy/Utils.cs	2008-12-20 12:58:10.000000000 +0100
+@@ -881,7 +881,7 @@
+ 			} catch {} // Ignore exception if fail (not needed to run)
+ 
+ 			Gtk.Application.Init ();
+-			program = new Gnome.Program ("Tomboy",
++			program = new Gnome.Program ("tomboy",
+ 			                             Defines.VERSION,
+ 			                             Gnome.Modules.UI,
+ 			                             args);
