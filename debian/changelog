@@ -1,3 +1,10 @@
+tomboy (0.12.2-2) experimental; urgency=low
+
+  * debian/control:
+    + Build against Gnome# 2.24 and GnomeDesktop# 2.24.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 24 Jan 2009 20:53:58 +0100
+
 tomboy (0.12.2-1) experimental; urgency=low
 
   [ Pedro Fragoso ]
