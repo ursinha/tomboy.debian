@@ -1,3 +1,10 @@
+tomboy (0.12.2-3) UNRELEASED; urgency=low
+
+  * debian/control:
+    + Add Vcs-* fields
+
+ -- Jo Shields <directhex@apebox.org>  Tue, 03 Mar 2009 11:34:33 +0000
+
 tomboy (0.12.2-2) experimental; urgency=low
 
   * debian/control:
