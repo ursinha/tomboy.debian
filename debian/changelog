@@ -1,9 +1,15 @@
-tomboy (0.12.2-3) UNRELEASED; urgency=low
+tomboy (0.12.2-3) unstable; urgency=low
 
+  [ Jo Shields ]
   * debian/control:
     + Add Vcs-* fields
 
- -- Jo Shields <directhex@apebox.org>  Tue, 03 Mar 2009 11:34:33 +0000
+  [ Sebastian Dröge ]
+  * Upload to unstable (Closes: #518414).
+  * debian/control:
+    + Use Gnome# 2.20 for now.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 06 Mar 2009 11:02:03 +0100
 
 tomboy (0.12.2-2) experimental; urgency=low
 
