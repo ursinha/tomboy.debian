@@ -1,3 +1,10 @@
+tomboy (0.12.2-4) unstable; urgency=low
+
+  * debian/control:
+    + Build depend on libgmime2.2a-cil.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 21 Mar 2009 11:24:05 +0100
+
 tomboy (0.12.2-3) unstable; urgency=low
 
   [ Jo Shields ]
