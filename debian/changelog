@@ -1,7 +1,12 @@
-tomboy (0.12.2-5) UNRELEASED; urgency=low
+tomboy (0.12.2-5) unstable; urgency=low
 
-  * Update libgnome-cil build-dependency for gnome-sharp transition
+  [ Stefan Ebner ]
+  * Update libgnome-cil build-dependency for GNOME# 2.24 transition
   * Bump Standards version to 3.8.1
+
+  [ Mirco Bauer ]
+  * debian/control:
+    + Added libgnomepanel2.24-cil to build-deps.
 
  -- Stefan Ebner <sebner@ubuntu.com>  Sun, 22 Mar 2009 14:54:14 +0100
 
