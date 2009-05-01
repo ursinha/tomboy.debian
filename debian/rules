@@ -6,6 +6,12 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/rules/simple-patchsys.mk
 include /usr/share/cdbs/1/class/gnome.mk
 
+MAKEFILE = $(firstword $(MAKEFILE_LIST))
+DEBIAN_DIR = $(dir $(MAKEFILE))
+DEB_SOURCE_NAME = $(shell dpkg-parsechangelog -l$(DEBIAN_DIR)/changelog | grep ^Source | cut -d" " -f2)
+DEB_VERSION = $(shell dpkg-parsechangelog -l$(DEBIAN_DIR)/changelog | grep ^Version | cut -d" " -f2)   
+VERSION = $(shell echo $(DEB_VERSION) | cut -d"-" -f1 | sed 's/+dfsg.*//')
+
 LDFLAGS+=-Wl,-z,defs -Wl,-O1 -Wl,--as-needed
 DEB_CONFIGURE_EXTRA_FLAGS := --disable-scrollkeeper
 DEB_INSTALL_DOCS_ALL := README NEWS
@@ -30,3 +36,13 @@ common-binary-predeb-arch::
 clean::
 	rm -rf $(MONO_SHARED_DIR)/.wapi
 
+get-orig-source:
+	uscan \
+		--package $(DEB_SOURCE_NAME) \
+		--watchfile $(DEBIAN_DIR)/watch \
+		--upstream-version $(VERSION) \
+		--download-version $(VERSION) \
+		--destdir . \
+		--force-download \
+		--rename \
+		--repack

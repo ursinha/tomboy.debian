@@ -1,3 +1,18 @@
+tomboy (0.14.1-1) UNRELEASED; urgency=low
+
+  * New upstream release
+  * debian/rules:
+    + Add get-orig-source rule
+  * debian/watch:
+    + Do not run "uupdate" as it does not permit preparing Debian
+      revision on Ubuntu
+  * debian/patches/02_configurable_compiler.patch:
+    + Deleted, merged upstream
+  * debian/patches/03_03_sm-name.patch:
+    + Deleted, no longer relevant
+
+ -- Jo Shields <directhex@apebox.org>  Fri, 01 May 2009 15:19:59 +0100
+
 tomboy (0.12.2-5) unstable; urgency=low
 
   [ Stefan Ebner ]
