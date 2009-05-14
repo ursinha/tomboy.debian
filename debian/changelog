@@ -1,4 +1,4 @@
-tomboy (0.14.2-1) unstable; urgency=low
+tomboy (0.14.2-1) UNRELEASED; urgency=low
 
   [ Jo Shields ]
   * New upstream release
@@ -13,13 +13,9 @@ tomboy (0.14.2-1) unstable; urgency=low
     + Deleted, no longer relevant
 
   [ Sebastian Dröge ]
-  * New upstream release:
-    + debian/control:
-      - Update build dependencies.
   * debian/control:
-    + Change maintainer to pkg-cli-appsNew upstream release.
-    * debian/control:
-      + Change maintainer to pkg-cli-apps..
+    + Update build dependencies.
+    + Change maintainer to pkg-cli-apps.
 
  -- Sebastian Dröge <slomo@debian.org>  Thu, 14 May 2009 08:23:41 +0200
 
