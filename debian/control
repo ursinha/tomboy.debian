@@ -1,7 +1,8 @@
 Source: tomboy
 Section: gnome
 Priority: optional
-Maintainer: Sebastian Dröge <slomo@debian.org>
+Maintainer: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Uploaders: Sebastian Dröge <slomo@debian.org>
 Build-Depends: cdbs, 
                debhelper (>= 5),
                autotools-dev,
@@ -13,8 +14,6 @@ Build-Depends: cdbs,
                libgtkspell-dev (>= 2.0.9),
                intltool,     
                libpanel-applet2-dev,
-               libgnomeprint2.2-dev,
-               libgnomeprintui2.2-dev,
                cli-common-dev (>= 0.4.4),
                sharutils,
                libgtk2.0-dev (>= 2.10.0),
@@ -25,8 +24,8 @@ Build-Depends: cdbs,
                libmono-cairo2.0-cil,
                libndesk-dbus1.0-cil (>= 0.4),
                libndesk-dbus-glib1.0-cil (>= 0.3),
-               libmono-addins0.2-cil (>= 0.2-4),
-               libmono-addins-gui0.2-cil (>= 0.2-4)
+               libmono-addins0.2-cil (>= 0.3),
+               libmono-addins-gui0.2-cil (>= 0.3)
 Standards-Version: 3.8.1
 Homepage: http://www.gnome.org/projects/tomboy/
 Vcs-Svn: svn://svn.debian.org/svn/pkg-cli-apps/packages/tomboy/trunk

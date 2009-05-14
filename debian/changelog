@@ -1,5 +1,6 @@
-tomboy (0.14.1-1) UNRELEASED; urgency=low
+tomboy (0.14.2-1) unstable; urgency=low
 
+  [ Jo Shields ]
   * New upstream release
   * debian/rules:
     + Add get-orig-source rule
@@ -11,7 +12,16 @@ tomboy (0.14.1-1) UNRELEASED; urgency=low
   * debian/patches/03_03_sm-name.patch:
     + Deleted, no longer relevant
 
- -- Jo Shields <directhex@apebox.org>  Fri, 01 May 2009 15:19:59 +0100
+  [ Sebastian Dröge ]
+  * New upstream release:
+    + debian/control:
+      - Update build dependencies.
+  * debian/control:
+    + Change maintainer to pkg-cli-appsNew upstream release.
+    * debian/control:
+      + Change maintainer to pkg-cli-apps..
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 14 May 2009 08:23:41 +0200
 
 tomboy (0.12.2-5) unstable; urgency=low
 
