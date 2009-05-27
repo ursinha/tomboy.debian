@@ -1,0 +1,494 @@
+
+Tomboy NEWS
+
+Copyright (C) 2004-2008 Alex Graveley <alex@beatniksoftware.com>
+
+Please send questions and suggestions to
+<tomboy-list@lists.beatniksoftware.com>.
+
+Please report bugs using http://bugzilla.gnome.org/
+(http://bugzilla.gnome.org/enter_bug.cgi?product=Tomboy).
+
+Version 0.14.2
+* Improve startup time by only rebuilding add-in registry when passing --debug.
+* Fix random startup crash caused by using GConf before GTK+ was initialized.
+* Fix over-zealous URL matching (#436994).
+* Support FUSE being built-in to kernel (#500524).
+* Prevent crashes when reading unexpected note XML (#581844).
+* Change "Open New Note Template" LinkButton to Button to prevent error (#581582).
+* Upgrade Windows to Mono.Addins 0.4 (no more console window) (#572088).
+* Support console logging on Windows (Benjamin Podszun).
+* Documentation text now cross-platform (#576487, #500803, Paul Cutler).
+* Translation updates: ca, el, es, et
+
+Version 0.14.1
+* Translation updates: ar, ca, el, es, he, kn, nb, tr
+
+Version 0.14.0
+* Fix buggy behavior with Tomboy icon menus in Windows (#556406, #566173).
+
+Version 0.13.6
+* Fixes to linking (#436994,#573317,#525753, Stefan Schweizer & Benjamin Podszun)
+* Add printing support to Mac OS X version.
+* Localization fixes: #572096, #570121 (Benjamin Podszun and Wouter Bolsterlee)
+* Translation updates: be@latin, bg, da, de, en_GB, es, et, eu, fi, fr, hu, it,
+                       ja, ko, nb, nl, pl, pt, ro, sv, ta, th, zh_HK, zh_TW
+
+Version 0.13.5
+* Additional updates to note printing (#512369, #572024, Benjamin Podszun).
+* Windows installer now requires Novell's GTK# >= 2.12.8 (#569324).
+* Increase/Decrease Indent shortcuts now appear in menu (#570334, Benjamin Podszun).
+* No longer writes to disk every 40 seconds (#514434).
+* Fixes to note linking (#323845, Florian Pinault).
+* Add GConf preference for auto-accepting SSL Certs in WebDAV sync (#531364).
+* After succcessfully configuring sync, offer to perform first sync (#553079).
+* Other fixes: #570917, #570918.
+* Translation updates: bg, cs, da, es, eu, hu, nl, pl, pt, ro, sv, th, vi,
+                       zh_HK, zh_TW
+
+Version 0.13.4
+* Removed bundled Mono.Addins. Mono.Addins is now a hard dependency.
+* Update printing to use Gtk.Print (#512369, Benjamin Podszun). Still buggy.
+* Fix multi-page printing of exported note HTML (#548198,
+  Leonardo Ferreira Fontenelle and Stefan Schweizer)
+* Fix crash when clicking link and browser not set (#569639).
+* 64-bit Windows support (#558272, Jay R. Wren).
+* Search window position saved on Windows/Mac (#559663).
+* Fix lingering tray icon in Windows (#569709, Benjamin Podszun).
+* Fix bug with font settings (#559724, Benjamin Podszun).
+* Mac MonoDevelop solution now easier to build (Doug Johnston et al).
+* Other fixes: #562846 (James Westby)
+* Translation updates: ca, es, fi, ko, lt, lv, nb
+
+Version 0.13.3
+* Rename Mono process to "tomboy" instead of "Tomboy" (#565166).
+* Cut down memory usage by 25% (#565790). Also improves startup times a bit.
+* Fix panel applet icon background transparency (#567308).
+* Improvements in translatable strings (#566711, #565208).
+* Fix crash associated with notes with '&' or '<' in their title (#566967).
+* Translation updates: es, fr, lv, nb, pt_BR, sk, sv
+
+Version 0.13.2
+* Fix Windows<->Linux sync incompatiblities (#559094).
+* Fix data loss bug in sync and SetNoteCompleteXml dbus method.
+* Link fixes in HTML Export (#564150, Stefan Schweizer).
+* Header cleanups in libtomboy (#564235, Przemysław Grzegorczyk).
+* Translation updates: it
+
+Version 0.13.1
+* Configure/build fixes.
+* Help menu item opens online help on Windows and Mac.
+
+Version 0.13.0 (Windows/Mac-only "preview" release)
+* Initial support for Windows and Mac OS X.
+
+Version 0.12.0
+* Reverted to 0.10.x-era printing add-in, as the new one is not ready yet.
+* Many fixes to note synchronization (#535279).
+* Fixes to internal Gnome.Keyring code (#499841, Alexey Nedilko).
+* Remove extraneous note saves when using dbus interface (#543593, John Carr).
+* Relicensed tomboykeybinder and tomboyutil to MIT/X11.
+* Translation updates: ar, bg, bn_IN, ca, cs, da, de, en_GB, es, et, eu, fi, fr,
+                       gl, gu, he, hi, hu, it, ja, kn, ko, lt, mai, mk, mr, nb,
+                       nl, oc, pa, pl, pt, pt_BR, ru, sk, sl, sr, sr@latin,
+                       sr@Latn, sv, ta, th, tr, vi, zh_CN, zh_HK, zh_TW
+
+Vesion 0.11.3
+* Fix to build with gnome-sharp 2.23.90 (#548836).
+
+Version 0.11.2
+* Fix to build with gtk-sharp 2.10 (#547900).
+* Partial fix for spell-checking/fixed-width issues (#530856, Stefan Schweizer).
+* Fixes to HTML Export add-in linking (#546623, Stefan Schweizer).
+* Fix makefiles to support parallel building (#547506).
+* Various crasher fixes.
+* Translation updates: ar, et, fi, gu, nb, pt, pt_BR, sv, th
+
+Version 0.11.1
+* New tray icon code using GtkStatusIcon (kill libegg, #349265, Stefan Cosma).
+* Fix crashers: #544406, #460642, #544996, #523035
+* Fix bugzilla addin to accept bug IDs of one or more digits (#533024).
+* Fix behavior when start note is recreated (#508982, Jon Lund Steffensen)
+* Include .mdb files during install. Enable --debug, --trace, and --profile.
+* Translation updates: ar, bg, ca, de, es, et, fr, gl, he, nb, nl, oc, pt_BR,
+                       sk, sv, th, vi, zh_CN
+
+Version 0.11.0
+* Update printing to use Gtk.Print (#512369, John Anderson).  Formatting and
+  styles not supported yet, patches welcome.
+* Bump gtk-sharp dependency to 2.10.
+* New Tasque addin, disabled by default.
+* Add "New notebook..." menu item to Notebook toolbar button (#532196).
+* Increase default max width of note menu to 100 characters.
+* Fix check for Mono.Addins >= 0.3 (#521616, Łukasz Jernaś).
+* Move to managed code for calculating color contrasts (Sebastian Dröge).
+* Fix shebang lines in bash scripts (#521160, Romain Tartiere).
+* Show text lables on toolbar buttons (#528844).
+* Don't show sync password in log and console output (#524707).
+
+Version 0.10.0
+* Updated documentation to cover new features in 0.10.0 (#520513, Paul Cutler).
+* Translation updates: en_GB, ru, hi, de, ta, eu, pt_BR, oc, zh_HK, zh_TW, es,
+                       el, pl, uk, he, da, hu
+
+Version 0.9.8
+* Fix crash due to old version of an addin being loaded (#514931).
+* Fix crash when DnD evo and bugzilla links (#486551, Stefan Cosma).
+* Fix evolution link to be escaped properly (#367623, Stefan Cosma).
+* Fix drag and drop same bugzilla link to a note multiple times (#519876).
+* Fix initial note sorting (#519042).
+* Fix synchronizing notebooks without having to restart Tomboy (#518870). 
+* Fix so '-'/'*' with leading spaces -> bulleted line (#490161, Stefan Cosma).
+* Fix libtomboy compile/link issues (#519237 and #501524). 
+* Fix icon packaging and usage in add-ins (#518740).
+* Fix out-of-date bundled Mono.Addins to be version 0.3 (#519170).
+* Translation updates: ar, es, et, fr, gl, it, ja, lt
+
+Version 0.9.7
+* Fix multi note drag and drop into a notebook (#513046).
+* Fix remembering size/position of search window (#518316).
+* Fix title column in search window for long titled notes (#518666).
+* Fix long note titles in main menu to prevent wide menu (#417145).
+* Fix to allow ampersand (&) in a notebook name (#510003).
+* Fix scroll to end of large paste (#441296).
+* Fix infinite loop with panel size <= 16 pixels (#503226).
+* Fix links from DnD files/folders with spaces (#303902).
+* Fix line of dashes (-----) from being interpreted as bulleted list (#490161).
+* Fix infinite loop when exporting circularly linked notes to HTML (#422951).
+* Fix to remove bundled ndesk-dbus since it's now included in GNOME (#509187).
+* Fix to prevent notebook assignment from modifying last change date (#508798).
+* Fix support of new GConf Property Editors (#512512).
+* Fix deleted notes from being recreated (#507493).
+* Other bugfixes: #496986, #503165, #507249, #507382, #510442, #514284, #518294
+* Translation updates: be@latin, ca, de, fi, kn, ko, mk, nl, pl, pt, vi  
+
+Version 0.9.6
+* Fix icon sizes and install locations (#507239).
+* Translation updates: ar, as, cs, de, es, et, oc, pl, pt_BR, sk, th
+
+Version 0.9.5
+* Fix duplicate notebooks in menu (#509989).
+* Fix DBus close note interface (#511460, Mike Mazur).
+* Fix case-sensitivity option in find bar (#428884, Nathaniel Smith).
+* Fix some of the icons used for notebooks (#507239, kalle nemus se).
+* Remove old dependency on libdbus and libdbus-glib (JP Rosevear).
+
+Version 0.9.4
+* Fix crash during note deletion (#508110).
+* Fix null reference exception (#508064).
+* Fix mnemonics in sync preferences dialog (#501600, Alex Kloss).
+* Fix fuse mount timeout for sync (#480736).
+* New port option for SSH sync (#488117).
+* New multi-select notes support in Search All Notes window (#508307).
+* New config dialog for Insert Timestamp Add-in (#359168, Stefan Schweizer).
+* New gconf preference, middle-click paste on Tomboy icon (#359167).
+* New gconf preference, disable ESC closing notes (#444912, Stefan Schweizer).
+* New paragraph within a bullet with SHIFT + ENTER.
+* New bug numbers as links in Export to HTML (Stefan Schweizer).
+* New notebook notes can be created off notebook's context menu.
+* New sketching add-in (still incomplete, --enable-sketching, Jeff Tickle).
+* New "Unfiled Notes" item to notebook list (#507946).
+* New drag note to "Unfiled Notes" to remove from notebook (#508311).
+* Translation updates: ar, ca, es, eu, it, ko, nb, sk
+
+Version 0.9.3
+* Fix TrayIcon menu items and ordering (#507798).
+* Removed tagging UI (superceded by Notebooks).
+* Removed deprecated Gtk.Toolbar calls usage in note window.
+* Removed Tasks add-in from packaging (see release notes).
+* Restored the "Find" bar to the bottom of the note window.
+* New Notebooks feature for note categorization.
+* New note templates for new note content customization.
+* New extension point for adding preference dialog tabs.
+* New extension point for adding tool items into note window toolbar.
+* Translation updates: be@latin, es, ne, nb, oc, pl, pt_BR, sv, vi
+
+Version 0.9.2
+* Fix bugzilla add-in to allow query string (#500926).
+* Fix for host-specific bugzilla icon for bugzilla addin-in (#429413).
+* Added SearchNotes DBus method.
+* Added "system" tags that are not displayed to the user in the UI.
+* Added preference to disable automatic bulleted list (John Anderson).
+* Re-enabled basic tagging interface (still needs work).
+* Improve task list window editing for tasks addin (Dave Foster).
+* Added more feedback for non-existent tools needed by sync.
+
+Version 0.9.1
+* Fix security vulnerability in startup scripts (#485224, Robert Buchholz).
+* Fix text colors for varying contrasts (#489559, Gabriel de Perthuis).
+* Fix multiple "note title taken" dialogs (#177857).
+
+Version 0.9.0
+* Fix ShiftMask with Delete key (#437684, Laurent Bedubourg).
+* Fix to allow linking to external Mono.Addins (#478887, Sebastian Dröge).
+* Fix highlighting offset problems (#392907, Jeff Tickle).
+* Fix to find system tools for synchronizing (#484644, #479748).
+* Fix crashing with curly braces in the note title (#487702, John Carr).
+* Allow widgets to be inserted easily in TextView (#484537, Jeff Tickle).
+* Highlight note content at note creation (rolled-back #449478).
+* New Insert Timestamp Addin (#359168, Stefan Schweizer).
+* Re-enabled the tasks addin (prototype code still).
+
+Version 0.8.0
+* Fix sticky note import crash (#475516).
+* Help documentation updated to reflect new features in this release.
+
+Version 0.7.8
+* Fix internal dbus-sharp for distros that don't include dbus-sharp (#475622).
+
+Version 0.7.7
+* Fix spacing issues in Sync Dialog (#473354, Jerome Haltom).
+* Fix minor sync issues.
+
+Version 0.7.6
+* Fix sync UI crash (#470620).
+* Fix addins directory reference (#472670, Robin Sonefors).
+* Fix HTML export CSS format (#463957, Tommi Asiala).
+* Fix LGPL/GPL license problem in print code (#459697).
+* Fix bonobo deprecation warning (#393249).
+* Added better sync exception handling.
+* Other bugfixes: #471260
+
+Version 0.7.5
+* Expose note save/add/delete events over DBus (#465639, John Carr).
+* Improved sync error reporting.
+* Various sync stability fixes.
+
+Version 0.7.4
+* Improved sync configuration and other UIs (#462421, #461972, and more).
+* Support shift+delete to perform a "cut" operation (#437684, Andrew Fister).
+* OpenSUSE build fix (Michael Wolf).
+* Other bugfixes: #462893, #321037.
+
+Version 0.7.3
+* New note synchronization feature (#321037).
+* DBus enhancements to access complete note XML and tagging information.
+* Disabled the Tasks Addin (will reintroduce for Tomboy 0.10).
+* Disabled Tagging UI (not ready for stable release, will reintroduce in 0.10).
+
+Version 0.7.2
+* New Tasks addin (experimental, subject to change).
+* Integrated Mono.Addins support with several new extension points.
+* Migrated all note plugins to be note addins.
+* New MonoDevelop-inspired addin preferences tab.
+* New ApplicationAddin type.
+* New DBus method SetNoteContentsCompleteXml, for loading a foreign note file.
+* --open-note command line option now accepts a note file path as an argument.
+* Fix SetNoteContentsXml DBus method to apply formatting (#440562, John Carr).
+* Fix to select title when creating new notes (#449478, Yonatan Oren).
+* Fix opening notes with keyboard in bulleted list (#433244, Stefan Schweizer).
+* Update HTML export link/title colors (#449597, Stefan Schweizer).
+
+Version 0.7.1
+* Added LINGUAS support (#409940, Everaldo Canuto).
+* Reopen opened notes at startup (#305118, Stefan Schweizer).
+* Fix to create images dir for bugzilla plugin (#430599, Frederic Crozat).
+* Fix to unpin notes when they are deleted (#425619, Stefan Schweizer).
+* Fix to use GNOME Document Font by default (#409939, Andrew Fister).
+* Other bugfixes: #432843, #432844, #438145.
+
+Version 0.7.0
+* New note tagging (UI very subject to comments/change).
+* Keep static main menu items close to the panel icon (#431839).
+* Note of the Day template accessible via plugin settings.
+* MonoDevelop (0.13) support (Tomboy.mds added to project).
+* Added --with-dbus-service-dir=DIR option to configure script.
+* Fix disappearing pinned notes (#417590).
+* Fix to use colors from the tango palette (#411909, Wouter Bolsterlee).
+* Fix to use create/modify date as specified in the note xml file.
+* Fix to remove "Open Plugins Folder" from various places (#414326).
+* Fix to use proper category in tomboy.desktop (#417364).
+* Fix to prevent DefaultPlugins.desktop from being installed (#418567).
+* Fix to always include dbus-sharp source files in the tarball (#427933).
+
+Version 0.6.0
+* Fix to prevent crash when clicking on the plugin Settings button (#414933).
+* Fix out of sync exception when adding new plugins at runtime (#414957).
+* Fix highlighting various sized text and changing font size (#412404).
+* Fix to respect Emacs Ctrl-W and Ctrl-N keybindings (#412402).
+* Fix opening "Using Links in Tomboy" note problem (#413234).
+* Fix to ensure the "start notes" are always created (#413230).
+* Change included plugins to use "Tomboy Project" as the author.
+
+Version 0.5.9
+* This is a bugfix-only release...
+* Fix crash when dragging email with blank subject from Evolution (#408859).
+* Fix link uris when drag & drop from nautilus with multiple files (#412355).
+* Fix drag & drop behavior to insert dropped uris at mouse location (#330964).
+* Fix to only show sticky note importer if external sticky notes exist (#404739).
+* Fix to open search dialog in foreground (#411924, Wouter Bolsterlee).
+* Use default GNOME font settings by default (#358974, Wouter Bolsterlee).
+* Remove author names from official Tomboy plugins (#410314).
+* Update minimum requirements: gtk/gdk 2.6.0, gtk-sharp 2.6.0 (#412130).
+* Install DBus service file to --prefix when not auto detected.
+* Disable NoteOfTheDayPlugin by default.
+
+Version 0.5.8
+* This is a bugfix-only release...
+* Fix DBus registration (#406224, Sebastian Dröge).
+* Fix configure to work with --enable-dbus=no (#405577).
+* Fix undo/redo actions for multi-byte characters (#407205).
+
+Version 0.5.7
+* This is a bugfix-only release...
+* Fix bullet support for RTL languages (#405603).
+* Fix DBus session restart crash (#404738).
+* Fix linking against installed ndesk-dbus (#405577, Sebastian Dröge).
+
+Version 0.5.6
+* This is a bugfix-only release...
+* Fix multi-line indent in bulleted lists (#402338).
+* Fix panel icon sizing (#354416, #403500).
+* Fix search window timestamp when notes are changed (#378400).
+* Fix problem of formatting being applied to bullet chars (#403026).
+* Fix crashes opening help and preferences dialog from menu (#403290).
+* Fix to prevent note title from being bulleted (#403408).
+* Fix non-translatable strings in plugins (Mathias Hasselmann, #387579).
+* Fix NoteOfTheDay title rename from "NotD" to "Today".
+* And others (#356448, #403033, #403745)
+
+Version 0.5.5
+* This is a bugfix-only release...
+* Fix bulleted serialization/tomboy crashes (#395100, #402075, Chris Scobell).
+* Fix crash when backspacing over an Evolution link (#349183, Stefan Schweizer).
+* Fix crash when opening help from panel applet (#399490).
+* And others (#399446, #399442).
+
+Version 0.5.4
+* This is a bugfix-only release...
+* Fix bullet serialization (#319221).
+* Fix NoteOfTheDay plugin from creating too many notes (#382190).
+* Fix "Start Here" note keybinding if note is renamed (#315222).
+* Fix Evolution Plugin to use Evolution exchange account (#397390).
+* Fix corrupted text when typing with search open (#397223).
+* And others (#394501, #383765, #397700, #397717, #350707).
+
+Version 0.5.3
+* New DBus methods for better Conduit integration (John Stowers).
+* New HTML export feature to export all recursively linked notes.
+* Improved "Start Here" instructions for new Tomboy users.
+* Many bugfixes.
+
+Version 0.5.2
+* New bulleted list support (Chris Scobell).
+* New configurable plugin interface (Mathias Hasselmann).
+* New Backlinks Plugin.
+* New extensible UI via Gtk.UIManager.
+* Improved behavior running without notification area.
+* DBus service name now "org.gnome.Tomboy".
+
+Version 0.5.1
+* New Managed D-Bus/DBusSharp (Sebastian Dröge).
+* Additional search interface improvements.
+* More secure wrapper script to launch Tomboy.exe.
+* Fix panel and TrayIcon resizing.
+* Fix 1x1 pixel TrayIcon.
+* Removed old tintin image.
+
+Version 0.5.0
+* New note pinning in main menu.
+* New integrated table of contents and search.
+* New find bar for searching inside a single note.
+* New Bugzilla plugin (David Trowbridge).
+* New Tomboy icons (Jakub Steiner).
+* Timestamped logging to ~/.tomboy.log.
+* Export to HTML now uses Gtk.FileChooserDialog.
+* Number of notes in main menu configurable in GConf.
+* Removed old gtk-sharp dependency, uses gtk-sharp2 now.
+
+Version 0.4.0
+* Support building with Gtk# 2.
+* New Sticky Notes import plugin (Sanford Armstrong).
+* Note loading code cleanups (Sebastian Rittau).
+* Use Tango icons by default.
+* Allow icon theming.
+* Support TOMBOY_PATH environment variable.
+* Remove dbus-sharp dependency, require dbus 0.90.
+* Fix recursive HTML note export infinite loop.
+* Fix Preferences dialog modality.
+* Locale-friendly dates on printed note footer.
+* Update Galago plugin for 0.5 API.
+* Install Gnome URL handler for note://.
+* Improve ToC load time.
+
+Version 0.3.5
+* Fix packaging of Galago and Evolution plugin source.
+* Handle bad URI format for Evolution accounts.
+
+Version 0.3.4
+* Support building under latest Mono.
+* New Galago/Gaim presence plugin.
+* New Evolution mail plugin.
+* New Note of the Day plugin (not installed).
+* New Fixed Width text plugin (not installed).
+* Handle middle-click paste to tray icon.
+* Add plugin API for adding to the Text menu.
+* Always show opened notes in the tray menu.
+* Auto-detect panel applet install path.
+* Fix inserting newline in note title line.
+* Fix multi-line link creation.
+
+Version 0.3.3
+* Support building under Mono 1.1.8.
+* New HTML export plugin.
+* New plugin menu in toolbar.
+* Rewritten print plugin, based on GEdit codebase.
+* Support user and system plugin directories.
+* Add keybinding to close all open notes (Ctrl-Q).
+* Fix opening multiple browsers on URL click.
+* Support global keys with scroll/num/caps lock.
+* Avoid whitespace-only note titles.
+* Correctly namespace note XML content.
+
+Version 0.3.2
+* Support building under Mono 1.1.x.
+* Support GTK+ toolbar preference.
+* Support transparant panels.
+* Print tabs correctly in the PrintNotes plugin.
+* Fix crash when setting global keybindings preferences.
+* Fix various D-BUS crashes (patch from Joe Shaw).
+* Fix URL dropping for newer GTK+ versions.
+* Work around anti-focus avoidance code in Gnome 2.10.
+* Move already opened notes to the current workspace.
+* Work around GTK# binary incompatibility.
+* Support building under Mono 1.1.x.
+* Desensitize the Link button when no text is selected.
+* Default to using tray-icon mode, for easy shell execution.
+* Include tomboy-plugins.pc for plugin authors.
+
+Version 0.3.1
+* Support old and new GtkSpell versions in the same binary.
+* Disable WikiWords by default.
+
+Version 0.3.0
+* New Plugin system.
+* Simple note printing plugin (from Jamin Philip Gray).
+* Switch to Gnome Panel applet.
+* Dropping URLs to the applet for easy saving.
+* Preferences dialog.
+* Many bugfixes.
+
+Version 0.2.2
+* Fix bootstrap crasher (bug #155505)
+
+Version 0.2.1
+* Change mouse cursor to hand over links.
+* Drop urls/files to note content.
+* Dragging notes from Recent Changes and Search to note content.
+* Global X keybindings.
+* DBus remote control interface.
+* Basic command line open/create interface.
+* Control-Enter to open link at cursor.
+* Middle-Click link to close opening note.
+* Move to NotePlugin interface.
+* Add "Tomboy Notes" app launcher.
+
+Version 0.1.1
+* Store notes in ~/.tomboy.
+* Use Escape for closing note windows.
+* Build fixes.
+* Require gtkspell version 2.0.6.
+* RPM spec file.
+
+Version 0.1
+* Initial release.

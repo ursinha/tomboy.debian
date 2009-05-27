@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY date "February 2007">
+<!ENTITY app "<application>Tomboy Notes</application>">
+<!ENTITY appname "Tomboy">
+<!ENTITY extappname "Tomboy Notes">
+<!ENTITY manversion "2.0">
+<!ENTITY version "0.10.0">
+]>
+<!-- 
+  (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified August 7th, 2006
+-->
+<!-- =============Document Header ============================= -->
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<article id="index" lang="fr">
+  <articleinfo>
+    <title>Manuel de Notes Tomboy</title>
+
+    <abstract role="description">
+      <para>Tomboy is a simple desktop note-taking application, with many features designed
+to help organize ideas, such as spell checking, highlighting, auto-linking
+URLs, lists, font stylizing, quick access with a table of contents for notes,
+and add-ins to extend Tomboy's capabilities.
+.</para>
+    </abstract>
+
+    <copyright>
+      <year>2009</year>
+
+      <holder>Alex Graveley</holder>
+    </copyright>
+
+    <copyright>
+      <year>2009</year>
+
+      <holder>Brent Smith</holder>
+    </copyright>
+
+    <copyright>
+      <year>2009</year>
+
+      <holder>Free Software Foundation</holder>
+    </copyright>
+    
+    <copyright>
+      <year>2009</year>
+      
+      <holder>Boyd Timothy</holder>
+    </copyright>
+    
+    <copyright>
+      <year>2009</year>
+      
+      <holder>Sandy Armstrong</holder>
+    </copyright>
+    
+    <copyright>
+      <year>2009</year>
+      
+      <holder>Paul Cutler</holder>
+    </copyright><copyright><year>2006-2007</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright><copyright><year>2007</year><holder>Jonathan Ernst (jonathan@ernstfamily.ch)</holder></copyright><copyright><year>2007</year><holder>Robert-André Mauchin (zebob.m@pengzone.org)</holder></copyright><copyright><year>2007</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright><copyright><year>2008</year><holder>Frédéric Péters (fpeters@0d.be)</holder></copyright>
+
+    <!-- translators: uncomment this:
+    <copyright>
+      <year>2002</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+-->
+
+    <publisher>
+      <publishername>Projet de documentation GNOME</publishername>
+    </publisher>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	 any of this. -->
+
+    <authorgroup>
+      <author role="maintainer">
+        <firstname>Alex</firstname>
+
+        <surname>Graveley</surname>
+
+        <affiliation>
+          <orgname>Projet de documentation GNOME</orgname>
+
+          <address><email>alex@beatniksoftware.com</email></address>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Brent</firstname>
+
+        <surname>Smith</surname>
+
+        <affiliation>
+          <orgname>Projet de documentation GNOME</orgname>
+
+          <address><email>gnome@nextreality.net</email></address>
+        </affiliation>
+      </author>
+      
+      <author role="maintainer">
+        <firstname>Boyd</firstname>
+        
+        <surname>Timothy</surname>
+        
+        <affiliation>
+          <orgname>Projet de documentation GNOME</orgname>
+
+          <address><email>btimothy@gmail.com</email></address>
+        </affiliation>
+      </author>
+      
+      <author role="maintainer">
+        <firstname>Sandy</firstname>
+        
+        <surname>Armstrong</surname>
+        
+        <affiliation>
+          <orgname>Projet de documentation GNOME</orgname>
+
+          <address><email>sanfordarmstrong@gmail.com</email></address>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Paul</firstname>
+
+        <surname>Cutler</surname>
+
+        <affiliation>
+          <orgname>Projet de documentation GNOME</orgname>
+
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>
+      
+      <!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+     </othercredit>-->
+    </authorgroup>
+	
+	  <releaseinfo revision="2.28" role="candidate">
+		<ulink type="finalreview" url="http://bugzilla.gnome.org/show_bug.cgi?id=576487"/>
+	</releaseinfo>
+	
+    <!-- According to GNU FDL, revision history is mandatory if you are -->
+
+    <!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+
+    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Tomboy Manual 2.1</revnumber>
+
+        <date>2009-03-23</date>
+
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+
+          <para role="publisher">Projet de documentation GNOME</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Manuel de Tomboy 4.0</revnumber>
+
+        <date>07/03/2008</date>
+
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+
+          <para role="publisher">Projet de documentation GNOME</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Manuel de Tomboy 3.0</revnumber>
+
+        <date>13/09/2007</date>
+
+        <revdescription>
+          <para role="author">Sandy Armstrong</para>
+
+          <para role="publisher">Projet de documentation GNOME</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Manuel de Tomboy 2.0</revnumber>
+
+        <date>28/02/2007</date>
+
+        <revdescription>
+          <para role="author">Boyd Timothy</para>
+
+          <para role="publisher">Projet de documentation GNOME</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>This manual describes version 0.14.0 of Tomboy</releaseinfo>
+
+    <legalnotice>
+      <title>Votre avis</title>
+
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant Tomboy ou ce manuel, procédez comme indiqué sur la <ulink url="ghelp:gnome-feedback" type="help">page de réactions sur GNOME</ulink>.</para>
+
+      <!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>Notes Tomboy</primary>
+  </indexterm>
+
+  <indexterm zone="index">
+    <primary>Tomboy</primary>
+  </indexterm>
+
+  <indexterm zone="index">
+    <primary>notes</primary>
+  </indexterm>
+
+  <!-- ============= Introduction ============================== -->
+
+  <sect1 id="tomboy-intro">
+    <title>Introduction</title>
+
+    <figure id="tomboy-panel">
+      <title>Application de notes</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="figures/tomboy-panel.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>Tomboy is a desktop note-taking application for GNOME, Microsoft Windows, and Mac OS X. It is simple
+    and easy to use, and allows you to organize the ideas and information you
+    deal with every day. Tomboy has some very useful editing features to help
+    you customize your notes, including:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Mise en évidence du texte recherché</para>
+      </listitem>
+
+      <listitem>
+        <para>Correction orthographique intégrée</para>
+      </listitem>
+
+      <listitem>
+        <para>Liens Web et courriel automatiques</para>
+      </listitem>
+
+      <listitem>
+        <para>Prise en charge de l'annulation/rétablissement</para>
+      </listitem>
+
+      <listitem>
+        <para>Mise en forme des caractères</para>
+      </listitem>
+
+      <listitem>
+        <para>Listes à puces</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Tomboy is accessed through the GNOME panel, the taskbar in Microsoft Windows, or the dock in Mac OS X. To startup Tomboy
+    automatically when you log into GNOME, see <xref linkend="add-to-panel"/>.</para>
+  </sect1>
+
+  <!--=========== Getting Started ============================== -->
+
+  <sect1 id="getting-started">
+    <title>Premiers pas</title>
+
+    <sect2 id="add-to-panel">
+      <title>Adding Tomboy to the GNOME Panel</title>
+
+      <para>To add Tomboy to a panel in GNOME, right-click on the panel, then choose
+      <menuchoice>
+          <guimenuitem>Add to Panel</guimenuitem>
+        </menuchoice>. Select Tomboy Notes in the Add to the panel dialog,
+      then click <menuchoice>
+          <guibutton>Add</guibutton>
+        </menuchoice>. You should see a yellow note icon appear in the panel,
+      representing Tomboy. The panel icon is illustrated in <xref linkend="tomboy-panel"/>.</para>
+	  <para>Tomboy is automatically added to the taskbar when run on Microsoft Windows, or the dock when run on Mac OS X.</para>
+    </sect2>
+
+    <sect2 id="creating-notes">
+      <title>Création de notes</title>
+
+      <para>Once you have successfully added Tomboy to the panel, you can
+      create new notes using one of the following methods.</para>
+
+      <para>Pour créer une nouvelle note avec la souris :</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Click on the Tomboy note icon present in the GNOME Panel or Windows taskbar. A
+          menu will appear.</para>
+        </listitem>
+
+        <listitem>
+          <para>Sélectionnez l'option <menuchoice><guimenuitem>Créer une nouvelle note</guimenuitem></menuchoice> dans le menu.</para>
+        </listitem>
+      </orderedlist>
+
+      <para>Pour créer une nouvelle note avec le clavier :</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Ouvrez le menu Tomboy par le raccourci clavier <keycombo><keycap>Alt</keycap><keycap>F12</keycap></keycombo>.</para>
+        </listitem>
+
+        <listitem>
+          <para>Utilisez la touche <keycap>N</keycap> pour sélectionner l'option de menu <menuchoice><guimenuitem>Créer une nouvelle note</guimenuitem></menuchoice>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 id="editing-notes">
+      <title>Édition de notes</title>
+
+      <para>Après la création d'une nouvelle note, une nouvelle fenêtre apparaît avec le titre <literal>Nouvelle note <replaceable>N</replaceable></literal>. Au sommet de la note se trouve une barre d'outils contenant plusieurs boutons et textes. La zone de contenu se situe juste au-dessous de cette barre d'outils. Ceci est illustré par la <xref linkend="new-note"/>.</para>
+
+      <para>La note peut être éditée en cliquant dans la zone de contenu et en utilisant le clavier pour ajouter ou enlever du contenu. La première ligne est considérée comme le titre de la note. Elle contient par défaut le texte <quote><literal>Nouvelle note <replaceable>N</replaceable></literal></quote>. Ce titre peut être modifié en cliquant sur la première ligne de la zone de contenu et en la modifiant avec le clavier. Par défaut, la zone de contenu est automatiquement activée lors de la création d'une nouvelle note, ce qui permet de commencer immédiatement l'édition de la note sans devoir cliquer dans la zone de contenu avec la souris.</para>
+
+      <para>L'utilisation de la barre d'outils présente dans chaque note est traitée dans la <xref linkend="working-with-notes"/>.</para>
+
+      <figure id="new-note">
+        <title>La fenêtre par défaut d'une nouvelle note</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-new-note.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+
+    <sect2 id="search-all-notes">
+      <title>Sommaire</title>
+
+      <para>Pour obtenir un aperçu de toutes les notes gérées par Tomboy, sélectionnez l'élément de menu <menuchoice><guimenuitem>Rechercher dans toutes les notes</guimenuitem></menuchoice> dans le menu du tableau de bord. Par défaut, la boîte de dialogue <interface>Rechercher dans toutes les notes</interface> affiche les notes dans l'ordre de leur dernière modification. Cliquez sur l'en-tête des colonnes <guilabel>Note</guilabel> ou <guilabel>Dernière modification</guilabel> pour modifier l'ordre de tri. Cliquez une seconde fois sur le même en-tête de colonne pour basculer en ordre de tri croissant ou décroissant.</para>
+      
+      <para>Vous pouvez rechercher une note spécifique en saisissant du texte dans le champ de recherche de la boîte de dialogue <interface>Rechercher dans toutes les notes</interface>. La liste des notes se met automatiquement à jour et n'affiche plus que les notes correspondant au texte recherché.</para>
+      
+      <para>Pour ouvrir une note dans la boîte de dialogue <interface>Rechercher dans toutes les notes</interface>, effectuez l'une des opérations suivantes :</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Double-cliquez sur une note.</para>
+        </listitem>
+        
+        <listitem>
+          <para>Mettez une note en évidence en la sélectionnant, puis choisissez <menuchoice><guimenuitem>Ouvrir</guimenuitem></menuchoice> dans le menu <guimenuitem>Fichier</guimenuitem>.</para>
+        </listitem>
+        
+        <listitem>
+          <para>Faites un clic droit sur une note et choisissez <menuchoice><guimenuitem>Ouvrir</guimenuitem></menuchoice> dans le menu contextuel qui apparaît.</para>
+        </listitem>
+        
+        <listitem>
+          <para>Mettez une note en évidence en la sélectionnant, puis utilisez le raccourci clavier <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+  </sect1>
+
+  <!--=========== Working With Notes ============================== -->
+
+  <sect1 id="working-with-notes">
+    <title>Utilisation des notes</title>
+
+    <para>Les notes sont éditées et modifiées dans la fenêtre principale de chaque note. La barre d'outils dans la partie supérieure de chaque note permet d'appliquer des styles et d'effectuer d'autres opérations sur les notes. Les sections suivantes traitent des fonctions de chaque élément de la barre d'outils.</para>
+
+    <sect2 id="search">
+      <title>Rechercher</title>
+
+      <para>Un clic sur le bouton <guibutton>Rechercher</guibutton> ouvre la boîte de dialogue <interface>Rechercher dans toutes les notes</interface> ; celle-ci est décrite dans <xref linkend="search-all-notes"/>.</para>
+    </sect2>
+
+    <sect2 id="link">
+      <title>Lien</title>
+
+      <para>Le bouton <guibutton>Lien</guibutton> permet de créer un lien vers une nouvelle note à partir de la note actuelle. Par exemple, si votre note contient les caractères <quote>ExamenFinal</quote>, vous pouvez sélectionner ce texte avec la souris et cliquer sur le bouton <guibutton>Lien</guibutton> afin de créer une nouvelle note intitulée <quote>ExamenFinal</quote>. Un lien sera également créé dans la note actuelle pour permettre d'ouvrir par un simple clic la nouvelle note <quote>ExamenFinal</quote>.</para>
+
+      <note>
+        <para>La modification du titre d'une note met à jour les liens figurant dans les autres notes. Cela évite de casser les liens lorsque les notes sont renommées.</para>
+      </note>
+    </sect2>
+
+    <sect2 id="text">
+      <title>Texte</title>
+
+      <para>Le formatage du texte des notes peut être réalisé à l'aide du bouton <guibutton>Texte</guibutton>. Ce bouton affiche un menu contenant plusieurs options à choix. Voici la signification des différents éléments de menu :</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Annuler</term>
+
+          <listitem>
+            <para>C'est par cet élément de menu que Tomboy prend en charge la fonction d'annulation. La fonction Annuler permet d'annuler des modifications appliquées à la note durant la session actuelle. Pour annuler la dernière modification à l'aide du clavier, utilisez le raccourci standard, <keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Rétablir</term>
+
+          <listitem>
+            <para>La fonction <quote>Rétablir</quote> permet de réappliquer des modifications précédemment annulées par la fonction <quote>Annuler</quote>. Pour réappliquer la dernière modification à l'aide du clavier, utilisez le raccourci standard, <keycombo><keycap>Majuscule</keycap><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Gras</term>
+
+          <listitem>
+            <para>Pour mettre en gras du texte de votre note, commencez par sélectionner le texte à modifier. Choisissez ensuite l'option <menuchoice><guimenuitem>Gras</guimenuitem></menuchoice> du menu <guibutton>Texte</guibutton>. Il est aussi possible d'utiliser le raccourci <keycombo><keycap>Ctrl</keycap><keycap>B</keycap></keycombo> après avoir sélectionné le texte.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Italique</term>
+
+          <listitem>
+            <para>Pour mettre en italique du texte de votre note, commencez par sélectionner le texte à modifier. Choisissez ensuite l'option <menuchoice><guimenuitem>Italique</guimenuitem></menuchoice> du menu <guibutton>Texte</guibutton>. Il est aussi possible d'utiliser le raccourci <keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo> après avoir sélectionné le texte.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Barré</term>
+
+          <listitem>
+            <para>Le style barré trace une ligne horizontale par-dessus le texte sélectionné. Pour appliquer ce style, sélectionnez le texte, puis choisissez l'option <menuchoice><guimenuitem>Barré</guimenuitem></menuchoice> du menu <guibutton>Texte</guibutton>. Il est aussi possible d'utiliser le raccourci <keycombo><keycap>Ctrl</keycap><keycap>S</keycap></keycombo> après avoir sélectionné le texte.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Surligné</term>
+
+          <listitem>
+            <para>Le style surligné applique un fond jaune au texte sélectionné. Pour appliquer ce style, sélectionnez le texte, puis choisissez l'option <menuchoice><guimenuitem>Surligné</guimenuitem></menuchoice> du menu <guibutton>Texte</guibutton>. Il est aussi possible d'utiliser le raccourci <keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo> après avoir sélectionné le texte.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Taille fixe</term>
+
+          <listitem>
+            <para>Le style « taille fixe » applique au texte une police à largeur fixe. Pour modifier du texte existant, sélectionnez tout d'abord le texte à modifier. Ensuite, choisissez l'option <menuchoice><guimenuitem>Taille fixe</guimenuitem></menuchoice> du menu <guibutton>Texte</guibutton>. Il est également possible de choisir cette option avant de commencer à saisir du texte.</para>
+            
+            <para>L'option <menuchoice><guimenuitem>Taille fixe</guimenuitem></menuchoice> est une fonction fournie par le greffon Fixed Width. Pour plus d'informations sur les greffons, consultez la <xref linkend="plugins"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Taille de la police</term>
+
+          <listitem>
+            <para>Cette partie du menu comporte quatre options : <simplelist type="inline">
+                <member><guilabel>Petite</guilabel></member>
+
+                <member><guilabel>Normale</guilabel></member>
+
+                <member><guilabel>Grande</guilabel></member>
+
+                <member><guilabel>Énorme</guilabel></member>
+              </simplelist>. Chacune de ces options correspond à une taille de police applicable au texte sélectionné dans la note. Pour modifier la taille de la police, sélectionnez le texte, puis choisissez l'une des options <simplelist type="inline">
+                <member><guilabel>Petite</guilabel></member>
+
+                <member><guilabel>Normale</guilabel></member>
+
+                <member><guilabel>Grande</guilabel></member>
+
+                <member><guilabel>Énorme</guilabel></member>
+              </simplelist> du menu <guibutton>Texte</guibutton>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Puces</term>
+
+          <listitem>
+            <para>Sélectionnez l'option <menuchoice><guimenuitem>Puces</guimenuitem></menuchoice> du menu <guibutton>Texte</guibutton> pour commencer ou terminer une liste à puces. Si le curseur se trouve à l'intérieur d'une liste à puces, les options <simplelist type="inline">
+                <member><guilabel>Augmenter l'indentation</guilabel></member>
+                
+                <member><guilabel>Diminuer l'indentation</guilabel></member>
+              </simplelist> sont activées.</para>
+             
+            <para>Lorsque le curseur se trouve dans une ligne d'une liste à puces, sélectionnez l'option <menuchoice><guimenuitem>Augmenter l'indentation</guimenuitem></menuchoice> pour déclaer la ligne actuelle vers la droite, ou l'option <menuchoice><guimenuitem>Diminuer l'indentation</guimenuitem></menuchoice> pour décaler la ligne actuelle vers la gauche.</para>
+            
+            <para>Pour plus d'informations sur les puces, consultez la <xref linkend="bullets"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Rechercher dans cette note</term>
+
+          <listitem>
+          	<para>Cette fonction permet de rechercher du texte dans la note actuelle. Une petite barre de recherche s'affiche au bas de la note. Pour ouvrir cette barre à l'aide du clavier, utilisez le raccourci clavier standard, <keycombo><keycap>Ctrl</keycap><keycap>F</keycap></keycombo>.</para>
+            
+            <para>Saisissez le texte à rechercher. Après avoir saisi le texte, les correspondances apparaissent en surbrillance. Cliquez sur <guibutton>Rechercher le suivant</guibutton> pour mettre en évidence la prochaine occurrence et y déplacer le curseur. Cliquez sur <guibutton>Précédent</guibutton> pour revenir à l'occurrence précédente.</para>
+          	
+          	<para>Pour fermer la barre de recherche, cliquez sur le <guibutton>X</guibutton> (bouton fermer) tout à gauche ou appuyez sur la touche <keycap>Échap</keycap>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="tools">
+      <title>Outils (icône d'engrenage)</title>
+
+      <para>Le bouton <guibutton>Outils</guibutton> est représenté par l'icône <inlinegraphic fileref="figures/tomboy-tools.png"/>. Lorsque vous cliquez sur l'icône <guiicon>Outils</guiicon> sur la barre d'outils d'une note, un menu apparaît et présente les éléments suivants :</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Synchroniser les notes</term>
+
+          <listitem>
+            <para>Sélectionnez cette option pour synchroniser vos notes avec un serveur central. Pour plus d'informations sur la synchronisation de notes, consultez la <xref linkend="synchronization"/>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Quels liens sur cette note ?</term>
+
+          <listitem>
+            <para>Cette option permet de voir rapidement quelles sont les notes qui disposent d'un lien vers la note actuelle. Cette fonction est fournie par le greffon Backlinks. Pour plus d'informations sur les greffons, consultez la <xref linkend="plugins"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Exporter en HTML</term>
+
+          <listitem>
+            <para>Vous pouvez créer un document <acronym>HTML</acronym> (Hypertext Markup Language) à partir d'une ou de plusieurs notes en choisissant cette option. Pour plus d'informations, veuillez consulter la <xref linkend="plugins"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Imprimer</term>
+
+          <listitem>
+            <para>Choisissez cette option pour imprimer la note actuelle, en passant par la boîte de dialogue d'impression standard de GNOME.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <note>
+        <para>En fonction des greffons installés pour Tomboy, le menu <guimenu>Outils</guimenu> peut comporter plus ou moins d'éléments.</para>
+      </note>
+    </sect2>
+
+    <sect2 id="delete">
+      <title>Supprimer</title>
+
+      <para>Le bouton <guibutton>Supprimer</guibutton> fait apparaître une boîte de dialogue demandant si vous voulez vraiment supprimer la note et son contenu. Cliquez alors sur le bouton <guibutton>Supprimer</guibutton> pour effacer définitivement la note, ou sur <guibutton>Annuler</guibutton> pour renoncer à la suppression. Les liens vers cette note figurant dans d'autres notes existeront toujours, et recréeront la note si nécessaire en cas d'activation.</para>
+    </sect2>
+  </sect1>
+
+  <!--=========== Panel Menu ====================================== -->
+
+  <sect1 id="panel-menu">
+    <title>Menu du tableau de bord</title>
+
+    <para>Tomboy keeps the most recently used notes quickly available to you in
+    a menu that appears when you click on the Tomboy Icon in the GNOME
+    Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.</para>
+
+    <sect2 id="note-pinning">
+      <title>Fixage de notes</title>
+
+      <para>Pour forcer une note à rester constamment dans le menu du tableau de bord, quelle que soit sa dernière utilisation, cliquez sur l'icône de punaise pour la « fixer » au menu. Les notes fixées au menu du tableau de bord apparaissent avec une icône de punaise ressemblant à ceci : <inlinegraphic fileref="figures/tomboy-pindown.png"/>. Les notes qui ne sont pas fixées au menu du tableau de bord apparaissent avec des icônes de punaise comme cela : <inlinegraphic fileref="figures/tomboy-pinup.png"/>. </para>
+
+      <figure>
+        <title>Menu de tableau de bord de Tomboy</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-main-menu.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+  </sect1>
+
+  <!--=========== Bulleted Lists ================================== -->
+
+  <sect1 id="bullets">
+    <title>Listes à puces</title>
+
+    <sect2 id="bullet-start">
+      <title>Début d'une liste à puces</title>
+        
+      <para>Vous pouvez commencer une liste à puces en utilisant l'une des méthodes suivantes :</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Choisissez <menuchoice><guimenuitem>Puces</guimenuitem></menuchoice> dans le menu <guibutton>Texte</guibutton>.</para>
+        </listitem>
+
+        <listitem>
+          <para>Commencez une ligne avec un seul tiret (-), saisissez du texte immédiatement à la suite du tiret, puis appuyez sur <keycap>Entrée</keycap>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+      
+    <sect2 id="bullet-end">
+      <title>Fin d'une liste à puces</title>
+
+      <para>Terminez une liste à puces en utilisant l'une des méthodes suivantes :</para>
+      
+      <orderedlist>
+        <listitem>
+          <para>Choisissez <menuchoice><guimenuitem>Puces</guimenuitem></menuchoice> dans le menu <guibutton>Texte</guibutton>.</para>
+        </listitem>
+
+        <listitem>
+          <para>Appuyez sur <keycap>Entrée</keycap> depuis une ligne vide avec une puce.</para>
+        </listitem>
+
+        <listitem>
+          <para>Choisissez <menuchoice><guimenuitem>Diminuer l'indentation</guimenuitem></menuchoice> dans le menu <guibutton>Texte</guibutton>, autant de fois que nécessaire pour que la ligne actuelle ne fasse plus partie d'une liste à puces.</para>
+        </listitem>
+
+        <listitem>
+          <para>Utilisez le raccourci clavier <keycombo><keycap>Maj</keycap><keycap>Tab</keycap></keycombo> autant de fois que nécessaire pour que la ligne actuelle ne fasse plus partie d'une liste à puces.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+      
+    <sect2 id="bullet-increase-indent">
+      <title>Augmentation de l'indentation</title>
+      
+      <para>Pour augmenter l'indentation d'une ligne dans une liste à puces, avec la souris :</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Choisissez <menuchoice><guimenuitem>Augmenter l'indentation</guimenuitem></menuchoice> dans le menu <guibutton>Texte</guibutton>.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Pour augmenter l'indentation d'une ligne dans une liste à puces, avec le clavier :</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Appuyez sur la touche <keycap>Tab</keycap>.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+      
+    <sect2 id="bullet-decrease-indent">
+      <title>Diminution de l'indentation</title>
+        
+      <para>Pour diminuer l'indentation d'une ligne dans une liste à puces, avec la souris :</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Choisissez <menuchoice><guimenuitem>Diminuer l'indentation</guimenuitem></menuchoice> dans le menu <guibutton>Texte</guibutton>.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Pour diminuer l'indentation d'une ligne dans une liste à puces, avec le clavier :</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Utilisez le raccourci clavier <keycombo><keycap>Maj</keycap><keycap>Tab</keycap></keycombo>.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+  </sect1>
+  
+  <!--=========== Working with Notebooks =========================== -->
+  
+  <sect1 id="notebooks">
+  	<title>Utilisation des blocs-notes</title>
+  
+    <para>Les blocs-notes vous permettent de rassembler des notes sur un même sujet. Vous pouvez ajouter une note dans un bloc-notes par la fenêtre « Rechercher dans toutes les notes » ou directement depuis une note.</para>
+    
+    <sect2 id="creating-noteboks">
+    <title>Création de blocs-notes</title>
+    
+    <para>Vous pouvez créer de nouveaux blocs-notes en utilisant l'une des méthodes suivantes :</para>
+    
+      <orderedlist>
+        <listitem> 
+        <para>Click on the Tomboy note icon present in the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.  
+        A menu will appear</para>   
+        </listitem>
+        <listitem>
+        <para>Choisissez <menuchoice><guimenuitem>Bloc-notes</guimenuitem><guimenuitem>Nouveau bloc-notes</guimenuitem></menuchoice>.</para></listitem>
+		<listitem>
+		<para>Saisissez un nom pour le nouveau bloc-notes.</para>
+		</listitem>
+	</orderedlist>
+	
+	      <figure id="new-notebook">
+        <title>Create a new notebook from the Tomboy note icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/new-notebook.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+		
+	<para>Pour créer un nouveau bloc-notes depuis la fenêtre « Rechercher dans toutes les notes » :</para>
+	<orderedlist>
+		<listitem> 
+	<para>Open <menuchoice>
+              <guimenuitem>Search All Notes</guimenuitem>
+            </menuchoice> by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
+	or click on Search from an open note.</para>
+	</listitem>
+	<listitem>
+	<para>Avec la souris, faites un clic droit dans la boîte de gauche et choisissez <menuchoice><guimenuitem>Nouveau bloc-notes</guimenuitem></menuchoice>.</para>
+	</listitem>
+	<listitem>
+	<para>Saisissez un nom pour le nouveau bloc-notes.</para>
+	</listitem>
+	<listitem>
+	<para>Avec la fenêtre <guilabel>Rechercher dans toutes les notes</guilabel> ouverte, choisissez <menuchoice><guimenuitem>Fichier</guimenuitem><guimenuitem>Bloc-notes</guimenuitem><guimenuitem>Nouveau bloc-note</guimenuitem></menuchoice>.</para>
+	</listitem>
+	<listitem>
+	<para>Saisissez un nom pour le nouveau bloc-notes.</para>
+	</listitem>
+
+	</orderedlist>
+  	      
+  	      <figure id="create-new-notebook">
+        <title>Création d'un bloc-notes depuis « Rechercher dans toutes les notes »</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/add-notebook-search.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+  
+  </sect2>
+  
+  <sect2 id="adding-notes-notebook">
+  	<title>Ajout de notes dans un bloc-notes</title>
+  	
+  	<para>Vous pouvez ajouter une note à un bloc-notes depuis la boîte de dialogue <guilabel>Rechercher dans toutes les notes</guilabel> ou directement depuis une note.</para>
+
+	<para>Pour déplacer une note existante à partir de la boîte de dialogue « Rechercher dans toutes les notes » :</para>
+	<orderedlist>
+		<listitem> 
+	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
+	or click on Search from an open note.</para>
+	</listitem>
+	<listitem>
+	<para>En utilisant votre souris, glissez une ou plusieurs notes sur le bloc-notes à gauche.</para>
+	</listitem>
+	</orderedlist>
+
+	<para>Pendant que vous saisissez une note, vous pouvez l'ajouter directement à un bloc-notes existant en utilisant le bouton <guimenu>Bloc-notes</guimenu>. Ce bouton est représenté par l'icône <inlinegraphic fileref="figures/notebook-icon.png"/>.</para> 
+	
+	  	      <figure id="add-to-notebook">
+        <title>Ajout d'une note à un bloc-notes</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/add-to-notebook.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+
+
+	</sect2>
+	
+	<sect2 id="notebook-templates">
+	<title>Création de modèles pour bloc-notes</title>
+	
+	<para>Après avoir créé un bloc-notes, vous pouvez créer un modèle qui sera utilisé pour toutes les notes créées dans ce bloc-notes.</para>
+
+	<orderedlist>
+	<listitem> 
+	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
+	or click on Search from an open note.</para>
+	</listitem>
+	<listitem>
+	<para>Avec la souris, faites un clic droit sur un bloc-notes que vous avez créé et choisissez <menuchoice><guimenuitem>Ouvrir un modèle de note</guimenuitem></menuchoice>.</para>
+	</listitem>
+	<listitem>
+	<para>Cela ouvre un nouvelle note qui sera utilisée comme modèle. Le texte saisi dans cette note apparaîtra dans toutes les notes créées dans le bloc-notes. Créez une nouvelle note en cliquant avec le bouton droit sur un bloc-note et choisissez <menuchoice><guimenuitem>Nouvelle note</guimenuitem></menuchoice>.</para>
+	</listitem>
+	</orderedlist>
+
+	  	      <figure id="notebook-template">
+        <title>Création d'un modèle pour bloc-notes</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/note-template.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+	
+	</sect2>
+
+	
+	<sect2 id="deleting-notebooks">
+	<title>Suppression d'un bloc-notes</title>
+	<para>La suppression d'un bloc-notes ne supprime aucune des notes qui en feraient partie.  Après avoir supprimé un bloc-notes, les notes ne seront plus associées à aucun bloc-notes et pourront être visualisées en choisissant <menuchoice><guimenuitem>Notes non classées</guimenuitem></menuchoice> dans la fenêtre <menuchoice><guimenuitem>Rechercher dans toutes les notes</guimenuitem>.</menuchoice></para>
+	
+	<para>Vous pouvez supprimer un bloc-notes en employant l'une de ces deux méthodes :</para>
+	<para>Pour supprimer un bloc-notes avec la souris :</para>
+	<orderedlist>
+	<listitem> 
+	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
+	or click on Search from an open note.</para>
+	</listitem>
+	<listitem>
+	<para>Avec la souris, faites un clic droit sur un bloc-notes et choisissez <menuchoice><guimenuitem>Supprimer le bloc-notes</guimenuitem></menuchoice>.</para>
+	</listitem>
+	</orderedlist>
+		  	      <figure id="notebook-delete">
+        <title>Suppression d'un bloc-notes</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/delete-notebook.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+	
+	<para>To delete a Notebook from the <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	menu, open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.
+	</para>
+	<orderedlist>
+	<listitem>
+	<para>Cliquez sur le bloc-notes que vous voulez supprimer.</para>
+	</listitem>
+	<listitem>
+	<para>Dans le menu, choisissez <menuchoice><guimenuitem>Édition</guimenuitem><guimenuitem>Supprimer le bloc-notes</guimenuitem></menuchoice>.</para>
+	</listitem>
+	</orderedlist>
+
+	
+	</sect2>
+	
+	</sect1>
+	
+  <!--=========== Synchronization ================================== -->
+
+  <sect1 id="synchronization">
+    <title>Synchronisation de notes</title>
+    
+    <para>Tomboy peut désormais garder vos notes synchronisées entre plusieurs ordinateurs en se basant sur un serveur central.</para>
+
+    <sect2 id="sync-configure">
+      <title>Configuration de la synchronisation de notes</title>
+
+      <para>Vous pouvez configurer les préférences de synchronisation des notes dans l'onglet <guilabel>Synchronisation</guilabel> des <interface>Préférences de Tomboy</interface>. Il est possible d'y configurer le comportement par défaut de la gestion des conflits en cliquant sur le bouton <guibutton>Avancé</guibutton>.</para>
+
+      <figure>
+        <title>Préférences de synchronisation de Tomboy</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-synchronization.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+    <sect3 id="sync-configure-webdav">
+      <title>Configuration du service de synchronisation de notes (WebDAV)</title>
+        
+      <para>Pour synchroniser vos notes avec un serveur WebDAV, vous devez installer le système de fichiers FUSE wdfs. Référez-vous à la documentation de votre système d'exploitation pour paramétrer FUSE pour votre utilisateur. Vous avez également besoin du gestionnaire de trousseaux GNOME.</para>
+      
+      <para>Choisissez <guimenuitem>WebDAV</guimenuitem> dans la liste déroulante <guilabel>Service</guilabel>. Remplissez les informations de connexion pour votre serveur et cliquez ensuite sur le bouton <guibutton>Enregistrer</guibutton>. Vous pouvez désormais synchroniser vos notes.</para>
+    </sect3>
+
+    <sect3 id="sync-configure-ssh">
+      <title>Configuration du service de synchronisation de notes (SSH)</title>
+        
+      <para>Pour synchroniser vos notes avec un serveur SSH, vous devez installer le système de fichiers FUSE sshfs. Référez-vous à la documentation de votre système d'exploitation pour paramétrer FUSE pour votre utilisateur. Vous avez également besoin d'une clé SSH pour votre compte serveur SSH, qui doit être ajouté à un démon SSH actif. Ceci peut être effectué avec l'application <application>Seahorse</application> de GNOME.</para>
+      
+      <para>Choisissez <guimenuitem>SSH</guimenuitem> dans la liste déroulante <guilabel>Service</guilabel>. Remplissez les informations de connexion pour votre serveur et cliquez ensuite sur le bouton <guibutton>Enregistrer</guibutton>. Vous pouvez désormais synchroniser vos notes.</para>
+    </sect3>
+
+    <sect3 id="sync-configure-localfolder">
+      <title>Configuration du service de synchronisation de notes (dossier local)</title>
+        
+      <para>Vous pouvez avoir besoin de synchroniser vos notes avec un dossier local si celui-ci est disponible depuis vos autres systèmes, ou si ce dossier est un montage local d'un serveur distant.</para>
+      
+      <para>Choisissez <guimenuitem>Dossier local</guimenuitem> dans la liste déroulante <guilabel>Service</guilabel>. Saisissez le <guilabel>Chemin du dossier</guilabel> souhaité pour la synchronisation, puis cliquez sur le bouton <guibutton>Enregistrer</guibutton>. Vous pouvez désormais synchroniser vos notes.</para>
+    </sect3>
+    </sect2>
+
+    <sect2 id="sync-initiate">
+      <title>Synchronisation de vos notes</title>
+        
+      <para>Vous pouvez synchroniser vos notes à n'importe quel instant en sélectionnant le menu <menuchoice><guimenu>Outils</guimenu><guimenuitem>Synchroniser les notes</guimenuitem></menuchoice> depuis n'importe quelle note ou depuis la boîte de dialogue <interface>Rechercher dans toutes les notes</interface>.</para>
+    </sect2>
+    
+    <sect2 id="sync-conflicts">
+      <title>Gestion des conflits de synchronisation</title>
+      
+      <para>Lorsque vous synchronisez des notes entre plusieurs ordinateurs, des conflits peuvent apparaître. C'est généralement le résultat d'un manque de synchronisations régulières lors de l'utilisation alternative de différents systèmes. Tomboy détecte les conflits dans le contenu de vos notes et vous aide à éviter les pertes de données importantes.</para>
+      
+      <para>Si un conflit est détecté durant la synchronisation des notes, la boîte de dialogue <interface>Conflit entre les notes</interface> s'affiche. Si vous n'avez pas besoin de conserver des modifications effectuées sur votre note locale, sélectionnez <guilabel>Écraser la note locale</guilabel>. Si vous souhaitez conserver vos modifications locales dans une nouvelle note, choisissez <guilabel>Renommer la note locale</guilabel>.</para>
+    </sect2>
+  </sect1>
+
+  <sect1>
+    <title>Préférences</title>
+
+    <para>Pour définir les préférences de Tomboy, faites un clic droit sur l'icône dans le tableau de bord et choisissez <menuchoice><guimenuitem>Préférences</guimenuitem></menuchoice> dans le menu. Un boîte de dialogue semblable à la <xref linkend="pref-editing"/> apparaît. Il existe deux catégories de préférences, <guilabel>Édition</guilabel> et <guilabel>Raccourcis clavier</guilabel>. Les préférences de chaque catégorie sont décrites ci-dessous.</para>
+
+    <sect2>
+      <title>Édition</title>
+
+      <para>La section d'édition permet de configurer les préférences liées à l'édition des notes. Cet onglet comporte trois cases à cocher pouvant être activées ou désactivées.</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Vérification orthographique automatique</term>
+
+          <listitem>
+            <para>Activez cette option pour souligner en rouge les mots mal orthographiés et pour proposer des suggestions dans le menu contextuel. Cochez ou décochez la case à l'aide de la souris ou au moyen du raccourci clavier <keycombo><keycap>Alt</keycap><keycap>O</keycap></keycombo>.</para>
+
+            <note>
+              <para>The spellcheck option is only available if you have the
+              <application>GtkSpell</application> package installed.</para>
+            </note>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Surligner les mots Wiki</term>
+
+          <listitem>
+            <para>Cochez cette case pour créer des liens pour les expressions <b>CommeCellesCi</b>. Un clic sur ce lien crée une nouvelle note dont le titre correspond au texte du lien. Cochez ou décochez la case à l'aide de la souris ou au moyen du raccourci clavier <keycombo><keycap>Alt</keycap><keycap>W</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Utiliser une police personnalisée</term>
+
+          <listitem>
+            <para>Activez cette option pour définir une police personnalisée pour l'affichage de vos notes. Si l'option est désactivée, c'est la police par défaut du système qui est utilisée. Cochez ou décochez la case à l'aide de la souris ou au moyen du raccourci clavier <keycombo><keycap>Alt</keycap><keycap>P</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <figure id="pref-editing">
+        <title>Préférences d'édition de Tomboy</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-editing.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+
+    <sect2>
+      <title>Raccourcis clavier</title>
+
+      <para>La section des raccourcis clavier permet de définir des raccourcis globaux permettant d'effectuer diverses opérations dans Tomboy. Pour pouvoir profiter des raccourcis clavier, la case <guibutton>Activer les raccourcis</guibutton> doit être cochée. Utilisez <keycombo><keycap>Alt</keycap><keycap>C</keycap></keycombo> pour activer/désactiver cette option.</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Afficher le menu des notes</term>
+
+          <listitem>
+            <para>Saisissez le raccourci clavier qui permet d'ouvrir le menu des notes.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Ouvrir « Démarrer ici »</term>
+
+          <listitem>
+            <para>Saisissez le raccourci clavier qui permet d'ouvrir la note <quote>Démarrer ici</quote>, qui est préinstallée avec Tomboy.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Créer une nouvelle note</term>
+
+          <listitem>
+            <para>Saisissez le raccourci clavier qui permet de créer une nouvelle note.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Rechercher dans les notes</term>
+
+          <listitem>
+            <para>Saisissez le raccourci clavier qui permet d'ouvrir la boîte de dialogue <interface>Rechercher dans toutes les notes</interface>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <figure>
+        <title>Préférences de raccourcis clavier de Tomboy</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-hotkeys.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+
+    <sect2 id="prefs-synchronization">
+      <title>Synchronisation</title>
+      
+      <para>Veuillez consulter la <xref linkend="synchronization"/> pour obtenir plus d'informations.</para>
+    </sect2>
+
+    <sect2 id="prefs-plugins">
+      <title>Greffons</title>
+
+      <para>La section des greffons permet d'activer et de configurer les greffons Tomboy.</para>
+      
+      <para>La liste des greffons installés est affichée à gauche. L'activation d'un greffon s'effectue en le sélectionnant dans la liste, puis en cliquant sur le bouton <guibutton>Activer</guibutton>. Pour désactiver un greffon, sélectionnez-le dans la liste et cliquez sur le bouton <guibutton>Désactiver</guibutton>.</para>
+      
+      <para>Veuillez consulter la <xref linkend="plugins"/> pour obtenir plus d'informations sur les greffons installés avec Tomboy.</para>
+
+      <figure>
+        <title>Préférences des greffons de Tomboy</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-add-ins.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+  </sect1>
+
+  <sect1 id="plugins">
+    <title>Greffons</title>
+
+    <para>Par défaut, Tomboy est installé avec quelques greffons : <simplelist type="inline">
+        <member>Backlinks</member>
+
+        <member>Glisser-déposer d'URL Bugzilla</member>
+
+        <member>Glisser-déposer de courriel d'Evolution</member>
+
+        <member>Exporter en HTML</member>
+
+        <member>Taille fixe</member>
+
+        <member>Astuce du jour</member>
+
+        <member>Imprimer des notes</member>
+
+        <member>et Importer depuis Sticky Notes.</member>
+      </simplelist> Dans la mesure où ils sont pré-installés, ces greffons sont prêt à l'emploi et automatiquement accessibles dans l'interface de Tomboy.</para>
+
+    <note>
+      <para>Il existe certains greffons qui ne sont pas installés par défaut.</para>
+    </note>
+
+    <variablelist>
+      <varlistentry>
+        <term>Backlinks (Quels liens sur cette note ?)</term>
+
+        <listitem>
+          <para>Ce greffon permet de savoir quelles sont les notes qui disposent d'un lien vers la note en cours d'édition. Il facilite le suivi des relations entre les notes. Lorsque ce greffon est activé, le menu <link linkend="tools">Outils</link> contient une option <guimenuitem>Quels liens sur cette note ?</guimenuitem>. En choisissant cette option, un sous-menu apparaît, formé de tous les noms de notes qui contiennent un lien vers la note actuelle. Choisissez une note dans le sous-menu pour l'ouvrir.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Glisser-déposer d'URL Bugzilla</term>
+
+        <listitem>
+          <para>Ce greffon permet de glisser un URL Bugzilla à partir d'un navigateur dans une note Tomboy. Le numéro de bogue est inséré en tant que lien précédé d'une petite icône d'insecte. Après avoir inséré un lien Bugzilla dans une note, cliquez sur ce lien pour l'ouvrir dans votre navigateur Web.</para>
+          
+          <para>Vous pouvez personnaliser les icônes utilisées par le greffon en modifiant ses paramètres dans la <link linkend="prefs-plugins">boîte de dialogue des préférences</link>. Après avoir mis en évidence le greffon Bugzilla, cliquez sur <guibutton>Préférences</guibutton> pour ouvrir la boîte de dialogue <interface>Préférences de Bugzilla Links</interface>. Pour ajouter une icône, cliquez sur <guibutton>Ajouter</guibutton>, choisissez une icône dans votre ordinateur, introduisez un nom d'hôte Bugzilla (par ex. bugzilla.gnome.org) et cliquez sur <guibutton>Ouvrir</guibutton>. Tout URL Bugzilla glissé depuis l'un de ces noms d'hôte personnalisés utilisera dorénavant l'icône que vous avez choisie.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Glisser-déposer de courriel d'Evolution</term>
+
+        <listitem>
+          <para>Ce greffon permet de glisser-déposer un message électronique depuis le logiciel de messagerie <application>Evolution</application> vers l'une de vos notes Tomboy. Un clic sur l'icône du message dans la note ouvre le message correspondant dans Evolution.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Exporter en HTML</term>
+
+        <listitem>
+          <para>Lorsque ce greffon est installé, le menu <link linkend="tools">Outils</link> dispose de l'option <guimenuitem>Exporter en HTML</guimenuitem>.</para>
+
+          <para>Si vous choisissez cette option, une boîte de dialogue vous permet de choisir l'emplacement d'enregistrement du fichier <acronym>HTML</acronym>. Saisissez le nom du fichier de destination, puis cliquez sur <guibutton>Valider</guibutton> pour enregistrer le fichier ou sur <guibutton>Annuler</guibutton> pour interrompre l'opération.</para>
+
+          <para>Pour exporter toutes les notes représentées par un lien dans la note actuelle, cochez l'option <guibutton>Exporter les notes liées</guibutton>.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Taille fixe</term>
+
+        <listitem>
+          <para>Ce greffon permet d'utiliser des polices à largeur fixe lors de la création ou de l'édition de notes. Lorsque ce greffon est installé, le menu <link linkend="text">Texte</link> dispose de l'option <guimenuitem>Taille fixe</guimenuitem>.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Astuce du jour</term>
+
+        <listitem>
+          <para>Ce greffon crée automatiquement une note « Aujourd'hui » pour noter vos pensées de tous les jours. La date du jour sert de titre à la note. Par exemple, le titre d'une note « Aujourd'hui » créée le 28 février 2007 aura pour titre « Aujourd'hui : mercredi 28 février 2007 ».</para>
+          
+          <para>Si vous ne modifiez pas une note « Aujourd'hui », le greffon Note of the Day détruit automatiquement la note.</para>
+          
+          <para>Pour personnaliser le contenu par défaut d'une note « Aujourd'hui », créez une nouvelle note et modifiez son titre pour obtenir quelque chose comme « Aujourd'hui : Modèle ». Modifiez le contenu de la note selon vos désirs. Lors de la création de nouvelles notes « Aujourd'hui », celles-ci utiliseront le contenu de la note « Aujourd'hui : Modèle ».</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Imprimer des notes</term>
+
+        <listitem>
+          <para>Lorsque ce greffon est installé, le menu <link linkend="tools">Outils</link> dispose de l'option <guimenuitem>Imprimer</guimenuitem>.</para>
+
+          <para>Choisissez cette option pour imprimer la note actuelle, en passant par la boîte de dialogue d'impression standard de GNOME.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Importer depuis Sticky Notes</term>
+
+        <listitem>
+          <para>Lorsque ce greffon est installé, le menu <link linkend="tools">Outils</link> dispose de l'option <guimenuitem>Importer depuis Sticky Notes</guimenuitem>.</para>
+
+          <para>Utilisez cette option pour importer des notes provenant de l'application <application>Sticky Notes</application> qui était disponible dans les versions précédentes de GNOME. Cette option a été intégrée dans Tomboy pour permettre aux utilisateurs qui le souhaitent de passer plus facilement de <application>Sticky Notes</application> à Tomboy.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+</article>
