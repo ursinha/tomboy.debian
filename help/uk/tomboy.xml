@@ -1,0 +1,1377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY date "February 2007">
+<!ENTITY app "<application>Tomboy Notes</application>">
+<!ENTITY appname "Tomboy">
+<!ENTITY extappname "Tomboy Notes">
+<!ENTITY manversion "2.0">
+<!ENTITY version "0.10.0">
+]>
+<!-- 
+  (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified August 7th, 2006
+-->
+<!-- =============Document Header ============================= -->
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<article id="index" lang="uk">
+  <articleinfo>
+    <title>Довідка до програми Tomboy</title>
+
+    <abstract role="description">
+      <para>Tomboy is a simple desktop note-taking application, with many features designed
+to help organize ideas, such as spell checking, highlighting, auto-linking
+URLs, lists, font stylizing, quick access with a table of contents for notes,
+and add-ins to extend Tomboy's capabilities.
+.</para>
+    </abstract>
+
+    <copyright>
+      <year>2009</year>
+
+      <holder>Alex Graveley</holder>
+    </copyright>
+
+    <copyright>
+      <year>2009</year>
+
+      <holder>Brent Smith</holder>
+    </copyright>
+
+    <copyright>
+      <year>2009</year>
+
+      <holder>Free Software Foundation</holder>
+    </copyright>
+    
+    <copyright>
+      <year>2009</year>
+      
+      <holder>Boyd Timothy</holder>
+    </copyright>
+    
+    <copyright>
+      <year>2009</year>
+      
+      <holder>Sandy Armstrong</holder>
+    </copyright>
+    
+    <copyright>
+      <year>2009</year>
+      
+      <holder>Paul Cutler</holder>
+    </copyright>
+
+    <!-- translators: uncomment this:
+    <copyright>
+      <year>2002</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+-->
+
+    <publisher>
+      <publishername>Проект документування GNOME</publishername>
+    </publisher>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	 any of this. -->
+
+    <authorgroup>
+      <author role="maintainer">
+        <firstname>Alex</firstname>
+
+        <surname>Graveley</surname>
+
+        <affiliation>
+          <orgname>Проект документування GNOME</orgname>
+
+          <address><email>alex@beatniksoftware.com</email></address>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Brent</firstname>
+
+        <surname>Smith</surname>
+
+        <affiliation>
+          <orgname>Проект документування GNOME</orgname>
+
+          <address><email>gnome@nextreality.net</email></address>
+        </affiliation>
+      </author>
+      
+      <author role="maintainer">
+        <firstname>Boyd</firstname>
+        
+        <surname>Timothy</surname>
+        
+        <affiliation>
+          <orgname>Проект документування GNOME</orgname>
+
+          <address><email>btimothy@gmail.com</email></address>
+        </affiliation>
+      </author>
+      
+      <author role="maintainer">
+        <firstname>Sandy</firstname>
+        
+        <surname>Armstrong</surname>
+        
+        <affiliation>
+          <orgname>Проект документування GNOME</orgname>
+
+          <address><email>sanfordarmstrong@gmail.com</email></address>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Paul</firstname>
+
+        <surname>Cutler</surname>
+
+        <affiliation>
+          <orgname>Проект документування GNOME</orgname>
+
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>
+      
+      <!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+     </othercredit>-->
+    </authorgroup>
+	
+	  <releaseinfo revision="2.28" role="candidate">
+		<ulink type="finalreview" url="http://bugzilla.gnome.org/show_bug.cgi?id=576487"/>
+	</releaseinfo>
+	
+    <!-- According to GNU FDL, revision history is mandatory if you are -->
+
+    <!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+
+    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Tomboy Manual 2.1</revnumber>
+
+        <date>2009-03-23</date>
+
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+
+          <para role="publisher">Проект документування GNOME</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Tomboy Manual 4.0</revnumber>
+
+        <date>2008-03-07</date>
+
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+
+          <para role="publisher">Проект документування GNOME</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Tomboy Manual 3.0</revnumber>
+
+        <date>2007-09-13</date>
+
+        <revdescription>
+          <para role="author">Sandy Armstrong</para>
+
+          <para role="publisher">Проект документування GNOME</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Посібник з Tomboy версії 2.0</revnumber>
+
+        <date>2007-02-28</date>
+
+        <revdescription>
+          <para role="author">Boyd Timothy</para>
+
+          <para role="publisher">Проект документування GNOME</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>This manual describes version 0.14.0 of Tomboy</releaseinfo>
+
+    <legalnotice>
+      <title>Зворотній зв'язок</title>
+
+      <para>To report a bug or make a suggestion regarding the Tomboy
+      application or this manual, follow the directions in the <ulink type="help" url="ghelp:gnome-feedback">GNOME Feedback
+      Page</ulink>.</para>
+
+      <!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>Примітки Tomboy</primary>
+  </indexterm>
+
+  <indexterm zone="index">
+    <primary>Tomboy</primary>
+  </indexterm>
+
+  <indexterm zone="index">
+    <primary>примітки</primary>
+  </indexterm>
+
+  <!-- ============= Introduction ============================== -->
+
+  <sect1 id="tomboy-intro">
+    <title>Вступ</title>
+
+    <figure id="tomboy-panel">
+      <title>Програма для приміток</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="figures/tomboy-panel.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>Tomboy is a desktop note-taking application for GNOME, Microsoft Windows, and Mac OS X. It is simple
+    and easy to use, and allows you to organize the ideas and information you
+    deal with every day. Tomboy has some very useful editing features to help
+    you customize your notes, including:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Виділення знайденого тексту</para>
+      </listitem>
+
+      <listitem>
+        <para>Перевірка орфографії на ходу</para>
+      </listitem>
+
+      <listitem>
+        <para>Автоматичне додавання посилань та поштових адрес</para>
+      </listitem>
+
+      <listitem>
+        <para>Підтримка скасування/повтору змін</para>
+      </listitem>
+
+      <listitem>
+        <para>Шрифти різного стилю та розміру</para>
+      </listitem>
+
+      <listitem>
+        <para>Марковані списки</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Tomboy is accessed through the GNOME panel, the taskbar in Microsoft Windows, or the dock in Mac OS X. To startup Tomboy
+    automatically when you log into GNOME, see <xref linkend="add-to-panel"/>.</para>
+  </sect1>
+
+  <!--=========== Getting Started ============================== -->
+
+  <sect1 id="getting-started">
+    <title>Початок роботи</title>
+
+    <sect2 id="add-to-panel">
+      <title>Adding Tomboy to the GNOME Panel</title>
+
+      <para>To add Tomboy to a panel in GNOME, right-click on the panel, then choose
+      <menuchoice>
+          <guimenuitem>Add to Panel</guimenuitem>
+        </menuchoice>. Select Tomboy Notes in the Add to the panel dialog,
+      then click <menuchoice>
+          <guibutton>Add</guibutton>
+        </menuchoice>. You should see a yellow note icon appear in the panel,
+      representing Tomboy. The panel icon is illustrated in <xref linkend="tomboy-panel"/>.</para>
+	  <para>Tomboy is automatically added to the taskbar when run on Microsoft Windows, or the dock when run on Mac OS X.</para>
+    </sect2>
+
+    <sect2 id="creating-notes">
+      <title>Створення приміток</title>
+
+      <para>Once you have successfully added Tomboy to the panel, you can
+      create new notes using one of the following methods.</para>
+
+      <para>Створення нової примітки з використанням миші:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Click on the Tomboy note icon present in the GNOME Panel or Windows taskbar. A
+          menu will appear.</para>
+        </listitem>
+
+        <listitem>
+          <para>Виберіть пункт меню <menuchoice><guimenuitem>Створити нову примітку</guimenuitem></menuchoice>.</para>
+        </listitem>
+      </orderedlist>
+
+      <para>Створення примітки за допомогою клавіатури:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Відкрийте меню Tomboy за допомогою комбінації клавіш <keycombo><keycap>Alt</keycap><keycap>F12</keycap></keycombo>.</para>
+        </listitem>
+
+        <listitem>
+          <para>Натисніть клавішу <keycap>С</keycap>, щоб вибрати пункт меню <menuchoice><guimenuitem>Створити нову примітку</guimenuitem></menuchoice>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 id="editing-notes">
+      <title>Редагування приміток</title>
+
+      <para>Після створення нової примітки, вона відкриється у новому вікні із заголовком <literal>Нова примітка <replaceable>N</replaceable></literal>. У верхній частині вікна примітки знаходиться панель інструментів. безпосередньо під панеллю інструментів розташована область тексту для вводу змісту примітки. <xref linkend="new-note"/> показує зовнішній вигляд вид вікна нової примітки.</para>
+
+      <para>Для редагування примітки, клацніть у області тексту та введіть чи видаліть текст за допомогою клавіатури. Перший рядок тексту  використовується як заголовок примітки. Типово примітки створюються із заголовком <quote><literal>Нова примітка <replaceable>N</replaceable></literal></quote>. Щоб змінити заголовок примітки, клацніть на першому рядку у області тексту та використовуйте клавіатуру для редагування. Типово, при створенні нової примітки, фокус вводу встановлюється у область тексту після заголовку, так що ви можете одразу починати вводити текст примітки, не треба клацати мишею у область тексту.</para>
+
+      <para>Using the toolbar available on each note is discussed in
+      <xref linkend="working-with-notes"/>.</para>
+
+      <figure id="new-note">
+        <title>Типове вікно для нових приміток</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-new-note.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+
+    <sect2 id="search-all-notes">
+      <title>Пошук у примітках</title>
+
+      <para>Щоб переглянути всі примітки, існуючі у Tomboy, виберіть пункт меню <menuchoice><guimenuitem>Знайти в усіх примітках</guimenuitem></menuchoice> у меню панелі GNOME. Зазвичай діалог <interface>Пошук в усіх примітках</interface> відображає примітки, впорядковані за часом останньої зміни. Для зміни порядку сортування натисніть на заголовку стовпчика <guilabel>Примітка</guilabel> або <guilabel>Час останньої зміни</guilabel>. Повторне натискання на заголовку стовпчика змінює напрямок сортування на зворотний.</para>
+      
+      <para>Щоб знайти потрібну примітку, ви можете ввести текст у полі пошуку у верхній частині діалогу <interface>Пошук в усіх примітках</interface>. Список приміток автоматично зміниться, у ньому залишаться лише примітки, що містять введений текст.</para>
+      
+      <para>Відкрити примітку з діалогу <interface>Пошук в усіх примітках</interface> можна кількома способами:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Двічі клацніть на примітці.</para>
+        </listitem>
+        
+        <listitem>
+          <para>Виділіть потрібну примітку та виберіть пункт меню <menuchoice><guimenuitem>Відкрити</guimenuitem></menuchoice> з меню <guimenuitem>Файл</guimenuitem>.</para>
+        </listitem>
+        
+        <listitem>
+          <para>Клацніть на потрібній примітці правою кнопкою миші та виберіть <menuchoice><guimenuitem>Відкрити</guimenuitem></menuchoice> з  контекстного меню.</para>
+        </listitem>
+        
+        <listitem>
+          <para>Виділіть потрібну примітку та натисніть комбінацію клавіш <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+  </sect1>
+
+  <!--=========== Working With Notes ============================== -->
+
+  <sect1 id="working-with-notes">
+    <title>Робота з примітками</title>
+
+    <para>Кожна примітка редагується у окремому вікні. Панель інструментів у верхній частині цього вікна дозволяє надати тексту потрібний стиль та виконати інші операції з приміткою. Функції кожного елементу панелі інструментів будуть описані у наступних розділах.</para>
+
+    <sect2 id="search">
+      <title>Пошук</title>
+
+      <para>При натисканні кнопки <guibutton>Пошук</guibutton> відкривається діалог <interface>Пошук в усіх примітках</interface>, що описаний раніше у розділі (<xref linkend="search-all-notes"/>.)</para>
+    </sect2>
+
+    <sect2 id="link">
+      <title>Зв'язати</title>
+
+      <para>Кнопка <guibutton>Зв'язати</guibutton> дозволяє створити посилання на нову примітку з поточної. Наприклад, якщо примітка містить фразу <quote>Остаточний аналіз</quote>, ви можете виділити цю фразу та натиснути кнопку <guibutton>Зв'язати</guibutton>, щоб створити   нову примітку із заголовком <quote>Остаточний аналіз</quote>. Виділений текст у поточній примітці перетвориться на посилання, натискаючи на якому можна відкрити створену примітку <quote>Остаточний аналіз</quote>.</para>
+
+      <note>
+        <para>При зміні заголовку примітки будуть оновлюватися усі посилання на цю примітку. Це запобігає створенню зіпсованих посилань, коли примітки перейменовуються.</para>
+      </note>
+    </sect2>
+
+    <sect2 id="text">
+      <title>Текст</title>
+
+      <para>Formatting text within your notes can be done using the
+      <guibutton>Text</guibutton> button. The <guibutton>Text</guibutton>
+      button will display a menu with several options from which you
+      can choose. Each menu item is explained next.</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Вернути</term>
+
+          <listitem>
+            <para>У цьому пункті меню доступна функція <quote>Вернути</quote>, що дозволяє скасувати зміни, внесені у текст примітки у поточному сеансі редагування. Для скасування останньої зміни за допомогою клавіатури, використовуйте стандартну комбінацію клавіш <keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Повторити</term>
+
+          <listitem>
+            <para>Функція <quote>Повторити</quote> використовується для повернення попередніх змін, скасованих за допомогою функції <quote>Вернути</quote>. Для повтору змін за допомогою клавіатури, використовуйте стандартну комбінацію клавіш <keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Жирний</term>
+
+          <listitem>
+            <para>To make text within your note bold, first select the text
+            you want to modify. Then select the <menuchoice>
+                <guimenuitem>Bold</guimenuitem>
+              </menuchoice> option from the <guibutton>Text</guibutton>
+            menu. You may also use the keybinding <keycombo>
+                <keycap>Ctrl</keycap>
+
+                <keycap>B</keycap>
+              </keycombo> after selecting the text.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Курсив</term>
+
+          <listitem>
+            <para>To make text within your note italic, first select the text
+            you want to modify. Then select the <menuchoice>
+                <guimenuitem>Italic</guimenuitem>
+              </menuchoice> option from the <guibutton>Text</guibutton>
+            menu. You may also use the keybinding <keycombo>
+                <keycap>Ctrl</keycap>
+
+                <keycap>I</keycap>
+              </keycombo> after selecting the text.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Закреслений</term>
+
+          <listitem>
+            <para>The strikeout style will put a line through the selected
+            text. To add a strikeout, select the text and then select the
+            <menuchoice>
+                <guimenuitem>Strikeout</guimenuitem>
+              </menuchoice> option from the <guibutton>Text</guibutton>
+            menu. You may also use the keybinding <keycombo>
+                <keycap>Ctrl</keycap>
+
+                <keycap>S</keycap>
+              </keycombo> after selecting the text.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Виділення кольором</term>
+
+          <listitem>
+            <para>The highlight style will put a yellow background around the
+            selected text. To add a highlight, select the text and then select
+            the <menuchoice>
+                <guimenuitem>Highlight</guimenuitem>
+              </menuchoice> option from the <guibutton>Text</guibutton>
+            menu. You may also use the keybinding <keycombo>
+                <keycap>Ctrl</keycap>
+
+                <keycap>H</keycap>
+              </keycombo> after selecting the text.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Фіксована ширина</term>
+
+          <listitem>
+            <para>The fixed width style allows text to use a fixed width font.
+            To change existing text, first select the text you want to modify.
+            Then select the <menuchoice>
+                <guimenuitem>Fixed Width</guimenuitem>
+              </menuchoice> option from the <guibutton>Text</guibutton>
+            menu.  You can also select the <menuchoice>
+                <guimenuitem>Fixed Width</guimenuitem>
+              </menuchoice> option from the <guibutton>Text</guibutton> before
+            you start typing to have the text you type be in a fixed width
+            style.</para>
+            
+            <para>The <menuchoice>
+                <guimenuitem>Fixed Width</guimenuitem>
+              </menuchoice> option is a feature provided by the Fixed Width
+              Add-in. For more information on add-ins, see
+              <xref linkend="plugins"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Розмір шрифту</term>
+
+          <listitem>
+            <para>There are actually four options in this part of the menu:
+            <simplelist type="inline">
+                <member><guilabel>Маленький</guilabel></member>
+
+                <member><guilabel>Звичайний</guilabel></member>
+
+                <member><guilabel>Великий</guilabel></member>
+
+                <member><guilabel>Величезний</guilabel></member>
+              </simplelist>. Each one of these options represents a font size
+            to use for the selected text in the note. To modify the font size,
+            select the text and then select one of <simplelist type="inline">
+                <member><guilabel>Маленький</guilabel></member>
+
+                <member><guilabel>Звичайний</guilabel></member>
+
+                <member><guilabel>Великий</guilabel></member>
+
+                <member><guilabel>Величезний</guilabel></member>
+              </simplelist> options from the <guibutton>Text</guibutton>
+            menu.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Позначки</term>
+
+          <listitem>
+            <para>Select the <menuchoice>
+                <guimenuitem>Bullets</guimenuitem>
+              </menuchoice> option from the <guibutton>Text</guibutton>
+            menu to begin or end a bulleted list. If the cursor is
+            inside a bulleted list, the <simplelist type="inline">
+                <member><guilabel>Збільшити відступ</guilabel></member>
+                
+                <member><guilabel>Зменшити відступ</guilabel></member>
+              </simplelist> options will be enabled.</para>
+             
+            <para>Коли курсор знаходиться всередині маркованого списку, виберіть пункт <menuchoice><guimenuitem>Збільшити відступ</guimenuitem></menuchoice> для зсуву праворуч рядка, на якому стоїть курсор, чи пункт <menuchoice><guimenuitem>Зменшити відступ</guimenuitem></menuchoice> щоб зсунути його ліворуч.</para>
+            
+            <para>Додаткову інформацію про позначки дивіться <xref linkend="bullets"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Знайти у цій примітці</term>
+
+          <listitem>
+          	<para>Використовуйте цей пункт для пошуку тексту у поточній примітці. У нижнього краю вікна примітки з'явиться невелика панель пошуку. Щоб відкрити панель пошуку за допомогою клавіатури, використовуйте стандартну комбінацію клавіш <keycombo><keycap>Ctrl</keycap><keycap>F</keycap></keycombo>.</para>
+            
+            <para>Введіть текст, який треба знайти, і у примітці будуть виділені знайдені відповідності. Щоб виділити наступну відповідність та перемістити курсор до неї натисніть кнопку <guibutton>Знайти наступну</guibutton>. Для пошуку попередньої відповідності натисніть <guibutton>Попередня</guibutton>.</para>
+          	
+          	<para>Щоб закрити панель пошуку, натисніть кнопку <guibutton>X</guibutton> (Закрити) на лівому краї цієї панелі або натисніть клавішу <keycap>Escape</keycap>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="tools">
+      <title>Сервіс (значок з шестірнями)</title>
+
+      <para>The <guibutton>Tools</guibutton> button is represented by the
+      <inlinegraphic fileref="figures/tomboy-tools.png"/> icon. When you
+      click the <guiicon>Tools</guiicon> icon on the toolbar present on your
+      note, a menu will appear with the following items:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Synchronize Notes</term>
+
+          <listitem>
+            <para>Select this option to synchronize your notes with a
+            central server.  For more information on note synchronization, see
+            <xref linkend="synchronization"/>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Сюди є посилання з</term>
+
+          <listitem>
+            <para>This option allows you to quickly see what other notes link
+            to the current note. This feature is provided by the Backlinks
+            Add-in. For more information on add-ins, see
+            <xref linkend="plugins"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Експортувати в HTML</term>
+
+          <listitem>
+            <para>За допомогою цього пункту з однієї чи кількох приміток можна створювати документ <acronym>HTML</acronym>. Докладніше модулі розглянуті у <xref linkend="plugins"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Друк</term>
+
+          <listitem>
+            <para>Виберіть цей пункт для друкування поточної примітки. Відкриється стандартне діалогове вікно друку GNOME.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <note>
+        <para>Depending on the add-ins that you have installed for Tomboy, you
+        may have more or less items available in the <guimenu>Tools</guimenu>
+        menu.</para>
+      </note>
+    </sect2>
+
+    <sect2 id="delete">
+      <title>Видалити</title>
+
+      <para>При натисканні на кнопку <guibutton>Видалити</guibutton> відкривається вікно, у якому треба підтвердити видалення примітки та її змісту. Для остаточного видалення примітки натисніть кнопку <guibutton>Вдалити</guibutton>, для скасування видалення натисніть <guibutton>Скасувати</guibutton>. Посилання на цю примітку з інших приміток залишаться, але при спробі переходу за ними буде створюватись нова примітка.</para>
+    </sect2>
+  </sect1>
+
+  <!--=========== Panel Menu ====================================== -->
+
+  <sect1 id="panel-menu">
+    <title>Меню панелі</title>
+
+    <para>Tomboy keeps the most recently used notes quickly available to you in
+    a menu that appears when you click on the Tomboy Icon in the GNOME
+    Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.</para>
+
+    <sect2 id="note-pinning">
+      <title>Прикріплення приміток</title>
+
+      <para>Якщо треба щоб примітка завжди відображалась у меню панелі GNOME, незалежно від частоти її відкривання, натисніть на значок "шпильки" праворуч від заголовку примітки у меню. Приколені до меню примітки позначаються значком <inlinegraphic fileref="figures/tomboy-pindown.png"/>, не приколені примітки - значком <inlinegraphic fileref="figures/tomboy-pinup.png"/>.</para>
+
+      <figure>
+        <title>Меню аплету Tomboy на панелі</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-main-menu.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+  </sect1>
+
+  <!--=========== Bulleted Lists ================================== -->
+
+  <sect1 id="bullets">
+    <title>Марковані списки</title>
+
+    <sect2 id="bullet-start">
+      <title>Створення маркованого списку</title>
+        
+      <para>Маркований список можна створити наступними способами:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Select <menuchoice>
+              <guimenuitem>Bullets</guimenuitem>
+            </menuchoice> from the <guibutton>Text</guibutton>
+          menu.</para>
+        </listitem>
+
+        <listitem>
+          <para>Почніть рядок з символу одиночного тире (-), одразу після тире введіть потрібний текст та натисніть <keycap>Enter</keycap>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+      
+    <sect2 id="bullet-end">
+      <title>Завершення маркованого списку</title>
+
+      <para>Завершити введення маркованого списку можна наступний чином:</para>
+      
+      <orderedlist>
+        <listitem>
+          <para>Select <menuchoice>
+              <guimenuitem>Bullets</guimenuitem>
+            </menuchoice> from the <guibutton>Text</guibutton>
+          menu.</para>
+        </listitem>
+
+        <listitem>
+          <para>Натисніть <keycap>Enter</keycap> у порожньому рядку маркованого списку.</para>
+        </listitem>
+
+        <listitem>
+          <para>Select <menuchoice>
+              <guimenuitem>Decrease Indent</guimenuitem>
+            </menuchoice> from the <guibutton>Text</guibutton> menu in
+          succession until the current line is no longer part of the bulleted
+          list.</para>
+        </listitem>
+
+        <listitem>
+          <para>Натискайте комбінацію клавіш <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo> доки поточний рядок не перестане бути рядком маркованого списку.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+      
+    <sect2 id="bullet-increase-indent">
+      <title>Збільшити відступ</title>
+      
+      <para>Для збільшення відступу за допомогою миші:</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Select <menuchoice>
+              <guimenuitem>Increase Indent</guimenuitem>
+            </menuchoice> from the <guibutton>Text</guibutton>
+          menu.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Щоб збільшити відступ за допомогою клавіатури:</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Натисніть клавішу табуляції.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+      
+    <sect2 id="bullet-decrease-indent">
+      <title>Зменшити відступ</title>
+        
+      <para>Для зменшення відступу за допомогою миші:</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Select <menuchoice>
+              <guimenuitem>Decrease Indent</guimenuitem>
+            </menuchoice> from the <guibutton>Text</guibutton>
+          menu.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Щоб зменшити відступ за допомогою клавіатури:</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Натисніть комбінацію клавіш <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo>.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+  </sect1>
+  
+  <!--=========== Working with Notebooks =========================== -->
+  
+  <sect1 id="notebooks">
+  	<title>Working with Notebooks</title>
+  
+    <para>Notebooks allow you to group related notes together.  
+    You can add a note to a notebook in the Search All Notes window or directly inside of a Note.</para>
+    
+    <sect2 id="creating-noteboks">
+    <title>Creating Notebooks</title>
+    
+    <para>You can create new notebooks using one of the following methods:</para>
+    
+      <orderedlist>
+        <listitem> 
+        <para>Click on the Tomboy note icon present in the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.  
+        A menu will appear</para>   
+        </listitem>
+        <listitem>
+        <para>Select <menuchoice><guimenuitem>Notebooks</guimenuitem> <guimenuitem>New Notebook</guimenuitem></menuchoice>.
+        </para></listitem>
+		<listitem>
+		<para>Enter a name for the new notebook.</para>
+		</listitem>
+	</orderedlist>
+	
+	      <figure id="new-notebook">
+        <title>Create a new notebook from the Tomboy note icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/new-notebook.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+		
+	<para>To create a new notebook from the Search All Notes dialog:
+	</para>
+	<orderedlist>
+		<listitem> 
+	<para>Open <menuchoice>
+              <guimenuitem>Search All Notes</guimenuitem>
+            </menuchoice> by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
+	or click on Search from an open note.</para>
+	</listitem>
+	<listitem>
+	<para>Using your mouse, right click in the left hand box and choose <menuchoice>
+              <guimenuitem>New Notebook</guimenuitem>
+            </menuchoice>.</para>
+	</listitem>
+	<listitem>
+	<para>Enter a name for the new notebook.</para>
+	</listitem>
+	<listitem>
+	<para>With <guilabel>Search All Notes</guilabel> open, choose 
+		<menuchoice><guimenuitem>File</guimenuitem> <guimenuitem>Notebooks</guimenuitem> 
+		<guimenuitem>New Notebook</guimenuitem> </menuchoice>.</para>
+	</listitem>
+	<listitem>
+	<para>Enter a name for the new notebook.</para>
+	</listitem>
+
+	</orderedlist>
+  	      
+  	      <figure id="create-new-notebook">
+        <title>Create a new notebook from Search All Notes</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/add-notebook-search.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+  
+  </sect2>
+  
+  <sect2 id="adding-notes-notebook">
+  	<title>Adding Notes to a Notebook</title>
+  	
+  	<para>To add notes to a notebook, you can add a note from the <guilabel>Search All Notes</guilabel>
+  	 dialog or directly within a note.</para>
+
+	<para>To move an existing note from the Search All Notes dialog:
+	</para>
+	<orderedlist>
+		<listitem> 
+	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
+	or click on Search from an open note.</para>
+	</listitem>
+	<listitem>
+	<para>Using your mouse, drag the note(s) onto a notebook on the left.
+	</para>
+	</listitem>
+	</orderedlist>
+
+	<para>As you type a note, you can add the note directly to an existing notebook using the 
+	<guimenu>Notebook</guimenu>	button. 
+	The <guimenu>Notebook</guimenu> button is represented by the
+	<inlinegraphic fileref="figures/notebook-icon.png"/> icon.</para> 
+	
+	  	      <figure id="add-to-notebook">
+        <title>Adding a note to a notebook</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/add-to-notebook.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+
+
+	</sect2>
+	
+	<sect2 id="notebook-templates">
+	<title>Creating Notebook Templates</title>
+	
+	<para>After you create a notebook, you can create a template for each new note 
+	that you create in a specific notebook.
+	</para>
+
+	<orderedlist>
+	<listitem> 
+	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
+	or click on Search from an open note.</para>
+	</listitem>
+	<listitem>
+	<para>Using your mouse, right click on a Notebook that you have created and choose  
+	<menuchoice><guimenuitem>Open Template Note</guimenuitem></menuchoice>.
+	</para>
+	</listitem>
+	<listitem>
+	<para>This will open a new note that will be used as the template.  Any text typed in this 
+	note will appear in all notes created in this Notebook.  Create a new
+	note in the notebook by using your mouse, right click on a notebook
+	and select <menuchoice><guimenuitem>New Note</guimenuitem></menuchoice>.
+	</para>
+	</listitem>
+	</orderedlist>
+
+	  	      <figure id="notebook-template">
+        <title>Creating a Notebook Template</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/note-template.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+	
+	</sect2>
+
+	
+	<sect2 id="deleting-notebooks">
+	<title>Deleting a Notebook</title>
+	<para>Deleting a notebook will not delete any of the notes which are
+	currently inside the notebook.  After deleting a notebook, the notes
+	will not be associated with any notebook and can be seen by
+	highlighting <menuchoice><guimenuitem>Unfiled Notes</guimenuitem></menuchoice> in the <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice> window.
+	</para>
+	
+	<para>You can delete a notebook you have created by one of two methods:
+	</para>
+	<para>To delete a notebook using your mouse:</para>
+	<orderedlist>
+	<listitem> 
+	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
+	or click on Search from an open note.</para>
+	</listitem>
+	<listitem>
+	<para>Using your mouse, right click on a Notebook that you have created and choose  
+	<menuchoice><guimenuitem>Delete Notebook</guimenuitem></menuchoice>.
+	</para>
+	</listitem>
+	</orderedlist>
+		  	      <figure id="notebook-delete">
+        <title>Deleting a Notebook</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/delete-notebook.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+	
+	<para>To delete a Notebook from the <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	menu, open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
+	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.
+	</para>
+	<orderedlist>
+	<listitem>
+	<para>Using your mouse, left click on the Notebook you want to delete.
+	</para>
+	</listitem>
+	<listitem>
+	<para>From the menu, choose <menuchoice><guimenuitem>Edit</guimenuitem> 
+	<guimenuitem>Delete Notebook</guimenuitem></menuchoice>
+	</para>
+	</listitem>
+	</orderedlist>
+
+	
+	</sect2>
+	
+	</sect1>
+	
+  <!--=========== Synchronization ================================== -->
+
+  <sect1 id="synchronization">
+    <title>Note Synchronization</title>
+    
+    <para>Tomboy can now keep your notes synchronized between multiple
+    computers by relying on a central server.</para>
+
+    <sect2 id="sync-configure">
+      <title>Configure note synchronization</title>
+
+      <para>You can configure your note synchronization preferences in the
+      <guilabel>Synchronization</guilabel> tab of the <interface>Tomboy Preferences</interface>
+      dialog. Default conflict handling behavior can be configured by selecting the
+      <guibutton>Advanced...</guibutton> button.</para>
+
+      <figure>
+        <title>Tomboy Synchronization Preferences</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-synchronization.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+    <sect3 id="sync-configure-webdav">
+      <title>Configure note synchronization service (WebDAV)</title>
+        
+      <para>In order to synchronize your notes with a WebDAV server, you will need
+      the wdfs FUSE file system installed.  Follow the documentation for your operating
+      system to set up FUSE for your user.  You will also need the GNOME Keyring installed.</para>
+      
+      <para>Choose <guimenuitem>WebDAV</guimenuitem> from the <guilabel>Service</guilabel>
+      drop-down list. Fill in the connection information for your server, and then select the
+      <guibutton>Save</guibutton> button.  You are now ready to synchronize your notes.</para>
+    </sect3>
+
+    <sect3 id="sync-configure-ssh">
+      <title>Configure note synchronization service (SSH)</title>
+        
+      <para>In order to synchronize your notes with an SSH server, you will need
+      the sshfs FUSE file system installed.  Follow the documentation for your operating
+      system to set up FUSE for your user.  You will also need an SSH key for your
+      SSH server account, which should be added to a running SSH daemon.  This can be
+      done using the GNOME <application>Seahorse</application> application.</para>
+      
+      <para>Choose <guimenuitem>SSH</guimenuitem> from the <guilabel>Service</guilabel>
+      drop-down list. Fill in the connection information for your server, and then select the
+      <guibutton>Save</guibutton> button.  You are now ready to synchronize your notes.</para>
+    </sect3>
+
+    <sect3 id="sync-configure-localfolder">
+      <title>Configure note synchronization service (Local Folder)</title>
+        
+      <para>You may want to synchronize your notes to a local folder if that folder
+      is available to your other systems, or if that folder represents a local mount
+      of a remote server.</para>
+      
+      <para>Choose <guimenuitem>Local Folder</guimenuitem> from the <guilabel>Service</guilabel>
+      drop-down list. Choose the desired synchronization <guilabel>Folder Path</guilabel>, and then select the
+      <guibutton>Save</guibutton> button.  You are now ready to synchronize your notes.</para>
+    </sect3>
+    </sect2>
+
+    <sect2 id="sync-initiate">
+      <title>Synchronize your notes</title>
+        
+      <para>You can synchronize your notes at any time by selecting
+        <menuchoice>
+          <guimenu>Tools</guimenu>
+          <guimenuitem>Synchronize Notes</guimenuitem>
+        </menuchoice>
+        from any note or from the <interface>Search All Notes</interface> dialog.
+      </para>
+    </sect2>
+    
+    <sect2 id="sync-conflicts">
+      <title>Handling synchronization conflicts</title>
+      
+      <para>When synchronizing notes between multiple computers, conflicts may occur.
+      Usually this is the result of not synchronizing regularly when switching between
+      systems.  Tomboy will detect conflicts in the content of your notes and help
+      you to avoid loss of important data.</para>
+      
+      <para>If a conflict is detected during note synchronization, the
+      <interface>Note Conflict</interface> dialog will appear.  If you do not need the
+      changes you made in your local note, you can select
+      <guilabel>Overwrite local note</guilabel>.  If you would like to keep your local
+      changes in a new note, select <guilabel>Rename local note</guilabel>.</para>
+    </sect2>
+  </sect1>
+
+  <sect1>
+    <title>Параметри</title>
+
+    <para>To set preferences for Tomboy, right-click on the icon in the panel,
+    and select <menuchoice>
+        <guimenuitem>Preferences</guimenuitem>
+      </menuchoice> from the menu. You will see a dialog similar to the one
+    displayed in <xref linkend="pref-editing"/>. There are two categories of
+    preferences, <guilabel>Editing</guilabel> and
+    <guilabel>Hotkeys</guilabel>. Preferences for each tab will be
+    described below.</para>
+
+    <sect2>
+      <title>Правка</title>
+
+      <para>The editing tab will allow you to set preferences related to
+      editing notes. There are three checkboxes on this tab, which can either
+      be turned on or off.</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Перевіряти орфографію під час вводу</term>
+
+          <listitem>
+            <para>При вмиканні цього параметра Tomboy буде підкреслювати червоним неправильно написані слова, та пропонувати варіанти їх виправлення у контекстному меню. Параметр вмикається та вимикається комбінацією клавіш <keycombo><keycap>Alt</keycap><keycap>П</keycap></keycombo>.</para>
+
+            <note>
+              <para>The spellcheck option is only available if you have the
+              <application>GtkSpell</application> package installed.</para>
+            </note>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Виділяти ВікіСлова</term>
+
+          <listitem>
+            <para>Увімкніть цей параметр для автоматичного створення посилань для фраз <literal>ЯкіВиглядаютьТакимЧином</literal>. При клацанні на цьому посилання створюється нова примітка з відповідним заголовком. Параметр вмикається чи вимикається за допомогою миші чи комбінації клавіш <keycombo><keycap>Alt</keycap><keycap>В</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Використовувати інший шрифт</term>
+
+          <listitem>
+            <para>При вмиканні цього параметра можна вказати шрифт, який буде використовуватись у ваших примітках. Якщо параметр вимкнений - буде використовуватись системний типовий шрифт. Параметр вмикається чи вимикається за допомогою миші чи комбінації клавіш <keycombo><keycap>Alt</keycap><keycap>Ш</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <figure id="pref-editing">
+        <title>Параметри Tomboy - Правка</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-editing.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+
+    <sect2>
+      <title>Гарячі клавіші</title>
+
+      <para>The hotkeys tab allows you to set global key combinations to
+      perform different functions in Tomboy. In order to set key combinations,
+      you must have the <guibutton>Listen for Hotkeys</guibutton> checkbox
+      enabled. Use <keycombo>
+          <keycap>Alt</keycap>
+
+          <keycap>H</keycap>
+        </keycombo> to toggle this option.</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Показувати меню приміток</term>
+
+          <listitem>
+            <para>Введіть комбінацію клавіш, при якій відкриватиметься меню приміток.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Відкрити "Першу примітку"</term>
+
+          <listitem>
+            <para>Введіть комбінацію клавіш, при якій буде відкриватися <quote>Перша примітка</quote>, яка вбудована у Tomboy.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Створити нову примітку</term>
+
+          <listitem>
+            <para>Введіть комбінацію клавіш, при якій буде створюватись нова примітка.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Відкрити вікно пошуку в усіх примітках</term>
+
+          <listitem>
+            <para>Введіть комбінацію клавіш, при якій відкривається діалог <interface>Пошук в усіх примітках</interface>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <figure>
+        <title>Параметри Tomboy - Гарячі клавіші</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-hotkeys.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+
+    <sect2 id="prefs-synchronization">
+      <title>Synchronization</title>
+      
+      <para>Please see <xref linkend="synchronization"/>
+      for more details.</para>
+    </sect2>
+
+    <sect2 id="prefs-plugins">
+      <title>Add-ins</title>
+
+      <para>The add-ins tab allows you to enable and configure Tomboy
+      Add-ins.</para>
+      
+      <para>The list of installed add-ins shows on the left.  An add-in is
+      enabled by selecting it from the list and then selecting
+      <guibutton>Enable</guibutton>.
+      Disable an add-in by selecting it from the list and then
+      selecting <guibutton>Disable</guibutton>.</para>
+      
+      <para>Please see <xref linkend="plugins"/> for more
+      information about the add-ins that are installed with Tomboy.</para>
+
+      <figure>
+        <title>Tomboy Add-in Preferences</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-add-ins.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+  </sect1>
+
+  <sect1 id="plugins">
+    <title>Add-ins</title>
+
+    <para>By default, Tomboy comes with several pre-installed add-ins:
+    <simplelist type="inline">
+        <member>Зворотні посилання</member>
+
+        <member>Додати Bugzilla URL</member>
+
+        <member>Додати поштову  Evolution</member>
+
+        <member>Експортувати в HTML</member>
+
+        <member>Фіксована ширина</member>
+
+        <member>Примітка для</member>
+
+        <member>Друк приміток</member>
+
+        <member>та імпорт з аплету Липкі примітки</member>
+      </simplelist> Since these are preinstalled, they are ready to use and
+    are automatically loaded into the Tomboy interface.</para>
+
+    <note>
+      <para>Some add-ins exist that are not installed by default.</para>
+    </note>
+
+    <variablelist>
+      <varlistentry>
+        <term>Зворотні посилання (Сюди є посилання з)</term>
+
+        <listitem>
+          <para>This add-in allows you to know which notes link to the note
+          you are currently editing. It makes it easier to keep track of the
+          relationships between notes. If this add-in is enabled, the
+          <link linkend="tools">Tools</link> menu will have a
+          <guimenuitem>What links here?</guimenuitem> option. When you
+          select this option, it will list all the notes which link to the
+          current note in a submenu. Select a note in the submenu to open
+          it.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Додати Bugzilla URL</term>
+
+        <listitem>
+          <para>Дозволяє перетягнути Bugzilla URL з оглядача Інтернет у примітку Tomboy. У примітку у вигляді посилання вставляється номер помилки з маленьким значком помилки. При клацанні по цьому посиланні у веб-переглядачі відкривається Bugzilla URL.</para>
+          
+          <para>Customize the icons that are used by editing the add-in
+          preferences in the <link linkend="prefs-plugins">Preferences
+          Dialog</link>.  After highlighting the Bugzilla Add-in, click
+          <guibutton>Preferences</guibutton> to open the
+          <interface>Bugzilla Add-in Settings</interface> dialog.  To add a new
+          icon, click <guibutton>Add</guibutton>, select an icon on your
+          computer, provide a Bugzilla host name (e.g., bugzilla.gnome.org),
+          and click <guibutton>Open</guibutton>. Any Bugzilla URL that is
+          dragged and dropped from one of these custom host names will now use
+          the icon you specified.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Додати поштову  Evolution</term>
+
+        <listitem>
+          <para>This add-in allows you to drag and drag an e-mail message from
+          the <application>Evolution</application> mail application to one of
+          your Tomboy notes. Clicking on the mail icon in the note will then
+          open the corresponding e-mail message in Evolution.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Експортувати в HTML</term>
+
+        <listitem>
+          <para>When this add-in is installed, the <link linkend="tools">Tools</link> menu will have the <guimenuitem>Export to
+          HTML</guimenuitem> option available.</para>
+
+          <para>При виборі цього пункту, відкривається діалогове вікно, яке дозволяє вказати назву та розташування файлу <acronym>HTML</acronym> для збереження примітки. Введіть назву та натисніть натисніть <guibutton>Гаразд</guibutton> для збереження файлу, або натисніть <guibutton>Скасувати</guibutton> для скасування експорту.</para>
+
+          <para>Щоб експортувати усі примітки, на які посилається поточна примітка, відмітьте параметр <guibutton>Експортувати пов'язані примітки</guibutton>.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Фіксована ширина</term>
+
+        <listitem>
+          <para>Allows you to use a fixed-width font when creating/editing
+          notes. If this add-in is enabled, the
+          <link linkend="text">Text</link> menu will have a
+          <guimenuitem>Fixed Width</guimenuitem> option.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Примітка для</term>
+
+        <listitem>
+          <para>This add-in automatically creates a "Today" note for jotting
+          daily thoughts down. The current date is used as a basis for the
+          title of the note.  As an example, the title of a "Today" note
+          created on February 28, 2007, would be, "Today: Wednesday, February
+          28 2007"</para>
+          
+          <para>If you leave a "Today" note unmodified, the Note of the Day
+          Add-in will automatically delete the note.</para>
+          
+          <para>To customize the content of the default "Today" note, create
+          a new note and change the title of the note to be, "Today: Template".
+          Change the content of the template note to whatever you like.  When
+          new "Today" notes are created, it will then use the content of your
+          "Today: Template" note.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Друк приміток</term>
+
+        <listitem>
+          <para>When this add-in is installed, the <link linkend="tools">Tools</link> menu will have the
+          <guimenuitem>Print</guimenuitem> option available.</para>
+
+          <para>Виберіть цей пункт для друкування поточної примітки. Відкриється стандартне діалогове вікно друку GNOME.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Імпорт з аплету Липкі примітки</term>
+
+        <listitem>
+          <para>When this add-in is installed, the <link linkend="tools">Tools</link> menu will have the <guimenuitem>Import
+          from Sticky Notes</guimenuitem> option available.</para>
+
+          <para>Цю функцію можна використовувати для імпорту приміток з програми <application>Липкі примітки</application>, яка використовувалась у попередніх версіях GNOME. Ця функція додана для користувачів, які хочуть перейти з програми <application>Липкие записки</application> на Tomboy.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+</article>
