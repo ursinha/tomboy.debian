@@ -1,4 +1,10 @@
-tomboy (0.14.2-1) UNRELEASED; urgency=low
+tomboy (0.14.2-2) UNRELEASED; urgency=low
+
+  * debian/control: Update VCS info to point to git repo
+
+ -- Iain Lane <laney@ubuntu.com>  Thu, 28 May 2009 01:06:20 +0100
+
+tomboy (0.14.2-1) unstable; urgency=low
 
   [ Jo Shields ]
   * New upstream release
