@@ -151,7 +151,7 @@ namespace Tomboy.Sync
 			// is the first reference to SyncManager
 
 			///
-			/// Add a "Synchronize Notes" to Tomboy's Tray Icon Menu
+			/// Add a "Synchronize Notes" to Tomboy's Main Menu
 			///
 			Gtk.ActionGroup action_group = new Gtk.ActionGroup ("Sync");
 			action_group.Add (new Gtk.ActionEntry [] {
@@ -162,7 +162,6 @@ namespace Tomboy.Sync
 				delegate {
 					Tomboy.ActionManager ["NoteSynchronizationAction"].Activate ();
 				})
-//     delegate { SyncManager.OpenNoteSyncWindow (); })
 			});
 
 			Tomboy.ActionManager.UI.AddUiFromString (@"
@@ -191,6 +190,23 @@ namespace Tomboy.Sync
 					// TODO: Call something like AddinManager.Disable (addin)
 				}
 			}
+
+			Preferences.SettingChanged += Preferences_SettingChanged;
+
+			// Update sync item based on configuration.
+			UpdateSyncAction ();
+		}
+
+		static void Preferences_SettingChanged (object sender, EventArgs args)
+		{
+			// Update sync item based on configuration.
+			UpdateSyncAction ();
+		}
+
+		static void UpdateSyncAction ()
+		{
+			string sync_addin_id = Preferences.Get (Preferences.SYNC_SELECTED_SERVICE_ADDIN) as string;
+			Tomboy.ActionManager["SyncNotesAction"].Sensitive = !string.IsNullOrEmpty (sync_addin_id);
 		}
 
 		public static void PerformSynchronization ()
@@ -283,8 +299,8 @@ namespace Tomboy.Sync
 				// for title conflict handling purposes.
 				List<string> noteUpdateTitles = new List<string> ();
 				foreach (NoteUpdate noteUpdate in noteUpdates.Values)
-				if (!string.IsNullOrEmpty (noteUpdate.Title))
-					noteUpdateTitles.Add (noteUpdate.Title);
+					if (!string.IsNullOrEmpty (noteUpdate.Title))
+						noteUpdateTitles.Add (noteUpdate.Title);
 
 				// First, check for new local notes that might have title conflicts
 				// with the updates coming from the server.  Prompt the user if necessary.
@@ -474,9 +490,9 @@ namespace Tomboy.Sync
 						server.CancelSyncTransaction ();
 				} catch {}
 			} finally {
-			syncThread = null;
-			try {
-				addin.PostSyncCleanup ();
+				syncThread = null;
+				try {
+					addin.PostSyncCleanup ();
 				} catch (Exception e) {
 					Logger.Error ("Error cleaning up addin after sync: " +
 					              e.Message + "\n" +
@@ -822,37 +838,28 @@ namespace Tomboy.Sync
 		IDictionary<string, NoteUpdate> GetNoteUpdatesSince (int revision);
 		void DeleteNotes (IList<string> deletedNoteUUIDs);
 		void UploadNotes (IList<Note> notes);
-		int LatestRevision { get;
-			                   }
-			SyncLockInfo CurrentSyncLock { get;
-				                             }
-				string Id { get;
-					          }
-				}
+		int LatestRevision { get; }
+		SyncLockInfo CurrentSyncLock { get; }
+		string Id { get; }
+	}
 
 	public interface SyncClient
 	{
-		int LastSynchronizedRevision { get;
-			                               set;
-				                             }
-				DateTime LastSyncDate { get;
-					                        set;
-						                      }
-						int GetRevision (Note note);
+		int LastSynchronizedRevision { get; set; }
+		DateTime LastSyncDate { get; set; }
+		int GetRevision (Note note);
 		void SetRevision (Note note, int revision);
-		IDictionary<string, string> DeletedNoteTitles { get;
-			                                              }
-			void Reset ();
-		string AssociatedServerId { get;
-			                            set;
-				                          }
-			}
+		IDictionary<string, string> DeletedNoteTitles { get; }
+		void Reset ();
+		string AssociatedServerId { get; set; }
+	}
 
 	public class TomboySyncException : ApplicationException
 	{
-public TomboySyncException (string message) :
+		public TomboySyncException (string message) :
 		base (message) {}
-public TomboySyncException (string message, Exception innerException) :
+
+		public TomboySyncException (string message, Exception innerException) :
 		base (message, innerException) {}
 	}
 }

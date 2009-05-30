@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -18,6 +17,7 @@ namespace Tomboy
 		Gtk.ToolButton link_button;
 		NoteTextMenu text_menu;
 		Gtk.Menu plugin_menu;
+		Gtk.ImageMenuItem sync_menu_item;
 		Gtk.TextView editor;
 		Gtk.ScrolledWindow editor_window;
 		NoteFindBar find_bar;
@@ -159,13 +159,8 @@ namespace Tomboy
 				                            Gdk.ModifierType.ControlMask,
 				                            Gtk.AccelFlags.Visible);
 
-			// Have Esc key close the note window
-			if ((bool) Preferences.Get (Preferences.ENABLE_CLOSE_NOTE_ON_ESCAPE))
-				KeyPressEvent += KeyPressed;
-
-			// Watch the escape setting in GConf
-			Preferences.Client.AddNotify (Preferences.ENABLE_CLOSE_NOTE_ON_ESCAPE,
-					OnEscapeSettingChanged);
+			// Have Esc key close the find bar or note window
+			KeyPressEvent += KeyPressed;
 
 			// Increase Indent
 			global_keys.AddAccelerator (new EventHandler (ChangeDepthRightHandler),
@@ -184,6 +179,8 @@ namespace Tomboy
 
 		protected override bool OnDeleteEvent (Gdk.Event evnt)
 		{
+			Preferences.SettingChanged -= Preferences_SettingChanged;
+
 			CloseWindowHandler (null, null);
 			return true;
 		}
@@ -200,16 +197,6 @@ namespace Tomboy
 			Move (x, y);
 		}
 
-		void OnEscapeSettingChanged (object sender, NotifyEventArgs args)
-		{
-			// enable escape key
-			if ((bool) args.Value)
-				KeyPressEvent += KeyPressed;
-			// disable escape key
-			else
-				KeyPressEvent -= KeyPressed;
-		}
-
 		void KeyPressed (object sender, Gtk.KeyPressEventArgs args)
 		{
 			args.RetVal = true;
@@ -217,7 +204,10 @@ namespace Tomboy
 			switch (args.Event.Key)
 			{
 			case Gdk.Key.Escape:
-				CloseWindowHandler (null, null);
+				if (find_bar != null && find_bar.Visible)
+					find_bar.Hide ();
+				else if ((bool) Preferences.Get(Preferences.ENABLE_CLOSE_NOTE_ON_ESCAPE))
+					CloseWindowHandler (null, null);
 				break;
 			default:
 				args.RetVal = false;
@@ -507,15 +497,33 @@ namespace Tomboy
 
 			tb.Insert (new Gtk.SeparatorToolItem (), -1);
 
-			Gtk.ImageMenuItem item =
-			        new Gtk.ImageMenuItem (Catalog.GetString ("Synchronize Notes"));
-			item.Image = new Gtk.Image (Gtk.Stock.Convert, Gtk.IconSize.Menu);
-			item.Activated += SyncItemSelected;
-			item.Show ();
-			PluginMenu.Add (item);
+			sync_menu_item = new Gtk.ImageMenuItem (Catalog.GetString ("Synchronize Notes"));
+			sync_menu_item.Image = new Gtk.Image (Gtk.Stock.Convert, Gtk.IconSize.Menu);
+			sync_menu_item.Activated += SyncItemSelected;
+			sync_menu_item.Show ();
+			PluginMenu.Add (sync_menu_item);
+
+			// We might want to know when various settings are altered.
+			Preferences.SettingChanged += Preferences_SettingChanged;
+
+			// Update items based on configuration.
+			UpdateMenuItems ();
 
 			tb.ShowAll ();
 			return tb;
+		}
+
+		void Preferences_SettingChanged (object sender, EventArgs args)
+		{
+			// Update items based on configuration.
+			UpdateMenuItems ();
+		}
+
+		void UpdateMenuItems ()
+		{
+			// Is synchronization configured and active?
+			string sync_addin_id = Preferences.Get (Preferences.SYNC_SELECTED_SERVICE_ADDIN) as string;
+			sync_menu_item.Sensitive = !string.IsNullOrEmpty (sync_addin_id);
 		}
 
 		void SyncItemSelected (object sender, EventArgs args)
@@ -753,10 +761,10 @@ namespace Tomboy
 			entry.Changed += OnFindEntryChanged;
 			entry.Activated += OnFindEntryActivated;
 			entry.Show ();
-			PackStart (entry, false, false, 0);
+			PackStart (entry, true, true, 0);
 
 			prev_button = new Gtk.Button (Catalog.GetString ("_Previous"));
-			prev_button.Image = new Gtk.Image (Gtk.Stock.GoBack, Gtk.IconSize.Menu);
+			prev_button.Image = new Gtk.Arrow (Gtk.ArrowType.Left, Gtk.ShadowType.None);
 			prev_button.Relief = Gtk.ReliefStyle.None;
 			prev_button.Sensitive = false;
 			prev_button.FocusOnClick = false;
@@ -764,8 +772,8 @@ namespace Tomboy
 			prev_button.Show ();
 			PackStart (prev_button, false, false, 0);
 
-			next_button = new Gtk.Button (Catalog.GetString ("Find _Next"));
-			next_button.Image = new Gtk.Image (Gtk.Stock.GoForward, Gtk.IconSize.Menu);
+			next_button = new Gtk.Button (Catalog.GetString ("_Next"));
+			next_button.Image = new Gtk.Arrow (Gtk.ArrowType.Right, Gtk.ShadowType.None);
 			next_button.Relief = Gtk.ReliefStyle.None;
 			next_button.Sensitive = false;
 			next_button.FocusOnClick = false;
@@ -923,7 +931,7 @@ namespace Tomboy
 
 			text = text.ToLower ();
 
-			string [] words = text.Split (' ', '\t', '\n');
+			string [] words = Search.SplitWatchingQuotes (text);
 
 			current_matches =
 			        FindMatchesInBuffer (note.Buffer, words);
@@ -1184,6 +1192,12 @@ namespace Tomboy
 		Gtk.ImageMenuItem increase_indent;
 		Gtk.ImageMenuItem decrease_indent;
 
+		// There is a bug in GTK+ that lends to improperly themed Menus
+		// and MenuItems when you derive from one of those classes; this
+		// is an internal Menu that sits around to provide proper theme
+		// information to override on this derived Menu
+		Gtk.Menu theme_hack_menu;
+
 		// Active when the text size is indeterminable, such as when in
 		// the note's title line.
 		Gtk.RadioMenuItem hidden_no_size;
@@ -1363,6 +1377,12 @@ namespace Tomboy
 			Append (increase_indent);
 			Append (decrease_indent);
 			ShowAll ();
+
+			theme_hack_menu = new Menu ();
+			theme_hack_menu.Realize ();
+			theme_hack_menu.StyleSet += delegate {
+				ModifyBg (StateType.Normal, theme_hack_menu.Style.Background (StateType.Normal));
+			};
 		}
 
 		protected override void OnShown ()

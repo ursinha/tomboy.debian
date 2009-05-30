@@ -885,9 +885,8 @@ namespace Tomboy
 			Gtk.Dialog advancedDlg =
 			        new Gtk.Dialog (Catalog.GetString ("Other Synchronization Options"),
 			                        this,
-			                        Gtk.DialogFlags.DestroyWithParent | Gtk.DialogFlags.Modal,
+			                        Gtk.DialogFlags.DestroyWithParent | Gtk.DialogFlags.Modal | Gtk.DialogFlags.NoSeparator,
 			                        Gtk.Stock.Close, Gtk.ResponseType.Close);
-
 			// Populate dialog
 			Gtk.Label label =
 			        new Gtk.Label (Catalog.GetString ("When a conflict is detected between " +
@@ -1236,7 +1235,7 @@ namespace Tomboy
 
 			// TODO: Change this icon to be an addin/package icon
 			Gtk.Image icon =
-			        new Gtk.Image (Gtk.Stock.Info, Gtk.IconSize.Dialog);
+			        new Gtk.Image (Gtk.Stock.DialogInfo, Gtk.IconSize.Dialog);
 			icon.Yalign = 0;
 
 			info_label = new Gtk.Label ();

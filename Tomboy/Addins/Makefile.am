@@ -13,5 +13,7 @@ SUBDIRS =				\
 	SshSyncService		\
 	StickyNoteImport	\
 	Tasque			\
-	WebDavSyncService
+	NoteDirectoryWatcher			\
+	WebDavSyncService			\
+	WebSyncService
 
