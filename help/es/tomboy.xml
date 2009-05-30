@@ -22,11 +22,7 @@
     <title>Manual de las notas Tomboy</title>
 
     <abstract role="description">
-      <para>Tomboy is a simple desktop note-taking application, with many features designed
-to help organize ideas, such as spell checking, highlighting, auto-linking
-URLs, lists, font stylizing, quick access with a table of contents for notes,
-and add-ins to extend Tomboy's capabilities.
-.</para>
+      <para>Tomboy es una aplicación simple para tomar notas en el escritorio, con muchas características diseñadas para ayudar a organizar ideas, tales como la corrección ortográfica, el resaltado, autoenlazado de URL, listas, estilos de tipografías, acceso rápido a la tabla de contenidos de las notas y complementos para extender las capacidades de Tomboy...</para>
     </abstract>
 
     <copyright>
@@ -63,7 +59,7 @@ and add-ins to extend Tomboy's capabilities.
       <year>2009</year>
       
       <holder>Paul Cutler</holder>
-    </copyright><copyright><year>2006-2008.</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright><copyright><year>2007.</year><holder>Claudio Saavedra (csaavedra@alumnos.utalca.cl)</holder></copyright>
+    </copyright><copyright><year>2006-2009</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright><copyright><year>2007</year><holder>Claudio Saavedra (csaavedra@alumnos.utalca.cl)</holder></copyright>
 
     <!-- translators: uncomment this:
     <copyright>
@@ -169,7 +165,7 @@ and add-ins to extend Tomboy's capabilities.
    than the current revision. -->
 
       <revision>
-        <revnumber>Tomboy Manual 2.1</revnumber>
+        <revnumber>Manual de Tomboy 2.1</revnumber>
 
         <date>2009-03-23</date>
 
@@ -217,7 +213,7 @@ and add-ins to extend Tomboy's capabilities.
       </revision>
     </revhistory>
 
-    <releaseinfo>This manual describes version 0.14.0 of Tomboy</releaseinfo>
+    <releaseinfo>Este manual describe la versión 0.14.0 de Tomboy</releaseinfo>
 
     <legalnotice>
       <title>Comentarios</title>
@@ -255,10 +251,7 @@ and add-ins to extend Tomboy's capabilities.
       </mediaobject>
     </figure>
 
-    <para>Tomboy is a desktop note-taking application for GNOME, Microsoft Windows, and Mac OS X. It is simple
-    and easy to use, and allows you to organize the ideas and information you
-    deal with every day. Tomboy has some very useful editing features to help
-    you customize your notes, including:</para>
+    <para>Tomboy es una aplicación para tomar notas en el escritorio GNOME, Microsoft Windows y Mac OS X. Es simple y fácil de usar y le permite organizar las ideas e información con la que trata a diario. Tomboy tiene algunas características de edición muy útiles para ayudarle a personalizar sus notas, incluyendo:</para>
 
     <itemizedlist>
       <listitem>
@@ -286,8 +279,7 @@ and add-ins to extend Tomboy's capabilities.
       </listitem>
     </itemizedlist>
 
-    <para>Tomboy is accessed through the GNOME panel, the taskbar in Microsoft Windows, or the dock in Mac OS X. To startup Tomboy
-    automatically when you log into GNOME, see <xref linkend="add-to-panel"/>.</para>
+    <para>A Tomboy se accede a través del panel de GNOME, la barra de tareas en Microsoft Windows, o el «dock» en Mac OS X. Para iniciar Tomboy automáticamente cuando inicie la sesión en GNOME, consulte la sección <xref linkend="add-to-panel"/>.</para>
   </sect1>
 
   <!--=========== Getting Started ============================== -->
@@ -296,31 +288,22 @@ and add-ins to extend Tomboy's capabilities.
     <title>Inicio</title>
 
     <sect2 id="add-to-panel">
-      <title>Adding Tomboy to the GNOME Panel</title>
+      <title>Añadir Tomboy al panel de GNOME</title>
 
-      <para>To add Tomboy to a panel in GNOME, right-click on the panel, then choose
-      <menuchoice>
-          <guimenuitem>Add to Panel</guimenuitem>
-        </menuchoice>. Select Tomboy Notes in the Add to the panel dialog,
-      then click <menuchoice>
-          <guibutton>Add</guibutton>
-        </menuchoice>. You should see a yellow note icon appear in the panel,
-      representing Tomboy. The panel icon is illustrated in <xref linkend="tomboy-panel"/>.</para>
-	  <para>Tomboy is automatically added to the taskbar when run on Microsoft Windows, or the dock when run on Mac OS X.</para>
+      <para>Para añadir Tomboy a un panel en GNOME, pulse con el botón derecho en el panel, después elija <menuchoice><guimenuitem>Añadir al panel</guimenuitem></menuchoice>. Seleccione Notas Tomboy en el diálogo de añadir al panel. Entonces debería ver aparecer un icono de notas amarillo en el panel, que representa a Tomboy. El icono del panel está ilustrado en <xref linkend="tomboy-panel"/>.</para>
+	  <para>Tomboy se añade automáticamente a la barra de tareas al ejecutarse en Microsoft Windows, o al «dock» al ejecutarse en Mac OS X.</para>
     </sect2>
 
     <sect2 id="creating-notes">
       <title>Crear notas</title>
 
-      <para>Once you have successfully added Tomboy to the panel, you can
-      create new notes using one of the following methods.</para>
+      <para>Una vez que ha añadido correctamente Tomboy al panel, puede crear nuevas notas usando uno de los siguientes métodos.</para>
 
       <para>Para crear una nueva nota usando el ratón:</para>
 
       <orderedlist>
         <listitem>
-          <para>Click on the Tomboy note icon present in the GNOME Panel or Windows taskbar. A
-          menu will appear.</para>
+          <para>Pulse sobre el icono de Tomboy presente en el panel de GNOME. Aparecerá un menú.</para>
         </listitem>
 
         <listitem>
@@ -586,9 +569,7 @@ and add-ins to extend Tomboy's capabilities.
   <sect1 id="panel-menu">
     <title>Menú del panel</title>
 
-    <para>Tomboy keeps the most recently used notes quickly available to you in
-    a menu that appears when you click on the Tomboy Icon in the GNOME
-    Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.</para>
+    <para>Tomboy mantiene las notas más recientemente usadas disponibles de forma rápida en un menú que aparece al pulsar sobre el icono de Tomboy en el Panel de GNOME, la barra de herramientas en Microsoft Windows, o el «dock» en Mac OS X.</para>
 
     <sect2 id="note-pinning">
       <title>Pinchado de notas</title>
@@ -707,8 +688,7 @@ and add-ins to extend Tomboy's capabilities.
     
       <orderedlist>
         <listitem> 
-        <para>Click on the Tomboy note icon present in the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.  
-        A menu will appear</para>   
+        <para>Pulse sobre el icono de Tomboy presente en el panel de GNOME, la barra de tareas en Microsoft Windows, o el «dock» en Mac OS X. Aparecerá un menú.</para>   
         </listitem>
         <listitem>
         <para>Seleccione <menuchoice><guimenuitem>Cuadernos de notas</guimenuitem><guimenuitem>Cuaderno de notas nuevo</guimenuitem></menuchoice>.</para></listitem>
@@ -718,7 +698,7 @@ and add-ins to extend Tomboy's capabilities.
 	</orderedlist>
 	
 	      <figure id="new-notebook">
-        <title>Create a new notebook from the Tomboy note icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X</title>
+        <title>Cree un cuaderno de notas nuevo desde el icono de Tomboy en el panel de GNOME, la barra de tareas en Microsoft Windows, o el «dock» en Mac OS X.</title>
 
         <mediaobject>
           <imageobject>
@@ -730,10 +710,7 @@ and add-ins to extend Tomboy's capabilities.
 	<para>Para crear un cuaderno de notas nuevo desde el diálogo Buscar en todas las notas:</para>
 	<orderedlist>
 		<listitem> 
-	<para>Open <menuchoice>
-              <guimenuitem>Search All Notes</guimenuitem>
-            </menuchoice> by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Abra <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice> eligiéndolo desde el icono de Tomboy en el panel de GNOME, la barra de tareas en Microsoft Windows, o el «dock» en Mac OS X, o pulse Buscar en una nota abierta.</para>
 	</listitem>
 	<listitem>
 	<para>Usando su ratón, pulse con el botón derecho en la caja de la izquierda y elija <menuchoice><guimenuitem>Nuevo cuaderno de notas</guimenuitem></menuchoice>.</para>
@@ -770,9 +747,7 @@ and add-ins to extend Tomboy's capabilities.
 	<para>Para mover una nota existente desde el diálogo Buscar en todas las notas:</para>
 	<orderedlist>
 		<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Abra <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice> eligiéndolo desde el icono de Tomboy en el panel de GNOME, la barra de tareas en Microsoft Windows, o el «dock» en Mac OS X, o pulse Buscar en una nota abierta.</para>
 	</listitem>
 	<listitem>
 	<para>Usando su ratón, arrastre la(s) nota(s) dentro de un cuaderno de notas a la izquierda.</para>
@@ -801,9 +776,7 @@ and add-ins to extend Tomboy's capabilities.
 
 	<orderedlist>
 	<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Abra <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice> eligiéndolo desde el icono de Tomboy en el panel de GNOME, la barra de tareas en Microsoft Windows, o el «dock» en Mac OS X, o pulse Buscar en una nota abierta.</para>
 	</listitem>
 	<listitem>
 	<para>Usando su ratón, pulse con el botón derecho sobre un Cuaderno de notas que haya creado y elija <menuchoice><guimenuitem>Abrir la nota de plantilla</guimenuitem></menuchoice>.</para>
@@ -834,9 +807,7 @@ and add-ins to extend Tomboy's capabilities.
 	<para>Para borrar un cuaderno de notas usando su ratón:</para>
 	<orderedlist>
 	<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Abra <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice> eligiéndolo desde el icono de Tomboy en el panel de GNOME, la barra de tareas en Microsoft Windows, o el «dock» en Mac OS X, o pulse Buscar en una nota abierta.</para>
 	</listitem>
 	<listitem>
 	<para>Usando su ratón, pulse con el botón derecho sobre el Cuaderno de notas que haya creado y elija <menuchoice><guimenuitem>Borrar cuaderno de notas</guimenuitem></menuchoice>.</para>
@@ -852,10 +823,7 @@ and add-ins to extend Tomboy's capabilities.
         </mediaobject>
       </figure> 
 	
-	<para>To delete a Notebook from the <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	menu, open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.
-	</para>
+	<para>Para borrar un cuaderno de notas desde el menú <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice>, abra <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice> eligiéndolo del icono de Tomboy en el panel de GNOME, la barra de tareas en Microsoft Windows, o el «dock» en Mac OS X.</para>
 	<orderedlist>
 	<listitem>
 	<para>Usando su ratón, pulse con el botón izquierdo en el cuaderno de notas que quiere borrar.</para>
@@ -903,9 +871,11 @@ and add-ins to extend Tomboy's capabilities.
     <sect3 id="sync-configure-ssh">
       <title>Configurar la sincronización de notas (por SSH)</title>
         
-      <para>Para poder sincronizar sus notas contra un servidor SSH debe tener el sistema de archivos sshfs FUSE instalado. Siga la documentación para configurar FUSE para su sistema operativo y usuario. También deberá tener una clave SSH para su cuenta en el servidor SSH, que se añadirá a un demonio SSH en ejecución. Esto se puede realizar usando la aplicación <application>Seahorse</application> de GNOME.</para>
+      <para>Para poder sincronizar sus notas contra un servidor SSH debe tener el sistema de archivos sshfs FUSE instalado. Siga la documentación para configurar FUSE para su sistema operativo y usuario. También deberá tener una clave SSH para su cuenta en el servidor SSH, que se añadirá a un demonio SSH en ejecución. Esto se puede realizar usando la aplicación <application>Contraseñas y claves de cifrado</application> de GNOME.</para>
+	  
+	  <para>Abra <application>Contraseñas y claves de cifrado</application> eligiendo <menuchoice><guimenu>Aplicaciones</guimenu><guimenu>Accesorios</guimenu><guimenu>Contraseñas y claves de cifrado</guimenu></menuchoice>. Pulse sobre su clave y elija en el menú <menuchoice><guimenu>Remota</guimenu><guimenu>Configurar clave para Shell segura...</guimenu></menuchoice> e introduzca el nombre de dominio o dirección IP del equipo con el que quiere sincronizar en <guimenu>Equipo</guimenu>. Introduzca el nombre de usuario del equipo remoto en <guimenu>Equipo</guimenu> y pulse <guimenu>Configurar</guimenu>. Cuando se le pregunte, introduzca la contraseña y habrá finalizado la configuración de su clave.</para>
       
-      <para>Elija <guimenuitem>SSH</guimenuitem> del menú desplegable <guilabel>Servicio</guilabel>. Rellene la información para su servidor y después seleccione el botón <guibutton>Guardar</guibutton>. Ahora está listo para sincronizar sus notas.</para>
+      <para>En <application>Tomboy</application>, elija <guimenuitem>SSH</guimenuitem> de la lista desplegable <guilabel>Servicio</guilabel>. Rellene la información para su servidor y después pulse el botón <guibutton>Guardar</guibutton>. Ahora está listo para sincronizar sus notas.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">
@@ -950,8 +920,7 @@ and add-ins to extend Tomboy's capabilities.
             <para>Active esta casilla para que los errores ortográficos se subrayen en rojo, y se proporcionen sugerencias en el menú contextual al pulsar con el botón derecho del ratón. Active o desactive esta casilla usando el ratón o la combinación de teclas <keycombo><keycap>Alt</keycap><keycap>S</keycap></keycombo>.</para>
 
             <note>
-              <para>The spellcheck option is only available if you have the
-              <application>GtkSpell</application> package installed.</para>
+              <para>La opción de corrección ortográfica sólo está disponible si tiene instalado el paquete <application>GtkSpell</application>.</para>
             </note>
           </listitem>
         </varlistentry>
@@ -987,7 +956,7 @@ and add-ins to extend Tomboy's capabilities.
     <sect2>
       <title>Teclas rápidas</title>
 
-      <para>La solapa de teclas rápidas le permite definir las combinaciones de teclas globales que le permitirán realizar distintas tareas en Tomboy. Para activar las combinaciones de teclas, debe tener la casilla <guibutton>Teclas rápidas</guibutton> activada. Use la combinación de teclas <keycombo><keycap>Alt</keycap><keycap>R</keycap></keycombo> para conmutar esta opción.</para>
+      <para>La solapa de teclas rápidas le permite definir las combinaciones de teclas globales que le permitirán realizar distintas tareas en Tomboy. Para activar las combinaciones de teclas, debe tener la casilla <guibutton>Teclas rápidas</guibutton> activada. Use la combinación de teclas <keycombo><keycap>Alt</keycap><keycap>E</keycap></keycombo> para conmutar esta opción.</para>
 
       <variablelist>
         <varlistentry>
@@ -1099,7 +1068,7 @@ and add-ins to extend Tomboy's capabilities.
         <term>Soltado de URL de Bugzilla</term>
 
         <listitem>
-          <para>Le permite arrastrar una URL de Bugzilla desde su navegador directamente a una nota de Tomboy. El número del fallo se insertará como un enlace con un pequeño icono de un bicho junto a él. Una vez que el enlace de Bugzilla se ha insertado en la nota, pulse en él para abrir la URL en su navegador web.</para>
+          <para>Le permite arrastrar un URL de Bugzilla desde su navegador directamente a una nota de Tomboy. El número del fallo se insertará como un enlace con un pequeño icono de un bicho junto a él. Una vez que el enlace de Bugzilla se ha insertado en la nota, pulse en él para abrir el URL en su navegador web.</para>
           
           <para>Personalice los iconos utilizados editando los ajustes de los complementos en el <link linkend="prefs-plugins">Diálogo de preferencias</link>. Después de seleccionar el complemento de Bugzilla, pulse en <guibutton>Configuración</guibutton> para abrir el diálogo de <interface>Configuración del complemento de Bugzilla</interface>. Para añadir un nuevo icono, pulse en <guibutton>Añadir</guibutton>, seleccione un icono en su equipo, proporcione un nombre de servidor de Bugzilla. (p.ej. bugzilla.gnome.org), y pulse en <guibutton>Abrir</guibutton>. Cualquier URL de Bugzilla que sea arrastrada y soltada desde uno de estos nombres de servidores personalizados usará ahora el icono que ha especificado.</para>
         </listitem>
@@ -1109,7 +1078,7 @@ and add-ins to extend Tomboy's capabilities.
         <term>Soltado de correo de Evolution</term>
 
         <listitem>
-          <para>Este complemento le permite arrastrar y soltar un mensaje de correo desde la aplicación de correo <application>Evolution</application> a una de sus notas de Tomboy. Pulsando en el icono de correo en la nota abrirá el correspondiente mesaje de correo electrónico en Evolution.</para>
+          <para>Este complemento le permite arrastrar y soltar un mensaje de correo desde la aplicación de correo <application>Evolution</application> a una de sus notas de Tomboy. Pulsando en el icono de correo en la nota abrirá el correspondiente mensaje de correo electrónico en Evolution.</para>
         </listitem>
       </varlistentry>
 

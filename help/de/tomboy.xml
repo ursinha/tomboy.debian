@@ -63,7 +63,7 @@ and add-ins to extend Tomboy's capabilities.
       <year>2009</year>
       
       <holder>Paul Cutler</holder>
-    </copyright><copyright><year>2008.</year><holder>Jochen Skulj (jochen@jochenskulj.de)</holder></copyright><copyright><year>2009.</year><holder>Christian Kirbach (Christian.Kirbach@googlemail.com)</holder></copyright>
+    </copyright><copyright><year>2008</year><holder>Jochen Skulj (jochen@jochenskulj.de)</holder></copyright>
 
     <!-- translators: uncomment this:
     <copyright>
@@ -332,7 +332,7 @@ and add-ins to extend Tomboy's capabilities.
 
       <orderedlist>
         <listitem>
-          <para>Öffnen Sie das Tomboy-Menü mit der Tastenkombination <keycombo><keycap>Alt</keycap><keycap>F12</keycap></keycombo>.</para>
+          <para>Öffnen Sie das Tomboy-Menü mit der Tastaturkombination <keycombo><keycap>Alt</keycap><keycap>F12</keycap></keycombo>.</para>
         </listitem>
 
         <listitem>
@@ -384,7 +384,7 @@ and add-ins to extend Tomboy's capabilities.
         </listitem>
         
         <listitem>
-          <para>Markieren Sie die Notiz, indem Sie sie auswählen, und betätigen Sie die Tastenkombination <keycombo><keycap>Strg</keycap><keycap>O</keycap></keycombo>.</para>
+          <para>Markieren Sie die Notiz, indem Sis sie auswählen, und betätigen Sie die Tastenkombination <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para>
         </listitem>
       </orderedlist>
     </sect2>
@@ -406,7 +406,7 @@ and add-ins to extend Tomboy's capabilities.
     <sect2 id="link">
       <title>Verknüpfung</title>
 
-      <para>Der Knopf <guibutton>Verknüpfung</guibutton> erlaubt es Ihnen, aus der aktuellen Notiz heraus eine neue Notiz mit einer Verknüpfung anzulegen. Wenn etwa Ihre Notiz den Ausdruck <quote>Abschlussprüfung</quote> enthält, können Sie diesen Text mit der Maus auswählen und auf den Knopf <guibutton>Verknüpfung</guibutton> klicken, um eine neue Notiz mit dem Titel <quote>Abschlussprüfung</quote> anzulegen. In der aktuellen Notiz wird dann auch eine Verknüpfung angelegt, mit der über einen Klick darauf neue Notiz Titel <quote>Abschlussprüfung</quote> geöffnet werden kann.</para>
+      <para>Der Knopf <guibutton>Verknüpfungk</guibutton> erlaubt es Ihnen, aus der aktuellen Notiz heraus eine neue Notiz mit einer Verknüpfung anzulegen. Wenn etwa Ihre Notiz den Ausdruck <quote>Abschlusprüfung</quote> enthält, können Sie diesen Text mit der Maus auswählen und auf den Knopf <guibutton>Verknüpfung</guibutton> klicken, um eine neue Notiz mit dem Titel <quote>Abschlussprüfung</quote> anzulegen. In der aktuellen Notiz wird dann auch eine Verknüpfung angelegt, mit der über einen Klick darauf neue Notiz Titel <quote>Abschlussprüfung</quote> geöffnet werden kann.</para>
 
       <note>
         <para>Beim Ändern des Titels einer Notiz werden auch die entsprechenden Verknüpfungen in anderen Notizen aktualisiert. Dies verhindert, das ungültige Verknüpfungen entstehen, wenn eine Notiz umbenannt wird.</para>
@@ -423,7 +423,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>Rückgängig</term>
 
           <listitem>
-            <para>Die Unterstützung für <quote>Rückgängig</quote> ist in Tomboy über diesen Menüpunkt verfügbar. Die Rückgängig-Funktion erlaubt es, vorangegangene, in den aktuellen Sitzung durchgeführte Änderungen rückgängig gemacht werden. Um Ihre letzte Änderung mit der Tastatur rückgängig zu machen, verwenden Sie die standardmäßige Tastenkombination <keycombo><keycap>Strg</keycap><keycap>Z</keycap></keycombo>.</para>
+            <para>Die Unterstützung für <quote>Rückgängig</quote> ist in Tomboy über diesen Menüpunkt verfügbar. Die Rückgängig-Funktion erlaubt es, vorangegangene, in den aktuellen Sitzung durchgeführte Änderungen rückgängig gemacht werden. Um Ihre letzte Änderung mit der Tastatur rückgängig zu machen, verwenden Sie die standardbäßige Tastenkombination <keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>.</para>
           </listitem>
         </varlistentry>
 
@@ -431,7 +431,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>Wiederholen</term>
 
           <listitem>
-            <para>Die Funktion <quote>Wiederholen</quote> wird verwendet, um Änderungen wiederherzustellen, die durch die Funktion <quote>Rückgängig</quote> entfernt worden sind. Um ihre letzten Änderungen mit der Tastatur zu wiederholen, verwenden Sie die standardmäßige Tastenkombination <keycombo><keycap>Umschalttaste</keycap><keycap>Strg</keycap><keycap>Z</keycap></keycombo>.</para>
+            <para>Die Funktion <quote>Wiederholen</quote> wird verwendet, um Änderungen wiederherzustelle, die durch die Funktion <quote>Rückgängig</quote> entfernt worden sind. Um ihre letzten Änderungen mit der Tastatur wiederzuholen, verwenden Sie die standardmäßige Tastenkombination <keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>.</para>
           </listitem>
         </varlistentry>
 
@@ -439,7 +439,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>Fett</term>
 
           <listitem>
-            <para>Um einen Text innerhalb Ihrer Notiz fett darzustellen, markieren Sie zuerst den Text, den Sie ändern möchten. Danach wählen Sie den Menüpunkt <menuchoice><guimenuitem>Fett</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton>. Sie können auch die Tastenkombination <keycombo><keycap>Strg</keycap><keycap>B</keycap></keycombo> nach dem Markieren des Textes benutzen.</para>
+            <para>Um einen Text innerhalb Ihrer Notiz fett darzustellen, markieren Sie zuerst den Text, den Sie ändern möchten. Danach wählen Sie den Menüpunkt <menuchoice><guimenuitem>Fett</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton>. Sie können auch die Tastenkombination <keycombo><keycap>Ctrl</keycap><keycap>B</keycap></keycombo> nach dem Markieren des Textes benutzen.</para>
           </listitem>
         </varlistentry>
 
@@ -447,7 +447,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>Kursiv</term>
 
           <listitem>
-            <para>Um einen Text innerhalb Ihrer Notiz kursiv darzustellen, markieren Sie zuerst den Text, den Sie ändern möchten. Danach wählen Sie den Menüpunkt <menuchoice><guimenuitem>Kursiv</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton>. Sie können auch die Tastenkombination <keycombo><keycap>Strg</keycap><keycap>I</keycap></keycombo> nach dem Markieren des Textes benutzen.</para>
+            <para>Um einen Text innerhalb Ihrer Notiz kursiv darzustellen, markieren Sie zuerst den Text, den Sie ändern möchten. Danach wählen Sie den Menüpunkt <menuchoice><guimenuitem>Kursiv</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton>. Sie können auch die Tastenkombination <keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo> nach dem Markieren des Textes benutzen.</para>
           </listitem>
         </varlistentry>
 
@@ -455,7 +455,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>Durchgestrichen</term>
 
           <listitem>
-            <para>Der Stil »Durchgestrichen« fügt eine Linie durch den ausgewählten Text hinzu. Um ein Durchstreichen hinzuzufügen, markieren Sie den Text und wählen Sie dann den Menüpunkt <menuchoice><guimenuitem>Durchgestrichen</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton>. Sie können auch die Tastenkombination <keycombo><keycap>Strg</keycap><keycap>S</keycap></keycombo> nach dem Markieren des Textes benutzen.</para>
+            <para>Der Stil »Durchgestrichen« fügt eine Linie durch den ausgewählten Text hinzu. Um ein Durchstreichen hinzuzufügen, markieren Sie den Text und wählen Sie dann den Menüpunkt <menuchoice><guimenuitem>Durchgestrichen</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton>. Sie können auch die Tastenkombination <keycombo><keycap>Ctrl</keycap><keycap>S</keycap></keycombo> nach dem Markieren des Textes benutzen.</para>
           </listitem>
         </varlistentry>
 
@@ -463,7 +463,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>Hervorgehoben</term>
 
           <listitem>
-            <para>Der Stil »Hervorgehoben« fügt einen gelben Hintergrund um den ausgewählten Text hinzu. Um ein Hervorheben hinzuzufügen, markieren Sie den Text und wählen Sie dann den Menüpunkt <menuchoice><guimenuitem>Hervorgehoben</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton>. Sie können auch die Tastenkombination <keycombo><keycap>Strg</keycap><keycap>H</keycap></keycombo> nach dem Markieren des Textes benutzen.</para>
+            <para>Der Stil »Hervorgehoben« fügt einen gelben Hintergrund um den ausgewählten Text hinzu. Um ein Hervorheben hinzuzufügen, markieren Sie den Text und wählen Sie dann den Menüpunkt <menuchoice><guimenuitem>Hervorgehoben</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton>. Sie können auch die Tastenkombination <keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo> nach dem Markieren des Textes benutzen.</para>
           </listitem>
         </varlistentry>
 
@@ -473,7 +473,7 @@ and add-ins to extend Tomboy's capabilities.
           <listitem>
             <para>Der Stil »Fixe Breite« erlaubt es, einen Text in einer Schriftart mit fester Breite darzustellen. Um einen Text zu ändern, markieren Sie zuerst den Text, den Sie ändern möchten. Danach wählen Sie den Menüpunkt <menuchoice><guimenuitem>Fixe Breite</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton>. Sie können auch den Menüpunkt <menuchoice><guimenuitem>Fixe Breite</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton> auswählen, bevor Sie den Text, der mit einer festen Breite dargestellt werden soll, eingeben.</para>
             
-            <para>Der Menüpunkt <menuchoice><guimenuitem>Fixe Breite</guimenuitem></menuchoice> ist eine Funktion, die durch das Add-In »Fixed Width« bereitgestellt wird. Für weitere Informationen über Add-Ins siehe <xref linkend="plugins"/>.</para>
+            <para>Der Menüpunkt <menuchoice><guimenuitem>Fixe Breite</guimenuitem></menuchoice> ist eine Funktion, die durch das Add-In »Fixed Width«  bereitgestellt wird. Für weitere Informationen über Add-Ins siehe <xref linkend="plugins"/>.</para>
           </listitem>
         </varlistentry>
 
@@ -505,7 +505,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>Aufzählungspunkte</term>
 
           <listitem>
-            <para>Wählen Sie den Menüpunkt <menuchoice><guimenuitem>Aufzählungspunkte</guimenuitem></menuchoice> aus dem Menüpunkt <guibutton>Text</guibutton>, um eine Aufzählungsliste zu beginnen oder zu beenden. Falls sich der Cursor innerhalb einer Aufzählungsliste befindet, sind die Menüpunkte <simplelist type="inline">
+            <para>Wählen Sie den Menüpunkt <menuchoice><guimenuitem>Aufzählungspunkte</guimenuitem></menuchoice> aus dem Menüpunkt <guibutton>Text</guibutton>, um eine Aufzählungsliste zu beginnen oder zu beenden. Falls sich der Cursor innerhalb einer Afzählungsliste befindet, sind die Menüpunkte <simplelist type="inline">
                 <member><guilabel>Einzug erhöhen</guilabel></member>
                 
                 <member><guilabel>Einzug vermindern</guilabel></member>
@@ -521,11 +521,11 @@ and add-ins to extend Tomboy's capabilities.
           <term>In dieser Notiz suchen</term>
 
           <listitem>
-          	<para>Verwenden Sie diesen, um einen Text innerhalb der aktuellen Notiz zu finden. Eine kleine Suchleiste wird sich unten in der Notiz öffnen. Um die Suchleiste über die Tastatur zu öffnen, verwenden Sie die standardmäßige Tastenkombination <keycombo><keycap>Strg</keycap><keycap>F</keycap></keycombo>.</para>
+          	<para>Verwenden Sie diesen, um einen Text innerhalb der aktuellen Notiz zu finden. Eine kleine Suchleiste wird sich unten in der Notiz öffnen. Um die Suchleiste über die Tastatur zu öffnen, verwenden Sie die standardmäße Tastenkombination <keycombo><keycap>Ctrl</keycap><keycap>F</keycap></keycombo>.</para>
             
             <para>Geben Sie den zu suchenden Text ein. Nach der Eingabe werden die Treffer hervorgehoben. Klicken Sie auf <guibutton>Nächste Treffer</guibutton>, um den nächsten Treffer hervorzuheben und den Cursor dort zu platzieren. Klicken Sie auf <guibutton>Vorherige</guibutton>, um sich zu dem vorherigen Treffer zu bewegen.</para>
           	
-          	<para>Um die Suchleiste zu schließen, klicken Sie <guibutton>X</guibutton> (Schließen-Knopf) ganz links oder drücken Sie die <keycap>Esc</keycap>-Taste.</para>
+          	<para>Um die Suchleiste zu schließen, klicken Sie <guibutton>X</guibutton> (Schließen-Knopf) ganz links oder drücken Sie die <keycap>Escape</keycap>-Taste.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -556,7 +556,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>In HTML exportieren</term>
 
           <listitem>
-            <para>Sie können ein <acronym>HTML</acronym>-Dokument (Hypertext Markup Language) aus einer oder mehrerer Notizen durch Auswählen dieses Menüpunktes auswählen. Für weitere Informationen siehe bitte <xref linkend="plugins"/>.</para>
+            <para>Sie können ein <acronym>HTML</acronym>-Dokument (Hypertext Markup Language) aus einer oder mehrerer Notizen durch Auswähhlen dieses Menüpunktes auswählen. Für weitere Informationen siehe bitte <xref linkend="plugins"/>.</para>
           </listitem>
         </varlistentry>
 
@@ -577,7 +577,7 @@ and add-ins to extend Tomboy's capabilities.
     <sect2 id="delete">
       <title>Löschen</title>
 
-      <para>Der Knopf <guibutton>Löschen</guibutton> öffnet einen Frage-Dialog, der Sie fragt, ob Sie die Notiz und deren Inhalt dauerhaft löschen möchten. Klicken Sie auf den Knopf <guibutton>Löschen</guibutton>, um die Notiz dauerhaft zu verwerfen, oder <guibutton>Abbrechen</guibutton>, um den Vorgang abzubrechen. Verknüpfungen auf diese Notiz bleiben weiterhin bestehen, aber ein Klicken darauf bewirkt, dass die Notiz dann neu angelegt wird.</para>
+      <para>Der Knopf <guibutton>Delete</guibutton> öffnet einen Frage-Dialog, der Sie fragt, ob Sie die Notiz und deren Inhalt dauerhaft löschen möchten. Klicken Sie auf den Knopf <guibutton>Löschen</guibutton>, um die Notiz dauerhaft zu verwerfen, oder <guibutton>Abbrechen</guibutton>, um den Vorgang abzubrechen. Verknüpfungen auf diese Notiz bleiben weiterhin bestehen, aber ein Klicken darauf bewirkt, dass die Notiz dann neu angelegt wird.</para>
     </sect2>
   </sect1>
 
@@ -639,15 +639,15 @@ and add-ins to extend Tomboy's capabilities.
         </listitem>
 
         <listitem>
-          <para>Betätigen Sie die <keycap>Eingabetaste</keycap> in einer leeren Aufzählungszeile.</para>
+          <para>Betätigen Sie die Taste <keycap>Enter</keycap> in einer leeren Aufzählungszeile.</para>
         </listitem>
 
         <listitem>
-          <para>Wählen Sie den Menüpunkt <menuchoice><guimenuitem>Einzug verringern</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton> aufeinander folgend, bis die aktuelle Zeile nicht länger Teil der Aufzählungsliste ist.</para>
+          <para>Wählen Sie den Menüpunkt <menuchoice><guimenuitem>Einzug verringern</guimenuitem></menuchoice> aus dem Menü <guibutton>Text</guibutton> aufeinanderfolgend, bis die aktuelle Zeile nicht länger Teil der Aufzählungsliste ist.</para>
         </listitem>
 
         <listitem>
-          <para>Verwenden Sie die Tastenkombination <keycombo><keycap>Umschalttaste</keycap><keycap>Tabulator</keycap></keycombo> aufeinander folgend,  bis die aktuelle Zeile nicht länger Teil der Aufzählungsliste ist.</para>
+          <para>Verwenden Sie die Tastenkombination <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo> aufeinanderfolgend,  bis die aktuelle Zeile nicht länger Teil der Aufzählungsliste ist.</para>
         </listitem>
       </orderedlist>
     </sect2>
@@ -667,7 +667,7 @@ and add-ins to extend Tomboy's capabilities.
       
       <itemizedlist>
         <listitem>
-          <para>Drücken Sie die Taste <keycap>Tabulator</keycap>.</para>
+          <para>Drücken Sie die Taste <keycap>Tab</keycap>.</para>
         </listitem>
       </itemizedlist>
     </sect2>
@@ -687,7 +687,7 @@ and add-ins to extend Tomboy's capabilities.
       
       <itemizedlist>
         <listitem>
-          <para>Drücken Sie die Taste <keycombo><keycap>Umschalttaste</keycap><keycap>Tabulator</keycap></keycombo>.</para>
+          <para>Drücken Sie die Taste <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo>.</para>
         </listitem>
       </itemizedlist>
     </sect2>
@@ -875,7 +875,7 @@ and add-ins to extend Tomboy's capabilities.
   <sect1 id="synchronization">
     <title>Notizen-Synchronisierung</title>
     
-    <para>Tomboy kann Ihre Notizen auf unterschiedlichen Rechnern mittels eines zentralen Servers synchron halten.</para>
+    <para>Tomboy can Ihre Notizen auf unterschiedlichen Rechnern mittels eines zentralen Servers synchron halten.</para>
 
     <sect2 id="sync-configure">
       <title>Notizen-Synchronisierung konfigurieren</title>
@@ -903,15 +903,31 @@ and add-ins to extend Tomboy's capabilities.
     <sect3 id="sync-configure-ssh">
       <title>Notizen-Synchronisierungsdienst (SSH) konfigurieren</title>
         
-      <para>Um Ihre Notizen mit einem SSH-Server zu synchronisieren, muss das sshfs-FUSE-Dateisystem installiert sein. Befolgen Sie die Dokumentation Ihres Betriebssystems, um für Ihre Benutzer FUSE einzurichten. Weiterhin benötigen Sie einen SSH-Schlüssel für Ihren SSH-Serverzugang, der zu einem laufenden SSH-Dämon hinzugefügt werden muss. Dies kann durch Verwendung der GNOME-Anwendung <application>Seahorse</application> erfolgen.</para>
+      <para>In order to synchronize your notes with an SSH server, you will need
+      the sshfs FUSE file system installed.  Follow the documentation for your operating
+      system to set up FUSE for your user.  You will also need an SSH key for your
+      SSH server account, which should be added to a running SSH daemon.  This can be
+      done using the GNOME <application>Seahorse</application> application, which is also 
+	  known as <application>Passwords and Encryption Keys</application>.</para>
+	  
+	  <para>Open <application>Passwords and Encryption Keys</application> by choosing 
+	  <menuchoice><guimenu>Applications</guimenu><guimenu>Accessories</guimenu>
+	  <guimenu>Passwords and Encryption Keys</guimenu></menuchoice>.  Click on your key, 
+	  and from the menu choose <menuchoice><guimenu>Remote</guimenu>
+	  <guimenu>Configure Key for Secure Shell...</guimenu></menuchoice>  and enter the domain name or IP address
+	  of the computer you want to sync to in <guimenu>Computer Name</guimenu>.  Enter the username 
+	  of the remote computer in <guimenu>Computer Name:</guimenu> and click <guimenu>Set Up</guimenu>.
+	  When prompted, enter the password, and setting up your key will be completed.</para>
       
-      <para>Wählen Sie <guimenuitem>SSH</guimenuitem> aus der Auswahlliste <guilabel>Dienst</guilabel> aus. Geben Sie die Verbindungsinformationen Ihres Servers ein und betätigen Sie den Knopf <guibutton>Speichern</guibutton>. Sie können nun Ihre Notizen synchronisieren.</para>
+      <para>In <application>Tomboy</application>, choose <guimenuitem>SSH</guimenuitem> from the <guilabel>Service</guilabel>
+      drop-down list. Fill in the connection information for your server, and then select the
+      <guibutton>Save</guibutton> button.  You are now ready to synchronize your notes.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">
       <title>Notizen-Synchronisierungsdienst (Lokale Ordner) konfigurieren</title>
         
-      <para>Sie können Ihre Notizen über einen lokalen Ordner synchronisieren, wenn dieser Ordner auf anderen Systemen verfügbar ist oder wenn dieser Ordner einen lokal verbundenen Ordner auf einem entfernten Server darstellt.</para>
+      <para>Sie können Ihre Notizen über einen lokalen Ordner synchronisieren, wenn dieser Ordner auf anderen Systemen verfügbar ist oder wenn dieser Ordner einen lokal verbundenden Ordner auf einem entfernten Server darstellt.</para>
       
       <para>Wählen Sie <guimenuitem>Lokaler Ordner</guimenuitem> aus der Auswahlliste <guilabel>Dienst</guilabel> aus. Wählen Sie den gewünschten <guilabel>Ordnerpfad</guilabel> zur Synchronisierung und  betätigen Sie den Knopf <guibutton>Speichern</guibutton>. Sie können nun Ihre Notizen synchronisieren.</para>
     </sect3>
@@ -994,7 +1010,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>Notizmenü anzeigen</term>
 
           <listitem>
-            <para>Geben Sie die Tastenkombination zum Öffnen des Notizmenüs ein.</para>
+            <para>Geben Sie die Tastenkombination zum Öffnen des Notizenmenüs ein.</para>
           </listitem>
         </varlistentry>
 
@@ -1010,7 +1026,7 @@ and add-ins to extend Tomboy's capabilities.
           <term>Neue Notiz anlegen</term>
 
           <listitem>
-            <para>Geben Sie die Tastenkombination zum Anlegen einer neuen Notiz ein.</para>
+            <para>Geben Sie die Tastenkombination zum Anlegen einer neuen Notiz einn.</para>
           </listitem>
         </varlistentry>
 
@@ -1024,7 +1040,7 @@ and add-ins to extend Tomboy's capabilities.
       </variablelist>
 
       <figure>
-        <title>Tomboy Tastaturkombination-Einstellungen</title>
+        <title>Tomboy Tastaturkomibination-Einstellungen</title>
 
         <mediaobject>
           <imageobject>
@@ -1161,7 +1177,7 @@ and add-ins to extend Tomboy's capabilities.
         <listitem>
           <para>Wenn dieses Add-In installiert ist, stellt das Menü <link linkend="tools">Werkzeuge</link> einen Menüpunkt <guimenuitem>Import aus dem Klebezettel-Applet</guimenuitem> zur Verfügung.</para>
 
-          <para>Benutzen Sie diesen Menüpunkt, um Notizen aus dem <application>Klebezettel</application>-Applet, das in früheren Freigaben von GNOME zur Verfügung stand, zu importieren. Dieser Menüpunkt wurde in Tomboy aufgenommen, um Benutzern, die ihre Notizen aus dem <application>Klebezettel</application>-Applet in Tomboy übernehmen möchten, einen Migrationspfad anzubieten.</para>
+          <para>Benutzen Sie diesen Menüpunkt, um Notizen aus dem <application>Klebezettel</application>-Applet, das in früheren Releases von GNOME zur Verfügung stand, zu importieren. Dieser Menüpunkt wurde in Tomboy aufgenommen, um Benutzern, die ihre Notizen aus dem <application>Klebezettel</application>-Applet in Tomboy übernehmen möchten, einen Migrationspfad anzubieten.</para>
         </listitem>
       </varlistentry>
     </variablelist>

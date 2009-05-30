@@ -22,11 +22,7 @@
     <title>Εγχειρίδιο Tomboy</title>
 
     <abstract role="description">
-      <para>Tomboy is a simple desktop note-taking application, with many features designed
-to help organize ideas, such as spell checking, highlighting, auto-linking
-URLs, lists, font stylizing, quick access with a table of contents for notes,
-and add-ins to extend Tomboy's capabilities.
-.</para>
+      <para>Το Tomboy είναι μια απλή εφαρμογή για να κρατάτε σημειώσεις, με πολλές λειτουργίες σχεδιασμένες για να βοηθάνε στην οργάνωση ιδεών, όπως ορθογραφικός έλεγχος, υπογράμμιση, αυτόματη ανάλυση URLs, λίστες, μορφοποίηση γραμματοσειράς, γρήγορη πρόσβαση με έναν πίνακα περιεχομένων για σημειώσεις, και πρόσθετες λειτουργίες για να επεκτείνουν τις δυνατότητες του Tomboy.</para>
     </abstract>
 
     <copyright>
@@ -169,9 +165,9 @@ and add-ins to extend Tomboy's capabilities.
    than the current revision. -->
 
       <revision>
-        <revnumber>Tomboy Manual 2.1</revnumber>
+        <revnumber>Εγχειρίδιο Tomboy 2.1</revnumber>
 
-        <date>2009-03-23</date>
+        <date>23-03-2009</date>
 
         <revdescription>
           <para role="author">Paul Cutler</para>
@@ -217,7 +213,7 @@ and add-ins to extend Tomboy's capabilities.
       </revision>
     </revhistory>
 
-    <releaseinfo>This manual describes version 0.14.0 of Tomboy</releaseinfo>
+    <releaseinfo>Το εγχειρίδιο αυτό περιγράφει την έκδοση 0.14.0 του Tomboy</releaseinfo>
 
     <legalnotice>
       <title>Ανάδραση</title>
@@ -255,10 +251,7 @@ and add-ins to extend Tomboy's capabilities.
       </mediaobject>
     </figure>
 
-    <para>Tomboy is a desktop note-taking application for GNOME, Microsoft Windows, and Mac OS X. It is simple
-    and easy to use, and allows you to organize the ideas and information you
-    deal with every day. Tomboy has some very useful editing features to help
-    you customize your notes, including:</para>
+    <para>Το Tomboy είναι μια εφαρμογή λήψης σημειώσεων για το GNOME, το Microsoft Windows, και το Mac OS X. Είναι απλό και εύκολο στη χρήση, και σας επιτρέπει να οργανώνετε τις ιδέες και τις πληροφορίες τις οποίες μεταχειρίζεστε καθημερινά. Το Tomboy έχει μερικά πολύ χρήσιμα χαρακτηριστικά σύνταξης που σας βοηθούν να προσαρμόζετε τις σημειώσεις σας, συμπεριλαμβανομένων:</para>
 
     <itemizedlist>
       <listitem>
@@ -286,8 +279,7 @@ and add-ins to extend Tomboy's capabilities.
       </listitem>
     </itemizedlist>
 
-    <para>Tomboy is accessed through the GNOME panel, the taskbar in Microsoft Windows, or the dock in Mac OS X. To startup Tomboy
-    automatically when you log into GNOME, see <xref linkend="add-to-panel"/>.</para>
+    <para>Το Tomboy είναι προσβάσιμο από τον πίνακα εφαρμογών του GNOME, την γραμμή εργασιών στο Microsoft Windows, ή το dock στο Mac OS X. Για να εκκινείται το Tomboy αυτόματα όταν εισέρχεστε στο GNOME, δείτε <xref linkend="add-to-panel"/>.</para>
   </sect1>
 
   <!--=========== Getting Started ============================== -->
@@ -296,31 +288,22 @@ and add-ins to extend Tomboy's capabilities.
     <title>Ξεκινώντας</title>
 
     <sect2 id="add-to-panel">
-      <title>Adding Tomboy to the GNOME Panel</title>
+      <title>Προσθήκη του Tomboy στον πίνακα εφαρμογών του GNOME</title>
 
-      <para>To add Tomboy to a panel in GNOME, right-click on the panel, then choose
-      <menuchoice>
-          <guimenuitem>Add to Panel</guimenuitem>
-        </menuchoice>. Select Tomboy Notes in the Add to the panel dialog,
-      then click <menuchoice>
-          <guibutton>Add</guibutton>
-        </menuchoice>. You should see a yellow note icon appear in the panel,
-      representing Tomboy. The panel icon is illustrated in <xref linkend="tomboy-panel"/>.</para>
-	  <para>Tomboy is automatically added to the taskbar when run on Microsoft Windows, or the dock when run on Mac OS X.</para>
+      <para>Για να προσθέσετε το Tomboy σε έναν πίνακα εφαρμογών στο GNOME, κάντε δεξί κλικ στον πίνακα και επιλέξτε <menuchoice><guimenuitem>Προσθήκη στον πίνακα εφαρμογών...</guimenuitem></menuchoice>. Επιλέξτε το Σημειώσεις Tomboy στο παράθυρο Προσθήκη στον πίνακα εφαρμογών, μετά κάντε κλικ στο <menuchoice><guibutton>Προσθήκη</guibutton></menuchoice>. Θα δείτε ένα κίτρινο εικονίδιο σημειώσεων να εμφανίζεται στον πίνακα εφαρμογών, απεικονίζοντας το Tomboy. Το εικονίδιο φαίνεται στο <xref linkend="tomboy-panel"/>.</para>
+	  <para>Το Tomboy προστίθεται αυτόματα στη γραμμή εργασιών όταν τρέχει στο Microsoft Windows, ή στο dock όταν τρέχει στο Mac OS X.</para>
     </sect2>
 
     <sect2 id="creating-notes">
       <title>Δημιουργία σημειώσεων</title>
 
-      <para>Once you have successfully added Tomboy to the panel, you can
-      create new notes using one of the following methods.</para>
+      <para>Αφού έχετε τοποθετήσει επιτυχώς το Tomboy στον πίνακα εφαρμογών, μπορείτε να δημιουργήσετε νέες σημειώσεις με μία από τις ακόλουθες μεθόδους.</para>
 
       <para>Δημιουργία νέας σημείωσης με το ποντίκι:</para>
 
       <orderedlist>
         <listitem>
-          <para>Click on the Tomboy note icon present in the GNOME Panel or Windows taskbar. A
-          menu will appear.</para>
+          <para>Κάντε κλικ στο εικονίδιο σημειώσεων του Tomboy στον πίνακα εφαρμογών του GNOME ή στη γραμμή εργασιών του Windows. Ένα μενού επιλογών θα εμφανιστεί.</para>
         </listitem>
 
         <listitem>
@@ -586,9 +569,7 @@ and add-ins to extend Tomboy's capabilities.
   <sect1 id="panel-menu">
     <title>Μενού πίνακα εφαρμογών</title>
 
-    <para>Tomboy keeps the most recently used notes quickly available to you in
-    a menu that appears when you click on the Tomboy Icon in the GNOME
-    Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.</para>
+    <para>Το Tomboy διατηρεί τις πιο πρόσφατα χρησιμοποιημένες σημειώσεις άμεσα προσβάσιμες σε ένα μενού που εμφανίζεται όταν κάνετε κλικ στο εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στην γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X.</para>
 
     <sect2 id="note-pinning">
       <title>Καρφίτσωμα σημείωσης</title>
@@ -707,8 +688,7 @@ and add-ins to extend Tomboy's capabilities.
     
       <orderedlist>
         <listitem> 
-        <para>Click on the Tomboy note icon present in the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.  
-        A menu will appear</para>   
+        <para>Κάντε κλικ στο εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στη γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X. Θα εμφανιστεί ένα μενού</para>   
         </listitem>
         <listitem>
         <para>Επιλέξτε <menuchoice><guimenuitem>Σημειωματάρια</guimenuitem><guimenuitem>Νέο σημειωματάριο...</guimenuitem></menuchoice>.</para></listitem>
@@ -718,7 +698,7 @@ and add-ins to extend Tomboy's capabilities.
 	</orderedlist>
 	
 	      <figure id="new-notebook">
-        <title>Create a new notebook from the Tomboy note icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X</title>
+        <title>Δημιουργία νέου σημειωματάριου από το εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στη γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X.</title>
 
         <mediaobject>
           <imageobject>
@@ -730,10 +710,7 @@ and add-ins to extend Tomboy's capabilities.
 	<para>Για να δημιουργήσετε ένα νέο σημειωματάριο από το παράθυρο Αναζήτηση σε όλες τις σημειώσεις:</para>
 	<orderedlist>
 		<listitem> 
-	<para>Open <menuchoice>
-              <guimenuitem>Search All Notes</guimenuitem>
-            </menuchoice> by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Ανοίξτε το παράθυρο <menuchoice><guimenuitem>Αναζήτηση σε όλες τις σημειώσεις</guimenuitem></menuchoice> επιλέγοντάς το από το εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στη γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X. ή κάντε κλικ στο Αναζήτηση από μια ανοιχτή σημείωση.</para>
 	</listitem>
 	<listitem>
 	<para>Χρησιμοποιώντας το ποντίκι, κάντε δεξί κλικ στο αριστερό πλαίσιο και επιλέξτε <menuchoice><guimenuitem>Νέο σημειωματάριο...</guimenuitem></menuchoice>.</para>
@@ -770,9 +747,7 @@ and add-ins to extend Tomboy's capabilities.
 	<para>Για να μετακινήσετε μία σημείωση από το παράθυρο Αναζήτηση σε όλες τις σημειώσεις:</para>
 	<orderedlist>
 		<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Ανοίξτε το παράθυρο <menuchoice><guimenuitem>Αναζήτηση σε όλες τις σημειώσεις</guimenuitem></menuchoice> επιλέγοντάς το από το εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στη γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X. ή κάντε κλικ στο Αναζήτηση από μια ανοιχτή σημείωση.</para>
 	</listitem>
 	<listitem>
 	<para>Χρησιμοποιώντας το ποντίκι, σύρετε τη(τις) σημείωση(εις) μέσα σε ένα σημειωματάριο στα αριστερά.</para>
@@ -801,9 +776,7 @@ and add-ins to extend Tomboy's capabilities.
 
 	<orderedlist>
 	<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Ανοίξτε το παράθυρο <menuchoice><guimenuitem>Αναζήτηση σε όλες τις σημειώσεις</guimenuitem></menuchoice> επιλέγοντάς το από το εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στη γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X. ή κάντε κλικ στο Αναζήτηση από μια ανοιχτή σημείωση.</para>
 	</listitem>
 	<listitem>
 	<para>Χρησιμοποιώντας το ποντίκι, κάντε δεξί κλικ σε ένα σημειωματάριο που δημιουργήσατε και επιλέξτε <menuchoice><guimenuitem>Άνοιγμα πρότυπης σημείωσης</guimenuitem></menuchoice>.</para>
@@ -834,9 +807,7 @@ and add-ins to extend Tomboy's capabilities.
 	<para>Για να διαγράψετε ένα σημειωματάριο με το ποντίκι:</para>
 	<orderedlist>
 	<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Ανοίξτε το παράθυρο <menuchoice><guimenuitem>Αναζήτηση σε όλες τις σημειώσεις</guimenuitem></menuchoice> επιλέγοντάς το από το εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στη γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X. ή κάντε κλικ στο Αναζήτηση από μια ανοιχτή σημείωση.</para>
 	</listitem>
 	<listitem>
 	<para>Χρησιμοποιώντας το ποντίκι, κάντε δεξί κλικ πάνω σε ένα σημειωματάριο και επιλέξτε <menuchoice><guimenuitem>Διαγραφή σημειωματάριου</guimenuitem></menuchoice>.</para>
@@ -852,10 +823,7 @@ and add-ins to extend Tomboy's capabilities.
         </mediaobject>
       </figure> 
 	
-	<para>To delete a Notebook from the <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	menu, open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.
-	</para>
+	<para>Για να διαγράψετε ένα σημειωματάριο από το παράθυρο <menuchoice><guimenuitem>Αναζήτηση σε όλες τις σημειώσεις</guimenuitem></menuchoice>, ανοίξτε το παράθυρο <menuchoice><guimenuitem>Αναζήτηση σε όλες τις σημειώσεις</guimenuitem></menuchoice> επιλέγοντάς το από το εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στη γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X.</para>
 	<orderedlist>
 	<listitem>
 	<para>Χρησιμοποιώντας το ποντίκι, κάντε αριστερό κλικ στο σημειωματάριο που θέλετε να διαγράψετε.</para>
@@ -903,9 +871,25 @@ and add-ins to extend Tomboy's capabilities.
     <sect3 id="sync-configure-ssh">
       <title>Ρύθμιση υπηρεσίας συγχρονισμού σημειώσεων (SSH)</title>
         
-      <para>Για να συγχρονίσετε τις σημειώσεις σας με έναν εξυπηρετητή SSH, θα χρειαστεί να έχετε εγκατεστημένο το σύστημα αρχείων sshfs FUSE. Ακολουθήστε τις οδηγίες του λειτουργικού σας συστήματος για να εγκαταστήσετε το FUSE στο λογαριασμό σας. Επιπλέον θα χρειαστείτε ένα κλειδί SSH για το λογαριασμό σας στον εξυπηρετητή SSH, το οποίο θα πρέπει να προστεθεί σε έναν ενεργό δαίμονα SSH. Αυτό μπορεί να γίνει χρησιμοποιώντας την εφαρμογή <application>Seahorse</application> του GNOME.</para>
+      <para>In order to synchronize your notes with an SSH server, you will need
+      the sshfs FUSE file system installed.  Follow the documentation for your operating
+      system to set up FUSE for your user.  You will also need an SSH key for your
+      SSH server account, which should be added to a running SSH daemon.  This can be
+      done using the GNOME <application>Seahorse</application> application, which is also 
+	  known as <application>Passwords and Encryption Keys</application>.</para>
+	  
+	  <para>Open <application>Passwords and Encryption Keys</application> by choosing 
+	  <menuchoice><guimenu>Applications</guimenu><guimenu>Accessories</guimenu>
+	  <guimenu>Passwords and Encryption Keys</guimenu></menuchoice>.  Click on your key, 
+	  and from the menu choose <menuchoice><guimenu>Remote</guimenu>
+	  <guimenu>Configure Key for Secure Shell...</guimenu></menuchoice>  and enter the domain name or IP address
+	  of the computer you want to sync to in <guimenu>Computer Name</guimenu>.  Enter the username 
+	  of the remote computer in <guimenu>Computer Name:</guimenu> and click <guimenu>Set Up</guimenu>.
+	  When prompted, enter the password, and setting up your key will be completed.</para>
       
-      <para>Επιλέξτε <guimenuitem>SSH</guimenuitem> από τη λίστα επιλογών <guilabel>Υπηρεσία</guilabel>. Συμπληρώστε τις πληροφορίες σύνδεσης για τον εξυπηρετητή σας και στη συνέχεια κάντε κλικ στο κουμπί <guibutton>Αποθήκευση</guibutton>. Είστε πλέον έτοιμος να συγχρονίσετε τις σημειώσεις σας.</para>
+      <para>In <application>Tomboy</application>, choose <guimenuitem>SSH</guimenuitem> from the <guilabel>Service</guilabel>
+      drop-down list. Fill in the connection information for your server, and then select the
+      <guibutton>Save</guibutton> button.  You are now ready to synchronize your notes.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">
@@ -950,8 +934,7 @@ and add-ins to extend Tomboy's capabilities.
             <para>Ενεργοποιήστε αυτή την επιλογή για να υπογραμμίζονται τα ορθογραφικά λάθη με κόκκινο, και να παρέχονται προτάσεις ορθογραφίας κάνοντας δεξί κλικ. Ενεργοποιήστε ή απενεργοποιήστε την επιλογή χρησιμοποιώντας το ποντίκι ή το συνδυασμό πλήκτρων <keycombo><keycap>Alt</keycap><keycap>S</keycap></keycombo>.</para>
 
             <note>
-              <para>The spellcheck option is only available if you have the
-              <application>GtkSpell</application> package installed.</para>
+              <para>Η επιλογή ορθογραφικού ελέγχου είναι διαθέσιμη μόνο αν έχετε εγκατεστημένο το πακέτο <application>GtkSpell</application>.</para>
             </note>
           </listitem>
         </varlistentry>

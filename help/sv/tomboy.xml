@@ -903,9 +903,25 @@ and add-ins to extend Tomboy's capabilities.
     <sect3 id="sync-configure-ssh">
       <title>Konfigurera synkroniseringstjänst för anteckningar (SSH)</title>
         
-      <para>För att synkronisera dina anteckningar med en SSH-server behöver du installera sshfs FUSE-filsystemet. Följ dokumentationen för ditt operativsystem för att konfigurera FUSE för din användare. Du behöver även en SSH-nyckel för ditt SSH-serverkonto, vilken ska läggas till i en körande SSH-demon. Det här kan göras genom att använda GNOME-programmet <application>Seahorse</application>.</para>
+      <para>In order to synchronize your notes with an SSH server, you will need
+      the sshfs FUSE file system installed.  Follow the documentation for your operating
+      system to set up FUSE for your user.  You will also need an SSH key for your
+      SSH server account, which should be added to a running SSH daemon.  This can be
+      done using the GNOME <application>Seahorse</application> application, which is also 
+	  known as <application>Passwords and Encryption Keys</application>.</para>
+	  
+	  <para>Open <application>Passwords and Encryption Keys</application> by choosing 
+	  <menuchoice><guimenu>Applications</guimenu><guimenu>Accessories</guimenu>
+	  <guimenu>Passwords and Encryption Keys</guimenu></menuchoice>.  Click on your key, 
+	  and from the menu choose <menuchoice><guimenu>Remote</guimenu>
+	  <guimenu>Configure Key for Secure Shell...</guimenu></menuchoice>  and enter the domain name or IP address
+	  of the computer you want to sync to in <guimenu>Computer Name</guimenu>.  Enter the username 
+	  of the remote computer in <guimenu>Computer Name:</guimenu> and click <guimenu>Set Up</guimenu>.
+	  When prompted, enter the password, and setting up your key will be completed.</para>
       
-      <para>Välj <guimenuitem>SSH</guimenuitem> från rullgardinslistan <guilabel>Tjänst</guilabel>. Fyll i anslutningsinformationen för din server och välj sedan knappen <guibutton>Spara</guibutton>. Du är nu färdig för att börja synkronisera dina anteckningar.</para>
+      <para>In <application>Tomboy</application>, choose <guimenuitem>SSH</guimenuitem> from the <guilabel>Service</guilabel>
+      drop-down list. Fill in the connection information for your server, and then select the
+      <guibutton>Save</guibutton> button.  You are now ready to synchronize your notes.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">

@@ -17,6 +17,7 @@ namespace Tomboy
 		string element_name;
 		Gtk.TextMark widgetLocation;
 		Gtk.Widget widget;
+		bool allow_middle_activate = false;
 
 		[Flags]
 		enum TagFlags {
@@ -198,6 +199,18 @@ namespace Tomboy
 			case Gdk.EventType.ButtonPress:
 				Gdk.EventButton button_ev = new Gdk.EventButton (ev.Handle);
 
+				// Do not insert selected text when activating links with
+				// middle mouse button
+				if (button_ev.Button == 2) {
+					allow_middle_activate = true;
+					return true;
+				}
+
+				return false;
+
+			case Gdk.EventType.ButtonRelease:
+				button_ev = new Gdk.EventButton (ev.Handle);
+
 				if (button_ev.Button != 1 && button_ev.Button != 2)
 					return false;
 
@@ -206,15 +219,27 @@ namespace Tomboy
 				                              Gdk.ModifierType.ControlMask)) != 0)
 					return false;
 
+				// Prevent activation when selecting links with the mouse
+				if (editor.Buffer.HasSelection)
+					return false;
+
+				// Don't activate if the link has just been pasted with the
+				// middle mouse button (no preceding ButtonPress event)
+				if (button_ev.Button == 2 && !allow_middle_activate)
+					return false;
+				else
+					allow_middle_activate = false;
+
 				GetExtents (iter, out start, out end);
 				bool success = OnActivate (editor, start, end);
 
+				// Hide note if link is activated with middle mouse button
 				if (success && button_ev.Button == 2) {
 					Gtk.Widget widget = (Gtk.Widget) sender;
 					widget.Toplevel.Hide ();
 				}
 
-				return success;
+				return false;
 
 			case Gdk.EventType.KeyPress:
 				Gdk.EventKey key_ev = new Gdk.EventKey (ev.Handle);
@@ -481,6 +506,10 @@ namespace Tomboy
 			InitCommonTags ();
 		}
 
+		public NoteTag UrlTag { get; private set; }
+		public NoteTag LinkTag { get; private set; }
+		public NoteTag BrokenLinkTag { get; private set; }
+
 		void InitCommonTags ()
 		{
 			NoteTag tag;
@@ -589,6 +618,7 @@ namespace Tomboy
 			        ContrastPaletteColor.Grey;
 			tag.CanActivate = true;
 			Add (tag);
+			BrokenLinkTag = tag;
 
 			tag = new NoteTag ("link:internal");
 			tag.Underline = Pango.Underline.Single;
@@ -596,6 +626,7 @@ namespace Tomboy
 			        ContrastPaletteColor.Blue;
 			tag.CanActivate = true;
 			Add (tag);
+			LinkTag = tag;
 
 			tag = new NoteTag ("link:url");
 			tag.Underline = Pango.Underline.Single;
@@ -603,6 +634,7 @@ namespace Tomboy
 			        ContrastPaletteColor.Blue;
 			tag.CanActivate = true;
 			Add (tag);
+			UrlTag = tag;
 		}
 
 		public static bool TagIsSerializable (Gtk.TextTag tag)
