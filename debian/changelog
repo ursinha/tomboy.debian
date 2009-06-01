@@ -1,4 +1,4 @@
-tomboy (0.15.1-1) experimental; urgency=low
+tomboy (0.15.1-1) UNRELEASED; urgency=low
 
   * New upstream release:
    - New WebSync add-in syncs to any server that implements the Tomboy Web REST API,
@@ -22,8 +22,10 @@ tomboy (0.15.1-1) experimental; urgency=low
    - Documentation updates.
    - Translation updates: el, es, et, gl
   * debian/control: Add help/ as GFDL 1.1+ 
+  * debian/rules: Remove --repack; not necessary as upstream is a .tar.gz and
+    could cause rule to be nondeterministic
 
- -- Iain Lane <laney@ubuntu.com>  Mon, 01 Jun 2009 20:16:29 +0100
+ -- Iain Lane <laney@ubuntu.com>  Mon, 01 Jun 2009 20:21:38 +0100
 
 tomboy (0.15.0-0ubuntu1) karmic; urgency=low
 
