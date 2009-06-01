@@ -42,6 +42,27 @@ tomboy (0.15.0-0ubuntu1) karmic; urgency=low
 
  -- Jo Shields <directhex@apebox.org>  Wed, 06 May 2009 23:37:55 +0100
 
+tomboy (0.14.2-1) unstable; urgency=low
+
+  [ Jo Shields ]
+  * New upstream release
+  * debian/rules:
+    + Add get-orig-source rule
+  * debian/watch:
+    + Do not run "uupdate" as it does not permit preparing Debian
+      revision on Ubuntu
+  * debian/patches/02_configurable_compiler.patch:
+    + Deleted, merged upstream
+  * debian/patches/03_03_sm-name.patch:
+    + Deleted, no longer relevant
+
+  [ Sebastian Dröge ]
+  * debian/control:
+    + Update build dependencies.
+    + Change maintainer to pkg-cli-apps.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 14 May 2009 08:23:41 +0200
+
 tomboy (0.12.2-5) unstable; urgency=low
 
   [ Stefan Ebner ]
