@@ -1,9 +1,29 @@
-tomboy (0.15.1-0ubuntu1) karmic; urgency=low
+tomboy (0.15.1-1) experimental; urgency=low
 
-  * New upstream release
+  * New upstream release:
+   - New WebSync add-in syncs to any server that implements the Tomboy Web REST API,
+     such as Snowy [http://live.gnome.org/Snowy].  Baby-eating preview release.
+   - Require Mono 1.9.1 to *build* Tomboy. Should still run on older Mono.
+   - Prevent PATH problems on Windows from breaking Tomboy.
+   - Search for phrases by quoting search text.
+   - Fix drag&drop & middle-click paste of linked text.
+   - Save width of notebook pane in Search window.
+   - Disable sync menu items until backend configured.
+   - Close note find bar on escape, even when not focused.
+   - Support FUSE being built-in to kernel.
+   - Prevent crashes when reading unexpected note XML.
+   - Change "Open New Note Template" LinkButton to Button to prevent error.
+   - Focus search field every time Search window summoned.
+   - Only show Start Here note on first run if not running as applet.
+   - HIG compliance in Sync preferences.
+   - Use correct "info" icon in add-in info windows.
+   - Use relative path to load help.
+   - Cache frequently-used text tags in one place instead of five.
+   - Documentation updates.
+   - Translation updates: el, es, et, gl
   * debian/control: Add help/ as GFDL 1.1+ 
 
- -- Iain Lane <laney@ubuntu.com>  Mon, 01 Jun 2009 19:51:34 +0100
+ -- Iain Lane <laney@ubuntu.com>  Mon, 01 Jun 2009 20:16:29 +0100
 
 tomboy (0.15.0-0ubuntu1) karmic; urgency=low
 
