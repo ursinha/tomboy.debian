@@ -31,7 +31,7 @@ override_dh_auto_configure: autoreconf-stamp
 		GMCS=/usr/bin/csc
 
 override_dh_auto_install:
-	dh_auto_install
+	dh_auto_install -- GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 	mkdir -p debian/tomboy/usr/share/pixmaps
 	uudecode debian/tomboy-16.xpm.uu && mv tomboy-16.xpm debian/tomboy/usr/share/pixmaps
 	uudecode debian/tomboy-32.xpm.uu && mv tomboy-32.xpm debian/tomboy/usr/share/pixmaps

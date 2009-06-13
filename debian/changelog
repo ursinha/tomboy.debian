@@ -14,8 +14,9 @@ tomboy (0.14.2-2) unstable; urgency=low
     debian/control:
     + Use pngquant to optimize the file size of the PNG files.
   * debian/rules:
-    + autoreconf, update gnome-doc-utils.make and put patched ltmain.sh in
-      place for --as-needed magic before build.
+    + autoreconf, update gnome-doc-utils.make (for symlinking the same
+      picture files) and put patched ltmain.sh in place for --as-needed
+      magic before build.
     + Removed --with-mono-addins parameter from configure call, as the
       parameter no longer exist.
 
