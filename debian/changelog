@@ -1,8 +1,28 @@
 tomboy (0.14.2-2) UNRELEASED; urgency=low
 
+  [ Mirco Bauer ]
+  * The "Squeeze it!" release
+    + The installed package size was shrinked from 13MB to 8MB.
+  * debian/rules
+    debian/control
+    debian/compat:
+    + Rewrote for dh7 (automatically uses dh_clistrip).
+  * debian/paches/*
+    debian/control:
+    + Switched to quilt.
+  * debian/rules:
+    debian/control:
+    + Use pngquant to optimize the file size of the PNG files.
+  * debian/rules:
+    + autoreconf, update gnome-doc-utils.make and put patched ltmain.sh in
+      place for --as-needed magic before build.
+    + Removed --with-mono-addins parameter from configure call, as the
+      parameter no longer exist.
+
+  [ Iain Lane ]
   * debian/control: Update VCS info to point to git repo
 
- -- Iain Lane <laney@ubuntu.com>  Thu, 28 May 2009 01:06:20 +0100
+ -- Mirco Bauer <meebey@debian.org>  Sat, 13 Jun 2009 02:10:01 +0200
 
 tomboy (0.14.2-1) unstable; urgency=low
 
