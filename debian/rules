@@ -32,13 +32,10 @@ override_dh_auto_configure: autoreconf-stamp
 
 override_dh_auto_install:
 	dh_auto_install -- GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-	mkdir -p debian/tomboy/usr/share/pixmaps
 	uudecode debian/tomboy-16.xpm.uu && mv tomboy-16.xpm debian/tomboy/usr/share/pixmaps
 	uudecode debian/tomboy-32.xpm.uu && mv tomboy-32.xpm debian/tomboy/usr/share/pixmaps
-	mkdir -p debian/tomboy/usr/lib/tomboy/addins
 	cp debian/PrintNotes.dll.config debian/tomboy/usr/lib/tomboy/addins
-	rm -rf debian/tomboy/usr/lib/tomboy/libprintnotes.la
-	rm -rf debian/tomboy/usr/lib/tomboy/libtomboy.la
+	rm -rf debian/tomboy/usr/lib/tomboy/*.la
 	# crush it good
 	find $(CURDIR)/debian/tomboy/usr/share/gnome/help/tomboy -type f -name "*.png" -exec sh -c 'pngquant 256 < {} > {}.crushed; mv {}.crushed {}' \;
 
