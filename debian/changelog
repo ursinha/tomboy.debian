@@ -1,10 +1,15 @@
 tomboy (0.14.2-3) UNRELEASED; urgency=low
 
+  [ Stefan Ebner ]
   * Replace the tomboy icon misery with a proper method:
     + debian/control: Replace b-p on shareutils with imagemagick.
     + debian/rules: Convert the icons at build time.
     + Delete tomboy.dirs and tomboy-{16/32}.xpm.uu.
     + Add debian/tomboy.install to install the generated icons properly.
+
+  [ Iain Lane ]
+  * debian/rules: Remove --repack; not necessary as upstream is a .tar.gz
+    and this could cause rule to be nondeterministic
 
  -- Stefan Ebner <sebner@ubuntu.com>  Sat, 13 Jun 2009 18:24:29 +0200
 

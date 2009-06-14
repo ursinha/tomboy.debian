@@ -55,8 +55,7 @@ get-orig-source:
 		--download-version $(VERSION) \
 		--destdir . \
 		--force-download \
-		--rename \
-		--repack
+		--rename
 
 %:
 	dh $@
