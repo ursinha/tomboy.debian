@@ -50,6 +50,7 @@ tomboy (0.14.2-3) UNRELEASED; urgency=low
     + debian/rules: Convert the icons at build time.
     + Delete tomboy.dirs and tomboy-{16/32}.xpm.uu.
     + Add debian/tomboy.install to install the generated icons properly.
+    + Add debian/clean to remove the generated xpm files.
 
   [ Iain Lane ]
   * debian/rules: Remove --repack; not necessary as upstream is a .tar.gz
