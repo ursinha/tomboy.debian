@@ -1,10 +1,14 @@
 #!/usr/bin/make -f
 
-export MONO_SHARED_DIR=$(CURDIR)
+include /usr/share/quilt/quilt.make
+include /usr/share/cli-common/cli.make
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/rules/simple-patchsys.mk
-include /usr/share/cdbs/1/class/gnome.mk
+DH_VERBOSE := 1
+DH_OPTIONS += --with=quilt
+LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
+
+export DH_VERBOSE
+export DH_OPTIONS
 
 MAKEFILE = $(firstword $(MAKEFILE_LIST))
 DEBIAN_DIR = $(dir $(MAKEFILE))
@@ -12,29 +16,36 @@ DEB_SOURCE_NAME = $(shell dpkg-parsechangelog -l$(DEBIAN_DIR)/changelog | grep ^
 DEB_VERSION = $(shell dpkg-parsechangelog -l$(DEBIAN_DIR)/changelog | grep ^Version | cut -d" " -f2)   
 VERSION = $(shell echo $(DEB_VERSION) | cut -d"-" -f1 | sed 's/+dfsg.*//')
 
-LDFLAGS+=-Wl,-z,defs -Wl,-O1 -Wl,--as-needed
-DEB_CONFIGURE_EXTRA_FLAGS := --disable-scrollkeeper
-DEB_INSTALL_DOCS_ALL := README NEWS
-DEB_CONFIGURE_EXTRA_FLAGS += --with-mono-addins=system GMCS=/usr/bin/csc
+autoreconf: autoreconf-stamp
+autoreconf-stamp:
+	cp /usr/share/gnome-doc-utils/gnome-doc-utils.make $(CURDIR)
+	autoreconf -f -i -s
+	# replace ltmain.sh with our patched one that supports --as-needed
+	install --mode=755 $(CURDIR)/debian/ltmain-as-needed.sh $(CURDIR)/ltmain.sh
+	touch $@
 
-common-configure-indep::
-	mkdir -p $(MONO_SHARED_DIR)/.wapi
+override_dh_auto_configure: autoreconf-stamp
+	dh_auto_configure -- \
+		--disable-scrollkeeper \
+		LDFLAGS="$(LDFLAGS)" \
+		GMCS=/usr/bin/csc
 
-install/tomboy::
-	mkdir -p debian/tomboy/usr/share/pixmaps
-	uudecode debian/tomboy-16.xpm.uu && mv tomboy-16.xpm debian/tomboy/usr/share/pixmaps
-	uudecode debian/tomboy-32.xpm.uu && mv tomboy-32.xpm debian/tomboy/usr/share/pixmaps
-	mkdir -p debian/tomboy/usr/lib/tomboy/addins
+override_dh_auto_install:
+	dh_auto_install -- GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+	convert $(CURDIR)/data/icons/hicolor_apps_16x16_tomboy.png $(CURDIR)/debian/tomboy-16.xpm
+	convert $(CURDIR)/data/icons/hicolor_apps_32x32_tomboy.png $(CURDIR)/debian/tomboy-32.xpm
 	cp debian/PrintNotes.dll.config debian/tomboy/usr/lib/tomboy/addins
-	rm -rf debian/tomboy/usr/lib/tomboy/libprintnotes.la
-	rm -rf debian/tomboy/usr/lib/tomboy/libtomboy.la
+	rm -rf debian/tomboy/usr/lib/tomboy/*.la
+	# crush it good
+	find $(CURDIR)/debian/tomboy/usr/share/gnome/help/tomboy -type f -name "*.png" -exec sh -c 'pngquant 256 < {} > {}.crushed; mv {}.crushed {}' \;
 
-common-binary-predeb-arch::
-	dh_clifixperms
-	dh_clideps -d
+override_dh_clean:
+	dh_clean
+	rm -rf autoreconf-stamp configure config.sub config.guess ltmain.sh gnome-doc-utils.make aclocal.m4 autom4te.cache/
+	find . -name "Makefile.in" -delete
 
-clean::
-	rm -rf $(MONO_SHARED_DIR)/.wapi
+# disable tests
+override_dh_auto_test:
 
 get-orig-source:
 	uscan \
@@ -45,3 +56,8 @@ get-orig-source:
 		--destdir . \
 		--force-download \
 		--rename
+
+%:
+	dh $@
+
+.PHONY: autoreconf get-orig-source

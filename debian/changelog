@@ -42,6 +42,43 @@ tomboy (0.15.0-0ubuntu1) karmic; urgency=low
 
  -- Jo Shields <directhex@apebox.org>  Wed, 06 May 2009 23:37:55 +0100
 
+tomboy (0.14.2-3) UNRELEASED; urgency=low
+
+  * Replace the tomboy icon misery with a proper method:
+    + debian/control: Replace b-p on shareutils with imagemagick.
+    + debian/rules: Convert the icons at build time.
+    + Delete tomboy.dirs and tomboy-{16/32}.xpm.uu.
+    + Add debian/tomboy.install to install the generated icons properly.
+
+ -- Stefan Ebner <sebner@ubuntu.com>  Sat, 13 Jun 2009 18:24:29 +0200
+
+tomboy (0.14.2-2) unstable; urgency=low
+
+  [ Mirco Bauer ]
+  * The "Squeeze it!" release
+    + The installed package size was reduced from 13MB to 8MB.
+  * debian/rules
+    debian/control
+    debian/compat:
+    + Rewrote for dh7 (automatically uses dh_clistrip).
+  * debian/paches/*
+    debian/control:
+    + Switched to quilt.
+  * debian/rules:
+    debian/control:
+    + Use pngquant to optimize the file size of the PNG files.
+  * debian/rules:
+    + autoreconf, update gnome-doc-utils.make (for symlinking the same
+      picture files) and put patched ltmain.sh in place for --as-needed
+      magic before build.
+    + Removed --with-mono-addins parameter from configure call, as the
+      parameter no longer exist.
+
+  [ Iain Lane ]
+  * debian/control: Update VCS info to point to git repo
+
+ -- Mirco Bauer <meebey@debian.org>  Sat, 13 Jun 2009 02:10:01 +0200
+
 tomboy (0.14.2-1) unstable; urgency=low
 
   [ Jo Shields ]
