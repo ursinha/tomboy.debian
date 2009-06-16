@@ -1,6 +1,6 @@
-tomboy (0.15.1-1) UNRELEASED; urgency=low
+tomboy (0.15.2-1) UNRELEASED; urgency=low
 
-  * New upstream release:
+  * New upstream release 0.15.1:
    - New WebSync add-in syncs to any server that implements the Tomboy Web REST API,
      such as Snowy [http://live.gnome.org/Snowy].  Baby-eating preview release.
    - Require Mono 1.9.1 to *build* Tomboy. Should still run on older Mono.
@@ -21,6 +21,9 @@ tomboy (0.15.1-1) UNRELEASED; urgency=low
    - Cache frequently-used text tags in one place instead of five.
    - Documentation updates.
    - Translation updates: el, es, et, gl
+  * New upstream release 0.15.2:
+   - Fix HTML Export on Mac OS X.
+   - Translation updates: es, et, nb, sv, zh_CN
   * debian/control: Add help/ as GFDL 1.1+ 
   * debian/rules: Remove --repack; not necessary as upstream is a .tar.gz and
     could cause rule to be nondeterministic
