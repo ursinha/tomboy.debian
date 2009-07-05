@@ -1,4 +1,4 @@
-tomboy (0.15.2-1) UNRELEASED; urgency=low
+tomboy (0.15.2-1) experimental urgency=low
 
   * New upstream release 0.15.1:
    - New WebSync add-in syncs to any server that implements the Tomboy Web REST API,
