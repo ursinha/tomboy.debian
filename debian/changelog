@@ -13,8 +13,9 @@ tomboy (0.14.2-3) UNRELEASED; urgency=low
   [ Iain Lane ]
   * debian/rules: Remove --repack; not necessary as upstream is a .tar.gz
     and this could cause rule to be nondeterministic
+  * Update watch file to scan for stable releases only 
 
- -- Stefan Ebner <sebner@ubuntu.com>  Sat, 13 Jun 2009 18:24:29 +0200
+ -- Iain Lane <laney@ubuntu.com>  Mon, 13 Jul 2009 18:32:54 +0100
 
 tomboy (0.14.2-2) unstable; urgency=low
 
