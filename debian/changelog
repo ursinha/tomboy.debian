@@ -1,6 +1,6 @@
 tomboy (0.15.3-1) UNRELEASED; urgency=low
 
-  * New upstream rersion 0.15.3:
+  * New upstream version 0.15.3:
    - New underline formatting add-in (disabled by default) from Mark Wakim.
    - Add ctrl +/- shortcuts for changing font size (Stefan Schweizer).
    - Fix bullet display in HTML export (Stefan Schweizer).
