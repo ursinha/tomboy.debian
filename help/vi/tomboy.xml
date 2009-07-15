@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY date "February 2007">
+<!ENTITY app "<application>Tomboy Notes</application>">
+<!ENTITY appname "Tomboy">
+<!ENTITY extappname "Tomboy Notes">
+<!ENTITY manversion "2.0">
+<!ENTITY version "0.10.0">
+]>
+<!-- 
+  (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified August 7th, 2006
+-->
+<!-- =============Document Header ============================= -->
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<article id="index" lang="vi">
+  <articleinfo>
+    <title>Hướng dẫn sử dụng Tomboy</title>
+
+    <abstract role="description">
+      <para>Tomboy là ứng dụng cho phép tạo và quản lý các ghi chú trực tiếp trên môi trường GNOME, với nhiều tính năng hỗ trợ cho việc tổ chức các ý tưởng của bạn, như kiểm tra chính tả, tô sáng văn bản, tự động nhận dạng các địa chỉ URL, tạo danh sách, định dạng phông chữ, truy cập nhanh, tạo mục lục ghi chú, và có nhiều phần bổ sung cung cấp các chức năng khác cho chương trình.</para>
+    </abstract>
+
+    <copyright>
+      <year>2009</year>
+
+      <holder>Alex Graveley</holder>
+    </copyright>
+
+    <copyright>
+      <year>2009</year>
+
+      <holder>Brent Smith</holder>
+    </copyright>
+
+    <copyright>
+      <year>2009</year>
+
+      <holder>Free Software Foundation</holder>
+    </copyright>
+    
+    <copyright>
+      <year>2009</year>
+      
+      <holder>Boyd Timothy</holder>
+    </copyright>
+    
+    <copyright>
+      <year>2009</year>
+      
+      <holder>Sandy Armstrong</holder>
+    </copyright>
+    
+    <copyright>
+      <year>2009</year>
+      
+      <holder>Paul Cutler</holder>
+    </copyright><copyright><year>2009</year><holder>Nguyễn Đình Trung (nguyendinhtrung141@gmail.com)</holder></copyright>
+
+    <!-- translators: uncomment this:
+    <copyright>
+      <year>2002</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+-->
+
+    <publisher>
+      <publishername>Dự án Tài liệu GNOME</publishername>
+    </publisher>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	 any of this. -->
+
+    <authorgroup>
+      <author role="maintainer">
+        <firstname>Alex</firstname>
+
+        <surname>Graveley</surname>
+
+        <affiliation>
+          <orgname>Dự án Tài liệu GNOME</orgname>
+
+          <address><email>alex@beatniksoftware.com</email></address>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Brent</firstname>
+
+        <surname>Smith</surname>
+
+        <affiliation>
+          <orgname>Dự án Tài liệu GNOME</orgname>
+
+          <address><email>gnome@nextreality.net</email></address>
+        </affiliation>
+      </author>
+      
+      <author role="maintainer">
+        <firstname>Boyd</firstname>
+        
+        <surname>Timothy</surname>
+        
+        <affiliation>
+          <orgname>Dự án Tài liệu GNOME</orgname>
+
+          <address><email>btimothy@gmail.com</email></address>
+        </affiliation>
+      </author>
+      
+      <author role="maintainer">
+        <firstname>Sandy</firstname>
+        
+        <surname>Armstrong</surname>
+        
+        <affiliation>
+          <orgname>Dự án Tài liệu GNOME</orgname>
+
+          <address><email>sanfordarmstrong@gmail.com</email></address>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Paul</firstname>
+
+        <surname>Cutler</surname>
+
+        <affiliation>
+          <orgname>Dự án Tài liệu GNOME</orgname>
+
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>
+      
+      <!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+     </othercredit>-->
+    </authorgroup>
+	
+	  <releaseinfo revision="2.28" role="candidate">
+		<ulink type="finalreview" url="http://bugzilla.gnome.org/show_bug.cgi?id=576487"/>
+	</releaseinfo>
+	
+    <!-- According to GNU FDL, revision history is mandatory if you are -->
+
+    <!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+
+    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Hướng dẫn sử dụng Tomboy 2.1</revnumber>
+
+        <date>2009-03-23</date>
+
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+
+          <para role="publisher">Dự án Tài liệu GNOME</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Hướng dẫn sử dụng Tomboy 4.0</revnumber>
+
+        <date>2008-03-07</date>
+
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+
+          <para role="publisher">Dự án Tài liệu GNOME</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Hướng dẫn sử dụng Tomboy 3.0</revnumber>
+
+        <date>2007-09-13</date>
+
+        <revdescription>
+          <para role="author">Sandy Armstrong</para>
+
+          <para role="publisher">Dự án Tài liệu GNOME</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Hướng dẫn sử dụng Tomboy 2.0</revnumber>
+
+        <date>2007-02-28</date>
+
+        <revdescription>
+          <para role="author">Boyd Timothy</para>
+
+          <para role="publisher">Dự án Tài liệu GNOME</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Tài liệu này mô tả Tomboy phiên bản 0.14.0</releaseinfo>
+
+    <legalnotice>
+      <title>Phản hồi</title>
+
+      <para>Để thông báo lỗi hoặc đề nghị liên quan đến ứng dụng Tomboy hoặc tài liệu này, vui lòng làm theo hướng dẫn trong <ulink type="help" url="ghelp:gnome-feedback">Trang Phản hồi GNOME</ulink>.</para>
+
+      <!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>Ghi chú Tomboy</primary>
+  </indexterm>
+
+  <indexterm zone="index">
+    <primary>Tomboy</primary>
+  </indexterm>
+
+  <indexterm zone="index">
+    <primary>ghi chú</primary>
+  </indexterm>
+
+  <!-- ============= Introduction ============================== -->
+
+  <sect1 id="tomboy-intro">
+    <title>Giới thiệu</title>
+
+    <figure id="tomboy-panel">
+      <title>Ứng dụng quản lý ghi chú</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="figures/tomboy-panel.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>Tomboy là một ứng dụng quản lý ghi nhớ trong môi trường GNOME, Microsoft Windows và Mac OS X. Đơn giản và dễ dùng, chương trình giúp bạn tổ chức các ý tưởng và thông tin hàng ngày của mình một cách nhanh chóng và tiện dụng. Tomboy còn có nhiều chức năng chỉnh sửa văn bản hữu ích, như:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Tô sáng văn bản tìm kiếm</para>
+      </listitem>
+
+      <listitem>
+        <para>Kiểm tra chính tả</para>
+      </listitem>
+
+      <listitem>
+        <para>Tự động nhận dạng và tạo liên kết tới địa chỉ web hay địa chỉ thư điện tử</para>
+      </listitem>
+
+      <listitem>
+        <para>Hủy bước/Hoàn lại</para>
+      </listitem>
+
+      <listitem>
+        <para>Đổi kiểu dáng và cỡ chữ</para>
+      </listitem>
+
+      <listitem>
+        <para>Danh sách chấm điểm</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Ta có thể mở Tomboy từ thanh ngang của GNOME, thanh tác vụ của Microsoft Windows, hoặc thanh neo của Mac OS X. Để hệ điều hành tự động chạy Tomboy khi ta đăng nhập vào GNOME, xin xem <xref linkend="add-to-panel"/>.</para>
+  </sect1>
+
+  <!--=========== Getting Started ============================== -->
+
+  <sect1 id="getting-started">
+    <title>Bắt đầu với Tomboy</title>
+
+    <sect2 id="add-to-panel">
+      <title>Thêm Tomboy vào thanh ngang GNOME</title>
+
+      <para>Để thêm Tomboy vào thanh ngang GNOME, bấm chuột phải lên thanh ngang, rồi chọn <menuchoice><guimenuitem>Thêm vào thanh ngang</guimenuitem></menuchoice>. Chọn Ghi chú Tomboy trong hộp thoại Thêm vào thanh, rồi nhấn <menuchoice><guibutton>Thêm</guibutton></menuchoice>. Bạn sẽ thấy biểu tượng tờ ghi chú màu vàng của Tomboy xuất hiện trên thanh điều khiển GNOME. Biểu tượng có dạng như trong <xref linkend="tomboy-panel"/>.</para>
+	  <para>Trên Microsoft Windows, Tomboy được tự động thêm vào ô tác vụ, còn trên Mac OS X, nó được đặt trên thanh neo.</para>
+    </sect2>
+
+    <sect2 id="creating-notes">
+      <title>Tạo ghi chú</title>
+
+      <para>Sau khi đã đưa Tomboy lên trên thanh điều khiển, bạn có thể tạo một ghi chú mới bằng một trong các thao tác sau.</para>
+
+      <para>Để tạo một ghi chú mới bằng chuột:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Bấm chuột vào biểu tượng Tomboy trên thanh điều khiển GNOME hoặc trên thanh tác vụ của Windows.</para>
+        </listitem>
+
+        <listitem>
+          <para>Chọn <menuchoice><guimenuitem>Ghi chú mới</guimenuitem></menuchoice> trong trình đơn vừa hiện lên.</para>
+        </listitem>
+      </orderedlist>
+
+      <para>Để tạo ghi chú mới từ bàn phím:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Mở trình đơn của Tomboy bằng cách nhấn tổ hợp <keycombo><keycap>Alt</keycap><keycap>F12</keycap></keycombo>.</para>
+        </listitem>
+
+        <listitem>
+          <para>Nhấn phím <keycap>M</keycap> để chọn mục <menuchoice><guimenuitem>Ghi chú mới</guimenuitem></menuchoice>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 id="editing-notes">
+      <title>Soạn thảo ghi chú</title>
+
+      <para>Sau khi chọn mục Ghi chú mới, một cửa sổ có tiêu đề là <literal>Ghi chú mới <replaceable>N</replaceable></literal> sẽ xuất hiện. Ở phía trên cửa sổ ghi có một thanh công cụ gồm nhiều nút và chữ. Sát bên dưới thanh công cụ là vùng soạn thảo ghi chú. Xem minh hoạ trong <xref linkend="new-note"/>.</para>
+
+      <para>Lúc này, bạn có thể nhấn chuột vào vùng soạn thảo và gõ nội dung cần ghi nhớ. Dòng đầu tiên của ghi chú, mặc định là <quote><literal>Ghi chú mới <replaceable>N</replaceable></literal></quote>, sẽ được sử dụng làm tiêu đề cho ghi chú này. Bạn cần sửa lại dòng này để đổi tiêu đề cho ghi chú của mình. Lúc tạo ghi chú mới, con trỏ sẽ được đặt ở dòng thứ 2 trong cửa sổ soạn thảo, để bạn có thể ngay lập tức nhập nội dung cần ghi nhớ vào mà không cần di chuột để chọn vùng soạn thảo.</para>
+
+      <para>Để biết cách sử dụng thanh công cụ khi làm việc với ghi chú, xin xem <xref linkend="working-with-notes"/>.</para>
+
+      <figure id="new-note">
+        <title>Cửa sổ mặc định để viết ghi chú mới</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-new-note.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+
+    <sect2 id="search-all-notes">
+      <title>Mục lục</title>
+
+      <para>Để xem thông tin khái quát về tất cả các ghi chú được Tomboy quản lý, xin chọn mục <menuchoice><guimenuitem>Tìm trong tất cả các ghi chú</guimenuitem></menuchoice></para>
+      
+      <para>Nhập từ khóa tìm kiếm vào ô văn bản trong hộp thoại <interface>Tìm trong tất cả các ghi chú</interface>, bạn sẽ thấy danh sách các ghi chú có chứa từ khóa mình vừa nhập được liệt kê ở khung bên phải.</para>
+      
+      <para>Để mở một ghi chú từ trong hộp thoại <interface>Tìm trong tất cả các ghi chú</interface>, ta có thể:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Nhắp đúp chuột vào một ghi chú.</para>
+        </listitem>
+        
+        <listitem>
+          <para>Chọn một ghi chú rồi chọn <menuchoice><guimenuitem>Mở</guimenuitem></menuchoice> từ trình đơn <guimenuitem>Tập tin</guimenuitem>.</para>
+        </listitem>
+        
+        <listitem>
+          <para>Bấm chuột phải lên một ghi chú rồi chọn <menuchoice><guimenuitem>Mở</guimenuitem></menuchoice> từ trình đơn ngữ cảnh vừa hiện ra.</para>
+        </listitem>
+        
+        <listitem>
+          <para>Chọn một ghi chú rồi nhấn tổ hợp phím <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+  </sect1>
+
+  <!--=========== Working With Notes ============================== -->
+
+  <sect1 id="working-with-notes">
+    <title>Làm việc với các ghi chú</title>
+
+    <para>Mỗi một ghi chú sẽ được soạn thảo, hiệu đính thông qua cửa sổ riêng dành cho nó. Thanh công cụ ở phía trên cùng cửa sổ soạn thảo cho phép bạn thay đổi kiểu dáng nội dung trong ghi chú của mình, cũng như thực hiện một số chức năng đặc biệt khác. Trong phần sau, ta sẽ đề cập đến các mục có trong thanh công cụ.</para>
+
+    <sect2 id="search">
+      <title>Tìm</title>
+
+      <para>Nhấn vào nút <guibutton>Tìm kiếm</guibutton> để mở hộp thoại <interface>Tìm trong tất cả các ghi chú</interface> mà ta đã đề cập ở (<xref linkend="search-all-notes"/>.)</para>
+    </sect2>
+
+    <sect2 id="link">
+      <title>Liên kết</title>
+
+      <para>Nút <guibutton>Liên kết</guibutton> giúp tạo một ghi chú mới liên kết tới ghi chú hiện thời. Ví dụ, nếu ghi chú ban đầu có chứa cụm từ <quote>Thi tốt nghiệp</quote>, bạn có thể chọn cụm từ này, rồi nhấn vào nút <guibutton>Liên kết</guibutton> để tạo một ghi chú mới với tiêu đề là <quote>Thi tốt nghiệp</quote>. Ở ghi chú ban đầu sẽ có liên kết với nội dung <quote>Thi tốt nghiệp</quote>, và khi bạn nhấn vào đó thì ghi chú tương ứng sẽ được mở ra.</para>
+
+      <note>
+        <para>Khi bạn thay đổi tiêu đề của một ghi chú được liên kết tới các ghi chú khác, phần nội dung tương ứng ở các ghi chú kia cũng sẽ được tự động thay đổi theo.</para>
+      </note>
+    </sect2>
+
+    <sect2 id="text">
+      <title>Văn bản</title>
+
+      <para>Ta có thể định dạng văn bản trong ghi chú bằng cách nhấn nút <guibutton>Văn bản</guibutton>. Một trình đơn sẽ hiện ra, bao gồm các mục sau:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Hoàn tác</term>
+
+          <listitem>
+            <para>Lệnh <quote>Hoàn tác</quote> sẽ hoàn lại các thay đổi vừa thực hiện trong phiên chạy này. Để hoàn lại thay đổi cuối cùng bằng bàn phím, hãy dùng tổ hợp phím chuẩn là <keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Làm lại</term>
+
+          <listitem>
+            <para>Lệnh <quote>Làm lại</quote> giúp thực hiện lại các thay đổi vừa khôi phục bằng lệnh <quote>Hoàn tác</quote>. Để làm lại thao tác cuối cùng bằng bàn phím, hãy dùng tổ hợp phím chuẩn là <keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Đậm</term>
+
+          <listitem>
+            <para>Để tô đậm một đoạn văn bản trong ghi chú của mình, trước tiên bạn hãy chọn đoạn muốn in đậm. Sau đó, chọn mục <menuchoice><guimenuitem>Đậm</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton> hoặc nhấn tổ hợp <keycombo><keycap>Ctrl</keycap><keycap>B</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Nghiêng</term>
+
+          <listitem>
+            <para>Để xô nghiêng một đoạn văn bản trong ghi chú của mình, trước tiên bạn hãy chọn đoạn muốn in nghiêng. Sau đó, chọn mục <menuchoice><guimenuitem>Nghiêng</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton> hoặc nhấn tổ hợp <keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Gạch ngang</term>
+
+          <listitem>
+            <para>Mục Gạch đè sẽ kẻ ngang một đường thẳng lên trên phần văn bản được chọn. Để gạch ngang chữ, hãy chọn đoạn văn bản rồi sau đó chọn mục <menuchoice><guimenuitem>Gạch ngang</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton> hoặc nhấn tổ hợp <keycombo><keycap>Ctrl</keycap><keycap>S</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Tô sáng</term>
+
+          <listitem>
+            <para>Kiểu dáng tô sáng sẽ tô nền màu vàng bên dưới đoạn văn bản được chọn. Để dùng kiểu dáng này, chọn đoạn cần tô sáng rồi chọn mục <menuchoice><guimenuitem>Tô sáng</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton> hoặc nhấn tổ hợp <keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Độ rộng cố định</term>
+
+          <listitem>
+            <para>Kiểu văn bản độ rộng cố định sử dụng một phông chữ có độ rộng cố định cho đoạn được chọn. Trước tiên, chọn đoạn cần dùng phông độ rộng cố định. Sau đó, chọn mục <menuchoice><guimenuitem>Phông độ rộng cố định</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton>. Bạn cũng có thể chọn mục <menuchoice><guimenuitem>Phông độ rộng cố định</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton> trước khi gõ văn bản. Đoạn được gõ sau đó sẽ dùng phông chữ có độ rộng cố định.</para>
+            
+            <para>Mục <menuchoice><guimenuitem>Độ rộng cố định</guimenuitem></menuchoice> sẽ chỉ xuất hiện khi bạn kích hoạt trình bổ sung Độ rộng cố định. Để hiểu thêm về các trình bổ sung cho Tomboy, xin xem <xref linkend="plugins"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Cỡ phông</term>
+
+          <listitem>
+            <para>Có bốn tùy chọn ở phần này: <simplelist type="inline">
+                <member><guilabel>Nhỏ</guilabel></member>
+
+                <member><guilabel>Bình thường</guilabel></member>
+
+                <member><guilabel>Lớn</guilabel></member>
+
+                <member><guilabel>Rất lớn</guilabel></member>
+              </simplelist>. Mỗi tùy chọn tương ứng với một cỡ phông mà bạn có thể sử dụng để trình bày ghi chú của mình. Để thay đổi kích thước phông chữ, hãy chọn đoạn văn bản muốn thay đổi cỡ chữ rồi chọn một trong các tùy chọn <simplelist type="inline">
+                <member><guilabel>Nhỏ</guilabel></member>
+
+                <member><guilabel>Bình thường</guilabel></member>
+
+                <member><guilabel>Lớn</guilabel></member>
+
+                <member><guilabel>Rất lớn</guilabel></member>
+              </simplelist> từ trình đơn <guibutton>Văn bản</guibutton>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Nút</term>
+
+          <listitem>
+            <para>Chọn lệnh <menuchoice><guimenuitem>Danh sách chấm điểm</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton> để mở hoặc đóng một danh sách chấm điểm. Nếu con trỏ đang ở trong một dòng của danh sách chấm điểm, ta có thể sử dụng được các lệnh <simplelist type="inline">
+                <member><guilabel>Tăng thụt lề</guilabel></member>
+                
+                <member><guilabel>Giảm thụt lề</guilabel></member>
+              </simplelist>.</para>
+             
+            <para>Đặt con trỏ tại dòng văn bản nằm trong danh sách chấm điểm, chọn mục <menuchoice><guimenuitem>Tăng thụt lề</guimenuitem></menuchoice> để dịch dòng đó sang bên phải, hoặc chọn <menuchoice><guimenuitem>Giảm thụt lề</guimenuitem></menuchoice> để dịch sang bên trái.</para>
+            
+            <para>Để biết thêm thông tin về danh sách chấm điểm, xin xem <xref linkend="bullets"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Tìm trong ghi chú này</term>
+
+          <listitem>
+          	<para>Dùng phần này để tìm kiếm văn bản có trong ghi chú hiện thời. Một thanh tìm kiếm nhỏ sẽ xuất hiện ở cuối cửa sổ ghi chú. Để mở thanh tìm kiếm, ta cũng có thể nhấn tổ hợp phím <keycombo><keycap>Ctrl</keycap><keycap>F</keycap></keycombo>.</para>
+            
+            <para>Nhập văn bản muốn tìm. Sau khi nhập văn bản, các đoạn văn bản khớp với từ cần tìm sẽ được tô sáng. Nhấn vào nút <guibutton>Tìm tiếp</guibutton> để tô sáng kết quả kế tiếp, đồng thời dịch con trỏ tới vị trí đó. Nhấn vào nút <guibutton>Trước</guibutton> để lùi lại kết quả trước.</para>
+          	
+          	<para>Để đóng thanh tìm kiếm, nhấn vào nút <guibutton>X</guibutton> (Đóng cửa sổ) ở phía trên bên trái thanh tìm kiếm, hoặc nhấn phím <keycap>Escape</keycap>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="tools">
+      <title>Công cụ (biểu tượng hình bánh răng)</title>
+
+      <para>Nút <guibutton>Công cụ</guibutton> có biểu tượng <inlinegraphic fileref="figures/tomboy-tools.png"/>. Khi nhấn chuột vào nút <guiicon>Công cụ</guiicon> trên thanh công cụ của cửa sổ ghi chú, một trình đơn sẽ hiện lên, bao gồm các mục sau:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Đồng bộ ghi chú</term>
+
+          <listitem>
+            <para>Chọn mục này để đồng bộ các ghi chú của mình với một máy chủ trung tâm. Để biết thêm thông tin, hãy xem <xref linkend="synchronization"/>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Mục nào liên kết đến đây?</term>
+
+          <listitem>
+            <para>Tùy chọn này sẽ liệt kê các ghi chú khác có liên kết với ghi chú hiện thời. Tính năng này chỉ xuất hiện khi trình bổ sung Backlinks hoạt động. Muốn biết thêm về các trình bổ sung, xin xem <xref linkend="plugins"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Xuất dạng HTML</term>
+
+          <listitem>
+            <para>Bạn có thể tạo một tài liệu <acronym>HTML</acronym> từ một hoặc nhiều ghi chú bằng cách chọn mục này. Để biết thêm thông tin, hãy xem <xref linkend="plugins"/>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>In</term>
+
+          <listitem>
+            <para>Chọn mục này sẽ mở hộp thoại In ấn của GNOME, để in ghi chú hiện thời.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <note>
+        <para>Số mục có trong trình đơn <guimenu>Công cụ</guimenu> sẽ thay đổi tùy theo những phần bổ sung nào của Tomboy đang được kích hoạt.</para>
+      </note>
+    </sect2>
+
+    <sect2 id="delete">
+      <title>Xóa</title>
+
+      <para>Nút <guibutton>Xóa</guibutton> sẽ mở một hộp thoại hỏi lại xem bạn có muốn xóa ghi chú này cùng các nội dung của nó hay không. Nhấn nút <guibutton>Xóa</guibutton> để xóa bỏ hoàn toàn ghi chú này, hoặc nhấn <guibutton>Hủy</guibutton> để thôi không xóa nó nữa. Các liên kết đến ghi chú này trên các ghi chú khác sẽ vẫn tồn tại, nhưng khi ta nhấn vào chúng thì một ghi chú mới với tiêu đề tương ứng sẽ được tạo ra.</para>
+    </sect2>
+  </sect1>
+
+  <!--=========== Panel Menu ====================================== -->
+
+  <sect1 id="panel-menu">
+    <title>Trình đơn thanh ngang</title>
+
+    <para>Tomboy lưu lại các ghi chú mà bạn mới mở gần đây ở trình đơn hiện lên khi bấm chuột vào biểu tượng Tomboy trên thanh điều khiển của GNOME, thanh tác vụ của Windows hay thanh neo của Mac OS X.</para>
+
+    <sect2 id="note-pinning">
+      <title>Ghim ghi chú</title>
+
+      <para>Để buộc một ghi chú luôn luôn xuất hiện trên trình đơn thanh điều khiển, bất kể thời điểm lần cuối cùng bạn mở nó ra xem, hãy nhấn vào biểu tượng đinh ghim ở lề phải của trình đơn để "ghim" nó vào vị trí hiện tại trên trình đơn. Các ghi chú đã được ghim cố định trên trình đơn sẽ có biểu tượng như thế này: <inlinegraphic fileref="figures/tomboy-pindown.png"/>. Còn các ghi chú không bị ghim cố định trên trình đơn thì dùng biểu tượng này: <inlinegraphic fileref="figures/tomboy-pinup.png"/>.</para>
+
+      <figure>
+        <title>Trình đơn Tomboy trên thanh điều khiển</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-main-menu.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+  </sect1>
+
+  <!--=========== Bulleted Lists ================================== -->
+
+  <sect1 id="bullets">
+    <title>Danh sách chấm điểm</title>
+
+    <sect2 id="bullet-start">
+      <title>Mở danh sách chấm điểm</title>
+        
+      <para>Để tạo một danh sách chấm điểm, ta có thể làm một trong các cách sau:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Chọn <menuchoice><guimenuitem>Danh sách chấm điểm</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton>.</para>
+        </listitem>
+
+        <listitem>
+          <para>Gõ dấu trừ (-) ở đầu một dòng, rồi nhấn <keycap>Enter</keycap> ở cuối dòng.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+      
+    <sect2 id="bullet-end">
+      <title>Đóng danh sách chấm điểm</title>
+
+      <para>Để kết thúc một danh sách chấm điểm, ta làm một trong các cách sau:</para>
+      
+      <orderedlist>
+        <listitem>
+          <para>Chọn <menuchoice><guimenuitem>Danh sách chấm điểm</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton>.</para>
+        </listitem>
+
+        <listitem>
+          <para>Nhấn <keycap>Enter</keycap> trên một dòng trống trong danh sách chấm điểm.</para>
+        </listitem>
+
+        <listitem>
+          <para>Chọn mục <menuchoice><guimenuitem>Giảm thụt lề</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton> nhiều lần tới khi dòng văn bản tại vị trí con trỏ không còn dấu chấm điểm của danh sách nữa.</para>
+        </listitem>
+
+        <listitem>
+          <para>Dùng tổ hợp phím <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo> nhiều lần cho tới khi dòng hiện thời không còn là danh sách chấm điểm nữa.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+      
+    <sect2 id="bullet-increase-indent">
+      <title>Tăng thụt lề</title>
+      
+      <para>Để tăng thụt lề trong một danh sách chấm điểm bằng chuột, ta có thể làm như sau:</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Chọn <menuchoice><guimenuitem>Tăng thụt lề</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton>.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Để tăng thụt lề trong một danh sách chấm điểm bằng bàn phím, ta có thể làm như sau:</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Nhấn phím <keycap>Tab</keycap>.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+      
+    <sect2 id="bullet-decrease-indent">
+      <title>Giảm thụt lề</title>
+        
+      <para>Nếu muốn dùng chuột để giảm thụt lề của một dòng trong danh sách chấm điểm:</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Chọn <menuchoice><guimenuitem>Giảm thụt lề</guimenuitem></menuchoice> từ trình đơn <guibutton>Văn bản</guibutton>.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Để giảm thụt lề của một danh sách chấm điểm bằng bàn phím:</para>
+      
+      <itemizedlist>
+        <listitem>
+          <para>Nhấn tổ hợp phím <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo>.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+  </sect1>
+  
+  <!--=========== Working with Notebooks =========================== -->
+  
+  <sect1 id="notebooks">
+  	<title>Làm việc với các sổ ghi chú</title>
+  
+    <para>Các cuốn Sổ ghi chú giúp ta nhóm các ghi chú lại với nhau. Ta có thể thêm một ghi chú vào trong một cuốn sổ ghi chú từ cửa sổ Tìm trong tất cả các ghi chú, hoặc làm trực tiếp lúc soạn thảo nội dung ghi chú.</para>
+    
+    <sect2 id="creating-noteboks">
+    <title>Tạo sổ ghi chú</title>
+    
+    <para>Để tạo một cuốn sổ ghi chú mới, ta có thể thực hiện một trong các cách sau:</para>
+    
+      <orderedlist>
+        <listitem> 
+        <para>Nhấn vào biểu tượng Tomboy trên thanh điều khiển GNOME, hoặc trên thanh tác vụ của Microsoft Windows, hoặc thanh neo của Mac OS X. Một trình đơn sẽ xuất hiện.</para>   
+        </listitem>
+        <listitem>
+        <para>Chọn mục <menuchoice><guimenuitem>Sổ ghi chú</guimenuitem><guimenuitem>Sổ ghi chú mới</guimenuitem></menuchoice>.</para></listitem>
+		<listitem>
+		<para>Đặt tên cho sổ ghi chú.</para>
+		</listitem>
+	</orderedlist>
+	
+	      <figure id="new-notebook">
+        <title>Tạo một sổ ghi chú mới thông qua biểu tượng Tomboy trên thanh điều khiển GNOME, thanh tác vụ của Microsoft Windows, hoặc thanh neo của Mac OS X</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/new-notebook.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+		
+	<para>Để tạo một sổ ghi chú mới từ hộp thoại Tìm trong tất cả các ghi chú:</para>
+	<orderedlist>
+		<listitem> 
+	<para>Chọn mục <menuchoice><guimenuitem>Tìm trong tất cả các ghi chú</guimenuitem></menuchoice> bằng cách mở trình đơn từ biểu tượng Tomboy trên thanh điều khiển GNOME, thanh tác vụ của Microsoft Windows, hay thanh neo của Mac OS X, hoặc bấm chuột vào nút Tìm kiếm trên cửa sổ soạn thảo ghi chú.</para>
+	</listitem>
+	<listitem>
+	<para>Bấm chuột phải lên khung bên trái và chọn <menuchoice><guimenuitem>Sổ ghi chú mới</guimenuitem></menuchoice>.</para>
+	</listitem>
+	<listitem>
+	<para>Đặt tên cho sổ ghi chú.</para>
+	</listitem>
+	<listitem>
+	<para>Sau khi mở hộp thoại <guilabel>Tìm trong tất cả các ghi chú</guilabel>, hãy chọn trình đơn <menuchoice><guimenuitem>Tập tin</guimenuitem><guimenuitem>Sổ ghi chú</guimenuitem><guimenuitem>Sổ ghi chú mới</guimenuitem></menuchoice>.</para>
+	</listitem>
+	<listitem>
+	<para>Đặt tên cho sổ ghi chú.</para>
+	</listitem>
+
+	</orderedlist>
+  	      
+  	      <figure id="create-new-notebook">
+        <title>Tạo sổ ghi chú mới từ hộp thoại Tìm trong tất cả các ghi chú</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/add-notebook-search.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+  
+  </sect2>
+  
+  <sect2 id="adding-notes-notebook">
+  	<title>Thêm ghi chú vào trong một sổ ghi chú</title>
+  	
+  	<para>Để thêm một ghi chú vào trong một sổ ghi chú nào đó, ta có thể thực hiện từ hộp thoại <guilabel>Tìm trong tất cả các ghi chú</guilabel> hoặc từ cửa sổ soạn thảo ghi chú.</para>
+
+	<para>Để chuyển một ghi chú có sẵn từ trong hộp thoại Tìm trong tất cả các ghi chú:</para>
+	<orderedlist>
+		<listitem> 
+	<para>Chọn mục <menuchoice><guimenuitem>Tìm trong tất cả các ghi chú</guimenuitem></menuchoice> bằng cách mở trình đơn từ biểu tượng Tomboy trên thanh điều khiển GNOME, thanh tác vụ của Microsoft Windows, hay thanh neo của Mac OS X, hoặc bấm chuột vào nút Tìm kiếm trên cửa sổ soạn thảo ghi chú.</para>
+	</listitem>
+	<listitem>
+	<para>Dùng chuột, kéo ghi chú và thả vào một cuốn sổ ghi chú ở bên tay trái.</para>
+	</listitem>
+	</orderedlist>
+
+	<para>Trong lúc soạn thảo một ghi chú, ta cũng có thể đưa nó sang một cuốn sổ ghi chú có sẵn bằng nút <guimenu>Sổ ghi chú</guimenu>, có hình <inlinegraphic fileref="figures/notebook-icon.png"/>.</para> 
+	
+	  	      <figure id="add-to-notebook">
+        <title>Thêm ghi chú vào trong một sổ ghi chú</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/add-to-notebook.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+
+
+	</sect2>
+	
+	<sect2 id="notebook-templates">
+	<title>Tạo mẫu sổ ghi chú</title>
+	
+	<para>Sau khi tạo một sổ ghi chú mới, ta có thể tạo một ghi chú mẫu. Các ghi chú mới trong sổ này sẽ có nội dung ban đầu giống như mẫu này.</para>
+
+	<orderedlist>
+	<listitem> 
+	<para>Chọn mục <menuchoice><guimenuitem>Tìm trong tất cả các ghi chú</guimenuitem></menuchoice> bằng cách mở trình đơn từ biểu tượng Tomboy trên thanh điều khiển GNOME, thanh tác vụ của Microsoft Windows, hay thanh neo của Mac OS X, hoặc bấm chuột vào nút Tìm kiếm trên cửa sổ soạn thảo ghi chú.</para>
+	</listitem>
+	<listitem>
+	<para>Bấm chuột phải lên một cuốn sổ ghi chú mà bạn đã tạo rồi chọn <menuchoice><guimenuitem>Mở ghi chú mẫu</guimenuitem></menuchoice>.</para>
+	</listitem>
+	<listitem>
+	<para>Thao tác này sẽ mở một ghi chú mới để bạn soạn thảo và lấy làm mẫu cho các ghi chú được tạo sau này. Nội dung được ghi lại trong ghi chú này sẽ xuất hiện trong tất cả các ghi chú được tạo từ cuốn Sổ ghi chú này. Để tạo ghi chú đặt trong một sổ ghi chú nào đó, ta chỉ việc bấm chuột phải lên cuốn sổ rồi chọn <menuchoice><guimenuitem>Ghi chú mới</guimenuitem></menuchoice>.</para>
+	</listitem>
+	</orderedlist>
+
+	  	      <figure id="notebook-template">
+        <title>Tạo một mẫu sổ ghi chú</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/note-template.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+	
+	</sect2>
+
+	
+	<sect2 id="deleting-notebooks">
+	<title>Xóa một cuốn sổ ghi chú</title>
+	<para>Khi ta xóa một sổ ghi chú, các ghi chú có trong sổ này sẽ vẫn được giữ lại. Tuy nhiên, chúng sẽ được liệt vào dạng chưa được phân loại, và sẽ xuất hiện trong khung bên phải của cửa sổ <menuchoice><guimenuitem>Tìm trong mọi ghi chú</guimenuitem></menuchoice>, ở mục  <menuchoice><guimenuitem>Ghi chú chưa phân loại</guimenuitem></menuchoice> trong khung bên trái.</para>
+	
+	<para>Để xóa một sổ ghi chú khỏi chương trình, ta có hai cách sau:</para>
+	<para>Dùng chuột để xóa một sổ ghi chú:</para>
+	<orderedlist>
+	<listitem> 
+	<para>Chọn mục <menuchoice><guimenuitem>Tìm trong tất cả các ghi chú</guimenuitem></menuchoice> bằng cách mở trình đơn từ biểu tượng Tomboy trên thanh điều khiển GNOME, thanh tác vụ của Microsoft Windows, hay thanh neo của Mac OS X, hoặc bấm chuột vào nút Tìm kiếm trên cửa sổ soạn thảo ghi chú.</para>
+	</listitem>
+	<listitem>
+	<para>Bấm chuột phải lên sổ ghi chú và chọn <menuchoice><guimenuitem>Xóa sổ ghi chú</guimenuitem></menuchoice>.</para>
+	</listitem>
+	</orderedlist>
+		  	      <figure id="notebook-delete">
+        <title>Xóa một cuốn sổ ghi chú</title>
+         
+         <mediaobject>
+         <imageobject>
+            <imagedata fileref="figures/delete-notebook.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure> 
+	
+	<para>Để xóa một sổ ghi chú từ trình đơn <menuchoice><guimenuitem>Tìm trong tất cả các ghi chú</guimenuitem></menuchoice>, ta mở hộp thoại <menuchoice><guimenuitem>Tìm trong tất cả các ghi chú</guimenuitem></menuchoice> bằng cách chọn nó từ biểu tượng Tomboy trên thanh điều khiển GNOME, thanh tác vụ Windows hay thanh neo Mac OS X.</para>
+	<orderedlist>
+	<listitem>
+	<para>Nhấn chuột trái lên cuốn sổ ghi chú mà bạn muốn xóa.</para>
+	</listitem>
+	<listitem>
+	<para>Từ trình đơn hiện lên, hãy chọn <menuchoice><guimenuitem>Sửa</guimenuitem><guimenuitem>Xóa sổ ghi chú</guimenuitem></menuchoice></para>
+	</listitem>
+	</orderedlist>
+
+	
+	</sect2>
+	
+	</sect1>
+	
+  <!--=========== Synchronization ================================== -->
+
+  <sect1 id="synchronization">
+    <title>Đồng bộ ghi chú</title>
+    
+    <para>Tomboy cho phép bạn đồng bộ các ghi chú của mình với các máy tính khác thông qua một máy chủ trung tâm.</para>
+
+    <sect2 id="sync-configure">
+      <title>Cấu hình việc đồng bộ các ghi chú</title>
+
+      <para>Ta có thể cấu hình việc đồng bộ ghi chú trong thẻ <guilabel>Đồng bộ hóa</guilabel> ở hộp thoại <interface>Tùy thích Tomboy</interface>. Để cấu hình cách xử lý các xung đột về nội dung khi đồng bộ, nhấn nút <guibutton>Nâng cao...</guibutton>.</para>
+
+      <figure>
+        <title>Tùy thích khi đồng bộ ghi chú</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-synchronization.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+    <sect3 id="sync-configure-webdav">
+      <title>Đồng bộ các ghi chú qua WebDAV</title>
+        
+      <para>Để đồng bộ các ghi chú của mình qua máy chủ WebDAV, ta cài đặt hệ tập tin wdfs FUSE. Xin xem tài liệu tương ứng với hệ điều hành của mình để cài đặt và thiết lập FUSE. Ngoài ra, ta cũng cần cài đặt thêm chương trình vòng khóa GNOME.</para>
+      
+      <para>Chọn <guimenuitem>WebDAV</guimenuitem> từ danh sách <guilabel>Dịch vụ</guilabel>. Điền các thông tin cần thiết để kết nối tới máy chủ mà bạn có, rồi nhấn nút <guibutton>Lưu</guibutton>.</para>
+    </sect3>
+
+    <sect3 id="sync-configure-ssh">
+      <title>Đồng bộ các ghi chú qua SSH</title>
+        
+      <para>Để đồng bộ các ghi chú của mình thông qua máy chủ SSH, bạn phải cài đặt hệ tập tin sshfs FUSE. Xin xem tài liệu hướng dẫn cho hệ điều hành của mình để cài đặt và thiết lập FUSE. Bạn cũng sẽ phải có một khóa SSH để truy cập vào tài khoản của mình trên máy chủ, bằng chương trình <application>Seahorse</application>, một ứng dụng <application>Mã hóa khóa và mật khẩu</application> trên GNOME</para>
+	  
+	  <para>It is recommended to use a third computer or server as the remote computer
+	  to store the syncronized notes that are to be synced between multiple computers.</para>
+	  
+	  <para>Mở <application>Khoá Mật khẩu và Mã hóa</application> bằng cách chọn <menuchoice><guimenu>Ứng dụng</guimenu><guimenu>Bổ trợ</guimenu><guimenu>Khoá Mật khẩu và Mã hóa</guimenu></menuchoice>. Nhấn chuột lên khóa của bạn có, và chọn mục <menuchoice><guimenu>Từ xa</guimenu><guimenu>Cấu hình khóa cho hệ vỏ bảo mật...</guimenu></menuchoice>, sau đó nhập địa chỉ IP hay tên miền của máy tính mà bạn muốn đồng bộ các ghi chú của mình vào ô <guimenu>Tên máy</guimenu>. Nhập tên đăng nhập của bạn trên máy kia vào ô <guimenu>Tên đăng nhập:</guimenu> rồi nhấn <guimenu>Thiết lập</guimenu>. Khi được hỏi, nhập mật khẩu để đăng nhập vào máy kia, để hoàn tất quá trình thiết lập khóa bảo mật.</para>
+      
+      <para>In <application>Tomboy</application>, choose <guimenuitem>SSH</guimenuitem> from the <guilabel>Service</guilabel>
+      drop-down list. Fill in the connection information for your server, and then select the
+      <guibutton>Save</guibutton> button.  The <guimenuitem>Folder Path</guimenuitem>, while optional, 
+	  should point at an empty folder. You are now ready to synchronize your notes.</para>
+    </sect3>
+
+    <sect3 id="sync-configure-localfolder">
+      <title>Đồng bộ với một thư mục trên máy mình</title>
+        
+      <para>Ta có thể đồng bộ các ghi chú với một thư mục cục bộ trên chính máy mình, phục vụ việc chia sẻ thư mục này với các máy khác, hoặc thư mục này đại diện cho một máy khác của mình để sao lưu.</para>
+      
+      <para>Chọn <guimenuitem>Thư mục cục bộ</guimenuitem> từ danh sách <guilabel>Dịch vụ</guilabel>. Chọn đường dẫn tới thư mục muốn đồng bộ trong ô <guilabel>Đường dẫn thư mục</guilabel>, rồi nhấn nút <guibutton>Lưu</guibutton> để có thể bắt đầu đồng bộ các ghi chú.</para>
+    </sect3>
+    </sect2>
+
+    <sect2 id="sync-initiate">
+      <title>Đồng bộ các ghi chú</title>
+        
+      <para>Ta có thể thực hiện việc đồng bộ các ghi chú của mình bất kỳ lúc nào bằng cách chọn <menuchoice><guimenu>Công cụ</guimenu><guimenuitem>Đồng bộ hóa ghi chú</guimenuitem></menuchoice> từ một ghi chú đang mở, hay từ hộp thoại <interface>Tìm trong tất cả các ghi chú</interface>.</para>
+    </sect2>
+    
+    <sect2 id="sync-conflicts">
+      <title>Xử lý xung đột khi đồng bộ ghi chú</title>
+      
+      <para>Khi đồng bộ các ghi chú giữa các máy tính, đôi lúc nội dung của cùng một ghi chú trên các máy không giống nhau, gây ra hiện tượng xung đột. Nguyên nhân chủ yếu của những xung đột về mặt nội dung này là do ta không thường xuyên đồng bộ lại nội dung của các ghi chú khi thay đổi chúng. Tomboy có khả năng tự động nhận biết các xung đột về nội dung này, và giúp bạn giữ được thông tin quan trọng ghi trong đó.</para>
+      
+      <para>Nếu quá trình đồng bộ các ghi chú có xung đột, hộp thoại <interface>Xung đột nội dung ghi chú</interface> sẽ xuất hiện. Nếu bạn không cần các thay đổi đã tạo trên ghi chú ở máy mình, bạn có thể chọn <guilabel>Ghi đè lên ghi chú cục bộ</guilabel>. Ngược lại, nếu muốn giữ các thay đổi đã tạo trên máy được đồng bộ, hãy chọn <guilabel>Đổi tên ghi chú cục bộ</guilabel>.</para>
+    </sect2>
+  </sect1>
+
+  <sect1>
+    <title>Tùy thích</title>
+
+    <para>Để đặt các thiết lập cho Tomboy, bấm chuột phải lên biểu tượng của chương trình trên thanh điều khiển rồi chọn <menuchoice><guimenuitem>Tùy thích</guimenuitem></menuchoice> từ trình đơn vừa xuất hiện. Bạn sẽ thấy một hộp thoại tương tự như trong <xref linkend="pref-editing"/>. Có hai loại tùy thích là <guilabel>Soạn thảo</guilabel> và <guilabel>Phím tắt</guilabel>. Các tùy thích có trong từng thẻ sẽ được mô tả ở mục sau.</para>
+
+    <sect2>
+      <title>Soạn thảo</title>
+
+      <para>Thẻ soạn thảo cho phép ta thiết lập các tùy thích liên quan đến việc soạn thảo ghi chú. Có ba hộp kiểm trên thẻ này.</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Kiểm tra chính tả trong khi gõ nội dung</term>
+
+          <listitem>
+            <para>Đánh dấu hộp kiểm này để gạch đỏ dưới chân các chuỗi sai chính tả, và xem những gợi ý sửa lỗi này trong trình đơn ngữ cảnh hiện lên khi bấm chuột phải vào đoạn văn bản bị sai. Đánh dấu hoặc bỏ dấu kiểm trên hộp này bằng chuột, hoặc dùng tổ hợp <keycombo><keycap>Alt</keycap><keycap>K</keycap></keycombo>.</para>
+
+            <note>
+              <para>Tùy chọn kiểm tra chính tả sẽ chỉ hoạt động khi bạn đã cài đặt gói <application>GtkSpell</application> trên máy mình.</para>
+            </note>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Tô sáng từ khóa của Wiki</term>
+
+          <listitem>
+            <para>Đánh dấu hộp kiểm này để tạo liên kết cho những chuỗi <literal>GiốngThếNày</literal>. Bấm chuột vào liên kết, ta sẽ mở một liên kết có tiêu đề tương ứng với nội dung đoạn văn bản dùng làm liên kết ở ghi chú ban đầu. Đánh dấu hoặc bỏ đánh dấu hộp này bằng chuột, hoặc nhấn tổ hợp <keycombo><keycap>Alt</keycap><keycap>W</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Dùng phông chữ tự chọn</term>
+
+          <listitem>
+            <para>Đánh dấu hộp kiểm này để chọn dùng một phông chữ bất kỳ thay vì phông hệ thống quy định khi trình bày nội dung ghi chú của bạn. Nếu không dùng tùy chọn này,  phông chữ mà bạn thiết lập cho hệ thống sẽ được sử dụng để trình bày các ghi chú Tomboy. Đánh dấu hoặc bỏ dấu hộp kiểm này bằng chuột, hoặc nhấn tổ hợp <keycombo><keycap>Alt</keycap><keycap>P</keycap></keycombo>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <figure id="pref-editing">
+        <title>Tùy thích soạn thảo của Tomboy</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-editing.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+
+    <sect2>
+      <title>Phím tắt</title>
+
+      <para>Thẻ phím tắt giúp cấu hình các tổ hợp phím tắt để truy cập nhanh vào Tomboy. Để đặt các tổ hợp phím, bạn phải chọn hộp kiểm <guibutton>Bắt các phím tắt</guibutton>. Dùng tổ hợp <keycombo><keycap>Alt</keycap><keycap>T</keycap></keycombo> để đánh dấu hoặc bỏ dấu cho hộp kiểm này.</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Hiện trình đơn ghi chú</term>
+
+          <listitem>
+            <para>Nhập tổ hợp phím tắt dùng để mở trình đơn ghi chú.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Mở "Mở đầu"</term>
+
+          <listitem>
+            <para>Nhập tổ hợp phím tắt để mở ghi chú <quote>Bắt đầu với Tomboy</quote>, ghi chú hướng dẫn có sẵn trong chương trình.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Tạo ghi chú mới</term>
+
+          <listitem>
+            <para>Nhập tổ hợp phím tắt để tạo một ghi chú mới.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Tìm ghi chú</term>
+
+          <listitem>
+            <para>Nhập tổ hợp phím tắt để mở hộp thoại <interface>Tìm trong tất cả các ghi chú</interface>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <figure>
+        <title>Tùy thích phím tắt cho Tomboy</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-hotkeys.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+
+    <sect2 id="prefs-synchronization">
+      <title>Đồng bộ</title>
+      
+      <para>Để biết thêm thông tin, xin xem <xref linkend="synchronization"/>.</para>
+    </sect2>
+
+    <sect2 id="prefs-plugins">
+      <title>Phần bổ sung</title>
+
+      <para>Thẻ Phần bổ sung cho phép bạn kích hoạt và thiết lập các trình bổ sung của Tomboy.</para>
+      
+      <para>Các phần bổ sung đã cài đặt được liệt kê ở khung bên trái. Để kích hoạt một phần bổ sung, ta chọn nó trong danh sách này, rồi nhấn nút <guibutton>Bật</guibutton>. Để ngưng hoạt động của một trình bổ sung, ta chọn mục tương ứng trong danh sách rồi nhấn nút <guibutton>Tắt</guibutton>. </para>
+      
+      <para>Xin xem thêm về các phần bổ sung đã cài đặt cùng Tomboy trong <xref linkend="plugins"/>.</para>
+
+      <figure>
+        <title>Tùy thích cho trình bổ sung của Tomboy</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/tomboy-preferences-add-ins.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </sect2>
+  </sect1>
+
+  <sect1 id="plugins">
+    <title>Phần bổ sung</title>
+
+    <para>Bản cài đặt mặc định của Tomboy có sẵn một vài phần bổ sung, bao gồm: <simplelist type="inline">
+        <member>Backlinks</member>
+
+        <member>Nhận diện URL kiểu Bugzilla</member>
+
+        <member>Chuyển thư từ Evolution thành Ghi chú</member>
+
+        <member>Xuất dạng HTML</member>
+
+        <member>Độ rộng cố định</member>
+
+        <member>Ghi chú hàng ngày</member>
+
+        <member>In ghi chú</member>
+
+        <member>và Nhập Ghi chú (Sticky Notes).</member>
+      </simplelist>. Những phần bổ sung này sẽ hoạt động cùng chương trình ngay sau khi Tomboy được cài đặt.</para>
+
+    <note>
+      <para>Một số phần bổ sung khác lại không được cài đặt theo mặc định.</para>
+    </note>
+
+    <variablelist>
+      <varlistentry>
+        <term>Backlinks (Những mục nào liên kết đến đây?)</term>
+
+        <listitem>
+          <para>Phần bổ sung này cho bạn biết những ghi chú nào liên kết tới ghi chú đang mở, giúp bạn tiện theo dõi các quan hệ giữa các ghi chú mình có. Nếu phần bổ sung này hoạt động, trong trình đơn <link linkend="tools">Công cụ</link> bạn sẽ thấy mục <guimenuitem>Những mục nào liên kết đến đây?</guimenuitem>. Khi chọn mục này, các ghi chú có liên kết đến ghi chú hiện thời sẽ được liệt kê trong một trình đơn con. Chọn một mục trong trình đơn con này để mở ghi chú tương ứng.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Nhận diện URL kiểu Bugzilla</term>
+
+        <listitem>
+          <para>Cho phép ta kéo một địa chỉ URL của bộ theo dõi lỗi Bugzilla từ trình duyệt vào trong một ghi chú Tomboy. Mã lỗi sẽ được chèn vào dưới dạng liên kết, cùng một biểu tượng lỗi nhỏ đặt bên cạnh. Sau này, ta có thể nhấn chuột vào liên kết trên để mở trang báo lỗi Bugzilla tương ứng trên trình duyệt của mình.</para>
+          
+          <para>Ta có thể chọn biểu tượng khác bằng cách cấu hình lại phần bổ sung trong <link linkend="prefs-plugins">Hộp thoại Tùy thích</link>. Sau khi chọn phần bổ sung Bugzilla, nhấn vào nút <guibutton>Tùy thích</guibutton> để mở hộp thoại <interface>Thiết lập phần bổ sung Bugzilla</interface>. Để chọn một biểu tượng mới, nhấn vào nút <guibutton>Thêm</guibutton>, chọn một biểu tượng từ máy mình, nhập tên máy chủ Bugzilla (vd: bugzilla.gnome.org), rồi nhấn <guibutton>Mở</guibutton>. Các địa chỉ URL cho Bugzilla được kéo thả vào chương trình từ một trong các máy này sẽ có thêm biểu tượng mà bạn đã chọn ở bên cạnh.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Chuyển thư từ Evolution thành Ghi chú</term>
+
+        <listitem>
+          <para>Phần bổ sung này giúp bạn kéo và thả một thư điện tử từ trong <application>Evolution</application> vào một ghi chú Tomboy. Bấm chuột trái lên biểu tượng thư điện tử trong ghi chú, chương trình sẽ tự động mở thư tương ứng trong Evolution.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Xuất dạng HTML</term>
+
+        <listitem>
+          <para>Khi phần bổ sung này hoạt động, ta sẽ thấy mục <guimenuitem>Xuất ra HTML</guimenuitem> trong trình đơn <link linkend="tools">Công cụ</link>.</para>
+
+          <para>Sau khi chọn mục này, một hộp thoại sẽ hiện ra cho bạn chọn thư mục dùng để lưu tập tin <acronym>HTML</acronym>. Nhập vào đường dẫn cùng tên tập tin và nhấn <guibutton>Lưu</guibutton> để ghi tập tin, hoặc nhấn <guibutton>Thôi</guibutton> để hủy bỏ.</para>
+
+          <para>Để xuất các ghi chú khác có liên kết tới ghi chú hiện thời, chọn nút <guibutton>Xuất các ghi chú liên kết</guibutton>.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Độ rộng cố định</term>
+
+        <listitem>
+          <para>Cho phép ta dùng phông chữ có độ rộng cố định để tạo và sửa ghi chú của mình. Nếu phần bổ sung này hoạt động, trong trình đơn <link linkend="text">Chuỗi</link> sẽ có thêm mục <guimenuitem>Độ rộng cố định</guimenuitem>.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Ghi chú hàng ngày</term>
+
+        <listitem>
+          <para>Phần bổ sung này tự động tạo một ghi chú "Hôm nay" để bạn ghi lại các suy nghĩ của mình theo ngày. Ngày giờ hiện thời sẽ được dùng làm tiêu đề cho ghi chú. Ví dụ, tiêu đề của ghi chú "Hôm nay" được viết vào ngày 28 tháng 2 năm 2007 sẽ là "Hôm nay: Thứ tư 28 tháng 2 năm 2007"</para>
+          
+          <para>Nếu bạn không ghi chép gì vào ghi chú "Hôm nay", phần bổ sung Ghi chú trong ngày sẽ tự động xóa ghi chú đó đi.</para>
+          
+          <para>Để sửa nội dung mặc định của ghi chú "Hôm nay" hãy tạo một ghi chú mới và đổi tiêu đề của ghi chú thành "Hôm nay: Mẫu". Sửa lại nội dung của mẫu ghi chú trên theo ý mình. Khi bạn tạo một ghi chú "Hôm nay" mới, nội dung ghi chú "Hôm nay: Mẫu" sẽ được ghi sẵn vào ghi chú này.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>In ghi chú</term>
+
+        <listitem>
+          <para>Khi phần bổ sung này hoạt động, trong trình đơn <link linkend="tools">Công cụ</link> sẽ có thêm lệnh <guimenuitem>In</guimenuitem>.</para>
+
+          <para>Chọn mục này sẽ mở hộp thoại In ấn của GNOME, để in ghi chú hiện thời.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Nhập các ghi nhớ</term>
+
+        <listitem>
+          <para>Khi phần bổ sung này hoạt động, trong trình đơn <link linkend="tools">Công cụ</link> sẽ có thêm lệnh <guimenuitem>Nhập từ Ghi chú dính</guimenuitem>.</para>
+
+          <para>Dùng lệnh này để nhập các ghi chú có trong ứng dụng <application>Ghi chú dính</application> có trong các phiên bản GNOME trước. Lệnh này hỗ trợ người dùng chuyển từ <application>Ghi chú dính</application> sang sử dụng Tomboy để quản lý các ghi chú của mình.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+</article>
