@@ -1,3 +1,20 @@
+tomboy (0.15.3-1) UNRELEASED; urgency=low
+
+  * New upstream rersion 0.15.3:
+   - New underline formatting add-in (disabled by default) from Mark Wakim.
+   - Add ctrl +/- shortcuts for changing font size (Stefan Schweizer).
+   - Fix bullet display in HTML export (Stefan Schweizer).
+   - Update WebSync to use OAuth for authentication, and use the latest REST API.
+   - Fix i18n issue in WebSync (Anders Petersson).
+   - Add "Get More Add-Ins..." link in the Add-Ins tab of Preferences.
+   - Reduce command line output when not running Tomboy with --debug.
+   - Fix tarball for those that need panelapplet-sharp bundled.
+   - Documentation updates (Paul Culter).
+   - New Translations: vi
+   - Translation updates: bn_IN, es, et, he, sv, ta, th, uk, zh_CN
+
+ -- Iain Lane <laney@ubuntu.com>  Wed, 15 Jul 2009 19:46:45 +0100
+
 tomboy (0.15.2-1) experimental; urgency=low
 
   * New upstream release 0.15.1:
