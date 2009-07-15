@@ -62,11 +62,13 @@ tomboy (0.15.0-0ubuntu1) karmic; urgency=low
 
  -- Jo Shields <directhex@apebox.org>  Wed, 06 May 2009 23:37:55 +0100
 
-tomboy (0.14.2-3) UNRELEASED; urgency=low
+tomboy (0.14.3-1) unstable; urgency=low
 
   [ Stefan Ebner ]
   * Replace the tomboy icon misery with a proper method:
-    + debian/control: Replace b-p on shareutils with imagemagick.
+    + debian/control: 
+      - Replace b-p on shareutils with imagemagick.
+      - Bump Standards-Version to 3.8.2
     + debian/rules: Convert the icons at build time.
     + Delete tomboy.dirs and tomboy-{16/32}.xpm.uu.
     + Add debian/tomboy.install to install the generated icons properly.
@@ -75,8 +77,13 @@ tomboy (0.14.2-3) UNRELEASED; urgency=low
   [ Iain Lane ]
   * debian/rules: Remove --repack; not necessary as upstream is a .tar.gz
     and this could cause rule to be nondeterministic
+  * Update watch file to scan for stable releases only 
+  * New upstrem release 0.14.3
+    - Fix build for those with gnome-sharp < 2.23.90 (Stefan Schweizer).
+    - Fix HTML Export add-in on Mac OS X.
+    - Translation updates: el, es
 
- -- Stefan Ebner <sebner@ubuntu.com>  Sat, 13 Jun 2009 18:24:29 +0200
+ -- Iain Lane <laney@ubuntu.com>  Mon, 13 Jul 2009 18:32:54 +0100
 
 tomboy (0.14.2-2) unstable; urgency=low
 

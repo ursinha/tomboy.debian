@@ -16,8 +16,6 @@ Build-Depends: debhelper (>= 7.0.50),
                libgnomepanel2.24-cil,
                libgtkspell-dev (>= 2.0.9),
                libpanel-applet2-dev,
-               libgnomeprint2.2-dev,
-               libgnomeprintui2.2-dev,
                cli-common-dev (>= 0.4.4),
                imagemagick,
                libgtk2.0-dev (>= 2.10.0),
@@ -28,9 +26,9 @@ Build-Depends: debhelper (>= 7.0.50),
                libmono-cairo2.0-cil,
                libndesk-dbus1.0-cil (>= 0.4),
                libndesk-dbus-glib1.0-cil (>= 0.3),
-               libmono-addins0.2-cil (>= 0.2-4),
-               libmono-addins-gui0.2-cil (>= 0.2-4)
-Standards-Version: 3.8.1
+               libmono-addins0.2-cil (>= 0.3),
+               libmono-addins-gui0.2-cil (>= 0.3)
+Standards-Version: 3.8.2
 Homepage: http://www.gnome.org/projects/tomboy/
 Vcs-Git: git://git.debian.org/pkg-cli-apps/packages/tomboy.git
 Vcs-Browser: http://git.debian.org/git/pkg-cli-apps/packages/tomboy.git
