@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Tomboy HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=tomboy&component=general\n"
-"POT-Creation-Date: 2009-05-25 17:24+0000\n"
-"PO-Revision-Date: 2009-06-04 11:55+0300\n"
+"POT-Creation-Date: 2009-06-30 13:31+0000\n"
+"PO-Revision-Date: 2009-07-01 14:32+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -727,6 +727,9 @@ msgstr "Kõik"
 msgid "--- Tasque is not running ---"
 msgstr "--- Tasque ei tööta ---"
 
+msgid "_Underline"
+msgstr "_Allajoonitud"
+
 msgid "_URL:"
 msgstr "_URL:"
 
@@ -757,6 +760,33 @@ msgstr "Seadistuste salvestamine GNOME võtmerõngasse lõppes järgneva veaga:"
 
 msgid "Tomboy Web"
 msgstr "Tomboy veebisait"
+
+msgid "_Connect to Server"
+msgstr "Ü_hendu serveriga"
+
+msgid "Connected"
+msgstr "Ühendatud"
+
+msgid "Connect to Server"
+msgstr "Serveriga ühenduse võtmine"
+
+msgid "Server not responding. Try again later."
+msgstr "Server ei vasta. Proovi mõne aja pärast uuesti."
+
+msgid "Click Here After Authorizing"
+msgstr "Pärast autoriseerimist klõpsa siin"
+
+msgid "Set the default browser and try again"
+msgstr "Määra vaikimisi veebisirvija ja proovi uuesti"
+
+msgid "Processing..."
+msgstr "Töötlemine..."
+
+msgid "Authorization Failed, Try Again"
+msgstr "Tõrge autoriseerimisel. Proovi uuesti"
+
+msgid "Connected. Click Save to start synchronizing"
+msgstr "Ühendatud. Sünkroniseerimise alustamiseks klõpsa salvestamise nupul"
 
 #. Translators: This is the name of "Window" menu in the Mac menubar
 msgid "_Window"
@@ -1059,6 +1089,12 @@ msgstr "_Suur"
 
 msgid "S_mall"
 msgstr "_Väike"
+
+msgid "Increase Font Size"
+msgstr "Kirja suuruse suurendamine"
+
+msgid "Decrease Font Size"
+msgstr "Kirja suuruse vähendamine"
 
 msgid "Bullets"
 msgstr "Täpid"

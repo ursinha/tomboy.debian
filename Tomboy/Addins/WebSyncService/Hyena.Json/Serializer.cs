@@ -17,7 +17,7 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION 
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
 // 
-// Copyright (c) 2008 Novell, Inc. (http://www.novell.com) 
+// Copyright (c) 2009 Novell, Inc. (http://www.novell.com) 
 // 
 // Authors: 
 //      Sandy Armstrong <sanfordarmstrong@gmail.com>
@@ -64,7 +64,7 @@ namespace Hyena.Json
 
         private string SerializeDouble (double val)
         {
-            return val.ToString ();
+            return val.ToString (System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
         }
 
         // TODO: exponent stuff

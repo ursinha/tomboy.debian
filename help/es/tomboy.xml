@@ -873,9 +873,11 @@
         
       <para>Para poder sincronizar sus notas contra un servidor SSH debe tener el sistema de archivos sshfs FUSE instalado. Siga la documentación para configurar FUSE para su sistema operativo y usuario. También deberá tener una clave SSH para su cuenta en el servidor SSH, que se añadirá a un demonio SSH en ejecución. Esto se puede realizar usando la aplicación <application>Contraseñas y claves de cifrado</application> de GNOME.</para>
 	  
+	  <para>Se recomienda usar un tercer equipo o servidor como el equipo remoto en el que almacenar las notas sincronizadas que se van a sincronizar entre múltiples equipos.</para>
+	  
 	  <para>Abra <application>Contraseñas y claves de cifrado</application> eligiendo <menuchoice><guimenu>Aplicaciones</guimenu><guimenu>Accesorios</guimenu><guimenu>Contraseñas y claves de cifrado</guimenu></menuchoice>. Pulse sobre su clave y elija en el menú <menuchoice><guimenu>Remota</guimenu><guimenu>Configurar clave para Shell segura...</guimenu></menuchoice> e introduzca el nombre de dominio o dirección IP del equipo con el que quiere sincronizar en <guimenu>Equipo</guimenu>. Introduzca el nombre de usuario del equipo remoto en <guimenu>Equipo</guimenu> y pulse <guimenu>Configurar</guimenu>. Cuando se le pregunte, introduzca la contraseña y habrá finalizado la configuración de su clave.</para>
       
-      <para>En <application>Tomboy</application>, elija <guimenuitem>SSH</guimenuitem> de la lista desplegable <guilabel>Servicio</guilabel>. Rellene la información para su servidor y después pulse el botón <guibutton>Guardar</guibutton>. Ahora está listo para sincronizar sus notas.</para>
+      <para>En <application>Tomboy</application>, elija <guimenuitem>SSH</guimenuitem> de la lista desplegable <guilabel>Servicio</guilabel>. Rellene la información para su servidor y después pulse el botón <guibutton>Guardar</guibutton>. Ahora está listo para sincronizar sus notas. La opción <guimenuitem>Ruta de la carpeta</guimenuitem>, aunque opcional, debería apuntar a una carpeta vacía. Ahora está listo para sincronizar sus notas.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">
