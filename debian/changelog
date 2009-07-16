@@ -1,4 +1,4 @@
-tomboy (0.15.3-1) UNRELEASED; urgency=low
+tomboy (0.15.3-1) experimental; urgency=low
 
   * New upstream version 0.15.3:
    - New underline formatting add-in (disabled by default) from Mark Wakim.
