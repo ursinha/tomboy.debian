@@ -22,11 +22,7 @@
     <title>Руководство по Tomboy</title>
 
     <abstract role="description">
-      <para>Tomboy is a simple desktop note-taking application, with many features designed
-to help organize ideas, such as spell checking, highlighting, auto-linking
-URLs, lists, font stylizing, quick access with a table of contents for notes,
-and add-ins to extend Tomboy's capabilities.
-.</para>
+      <para>Tomboy — простое настольное приложение для создания записок, со множеством функций, помогающих организовывать идеи — проверка орфографии, подсветка, автоматическое создание URL-ссылок, списков, стилизация шрифтов, быстрый доступ со списком содержимого и модули для расширения возможностей Tomboy.</para>
     </abstract>
 
     <copyright>
@@ -63,7 +59,7 @@ and add-ins to extend Tomboy's capabilities.
       <year>2009</year>
       
       <holder>Paul Cutler</holder>
-    </copyright><copyright><year>2007</year><holder>Константин Маслов (conma@yandex.ru)</holder></copyright><copyright><year>2008</year><holder>Василий Фаронов (qvvx@yandex.ru)</holder></copyright>
+    </copyright><copyright><year>2007</year><holder>Константин Маслов (conma@yandex.ru)</holder></copyright><copyright><year>2008</year><holder>Василий Фаронов (qvvx@yandex.ru)</holder></copyright><copyright><year>2009</year><holder>Олег Шмелёв (oshmelyov@ya.ru)</holder></copyright>
 
     <!-- translators: uncomment this:
     <copyright>
@@ -181,7 +177,7 @@ and add-ins to extend Tomboy's capabilities.
       </revision>
 
       <revision>
-        <revnumber>Tomboy Manual 4.0</revnumber>
+        <revnumber>Руководство по Tomboy 4.0</revnumber>
 
         <date>2008-03-07</date>
 
@@ -217,7 +213,7 @@ and add-ins to extend Tomboy's capabilities.
       </revision>
     </revhistory>
 
-    <releaseinfo>This manual describes version 0.14.0 of Tomboy</releaseinfo>
+    <releaseinfo>Это руководство описывает версию 0.14.0 программы Tomboy.</releaseinfo>
 
     <legalnotice>
       <title>Обратная связь</title>
@@ -255,10 +251,7 @@ and add-ins to extend Tomboy's capabilities.
       </mediaobject>
     </figure>
 
-    <para>Tomboy is a desktop note-taking application for GNOME, Microsoft Windows, and Mac OS X. It is simple
-    and easy to use, and allows you to organize the ideas and information you
-    deal with every day. Tomboy has some very useful editing features to help
-    you customize your notes, including:</para>
+    <para>Tomboy — это приложение для ведения заметок в GNOME, Microsoft Windows, и Mac OS X. Простое и лёгкое в использовании, оно позволяет упорядочить информацию, с которой вы работаете каждый день. Tomboy имеет развитые средства редактирования, которые помогут оформить ваши заметки, в том числе:</para>
 
     <itemizedlist>
       <listitem>
@@ -286,8 +279,7 @@ and add-ins to extend Tomboy's capabilities.
       </listitem>
     </itemizedlist>
 
-    <para>Tomboy is accessed through the GNOME panel, the taskbar in Microsoft Windows, or the dock in Mac OS X. To startup Tomboy
-    automatically when you log into GNOME, see <xref linkend="add-to-panel"/>.</para>
+    <para>Удобнее всего работать с Tomboy через панель GNOME, панель задач Microsoft Windows или панель Mac OS X. О том, как автоматически запускать Tomboy при входе в GNOME, смотрите <xref linkend="add-to-panel"/>.</para>
   </sect1>
 
   <!--=========== Getting Started ============================== -->
@@ -296,31 +288,22 @@ and add-ins to extend Tomboy's capabilities.
     <title>Начало работы</title>
 
     <sect2 id="add-to-panel">
-      <title>Adding Tomboy to the GNOME Panel</title>
+      <title>Добавление Tomboy на панель GNOME</title>
 
-      <para>To add Tomboy to a panel in GNOME, right-click on the panel, then choose
-      <menuchoice>
-          <guimenuitem>Add to Panel</guimenuitem>
-        </menuchoice>. Select Tomboy Notes in the Add to the panel dialog,
-      then click <menuchoice>
-          <guibutton>Add</guibutton>
-        </menuchoice>. You should see a yellow note icon appear in the panel,
-      representing Tomboy. The panel icon is illustrated in <xref linkend="tomboy-panel"/>.</para>
-	  <para>Tomboy is automatically added to the taskbar when run on Microsoft Windows, or the dock when run on Mac OS X.</para>
+      <para>Чтобы добавить Tomboy на панель GNOME, щёлкните правой кнопкой мыши на панели и выберите <menuchoice><guimenuitem>Добавить на панель</guimenuitem></menuchoice>. В диалоге «Добавить на панель» выберите «Заметки Tomboy» и нажмите <menuchoice><guibutton>Добавить</guibutton></menuchoice>. Вы увидите жёлтый значок заметки на панели, который и олицетворяет Tomboy. Значок на панели описывает <xref linkend="tomboy-panel"/>.</para>
+	  <para>Tomboy автоматически появляется на панели задач, когда запущен в Microsoft Windows и в </para>
     </sect2>
 
     <sect2 id="creating-notes">
       <title>Создание заметок</title>
 
-      <para>Once you have successfully added Tomboy to the panel, you can
-      create new notes using one of the following methods.</para>
+      <para>После того, как вы добавили Tomboy на панель, можно создать новую заметку одним из следующих способов.</para>
 
       <para>Чтобы создать новую заметку с помощью мыши:</para>
 
       <orderedlist>
         <listitem>
-          <para>Click on the Tomboy note icon present in the GNOME Panel or Windows taskbar. A
-          menu will appear.</para>
+          <para>Щёлкните по значку заметки Tomboy на панели GNOME или панели задач Windows. Появится меню.</para>
         </listitem>
 
         <listitem>
@@ -362,7 +345,7 @@ and add-ins to extend Tomboy's capabilities.
     </sect2>
 
     <sect2 id="search-all-notes">
-      <title>Искать во всех заметках</title>
+      <title>Содержание</title>
 
       <para>Чтобы просмотреть все заметки, существующие в Tomboy, выберите пункт <menuchoice><guimenuitem>Искать во всех заметках</guimenuitem></menuchoice> в меню панели GNOME. По умолчанию диалог <interface>Искать во всех заметках</interface> упорядочивает заметки по времени последнего изменения. Щёлкните по заголовку столбца <guilabel>Заметка</guilabel> или <guilabel>Время последнего изменения</guilabel>, чтобы изменить критерий сортировки. Щёлкните по заголовку столбца ещё раз, чтобы изменить порядок сортировки: возрастающую на убывающую и наоборот.</para>
       
@@ -586,9 +569,7 @@ and add-ins to extend Tomboy's capabilities.
   <sect1 id="panel-menu">
     <title>Меню панели</title>
 
-    <para>Tomboy keeps the most recently used notes quickly available to you in
-    a menu that appears when you click on the Tomboy Icon in the GNOME
-    Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.</para>
+    <para>Для ускорения доступа к заметкам, которые недавно использовались, Tomboy показывает их в меню, которое открывается при щелчке на значке Tomboy на панели GNOME, Microsoft Windows или Mac OS X.</para>
 
     <sect2 id="note-pinning">
       <title>Прикрепление заметок</title>
@@ -696,31 +677,28 @@ and add-ins to extend Tomboy's capabilities.
   <!--=========== Working with Notebooks =========================== -->
   
   <sect1 id="notebooks">
-  	<title>Working with Notebooks</title>
+  	<title>Работа с блокнотами</title>
   
-    <para>Notebooks allow you to group related notes together.  
-    You can add a note to a notebook in the Search All Notes window or directly inside of a Note.</para>
+    <para>Блокноты позволяют объединить вместе заметки с похожим содержимым. Включить заметку в блокнот можно в окне поиска во всех заметках или напрямую из заметки.</para>
     
     <sect2 id="creating-noteboks">
-    <title>Creating Notebooks</title>
+    <title>Создание блокнотов</title>
     
-    <para>You can create new notebooks using one of the following methods:</para>
+    <para>Вы можете создать блокнот следующими способами:</para>
     
       <orderedlist>
         <listitem> 
-        <para>Click on the Tomboy note icon present in the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.  
-        A menu will appear</para>   
+        <para>Щёлкните по значку заметки Tomboy на панели GNOME, Microsoft Windows или Mac OS X. Появится меню.</para>   
         </listitem>
         <listitem>
-        <para>Select <menuchoice><guimenuitem>Notebooks</guimenuitem> <guimenuitem>New Notebook</guimenuitem></menuchoice>.
-        </para></listitem>
+        <para>Выберите <menuchoice><guimenuitem>Блокноты</guimenuitem><guimenuitem>Создать блокнот</guimenuitem></menuchoice>.</para></listitem>
 		<listitem>
-		<para>Enter a name for the new notebook.</para>
+		<para>Введите название нового блокнота.</para>
 		</listitem>
 	</orderedlist>
 	
 	      <figure id="new-notebook">
-        <title>Create a new notebook from the Tomboy note icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X</title>
+        <title>Создать новый блокнот с помощью значка заметки Tomboy на панели GNOME, Microsoft Windows или Mac OS X</title>
 
         <mediaobject>
           <imageobject>
@@ -729,36 +707,28 @@ and add-ins to extend Tomboy's capabilities.
         </mediaobject>
       </figure>
 		
-	<para>To create a new notebook from the Search All Notes dialog:
-	</para>
+	<para>Чтобы создать новый блокнот из окна поиска во всех заметках:</para>
 	<orderedlist>
 		<listitem> 
-	<para>Open <menuchoice>
-              <guimenuitem>Search All Notes</guimenuitem>
-            </menuchoice> by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Откройте <menuchoice><guimenuitem>Искать во всех заметках</guimenuitem></menuchoice>, выбрав его в меню значка Tomboy на панели GNOME, Microsoft Windows, или Mac OS X, или нажмите кнопку Искать в открытой заметке.</para>
 	</listitem>
 	<listitem>
-	<para>Using your mouse, right click in the left hand box and choose <menuchoice>
-              <guimenuitem>New Notebook</guimenuitem>
-            </menuchoice>.</para>
+	<para>Щёлкните правой кнопкой мыши в левой панели и выберите <menuchoice><guimenuitem>Создать блокнот</guimenuitem></menuchoice>.</para>
 	</listitem>
 	<listitem>
-	<para>Enter a name for the new notebook.</para>
+	<para>Введите название нового блокнота.</para>
 	</listitem>
 	<listitem>
-	<para>With <guilabel>Search All Notes</guilabel> open, choose 
-		<menuchoice><guimenuitem>File</guimenuitem> <guimenuitem>Notebooks</guimenuitem> 
-		<guimenuitem>New Notebook</guimenuitem> </menuchoice>.</para>
+	<para>В окне <guilabel>Искать во всех заметках</guilabel> нажмите <menuchoice><guimenuitem>Файл</guimenuitem><guimenuitem>Блокноты</guimenuitem><guimenuitem>Создать блокнот</guimenuitem></menuchoice>.</para>
 	</listitem>
 	<listitem>
-	<para>Enter a name for the new notebook.</para>
+	<para>Введите название нового блокнота.</para>
 	</listitem>
 
 	</orderedlist>
   	      
   	      <figure id="create-new-notebook">
-        <title>Create a new notebook from Search All Notes</title>
+        <title>Создать новый блокнот из окна поиска во всех заметкам</title>
          
          <mediaobject>
          <imageobject>
@@ -770,32 +740,24 @@ and add-ins to extend Tomboy's capabilities.
   </sect2>
   
   <sect2 id="adding-notes-notebook">
-  	<title>Adding Notes to a Notebook</title>
+  	<title>Добавление заметок в блокнот</title>
   	
-  	<para>To add notes to a notebook, you can add a note from the <guilabel>Search All Notes</guilabel>
-  	 dialog or directly within a note.</para>
+  	<para>Добавить заметку в блокнот можно из окна <guilabel>Искать во всех заметках</guilabel> или из окна заметки.</para>
 
-	<para>To move an existing note from the Search All Notes dialog:
-	</para>
+	<para>Чтобы переместить существующую заметку из окна поиска во всех заметках:</para>
 	<orderedlist>
 		<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Откройте <menuchoice><guimenuitem>Искать во всех заметках</guimenuitem></menuchoice>, выбрав его в меню значка Tomboy на панели GNOME, Microsoft Windows, или Mac OS X, или нажмите кнопку Искать в открытой заметке.</para>
 	</listitem>
 	<listitem>
-	<para>Using your mouse, drag the note(s) onto a notebook on the left.
-	</para>
+	<para>Мышью перетащите заметку(и) на блокнот в левой части окна.</para>
 	</listitem>
 	</orderedlist>
 
-	<para>As you type a note, you can add the note directly to an existing notebook using the 
-	<guimenu>Notebook</guimenu>	button. 
-	The <guimenu>Notebook</guimenu> button is represented by the
-	<inlinegraphic fileref="figures/notebook-icon.png"/> icon.</para> 
+	<para>Когда заметка открыта, можно добавить её в существующий блокнот с помощью кнопки <guimenu>Блокнот</guimenu>. Кнопка <guimenu>Блокнот</guimenu> представлена значком <inlinegraphic fileref="figures/notebook-icon.png"/>.</para> 
 	
 	  	      <figure id="add-to-notebook">
-        <title>Adding a note to a notebook</title>
+        <title>Добавление заметки в блокнот</title>
          
          <mediaobject>
          <imageobject>
@@ -808,34 +770,24 @@ and add-ins to extend Tomboy's capabilities.
 	</sect2>
 	
 	<sect2 id="notebook-templates">
-	<title>Creating Notebook Templates</title>
+	<title>Создание шаблона блокнота</title>
 	
-	<para>After you create a notebook, you can create a template for each new note 
-	that you create in a specific notebook.
-	</para>
+	<para>После создания блокнота вы можете создать шаблон для каждой новой заметки этого отдельного блокнота.</para>
 
 	<orderedlist>
 	<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Откройте <menuchoice><guimenuitem>Искать во всех заметках</guimenuitem></menuchoice>, выбрав его в меню значка Tomboy на панели GNOME, Microsoft Windows, или Mac OS X, или нажмите кнопку Искать в открытой заметке.</para>
 	</listitem>
 	<listitem>
-	<para>Using your mouse, right click on a Notebook that you have created and choose  
-	<menuchoice><guimenuitem>Open Template Note</guimenuitem></menuchoice>.
-	</para>
+	<para>Правой кнопкой мыши щёлкните на созданном блокноте и выберите <menuchoice><guimenuitem>Открыть шаблон заметки</guimenuitem></menuchoice>.</para>
 	</listitem>
 	<listitem>
-	<para>This will open a new note that will be used as the template.  Any text typed in this 
-	note will appear in all notes created in this Notebook.  Create a new
-	note in the notebook by using your mouse, right click on a notebook
-	and select <menuchoice><guimenuitem>New Note</guimenuitem></menuchoice>.
-	</para>
+	<para>Откроется новая заметка, которая будет использоваться как шаблон. Текст этой заметки появится во всех заметках, созданных в этом блокноте. Создайте новую заметку блокнота, щелкнув на нём правой кнопкой мыши и выбрав <menuchoice><guimenuitem>Создать заметку</guimenuitem></menuchoice>.</para>
 	</listitem>
 	</orderedlist>
 
 	  	      <figure id="notebook-template">
-        <title>Creating a Notebook Template</title>
+        <title>Создание шаблона блокнота</title>
          
          <mediaobject>
          <imageobject>
@@ -848,30 +800,21 @@ and add-ins to extend Tomboy's capabilities.
 
 	
 	<sect2 id="deleting-notebooks">
-	<title>Deleting a Notebook</title>
-	<para>Deleting a notebook will not delete any of the notes which are
-	currently inside the notebook.  After deleting a notebook, the notes
-	will not be associated with any notebook and can be seen by
-	highlighting <menuchoice><guimenuitem>Unfiled Notes</guimenuitem></menuchoice> in the <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice> window.
-	</para>
+	<title>Удаление блокнота</title>
+	<para>Удаление блокнота не удалит заметок, которые в нём содержатся. После его удаления эти заметки не относятся ни к какому блокноту — их можно найти, выбрав <menuchoice><guimenuitem>Неупорядоченные заметки</guimenuitem></menuchoice> в окне <menuchoice><guimenuitem>Искать во всех заметках</guimenuitem></menuchoice>.</para>
 	
-	<para>You can delete a notebook you have created by one of two methods:
-	</para>
-	<para>To delete a notebook using your mouse:</para>
+	<para>Удалить созданный блокнот можно одним из двух способов:</para>
+	<para>Чтобы удалить блокнот с помощью мыши:</para>
 	<orderedlist>
 	<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Откройте <menuchoice><guimenuitem>Искать во всех заметках</guimenuitem></menuchoice>, выбрав его в меню значка Tomboy на панели GNOME, Microsoft Windows, или Mac OS X, или нажмите кнопку Искать в открытой заметке.</para>
 	</listitem>
 	<listitem>
-	<para>Using your mouse, right click on a Notebook that you have created and choose  
-	<menuchoice><guimenuitem>Delete Notebook</guimenuitem></menuchoice>.
-	</para>
+	<para>Правой кнопкой мыши щёлкните на ранее созданном блокноте и выберите <menuchoice><guimenuitem>Удалить блокнот</guimenuitem></menuchoice>.</para>
 	</listitem>
 	</orderedlist>
 		  	      <figure id="notebook-delete">
-        <title>Deleting a Notebook</title>
+        <title>Удаление блокнота</title>
          
          <mediaobject>
          <imageobject>
@@ -880,19 +823,13 @@ and add-ins to extend Tomboy's capabilities.
         </mediaobject>
       </figure> 
 	
-	<para>To delete a Notebook from the <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	menu, open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.
-	</para>
+	<para>Чтобы удалить блокнот в окне <menuchoice><guimenuitem>Искать во всех заметках</guimenuitem></menuchoice>, откройте <menuchoice><guimenuitem>Искать во всех заметках</guimenuitem></menuchoice>, выбрав его в меню значка Tomboy на панели GNOME, Microsoft Windows, или Mac OS X.</para>
 	<orderedlist>
 	<listitem>
-	<para>Using your mouse, left click on the Notebook you want to delete.
-	</para>
+	<para>Левой кнопкой мыши щёлкните на блокноте, который хотите удалить.</para>
 	</listitem>
 	<listitem>
-	<para>From the menu, choose <menuchoice><guimenuitem>Edit</guimenuitem> 
-	<guimenuitem>Delete Notebook</guimenuitem></menuchoice>
-	</para>
+	<para>В меню выберите <menuchoice><guimenuitem>Правка</guimenuitem><guimenuitem>Удалить блокнот</guimenuitem></menuchoice></para>
 	</listitem>
 	</orderedlist>
 
@@ -934,9 +871,29 @@ and add-ins to extend Tomboy's capabilities.
     <sect3 id="sync-configure-ssh">
       <title>Настройка службы синхронизации заметок (SSH)</title>
         
-      <para>Чтобы синхронизировать заметки с сервером SSH, вам понадобится установить файловую систему sshfs FUSE. Изучите документацию к вашей операционной системе, чтобы узнать, как настроить FUSE. Также вам потребуется SSH-ключ для вашей учётной записи на сервере SSH, и этот ключ нужно добавить в запущенный демон SSH. Сделать это можно с помощью приложения <application>Seahorse</application>, которое входит в состав GNOME.</para>
+      <para>In order to synchronize your notes with an SSH server, you will need
+      the sshfs FUSE file system installed.  Follow the documentation for your operating
+      system to set up FUSE for your user.  You will also need an SSH key for your
+      SSH server account, which should be added to a running SSH daemon.  This can be
+      done using the GNOME <application>Seahorse</application> application, which is also 
+	  known as <application>Passwords and Encryption Keys</application>.</para>
+	  
+	  <para>It is recommended to use a third computer or server as the remote computer
+	  to store the syncronized notes that are to be synced between multiple computers.</para>
+	  
+	  <para>Open <application>Passwords and Encryption Keys</application> by choosing 
+	  <menuchoice><guimenu>Applications</guimenu><guimenu>Accessories</guimenu>
+	  <guimenu>Passwords and Encryption Keys</guimenu></menuchoice>.  Click on your key, 
+	  and from the menu choose <menuchoice><guimenu>Remote</guimenu>
+	  <guimenu>Configure Key for Secure Shell...</guimenu></menuchoice>  and enter the domain name or IP address
+	  of the computer you want to sync to in <guimenu>Computer Name</guimenu>.  Enter the username 
+	  of the remote computer in <guimenu>Computer Name:</guimenu> and click <guimenu>Set Up</guimenu>.
+	  When prompted, enter the password, and setting up your key will be completed.</para>
       
-      <para>Выберите <guimenuitem>SSH</guimenuitem> из выпадающего списка <guilabel>Служба</guilabel>. Введите сведения о соединении с вашим сервером, затем нажмите кнопку <guibutton>Сохранить</guibutton>. Теперь всё готово для синхронизации ваших заметок.</para>
+      <para>In <application>Tomboy</application>, choose <guimenuitem>SSH</guimenuitem> from the <guilabel>Service</guilabel>
+      drop-down list. Fill in the connection information for your server, and then select the
+      <guibutton>Save</guibutton> button.  The <guimenuitem>Folder Path</guimenuitem>, while optional, 
+	  should point at an empty folder. You are now ready to synchronize your notes.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">
@@ -1046,7 +1003,7 @@ and add-ins to extend Tomboy's capabilities.
         </varlistentry>
 
         <varlistentry>
-          <term>Открыть окно поиска во всех заметках</term>
+          <term>Поиск по заметкам</term>
 
           <listitem>
             <para>Введите комбинацию клавиш, по которой будет открываться диалог <interface>Искать во всех заметках</interface>.</para>

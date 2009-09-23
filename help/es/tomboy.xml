@@ -59,7 +59,7 @@
       <year>2009</year>
       
       <holder>Paul Cutler</holder>
-    </copyright><copyright><year>2006-2008.</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright><copyright><year>2007.</year><holder>Claudio Saavedra (csaavedra@alumnos.utalca.cl)</holder></copyright>
+    </copyright><copyright><year>2006-2009</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright><copyright><year>2007</year><holder>Claudio Saavedra (csaavedra@alumnos.utalca.cl)</holder></copyright>
 
     <!-- translators: uncomment this:
     <copyright>
@@ -823,7 +823,7 @@
         </mediaobject>
       </figure> 
 	
-	<para>Para borrar un cuaderno de notas desde el menú <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice>, abra <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice> eligiéndolo del icono de Tomboy en el panel de GNOME, en la barra de tareas de Microsoft Windows, o en el «dock» de Mac OS X.</para>
+	<para>Para borrar un cuaderno de notas desde el menú <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice>, abra <menuchoice><guimenuitem>Buscar en todas las notas</guimenuitem></menuchoice> eligiéndolo del icono de Tomboy en el panel de GNOME, la barra de tareas en Microsoft Windows, o el «dock» en Mac OS X.</para>
 	<orderedlist>
 	<listitem>
 	<para>Usando su ratón, pulse con el botón izquierdo en el cuaderno de notas que quiere borrar.</para>
@@ -871,9 +871,13 @@
     <sect3 id="sync-configure-ssh">
       <title>Configurar la sincronización de notas (por SSH)</title>
         
-      <para>Para poder sincronizar sus notas contra un servidor SSH debe tener el sistema de archivos sshfs FUSE instalado. Siga la documentación para configurar FUSE para su sistema operativo y usuario. También deberá tener una clave SSH para su cuenta en el servidor SSH, que se añadirá a un demonio SSH en ejecución. Esto se puede realizar usando la aplicación <application>Seahorse</application> de GNOME.</para>
+      <para>Para poder sincronizar sus notas contra un servidor SSH debe tener el sistema de archivos sshfs FUSE instalado. Siga la documentación para configurar FUSE para su sistema operativo y usuario. También deberá tener una clave SSH para su cuenta en el servidor SSH, que se añadirá a un demonio SSH en ejecución. Esto se puede realizar usando la aplicación <application>Contraseñas y claves de cifrado</application> de GNOME.</para>
+	  
+	  <para>Se recomienda usar un tercer equipo o servidor como el equipo remoto en el que almacenar las notas sincronizadas que se van a sincronizar entre múltiples equipos.</para>
+	  
+	  <para>Abra <application>Contraseñas y claves de cifrado</application> eligiendo <menuchoice><guimenu>Aplicaciones</guimenu><guimenu>Accesorios</guimenu><guimenu>Contraseñas y claves de cifrado</guimenu></menuchoice>. Pulse sobre su clave y elija en el menú <menuchoice><guimenu>Remota</guimenu><guimenu>Configurar clave para Shell segura...</guimenu></menuchoice> e introduzca el nombre de dominio o dirección IP del equipo con el que quiere sincronizar en <guimenu>Equipo</guimenu>. Introduzca el nombre de usuario del equipo remoto en <guimenu>Equipo</guimenu> y pulse <guimenu>Configurar</guimenu>. Cuando se le pregunte, introduzca la contraseña y habrá finalizado la configuración de su clave.</para>
       
-      <para>Elija <guimenuitem>SSH</guimenuitem> del menú desplegable <guilabel>Servicio</guilabel>. Rellene la información para su servidor y después seleccione el botón <guibutton>Guardar</guibutton>. Ahora está listo para sincronizar sus notas.</para>
+      <para>En <application>Tomboy</application>, elija <guimenuitem>SSH</guimenuitem> de la lista desplegable <guilabel>Servicio</guilabel>. Rellene la información para su servidor y después pulse el botón <guibutton>Guardar</guibutton>. Ahora está listo para sincronizar sus notas. La opción <guimenuitem>Ruta de la carpeta</guimenuitem>, aunque opcional, debería apuntar a una carpeta vacía. Ahora está listo para sincronizar sus notas.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">
@@ -954,7 +958,7 @@
     <sect2>
       <title>Teclas rápidas</title>
 
-      <para>La solapa de teclas rápidas le permite definir las combinaciones de teclas globales que le permitirán realizar distintas tareas en Tomboy. Para activar las combinaciones de teclas, debe tener la casilla <guibutton>Teclas rápidas</guibutton> activada. Use la combinación de teclas <keycombo><keycap>Alt</keycap><keycap>R</keycap></keycombo> para conmutar esta opción.</para>
+      <para>La solapa de teclas rápidas le permite definir las combinaciones de teclas globales que le permitirán realizar distintas tareas en Tomboy. Para activar las combinaciones de teclas, debe tener la casilla <guibutton>Teclas rápidas</guibutton> activada. Use la combinación de teclas <keycombo><keycap>Alt</keycap><keycap>E</keycap></keycombo> para conmutar esta opción.</para>
 
       <variablelist>
         <varlistentry>
@@ -1066,7 +1070,7 @@
         <term>Soltado de URL de Bugzilla</term>
 
         <listitem>
-          <para>Le permite arrastrar una URL de Bugzilla desde su navegador directamente a una nota de Tomboy. El número del fallo se insertará como un enlace con un pequeño icono de un bicho junto a él. Una vez que el enlace de Bugzilla se ha insertado en la nota, pulse en él para abrir la URL en su navegador web.</para>
+          <para>Le permite arrastrar un URL de Bugzilla desde su navegador directamente a una nota de Tomboy. El número del fallo se insertará como un enlace con un pequeño icono de un bicho junto a él. Una vez que el enlace de Bugzilla se ha insertado en la nota, pulse en él para abrir el URL en su navegador web.</para>
           
           <para>Personalice los iconos utilizados editando los ajustes de los complementos en el <link linkend="prefs-plugins">Diálogo de preferencias</link>. Después de seleccionar el complemento de Bugzilla, pulse en <guibutton>Configuración</guibutton> para abrir el diálogo de <interface>Configuración del complemento de Bugzilla</interface>. Para añadir un nuevo icono, pulse en <guibutton>Añadir</guibutton>, seleccione un icono en su equipo, proporcione un nombre de servidor de Bugzilla. (p.ej. bugzilla.gnome.org), y pulse en <guibutton>Abrir</guibutton>. Cualquier URL de Bugzilla que sea arrastrada y soltada desde uno de estos nombres de servidores personalizados usará ahora el icono que ha especificado.</para>
         </listitem>
@@ -1076,7 +1080,7 @@
         <term>Soltado de correo de Evolution</term>
 
         <listitem>
-          <para>Este complemento le permite arrastrar y soltar un mensaje de correo desde la aplicación de correo <application>Evolution</application> a una de sus notas de Tomboy. Pulsando en el icono de correo en la nota abrirá el correspondiente mesaje de correo electrónico en Evolution.</para>
+          <para>Este complemento le permite arrastrar y soltar un mensaje de correo desde la aplicación de correo <application>Evolution</application> a una de sus notas de Tomboy. Pulsando en el icono de correo en la nota abrirá el correspondiente mensaje de correo electrónico en Evolution.</para>
         </listitem>
       </varlistentry>
 

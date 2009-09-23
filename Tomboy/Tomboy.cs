@@ -31,11 +31,42 @@ namespace Tomboy
 
 		public static void Main (string [] args)
 		{
+			// TODO: Extract to a PreInit in Application, or something
+#if WIN32
+			string tomboy_path =
+				Environment.GetEnvironmentVariable ("TOMBOY_PATH_PREFIX");
+			string tomboy_gtk_basepath =
+				Environment.GetEnvironmentVariable ("TOMBOY_GTK_BASEPATH");
+			Environment.SetEnvironmentVariable ("GTK_BASEPATH",
+				tomboy_gtk_basepath ?? string.Empty);
+			if (string.IsNullOrEmpty (tomboy_path)) {
+				string gtk_lib_path = null;
+				try {
+					gtk_lib_path = (string)
+						Microsoft.Win32.Registry.GetValue (@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\AssemblyFolders\GtkSharp",
+						                                   string.Empty,
+						                                   string.Empty);
+				} catch (Exception e) {
+					Console.WriteLine ("Exception while trying to get GTK# install path: " +
+					                   e.ToString ());
+				}
+				if (!string.IsNullOrEmpty (gtk_lib_path))
+					tomboy_path =
+						gtk_lib_path.Replace ("lib\\gtk-sharp-2.0", "bin");
+			}
+			if (!string.IsNullOrEmpty (tomboy_path))
+				Environment.SetEnvironmentVariable ("PATH",
+				                                    tomboy_path +
+				                                    Path.PathSeparator +
+				                                    Environment.GetEnvironmentVariable ("PATH"));
+#endif
 			// Initialize GETTEXT
 			Catalog.Init ("tomboy", Defines.GNOME_LOCALE_DIR);
 
 			TomboyCommandLine cmd_line = new TomboyCommandLine (args);
 			debugging = cmd_line.Debug;
+			Logger.LogLevel = debugging ? Level.DEBUG : Level.INFO;
+			is_panel_applet = cmd_line.UsePanelApplet;
 
 #if ENABLE_DBUS || WIN32 || MAC // Run command-line earlier with DBus enabled
 			if (cmd_line.NeedsExecute) {
@@ -79,9 +110,8 @@ namespace Tomboy
 			}
 #endif
 
-			if (cmd_line.UsePanelApplet) {
+			if (is_panel_applet) {
 				tray_icon_showing = true;
-				is_panel_applet = true;
 
 				// Show the Close item and hide the Quit item
 				am ["CloseWindowAction"].Visible = true;
@@ -287,7 +317,8 @@ namespace Tomboy
 				"Sandy Armstrong <sanfordarmstrong@gmail.com>",
 				"Sebastian Rittau <srittau@jroger.in-berlin.de>",
 				"Kevin Kubasik <kevin@kubasik.net>",
-				"Stefan Schweizer <steve.schweizer@gmail.com>"
+				"Stefan Schweizer <steve.schweizer@gmail.com>",
+				"Benjamin Podszun <benjamin.podszun@gmail.com>"
 			};
 
 			string [] documenters = new string [] {
@@ -307,7 +338,8 @@ namespace Tomboy
 			about.Version = Defines.VERSION;
 			about.Logo = GuiUtils.GetIcon ("tomboy", 48);
 			about.Copyright =
-			        Catalog.GetString ("Copyright \xa9 2004-2007 Alex Graveley");
+			        Catalog.GetString ("Copyright \xa9 2004-2007 Alex Graveley\n" +
+				                   "Copyright \xa9 2004-2009 Others\n");
 			about.Comments = Catalog.GetString ("A simple and easy to use desktop " +
 			                                    "note-taking application.");
 			Gtk.AboutDialog.SetUrlHook (delegate (Gtk.AboutDialog dialog, string link) {

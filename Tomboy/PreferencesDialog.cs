@@ -537,7 +537,23 @@ namespace Tomboy
 			sw.ShadowType = Gtk.ShadowType.In;
 			sw.Add (tree);
 			sw.Show ();
-			hbox.PackStart (sw, true, true, 0);
+			Gtk.LinkButton get_more_link =
+				new Gtk.LinkButton ("http://live.gnome.org/Tomboy/PluginList",
+				                    Catalog.GetString ("Get More Add-Ins..."));
+			get_more_link.Clicked += delegate(object sender, EventArgs args) {
+				string uri = ((Gtk.LinkButton) sender).Uri;
+				try {
+					Services.NativeApplication.OpenUrl (uri);
+				} catch (Exception e) {
+					GuiUtils.ShowOpeningLocationError (this, uri, e.Message);
+				}
+			};
+			get_more_link.Show ();
+			Gtk.VBox tree_box = new Gtk.VBox (false, 0);
+			tree_box.Add (sw);
+			tree_box.PackEnd (get_more_link, false, false, 5);
+			tree_box.Show ();
+			hbox.PackStart (tree_box, true, true, 0);
 
 			// Action Buttons (right of TreeView)
 			Gtk.VButtonBox button_box = new Gtk.VButtonBox ();
@@ -885,9 +901,8 @@ namespace Tomboy
 			Gtk.Dialog advancedDlg =
 			        new Gtk.Dialog (Catalog.GetString ("Other Synchronization Options"),
 			                        this,
-			                        Gtk.DialogFlags.DestroyWithParent | Gtk.DialogFlags.Modal,
+			                        Gtk.DialogFlags.DestroyWithParent | Gtk.DialogFlags.Modal | Gtk.DialogFlags.NoSeparator,
 			                        Gtk.Stock.Close, Gtk.ResponseType.Close);
-
 			// Populate dialog
 			Gtk.Label label =
 			        new Gtk.Label (Catalog.GetString ("When a conflict is detected between " +
@@ -1092,33 +1107,13 @@ namespace Tomboy
 			        Preferences.SYNC_CONFIGURED_CONFLICT_BEHAVIOR,
 			        Preferences.GetDefault (Preferences.SYNC_CONFIGURED_CONFLICT_BEHAVIOR));
 
-			NukeSyncClientManifest ();
+			SyncManager.ResetClient ();
 
 			syncAddinCombo.Sensitive = true;
 			resetSyncAddinButton.Sensitive = false;
 			saveSyncAddinButton.Sensitive = true;
 			if (syncAddinPrefsWidget != null)
 				syncAddinPrefsWidget.Sensitive = true;
-		}
-
-		// TODO: This class shouldn't know about the manifest.
-		//       Abstract this out somehow (ie, SyncManager.ResetClient()
-		//       or something like that).
-		void NukeSyncClientManifest ()
-		{
-			// Nuke ~/.tomboy/manifest.xml
-			string clientManifestPath = System.IO.Path.Combine (
-			                                    Tomboy.DefaultNoteManager.NoteDirectoryPath,
-			                                    "manifest.xml");
-			if (System.IO.File.Exists (clientManifestPath) == true) {
-				try {
-					System.IO.File.Delete (clientManifestPath);
-				} catch (Exception e) {
-					Logger.Debug ("Error deleting \"{0}\" during reset: {1}",
-					              clientManifestPath,
-					              e.Message);
-				}
-			}
 		}
 
 		/// <summary>
@@ -1156,7 +1151,7 @@ namespace Tomboy
 				resetSyncAddinButton.Sensitive = true;
 				saveSyncAddinButton.Sensitive = false;
 
-				NukeSyncClientManifest ();
+				SyncManager.ResetClient ();
 
 				// Give the user a visual letting them know that connecting
 				// was successful.
@@ -1236,7 +1231,7 @@ namespace Tomboy
 
 			// TODO: Change this icon to be an addin/package icon
 			Gtk.Image icon =
-			        new Gtk.Image (Gtk.Stock.Info, Gtk.IconSize.Dialog);
+			        new Gtk.Image (Gtk.Stock.DialogInfo, Gtk.IconSize.Dialog);
 			icon.Yalign = 0;
 
 			info_label = new Gtk.Label ();

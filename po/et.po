@@ -10,12 +10,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Tomboy 0.14\n"
+"Project-Id-Version: Tomboy HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=tomboy&component=general\n"
-"POT-Creation-Date: 2009-04-17 12:19+0000\n"
-"PO-Revision-Date: 2009-03-13 07:23+0300\n"
-"Last-Translator: Mattias Põldaru <mahfiaz gmail com>\n"
+"POT-Creation-Date: 2009-06-30 13:31+0000\n"
+"PO-Revision-Date: 2009-07-01 14:32+0300\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -590,7 +590,7 @@ msgstr ""
 msgid "Local Folder"
 msgstr "Kohalik kataloog"
 
-msgid "_Fixed Width"
+msgid "Fixed Wid_th"
 msgstr "_Määratud laiusega"
 
 #, csharp-format
@@ -727,6 +727,9 @@ msgstr "Kõik"
 msgid "--- Tasque is not running ---"
 msgstr "--- Tasque ei tööta ---"
 
+msgid "_Underline"
+msgstr "_Allajoonitud"
+
 msgid "_URL:"
 msgstr "_URL:"
 
@@ -754,6 +757,36 @@ msgstr ""
 msgid ""
 "Saving configuration to the GNOME keyring failed with the following message:"
 msgstr "Seadistuste salvestamine GNOME võtmerõngasse lõppes järgneva veaga:"
+
+msgid "Tomboy Web"
+msgstr "Tomboy veebisait"
+
+msgid "_Connect to Server"
+msgstr "Ü_hendu serveriga"
+
+msgid "Connected"
+msgstr "Ühendatud"
+
+msgid "Connect to Server"
+msgstr "Serveriga ühenduse võtmine"
+
+msgid "Server not responding. Try again later."
+msgstr "Server ei vasta. Proovi mõne aja pärast uuesti."
+
+msgid "Click Here After Authorizing"
+msgstr "Pärast autoriseerimist klõpsa siin"
+
+msgid "Set the default browser and try again"
+msgstr "Määra vaikimisi veebisirvija ja proovi uuesti"
+
+msgid "Processing..."
+msgstr "Töötlemine..."
+
+msgid "Authorization Failed, Try Again"
+msgstr "Tõrge autoriseerimisel. Proovi uuesti"
+
+msgid "Connected. Click Save to start synchronizing"
+msgstr "Ühendatud. Sünkroniseerimise alustamiseks klõpsa salvestamise nupul"
 
 #. Translators: This is the name of "Window" menu in the Mac menubar
 msgid "_Window"
@@ -1027,6 +1060,9 @@ msgstr "_Otsing:"
 msgid "_Previous"
 msgstr "_Eelmine"
 
+msgid "_Next"
+msgstr "_Järgmine"
+
 msgid "_Bold"
 msgstr "_Rasvane"
 
@@ -1053,6 +1089,12 @@ msgstr "_Suur"
 
 msgid "S_mall"
 msgstr "_Väike"
+
+msgid "Increase Font Size"
+msgstr "Kirja suuruse suurendamine"
+
+msgid "Decrease Font Size"
+msgstr "Kirja suuruse vähendamine"
 
 msgid "Bullets"
 msgstr "Täpid"
@@ -1286,8 +1328,12 @@ msgstr ""
 "Ivar Smolin <okul@linux.ee>, 2006-2009.\n"
 "Priit Laes <amd@store20.com>, 2007."
 
-msgid "Copyright © 2004-2007 Alex Graveley"
-msgstr "Autoriõigused © 2004-2007 Alex Graveley"
+msgid ""
+"Copyright © 2004-2007 Alex Graveley\n"
+"Copyright © 2004-2009 Others\n"
+msgstr ""
+"Copyright © 2004-2007 Alex Graveley\n"
+"Copyright © 2004-2009 ülejäänud\n"
 
 msgid "A simple and easy to use desktop note-taking application."
 msgstr "Lihtne ja kergestikasutatav märkmete tegemise programm."
@@ -1354,7 +1400,7 @@ msgid ""
 "D-BUS remote control disabled."
 msgstr ""
 "Tomboy: toetamata võti '{0}'\n"
-"Rohkema teabe saamiseks proovi 'tomboy --help'.\n"
+"Täiendava teabe saamiseks proovi 'tomboy --help'.\n"
 "D-BUS kaugjuhtimine on keelatud."
 
 msgid " (new)"

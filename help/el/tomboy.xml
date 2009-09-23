@@ -871,9 +871,29 @@
     <sect3 id="sync-configure-ssh">
       <title>Ρύθμιση υπηρεσίας συγχρονισμού σημειώσεων (SSH)</title>
         
-      <para>Για να συγχρονίσετε τις σημειώσεις σας με έναν εξυπηρετητή SSH, θα χρειαστεί να έχετε εγκατεστημένο το σύστημα αρχείων sshfs FUSE. Ακολουθήστε τις οδηγίες του λειτουργικού σας συστήματος για να εγκαταστήσετε το FUSE στο λογαριασμό σας. Επιπλέον θα χρειαστείτε ένα κλειδί SSH για το λογαριασμό σας στον εξυπηρετητή SSH, το οποίο θα πρέπει να προστεθεί σε έναν ενεργό δαίμονα SSH. Αυτό μπορεί να γίνει χρησιμοποιώντας την εφαρμογή <application>Seahorse</application> του GNOME.</para>
+      <para>In order to synchronize your notes with an SSH server, you will need
+      the sshfs FUSE file system installed.  Follow the documentation for your operating
+      system to set up FUSE for your user.  You will also need an SSH key for your
+      SSH server account, which should be added to a running SSH daemon.  This can be
+      done using the GNOME <application>Seahorse</application> application, which is also 
+	  known as <application>Passwords and Encryption Keys</application>.</para>
+	  
+	  <para>It is recommended to use a third computer or server as the remote computer
+	  to store the syncronized notes that are to be synced between multiple computers.</para>
+	  
+	  <para>Open <application>Passwords and Encryption Keys</application> by choosing 
+	  <menuchoice><guimenu>Applications</guimenu><guimenu>Accessories</guimenu>
+	  <guimenu>Passwords and Encryption Keys</guimenu></menuchoice>.  Click on your key, 
+	  and from the menu choose <menuchoice><guimenu>Remote</guimenu>
+	  <guimenu>Configure Key for Secure Shell...</guimenu></menuchoice>  and enter the domain name or IP address
+	  of the computer you want to sync to in <guimenu>Computer Name</guimenu>.  Enter the username 
+	  of the remote computer in <guimenu>Computer Name:</guimenu> and click <guimenu>Set Up</guimenu>.
+	  When prompted, enter the password, and setting up your key will be completed.</para>
       
-      <para>Επιλέξτε <guimenuitem>SSH</guimenuitem> από τη λίστα επιλογών <guilabel>Υπηρεσία</guilabel>. Συμπληρώστε τις πληροφορίες σύνδεσης για τον εξυπηρετητή σας και στη συνέχεια κάντε κλικ στο κουμπί <guibutton>Αποθήκευση</guibutton>. Είστε πλέον έτοιμος να συγχρονίσετε τις σημειώσεις σας.</para>
+      <para>In <application>Tomboy</application>, choose <guimenuitem>SSH</guimenuitem> from the <guilabel>Service</guilabel>
+      drop-down list. Fill in the connection information for your server, and then select the
+      <guibutton>Save</guibutton> button.  The <guimenuitem>Folder Path</guimenuitem>, while optional, 
+	  should point at an empty folder. You are now ready to synchronize your notes.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">

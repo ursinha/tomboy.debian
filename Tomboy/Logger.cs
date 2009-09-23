@@ -41,7 +41,10 @@ namespace Tomboy
 		public void Log (Level lvl, string msg, params object[] args)
 		{
 			msg = string.Format ("[{0}]: {1}", Enum.GetName (typeof (Level), lvl), msg);
-			Console.WriteLine (msg, args);
+			if (args.Length > 0)
+				Console.WriteLine (msg, args);
+			else
+				Console.WriteLine (msg);
 		}
 	}
 
@@ -95,7 +98,10 @@ namespace Tomboy
 				                     DateTime.Now.ToString(),
 				                     Enum.GetName (typeof (Level), lvl),
 				                     msg);
-				log.WriteLine (msg, args);
+				if (args.Length > 0)
+					log.WriteLine (msg, args);
+				else
+					log.WriteLine (msg);
 				log.Flush();
 			}
 		}
@@ -166,6 +172,8 @@ namespace Tomboy
 		// This is here to support the original logging, but it should be
 		// considered deprecated and old code that uses it should be upgraded to
 		// call one of the level specific log methods.
+		[Obsolete("Loger.Log is deprecated and should be replaced " +
+			"with calls to the level specific log methods")]
 		public static void Log (string msg, params object[] args)
 		{
 			Log (Level.DEBUG, msg, args);
