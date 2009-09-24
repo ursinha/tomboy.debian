@@ -3,12 +3,7 @@
 include /usr/share/quilt/quilt.make
 include /usr/share/cli-common/cli.make
 
-DH_VERBOSE := 1
-DH_OPTIONS += --with=quilt
 LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
-
-export DH_VERBOSE
-export DH_OPTIONS
 
 MAKEFILE = $(firstword $(MAKEFILE_LIST))
 DEBIAN_DIR = $(dir $(MAKEFILE))
@@ -28,7 +23,7 @@ override_dh_auto_configure: autoreconf-stamp
 	dh_auto_configure -- \
 		--disable-scrollkeeper \
 		LDFLAGS="$(LDFLAGS)" \
-		GMCS=/usr/bin/csc
+		GMCS=/usr/bin/mono-csc
 
 override_dh_auto_install:
 	dh_auto_install -- GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
@@ -58,6 +53,6 @@ get-orig-source:
 		--rename
 
 %:
-	dh $@
+	dh --with=quilt $@
 
 .PHONY: autoreconf get-orig-source

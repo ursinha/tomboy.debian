@@ -1,3 +1,46 @@
+tomboy (1.0.0-1) UNRELEASED; urgency=low
+
+  * New upstream version 1.0.0:
+    - Fix crash when showing Search from panel applet 
+    - Redirect complete applet output to ~/.config/tomboy/tomboy-panel.log.
+    - Every patch contributor goes in the About dialog now.
+    - Add Underline add-in to Windows/Mac builds.
+    - WebSync fixes on Windows.
+  * New upstream version 0.15.7:
+    - Update for latest (hopefully final) REST API spec (Rodrigo Moya).
+    - Initial support for OAuth 1.0a servers 
+    - Drop heavy System.Web dependency by bundling HttpUtility class.
+    - Fix parsing bug that caused Tomboy to upload empty notes to the server.
+    - More streamlined initial auth procedure (less clicks).
+    - Fix error when connecting before logged in to Snowy 
+    - Prevent crash on PPC and ARM when showing menus 
+    - Don't connect to session manager when running as applet 
+    - When closing search window, do not quit if Tomboy icon is visible 
+  * New upstream version 0.15.6:
+    - Migrate notes from ~/.tomboy, following Free Desktop standards on Linux
+      and appropriate conventions on Windows and Mac OS X 
+    - Don't force port 22 when no port is specified for SSH sync 
+    - Add preference in GConf for maximum width of note menu Jeff Tickle).
+  * New upstream version 0.15.5:
+    - Option to sync from Tomboy icon's contextual menu (#468459, Buchner
+      Johannes).
+    - Rename notebooks from the Search window (#435734).
+    - Clean up wasted space in Search and Preferences windows
+    - Maintain scroll position when notes change while Search window open
+    - Fix Notebook toolbar button appearance with 'text beside icons' setting.
+  * New upstream version 0.15.4:
+    - Improved behavior when changing font sizes (Stefan Schweizer).
+    - Builds fixes on Windows and Mac OS X (Matt Johnston, Sandy Armstrong).
+    - Require gtk+ 2.14 and stop using obsolete libgnome APIs.
+  * debian/control: Bump gtk build-dep to 2.14.0 per configure
+  * debian/rules: Remove some unnecessary variables and exports 
+  * debian/README.source: Add, thanks Lintian 
+  * debian/control: Add myself to Uploaders 
+  * debian/control: Update standards-version to 3.8.3, no changes 
+  * debian/control: Use mono-csc instead of csc as compiler 
+
+ -- Iain Lane <laney@ubuntu.com>  Thu, 24 Sep 2009 14:49:09 +0100
+
 tomboy (0.15.3-1) experimental; urgency=low
 
   * New upstream version 0.15.3:
