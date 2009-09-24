@@ -18,12 +18,18 @@ namespace Tomboy
 		void Exit (int exitcode);
 		void StartMainLoop ();
 
-		string ConfDir { get; }
+		string PreOneDotZeroNoteDirectory { get; }
 
-		void OpenUrl (string url);
+		string CacheDirectory { get; }
 
-		void DisplayHelp (string filename,
-			string link_id,
-			Gdk.Screen screen);
+		string ConfigurationDirectory { get; }
+
+		string DataDirectory { get; }
+
+		string LogDirectory { get; }
+
+		void OpenUrl (string url, Gdk.Screen screen);
+
+		void DisplayHelp (string help_uri, Gdk.Screen screen);
 	}
 }

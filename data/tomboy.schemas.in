@@ -151,6 +151,21 @@
          </long>
       </locale>
     </schema>
+
+    <schema>
+      <key>/schemas/apps/tomboy/tray_menu_item_max_length</key>
+      <applyto>/apps/tomboy/tray_menu_item_max_length</applyto>
+      <owner>tomboy</owner>
+      <type>int</type>
+      <default>100</default>
+      <locale name="C">
+         <short>Maximum note title length to show in tray menu.</short>
+         <long>
+	   Maximum characters of note title to show in the Tomboy tray or
+	   panel applet note menu.
+         </long>
+      </locale>
+    </schema>
     
     <schema>
       <key>/schemas/apps/tomboy/enable_startup_notes</key>
@@ -491,11 +506,12 @@
       <applyto>/apps/tomboy/sync_sshfs_port</applyto>
       <owner>tomboy</owner>
       <type>int</type>
-      <default>22</default>
+      <default>-1</default>
       <locale name="C">
          <short>SSHFS Synchronization Server Port</short>
          <long>
 	   The port to use when connecting to the synchronization server via SSH.
+	   Set to -1 or less if default SSH port settings should be used instead.
          </long>
       </locale>
     </schema>

@@ -29,19 +29,31 @@ using System.IO;
 
 namespace Tomboy
 {
-	// TODO: Rename to GtkApplication
 	public class WindowsApplication : INativeApplication
 	{
-		private string confDir;
-		
-		public WindowsApplication ()
+		private static string confDir;
+		private static string dataDir;
+		private static string cacheDir;
+		private static string logDir;
+		private const string tomboyDirName = "Tomboy";
+
+		static WindowsApplication ()
 		{
-			confDir = Path.Combine (
-				Environment.GetFolderPath (
-			        	Environment.SpecialFolder.ApplicationData),
-					"tomboy");
+			string appDataPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.ApplicationData),
+			                                   tomboyDirName);
+			string localAppDataPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.LocalApplicationData),
+			                                        tomboyDirName);
+			dataDir = Path.Combine (appDataPath, "notes");
+			confDir = Path.Combine (appDataPath, "config");
+			cacheDir = Path.Combine (localAppDataPath, "cache");
+			logDir = localAppDataPath;
+
+			// NOTE: Other directories created on demand
+			//       (non-existence is an indicator that migration is needed)
+			if (!Directory.Exists (cacheDir))
+				Directory.CreateDirectory (cacheDir);
 		}
-		
+
 		#region INativeApplication implementation 
 		
 		public event EventHandler ExitingEvent;
@@ -73,12 +85,30 @@ namespace Tomboy
 			Gtk.Application.Run ();
 		}
 
-		public virtual string ConfDir
-		{
+		public string DataDirectory {
+			get { return dataDir; }
+		}
+
+		public string ConfigurationDirectory {
 			get { return confDir; }
 		}
 
-		public virtual void OpenUrl (string url)
+		public string CacheDirectory {
+			get { return cacheDir; }
+		}
+
+		public string LogDirectory {
+			get { return logDir; }
+		}
+
+		public string PreOneDotZeroNoteDirectory {
+			get {
+				return Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.ApplicationData),
+				                     "tomboy");
+			}
+		}
+
+		public virtual void OpenUrl (string url, Gdk.Screen screen)
 		{
 			try {
 				System.Diagnostics.Process.Start (url);
@@ -87,9 +117,9 @@ namespace Tomboy
 			}
 		}
 
-		public virtual void DisplayHelp (string filename, string link_id, Gdk.Screen screen)
+		public virtual void DisplayHelp (string help_uri, Gdk.Screen screen)
 		{
-			OpenUrl ("http://library.gnome.org/users/tomboy/0.12/");
+			OpenUrl ("http://library.gnome.org/users/tomboy/0.12/", screen);
 		}
 
 		#endregion

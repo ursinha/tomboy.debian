@@ -9,6 +9,56 @@ Please send questions and suggestions to
 Please report bugs using http://bugzilla.gnome.org/
 (http://bugzilla.gnome.org/enter_bug.cgi?product=Tomboy).
 
+Version 1.0
+* Fix crash when showing Search from panel applet (#595098).
+* Redirect complete applet output to ~/.config/tomboy/tomboy-panel.log.
+* Every patch contributor goes in the About dialog now.
+* Add Underline add-in to Windows/Mac builds.
+* WebSync fixes on Windows.
+* New Translations: ca@valencia, id
+* Translation updates: as, bg, bn_IN, br, ca@valencia, cs, da, de, el, en_GB,
+                       es, et, eu, fi, fr, gl, gu, he, hi, hu, id, it, kn, ko,
+                       lt, ml, mr, nb, or, pa, pl, pt, pt_BR, ro, sl, sr,
+                       sr@latin, sv, ta, te, th, uk, zh_HK, zh_TW
+
+Version 0.15.7
+WebSync updates:
+* Update for latest (hopefully final) REST API spec (Rodrigo Moya).
+* Initial support for OAuth 1.0a servers (#594046).
+* Drop heavy System.Web dependency by bundling HttpUtility class.
+* Fix parsing bug that caused Tomboy to upload empty notes to the server.
+* More streamlined initial auth procedure (less clicks).
+* Fix error when connecting before logged in to Snowy (#591455).
+Other updates:
+* Prevent crash on PPC and ARM when showing menus (#586605, #593422).
+* Don't connect to session manager when running as applet (#533537).
+* When closing search window, do not quit if Tomboy icon is visible (#584910).
+* Translation updates: bn, bn_IN, de, es, et, eu, fr, nb, pl, pt, pt_BR,
+                       sr, sr@latin, sv, ta, zh_HK, zh_TW
+
+Version 0.15.6
+* Migrate notes from ~/.tomboy, following Free Desktop standards on Linux and
+  appropriate conventions on Windows and Mac OS X (#518585, #557288).
+* Don't force port 22 when no port is specified for SSH sync (#574517).
+* Add preference in GConf for maximum width of note menu (#417145, Jeff Tickle).
+* New Translations: br, ga
+* Translation updates: bg, de, es, et, fi, fr, sv, th, zh_HK, zh_TW
+
+Version 0.15.5
+* Option to sync from Tomboy icon's contextual menu (#468459, Buchner Johannes).
+* Rename notebooks from the Search window (#435734).
+* Clean up wasted space in Search and Preferences windows (#574155 and more).
+* Maintain scroll position when notes change while Search window open (#588593).
+* Fix Notebook toolbar button appearance with 'text beside icons' setting.
+* Translation updates: ca, gl, nb, pt_BR
+
+Version 0.15.4
+* Improved behavior when changing font sizes (Stefan Schweizer).
+* Builds fixes on Windows and Mac OS X (Matt Johnston, Sandy Armstrong).
+* Require gtk+ 2.14 and stop using obsolete libgnome APIs.
+* New Help Translations: cs
+* Translation updates: ca, et, he, pt_BR, zh_CN, zh_HK
+
 Version 0.15.3
 * New underline formatting add-in (disabled by default) from Mark Wakim.
 * Add ctrl +/- shortcuts for changing font size (#488822, Stefan Schweizer).

@@ -124,7 +124,7 @@ namespace Tomboy
 				RegisterSessionManagerRestart (
 				        Environment.GetEnvironmentVariable ("TOMBOY_WRAPPER_PATH"),
 				        args,
-				        new string [] { "TOMBOY_PATH=" + note_path  });
+				        new string [] { "TOMBOY_PATH=" + note_path  }); // TODO: Pass along XDG_*?
 				StartTrayIcon ();
 			}
 
@@ -143,10 +143,10 @@ namespace Tomboy
 			        override_path :
 			        Environment.GetEnvironmentVariable ("TOMBOY_PATH");
 			if (note_path == null)
-				note_path = Services.NativeApplication.ConfDir;
+				note_path = Services.NativeApplication.DataDirectory;
 
 			// Tilde expand
-			return note_path.Replace ("~", Environment.GetEnvironmentVariable ("HOME"));
+			return note_path.Replace ("~", Environment.GetEnvironmentVariable ("HOME")); // TODO: Wasted work
 		}
 
 		static void RegisterPanelAppletFactory ()
@@ -300,25 +300,68 @@ namespace Tomboy
 				tray_icon.GetGeometry (out screen, out area, out orientation);
 #endif
 			}
-			GuiUtils.ShowHelp("tomboy.xml", null,
-			                  screen,
-			                  null);
+			GuiUtils.ShowHelp ("ghelp:tomboy", screen, null);
 
 		}
 
 		static void OnShowAboutAction (object sender, EventArgs args)
 		{
 			string [] authors = new string [] {
-				"Alex Graveley <alex@beatniksoftware.com>",
-				"Boyd Timothy <btimothy@gmail.com>",
-				"Chris Scobell <chris@thescobells.com>",
-				"David Trowbridge <trowbrds@gmail.com>",
-				"Ryan Lortie <desrt@desrt.ca>",
-				"Sandy Armstrong <sanfordarmstrong@gmail.com>",
-				"Sebastian Rittau <srittau@jroger.in-berlin.de>",
-				"Kevin Kubasik <kevin@kubasik.net>",
-				"Stefan Schweizer <steve.schweizer@gmail.com>",
-				"Benjamin Podszun <benjamin.podszun@gmail.com>"
+				Catalog.GetString ("Primary Development:"),
+				"\tAlex Graveley (original author)",
+				"\tBoyd Timothy (retired maintainer)",
+				"\tSandy Armstrong (maintainer)",
+				"\t\t<sanfordarmstrong@gmail.com>",
+				"",
+				Catalog.GetString ("Contributors:"),
+				"\tAaron Bockover",
+				"\tAlexey Nedilko",
+				"\tAlex Kloss",
+				"\tAnders Petersson",
+				"\tAndrew Fister",
+				"\tBenjamin Podszun",
+				"\tBuchner Johannes",
+				"\tChris Scobell",
+				"\tDave Foster",
+				"\tDavid Trowbridge",
+				"\tDoug Johnston",
+				"\tEveraldo Canuto",
+				"\tFrederic Crozat",
+				"\tGabriel de Perthuis",
+				"\tJakub Steiner",
+				"\tJames Westby",
+				"\tJamin Philip Gray",
+				"\tJan Rüegg",
+				"\tJay R. Wren",
+				"\tJeffrey Stedfast",
+				"\tJeff Tickle",
+				"\tJerome Haltom",
+				"\tJoe Shaw",
+				"\tJohn Anderson",
+				"\tJohn Carr",
+				"\tJon Lund Steffensen",
+				"\tJP Rosevear",
+				"\tKevin Kubasik",
+				"\tLaurent Bedubourg",
+				"\tŁukasz Jernaś",
+				"\tMark Wakim",
+				"\tMathias Hasselmann",
+				"\tMatt Johnston",
+				"\tMike Mazur",
+				"\tNathaniel Smith",
+				"\tPrzemysław Grzegorczyk",
+				"\tRobert Buchholz",
+				"\tRobin Sonefors",
+				"\tRodrigo Moya",
+				"\tRomain Tartiere",
+				"\tRyan Lortie",
+				"\tSebastian Dröge",
+				"\tSebastian Rittau",
+				"\tStefan Cosma",
+				"\tStefan Schweizer",
+				"\tTommi Asiala",
+				"\tWouter Bolsterlee",
+				"\tYonatan Oren"
 			};
 
 			string [] documenters = new string [] {
@@ -344,7 +387,7 @@ namespace Tomboy
 			                                    "note-taking application.");
 			Gtk.AboutDialog.SetUrlHook (delegate (Gtk.AboutDialog dialog, string link) {
 				try {
-					Services.NativeApplication.OpenUrl (link);
+					Services.NativeApplication.OpenUrl (link, null);
 				} catch (Exception e) {
 					GuiUtils.ShowOpeningLocationError (dialog, link, e.Message);
 				}
@@ -355,8 +398,10 @@ namespace Tomboy
 			about.Documenters = documenters;
 			about.TranslatorCredits = translators;
 			about.IconName = "tomboy";
-			about.Run ();
-			about.Destroy ();
+			about.Response += delegate {
+				about.Destroy ();
+			};
+			about.Present ();
 		}
 
 		static void OpenSearchAll (object sender, EventArgs args)
@@ -374,6 +419,8 @@ namespace Tomboy
 		public static bool TrayIconShowing
 		{
 			get {
+				tray_icon_showing = !is_panel_applet && tray_icon != null &&
+					tray_icon.IsEmbedded && tray_icon.Visible;
 				return tray_icon_showing;
 			}
 		}
