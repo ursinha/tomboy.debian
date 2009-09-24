@@ -49,7 +49,8 @@ GNOME_CSFILES =					\
 	$(srcdir)/GConfPreferencesClient.cs	\
 	$(srcdir)/GnomeApplication.cs		\
 	$(srcdir)/GnomeFactory.cs		\
-	$(srcdir)/XKeybinder.cs
+	$(srcdir)/XKeybinder.cs			\
+	$(srcdir)/gtk-sharp-beans/*.cs
 
 PANELAPPLET_CSFILES =			\
 	$(srcdir)/panelapplet/*.cs
@@ -72,6 +73,7 @@ endif
 CSFLAGS = 				\
 	-debug				\
 	-define:DEBUG 			\
+	-define:NET_2_0			\
 	-unsafe 			\
 	-target:exe 			\
 	$(DBUS_CSFLAGS) 		\
@@ -119,6 +121,10 @@ CSFILES = 					\
 	$(srcdir)/Watchers.cs			\
 	$(srcdir)/Notebooks/*.cs		\
 	$(srcdir)/Synchronization/*.cs		\
+	\
+	$(srcdir)/Hyena/*.cs			\
+	\
+	$(srcdir)/System.Web/*.cs			\
 	\
 	$(GNOME_USED_CSFILES)			\
 	$(WIN_USED_CSFILES)			\

@@ -12,7 +12,6 @@ namespace Tomboy
 		Gtk.MenuBar menu_bar;
 		Gtk.ComboBoxEntry find_combo;
 		Gtk.Button clear_search_button;
-		Gtk.CheckButton case_sensitive;
 		Gtk.Statusbar status_bar;
 		Gtk.ScrolledWindow matches_window;
 		Gtk.HPaned hpaned;
@@ -88,10 +87,8 @@ namespace Tomboy
 
 			menu_bar = CreateMenuBar ();
 
-			Gtk.Image image = new Gtk.Image (GuiUtils.GetIcon ("system-search", 48));
-
 			Gtk.Label label = new Gtk.Label (Catalog.GetString ("_Search:"));
-			label.Xalign = 1;
+			label.Xalign = 0.0f;
 
 			find_combo = Gtk.ComboBoxEntry.NewText ();
 			label.MnemonicWidget = find_combo;
@@ -110,23 +107,24 @@ namespace Tomboy
 			clear_search_button.Clicked += ClearSearchClicked;
 			clear_search_button.Show ();
 
-			case_sensitive =
-				new Gtk.CheckButton (Catalog.GetString ("C_ase Sensitive"));
-			case_sensitive.Toggled += OnCaseSensitiveToggled;
-
-			Gtk.Table table = new Gtk.Table (2, 3, false);
-			table.Attach (label, 0, 1, 0, 1, Gtk.AttachOptions.Shrink, 0, 0, 0);
-			table.Attach (find_combo, 1, 2, 0, 1);
-			table.Attach (case_sensitive, 1, 2, 1, 2);
+			Gtk.Table table = new Gtk.Table (1, 3, false);
+			table.Attach (label, 0, 1, 0, 1,
+			              Gtk.AttachOptions.Fill,
+			              Gtk.AttachOptions.Expand | Gtk.AttachOptions.Fill,
+			              0, 0);
+			table.Attach (find_combo, 1, 2, 0, 1,
+			              Gtk.AttachOptions.Expand | Gtk.AttachOptions.Fill,
+			              Gtk.AttachOptions.Expand | Gtk.AttachOptions.Fill,
+			              0, 0);
 			table.Attach (clear_search_button,
 				      2, 3, 0, 1,
-				      Gtk.AttachOptions.Shrink, 0, 0, 0);
+			              Gtk.AttachOptions.Fill,
+			              Gtk.AttachOptions.Expand | Gtk.AttachOptions.Fill,
+			              0, 0);
 			table.ColumnSpacing = 4;
 			table.ShowAll ();
 
-			Gtk.HBox hbox = new Gtk.HBox (false, 2);
-			hbox.BorderWidth = 8;
-			hbox.PackStart (image, false, false, 4);
+			Gtk.HBox hbox = new Gtk.HBox (false, 0);
 			hbox.PackStart (table, true, true, 0);
 			hbox.ShowAll ();
 
@@ -177,7 +175,7 @@ namespace Tomboy
 
 			Gtk.VBox vbox = new Gtk.VBox (false, 8);
 			vbox.BorderWidth = 6;
-			vbox.PackStart (hbox, false, false, 0);
+			vbox.PackStart (hbox, false, false, 4);
 			vbox.PackStart (hpaned, true, true, 0);
 			vbox.PackStart (status_bar, false, false, 0);
 			vbox.Show ();
@@ -259,10 +257,13 @@ namespace Tomboy
 			column.SetCellDataFunc (renderer,
 				new Gtk.TreeCellDataFunc (NotebookPixbufCellDataFunc));
 
-			renderer = new Gtk.CellRendererText ();
-			column.PackStart (renderer, true);
-			column.SetCellDataFunc (renderer,
+			var textRenderer = new Gtk.CellRendererText ();
+			// TODO: Make special notebooks' rows uneditable
+			textRenderer.Editable = true;
+			column.PackStart (textRenderer, true);
+			column.SetCellDataFunc (textRenderer,
 				new Gtk.TreeCellDataFunc (NotebookTextCellDataFunc));
+			textRenderer.Edited += OnNotebookRowEdited;
 
 			notebooksTree.AppendColumn (column);
 
@@ -441,8 +442,7 @@ namespace Tomboy
 					tree.ScrollToPoint (0, 0);
 				return;
 			}
-			if (!case_sensitive.Active)
-				text = text.ToLower ();
+			text = text.ToLower ();
 
 			current_matches.Clear ();
 
@@ -452,7 +452,7 @@ namespace Tomboy
 				selected_notebook = null;
 
 			IDictionary<Note,int> results =
-				search.SearchNotes(text, case_sensitive.Active, selected_notebook);
+				search.SearchNotes(text, false, selected_notebook);
 			foreach (Note note in results.Keys){
 				current_matches.Add(note.Uri, results[note]);
 			}
@@ -650,7 +650,9 @@ namespace Tomboy
 
 		void OnNoteSaved (Note note)
 		{
+			var rect = tree.VisibleRect;
 			UpdateResults ();
+			tree.ScrollToPoint (rect.X, rect.Y);
 		}
 
 		void OnTreeViewDragDataGet (object sender, Gtk.DragDataGetArgs args)
@@ -676,6 +678,27 @@ namespace Tomboy
 				args.SelectionData.Text = selected_notes [0].Title;
 			else
 				args.SelectionData.Text = Catalog.GetString ("Notes");
+		}
+
+		void OnNotebookRowEdited (object sender, Gtk.EditedArgs args)
+		{
+			if (Notebooks.NotebookManager.NotebookExists (args.NewText))
+				return;
+			var oldNotebook = GetSelectedNotebook ();
+			if (oldNotebook is Notebooks.SpecialNotebook)
+				return;
+			var newNotebook = Notebooks.NotebookManager.GetOrCreateNotebook (args.NewText);
+			Logger.Debug ("Renaming notebook '{0}' to '{1}'",
+			              oldNotebook.Name,
+			              args.NewText);
+			foreach (Note note in oldNotebook.Tag.Notes)
+				Notebooks.NotebookManager.MoveNoteToNotebook (note, newNotebook);
+			Notebooks.NotebookManager.DeleteNotebook (oldNotebook);
+			Gtk.TreeIter iter;
+			if (Notebooks.NotebookManager.GetNotebookIter (newNotebook, out iter)) {
+				// TODO: Why doesn't this work?
+				notebooksTree.Selection.SelectIter (iter);
+			}
 		}
 
 		void OnSelectionChanged (object sender, EventArgs args)
@@ -815,10 +838,18 @@ namespace Tomboy
 			if (x == 0 && y == 0)
 				pos_menu_func = PositionContextMenu;
 
-			menu.Popup (null, null,
-				    pos_menu_func,
-				    0,
-				    Gtk.Global.CurrentEventTime);
+			try {
+				menu.Popup (null, null,
+					    pos_menu_func,
+					    0,
+					    Gtk.Global.CurrentEventTime);
+			} catch {
+				Logger.Debug ("Menu popup failed with custom MenuPositionFunc; trying again without");
+				menu.Popup (null, null,
+					    null,
+					    0,
+					    Gtk.Global.CurrentEventTime);
+			}
 		}
 
 		// This is needed for when the user opens
@@ -1133,14 +1164,10 @@ namespace Tomboy
 
 			bool repeat = false;
 
-			if (case_sensitive.Active) {
-				repeat = previous_searches.Contains (text);
-			} else {
-				string lower = text.ToLower();
-				foreach (string prev in previous_searches) {
-					if (prev.ToLower() == lower)
-						repeat = true;
-				}
+			string lower = text.ToLower();
+			foreach (string prev in previous_searches) {
+				if (prev.ToLower() == lower)
+					repeat = true;
 			}
 
 			if (!repeat) {

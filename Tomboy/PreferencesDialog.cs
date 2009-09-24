@@ -61,7 +61,6 @@ namespace Tomboy
 			Resizable = true;
 			Title = Catalog.GetString ("Tomboy Preferences");
 
-			VBox.Spacing = 5;
 			ActionArea.Layout = Gtk.ButtonBoxStyle.End;
 
 			addin_prefs_dialogs =
@@ -73,7 +72,6 @@ namespace Tomboy
 
 			Gtk.Notebook notebook = new Gtk.Notebook ();
 			notebook.TabPos = Gtk.PositionType.Top;
-			notebook.BorderWidth = 5;
 			notebook.Show ();
 
 			notebook.AppendPage (MakeEditingPane (),
@@ -448,9 +446,9 @@ namespace Tomboy
 
 			syncAddinPrefsWidget.Show ();
 			syncAddinPrefsContainer = new Gtk.VBox (false, 0);
-			syncAddinPrefsContainer.PackStart (syncAddinPrefsWidget, true, true, 0);
+			syncAddinPrefsContainer.PackStart (syncAddinPrefsWidget, false, false, 0);
 			syncAddinPrefsContainer.Show ();
-			vbox.PackStart (syncAddinPrefsContainer, true, true, 0);
+			vbox.PackStart (syncAddinPrefsContainer, true, true, 10);
 
 			Gtk.HButtonBox bbox = new Gtk.HButtonBox ();
 			bbox.Spacing = 4;
@@ -543,7 +541,7 @@ namespace Tomboy
 			get_more_link.Clicked += delegate(object sender, EventArgs args) {
 				string uri = ((Gtk.LinkButton) sender).Uri;
 				try {
-					Services.NativeApplication.OpenUrl (uri);
+					Services.NativeApplication.OpenUrl (uri, Screen);
 				} catch (Exception e) {
 					GuiUtils.ShowOpeningLocationError (this, uri, e.Message);
 				}
@@ -1037,7 +1035,7 @@ namespace Tomboy
 					}
 
 					syncAddinPrefsWidget.Show ();
-					syncAddinPrefsContainer.PackStart (syncAddinPrefsWidget, true, true, 0);
+					syncAddinPrefsContainer.PackStart (syncAddinPrefsWidget, false, false, 0);
 
 					resetSyncAddinButton.Sensitive = false;
 					saveSyncAddinButton.Sensitive = true;
