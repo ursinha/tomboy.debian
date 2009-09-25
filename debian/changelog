@@ -37,9 +37,10 @@ tomboy (1.0.0-1) UNRELEASED; urgency=low
   * debian/README.source: Add, thanks Lintian 
   * debian/control: Add myself to Uploaders 
   * debian/control: Update standards-version to 3.8.3, no changes 
-  * debian/control: Use mono-csc instead of csc as compiler 
+  * debian/control: Use mono-csc instead of csc as compiler, bump mono-devel
+    build-dep version for this 
 
- -- Iain Lane <laney@ubuntu.com>  Thu, 24 Sep 2009 14:49:09 +0100
+ -- Iain Lane <laney@ubuntu.com>  Fri, 25 Sep 2009 20:54:24 +0100
 
 tomboy (0.15.3-1) experimental; urgency=low
 
