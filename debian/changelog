@@ -1,4 +1,4 @@
-tomboy (1.0.0-1) UNRELEASED; urgency=low
+tomboy (1.0.0-1) unstable; urgency=low
 
   * New upstream version 1.0.0:
     - Fix crash when showing Search from panel applet 
