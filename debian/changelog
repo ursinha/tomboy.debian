@@ -1,3 +1,10 @@
+tomboy (1.0.0-2) UNRELEASED; urgency=low
+
+  * debian/rules: Update the translation template after the build, doesn't
+    affect Debian but is required for Ubuntu. Reduces the delta.
+
+ -- Iain Lane <laney@ubuntu.com>  Wed, 30 Sep 2009 21:06:20 +0100
+
 tomboy (1.0.0-1) unstable; urgency=low
 
   * New upstream version 1.0.0:
