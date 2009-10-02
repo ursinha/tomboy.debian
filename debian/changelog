@@ -1,4 +1,4 @@
-tomboy (1.0.0-2) UNRELEASED; urgency=low
+tomboy (1.0.0-2) unstable; urgency=low
 
   * debian/rules: Update the translation template after the build, doesn't
     affect Debian but is required for Ubuntu. Reduces the delta.
