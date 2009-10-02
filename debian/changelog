@@ -1,9 +1,16 @@
 tomboy (1.0.0-2) UNRELEASED; urgency=low
 
+  [ Iain Lane ]
   * debian/rules: Update the translation template after the build, doesn't
     affect Debian but is required for Ubuntu. Reduces the delta.
 
- -- Iain Lane <laney@ubuntu.com>  Wed, 30 Sep 2009 21:06:20 +0100
+  [ Stefan Ebner ]
+  * debian/rules:
+    + Directly convert and install the icon
+    + Remove debian/clean
+    + Remove debian/tomboy.install
+
+ -- Stefan Ebner <sebner@ubuntu.com>  Fri, 02 Oct 2009 22:46:01 +0200
 
 tomboy (1.0.0-1) unstable; urgency=low
 
