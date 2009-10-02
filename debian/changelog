@@ -10,6 +10,7 @@ tomboy (1.0.0-2) UNRELEASED; urgency=low
     + Remove debian/clean
     + Remove debian/tomboy.install
   * Added debian/dirs
+  * debian/watch: Bump version to 3
 
  -- Stefan Ebner <sebner@ubuntu.com>  Fri, 02 Oct 2009 23:24:57 +0200
 
