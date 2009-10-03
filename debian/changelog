@@ -9,8 +9,10 @@ tomboy (1.0.0-2) unstable; urgency=low
     + Directly convert and install the icon
     + Remove debian/clean
     + Remove debian/tomboy.install
+  * Added debian/dirs
+  * debian/watch: Bump version to 3
 
- -- Stefan Ebner <sebner@ubuntu.com>  Fri, 02 Oct 2009 22:46:01 +0200
+ -- Stefan Ebner <sebner@ubuntu.com>  Fri, 02 Oct 2009 23:24:57 +0200
 
 tomboy (1.0.0-1) unstable; urgency=low
 
