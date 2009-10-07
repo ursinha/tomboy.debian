@@ -1,0 +1,149 @@
+Index: tomboy.git/Tomboy/Addins/WebSyncService/Api/OAuth.cs
+===================================================================
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/Api/OAuth.cs	2009-09-24 13:58:41.469760425 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/Api/OAuth.cs	2009-10-07 16:00:52.064108681 +0100
+@@ -45,7 +45,7 @@
+ 		#region Constructor
+ 		public OAuth ()
+ 		{
+-			Debugging = false;
++			Debugging = true;
+ 		}
+ 		#endregion
+ 
+@@ -192,8 +192,11 @@
+ 			var outUrl = string.Empty;
+ 			List<IQueryParameter<string>> parameters = null;
+ 
++			string callbackUrl = string.Empty;
++			if (url.StartsWith (RequestTokenBaseUrl) || url.StartsWith (AccessTokenBaseUrl))
++				callbackUrl = CallbackUrl;
+ 			var sig = GenerateSignature (uri, ConsumerKey, ConsumerSecret, Token, TokenSecret, Verifier, method,
+-				timeStamp, nonce, out outUrl, out parameters);
++						     timeStamp, nonce, callbackUrl, out outUrl, out parameters);
+ 
+ 			if (Debugging)
+ 				Logger.Debug ("Generated signature {0}", sig);
+Index: tomboy.git/Tomboy/Addins/WebSyncService/OAuth/Base.cs
+===================================================================
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/OAuth/Base.cs	2009-09-24 13:58:41.469760425 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/OAuth/Base.cs	2009-10-07 16:00:52.084146564 +0100
+@@ -159,7 +159,8 @@
+ 		/// <param name="signatureType">The signature type. To use the default values use <see cref="SignatureType">SignatureType</see>.</param>
+ 		/// <returns>The signature base.</returns>
+ 		private string GenerateSignatureBase (Uri url, string consumerKey, string token, string tokenSecret, string verifier,
+-			RequestMethod method, TimeSpan timeStamp, string nonce, SignatureType signatureType, out string normalizedUrl,
++						      RequestMethod method, TimeSpan timeStamp, string nonce, SignatureType signatureType, string callbackUrl,
++						      out string normalizedUrl,
+ 			out List<IQueryParameter<string>> parameters)
+ 		{
+ 			log.LogDebug ("Generating signature base for OAuth request.");
+@@ -196,6 +197,7 @@
+ 
+ 			if (!string.IsNullOrEmpty (token)) parameters.Add (new QueryParameter<string> (OAuthTokenKey, token, s => string.IsNullOrEmpty (s)));
+ 			if (!string.IsNullOrEmpty (verifier)) parameters.Add (new QueryParameter<string> (OAuthVerifierKey, verifier, s => string.IsNullOrEmpty (s)));
++			if (!string.IsNullOrEmpty (callbackUrl)) parameters.Add (new QueryParameter<string> (OAuthCallbackKey, UrlEncode (callbackUrl), s => string.IsNullOrEmpty (s)));
+ 
+ 			log.LogDebug ("Normalizing URL for signature.");
+ 
+@@ -251,12 +253,13 @@
+ 		/// <param name="httpMethod">The HTTP method used. Must be valid HTTP method verb (POST, GET, PUT, etc).</param>
+ 		/// <returns>A Base64 string of the hash value.</returns>
+ 		protected string GenerateSignature (Uri url, string consumerKey, string consumerSecret, string token,
+-			string tokenSecret, string verifier, RequestMethod method, TimeSpan timeStamp, string nonce, out string normalizedUrl,
+-			out List<IQueryParameter<string>> parameters)
++						    string tokenSecret, string verifier, RequestMethod method, TimeSpan timeStamp, string nonce,
++						    string callbackUrl, out string normalizedUrl,
++						    out List<IQueryParameter<string>> parameters)
+ 		{
+ 			log.LogDebug ("Generating signature using HMAC-SHA1 algorithm.");
+ 			return GenerateSignature (url, consumerKey, consumerSecret, token, tokenSecret, verifier, method, timeStamp, nonce,
+-				SignatureType.HMACSHA1, out normalizedUrl, out parameters);
++						  SignatureType.HMACSHA1, callbackUrl, out normalizedUrl, out parameters);
+ 		}
+ 
+ 		/// <summary>
+@@ -272,8 +275,8 @@
+ 		/// <param name="signatureType">The type of signature to use.</param>
+ 		/// <returns>A Base64 string of the hash value.</returns>
+ 		private string GenerateSignature (Uri url, string consumerKey, string consumerSecret, string token,
+-			string tokenSecret, string verifier, RequestMethod method, TimeSpan timeStamp, string nonce, SignatureType signatureType,
+-			out string normalizedUrl, out List<IQueryParameter<string>> parameters)
++						  string tokenSecret, string verifier, RequestMethod method, TimeSpan timeStamp, string nonce, SignatureType signatureType,
++						  string callbackUrl, out string normalizedUrl, out List<IQueryParameter<string>> parameters)
+ 		{
+ 			log.LogDebug ("Generating signature using signature type {0}", signatureType);
+ 
+@@ -288,7 +291,8 @@
+ 					return signature;
+ 				case SignatureType.HMACSHA1:
+ 					string signatureBase = GenerateSignatureBase (url, consumerKey, token, tokenSecret, verifier, method,
+-						timeStamp, nonce, SignatureType.HMACSHA1, out normalizedUrl, out parameters);
++										      timeStamp, nonce, SignatureType.HMACSHA1, callbackUrl,
++										      out normalizedUrl, out parameters);
+ 
+ 					var hmacsha1 = new HMACSHA1 ();
+ 					hmacsha1.Key = Encoding.ASCII.GetBytes (string.Format ("{0}&{1}",
+Index: tomboy.git/Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs
+===================================================================
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs	2009-09-24 13:58:41.469760425 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs	2009-10-07 16:00:52.114107121 +0100
+@@ -107,25 +107,24 @@
+ 			}
+ 
+ 			// TODO: Move this
+-			if (Auth == null) {
+-				string rootUri = Server + "/api/1.0";
+-				try {
+-					RootInfo root = RootInfo.GetRoot (rootUri, new Api.AnonymousConnection ());
+-
+-					Auth = new Api.OAuth ();
++			if (Auth == null)
++				Auth = new Api.OAuth ();
+ 
+-					Auth.AuthorizeLocation = root.AuthorizeUrl;
+-					Auth.AccessTokenBaseUrl = root.AccessTokenUrl;
+-					Auth.RequestTokenBaseUrl = root.RequestTokenUrl;
+-					Auth.ConsumerKey = "anyone";
+-					Auth.ConsumerSecret = "anyone";
+-					Auth.Realm = "Snowy";
+-				} catch (Exception e) {
+-					Logger.Error ("Failed to get Root resource " + rootUri + ". Exception was: " + e.ToString());
+-					authButton.Label = Catalog.GetString ("Server not responding. Try again later.");
+-					oauth = null;
+-					return;
+-				}
++			string rootUri = Server + "/api/1.0";
++			try {
++				RootInfo root = RootInfo.GetRoot (rootUri, new Api.AnonymousConnection ());
++				
++				Auth.AuthorizeLocation = root.AuthorizeUrl;
++				Auth.AccessTokenBaseUrl = root.AccessTokenUrl;
++				Auth.RequestTokenBaseUrl = root.RequestTokenUrl;
++				Auth.ConsumerKey = "anyone";
++				Auth.ConsumerSecret = "anyone";
++				Auth.Realm = "Snowy";
++			} catch (Exception e) {
++				Logger.Error ("Failed to get Root resource " + rootUri + ". Exception was: " + e.ToString());
++				authButton.Label = Catalog.GetString ("Server not responding. Try again later.");
++				oauth = null;
++				return;
+ 			}
+ 
+ 			if (!Auth.IsAccessToken) {
+@@ -159,6 +158,7 @@
+ 					return;
+ 				}
+ 
++				Logger.Debug ("Listening on {0} for OAuth callback", callbackUrl);
+ 				string authUrl = string.Empty;
+ 				try {
+ 					authUrl = Auth.GetAuthorizationUrl ();
+@@ -223,7 +223,6 @@
+ 					}
+ 				}, null);
+ 
+-				Logger.Debug ("Listening on {0} for OAuth callback", callbackUrl);
+ 				Logger.Debug ("Launching browser to authorize web sync: " + authUrl);
+ 				authButton.Label = Catalog.GetString ("Authorizing in browser (Press to reset connection)");
+ 				try {
