@@ -22,11 +22,7 @@
     <title>Podręcznik użytkownika programu Tomboy</title>
 
     <abstract role="description">
-      <para>Tomboy is a simple desktop note-taking application, with many features designed
-to help organize ideas, such as spell checking, highlighting, auto-linking
-URLs, lists, font stylizing, quick access with a table of contents for notes,
-and add-ins to extend Tomboy's capabilities.
-.</para>
+      <para>Tomboy jest prostym programem do sporządzania notatek stworzonym, aby pomóc w organizacji pomysłów. Posiada wiele funkcji, m.in. sprawdzanie pisowni, wyróżnianie tekstu, automatyczne tworzenie odnośników, wypunktowanie, formatowanie czcionek, szybki dostęp za pomocą spisu notatek oraz możliwość rozszerzania funkcjonalności programu za pomocą dodatków.</para>
     </abstract>
 
     <copyright>
@@ -63,7 +59,7 @@ and add-ins to extend Tomboy's capabilities.
       <year>2009</year>
       
       <holder>Paul Cutler</holder>
-    </copyright><copyright><year>2008</year><holder>Joanna Mazgaj (Aviary.pl) (jmazgaj@aviary.pl)</holder></copyright>
+    </copyright><copyright><year>2008</year><holder>Joanna Mazgaj (Aviary.pl) (jmazgaj@aviary.pl)</holder></copyright><copyright><year>2009</year><holder>Aleksander Łukasiewicz (aleksander@lukasiewicz.org)</holder></copyright>
 
     <!-- translators: uncomment this:
     <copyright>
@@ -169,7 +165,7 @@ and add-ins to extend Tomboy's capabilities.
    than the current revision. -->
 
       <revision>
-        <revnumber>Tomboy Manual 2.1</revnumber>
+        <revnumber>Podręcznik użytkownika programu Tomboy 2.1</revnumber>
 
         <date>2009-03-23</date>
 
@@ -217,7 +213,7 @@ and add-ins to extend Tomboy's capabilities.
       </revision>
     </revhistory>
 
-    <releaseinfo>This manual describes version 0.14.0 of Tomboy</releaseinfo>
+    <releaseinfo>Ten dokument opisuje wersję 0.14.0 programu Tomboy</releaseinfo>
 
     <legalnotice>
       <title>Opinie</title>
@@ -255,10 +251,7 @@ and add-ins to extend Tomboy's capabilities.
       </mediaobject>
     </figure>
 
-    <para>Tomboy is a desktop note-taking application for GNOME, Microsoft Windows, and Mac OS X. It is simple
-    and easy to use, and allows you to organize the ideas and information you
-    deal with every day. Tomboy has some very useful editing features to help
-    you customize your notes, including:</para>
+    <para>Tomboy to program do sporządzania notatek dla środowiska GNOME, jak również dla Microsoft Windows i Mac OS X. Jest prosty i łatwy w użyciu, umożliwia zarządzanie codziennymi pomysłami i informacjami. Zawiera kilka narzędzi umożliwiających łatwą edycję notatek, takich jak:</para>
 
     <itemizedlist>
       <listitem>
@@ -286,8 +279,7 @@ and add-ins to extend Tomboy's capabilities.
       </listitem>
     </itemizedlist>
 
-    <para>Tomboy is accessed through the GNOME panel, the taskbar in Microsoft Windows, or the dock in Mac OS X. To startup Tomboy
-    automatically when you log into GNOME, see <xref linkend="add-to-panel"/>.</para>
+    <para>Program Tomboy jest dostępny na panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X. <xref linkend="add-to-panel"/> zawiera szczegółowe informacje na temat automatycznego uruchamiania się programu po zalogowaniu.</para>
   </sect1>
 
   <!--=========== Getting Started ============================== -->
@@ -296,31 +288,22 @@ and add-ins to extend Tomboy's capabilities.
     <title>Pierwsze kroki</title>
 
     <sect2 id="add-to-panel">
-      <title>Adding Tomboy to the GNOME Panel</title>
+      <title>Dodawanie programu Tomboy do panelu GNOME</title>
 
-      <para>To add Tomboy to a panel in GNOME, right-click on the panel, then choose
-      <menuchoice>
-          <guimenuitem>Add to Panel</guimenuitem>
-        </menuchoice>. Select Tomboy Notes in the Add to the panel dialog,
-      then click <menuchoice>
-          <guibutton>Add</guibutton>
-        </menuchoice>. You should see a yellow note icon appear in the panel,
-      representing Tomboy. The panel icon is illustrated in <xref linkend="tomboy-panel"/>.</para>
-	  <para>Tomboy is automatically added to the taskbar when run on Microsoft Windows, or the dock when run on Mac OS X.</para>
+      <para>Aby dodać program Tomboy do panelu GNOME należy prawym przyciskiem myszy nacisnąć na panel i wybrać opcję <menuchoice><guimenuitem>Dodaj do panelu</guimenuitem></menuchoice>. Następnie z listy programów wybrać Zarządzanie notatkami Tomboy i nacisnąć na przycisk <menuchoice><guibutton>Dodaj</guibutton></menuchoice>.  Na panelu powinna się pojawić żółta ikona programu: <xref linkend="tomboy-panel"/>.</para>
+	  <para>Po uruchomieniu program Tomboy jest automatycznie dodawany do paska zadań systemu Microsoft Windows lub docku systemu Mac OS X.</para>
     </sect2>
 
     <sect2 id="creating-notes">
       <title>Tworzenie notatek</title>
 
-      <para>Once you have successfully added Tomboy to the panel, you can
-      create new notes using one of the following methods.</para>
+      <para>Po dodaniu programu Tomboy do panelu, można tworzyć nowe notatki na jeden z poniższych sposobów.</para>
 
-      <para>Tworzenie nowej notatki przy użyciu myszy:</para>
+      <para>Aby utworzyć nową notatkę za pomocą myszy, należy:</para>
 
       <orderedlist>
         <listitem>
-          <para>Click on the Tomboy note icon present in the GNOME Panel or Windows taskbar. A
-          menu will appear.</para>
+          <para>Nacisnąć na ikonę programu Tomboy w panelu GNOME lub na pasku zadań systemu Windows. Pojawi się wówczas menu.</para>
         </listitem>
 
         <listitem>
@@ -328,7 +311,7 @@ and add-ins to extend Tomboy's capabilities.
         </listitem>
       </orderedlist>
 
-      <para>Tworzenie nowej notatki przy użyciu klawiatury:</para>
+      <para>Aby utworzyć nową notatkę za pomocą klawiatury, należy:</para>
 
       <orderedlist>
         <listitem>
@@ -346,7 +329,7 @@ and add-ins to extend Tomboy's capabilities.
 
       <para>Po utworzeniu notatki otworzy się nowe okno o tytule <literal>Nowa Notatka<replaceable>N</replaceable></literal>. Na górze okna znajduje się pasek narzędziowy z kilkoma przyciskami i tekstem. Bezpośrednio pod nim znajduje się obszar treść notatki. Wygląd okna przedstawia rysunek <xref linkend="new-note"/>.</para>
 
-      <para>Notatkę modyfikuje się poprzez dodawanie lub usuwanie jej treści. Pierwsza linijka to tytuł notatki. Tytuł <quote><literal>Nowa notatka <replaceable>N</replaceable></literal></quote> nadawany jest standardowo. Można go zmienić na poprzez zmianę pierwszej linijki notatki (przy użyciu klawiatury). Po utworzeniu nowej notatki kursor jest automatycznie ustawiany w polu jej treści, więc można ją natychmiast modyfikować, bez potrzeby klikania na pole notatki.</para>
+      <para>Notatkę modyfikuje się poprzez dodawanie lub usuwanie jej treści. Pierwsza linijka to tytuł notatki. Tytuł <quote><literal>Nowa notatka <replaceable>N</replaceable></literal></quote> nadawany jest standardowo. Można go zmienić na poprzez zmianę pierwszej linijki notatki (przy użyciu klawiatury). Po utworzeniu nowej notatki kursor jest automatycznie ustawiany w polu jej treści, więc można ją natychmiast modyfikować, bez potrzeby nacisnąć na pole notatki.</para>
 
       <para><xref linkend="working-with-notes"/> opisuje sposób korzystania z paska narzędziowego widocznego w oknie każdej notatki.</para>
 
@@ -366,13 +349,13 @@ and add-ins to extend Tomboy's capabilities.
 
       <para>Aby mieć wgląd we wszystkie notatki napisane przy pomocy programu Tomboy, należy z menu panelu wybrać opcję <menuchoice><guimenuitem>Przeszukaj notatki</guimenuitem></menuchoice>. Zostanie wyświetlona lista wszystkich notatek w kolejności od daty ostatniej modyfikacji. Aby zmienić kolejność wyświetlania należy nacisnąć nagłówek kolumny <guilabel>Notatka</guilabel> lub <guilabel>Ostatnio zmieniane</guilabel>.  Naciśnięcie nagłówka po raz kolejny zmienia sposób wyświetlania na rosnący lub malejący.</para>
       
-      <para>Wpisanie frazy w pole wyszukiwania w oknie <interface>Przeszukaj notatki</interface> powoduje zawężenie listy notatek tylko do tych, w których treści znajduje się wpisany tekst.</para>
+      <para>Wprowadzenie frazy w polu wyszukiwania w oknie <interface>Przeszukaj notatki</interface> powoduje zawężenie listy notatek tylko do tych, w których treści znajduje się wprowadzony tekst.</para>
       
       <para>Aby otworzyć notatkę z listy wyników wyszukiwania w oknie <interface>Przeszukaj notatki</interface> należy:</para>
 
       <orderedlist>
         <listitem>
-          <para>Dwa razy kliknąć na notatce.</para>
+          <para>Dwukrotnie nacisnąć na notatce.</para>
         </listitem>
         
         <listitem>
@@ -380,7 +363,7 @@ and add-ins to extend Tomboy's capabilities.
         </listitem>
         
         <listitem>
-          <para>Kliknąć notatkę prawym przyciskiem myszy i z menu podręcznego wybrać <menuchoice><guimenuitem>Otwórz</guimenuitem></menuchoice></para>
+          <para>Nacisnąć na notatkę prawym przyciskiem myszy i z menu podręcznego wybrać <menuchoice><guimenuitem>Otwórz</guimenuitem></menuchoice></para>
         </listitem>
         
         <listitem>
@@ -473,7 +456,7 @@ and add-ins to extend Tomboy's capabilities.
           <listitem>
             <para>Opcja ta nadaje czcionce użytej w tekście stałą szerokość. Aby zmienić szerokość czcionki należy najpierw zaznaczyć fragment tekstu do modyfikacji, a następnie z menu <guibutton>Tekst</guibutton> wybrać opcję <menuchoice><guibutton>Stała szerokość</guibutton></menuchoice>. Można także wybrać tę opcję z menu przed rozpoczęciem pisania, wówczas czcionka w pisanym tekście będzie odpowiednio sformatowana.</para>
             
-            <para>Opcja <menuchoice><guimenuitem>Stała szerokość</guimenuitem></menuchoice> dostępna jest poprzez dodatek Fixed Width. <xref linkend="plugins"/> zawiera  więcej informacji na ten temat. </para>
+            <para>Opcja <menuchoice><guimenuitem>Stała szerokość</guimenuitem></menuchoice> jest dostarczona przez dodatek Fixed Width. <xref linkend="plugins"/> zawiera  więcej informacji na ten temat. </para>
           </listitem>
         </varlistentry>
 
@@ -523,7 +506,7 @@ and add-ins to extend Tomboy's capabilities.
           <listitem>
           	<para>Opcja ta umożliwia szukanie tylko w tekście danej notatki. Po jej zaznaczeniu na dole notatki otworzy się mały pasek wyszukiwarki. Można także nacisnąć kombinację klawiszy <keycombo><keycap>Ctrl</keycap><keycap>F</keycap></keycombo>.</para>
             
-            <para>W pole wyszukiwarki należy wpisać wyszukiwaną frazę. Po jej wpisaniu wszystkie pasujące wyniki wyszukiwania zostaną podświetlone. Naciśnięcie przycisku <guibutton>Znajdź następną</guibutton> spowoduje przejście kursora do kolejnego wyniku. Naciśnięcie <guibutton>Poprzednie</guibutton> spowoduje powrót kursora do poprzedniej pozycji.</para>
+            <para>W pole wyszukiwarki należy wprowadzić wyszukiwaną frazę. Po jej wprowadzeniu wszystkie pasujące wyniki wyszukiwania zostaną podświetlone. Naciśnięcie przycisku <guibutton>Znajdź następną</guibutton> spowoduje przejście kursora do kolejnego wyniku. Naciśnięcie <guibutton>Poprzednie</guibutton> spowoduje powrót kursora do poprzedniej pozycji.</para>
           	
           	<para>Aby zamknąć wyszukiwarkę, należy nacisnąć znajdujący się po jej lewej stronie przycisk <guibutton>X</guibutton> lub klawisz <keycap>Escape</keycap>.</para>
           </listitem>
@@ -577,7 +560,7 @@ and add-ins to extend Tomboy's capabilities.
     <sect2 id="delete">
       <title>Usuń</title>
 
-      <para>Przycisk <guibutton>Usuń</guibutton> otwiera okno dialogowe z prośbą o potwierdzenie usunięcia całej notatki. Kliknięcie przycisku <guibutton>Usuń</guibutton> usuwa notatkę wraz z całą treścią. Kliknięcie przycisku <guibutton>Anuluj</guibutton> przerywa proces. Odnośniki do usuniętej notatki nadal będą aktywne, ale ich naciśnięcie spowoduje utworzenie nowej notatki o identycznym tytule.</para>
+      <para>Przycisk <guibutton>Usuń</guibutton> otwiera okno dialogowe z prośbą o potwierdzenie usunięcia całej notatki. Naciśnięcie na przycisk <guibutton>Usuń</guibutton> usuwa notatkę wraz z całą treścią. Naciśnięcie przycisku <guibutton>Anuluj</guibutton> przerywa proces. Odnośniki do usuniętej notatki nadal będą aktywne, ale ich naciśnięcie spowoduje utworzenie nowej notatki o identycznym tytule.</para>
     </sect2>
   </sect1>
 
@@ -586,9 +569,7 @@ and add-ins to extend Tomboy's capabilities.
   <sect1 id="panel-menu">
     <title>Menu panelu</title>
 
-    <para>Tomboy keeps the most recently used notes quickly available to you in
-    a menu that appears when you click on the Tomboy Icon in the GNOME
-    Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.</para>
+    <para>Menu programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X umożliwia dostęp do ostatnich notatek. Aby uzyskać dostęp do ostatnich notatek należy nacisnąć na ikonę programu Tomboy.</para>
 
     <sect2 id="note-pinning">
       <title>Przypinanie notatek</title>
@@ -623,7 +604,7 @@ and add-ins to extend Tomboy's capabilities.
         </listitem>
 
         <listitem>
-          <para>Rozpocząć linijkę od znaku (-), wpisać fragment tekstu tuż za nim i nacisnąć klawisz <keycap>Enter</keycap>.</para>
+          <para>Rozpocząć linijkę od znaku (-), wprowadzić fragment tekstu tuż za nim i nacisnąć klawisz <keycap>Enter</keycap>.</para>
         </listitem>
       </orderedlist>
     </sect2>
@@ -643,11 +624,11 @@ and add-ins to extend Tomboy's capabilities.
         </listitem>
 
         <listitem>
-          <para>Z menu <guibutton>Tekst</guibutton> wybierać opcję <menuchoice><guimenuitem>Zmniejszenie wcięcia</guimenuitem></menuchoice> aż wybrana linijka przestanie być częścią listy.</para>
+          <para>Z menu <guibutton>Tekst</guibutton> należy wybrać opcję <menuchoice><guimenuitem>Zmniejszenie wcięcia</guimenuitem></menuchoice> aż wybrana linijka przestanie być częścią listy.</para>
         </listitem>
 
         <listitem>
-          <para>Naciskać kombinację klawiszy <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo> aż wybrana linijka przestanie być częścią listy.</para>
+          <para>Nacisnąć kombinację klawiszy <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo> aż wybrana linijka przestanie być częścią listy.</para>
         </listitem>
       </orderedlist>
     </sect2>
@@ -707,18 +688,17 @@ and add-ins to extend Tomboy's capabilities.
     
       <orderedlist>
         <listitem> 
-        <para>Click on the Tomboy note icon present in the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.  
-        A menu will appear</para>   
+        <para>Nacisnąć na ikonę programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X. Pojawi się wówczas menu.</para>   
         </listitem>
         <listitem>
         <para>Z menu podręcznego wybrać <menuchoice><guimenuitem>Notatniki</guimenuitem><guimenuitem>Nowy notatnik</guimenuitem></menuchoice>.</para></listitem>
 		<listitem>
-		<para>Wpisać nazwę notatnika.</para>
+		<para>Wprowadzić nazwę notatnika.</para>
 		</listitem>
 	</orderedlist>
 	
 	      <figure id="new-notebook">
-        <title>Create a new notebook from the Tomboy note icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X</title>
+        <title>Tworzenie nowego notatnika z pomocą ikony notatki w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X.</title>
 
         <mediaobject>
           <imageobject>
@@ -730,22 +710,19 @@ and add-ins to extend Tomboy's capabilities.
 	<para>Aby stworzyć nowy notatnik używając opcji "Przeszukaj notatki", należy:</para>
 	<orderedlist>
 		<listitem> 
-	<para>Open <menuchoice>
-              <guimenuitem>Search All Notes</guimenuitem>
-            </menuchoice> by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Po naciśnięciu na ikonę programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X wybrać opcję <menuchoice><guimenuitem>Szukaj w notatkach</guimenuitem></menuchoice> lub uruchomić ją naciskając na przycisk Wyszukiwanie w oknie notatki.</para>
 	</listitem>
 	<listitem>
 	<para>Kliknąć prawym przyciskiem myszy w lewej części okna i wybrać polecenie <menuchoice><guimenuitem>Nowy Notatnik</guimenuitem></menuchoice>.</para>
 	</listitem>
 	<listitem>
-	<para>Wpisać nazwę notatnika.</para>
+	<para>Wprowadzić nazwę notatnika.</para>
 	</listitem>
 	<listitem>
 	<para>Po otwarciu okna <guilabel>Przeszukaj notatki</guilabel> wybrać <menuchoice><guimenuitem>Plik</guimenuitem><guimenuitem>Notatniki</guimenuitem><guimenuitem>Nowy Notatnik</guimenuitem></menuchoice>.</para>
 	</listitem>
 	<listitem>
-	<para>Wpisać nazwę notatnika.</para>
+	<para>Wprowadzić nazwę notatnika.</para>
 	</listitem>
 
 	</orderedlist>
@@ -770,9 +747,7 @@ and add-ins to extend Tomboy's capabilities.
 	<para>Aby dodać do notatnika istniejącą notatkę w oknie "Przeszukaj notatki" należy:</para>
 	<orderedlist>
 		<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Po naciśnięciu na ikonę programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X wybrać opcję <menuchoice><guimenuitem>Szukaj w notatkach</guimenuitem></menuchoice> lub uruchomić ją naciskając na przycisk Wyszukiwanie w oknie notatki.</para>
 	</listitem>
 	<listitem>
 	<para>Przy pomocy myszy przeciągnąć notatkę(i) do wybranego notatnika po lewej stronie.</para>
@@ -801,15 +776,13 @@ and add-ins to extend Tomboy's capabilities.
 
 	<orderedlist>
 	<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Po naciśnięciu na ikonę programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X wybrać opcję <menuchoice><guimenuitem>Szukaj w notatkach</guimenuitem></menuchoice> lub uruchomić ją naciskając na przycisk Wyszukiwanie w oknie notatki.</para>
 	</listitem>
 	<listitem>
-	<para>Prawym przyciskiem myszy kliknąć notatnik i wybrać opcję <menuchoice><guimenuitem>Otwórz szablon notatki</guimenuitem></menuchoice>.</para>
+	<para>Prawym przyciskiem myszy nacisnąć na notatnik i wybrać opcję <menuchoice><guimenuitem>Otwórz szablon notatki</guimenuitem></menuchoice>.</para>
 	</listitem>
 	<listitem>
-	<para>Zostanie otwarta nowa notatka, która będzie służyła jako szablon. Dowolny wpisany w nią tekst zostanie automatycznie dołączony do każdej notatki utworzonej dla wybranego notatnika. Po utworzeniu szablonu należy utworzyć nową notatkę klikając prawym przyciskiem myszy na notatniku i wybrać opcję <menuchoice><guimenuitem>Nowa notatka</guimenuitem></menuchoice>.</para>
+	<para>Zostanie otwarta nowa notatka, która będzie służyła jako szablon. Dowolny wprowadzony w niej tekst zostanie automatycznie dołączony do każdej notatki utworzonej dla wybranego notatnika. Po utworzeniu szablonu należy utworzyć nową notatkę naciskając prawym przyciskiem myszy na notatniku i wybrać opcję <menuchoice><guimenuitem>Nowa notatka</guimenuitem></menuchoice>.</para>
 	</listitem>
 	</orderedlist>
 
@@ -834,12 +807,10 @@ and add-ins to extend Tomboy's capabilities.
 	<para>Aby usunąć notatnik przy pomocy myszy, należy:</para>
 	<orderedlist>
 	<listitem> 
-	<para>Open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X,
-	or click on Search from an open note.</para>
+	<para>Po naciśnięciu na ikonę programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X wybrać opcję <menuchoice><guimenuitem>Szukaj w notatkach</guimenuitem></menuchoice> lub uruchomić ją naciskając na przycisk Wyszukiwanie w oknie notatki.</para>
 	</listitem>
 	<listitem>
-	<para>Kliknąć prawym przyciskiem myszy na wybranym notatniku i wybrać opcję <menuchoice><guimenuitem>Usuń notatnik</guimenuitem></menuchoice>.</para>
+	<para>Nacisnąć prawym przyciskiem myszy na wybranym notatniku i wybrać opcję <menuchoice><guimenuitem>Usuń notatnik</guimenuitem></menuchoice>.</para>
 	</listitem>
 	</orderedlist>
 		  	      <figure id="notebook-delete">
@@ -852,10 +823,7 @@ and add-ins to extend Tomboy's capabilities.
         </mediaobject>
       </figure> 
 	
-	<para>To delete a Notebook from the <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	menu, open <menuchoice><guimenuitem>Search All Notes</guimenuitem></menuchoice>
-	 by choosing it from the Tomboy icon on the GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X.
-	</para>
+	<para>Aby usunąć notatnik z menu <menuchoice><guimenuitem>Szukaj w notatkach</guimenuitem></menuchoice> należy je otworzyć wybierając odpowiednią opcję naciskając na ikonę programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X.</para>
 	<orderedlist>
 	<listitem>
 	<para>Lewym przyciskiem myszy zaznaczyć notatnik przeznaczony do usunięcia.</para>
@@ -903,29 +871,13 @@ and add-ins to extend Tomboy's capabilities.
     <sect3 id="sync-configure-ssh">
       <title>Konfiguracja serwera synchronizacji notatek (SSH)</title>
         
-      <para>In order to synchronize your notes with an SSH server, you will need
-      the sshfs FUSE file system installed.  Follow the documentation for your operating
-      system to set up FUSE for your user.  You will also need an SSH key for your
-      SSH server account, which should be added to a running SSH daemon.  This can be
-      done using the GNOME <application>Seahorse</application> application, which is also 
-	  known as <application>Passwords and Encryption Keys</application>.</para>
+      <para>Aby możliwa była synchronizacja notatek z serwerem SSH, w systemie powinien być zainstalowany system plików sshfs FUSE. Aby go skonfigurować należy postępować zgodnie ze wskazówkami zawartymi w dokumentacji posiadanego systemu operacyjnego. Potrzebny jest również klucz SSH do konta na serwerze SSH, który powinien zostać dodany do uruchomionej usługi SSH. Można to wykonać korzystając z programu <application>Seahorse</application> środowiska GNOME, który dostępny jest także w menu jako <application>Hasła i klucze szyfrujące</application>.</para>
 	  
-	  <para>It is recommended to use a third computer or server as the remote computer
-	  to store the syncronized notes that are to be synced between multiple computers.</para>
+	  <para>Zaleca się używanie innego komputera lub serwera jako zdalnego komputera do przechowywania synchronizowanych notatek które mają być synchronizowane między wieloma komputerami.</para>
 	  
-	  <para>Open <application>Passwords and Encryption Keys</application> by choosing 
-	  <menuchoice><guimenu>Applications</guimenu><guimenu>Accessories</guimenu>
-	  <guimenu>Passwords and Encryption Keys</guimenu></menuchoice>.  Click on your key, 
-	  and from the menu choose <menuchoice><guimenu>Remote</guimenu>
-	  <guimenu>Configure Key for Secure Shell...</guimenu></menuchoice>  and enter the domain name or IP address
-	  of the computer you want to sync to in <guimenu>Computer Name</guimenu>.  Enter the username 
-	  of the remote computer in <guimenu>Computer Name:</guimenu> and click <guimenu>Set Up</guimenu>.
-	  When prompted, enter the password, and setting up your key will be completed.</para>
+	  <para>Należy otworzyć <application>Hasła i klucze szyfrujące</application>, który znajduje się w <menuchoice><guimenu>Programy</guimenu><guimenu>Akcesoria</guimenu><guimenu>Hasła i klucze szyfrujące</guimenu></menuchoice>, a następnie nacisnąć na swój klucz i z menu wybrać opcję <menuchoice><guimenu>Zdalne</guimenu><guimenu>Konfiguruj klucz dla SSH...</guimenu></menuchoice> i wprowadzić nazwę domeny lub adres IP komputera z którym chcemy zsynchronizować w pole <guimenu>Nazwa komputera</guimenu>. Następnie należy wprowadzić nazwę użytkownika zdalnego komputera w polu <guimenu>Login:</guimenu> i nacisnąć przycisk <guimenu>Przygotuj</guimenu>. Po pojawienia się okna z prośbą o podanie hasła należy je wprowadzić i w ten sposób ustawienie klucza zostanie zakończone.</para>
       
-      <para>In <application>Tomboy</application>, choose <guimenuitem>SSH</guimenuitem> from the <guilabel>Service</guilabel>
-      drop-down list. Fill in the connection information for your server, and then select the
-      <guibutton>Save</guibutton> button.  The <guimenuitem>Folder Path</guimenuitem>, while optional, 
-	  should point at an empty folder. You are now ready to synchronize your notes.</para>
+      <para>Z rozwijalnej listy <guilabel>Usługa</guilabel> należy wybrać opcję <guimenuitem>SSH</guimenuitem>, a następnie uzupełnić informację o szczegółach połączenia z serwerem i nacisnąć przycisk <guibutton>Zapisz</guibutton>. <guimenuitem>Ścieżka do katalogu</guimenuitem>, który jest polem opcjonalnym, powinien wskazywać na pusty katalog. Program jest gotowy do synchronizacji notatek.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">
@@ -955,7 +907,7 @@ and add-ins to extend Tomboy's capabilities.
   <sect1>
     <title>Ustawienia</title>
 
-    <para>Ustawienia programu Tomboy dostępne są po kliknięciu prawym przyciskiem myszy na ikonie programu i wybraniu z menu opcji <menuchoice><guimenuitem>Ustawienia</guimenuitem></menuchoice>. Pojawi się okno podobne do przedstawionego na rysunku: <xref linkend="pref-editing"/>. Dostępne są dwie kategorie ustawień <guilabel>Edytowanie</guilabel> i <guilabel>Klawisze skrótów</guilabel>. Ustawienia każdej karty zostaną omówione poniżej.</para>
+    <para>Ustawienia programu Tomboy dostępne są po naciśnięciu prawym przyciskiem myszy na ikonie programu i wybraniu z menu opcji <menuchoice><guimenuitem>Ustawienia</guimenuitem></menuchoice>. Pojawi się okno podobne do przedstawionego na rysunku: <xref linkend="pref-editing"/>. Dostępne są dwie kategorie ustawień <guilabel>Edytowanie</guilabel> i <guilabel>Klawisze skrótów</guilabel>. Ustawienia każdej karty zostaną omówione poniżej.</para>
 
     <sect2>
       <title>Edytowanie</title>
@@ -967,20 +919,19 @@ and add-ins to extend Tomboy's capabilities.
           <term>Sprawdzanie pisowni podczas pisania</term>
 
           <listitem>
-            <para>Zaznaczenie tej opcji spowoduje, że niepoprawnie napisane wyrazy zostaną podkreślone na czerwono, a po kliknięciu na nie prawym przyciskiem myszy pojawi się menu z podpowiedziami właściwej pisowni. Opcję tę można zaznaczyć myszką lub naciskając kombinację klawiszy <keycombo><keycap>Alt</keycap><keycap>S</keycap></keycombo>.</para>
+            <para>Zaznaczenie tej opcji spowoduje, że niepoprawnie napisane wyrazy zostaną podkreślone na czerwono, a po naciśnięciu na nie prawym przyciskiem myszy pojawi się menu z podpowiedziami właściwej pisowni. Opcję tę można zaznaczyć myszką lub naciskając kombinację klawiszy <keycombo><keycap>Alt</keycap><keycap>S</keycap></keycombo>.</para>
 
             <note>
-              <para>The spellcheck option is only available if you have the
-              <application>GtkSpell</application> package installed.</para>
+              <para>Opcja sprawdzania pisowni jest dostępna tylko wtedy, gdy w systemie jest zainstalowany pakiet <application>GtkSpell</application>.</para>
             </note>
           </listitem>
         </varlistentry>
 
         <varlistentry>
-          <term>Wyróżnanie WikiSłów</term>
+          <term>Podświetl słowa Wiki</term>
 
           <listitem>
-            <para>Zaznaczenie tej opcji powoduje tworzenie odnośników ze słów, które <literal>WyglądająTakJakTe</literal>. Kliknięcie odnośnika otworzy nową notatkę o takim tytule. Opcję tę można zaznaczyć myszką lub naciskając kombinację klawiszy <keycombo><keycap>Alt</keycap><keycap>W</keycap></keycombo>.</para>
+            <para>Zaznaczenie tej opcji powoduje tworzenie odnośników ze słów, które <literal>WyglądająTakJakTe</literal>. Kliknięcie na linku otworzy nową notatkę o takim tytule. Opcję tę można zaznaczyć myszką lub naciskając kombinację klawiszy <keycombo><keycap>Alt</keycap><keycap>W</keycap></keycombo>.</para>
           </listitem>
         </varlistentry>
 
@@ -1122,7 +1073,7 @@ and add-ins to extend Tomboy's capabilities.
         <listitem>
           <para>Pozwala na przeciąganie adresów URL Bugzilli bezpośrednio z przeglądarki do notatki w programie Tomboy. Adres wyświetlany jest jako odnośnik, którego nazwą jest numer błędu w Bugzilli. Obok wyświetli się ikona błędu. Po kliknięciu w odnośnik w przeglądarce otworzy się strona błędu.</para>
           
-          <para>Można zmienić wygląd wyświetlanych ikon przez zmianę ustawień dodatków w <link linkend="prefs-plugins">Oknie ustawień</link>. Po zaznaczeniu dodatku Bugzilla Links należy kliknąć przycisk <guibutton>Preferencje</guibutton>. Zostanie otwarte okno ustawień. Po naciśnięciu przycisku <guibutton>Dodaj</guibutton> z dysku komputera należy wybrać nową ikonę, nadać jej nazwę hosta (przykładowo bugzilla.gnome.org) i nacisnąć przycisk <guibutton>Otwórz</guibutton>. Wybrana ikona będzie wyświetlana przy każdym kolejnym adresie URL przeciągniętym z wyznaczonego hosta do notatki w programie Tomboy.</para>
+          <para>Można zmienić wygląd wyświetlanych ikon przez zmianę ustawień dodatków w <link linkend="prefs-plugins">Oknie ustawień</link>. Po zaznaczeniu dodatku Bugzilla Links należy nacisnąć przycisk <guibutton>Preferencje</guibutton>. Zostanie otwarte okno ustawień. Po naciśnięciu przycisku <guibutton>Dodaj</guibutton> z dysku komputera należy wybrać nową ikonę, nadać jej nazwę hosta (przykładowo bugzilla.gnome.org) i nacisnąć przycisk <guibutton>Otwórz</guibutton>. Wybrana ikona będzie wyświetlana przy każdym kolejnym adresie URL przeciągniętym z wyznaczonego hosta do notatki w programie Tomboy.</para>
         </listitem>
       </varlistentry>
 
@@ -1140,7 +1091,7 @@ and add-ins to extend Tomboy's capabilities.
         <listitem>
           <para>Jeśli dodatek ten jest zainstalowany, w menu <link linkend="tools">Narzędzia</link> dostępna jest opcja <guimenuitem>Eksportuj do formatu HTML</guimenuitem>.</para>
 
-          <para>Po jej wybraniu pojawi się okno umożliwiające wskazanie miejsca, w którym zapisany zostanie plik <acronym>HTML</acronym> oraz nadanie mu nazwy. Następnie przyciskiem <guibutton>Zapisz</guibutton> zapisuje się plik, bądź przyciskiem <guibutton>Anuluj</guibutton> przerywa całą operację.</para>
+          <para>Po jej wybraniu pojawi się okno umożliwiające wskazanie miejsca, w którym zapisany zostanie plik <acronym>HTML</acronym> oraz nadanie mu nazwy. Następnie przyciskiem <guibutton>Zapisz</guibutton> zapisuje się plik, bądź przyciskiem <guibutton>Anuluj</guibutton> przerywa całe działanie.</para>
 
           <para>Aby wyeksportować również notatki, do których odnośniki znajdują się w eksportowanej notatce należy zaznaczyć opcję <guibutton>Dołącz wszystkie inne powiązane notatki</guibutton>.</para>
         </listitem>
