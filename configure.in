@@ -1,4 +1,4 @@
-AC_INIT(tomboy, 1.0.0)
+AC_INIT(tomboy, 1.0.1)
 AC_CONFIG_SRCDIR(Tomboy/Tomboy.cs)
 AM_INIT_AUTOMAKE([foreign tar-pax])
 AM_MAINTAINER_MODE
@@ -59,6 +59,11 @@ PKG_CHECK_MODULES(LIBTOMBOY,
 		  atk >= $ATK_MINIMUM_VERSION)
 AC_SUBST(LIBTOMBOY_CFLAGS)
 AC_SUBST(LIBTOMBOY_LIBS)
+
+if pkg-config --atleast-version=2.16 gtk+-2.0; then
+	HAS_GTK_2_16=yes
+fi
+AM_CONDITIONAL(HAS_GTK_2_16, test "x$HAS_GTK_2_16" = "xyes")
 
 #
 # Use pkg-config to check for the panel applet server directory if
