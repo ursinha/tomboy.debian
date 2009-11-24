@@ -1,3 +1,16 @@
+tomboy (1.0.1-1) UNRELEASED; urgency=low
+
+  * New upstream release 1.0.1:
+    - Add support for Ubuntu One and others using OAuth 1.0a (Rodrigo Moya)
+    - Always show icons for note items in recent notes menu
+  * debian/patches/02_support_oauth_1.0a.patch: Drop, now upstream
+  * debian/control: Switch to gmime2.4 - Tomboy got support for this at
+    0.15.0. (Closes: #556412) 
+  * debian/control: Bump cli-common-dev version requirement to that which
+    provides the DH7 integration 
+
+ -- Iain Lane <laney@ubuntu.com>  Tue, 24 Nov 2009 14:17:51 +0000
+
 tomboy (1.0.0-2) unstable; urgency=low
 
   [ Iain Lane ]
