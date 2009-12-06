@@ -1,4 +1,4 @@
-tomboy (1.0.1-1) UNRELEASED; urgency=low
+tomboy (1.0.1-1) unstable; urgency=low
 
   * New upstream release 1.0.1:
     - Add support for Ubuntu One and others using OAuth 1.0a (Rodrigo Moya)
