@@ -1,9 +1,9 @@
 tomboy (1.0.1-2) UNRELEASED; urgency=low
 
-  * debian/control: Stop using patched ltmain as a version mismatch with
-    Debian's libtool now causes FTBFS (Closes: #560664)
+  * debian/ltmain-as-needed.sh: Update, as a version mismatch with
+    Debian's libtool caused FTBFS (Closes: #560664)
 
- -- Iain Lane <laney@ubuntu.com>  Wed, 16 Dec 2009 14:23:39 +0000
+ -- Iain Lane <laney@ubuntu.com>  Wed, 16 Dec 2009 16:04:59 +0000
 
 tomboy (1.0.1-1) unstable; urgency=low
 
