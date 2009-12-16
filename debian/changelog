@@ -1,4 +1,4 @@
-tomboy (1.0.1-2) UNRELEASED; urgency=low
+tomboy (1.0.1-2) unstable; urgency=low
 
   * debian/ltmain-as-needed.sh: Update, as a version mismatch with
     Debian's libtool caused FTBFS (Closes: #560664)
