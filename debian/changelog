@@ -1,12 +1,13 @@
 tomboy (1.0.1-3) UNRELEASED; urgency=low
 
+  * The "Won't somebody think of the dep chain" release
   * debian/patches/10_disable_unit_tests.patch: Disable unit tests
     unconditionally as they cause a non-deterministic build depending on
     whether nunit is present or not.
   * debian/control: Remove all build-deps from `mono' source package and
     instead rely on mono-devel (>= 2.4.3) to pull them in. 
 
- -- Iain Lane <laney@ubuntu.com>  Thu, 17 Dec 2009 21:43:20 +0000
+ -- Iain Lane <laney@ubuntu.com>  Thu, 17 Dec 2009 22:25:15 +0000
 
 tomboy (1.0.1-2) unstable; urgency=low
 
