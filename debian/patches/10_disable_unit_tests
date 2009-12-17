@@ -1,0 +1,18 @@
+Index: tomboy.git/configure.in
+===================================================================
+--- tomboy.git.orig/configure.in	2009-12-17 21:45:00.368882798 +0000
++++ tomboy.git/configure.in	2009-12-17 21:52:28.138882748 +0000
+@@ -266,10 +266,10 @@
+ #
+ # NUnit required for (optional) unit tests
+ #
+-PKG_CHECK_MODULES(NUNIT, mono-nunit, HAVE_NUNIT="yes", HAVE_NUNIT="no")
++#PKG_CHECK_MODULES(NUNIT, mono-nunit, HAVE_NUNIT="yes", HAVE_NUNIT="no")
+ AM_CONDITIONAL(HAVE_NUNIT, test "$HAVE_NUNIT" = "yes")
+-AC_SUBST(NUNIT_LIBS)
+-AC_PATH_PROG(NUNIT, nunit-console)
++#AC_SUBST(NUNIT_LIBS)
++#AC_PATH_PROG(NUNIT, nunit-console)
+ 
+ #
+ # Check for X11 libraries
