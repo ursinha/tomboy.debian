@@ -1,3 +1,8 @@
+Description: Remove unnecessary Requires: from gtk-sharp in tomboy-addins pcfile
+Forwarded: not-needed
+Origin: vendor
+Author: Iain Lane <laney@ubuntu.com>
+
 Index: tomboy.git/data/tomboy-addins.pc.in
 ===================================================================
 --- tomboy.git.orig/data/tomboy-addins.pc.in	2010-01-09 14:21:26.260959442 +0000

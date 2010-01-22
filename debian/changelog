@@ -1,4 +1,4 @@
-tomboy (1.0.1-4) lucid; urgency=low
+tomboy (1.0.1-4) UNRELEASED; urgency=low
 
   * debian/patches/20_remove_pcfile_requires: Remove requires from
     tomboy-addins.pc.in. These are not needed for linkage. (Closes: #564372)
