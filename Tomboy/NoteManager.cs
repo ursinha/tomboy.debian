@@ -2,6 +2,8 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Threading;
+
 using Mono.Unix;
 
 namespace Tomboy
@@ -20,16 +22,6 @@ namespace Tomboy
 
 		static string start_note_uri = String.Empty;
 
-		static NoteManager ()
-		{
-			// Watch the START_NOTE_URI setting and update it so that the
-			// StartNoteUri property doesn't generate a call to
-			// Preferences.Get () each time it's accessed.
-			start_note_uri =
-			        Preferences.Get (Preferences.START_NOTE_URI) as string;
-			Preferences.SettingChanged += OnSettingChanged;
-		}
-
 		static void OnSettingChanged (object sender, NotifyEventArgs args)
 		{
 			switch (args.Key) {
@@ -39,8 +31,8 @@ namespace Tomboy
 			}
 		}
 
-public NoteManager (string directory) :
-		this (directory, Path.Combine (directory, "Backup"))
+		public NoteManager (string directory) :
+			this (directory, Path.Combine (directory, "Backup"))
 		{
 		}
 
@@ -50,6 +42,50 @@ public NoteManager (string directory) :
 
 			notes_dir = directory;
 			backup_dir = backup_directory;
+		}
+
+		public bool Initialized {
+			get; private set;
+		}
+
+		// TODO: Decide if/how to enforce
+		public bool ReadOnly {
+			get; set;
+		}
+
+		/// <summary>
+		/// Use Gtk.Application.Invoke to invoke the Action delegate
+		/// once this NoteManager is initialized. If this NoteManager
+		/// is already initialized, Gtk.Application.Invoke is *not*
+		/// used (for performance reasons).  In other words, this method
+		/// should only be called from the GTK+ main thread.
+		/// </summary>
+		public void GtkInvoke (Action a)
+		{
+			if (!Initialized)
+				new Thread (() => {
+					while (!Initialized)
+						;
+					Gtk.Application.Invoke ((o, e) => a ());
+				}).Start ();
+			else
+				a ();
+		}
+
+		public void Invoke (Action a)
+		{
+			if (!Initialized)
+				new Thread (() => {
+					while (!Initialized)
+						;
+					a ();
+				}).Start ();
+			else
+				a ();
+		}
+
+		public void Initialize ()
+		{
 			notes = new List<Note> ();
 
 			string conf_dir = Services.NativeApplication.ConfigurationDirectory;
@@ -160,6 +196,7 @@ Ciao!");
 			}
 
 			Tomboy.ExitingEvent += OnExitingEvent;
+			Initialized = true;
 		}
 		
 		
@@ -207,6 +244,12 @@ Ciao!");
 			if (NoteSaved != null)
 				NoteSaved (note);
 			this.notes.Sort (new CompareDates ());
+		}
+
+		void OnBufferChanged (Note note)
+		{
+			if (NoteBufferChanged != null)
+				NoteBufferChanged (note);
 		}
 
 		protected virtual void CreateStartNotes ()
@@ -280,6 +323,7 @@ Ciao!");
 					if (note != null) {
 						note.Renamed += OnNoteRename;
 						note.Saved += OnNoteSave;
+						note.BufferChanged += OnBufferChanged;
 						notes.Add (note);
 					}
 				} catch (System.Xml.XmlException e) {
@@ -510,6 +554,7 @@ Ciao!");
 			new_note.XmlContent = xml_content;
 			new_note.Renamed += OnNoteRename;
 			new_note.Saved += OnNoteSave;
+			new_note.BufferChanged += OnBufferChanged;
 
 			notes.Add (new_note);
 
@@ -600,6 +645,15 @@ Ciao!");
 		public static string StartNoteUri
 		{
 			get {
+				if (String.IsNullOrEmpty (start_note_uri)) {
+					// Watch the START_NOTE_URI setting and update it so that the
+					// StartNoteUri property doesn't generate a call to
+					// Preferences.Get () each time it's accessed.
+					start_note_uri =
+					        Preferences.Get (Preferences.START_NOTE_URI) as string;
+					Preferences.SettingChanged -= OnSettingChanged;
+					Preferences.SettingChanged += OnSettingChanged;
+				}
 				return start_note_uri;
 			}
 		}
@@ -639,6 +693,7 @@ Ciao!");
 		public event NotesChangedHandler NoteAdded;
 		public event NoteRenameHandler NoteRenamed;
 		public event NoteSavedHandler NoteSaved;
+		public event Action<Note> NoteBufferChanged;
 	}
 
 	public class TrieController

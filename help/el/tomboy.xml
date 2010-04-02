@@ -873,15 +873,11 @@
         
       <para>Για να συγχρονίσετε τις σημειώσεις σας με έναν εξυπηρετητή SSH, θα χρειαστεί να έχετε εγκατεστημένο το σύστημα αρχείων sshfs FUSE. Ακολουθήστε τις οδηγίες του λειτουργικού σας συστήματος για να εγκαταστήσετε το FUSE στο λογαριασμό σας. Επιπλέον θα χρειαστείτε ένα κλειδί SSH για το λογαριασμό σας στον εξυπηρετητή SSH, το οποίο θα πρέπει να προστεθεί σε έναν ενεργό δαίμονα SSH. Αυτό μπορεί να γίνει χρησιμοποιώντας την εφαρμογή <application>Seahorse</application> του GNOME, γνωστή και ως <application>Κωδικοί και κλειδιά κρυπτογράφησης</application>.</para>
 	  
-	  <para>It is recommended to use a third computer or server as the remote computer
-	  to store the syncronized notes that are to be synced between multiple computers.</para>
+	  <para>Συνίσταται η χρήση ενός τρίτου υπολογιστή ή ενός εξυπηρετητή ως τον απομακρυσμένο υπολογιστή στον οποίο θα αποθηκεύονται οι σημειώσεις που θα συγχρονίζονται μεταξύ υπολογιστών.</para>
 	  
 	  <para>Ανοίξτε το <application>Κωδικοί και κλειδιά κρυπτογράφησης</application> επιλέγοντας <menuchoice><guimenu>Εφαρμογές</guimenu><guimenu>Βοηθήματα</guimenu><guimenu>Κωδικοί και κλειδιά κρυπτογράφησης</guimenu></menuchoice>. Επιλέξτε το κλειδί σας, και από το μενού επιλέξτε <menuchoice><guimenu>Απομακρυσμένα</guimenu><guimenu>Ρύθμιση κλειδιού για ασφαλές κέλυφος...</guimenu></menuchoice> και εισάγετε το όνομα τομέα ή τη διεύθυνση IP του υπολογιστή με τον οποίο θέλετε να συγχρονιστείτε στο πεδίο <guimenu>Όνομα υπολογιστή</guimenu>. Εισάγετε το όνομα χρήστη του απομακρυσμένου υπολογιστή στο <guimenu>Όνομα υπολογιστή:</guimenu> και πατήστε <guimenu>Ρύθμιση</guimenu>. Όταν σας ζητηθεί, εισάγετε τον κωδικό και θα ολοκληρωθεί η ρύθμιση του κλειδιού σας.</para>
       
-      <para>In <application>Tomboy</application>, choose <guimenuitem>SSH</guimenuitem> from the <guilabel>Service</guilabel>
-      drop-down list. Fill in the connection information for your server, and then select the
-      <guibutton>Save</guibutton> button.  The <guimenuitem>Folder Path</guimenuitem>, while optional, 
-	  should point at an empty folder. You are now ready to synchronize your notes.</para>
+      <para>Στο <application>Tomboy</application>, επιλέξτε <guimenuitem>SSH</guimenuitem> από την αναδιπλούμενη λίστα <guilabel>Υπηρεσία</guilabel>. Συμπληρώστε τις πληροφορίες σύνδεσης για τον εξυπηρετητή σας και στη συνέχεια κάντε κλικ στο κουμπί <guibutton>Αποθήκευση</guibutton>. Η <guimenuitem>Διαδρομή φακέλου</guimenuitem>, παρότι είναι προαιρετική, πρέπει να δείχνει σε έναν άδειο φάκελο. Είστε πλέον έτοιμος να συγχρονίσετε τις σημειώσεις σας.</para>
     </sect3>
 
     <sect3 id="sync-configure-localfolder">

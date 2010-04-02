@@ -1,4 +1,4 @@
-AC_INIT(tomboy, 1.0.1)
+AC_INIT(tomboy, 1.2.0)
 AC_CONFIG_SRCDIR(Tomboy/Tomboy.cs)
 AM_INIT_AUTOMAKE([foreign tar-pax])
 AM_MAINTAINER_MODE
@@ -65,6 +65,11 @@ if pkg-config --atleast-version=2.16 gtk+-2.0; then
 fi
 AM_CONDITIONAL(HAS_GTK_2_16, test "x$HAS_GTK_2_16" = "xyes")
 
+if pkg-config --atleast-version=2.19.7 gtk+-2.0; then
+	HAS_GTK_2_20=yes
+fi
+AM_CONDITIONAL(HAS_GTK_2_20, test "x$HAS_GTK_2_20" = "xyes")
+
 #
 # Use pkg-config to check for the panel applet server directory if
 # specified by --enable-panelapplet-srvdir-check.
@@ -102,6 +107,18 @@ AC_SUBST(PANELAPPLET_SERVER_DIR)
 #
 PKG_CHECK_MODULES(GTKSPELL, gtkspell-2.0 >= 2.0.9, FIXED_GTKSPELL="yes", FIXED_GTKSPELL="no")
 AM_CONDITIONAL(FIXED_GTKSPELL, test "$FIXED_GTKSPELL" = "yes")
+
+#
+# Check if we should update the mime database
+#
+
+AC_PATH_PROG(UPDATE_MIME_DATABASE, update-mime-database, no)
+
+AC_ARG_ENABLE(update-mimedb,
+   AC_HELP_STRING([--disable-update-mimedb],
+                   [disable the update-mime-database after install [default=no]]),,
+    enable_update_mimedb=yes)
+AM_CONDITIONAL(ENABLE_UPDATE_MIMEDB, (test x$enable_update_mimedb = xyes) && (test x$UPDATE_MIME_DATABASE != xno))
 
 #
 # Check for Mac/Windows/GNOME Support

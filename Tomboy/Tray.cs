@@ -149,7 +149,12 @@ namespace Tomboy
 			tray = new TomboyTray (manager, this);
 			keybinder = new TomboyPrefsKeybinder (manager, this);
 			int panel_size = 22;
-			Pixbuf = GuiUtils.GetIcon ("tomboy", panel_size);
+			// Load Icon to display in the notification area.
+			// First we try the "tomboy-panel" icon. This icon can be replaced
+			// by the user's icon theme. If the theme does not have this icon
+			// then we fall back to the Tomboy Menu icon named "tomboy".
+			Pixbuf = GuiUtils.GetIcon ("tomboy-panel", panel_size) ??
+				GuiUtils.GetIcon ("tomboy", panel_size);
 
 			Tooltip = TomboyTrayUtils.GetToolTipText ();
 
@@ -185,14 +190,14 @@ namespace Tomboy
 			if (context_menu != null)
 				context_menu.Hide ();
 
-			TomboyTrayUtils.UpdateTomboyTrayMenu (tray, null);
-			if (select_first_item)
-				tray.TomboyTrayMenu.SelectFirst (false);
+			tray.NoteManager.GtkInvoke (() => {
+				TomboyTrayUtils.UpdateTomboyTrayMenu (tray, null);
+				if (select_first_item)
+					tray.TomboyTrayMenu.SelectFirst (false);
 
-			
-				
-			GuiUtils.PopupMenu (tray.TomboyTrayMenu, null, 
-				new Gtk.MenuPositionFunc (GetTrayMenuPosition));
+				GuiUtils.PopupMenu (tray.TomboyTrayMenu, null,
+					new Gtk.MenuPositionFunc (GetTrayMenuPosition));
+			});
 		}
 		
 		public void GetTrayMenuPosition (Gtk.Menu menu,

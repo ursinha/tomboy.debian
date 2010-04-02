@@ -59,6 +59,7 @@ namespace Tomboy
 
 			if (menu_verbs == null) {
 				menu_verbs = new BonoboUIVerb [] {
+					new BonoboUIVerb ("Sync", SyncVerb),
 					new BonoboUIVerb ("Props", ShowPreferencesVerb),
 					new BonoboUIVerb ("Help", ShowHelpVerb),
 					new BonoboUIVerb ("About", ShowAboutVerb)
@@ -84,6 +85,11 @@ namespace Tomboy
 
 				SetupMenu (xml, verbs);
 			}
+		}
+
+		void SyncVerb ()
+		{
+			Tomboy.ActionManager ["NoteSynchronizationAction"].Activate ();
 		}
 
 		void ShowPreferencesVerb ()
@@ -156,7 +162,13 @@ namespace Tomboy
 			// Load a 16x16-sized icon to ensure we don't end up with a
 			// 1x1 pixel.
 			panel_size = 16;
-			this.image = new Gtk.Image (GuiUtils.GetIcon ("tomboy", panel_size));
+			// Load Icon to display in the panel.
+			// First we try the "tomboy-panel" icon. This icon can be replaced
+			// by the user's icon theme. If the theme does not have this icon
+			// then we fall back to the Tomboy Menu icon named "tomboy".
+			var icon = GuiUtils.GetIcon ("tomboy-panel", panel_size) ??
+				GuiUtils.GetIcon ("tomboy", panel_size);
+			this.image = new Gtk.Image (icon);
 
 			this.CanFocus = true;
 			this.ButtonPressEvent += ButtonPress;
@@ -182,19 +194,24 @@ namespace Tomboy
 
 		void ButtonPress (object sender, Gtk.ButtonPressEventArgs args)
 		{
+
 			Gtk.Widget parent = (Gtk.Widget) sender;
 
 			switch (args.Event.Button) {
 			case 1:
-				TomboyTrayUtils.UpdateTomboyTrayMenu (tray, parent);
-				GuiUtils.PopupMenu (tray.TomboyTrayMenu, args.Event);
+				manager.GtkInvoke (() => {
+					TomboyTrayUtils.UpdateTomboyTrayMenu (tray, parent);
+					GuiUtils.PopupMenu (tray.TomboyTrayMenu, args.Event);
+				});
 				args.RetVal = true;
 				break;
 			case 2:
 				if ((bool) Preferences.Get (Preferences.ENABLE_ICON_PASTE)) {
 					// Give some visual feedback
 					Gtk.Drag.Highlight (this);
-					args.RetVal = PastePrimaryClipboard ();
+					manager.GtkInvoke (() => {
+						args.RetVal = PastePrimaryClipboard ();
+					});
 					Gtk.Drag.Unhighlight (this);
 				}
 				break;
@@ -270,11 +287,13 @@ namespace Tomboy
 
 		public void ShowMenu (bool select_first_item)
 		{
-			TomboyTrayUtils.UpdateTomboyTrayMenu (tray, this);
-			if (select_first_item)
-				tray.TomboyTrayMenu.SelectFirst (false);
+			manager.GtkInvoke (() => {
+				TomboyTrayUtils.UpdateTomboyTrayMenu (tray, this);
+				if (select_first_item)
+					tray.TomboyTrayMenu.SelectFirst (false);
 
-			GuiUtils.PopupMenu (tray.TomboyTrayMenu, null);
+				GuiUtils.PopupMenu (tray.TomboyTrayMenu, null);
+			});
 		}
 
 		// Support dropping text/uri-lists and _NETSCAPE_URLs currently.
@@ -323,13 +342,15 @@ namespace Tomboy
 				more_than_one = true;
 			}
 
-			Note link_note = manager.FindByUri (NoteManager.StartNoteUri);
-			if (link_note != null) {
-				link_note.Window.Present ();
-				PrependTimestampedText (link_note,
-				                        DateTime.Now,
-				                        insert_text.ToString ());
-			}
+			manager.GtkInvoke (() => {
+				Note link_note = manager.FindByUri (NoteManager.StartNoteUri);
+				if (link_note != null) {
+					link_note.Window.Present ();
+					PrependTimestampedText (link_note,
+					                        DateTime.Now,
+					                        insert_text.ToString ());
+				}
+			});
 		}
 
 		void InitPixbuf ()
