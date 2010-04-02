@@ -206,6 +206,7 @@ SED = @SED@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
+UPDATE_MIME_DATABASE = @UPDATE_MIME_DATABASE@
 USE_NLS = @USE_NLS@
 VERSION = @VERSION@
 XGETTEXT = @XGETTEXT@
@@ -268,6 +269,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
+@HAS_GTK_2_20_TRUE@EXTRA_FLAGS = -DHAS_GTK_2_20
 INCLUDES = \
 	-I$(top_srcdir)			\
 	-DG_LOG_DOMAIN=\"libtomboy\"	\
@@ -275,7 +277,8 @@ INCLUDES = \
 	-DGTK_DISABLE_DEPRECATED 	\
 	-DGDK_DISABLE_DEPRECATED 	\
 	-DG_DISABLE_DEPRECATED		\
-	$(LIBTOMBOY_CFLAGS)
+	$(LIBTOMBOY_CFLAGS)		\
+	$(EXTRA_FLAGS)
 
 tomboylibdir = $(pkglibdir)
 tomboylib_LTLIBRARIES = libtomboy.la

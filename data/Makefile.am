@@ -54,6 +54,8 @@ $(server_in_files): $(server_in_files:.server.in=.server.in.in) Makefile
 
 man_MANS = tomboy.1
 
+mimedir = $(datadir)/mime/packages
+mime_DATA = tomboy.xml
 
 noinst_DATA = 			\
 	GNOME_TomboyApplet.xml
@@ -67,7 +69,10 @@ EXTRA_DIST = 					\
 	$(noinst_DATA)				\
 	GNOME_TomboyApplet.server.in.in		\
 	$(dbusservice_in_files)				\
-	UIManagerLayout.xml
+	tomboy-note-clipboard-html.xsl		\
+	UIManagerLayout.xml		\
+	tomboy.xml
+
 
 DISTCLEANFILES = 				\
 	$(desktop_files)       			\
@@ -76,3 +81,14 @@ DISTCLEANFILES = 				\
 	$(server_in_files) 			\
 	$(server_DATA)				\
 	$(dbusservice_DATA)
+
+install-data-hook:
+if ENABLE_UPDATE_MIMEDB
+	$(UPDATE_MIME_DATABASE) "$(DESTDIR)$(datadir)/mime"
+endif
+
+uninstall-hook:
+if ENABLE_UPDATE_MIMEDB
+	$(UPDATE_MIME_DATABASE) "$(DESTDIR)$(datadir)/mime"
+endif
+

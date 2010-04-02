@@ -30,6 +30,7 @@ OSX_LIBS =					\
 endif
 
 WIN_CSFILES =					\
+	$(srcdir)/JumpListManager.cs		\
 	$(srcdir)/ManagedWinapi.EventDispatchingNativeWindow.cs	\
 	$(srcdir)/ManagedWinapi.Hotkey.cs	\
 	$(srcdir)/WindowsApplication.cs		\
@@ -106,6 +107,7 @@ CSFILES = 					\
 	$(srcdir)/NoteManager.cs 		\
 	$(srcdir)/NoteWindow.cs 		\
 	$(srcdir)/NoteBuffer.cs 		\
+	$(srcdir)/NoteRenameDialog.cs 		\
 	$(srcdir)/NoteTag.cs 			\
 	$(srcdir)/PlatformFactory.cs		\
 	$(srcdir)/Preferences.cs		\
@@ -154,6 +156,7 @@ ASSEMBLIES = 		\
 RESOURCES = 										\
 	-resource:$(top_srcdir)/data/GNOME_TomboyApplet.xml,GNOME_TomboyApplet.xml	\
 	-resource:$(top_srcdir)/data/UIManagerLayout.xml	\
+	-resource:$(top_srcdir)/data/tomboy-note-clipboard-html.xsl,tomboy-note-clipboard-html.xsl	\
 	-resource:$(top_srcdir)/data/icons/hicolor_apps_48x48_tomboy.png,tomboy.png			\
 	-resource:$(top_srcdir)/data/icons/hicolor_places_22x22_note.png,note.png		\
 	-resource:$(top_srcdir)/data/icons/hicolor_actions_16x16_note-new.png,note-new.png		\
