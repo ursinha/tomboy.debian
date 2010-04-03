@@ -22,6 +22,7 @@ autoreconf-stamp:
 override_dh_auto_configure: autoreconf-stamp
 	dh_auto_configure -- \
 		--disable-scrollkeeper \
+		--disable-update-mimedb \
 		LDFLAGS="$(LDFLAGS)" \
 		GMCS=/usr/bin/mono-csc
 

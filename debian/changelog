@@ -1,3 +1,42 @@
+tomboy (1.2.0-1) UNRELEASED; urgency=low
+
+  * New upstream release 1.2.0
+    + Handle new application/x-note mimetype
+    + Add a text/path-list target when drag-and-dropping from Search window,
+      allowing basic note transfer via Empathy
+    + Allow icon themes to customize the panel/tray icon separately
+    + Fix errors when using GTK+ >= 2.19.7
+  * New upstream release 1.1.4
+   + Autosync improvements:
+     - Enable the preference in the UI
+     - Try to only sync when idle (to avoid interrupting your writing)
+     - Do not attempt to sync when the server is unavailable
+     - Fix focus/cursor issues that were occurring after autosync
+  * New upstream realease 1.1.2
+   + Experimental automatic background synchronization support
+   + Allow user to decide if links are updated when renaming a note
+   + Fix crashers related to new Jump List feature
+  * New upstream release 1.1.1
+   + Copy rich text from notes to apps like Evolution and OpenOffice.org Writer.
+     Feature requires gtk-sharp 2.12.10
+   + Rearrange Tomboy startup so icon appears within 0.5-1.0 seconds
+   + Prevent crash when entering empty notebook name 
+  * New upstream release 1.1.0
+   + Add support for Ubuntu One and others using OAuth 1.0a
+   + Add CreateNamedNoteWithUri method to dbus interface
+   + Add dbus methods for working with notebooks
+   + Always show icons for note items in recent notes menu
+   + Add Sync menu item to panel applet
+   + Stop cutting off message text in the Sync dialog
+  * debian/rules: Pass --disable-update-mimdb to configure as it doesn't make
+    sense to update the mimedb in a buildd build.
+  * debian/control: Increase Standards-Version to 3.8.4, no changes required
+  * debian/source/format: Specify 1.0 explicitly (hello there Lintian, old
+    friend)
+
+
+ -- Iain Lane <laney@ubuntu.com>  Fri, 02 Apr 2010 23:31:19 +0100
+
 tomboy (1.0.1-4) unstable; urgency=low
 
   * debian/patches/20_remove_pcfile_requires: Remove requires from
