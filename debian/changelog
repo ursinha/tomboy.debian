@@ -1,4 +1,4 @@
-tomboy (1.2.0-1) UNRELEASED; urgency=low
+tomboy (1.2.0-1) unstable; urgency=low
 
   * New upstream release 1.2.0
     + Handle new application/x-note mimetype
