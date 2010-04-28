@@ -1,5 +1,8 @@
 tomboy (1.2.1-1) UNRELEASED; urgency=low
 
+  * New upstream release 1.2.1:
+    + Fix bullet list indentation when printing (Closes: #551059)
+    + Add timestamp to logger messages, useful for watching autosync output, etc
   * debian/watch: Remove unnecessary "debian"
 
  -- Iain Lane <laney@ubuntu.com>  Wed, 28 Apr 2010 11:56:27 +0100
