@@ -983,7 +983,7 @@ msgstr "Nota adhesiva: "
 
 #: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:62
 msgid "Tasque"
-msgstr "Tarefa"
+msgstr "Tasque"
 
 #. Note to translators: "All" here must match up with the "All"
 #. category translation in Tasque for this to work properly.  "All"
@@ -1419,66 +1419,6 @@ msgstr "Nota nova {0}"
 #: ../Tomboy/NoteManager.cs:518 ../Tomboy/NoteManager.cs:611
 msgid "Describe your new note here."
 msgstr "Describa aquí a súa nova nota."
-
-#: ../Tomboy/NoteRenameDialog.cs:50
-msgid "Rename Note Links?"
-msgstr "Desexa renomear as ligazóns a notas?"
-
-#: ../Tomboy/NoteRenameDialog.cs:56
-msgid "_Rename Links"
-msgstr "_Renomear as ligazóns"
-
-#: ../Tomboy/NoteRenameDialog.cs:59
-msgid "_Don't Rename Links"
-msgstr "_Non renomear as ligazóns"
-
-#: ../Tomboy/NoteRenameDialog.cs:67
-#, csharp-format
-msgid ""
-"Rename links in other notes from \"<span underline=\"single\">{0}</span>\" "
-"to \"<span underline=\"single\">{1}</span>\"?\n"
-"\n"
-"If you do not rename the links, they will no longer link to anything."
-msgstr ""
-"Renomear as ligzóns en outras novas desde \"<span underline=\"single\">{0}</"
-"span>\" a \"<span underline=\"single\">{1}</span>\"?\n"
-"\n"
-"Se non quere renomear as ligazóns non apuntarán a nada."
-
-#: ../Tomboy/NoteRenameDialog.cs:81
-msgid "Rename Links"
-msgstr "Renomear ligazóns"
-
-#: ../Tomboy/NoteRenameDialog.cs:93
-#: ../Tomboy/Synchronization/SyncDialog.cs:119
-msgid "Note Title"
-msgstr "Título da nota"
-
-#. Translators: This button causes all notes in the list to be selected
-#: ../Tomboy/NoteRenameDialog.cs:116
-msgid "Select All"
-msgstr "Seleccionar todas"
-
-#. Translators: This button causes all notes in the list to be unselected
-#: ../Tomboy/NoteRenameDialog.cs:125
-msgid "Select None"
-msgstr "Deseleccionar todas"
-
-#: ../Tomboy/NoteRenameDialog.cs:142
-msgid "Ad_vanced"
-msgstr "_Avanzado"
-
-#: ../Tomboy/NoteRenameDialog.cs:145
-msgid "Always show this _window"
-msgstr "Mostrar sempre esta _xanela"
-
-#: ../Tomboy/NoteRenameDialog.cs:153
-msgid "Never rename _links"
-msgstr "Non renomear as _ligazóns nunca"
-
-#: ../Tomboy/NoteRenameDialog.cs:161
-msgid "Alwa_ys rename links"
-msgstr "Renomear as ligazóns _sempre"
 
 #: ../Tomboy/NoteRenameDialog.cs:50
 msgid "Rename Note Links?"

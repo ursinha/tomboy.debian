@@ -2360,4 +2360,3 @@ msgstr ""
 "Abyste příště zamezili tomuto varování, bylo by vhodné spouštět FUSE při "
 "startu systému. Přidejte řádek „modprobe fuse“ do souboru /etc/init.d/boot."
 "local nebo „fuse“ do /etc/modules."
-
