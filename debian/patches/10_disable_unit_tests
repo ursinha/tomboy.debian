@@ -1,8 +1,11 @@
+Description: Enabling the unit tests causes a binary dep on ndesk-dbus to be created. Patch them out.
+Forwarded: not-needed
+Author: Iain Lane <laney@ubuntu.com>
 Index: tomboy.git/configure.in
 ===================================================================
---- tomboy.git.orig/configure.in	2010-04-02 23:29:04.379138367 +0100
-+++ tomboy.git/configure.in	2010-04-02 23:29:26.719138968 +0100
-@@ -283,10 +283,10 @@
+--- tomboy.git.orig/configure.in	2010-07-04 15:03:35.208602782 +0100
++++ tomboy.git/configure.in	2010-07-04 15:28:43.618602487 +0100
+@@ -272,10 +272,10 @@
  #
  # NUnit required for (optional) unit tests
  #
