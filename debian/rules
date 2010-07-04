@@ -11,15 +11,13 @@ DEB_SOURCE_NAME = $(shell dpkg-parsechangelog -l$(DEBIAN_DIR)/changelog | grep ^
 DEB_VERSION = $(shell dpkg-parsechangelog -l$(DEBIAN_DIR)/changelog | grep ^Version | cut -d" " -f2)   
 VERSION = $(shell echo $(DEB_VERSION) | cut -d"-" -f1 | sed 's/+dfsg.*//')
 
-autoreconf: autoreconf-stamp
-autoreconf-stamp:
+override_dh_autoreconf:
 	cp /usr/share/gnome-doc-utils/gnome-doc-utils.make $(CURDIR)
-	autoreconf -f -i -s
+	dh_autoreconf
 	# replace ltmain.sh with our patched one that supports --as-needed
 	install --mode=755 $(CURDIR)/debian/ltmain-as-needed.sh $(CURDIR)/ltmain.sh
-	touch $@
 
-override_dh_auto_configure: autoreconf-stamp
+override_dh_auto_configure:
 	dh_auto_configure -- \
 		--disable-scrollkeeper \
 		--disable-update-mimedb \
@@ -38,11 +36,6 @@ override_dh_auto_install:
 	# create pot file for Ubuntu - doesn't affect built debs for Debian
 	cd po; intltool-update --pot
 
-override_dh_clean:
-	dh_clean
-	rm -rf autoreconf-stamp configure config.sub config.guess ltmain.sh gnome-doc-utils.make aclocal.m4 autom4te.cache/ po/*.pot
-	find . -name "Makefile.in" -delete
-
 # disable tests
 override_dh_auto_test:
 
@@ -57,6 +50,6 @@ get-orig-source:
 		--rename
 
 %:
-	dh --with=quilt $@
+	dh --with=quilt,autoreconf $@
 
 .PHONY: autoreconf get-orig-source

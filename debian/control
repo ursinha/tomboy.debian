@@ -5,8 +5,7 @@ Maintainer: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.
 Uploaders: Sebastian Dröge <slomo@debian.org>, Iain Lane <laney@ubuntu.com>
 Build-Depends: debhelper (>= 7.0.50),
                quilt (>= 0.46-7~),
-               autotools-dev,
-               libtool,
+               dh-autoreconf,
                intltool,
                pngquant,
                mono-devel (>= 2.4.3),
