@@ -304,12 +304,12 @@ pkgconfig_DATA = $(pkgconfig_in_files:.pc.in=.pc)
 schemasdir = $(GCONF_SCHEMA_FILE_DIR)
 schemas_in_files = tomboy.schemas.in
 schemas_DATA = $(schemas_in_files:.schemas.in=.schemas)
-@ENABLE_DBUS_TRUE@dbusservicedir = $(DBUS_SERVICE_DIR)
-@ENABLE_DBUS_TRUE@dbusservice_in_files = org.gnome.Tomboy.service.in
-@ENABLE_DBUS_TRUE@dbusservice_DATA = $(dbusservice_in_files:.service.in=.service)
-serverdir = $(PANELAPPLET_SERVER_DIR)
-server_in_files = GNOME_TomboyApplet.server.in
-server_DATA = $(server_in_files:.server.in=.server)
+dbusservicedir = $(DBUS_SERVICE_DIR)
+dbusservice_in_files = org.gnome.Tomboy.service.in
+dbusservice_DATA = $(dbusservice_in_files:.service.in=.service)
+@ENABLE_PANEL_APPLET_TRUE@serverdir = $(PANELAPPLET_SERVER_DIR)
+@ENABLE_PANEL_APPLET_TRUE@server_in_files = GNOME_TomboyApplet.server.in
+@ENABLE_PANEL_APPLET_TRUE@server_DATA = $(server_in_files:.server.in=.server)
 man_MANS = tomboy.1
 mimedir = $(datadir)/mime/packages
 mime_DATA = tomboy.xml
@@ -885,15 +885,15 @@ uninstall-man: uninstall-man1
 @GCONF_SCHEMAS_INSTALL_TRUE@	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
 @GCONF_SCHEMAS_INSTALL_TRUE@	$(GCONFTOOL) --makefile-install-rule $(schemas_DATA)
 
-@ENABLE_DBUS_TRUE@$(dbusservice_DATA): $(dbusservice_in_files) Makefile
-@ENABLE_DBUS_TRUE@	sed -e "s|\@bindir\@|$(bindir)|g"	\
-@ENABLE_DBUS_TRUE@	    -e "s|\@wrapper\@|tomboy|g"		\
-@ENABLE_DBUS_TRUE@	    < $< > $@
-
-$(server_in_files): $(server_in_files:.server.in=.server.in.in) Makefile
+$(dbusservice_DATA): $(dbusservice_in_files) Makefile
 	sed -e "s|\@bindir\@|$(bindir)|g"	\
-	    -e "s|\@wrapper\@|tomboy-panel|g"		\
+	    -e "s|\@wrapper\@|tomboy|g"		\
 	    < $< > $@
+
+@ENABLE_PANEL_APPLET_TRUE@$(server_in_files): $(server_in_files:.server.in=.server.in.in) Makefile
+@ENABLE_PANEL_APPLET_TRUE@	sed -e "s|\@bindir\@|$(bindir)|g"	\
+@ENABLE_PANEL_APPLET_TRUE@	    -e "s|\@wrapper\@|tomboy-panel|g"		\
+@ENABLE_PANEL_APPLET_TRUE@	    < $< > $@
 
 @INTLTOOL_SERVER_RULE@
 
