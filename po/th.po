@@ -1,18 +1,19 @@
 # Thai translation of Tomboy.
-# Copyright (C) 2006-2009 Free Software Foundation, Inc.
+# Copyright (C) 2006-2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the Tomboy package.
 # Isriya Paireepairit <markpeak@gmail.com>, 2006.
 # Roys Hengwatanakul <roysheng@msn.com>, 2006.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2009.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2010.
 # aka.ape <aka.ape@gmail.com>, 2007.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Tomboy VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-08 12:19+0700\n"
-"PO-Revision-Date: 2009-07-08 12:35+0700\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=tomboy&component=general\n"
+"POT-Creation-Date: 2010-04-01 06:41+0000\n"
+"PO-Revision-Date: 2010-04-08 12:07+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -33,21 +34,26 @@ msgid "Tomboy Applet Factory"
 msgstr "โรงงานแอพเพล็ต Tomboy"
 
 #: ../data/GNOME_TomboyApplet.server.in.in.h:4 ../data/tomboy.desktop.in.h:3
-#: ../Tomboy/Tray.cs:534
+#: ../Tomboy/Tray.cs:573
 msgid "Tomboy Notes"
 msgstr "บันทึกของ Tomboy"
 
-#: ../data/GNOME_TomboyApplet.xml.h:1 ../Tomboy/ActionManager.cs:164
+#: ../data/GNOME_TomboyApplet.xml.h:1 ../Tomboy/ActionManager.cs:179
+#: ../Tomboy/Tray.cs:268
+msgid "S_ynchronize Notes"
+msgstr "ป_รับข้อมูลบันทึก"
+
+#: ../data/GNOME_TomboyApplet.xml.h:2 ../Tomboy/ActionManager.cs:164
 msgid "_About"
 msgstr "เ_กี่ยวกับ"
 
-#: ../data/GNOME_TomboyApplet.xml.h:2 ../Tomboy/ActionManager.cs:157
-#: ../Tomboy/Tray.cs:248
+#: ../data/GNOME_TomboyApplet.xml.h:3 ../Tomboy/ActionManager.cs:157
+#: ../Tomboy/Tray.cs:282
 msgid "_Help"
 msgstr "_วิธีใช้"
 
-#: ../data/GNOME_TomboyApplet.xml.h:3 ../Tomboy/ActionManager.cs:153
-#: ../Tomboy/Tray.cs:243
+#: ../data/GNOME_TomboyApplet.xml.h:4 ../Tomboy/ActionManager.cs:153
+#: ../Tomboy/Tray.cs:277
 msgid "_Preferences"
 msgstr "_ปรับแต่ง"
 
@@ -64,68 +70,72 @@ msgid "Accept SSL Certificates"
 msgstr "ยอมรับใบรับรอง SSL"
 
 #: ../data/tomboy.schemas.in.h:2
+msgid "Automatic Background Synchronization Timeout"
+msgstr "กำหนดเวลาการปรับข้อมูลให้ตรงกันหลังฉากโดยอัตโนมัติ"
+
+#: ../data/tomboy.schemas.in.h:3
 msgid "Create a new Note"
 msgstr "สร้างบันทึกใหม่"
 
-#: ../data/tomboy.schemas.in.h:3
+#: ../data/tomboy.schemas.in.h:4
 msgid "Custom Font Face"
 msgstr "แบบอักษรกำหนดเอง"
 
-#: ../data/tomboy.schemas.in.h:4
+#: ../data/tomboy.schemas.in.h:5
 msgid "Determines X coordinate of Search window; stored on Tomboy exit."
 msgstr "กำหนดตำแหน่ง X ของหน้าต่างค้นหา ซึ่งจะบันทึกไว้เมื่อ Tomboy จบการทำงาน"
 
-#: ../data/tomboy.schemas.in.h:5
+#: ../data/tomboy.schemas.in.h:6
 msgid "Determines Y coordinate of Search window; stored on Tomboy exit."
 msgstr "กำหนดตำแหน่ง Y ของหน้าต่างค้นหา ซึ่งจะบันทึกไว้เมื่อ Tomboy จบการทำงาน"
 
-#: ../data/tomboy.schemas.in.h:6
+#: ../data/tomboy.schemas.in.h:7
 msgid "Determines pixel height of Search window; stored on Tomboy exit."
 msgstr "กำหนดความสูงเป็นพิกเซลของหน้าต่างค้นหา ซึ่งจะบันทึกไว้เมื่อ Tomboy จบการทำงาน"
 
-#: ../data/tomboy.schemas.in.h:7
+#: ../data/tomboy.schemas.in.h:8
 msgid "Determines pixel width of Search window; stored on Tomboy exit."
 msgstr "กำหนดความกว้างเป็นพิกเซลของหน้าต่างค้นหา ซึ่งจะบันทึกไว้เมื่อ Tomboy จบการทำงาน"
 
-#: ../data/tomboy.schemas.in.h:8
+#: ../data/tomboy.schemas.in.h:9
 msgid "Enable Auto bulleted lists."
 msgstr "เปิดใช้รายการย่อยแบบอัตโนมัติ"
 
-#: ../data/tomboy.schemas.in.h:9
+#: ../data/tomboy.schemas.in.h:10
 msgid "Enable Middle-Click Paste On Icon."
 msgstr "เปิดใช้การแปะด้วยเมาส์ปุ่มกลางบนไอคอน"
 
-#: ../data/tomboy.schemas.in.h:10
+#: ../data/tomboy.schemas.in.h:11
 msgid "Enable WikiWord highlighting"
 msgstr "เปิดใช้การเน้นข้อความ WikiWord"
 
-#: ../data/tomboy.schemas.in.h:11
+#: ../data/tomboy.schemas.in.h:12
 msgid "Enable closing notes with escape."
 msgstr "เปิดใช้การปิดบันทึกด้วยปุ่ม escape"
 
-#: ../data/tomboy.schemas.in.h:12
+#: ../data/tomboy.schemas.in.h:13
 msgid "Enable custom font"
 msgstr "เปิดใช้งานแบบอักษรที่กำหนดเอง"
 
-#: ../data/tomboy.schemas.in.h:13
+#: ../data/tomboy.schemas.in.h:14
 msgid "Enable global keybindings"
 msgstr "เปิดใช้งานปุ่มลัดที่ใช้ทั่วทั้งเดสก์ท็อป"
 
-#: ../data/tomboy.schemas.in.h:14
+#: ../data/tomboy.schemas.in.h:15
 msgid "Enable spellchecking"
 msgstr "เปิดใช้งานการตรวจตัวสะกด"
 
-#: ../data/tomboy.schemas.in.h:15
+#: ../data/tomboy.schemas.in.h:16
 msgid "Enable startup notes"
 msgstr "เปิดใช้งานการเปิดบันทึกเมื่อเริ่มทำงาน"
 
-#: ../data/tomboy.schemas.in.h:16
+#: ../data/tomboy.schemas.in.h:17
 msgid ""
 "Enable this option if you want bulleted lists to be automatic when you place "
 "- or * at the beginning of a line."
 msgstr "เปิดใช้ตัวเลือกนี้ถ้าต้องการใช้รายการย่อยแบบอัตโนมัติเมื่อมี - หรือ * ที่ต้นบรรทัด"
 
-#: ../data/tomboy.schemas.in.h:17
+#: ../data/tomboy.schemas.in.h:18
 msgid ""
 "Enable this option if you want to be able to middle-click the Tomboy icon to "
 "paste timestamped content into the Start Here note."
@@ -133,7 +143,7 @@ msgstr ""
 "เปิดใช้ตัวเลือกนี้ถ้าต้องการให้สามารถใช้เมาส์ปุ่มกลางคลิกที่ไอคอนของ Tomboy "
 "เพื่อแปะเนื้อหาที่ลงบันทึกเวลาปัจจุบันในบันทึก \"เริ่มที่นี่\""
 
-#: ../data/tomboy.schemas.in.h:18
+#: ../data/tomboy.schemas.in.h:19
 msgid ""
 "Enable this option to highlight words ThatLookLikeThis. Clicking the word "
 "will create a note with that name."
@@ -141,46 +151,46 @@ msgstr ""
 "เปิดใช้งานตัวเลือกนี้ถ้าต้องการเน้นคำที่อยู่ในรูป WordCapital "
 "และการคลิกที่คำดังกล่าวจะสร้างบันทึกชื่อในชื่อนั้น"
 
-#: ../data/tomboy.schemas.in.h:19
+#: ../data/tomboy.schemas.in.h:20
 msgid "FUSE Mounting Timeout (ms)"
 msgstr "เวลาคอยสำหรับการเมานท์ FUSE (ms)"
 
-#: ../data/tomboy.schemas.in.h:20
+#: ../data/tomboy.schemas.in.h:21
 msgid "HTML Export All Linked Notes"
 msgstr "HTML ส่งออกบันทึกที่เชื่อมโยงทั้งหมด"
 
-#: ../data/tomboy.schemas.in.h:21
+#: ../data/tomboy.schemas.in.h:22
 msgid "HTML Export Last Directory"
 msgstr "ไดเรกทอรีที่ส่งออก HTML ครั้งล่าสุด"
 
-#: ../data/tomboy.schemas.in.h:22
+#: ../data/tomboy.schemas.in.h:23
 msgid "HTML Export Linked Notes"
 msgstr "HTML ส่งออกบันทึกที่เชื่อมโยง"
 
-#: ../data/tomboy.schemas.in.h:23
+#: ../data/tomboy.schemas.in.h:24
 msgid ""
 "If enable_custom_font is true, the font name set here will be used as the "
 "font when displaying notes."
 msgstr "ถ้า enable_custom_font เป็นจริง แบบอักษรที่ตั้งไว้นี้จะถูกใช้แบบอักษรสำหรับแสดงบันทึก"
 
-#: ../data/tomboy.schemas.in.h:24
+#: ../data/tomboy.schemas.in.h:25
 msgid ""
 "If enabled, all notes that were open when Tomboy quit will automatically be "
 "reopened at startup."
 msgstr ""
 "ถ้าเปิดใช้ บันทึกทั้งหมดที่เปิดไว้ขณะที่ออกจาก Tomboy ครั้งล่าสุด จะถูกเปิดอีกครั้งเมื่อเริ่มทำงาน"
 
-#: ../data/tomboy.schemas.in.h:25
+#: ../data/tomboy.schemas.in.h:26
 msgid "If enabled, an opened note can be closed by hitting the escape key."
 msgstr "ถ้าเปิดใช้ จะสามารถปิดบันทึกที่เปิดอยู่โดยกดปุ่ม escape ได้"
 
-#: ../data/tomboy.schemas.in.h:26
+#: ../data/tomboy.schemas.in.h:27
 msgid ""
 "If true, misspellings will be underlined in red, and correct spelling "
 "suggestions shown in the right-click menu."
 msgstr "ถ้าเป็นจริง คำที่สะกดผิดจะถูกขีดเส้นใต้สีแดง และแนะนำคำที่สะกดถูกในเมนูคลิกขวา"
 
-#: ../data/tomboy.schemas.in.h:27
+#: ../data/tomboy.schemas.in.h:28
 msgid ""
 "If true, the desktop-global keybindings set in /apps/tomboy/"
 "global_keybindings will be enabled, allowing for useful Tomboy actions to be "
@@ -189,7 +199,7 @@ msgstr ""
 "ถ้าเป็นจริง ชุดปุ่มลัดเพื่อใช้ทั่วทั้งเดสก์ท็อปที่กำหนดใน /apps/tomboy/global_keybindings "
 "จะเปิดใช้งาน  ทำให้สามารถเรียกใช้งาน Tomboy จากโปรแกรมอื่นๆ ได้"
 
-#: ../data/tomboy.schemas.in.h:28
+#: ../data/tomboy.schemas.in.h:29
 msgid ""
 "If true, the font name set in custom_font_face will be used as the font when "
 "displaying notes. Otherwise the desktop default font will be used."
@@ -197,7 +207,7 @@ msgstr ""
 "ถ้าเป็นจริง ชื่อแบบอักษรใน custom_font_face จะถูกใช้เป็นแบบอักษรเมื่อแสดงบันทึก มิฉะนั้น "
 "จะใช้แบบอักษรปริยายของเดสก์ท็อป"
 
-#: ../data/tomboy.schemas.in.h:29
+#: ../data/tomboy.schemas.in.h:30
 msgid ""
 "Indicates that the Sticky Note Importer plugin has not been run, so it "
 "should run automatically the next time Tomboy starts."
@@ -205,13 +215,23 @@ msgstr ""
 "ระบุว่าปลั๊กอินนำเข้าบันทึกจากโน้ตติดกาวยังไม่เคยถูกเรียกมาก่อน จึงควรเรียกโดยอัตโนมัติในการใช้ "
 "Tomboy ครั้งต่อไป"
 
-#: ../data/tomboy.schemas.in.h:30
+#: ../data/tomboy.schemas.in.h:31
 msgid ""
 "Integer determining the minimum number of notes to show in the Tomboy note "
 "menu."
 msgstr "เลขจำนวนเต็มระบุจำนวนบันทึกอย่างต่ำที่จะแสดงในเมนูบันทึกของ Tomboy"
 
-#: ../data/tomboy.schemas.in.h:31
+#: ../data/tomboy.schemas.in.h:32
+msgid ""
+"Integer value indicating how frequently to perform a background sync of your "
+"notes (when sync is configured). Any value less than 1 indicates that "
+"autosync is disabled. The lowest acceptable positive value is 5. Value is in "
+"minutes."
+msgstr ""
+"ค่าจำนวนเต็มระบุความถี่ของการปรับข้อมูลบันทึกให้ตรงกันหลังฉาก (ถ้ามีการกำหนดให้ปรับข้อมูล) "
+"ค่าที่น้อยกว่า 1 จะหมายถึงการปิดการปรับข้อมูลอัตโนมัติ ค่าบวกต่ำสุดที่ยอมรับได้คือ 5 ค่านี้มีหน่วยเป็นนาที"
+
+#: ../data/tomboy.schemas.in.h:33
 msgid ""
 "Integer value indicating if there is a preference to always perform a "
 "specific behavior when a conflict is detected, instead of prompting the "
@@ -223,105 +243,135 @@ msgstr ""
 "แทนที่จะถามผู้ใช้หรือไม่ ค่านี้จะมีความหมายตรงกับรายการค่าคงที่ที่กำหนดไว้เป็นการภายใน ค่า 0 "
 "หมายถึงการถามผู้ใช้เมื่อมีข้อขัดแย้ง เพื่อให้สามารถจัดการข้อขัดแย้งเป็นกรณีๆ ไป"
 
-#: ../data/tomboy.schemas.in.h:32
+#: ../data/tomboy.schemas.in.h:34
+msgid ""
+"Integer value indicating if there is a preference to always perform a "
+"specific link updating behavior when a note is renamed, instead of prompting "
+"the user. The values map to an internal enumeration. 0 indicates that the "
+"user wishes to be prompted when renaming a note may impact links that exist "
+"in other notes. 1 indicates that links should automatically be removed. 2 "
+"indicates that link text should be updated to the new note name so that it "
+"will continue linking to the renamed note."
+msgstr ""
+"ค่าจำนวนเต็มระบุว่าต้องการเจาะจงพฤติกรรมการปรับข้อมูลลิงก์อย่างใดอย่างหนึ่งเมื่อบันทึกถูกเปลี่ยนชื่อ "
+"แทนที่จะถามผู้ใช้หรือไม่ ค่านี้จะมีความหมายตรงกับรายการค่าคงที่ที่กำหนดไว้เป็นการภายใน ค่า 0 "
+"หมายถึงการถามผู้ใช้เมื่อการเปลี่ยนชื่อบันทึกอาจมีผลต่อลิงก์ที่มีอยู่ในบันทึกอื่น ค่า 1 "
+"หมายถึงการลบลิงก์ที่ถูกกระทบโดยอัตโนมัติ ค่า 2 หมายถึงการปรับข้อความในลิงก์ให้เป็นชื่อใหม่ของบันทึก "
+"เพื่อให้ลิงก์ยังคงเชื่อมโยงไปสู่บันทึกที่เปลี่ยนชื่อไป"
+
+#: ../data/tomboy.schemas.in.h:35
+msgid "Link Updating Behavior on Note Rename"
+msgstr "พฤติกรรมการปรับข้อมูลลิงก์เมื่อเปลี่ยนชื่อบันทึก"
+
+#: ../data/tomboy.schemas.in.h:36
 msgid "List of pinned notes."
 msgstr "รายการบันทึกปักหมุด"
 
-#: ../data/tomboy.schemas.in.h:33
+#: ../data/tomboy.schemas.in.h:37
+msgid ""
+"Maximum characters of note title to show in the Tomboy tray or panel applet "
+"note menu."
+msgstr "จำนวนอักขระสูงสุดของหัวข้อบันทึกที่จะแสดงในเมนูบันทึกในถาดหรือในแอพเพล็ต Tomboy"
+
+#: ../data/tomboy.schemas.in.h:38
+msgid "Maximum note title length to show in tray menu."
+msgstr "ความยาวสูงสุดของหัวข้อบันทึกที่จะแสดงในเมนูของถาด"
+
+#: ../data/tomboy.schemas.in.h:39
 msgid "Minimum number of notes to show in menu"
 msgstr "จำนวนบันทึกอย่างต่ำที่จะแสดงในเมนู"
 
-#: ../data/tomboy.schemas.in.h:34
+#: ../data/tomboy.schemas.in.h:40
 msgid "Note Synchronization Conflict Saved Behavior"
 msgstr "พฤติกรรมที่จดจำไว้สำหรับใช้กับกรณีที่การปรับข้อมูลบันทึกให้ตรงกันเกิดข้อขัดแย้ง"
 
-#: ../data/tomboy.schemas.in.h:35
+#: ../data/tomboy.schemas.in.h:41
 msgid "Open Recent Changes"
 msgstr "เปิดหน้าการเปลี่ยนแปลงล่าสุด"
 
-#: ../data/tomboy.schemas.in.h:36
+#: ../data/tomboy.schemas.in.h:42
 msgid "Open Search Dialog"
 msgstr "เปิดกล่องโต้ตอบค้นหา"
 
-#: ../data/tomboy.schemas.in.h:37
+#: ../data/tomboy.schemas.in.h:43
 msgid "Open Start Here"
 msgstr "เปิดหน้า \"เริ่มที่นี่ \""
 
-#: ../data/tomboy.schemas.in.h:38
+#: ../data/tomboy.schemas.in.h:44
 msgid "Path on SSH server to Tomboy synchronization directory (optional)."
 msgstr "พาธในเซิร์ฟเวอร์ SSH ไปยังไดเรกทอรีที่ Tomboy จะใช้ปรับข้อมูลให้ตรงกัน (มีหรือไม่ก็ได้)"
 
-#: ../data/tomboy.schemas.in.h:39
+#: ../data/tomboy.schemas.in.h:45
 msgid ""
 "Path to the synchronization server when using the filesystem synchronization "
 "service addin."
 msgstr "พาธสำหรับเซิร์ฟเวอร์ปรับข้อมูล เมื่อใช้บริการเสริมการปรับข้อมูลระบบแฟ้ม"
 
-#: ../data/tomboy.schemas.in.h:40
+#: ../data/tomboy.schemas.in.h:46
 msgid "SSHFS Remote Synchronization Folder"
 msgstr "โฟลเดอร์ SSHFS ในเครือข่ายที่จะใช้ปรับข้อมูลให้ตรงกัน"
 
-#: ../data/tomboy.schemas.in.h:41
+#: ../data/tomboy.schemas.in.h:47
 msgid "SSHFS Remote Synchronization User Name"
 msgstr "ชื่อผู้ใช้ SSHFS ในเครือข่ายที่จะใช้ปรับข้อมูลให้ตรงกัน"
 
-#: ../data/tomboy.schemas.in.h:42
+#: ../data/tomboy.schemas.in.h:48
 msgid "SSHFS Synchronization Server Port"
 msgstr "พอร์ตของเซิร์ฟเวอร์ SSHFS ที่จะใช้ปรับข้อมูลให้ตรงกัน"
 
-#: ../data/tomboy.schemas.in.h:43
+#: ../data/tomboy.schemas.in.h:49
 msgid "SSHFS Synchronization Server URL"
 msgstr "URL ของเซิร์ฟเวอร์ SSHFS ที่จะใช้ปรับข้อมูลให้ตรงกัน"
 
-#: ../data/tomboy.schemas.in.h:44
+#: ../data/tomboy.schemas.in.h:50
 msgid "Saved height of Search window"
 msgstr "ความสูงที่บันทึกไว้ของหน้าต่างค้นหา"
 
-#: ../data/tomboy.schemas.in.h:45
+#: ../data/tomboy.schemas.in.h:51
 msgid "Saved horizontal position of Search window"
 msgstr "ตำแหน่งแนวนอนที่บันทึกไว้ของหน้าต่างค้นหา"
 
-#: ../data/tomboy.schemas.in.h:46
+#: ../data/tomboy.schemas.in.h:52
 msgid "Saved vertical position of Search window"
 msgstr "ตำแหน่งแนวตั้งที่บันทึกไว้ของหน้าต่างค้นหา"
 
-#: ../data/tomboy.schemas.in.h:47
+#: ../data/tomboy.schemas.in.h:53
 msgid "Saved width of Search window"
 msgstr "ความกว้างที่บันทึกไว้ของหน้าต่างค้นหา"
 
-#: ../data/tomboy.schemas.in.h:48
+#: ../data/tomboy.schemas.in.h:54
 msgid "Selected Synchronization Service Addin"
 msgstr "บริการเสริมสำหรับปรับข้อมูลให้ตรงกันที่เลือก"
 
-#: ../data/tomboy.schemas.in.h:49
+#: ../data/tomboy.schemas.in.h:55
 msgid "Set to TRUE to activate"
-msgstr "ตั้งค่าจริงเพื่อใช้งาน"
+msgstr "ตั้งเป็นค่าจริงเพื่อเปิดใช้งาน"
 
-#: ../data/tomboy.schemas.in.h:50
+#: ../data/tomboy.schemas.in.h:56
 msgid "Show applet menu"
 msgstr "แสดงเมนูแอพเพล็ต"
 
-#: ../data/tomboy.schemas.in.h:51
+#: ../data/tomboy.schemas.in.h:57
 msgid "Start Here Note"
 msgstr "บันทึก \"เริ่มที่นี่\""
 
-#: ../data/tomboy.schemas.in.h:52
+#: ../data/tomboy.schemas.in.h:58
 msgid "Sticky Note Importer First Run"
 msgstr "เรียกเครื่องมือนำเข้าบันทึกจากโน้ตติดกาวครั้งแรก"
 
-#: ../data/tomboy.schemas.in.h:53
+#: ../data/tomboy.schemas.in.h:59
 msgid "Synchronization Client ID"
 msgstr "ID ลูกข่าย การปรับข้อมูลให้ตรงกัน"
 
-#: ../data/tomboy.schemas.in.h:54
+#: ../data/tomboy.schemas.in.h:60
 msgid "Synchronization Local Server Path"
 msgstr "พาธของเซิร์ฟเวอร์ในเครื่อง ที่ใช้ปรับข้อมูลให้ตรงกัน"
 
-#: ../data/tomboy.schemas.in.h:55
+#: ../data/tomboy.schemas.in.h:61
 msgid "The date format that is used for the timestamp."
 msgstr "รูปแบบวันที่ที่จะใช้ลงบันทึกเวลา"
 
-#: ../data/tomboy.schemas.in.h:56
+#: ../data/tomboy.schemas.in.h:62
 msgid ""
 "The global keybinding for creating and displaying a new Note. The format "
 "looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
@@ -335,7 +385,7 @@ msgstr ""
 "และเข้าใจชื่อย่อ เช่น \"&lt;Ctl&gt;\" และ \"&lt;Ctrl&gt;\"  คุณสามารถตั้งค่าตัวเลือกเป็น "
 "\"disabled\" ได้ ถ้าไม่ต้องการปุ่มลัดสำหรับปฏิบัติการนี้"
 
-#: ../data/tomboy.schemas.in.h:57
+#: ../data/tomboy.schemas.in.h:63
 msgid ""
 "The global keybinding for opening the \"Start Here\" note. The format looks "
 "like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
@@ -349,7 +399,7 @@ msgstr ""
 "และเข้าใจชื่อย่อ เช่น \"&lt;Ctl&gt;\" และ \"&lt;Ctrl&gt;\"  คุณสามารถตั้งค่าตัวเลือกเป็น "
 "\"disabled\" ได้ ถ้าไม่ต้องการปุ่มลัดสำหรับปฏิบัติการนี้"
 
-#: ../data/tomboy.schemas.in.h:58
+#: ../data/tomboy.schemas.in.h:64
 msgid ""
 "The global keybinding for opening the Note Search dialog. The format looks "
 "like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
@@ -363,7 +413,7 @@ msgstr ""
 "และเข้าใจชื่อย่อ เช่น \"&lt;Ctl&gt;\" และ \"&lt;Ctrl&gt;\"  คุณสามารถตั้งค่าตัวเลือกเป็น "
 "\"disabled\" ได้ ถ้าไม่ต้องการปุ่มลัดสำหรับปฏิบัติการนี้"
 
-#: ../data/tomboy.schemas.in.h:59
+#: ../data/tomboy.schemas.in.h:65
 msgid ""
 "The global keybinding for opening the Recent Changes dialog. The format "
 "looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
@@ -378,7 +428,7 @@ msgstr ""
 "\"&lt;Ctrl&gt;\"  คุณสามารถตั้งค่าตัวเลือกเป็น \"disabled\" ได้ "
 "ถ้าไม่ต้องการปุ่มลัดสำหรับปฏิบัติการนี้"
 
-#: ../data/tomboy.schemas.in.h:60
+#: ../data/tomboy.schemas.in.h:66
 msgid ""
 "The global keybinding for showing the Tomboy applet's menu. The format looks "
 "like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
@@ -392,23 +442,23 @@ msgstr ""
 "และเข้าใจชื่อย่อ เช่น \"&lt;Ctl&gt;\" และ \"&lt;Ctrl&gt;\"  คุณสามารถตั้งค่าตัวเลือกเป็น "
 "\"disabled\" ได้ ถ้าไม่ต้องการปุ่มลัดสำหรับปฏิบัติการนี้"
 
-#: ../data/tomboy.schemas.in.h:61
+#: ../data/tomboy.schemas.in.h:67
 msgid "The handler for \"note://\" URLs"
 msgstr "คำสั่งสำหรับจัดการ  \"note://\" URLs"
 
-#: ../data/tomboy.schemas.in.h:62
+#: ../data/tomboy.schemas.in.h:68
 msgid ""
 "The last directory a note was exported to using the Export To HTML plugin."
 msgstr "ไดเรกทอรีล่าสุดที่ส่งออกบันทึกด้วยปลั๊กอิน \"ส่งออกเป็น HTML\""
 
-#: ../data/tomboy.schemas.in.h:63
+#: ../data/tomboy.schemas.in.h:69
 msgid ""
 "The last setting for the 'Export linked notes' checkbox in the Export to "
 "HTML plugin."
 msgstr ""
 "ค่าสุดท้ายที่ตั้งไว้สำหรับกล่องกากบาท 'ส่งออกบันทึกที่เชื่อมโยง' ในปลั๊กอิน \"ส่งออกเป็น HTML\""
 
-#: ../data/tomboy.schemas.in.h:64
+#: ../data/tomboy.schemas.in.h:70
 msgid ""
 "The last setting for the 'Include all other linked notes' checkbox in the "
 "Export to HTML plugin. This setting is used in conjunction with the 'HTML "
@@ -419,7 +469,7 @@ msgstr ""
 "HTML\" ค่านี้ใช้ร่วมกับค่าตั้ง 'HTML ส่งออกบันทึกที่เชื่อมโยง' "
 "โดยใช้ระบุว่าจะรวมโน้ตทั้งหมดที่พบทุกระดับความลึกในหน้า HTML ที่ส่งออกหรือไม่"
 
-#: ../data/tomboy.schemas.in.h:65
+#: ../data/tomboy.schemas.in.h:71
 msgid ""
 "The note URI of the note that should be considered the \"Start Here\" note, "
 "which is always placed at the bottom of the Tomboy note menu and also "
@@ -428,11 +478,15 @@ msgstr ""
 "URI ของบันทึกที่จะถือเป็นบันทึก \"เริ่มที่นี่\" ซึ่งจะวางไว้ที่ท้ายเมนูบันทึกของ Tomboy เสมอ "
 "และสามารถเรียกได้ด้วยปุ่มลัด"
 
-#: ../data/tomboy.schemas.in.h:66
-msgid "The port to use when connecting to the synchronization server via SSH."
-msgstr "พอร์ตที่จะใช้เชื่อมต่อไปยังเซิร์ฟเวอร์สำหรับปรับข้อมูลให้ตรงกันผ่าน SSH"
+#: ../data/tomboy.schemas.in.h:72
+msgid ""
+"The port to use when connecting to the synchronization server via SSH. Set "
+"to -1 or less if default SSH port settings should be used instead."
+msgstr ""
+"พอร์ตที่จะใช้เชื่อมต่อไปยังเซิร์ฟเวอร์สำหรับปรับข้อมูลให้ตรงกันผ่าน SSH  กำหนดเป็นค่า -1 ลงมา "
+"ถ้าต้องการใช้ค่าตั้งพอร์ตปกติของ SSH"
 
-#: ../data/tomboy.schemas.in.h:67
+#: ../data/tomboy.schemas.in.h:73
 msgid ""
 "Time (in milliseconds) Tomboy should wait for a response when using FUSE to "
 "mount a sync share."
@@ -440,37 +494,37 @@ msgstr ""
 "เวลา (เป็นมิลลิวินาที) ที่ Tomboy จะรอการตอบสนอง เมื่อใช้ FUSE "
 "ในการเมานท์แหล่งใช้ร่วมสำหรับการปรับข้อมูลให้ตรงกัน"
 
-#: ../data/tomboy.schemas.in.h:68
+#: ../data/tomboy.schemas.in.h:74
 msgid "Timestamp format"
 msgstr "รูปแบบการลงบันทึกเวลา"
 
-#: ../data/tomboy.schemas.in.h:69
+#: ../data/tomboy.schemas.in.h:75
 msgid "URL of SSH server containing Tomboy synchronization directory."
 msgstr "URL ของเซิร์ฟเวอร์ SSH ที่เก็บไดเรกทอรีสำหรับปรับข้อมูลให้ตรงกันของ Tomboy"
 
-#: ../data/tomboy.schemas.in.h:70
+#: ../data/tomboy.schemas.in.h:76
 msgid ""
 "Unique identifier for the currently configured note synchronization service "
 "addin."
 msgstr "ชื่อเรียกเฉพาะสำหรับบริการเสริมสำหรับปรับข้อมูลบันทึกให้ตรงกันที่ตั้งค่าไว้"
 
-#: ../data/tomboy.schemas.in.h:71
+#: ../data/tomboy.schemas.in.h:77
 msgid ""
 "Unique identifier for this Tomboy client, used when communicating with a "
 "sychronization server."
 msgstr "ชื่อเรียกเฉพาะของลูกข่าย Tomboy นี้ ใช้เมื่อสื่อสารกับเซิร์ฟเวอร์ปรับข้อมูล"
 
-#: ../data/tomboy.schemas.in.h:72
+#: ../data/tomboy.schemas.in.h:78
 msgid ""
 "Use wdfs option \"-ac\" to accept SSL certificates without prompting the "
 "user."
 msgstr "ใช้ตัวเลือก \"-ac\" กับ wdfs เพื่อยอมรับใบรับรอง SSL โดยไม่ต้องถามผู้ใช้"
 
-#: ../data/tomboy.schemas.in.h:73
+#: ../data/tomboy.schemas.in.h:79
 msgid "User name to use when connecting to the synchronization server via SSH."
 msgstr "ชื่อผู้ใช้ที่จะใช้เชื่อมต่อไปยังเซิร์ฟเวอร์สำหรับปรับข้อมูลให้ตรงกันผ่าน SSH"
 
-#: ../data/tomboy.schemas.in.h:74
+#: ../data/tomboy.schemas.in.h:80
 msgid ""
 "Whitespace-separated list of note URIs for notes that should always appear "
 "in the Tomboy note menu."
@@ -512,7 +566,7 @@ msgstr "ปิ_ด"
 msgid "Close this window"
 msgstr "ปิดหน้าต่างนี้"
 
-#: ../Tomboy/ActionManager.cs:146 ../Tomboy/Tray.cs:260
+#: ../Tomboy/ActionManager.cs:146 ../Tomboy/Tray.cs:294
 msgid "_Quit"
 msgstr "_ออก"
 
@@ -524,7 +578,7 @@ msgstr "ออกจาก Tomboy"
 msgid "_Edit"
 msgstr "แ_ก้ไข"
 
-#: ../Tomboy/ActionManager.cs:154 ../Tomboy/PreferencesDialog.cs:62
+#: ../Tomboy/ActionManager.cs:154 ../Tomboy/PreferencesDialog.cs:65
 msgid "Tomboy Preferences"
 msgstr "ปรับแต่ง Tomboy"
 
@@ -556,10 +610,6 @@ msgstr "_ค้นบันทึกทั้งหมด"
 msgid "Open the Search All Notes window"
 msgstr "เปิดหน้าต่าง \"ค้นบันทึกทั้งหมด\""
 
-#: ../Tomboy/ActionManager.cs:179
-msgid "S_ynchronize Notes"
-msgstr "ป_รับข้อมูลบันทึก"
-
 #: ../Tomboy/ActionManager.cs:180
 msgid "Start synchronizing notes"
 msgstr "เริ่มปรับข้อมูลบันทึก"
@@ -572,7 +622,7 @@ msgstr "ใครเชื่อมโยงมาที่นี่บ้าง
 msgid "(none)"
 msgstr "(ไม่มี)"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:32
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:23
 msgid ""
 "You can use any bugzilla just by dragging links into notes.  If you want a "
 "special icon for certain hosts, add them here."
@@ -580,44 +630,44 @@ msgstr ""
 "คุณสามารถใช้ bugzilla ใดก็ตาม ด้วยการลากลิงก์มาที่บันทึก "
 "ถ้าคุณต้องการใช้ไอคอนพิเศษสำหรับแหล่งต่างๆ ก็ให้เพิ่มได้ที่นี่"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:50
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:41
 msgid "Host Name"
 msgstr "ชื่อโฮสต์"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:67
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:58
 msgid "Icon"
 msgstr "ไอคอน"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:185
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:176
 msgid "Select an icon..."
 msgstr "เลือกไอคอน..."
 
 #. Extra Widget
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:200
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:191
 msgid "_Host name:"
 msgstr "_ชื่อโฮสต์:"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:229
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:220
 msgid "No host name specified"
 msgstr "ไม่ได้ระบุชื่อโฮสต์"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:230
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:221
 msgid "You must specify the Bugzilla host name to use with this icon."
 msgstr "คุณต้องระบุชื่อโฮสต์ Bugzilla ที่จะใช้กับไอคอนนี้"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:256
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:247
 msgid "Error saving icon"
 msgstr "เกิดข้อผิดพลาดขณะบันทึกไอคอน"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:257
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:248
 msgid "Could not save the icon file."
 msgstr "ไม่สามารถบันทึกแฟ้มไอคอนได้"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:311
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:302
 msgid "Really remove this icon?"
 msgstr "ยืนยันว่าจะลบไอคอนนี้หรือไม่?"
 
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:312
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:303
 msgid "If you remove an icon it is permanently lost."
 msgstr "ถ้าเลือกลบ ไอคอนจะถูกลบอย่างถาวร"
 
@@ -625,24 +675,24 @@ msgstr "ถ้าเลือกลบ ไอคอนจะถูกลบอ�
 msgid "Export to HTML"
 msgstr "ส่งออกเป็น HTML"
 
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:113
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:114
 #, csharp-format
 msgid "Your note was exported to \"{0}\"."
 msgstr "ส่งออกบันทึกของคุณไปที่ \"{0}\""
 
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:124
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:125
 msgid "Note exported successfully"
 msgstr "ส่งออกบันทึกสำเร็จแล้ว"
 
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:130
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:131
 msgid "Access denied."
 msgstr "ไม่มีสิทธิ์เข้าถึง"
 
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:132
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:133
 msgid "Folder does not exist."
 msgstr "ไม่มีโฟลเดอร์อยู่"
 
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:147
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:148
 #, csharp-format
 msgid "Could not save the file \"{0}\""
 msgstr "ไม่สามารถบันทึกแฟ้ม \"{0}\""
@@ -663,28 +713,24 @@ msgstr "ส่งออกบันทึกที่เชื่อมโยง
 msgid "Cannot open email"
 msgstr "ไม่สามารถเปิดอีเมล"
 
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:91
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:93
 msgid "_Folder Path:"
 msgstr "พาธของโ_ฟลเดอร์:"
 
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:101
-msgid "_Browse..."
-msgstr "_ท่องดู..."
-
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:120
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:100
 msgid "Select Synchronization Folder..."
 msgstr "เลือกโฟลเดอร์ที่จะปรับข้อมูลให้ตรงกัน..."
 
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:148
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:126
 msgid "Folder path field is empty."
 msgstr "ไม่มีข้อมูลในช่องพาธของโฟลเดอร์"
 
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:157
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:135
 msgid ""
 "Specified folder path does not exist, and Tomboy was unable to create it."
 msgstr "ไม่มีโฟลเดอร์ตามพาธที่ระบุ และ Tomboy ไม่สามารถสร้างโฟลเดอร์ได้"
 
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:235
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:213
 msgid "Local Folder"
 msgstr "โฟลเดอร์ในเครื่อง"
 
@@ -708,7 +754,7 @@ msgstr "ลงบันทึกเวลา"
 
 #. initial newline
 #: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:29
-#: ../Tomboy/Applet.cs:210 ../Tomboy/Preferences.cs:133
+#: ../Tomboy/Applet.cs:227 ../Tomboy/Preferences.cs:146
 msgid "dddd, MMMM d, h:mm tt"
 msgstr "dddd d MMMM, H:mm"
 
@@ -739,7 +785,7 @@ msgstr "ddddที่ d MMMM yyyy"
 
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:43
 msgid "Tasks"
-msgstr "งาน"
+msgstr "ภารกิจ"
 
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:44
 msgid "Appointments"
@@ -780,22 +826,22 @@ msgstr "dddd dd/MM/yyyy HH:mm:ss"
 msgid "Add a sketch"
 msgstr "เพิ่มภาพร่าง"
 
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:43
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:49
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:47
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:59
 msgid "Se_rver:"
 msgstr "เซิ_ร์ฟเวอร์:"
 
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:52
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:60
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:51
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:59
 msgid "User_name:"
 msgstr "_ชื่อผู้ใช้:"
 
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:61
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:55
 msgid "_Folder Path (optional):"
 msgstr "พาธของโ_ฟลเดอร์ (ระบุหรือไม่ก็ได้):"
 
 #. Text for label describing setup required for SSH sync addin to work
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:71
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:58
 msgid ""
 "SSH synchronization requires an existing SSH key for this server and user, "
 "added to a running SSH daemon."
@@ -803,15 +849,15 @@ msgstr ""
 "การปรับข้อมูลให้ตรงกันผ่าน SSH จำเป็นต้องอาศัยกุญแจ SSH สำหรับเซิร์ฟเวอร์และผู้ใช้นี้ "
 "โดยต้องเพิ่มกุญแจดังกล่าวเข้าในดีมอน SSH ที่กำลังทำงานอยู่ด้วย"
 
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:95
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:82
 msgid "Server or username field is empty."
 msgstr "ไม่มีข้อมูลในช่องเซิร์ฟเวอร์หรือชื่อผู้ใช้"
 
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:143
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:130
 msgid "SSH (sshfs FUSE)"
 msgstr "SSH (sshfs FUSE)"
 
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:191
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:179
 msgid ""
 "Timeout connecting to server. Please ensure that your SSH key has been added "
 "to a running SSH daemon."
@@ -869,23 +915,23 @@ msgstr "--- Tasque ไม่ได้ทำงานอยู่ ---"
 msgid "_Underline"
 msgstr "ขีดเ_ส้นใต้"
 
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:51
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:55
 msgid "_URL:"
 msgstr "_URL:"
 
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:69
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:64
 msgid "_Password:"
 msgstr "รหัส_ผ่าน:"
 
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:90
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:77
 msgid "URL, username, or password field is empty."
 msgstr "ไม่มีข้อมูลในช่อง URL, ชื่อผู้ใช้, หรือรหัสผ่าน"
 
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:132
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:119
 msgid "WebDAV (wdfs FUSE)"
 msgstr "WebDAV (wdfs FUSE)"
 
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:191
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:178
 msgid ""
 "There was an error connecting to the server.  This may be caused by using an "
 "incorrect user name and/or password."
@@ -897,7 +943,7 @@ msgstr ""
 #. Save configuration into GConf
 #. Preferences.Set ("/apps/tomboy/sync_wdfs_url", url ?? string.Empty);
 #. Preferences.Set ("/apps/tomboy/sync_wdfs_username", username ?? string.Empty);
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:267
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:254
 msgid ""
 "Saving configuration to the GNOME keyring failed with the following message:"
 msgstr "ไม่สามารถบันทึกค่าตั้งในพวงกุญแจ GNOME ได้ โดยมีข้อความดังนี้:"
@@ -906,44 +952,76 @@ msgstr "ไม่สามารถบันทึกค่าตั้งใน
 msgid "Tomboy Web"
 msgstr "เครื่องมือเว็บ Tomboy"
 
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:56
-msgid "_Connect to Server"
-msgstr "เ_ชื่อมต่อไปยังเซิร์ฟเวอร์"
-
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:58
-msgid "Connected"
-msgstr "เชื่อมต่อแล้ว"
-
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:86
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:66
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:96
 msgid "Connect to Server"
 msgstr "เชื่อมต่อไปยังเซิร์ฟเวอร์"
 
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:111
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:68
+msgid "Connected"
+msgstr "เชื่อมต่อแล้ว"
+
+#. Translators: The web service supporting Tomboy WebSync is not responding as expected
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:125
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:156
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:170
 msgid "Server not responding. Try again later."
 msgstr "เซิร์ฟเวอร์ไม่ตอบสนอง กรุณาลองใหม่ภายหลัง"
 
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:118
-msgid "Click Here After Authorizing"
-msgstr "คลิกที่นี่หลังจากยืนยันสิทธิ์ผ่านแล้ว"
-
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:121
-msgid "Set the default browser and try again"
-msgstr "กรุณากำหนดเบราว์เซอร์ปริยายแล้วลองใหม่"
-
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:125
-msgid "Processing..."
-msgstr "กำลังดำเนินการ..."
-
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:136
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:201
 msgid "Authorization Failed, Try Again"
 msgstr "ยืนยันสิทธิ์ไม่สำเร็จ กรุณาลองใหม่"
 
-#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:143
-msgid "Connected. Click Save to start synchronizing"
+#. Translators: Title of web page presented to user after they authorized Tomboy for sync
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:210
+msgid "Tomboy Web Authorization Successful"
+msgstr "Tomboy ยืนยันสิทธิ์ผ่านเว็บสำเร็จแล้ว"
+
+#. Translators: Body of web page presented to user after they authorized Tomboy for sync
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:212
+msgid ""
+"Please return to the Tomboy Preferences window and press Save to start "
+"synchronizing."
+msgstr "กรุณากลับไปที่หน้าต่างปรับแต่งของ Tomboy แล้วกด \"บันทึก\" เพื่อเริ่มปรับข้อมูลให้ตรงกัน"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:221
+msgid "Connected. Press Save to start synchronizing"
 msgstr "เชื่อมต่อแล้ว กรุณากด \"บันทึก\" เพื่อเริ่มปรับข้อมูลให้ตรงกัน"
 
+#. Translators: The user must take action in their web browser to continue the authorization process
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:227
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:239
+msgid "Authorizing in browser (Press to reset connection)"
+msgstr "กำลังขอยืนยันสิทธิ์ผ่านเบราว์เซอร์ (กดปุ่มเพื่อล้างการเชื่อมต่อ)"
+
+#. Translators: Sometimes a user's default browser is not set, so we recommend setting it and trying again
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:235
+msgid "Set the default browser and try again"
+msgstr "กรุณากำหนดเบราว์เซอร์ปริยายแล้วลองใหม่"
+
+#: ../Tomboy/JumpListManager.cs:77 ../Tomboy/RecentChanges.cs:83
+msgid "Search All Notes"
+msgstr "ค้นบันทึกทั้งหมด"
+
+#. IShellLink new_notebook = CreateShellLink("New Notebook", topmboy_path, "--new-notebook",
+#. icons_path, (int)TomboyIcons.NewNotebook);
+#. if (new_notebook != null)
+#. object_collection.AddObject(new_notebook);
+#: ../Tomboy/JumpListManager.cs:87
+msgid "Create New Note"
+msgstr "สร้างบันทึกใหม่"
+
+#: ../Tomboy/JumpListManager.cs:117
+#, csharp-format
+msgid "{0} (new)"
+msgstr "{0} (ใหม่)"
+
+#: ../Tomboy/JumpListManager.cs:139
+msgid "Recent Notes"
+msgstr "บันทึกล่าสุด"
+
 #. Translators: This is the name of "Window" menu in the Mac menubar
-#: ../Tomboy/MacApplication.cs:160
+#: ../Tomboy/MacApplication.cs:215
 msgid "_Window"
 msgstr "ห_น้าต่าง"
 
@@ -1029,7 +1107,7 @@ msgid "Delete the selected notebook"
 msgstr "ลบสมุดบันทึกที่เลือก"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:68
-#: ../Tomboy/RecentChanges.cs:253
+#: ../Tomboy/RecentChanges.cs:259
 msgid "Notebooks"
 msgstr "สมุดบันทึก"
 
@@ -1058,53 +1136,102 @@ msgstr "ไม่มีสมุดบันทึก"
 msgid "New \"{0}\" Note"
 msgstr "บันทึกใหม่สำหรับ \"{0}\""
 
-#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:45
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:46
 msgid "Place this note into a notebook"
 msgstr "ใส่บันทึกนี้เข้าในสมุดบันทึก"
 
-#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:126
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:127
 msgid "Notebook"
 msgstr "สมุดบันทึก"
 
-#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:155
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:156
 msgid "_New notebook..."
 msgstr "_สมุดบันทึกใหม่..."
 
-#: ../Tomboy/Note.cs:1449
+#: ../Tomboy/Note.cs:1578
 msgid "Really delete this note?"
 msgstr "ยืนยันว่าจะลบบันทึกนี้หรือไม่?"
 
-#: ../Tomboy/Note.cs:1452
+#: ../Tomboy/Note.cs:1581
 #, csharp-format
 msgid "Really delete this {0} note?"
 msgid_plural "Really delete these {0} notes?"
 msgstr[0] "ยืนยันว่าจะลบบันทึกทั้ง {0} รายการนี้หรือไม่?"
 
-#: ../Tomboy/Note.cs:1463
+#: ../Tomboy/Note.cs:1592
 msgid "If you delete a note it is permanently lost."
 msgstr "ถ้าเลือกลบ บันทึกจะถูกลบอย่างถาวร"
 
-#: ../Tomboy/Note.cs:1497
+#: ../Tomboy/Note.cs:1620
+#, csharp-format
+msgid ""
+"An error occurred while saving your notes. Please check that you have "
+"sufficient disk space, and that you have appropriate rights on {0}. Error "
+"details can be found in {1}."
+msgstr ""
+"เกิดข้อผิดพลาดขณะบันทึกข้อมูลบันทึกข้อความของคุณ กรุณาตรวจสอบว่าคุณมีเนื้อที่ดิสก์เพียงพอ "
+"และคุณมีสิทธิ์เขียน {0} หรือไม่ คุณสามารถดูรายละเอียดของข้อผิดพลาดได้ใน {1}"
+
+#: ../Tomboy/Note.cs:1636
 msgid "Error saving note data."
 msgstr "เกิดข้อผิดพลาดขณะบันทึกข้อมูลบันทึก"
 
-#: ../Tomboy/Note.cs:1498
-msgid ""
-"An error occurred while saving your notes. Please check that you have "
-"sufficient disk space, and that you have appropriate rights on ~/.tomboy. "
-"Error details can be found in ~/.tomboy.log."
-msgstr ""
-"เกิดข้อผิดพลาดขณะบันทึกข้อมูลบันทึกข้อความของคุณ กรุณาตรวจสอบว่าคุณมีเนื้อที่ดิสก์เพียงพอ "
-"และคุณมีสิทธิ์เขียนที่ ~/.tomboy หรือไม่ คุณสามารถดูรายละเอียดของข้อผิดพลาดได้ใน ~/.tomboy."
-"log"
-
 #. New Note Template
 #. Translators: This is 'New Note' Template, not New 'Note Template'
-#: ../Tomboy/NoteManager.cs:19 ../Tomboy/PreferencesDialog.cs:210
+#: ../Tomboy/NoteManager.cs:21 ../Tomboy/PreferencesDialog.cs:256
 msgid "New Note Template"
 msgstr "แผ่นแบบสำหรับบันทึกใหม่"
 
-#: ../Tomboy/NoteManager.cs:135
+#. Create migration notification note
+#. Translators: The title of the data migration note
+#: ../Tomboy/NoteManager.cs:147
+msgid "Your Notes Have Moved!"
+msgstr "บันทึกของคุณย้ายที่แล้ว!"
+
+#. Translators: The contents (not including the title) of the data migration note. {0}, {1}, {2}, {3}, and {4} are replaced by directory paths and should not be changed
+#: ../Tomboy/NoteManager.cs:160
+#, csharp-format
+msgid ""
+"In the latest version of Tomboy, your note files have moved.  You have "
+"probably never cared where your notes are stored, and if you still don't "
+"care, please go ahead and <bold>delete this note</bold>.  :-)\n"
+"\n"
+"Your old note directory is still safe and sound at <link:url>{0}</link:"
+"url> . If you go back to an older version of Tomboy, it will look for notes "
+"there.\n"
+"\n"
+"But we've copied your notes and configuration info into new directories, "
+"which will be used from now on:\n"
+"\n"
+"<list><list-item dir=\"ltr\">Notes can now be found at <link:url>{1}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">Configuration is at <link:url>{2}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">You can install add-ins at <link:url>{3}</"
+"link:url>\n"
+"</list-item><list-item dir=\"ltr\">Log files can be found at <link:url>{4}</"
+"link:url></list-item></list>\n"
+"\n"
+"Ciao!"
+msgstr ""
+"Tomboy รุ่นล่าสุดได้ย้ายที่เก็บแฟ้มบันทึกของคุณแล้ว คุณอาจไม่เคยสนใจว่าบันทึกของคุณจะเก็บไว้ที่ไหน "
+"และถ้าตอนนี้คุณก็ยังคงไม่สนใจอยู่ดี ก็กรุณาใช้งานต่อไป และ <bold>ลบบันทึกนี้เสีย</bold> :-)\n"
+"\n"
+"ไดเรกทอรีเก็บบันทึกของคุณ ยังคงอยู่ในสภาพสมบูรณ์อยู่ที่ <link:url>{0}</link:url> "
+"ถ้าคุณกลับไปใช้ Tomboy รุ่นเก่า ก็จะหาบันทึกจากที่นั่น\n"
+"\n"
+"แต่เราได้คัดลอกบันทึกและข้อมูลค่าตั้งของคุณมาไว้ที่ไดเรกทอรีใหม่แล้ว ซึ่งจะเริ่มใช้นับจากนี้เป็นต้นไป:\n"
+"\n"
+"<list><list-item dir=\"ltr\">บันทึกจะเก็บไว้ที่ <link:url>{1}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">ค่าตั้งจะอยู่ที่ <link:url>{2}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">คุณสามารถติดตั้งโปรแกรมเสริมได้ที่ <link:url>{3}</"
+"link:url>\n"
+"</list-item><list-item dir=\"ltr\">แฟ้มปูมจะเก็บไว้ที่ <link:url>{4}</link:url></"
+"list-item></list>\n"
+"\n"
+"ยินดีรับใช้!"
+
+#: ../Tomboy/NoteManager.cs:265
 msgid ""
 "<note-content>Start Here\n"
 "\n"
@@ -1139,7 +1266,7 @@ msgstr ""
 "ว่าทุกครั้งที่คุณพิมพ์ <link:internal>การใช้ลิงก์ใน Tomboy</link:internal> "
 "ข้อความดังกล่าวจะถูกขีดเส้นใต้โดยอัตโนมัติ? คลิกที่ลิงก์เพื่อเปิดดูบันทึกดังกล่าวได้</note-content>"
 
-#: ../Tomboy/NoteManager.cs:154
+#: ../Tomboy/NoteManager.cs:284
 msgid ""
 "<note-content>Using Links in Tomboy\n"
 "\n"
@@ -1167,24 +1294,84 @@ msgstr ""
 "content>"
 
 #. Attempt to find an existing Start Here note
-#: ../Tomboy/NoteManager.cs:169 ../Tomboy/NoteManager.cs:237
+#: ../Tomboy/NoteManager.cs:299 ../Tomboy/NoteManager.cs:368
 msgid "Start Here"
 msgstr "เริ่มที่นี่"
 
-#: ../Tomboy/NoteManager.cs:174
+#: ../Tomboy/NoteManager.cs:304
 msgid "Using Links in Tomboy"
 msgstr "การใช้ลิงก์ใน Tomboy"
 
-#: ../Tomboy/NoteManager.cs:314
+#: ../Tomboy/NoteManager.cs:445
 #, csharp-format
 msgid "New Note {0}"
 msgstr "บันทึกใหม่ {0}"
 
 #. Use a simple "Describe..." body and highlight
 #. it so it can be easily overwritten
-#: ../Tomboy/NoteManager.cs:387 ../Tomboy/NoteManager.cs:479
+#: ../Tomboy/NoteManager.cs:518 ../Tomboy/NoteManager.cs:611
 msgid "Describe your new note here."
 msgstr "บรรยายบันทึกใหม่ของคุณที่นี่"
+
+#: ../Tomboy/NoteRenameDialog.cs:50
+msgid "Rename Note Links?"
+msgstr "จะเปลี่ยนชื่อลิงก์ของบันทึกหรือไม่?"
+
+#: ../Tomboy/NoteRenameDialog.cs:56
+msgid "_Rename Links"
+msgstr "เ_ปลี่ยนชื่อลิงก์"
+
+#: ../Tomboy/NoteRenameDialog.cs:59
+msgid "_Don't Rename Links"
+msgstr "ไ_ม่เปลี่ยนชื่อลิงก์"
+
+#: ../Tomboy/NoteRenameDialog.cs:67
+#, csharp-format
+msgid ""
+"Rename links in other notes from \"<span underline=\"single\">{0}</span>\" "
+"to \"<span underline=\"single\">{1}</span>\"?\n"
+"\n"
+"If you do not rename the links, they will no longer link to anything."
+msgstr ""
+"จะเปลี่ยนชื่อลิงก์ในบันทึกอื่นๆ จาก \"<span underline=\"single\">{0}</span>\" "
+"เป็น \"<span underline=\"single\">{1}</span>\" หรือไม่?\n"
+"\n"
+"ถ้าคุณไม่เปลี่ยนชื่อ ลิงก์ดังกล่าวก็จะไม่ได้เชื่อมโยงไปสู่สิ่งใดเลย"
+
+#: ../Tomboy/NoteRenameDialog.cs:81
+msgid "Rename Links"
+msgstr "เปลี่ยนชื่อลิงก์"
+
+#: ../Tomboy/NoteRenameDialog.cs:93
+#: ../Tomboy/Synchronization/SyncDialog.cs:119
+msgid "Note Title"
+msgstr "หัวข้อบันทึก"
+
+#. Translators: This button causes all notes in the list to be selected
+#: ../Tomboy/NoteRenameDialog.cs:116
+msgid "Select All"
+msgstr "เลือกทั้งหมด"
+
+#. Translators: This button causes all notes in the list to be unselected
+#: ../Tomboy/NoteRenameDialog.cs:125
+msgid "Select None"
+msgstr "ไม่เลือกสักบันทึก"
+
+#: ../Tomboy/NoteRenameDialog.cs:142
+msgid "Ad_vanced"
+msgstr "_ขั้นสูง"
+
+#: ../Tomboy/NoteRenameDialog.cs:145
+msgid "Always show this _window"
+msgstr "แสดงห_น้าต่างนี้เสมอ"
+
+#: ../Tomboy/NoteRenameDialog.cs:153
+msgid "Never rename _links"
+msgstr "ไ_ม่ต้องเปลี่ยนชื่อลิงก์เลย"
+
+#: ../Tomboy/NoteRenameDialog.cs:161
+msgid "Alwa_ys rename links"
+msgstr "เ_ปลี่ยนชื่อลิงก์เสมอ"
 
 #: ../Tomboy/NoteWindow.cs:58
 msgid "Find in This Note"
@@ -1242,7 +1429,7 @@ msgstr "ใช้เครื่องมือกับบันทึกนี
 msgid "Delete this note"
 msgstr "ลบบันทึกนี้"
 
-#: ../Tomboy/NoteWindow.cs:500 ../Tomboy/Synchronization/SyncManager.cs:161
+#: ../Tomboy/NoteWindow.cs:500 ../Tomboy/Synchronization/SyncManager.cs:163
 msgid "Synchronize Notes"
 msgstr "ปรับข้อมูลบันทึกให้ตรงกัน"
 
@@ -1298,62 +1485,62 @@ msgstr "ขนาดอักษร"
 msgid "_Normal"
 msgstr "_ปกติ"
 
-#: ../Tomboy/NoteWindow.cs:1317
+#: ../Tomboy/NoteWindow.cs:1327
 msgid "Hu_ge"
 msgstr "ใหญ่_มาก"
 
-#: ../Tomboy/NoteWindow.cs:1325
+#: ../Tomboy/NoteWindow.cs:1335
 msgid "_Large"
 msgstr "ใ_หญ่"
 
-#: ../Tomboy/NoteWindow.cs:1333
+#: ../Tomboy/NoteWindow.cs:1343
 msgid "S_mall"
 msgstr "เ_ล็ก"
 
-#: ../Tomboy/NoteWindow.cs:1342
+#: ../Tomboy/NoteWindow.cs:1352
 msgid "Increase Font Size"
 msgstr "เพิ่มขนาดตัวอักษร"
 
-#: ../Tomboy/NoteWindow.cs:1350
+#: ../Tomboy/NoteWindow.cs:1370
 msgid "Decrease Font Size"
 msgstr "ลดขนาดตัวอักษร"
 
-#: ../Tomboy/NoteWindow.cs:1360
+#: ../Tomboy/NoteWindow.cs:1390
 msgid "Bullets"
 msgstr "รายการ"
 
-#: ../Tomboy/PreferencesDialog.cs:80
+#: ../Tomboy/PreferencesDialog.cs:81
 msgid "Editing"
 msgstr "แก้ไข"
 
-#: ../Tomboy/PreferencesDialog.cs:83
+#: ../Tomboy/PreferencesDialog.cs:84
 msgid "Hotkeys"
 msgstr "ปุ่มลัด"
 
-#: ../Tomboy/PreferencesDialog.cs:85
+#: ../Tomboy/PreferencesDialog.cs:86
 msgid "Synchronization"
 msgstr "การปรับข้อมูลให้ตรงกัน"
 
-#: ../Tomboy/PreferencesDialog.cs:87
+#: ../Tomboy/PreferencesDialog.cs:88
 msgid "Add-ins"
 msgstr "โปรแกรมเสริม"
 
-#: ../Tomboy/PreferencesDialog.cs:146
+#: ../Tomboy/PreferencesDialog.cs:173
 msgid "_Spell check while typing"
 msgstr "ตรวจตัว_สะกดขณะพิมพ์"
 
-#: ../Tomboy/PreferencesDialog.cs:155
+#: ../Tomboy/PreferencesDialog.cs:182
 msgid ""
 "Misspellings will be underlined in red, with correct spelling suggestions "
 "shown in the context menu."
 msgstr "คำที่สะกดผิดจะถูกขีดเส้นใต้สีแดง พร้อมคำแนะนำตัวสะกดในเมนูคลิกขวา"
 
 #. WikiWords...
-#: ../Tomboy/PreferencesDialog.cs:166
+#: ../Tomboy/PreferencesDialog.cs:193
 msgid "Highlight _WikiWords"
 msgstr "เ_น้น WikiWords"
 
-#: ../Tomboy/PreferencesDialog.cs:174
+#: ../Tomboy/PreferencesDialog.cs:201
 msgid ""
 "Enable this option to highlight words <b>ThatLookLikeThis</b>. Clicking the "
 "word will create a note with that name."
@@ -1362,31 +1549,46 @@ msgstr ""
 "และการคลิกที่คำดังกล่าวจะสร้างบันทึกชื่อในชื่อนั้น"
 
 #. Auto bulleted list
-#: ../Tomboy/PreferencesDialog.cs:181
+#: ../Tomboy/PreferencesDialog.cs:208
 msgid "Enable auto-_bulleted lists"
 msgstr "เปิดใช้_รายการย่อยแบบอัตโนมัติ"
 
-#. Custom font...
-#: ../Tomboy/PreferencesDialog.cs:190
+#: ../Tomboy/PreferencesDialog.cs:217
 msgid "Use custom _font"
 msgstr "ใช้แ_บบอักษรที่กำหนด"
 
-#: ../Tomboy/PreferencesDialog.cs:214
+#: ../Tomboy/PreferencesDialog.cs:235
+msgid "When renaming a linked note: "
+msgstr "เมื่อเปลี่ยนชื่อบันทึกที่ถูกลิงก์อยู่:"
+
+#: ../Tomboy/PreferencesDialog.cs:238
+msgid "Ask me what to do"
+msgstr "ถามก่อนว่าจะให้ทำอย่างไร"
+
+#: ../Tomboy/PreferencesDialog.cs:239
+msgid "Never rename links"
+msgstr "ไม่ต้องเปลี่ยนชื่อลิงก์เลย"
+
+#: ../Tomboy/PreferencesDialog.cs:240
+msgid "Always rename links"
+msgstr "เปลี่ยนชื่อลิงก์เสมอ"
+
+#: ../Tomboy/PreferencesDialog.cs:260
 msgid ""
 "Use the new note template to specify the text that should be used when "
 "creating a new note."
 msgstr "ใช้แผ่นแบบบันทึกเพื่อกำหนดข้อความที่จะใช้เมื่อสร้างบันทึกใหม่"
 
-#: ../Tomboy/PreferencesDialog.cs:223
+#: ../Tomboy/PreferencesDialog.cs:269
 msgid "Open New Note Template"
 msgstr "เปิดแผ่นแบบสำหรับบันทึกใหม่"
 
 #. Hotkeys...
-#: ../Tomboy/PreferencesDialog.cs:280
+#: ../Tomboy/PreferencesDialog.cs:326
 msgid "Listen for _Hotkeys"
 msgstr "ใช้งาน_ปุ่มลัด"
 
-#: ../Tomboy/PreferencesDialog.cs:289
+#: ../Tomboy/PreferencesDialog.cs:335
 msgid ""
 "Hotkeys allow you to quickly access your notes from anywhere with a "
 "keypress. Example Hotkeys: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;"
@@ -1396,94 +1598,104 @@ msgstr ""
 "F11</b>, <b>&lt;Alt&gt;N</b>"
 
 #. Show notes menu keybinding...
-#: ../Tomboy/PreferencesDialog.cs:309
+#: ../Tomboy/PreferencesDialog.cs:355
 msgid "Show notes _menu"
 msgstr "แสดงเ_มนูของบันทึก"
 
 #. Open Start Here keybinding...
-#: ../Tomboy/PreferencesDialog.cs:326
+#: ../Tomboy/PreferencesDialog.cs:372
 msgid "Open \"_Start Here\""
 msgstr "เปิด \"เ_ริ่มที่นี่\""
 
 #. Create new note keybinding...
-#: ../Tomboy/PreferencesDialog.cs:343
+#: ../Tomboy/PreferencesDialog.cs:389
 msgid "Create _new note"
 msgstr "สร้าง_บันทึกใหม่"
 
 #. Open Search All Notes window keybinding...
-#: ../Tomboy/PreferencesDialog.cs:360
+#: ../Tomboy/PreferencesDialog.cs:406
 msgid "Open \"Search _All Notes\""
 msgstr "เปิด \"ค้นบันทึก_ทั้งหมด\""
 
-#: ../Tomboy/PreferencesDialog.cs:387
+#: ../Tomboy/PreferencesDialog.cs:433
 msgid "Ser_vice:"
 msgstr "บ_ริการ:"
 
-#: ../Tomboy/PreferencesDialog.cs:440 ../Tomboy/PreferencesDialog.cs:1033
+#: ../Tomboy/PreferencesDialog.cs:486 ../Tomboy/PreferencesDialog.cs:1113
 msgid "Not configurable"
 msgstr "ปรับแต่งไม่ได้"
 
+#: ../Tomboy/PreferencesDialog.cs:512
+msgid "Automaticall_y Sync in Background Every"
+msgstr "ปรับข้อมูลให้ตรงกันหลังฉากโดย_อัตโนมัติทุกๆ"
+
+#. Translators: See above comment for details on
+#. this string.
+#: ../Tomboy/PreferencesDialog.cs:518
+msgid "Minutes"
+msgstr "นาที"
+
 #. "Advanced..." button to bring up extra sync config dialog
-#: ../Tomboy/PreferencesDialog.cs:460
+#: ../Tomboy/PreferencesDialog.cs:540
 msgid "_Advanced..."
 msgstr "_ขั้นสูง..."
 
-#: ../Tomboy/PreferencesDialog.cs:521
+#: ../Tomboy/PreferencesDialog.cs:601
 msgid "The following add-ins are installed"
 msgstr "โปรแกรมเสริมดังต่อไปนี้ติดตั้งแล้ว"
 
-#: ../Tomboy/PreferencesDialog.cs:542
+#: ../Tomboy/PreferencesDialog.cs:622
 msgid "Get More Add-Ins..."
 msgstr "ดึงโปรแกรมเสริมเพิ่มเติม..."
 
-#: ../Tomboy/PreferencesDialog.cs:568
+#: ../Tomboy/PreferencesDialog.cs:648
 msgid "_Enable"
 msgstr "เปิดใ_ช้"
 
-#: ../Tomboy/PreferencesDialog.cs:574
+#: ../Tomboy/PreferencesDialog.cs:654
 msgid "_Disable"
 msgstr "ไ_ม่ใช้"
 
-#: ../Tomboy/PreferencesDialog.cs:705
+#: ../Tomboy/PreferencesDialog.cs:785
 msgid "Not Implemented"
 msgstr "ยังไม่รองรับ"
 
-#: ../Tomboy/PreferencesDialog.cs:719
+#: ../Tomboy/PreferencesDialog.cs:799
 #, csharp-format
 msgid "{0} Preferences"
 msgstr "ปรับแต่ง {0}"
 
-#: ../Tomboy/PreferencesDialog.cs:858
+#: ../Tomboy/PreferencesDialog.cs:938
 msgid "Choose Note Font"
 msgstr "เลือกขนาดอักษรสำหรับบันทึก"
 
-#: ../Tomboy/PreferencesDialog.cs:902
+#: ../Tomboy/PreferencesDialog.cs:982
 msgid "Other Synchronization Options"
 msgstr "ตัวเลือกอื่นสำหรับการปรับข้อมูลให้ตรงกัน"
 
-#: ../Tomboy/PreferencesDialog.cs:908
+#: ../Tomboy/PreferencesDialog.cs:988
 msgid ""
 "When a conflict is detected between a local note and a note on the "
 "configured synchronization server:"
 msgstr "เมื่อมีสิ่งขัดแย้งระหว่างบันทึกในเครื่อง กับบันทึกที่อยู่ในเซิร์ฟเวอร์ที่กำหนดไว้สำหรับปรับข้อมูล:"
 
-#: ../Tomboy/PreferencesDialog.cs:915
+#: ../Tomboy/PreferencesDialog.cs:995
 msgid "Always ask me what to do."
 msgstr "ถามก่อนว่าจะให้ทำอย่างไร"
 
-#: ../Tomboy/PreferencesDialog.cs:919
+#: ../Tomboy/PreferencesDialog.cs:999
 msgid "Rename my local note."
 msgstr "เปลี่ยนชื่อบันทึกในเครื่อง"
 
-#: ../Tomboy/PreferencesDialog.cs:923
+#: ../Tomboy/PreferencesDialog.cs:1003
 msgid "Replace my local note with the server's update."
 msgstr "เขียนบันทึกใหม่จากเซิร์ฟเวอร์ทับบันทึกในเครื่อง"
 
-#: ../Tomboy/PreferencesDialog.cs:1069
+#: ../Tomboy/PreferencesDialog.cs:1149
 msgid "WARNING: Are you sure?"
 msgstr "คำเตือน: แน่ใจหรือยัง?"
 
-#: ../Tomboy/PreferencesDialog.cs:1071
+#: ../Tomboy/PreferencesDialog.cs:1151
 msgid ""
 "Clearing your synchronization settings is not recommended.  You may be "
 "forced to synchronize all of your notes again when you save new settings."
@@ -1491,11 +1703,11 @@ msgstr ""
 "ไม่แนะนำให้ล้างค่าตั้งการปรับข้อมูลให้ตรงกันออก คุณอาจจำเป็นต้องปรับข้อมูลบันทึกของคุณใหม่หมด "
 "เมื่อคุณบันทึกการตั้งค่าชุดใหม่"
 
-#: ../Tomboy/PreferencesDialog.cs:1084
+#: ../Tomboy/PreferencesDialog.cs:1164
 msgid "Resetting Synchronization Settings"
 msgstr "กำลังล้างค่าตั้งสำหรับการปรับข้อมูลให้ตรงกัน"
 
-#: ../Tomboy/PreferencesDialog.cs:1086
+#: ../Tomboy/PreferencesDialog.cs:1166
 msgid ""
 "You have disabled the configured synchronization service.  Your "
 "synchronization settings will now be cleared.  You may be forced to "
@@ -1504,95 +1716,95 @@ msgstr ""
 "คุณได้ปิดบริการปรับข้อมูลให้ตรงกันที่ได้ตั้งค่าไว้ ค่าตั้งเกี่ยวกับการปรับข้อมูลให้ตรงกันของคุณจะถูกลบทิ้ง "
 "คุณอาจจำเป็นต้องปรับข้อมูลบันทึกของคุณใหม่หมดเมื่อคุณบันทึกการตั้งค่าชุดใหม่"
 
-#: ../Tomboy/PreferencesDialog.cs:1164
+#: ../Tomboy/PreferencesDialog.cs:1244
 msgid "Success! You're connected!"
 msgstr "สำเร็จ! เชื่อมต่อได้แล้ว"
 
-#: ../Tomboy/PreferencesDialog.cs:1166
+#: ../Tomboy/PreferencesDialog.cs:1246
 msgid ""
 "Tomboy is ready to synchronize your notes. Would you like to synchronize "
 "them now?"
 msgstr "Tomboy พร้อมที่จะปรับข้อมูลบันทึกของคุณให้ตรงกันแล้ว ต้องการจะปรับข้อมูลเลยหรือไม่?"
 
-#: ../Tomboy/PreferencesDialog.cs:1189
+#: ../Tomboy/PreferencesDialog.cs:1269
+#, csharp-format
 msgid ""
 "Sorry, but something went wrong.  Please check your information and try "
-"again.  The ~/.tomboy.log might be useful too."
+"again.  The {0} might be useful too."
 msgstr ""
-"เสียใจด้วย มีบางอย่างผิดพลาด โปรดตรวจสอบข้อมูลของคุณแล้วลองใหม่อีกครั้ง แฟ้ม ~/.tomboy.log "
-"อาจเป็นประโยชน์ในกรณีนี้"
+"เสียใจด้วย มีบางอย่างผิดพลาด โปรดตรวจสอบข้อมูลของคุณแล้วลองใหม่อีกครั้ง แฟ้ม {0} อาจช่วยได้"
 
-#: ../Tomboy/PreferencesDialog.cs:1198
+#: ../Tomboy/PreferencesDialog.cs:1282
 msgid "Error connecting :("
 msgstr "เกิดข้อผิดพลาดขณะเชื่อมต่อ :("
 
-#: ../Tomboy/PreferencesDialog.cs:1274
+#: ../Tomboy/PreferencesDialog.cs:1358
 msgid "Version:"
 msgstr "รุ่น:"
 
-#: ../Tomboy/PreferencesDialog.cs:1281
+#: ../Tomboy/PreferencesDialog.cs:1365
 msgid "Author:"
 msgstr "ผู้แต่ง:"
 
-#: ../Tomboy/PreferencesDialog.cs:1288
+#: ../Tomboy/PreferencesDialog.cs:1372
 msgid "Copyright:"
 msgstr "สงวนลิขสิทธิ์:"
 
-#: ../Tomboy/PreferencesDialog.cs:1294
+#: ../Tomboy/PreferencesDialog.cs:1378
 msgid "Add-in Dependencies:"
 msgstr "สิ่งที่โปรแกรมเสริมต้องใช้:"
 
-#: ../Tomboy/RecentChanges.cs:76
-msgid "Search All Notes"
-msgstr "ค้นบันทึกทั้งหมด"
-
-#: ../Tomboy/RecentChanges.cs:93
+#: ../Tomboy/RecentChanges.cs:98
 msgid "_Search:"
 msgstr "_ค้นหา:"
 
-#: ../Tomboy/RecentChanges.cs:114
-msgid "C_ase Sensitive"
-msgstr "ตัวพิมพ์ใหญ่-เ_ล็กตรงกัน"
-
-#: ../Tomboy/RecentChanges.cs:318
+#: ../Tomboy/RecentChanges.cs:330
 msgid "Note"
 msgstr "บันทึก"
 
-#: ../Tomboy/RecentChanges.cs:340
+#: ../Tomboy/RecentChanges.cs:352
 msgid "Last Changed"
 msgstr "เปลี่ยนแปลงล่าสุด"
 
-#: ../Tomboy/RecentChanges.cs:472
+#: ../Tomboy/RecentChanges.cs:483
 msgid "Matches"
 msgstr "ผลการค้นหา"
 
-#: ../Tomboy/RecentChanges.cs:523
+#: ../Tomboy/RecentChanges.cs:534
 #, csharp-format
 msgid "{0} match"
 msgid_plural "{0} matches"
 msgstr[0] "พบ {0} รายการ"
 
-#: ../Tomboy/RecentChanges.cs:537
+#: ../Tomboy/RecentChanges.cs:548
 #, csharp-format
 msgid "Total: {0} note"
 msgid_plural "Total: {0} notes"
 msgstr[0] "บันทึกทั้งหมด: {0} รายการ"
 
-#: ../Tomboy/RecentChanges.cs:548
+#: ../Tomboy/RecentChanges.cs:559
 #, csharp-format
 msgid "Matches: {0} note"
 msgid_plural "Matches: {0} notes"
 msgstr[0] "บันทึกที่พบ: {0} รายการ"
 
-#: ../Tomboy/RecentChanges.cs:678
+#: ../Tomboy/RecentChanges.cs:695
 msgid "Notes"
 msgstr "บันทึก"
 
-#: ../Tomboy/Tomboy.cs:244
+#: ../Tomboy/Tomboy.cs:266
 msgid "Cannot create new note"
 msgstr "ไม่สามารถสร้างบันทึกใหม่ได้"
 
 #: ../Tomboy/Tomboy.cs:332
+msgid "Primary Development:"
+msgstr "งานพัฒนาหลัก:"
+
+#: ../Tomboy/Tomboy.cs:338
+msgid "Contributors:"
+msgstr "ผู้ร่วมสมทบงาน:"
+
+#: ../Tomboy/Tomboy.cs:403
 msgid "translator-credits"
 msgstr ""
 "Isriya Paireepairit <markpeak@gmail.com>\n"
@@ -1600,7 +1812,7 @@ msgstr ""
 "Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "aka.ape <aka.ape@gmail.com>"
 
-#: ../Tomboy/Tomboy.cs:341
+#: ../Tomboy/Tomboy.cs:412
 msgid ""
 "Copyright © 2004-2007 Alex Graveley\n"
 "Copyright © 2004-2009 Others\n"
@@ -1608,15 +1820,15 @@ msgstr ""
 "Copyright © 2004-2007 Alex Graveley\n"
 "Copyright © 2004-2009 Others\n"
 
-#: ../Tomboy/Tomboy.cs:343
+#: ../Tomboy/Tomboy.cs:414
 msgid "A simple and easy to use desktop note-taking application."
 msgstr "โปรแกรมบันทึกข้อความที่เรียบง่ายใช้สะดวก"
 
-#: ../Tomboy/Tomboy.cs:353
+#: ../Tomboy/Tomboy.cs:424
 msgid "Homepage"
 msgstr "โฮมเพจ"
 
-#: ../Tomboy/Tomboy.cs:467
+#: ../Tomboy/Tomboy.cs:536
 msgid ""
 "Tomboy: A simple, easy to use desktop note-taking application.\n"
 "Copyright (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
@@ -1626,7 +1838,7 @@ msgstr ""
 "Copyright (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
 "\n"
 
-#: ../Tomboy/Tomboy.cs:479
+#: ../Tomboy/Tomboy.cs:548
 msgid ""
 "Usage:\n"
 "  --version\t\t\tPrint version information.\n"
@@ -1640,7 +1852,7 @@ msgstr ""
 "  --note-path [path]\t\tเรียก/บันทึกข้อความในไดเรกทอรีนี้\n"
 "  --search [text]\t\tเปิดหน้าต่างค้นบันทึกทั้งหมด พร้อมคำค้น\n"
 
-#: ../Tomboy/Tomboy.cs:490
+#: ../Tomboy/Tomboy.cs:558
 msgid ""
 "  --new-note\t\t\tCreate and display a new note.\n"
 "  --new-note [title]\t\tCreate and display a new note, with a title.\n"
@@ -1652,123 +1864,103 @@ msgstr ""
 "  --new-note [title]\t\tสร้างและแสดงบันทึกใหม่พร้อมหัวข้อ\n"
 "  --open-note [title/url]\tแสดงบันทึกที่มีหัวข้อตรงกับที่กำหนด\n"
 "  --start-here\t\t\tแสดงบันทึก 'เริ่มที่นี่'\n"
-"  --highlight-search [text]\tค้นหาและเน้นคำในบันทึกที่เปิดอยู่\n"
+"  --highlight-search [text]\tค้นหาและเน้นข้อความในบันทึกที่เปิดอยู่\n"
 
-#. TODO: Restore this functionality with addins
-#. usage +=
-#. Catalog.GetString (
-#. "  --check-plugin-unloading\tCheck if plugins are " +
-#. "unloaded properly.\n");
-#: ../Tomboy/Tomboy.cs:507
-msgid "D-BUS remote control disabled.\n"
-msgstr "การควบคุมระยะไกลผ่าน D-BUS ปิดอยู่\n"
-
-#: ../Tomboy/Tomboy.cs:515
+#: ../Tomboy/Tomboy.cs:572
 #, csharp-format
 msgid "Version {0}"
 msgstr "รุ่น {0}"
 
-#: ../Tomboy/Tomboy.cs:588
-#, csharp-format
-msgid ""
-"Tomboy: unsupported option '{0}'\n"
-"Try 'tomboy --help' for more information.\n"
-"D-BUS remote control disabled."
-msgstr ""
-"Tomboy: ตัวเลือกใช้ไม่ได้ '{0}'\n"
-"ลองเรียก 'tomboy --help' เพื่อดูข้อมูลเพิ่มเติม\n"
-"การควบคุมระยะไกลผ่าน D-BUS ปิดอยู่"
-
-#: ../Tomboy/Tray.cs:63
+#: ../Tomboy/Tray.cs:68
 msgid " (new)"
 msgstr " (ใหม่)"
 
-#: ../Tomboy/Tray.cs:253
+#: ../Tomboy/Tray.cs:287
 msgid "_About Tomboy"
 msgstr "เ_กี่ยวกับ Tomboy"
 
-#: ../Tomboy/Utils.cs:146
+#: ../Tomboy/Utils.cs:143
 msgid ""
 "The \"Tomboy Notes Manual\" could not be found.  Please verify that your "
 "installation has been completed successfully."
 msgstr "ไม่พบ \"คู่มือวิธีใช้บันทึก Tomboy\" กรุณาตรวจสอบการติดตั้งของคุณว่าครบถ้วนสมบูรณ์หรือไม่"
 
-#: ../Tomboy/Utils.cs:155
+#: ../Tomboy/Utils.cs:152
 msgid "Help not found"
 msgstr "ไม่พบคู่มือวิธีใช้"
 
-#: ../Tomboy/Utils.cs:171
+#: ../Tomboy/Utils.cs:168
 msgid "Cannot open location"
 msgstr "ไม่สามารถเปิดตำแหน่ง"
 
-#: ../Tomboy/Utils.cs:193
+#: ../Tomboy/Utils.cs:190
 #, csharp-format
 msgid "Today, {0}"
 msgstr "วันนี้ {0}"
 
-#: ../Tomboy/Utils.cs:195
+#: ../Tomboy/Utils.cs:192
 msgid "Today"
 msgstr "วันนี้"
 
-#: ../Tomboy/Utils.cs:199
+#: ../Tomboy/Utils.cs:196
 #, csharp-format
 msgid "Yesterday, {0}"
 msgstr "เมื่อวานนี้ {0}"
 
-#: ../Tomboy/Utils.cs:201
+#: ../Tomboy/Utils.cs:198
 msgid "Yesterday"
 msgstr "เมื่อวาน"
 
-#: ../Tomboy/Utils.cs:206
+#: ../Tomboy/Utils.cs:203
 #, csharp-format
 msgid "{0} day ago, {1}"
 msgid_plural "{0} days ago, {1}"
 msgstr[0] "{0} วันก่อน {1}"
 
-#: ../Tomboy/Utils.cs:210
+#: ../Tomboy/Utils.cs:207
 #, csharp-format
 msgid "{0} day ago"
 msgid_plural "{0} days ago"
 msgstr[0] "{0} วันก่อน"
 
-#: ../Tomboy/Utils.cs:216
+#: ../Tomboy/Utils.cs:213
 #, csharp-format
 msgid "Tomorrow, {0}"
 msgstr "พรุ่งนี้ {0}"
 
-#: ../Tomboy/Utils.cs:218
+#: ../Tomboy/Utils.cs:215
 msgid "Tomorrow"
 msgstr "พรุ่งนี้"
 
-#: ../Tomboy/Utils.cs:223
+#: ../Tomboy/Utils.cs:220
 #, csharp-format
 msgid "In {0} day, {1}"
 msgid_plural "In {0} days, {1}"
 msgstr[0] "อีก {0} วัน {1}"
 
-#: ../Tomboy/Utils.cs:227
+#: ../Tomboy/Utils.cs:224
 #, csharp-format
 msgid "In {0} day"
 msgid_plural "In {0} days"
 msgstr[0] "อีก {0} วัน"
 
-#: ../Tomboy/Utils.cs:232
+#: ../Tomboy/Utils.cs:229
 msgid "MMMM d, h:mm tt"
 msgstr "d MMMM, H:mm"
 
-#: ../Tomboy/Utils.cs:233
+#: ../Tomboy/Utils.cs:230
 msgid "MMMM d"
 msgstr "d MMMM"
 
-#: ../Tomboy/Utils.cs:235
+#: ../Tomboy/Utils.cs:232
 msgid "No Date"
 msgstr "ไม่ระบุวันที่"
 
-#: ../Tomboy/Utils.cs:238
+#: ../Tomboy/Utils.cs:235
 msgid "MMMM d yyyy, h:mm tt"
 msgstr "d MMMM yyyy, H:mm"
 
-#: ../Tomboy/Utils.cs:239
+#: ../Tomboy/Utils.cs:236
 msgid "MMMM d yyyy"
 msgstr "d MMMM yyyy"
 
@@ -1777,7 +1969,7 @@ msgstr "d MMMM yyyy"
 msgid "(Untitled {0})"
 msgstr "(ไม่มีหัวข้อ {0})"
 
-#: ../Tomboy/Watchers.cs:188
+#: ../Tomboy/Watchers.cs:189
 #, csharp-format
 msgid ""
 "A note with the title <b>{0}</b> already exists. Please choose another name "
@@ -1785,15 +1977,15 @@ msgid ""
 msgstr ""
 "มีบันทึกที่หัวข้อ <b>{0}</b> อยู่ก่อนแล้ว กรุณาเลือกชื่ออื่นสำหรับบันทึกนี้ ก่อนที่จะดำเนินการต่อไป"
 
-#: ../Tomboy/Watchers.cs:203
+#: ../Tomboy/Watchers.cs:204
 msgid "Note title taken"
 msgstr "หัวข้อนี้ถูกใช้แล้ว"
 
-#: ../Tomboy/Watchers.cs:548
+#: ../Tomboy/Watchers.cs:549
 msgid "_Copy Link Address"
 msgstr "_คัดลอกตำแหน่งลิงก์"
 
-#: ../Tomboy/Watchers.cs:553
+#: ../Tomboy/Watchers.cs:554
 msgid "_Open Link"
 msgstr "เ_ปิดลิงก์"
 
@@ -1831,197 +2023,193 @@ msgid "An error ocurred while connecting to the specified server:"
 msgstr "เกิดข้อผิดพลาดขณะเชื่อมต่อไปยังเซิร์ฟเวอร์ที่ระบุ:"
 
 #. Expander containing TreeView
-#: ../Tomboy/Synchronization/SyncDialog.cs:88
+#: ../Tomboy/Synchronization/SyncDialog.cs:89
 msgid "Details"
 msgstr "รายละเอียด"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:118
-msgid "Note Title"
-msgstr "หัวข้อบันทึก"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:125
+#: ../Tomboy/Synchronization/SyncDialog.cs:126
 msgid "Status"
 msgstr "สถานะ"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:240
+#: ../Tomboy/Synchronization/SyncDialog.cs:236
 msgid "Acquiring sync lock..."
 msgstr "กำลังขอล็อคเพื่อปรับข้อมูล..."
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:243
+#: ../Tomboy/Synchronization/SyncDialog.cs:239
 msgid "Committing changes..."
 msgstr "กำลังบันทึกการเปลี่ยนแปลง..."
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:246
+#: ../Tomboy/Synchronization/SyncDialog.cs:242
 msgid "Synchronizing Notes"
 msgstr "กำลังปรับข้อมูลบันทึกให้ตรงกัน"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:247
+#: ../Tomboy/Synchronization/SyncDialog.cs:243
 msgid "Synchronizing your notes..."
 msgstr "ปรับข้อมูลบันทึกของคุณ..."
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:248
+#: ../Tomboy/Synchronization/SyncDialog.cs:244
 msgid "This may take a while, kick back and enjoy!"
 msgstr "อาจใช้เวลาสักครู่ ขอให้สนุก!"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:250
+#: ../Tomboy/Synchronization/SyncDialog.cs:246
 msgid "Connecting to the server..."
 msgstr "กำลังเชื่อมต่อไปยังเซิร์ฟเวอร์..."
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:256
+#: ../Tomboy/Synchronization/SyncDialog.cs:252
 msgid "Deleting notes off of the server..."
 msgstr "กำลังลบบันทึกออกจากเซิร์ฟเวอร์..."
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:260
+#: ../Tomboy/Synchronization/SyncDialog.cs:256
 msgid "Downloading new/updated notes..."
 msgstr "กำลังดาวน์โหลด บันทึกใหม่/ปรับปรุง..."
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:272
+#: ../Tomboy/Synchronization/SyncDialog.cs:268
 msgid "Server Locked"
 msgstr "เซิร์ฟเวอร์ล็อคอยู่"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:273
+#: ../Tomboy/Synchronization/SyncDialog.cs:269
 msgid "Server is locked"
 msgstr "เซิร์ฟเวอร์ถูกล็อคอยู่"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:274
+#: ../Tomboy/Synchronization/SyncDialog.cs:270
 msgid ""
 "One of your other computers is currently synchronizing.  Please wait 2 "
 "minutes and try again."
 msgstr "คอมพิวเตอร์เครื่องอื่นกำลังปรับข้อมูลอยู่ กรุณารอ 2 นาทีแล้วลองใหม่"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:278
+#: ../Tomboy/Synchronization/SyncDialog.cs:274
 msgid "Preparing to download updates from server..."
 msgstr "กำลังเตรียมดาวน์โหลดการปรับข้อมูลจากเซิร์ฟเวอร์..."
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:281
+#: ../Tomboy/Synchronization/SyncDialog.cs:277
 msgid "Preparing to upload updates to server..."
 msgstr "กำลังเตรียมอัปโหลดการปรับข้อมูลไปยังเซิร์ฟเวอร์..."
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:284
+#: ../Tomboy/Synchronization/SyncDialog.cs:280
 msgid "Uploading notes to server..."
 msgstr "กำลังอัปโหลดบันทึกไปยังเซิร์ฟเวอร์..."
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:287
+#: ../Tomboy/Synchronization/SyncDialog.cs:283
 msgid "Synchronization Failed"
 msgstr "การปรับข้อมูลให้ตรงกันล้มเหลว"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:288
+#: ../Tomboy/Synchronization/SyncDialog.cs:284
 msgid "Failed to synchronize"
 msgstr "ปรับข้อมูลให้ตรงกันไม่สำเร็จ"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:289
+#: ../Tomboy/Synchronization/SyncDialog.cs:285
 msgid "Could not synchronize notes.  Check the details below and try again."
 msgstr "ไม่สามารถปรับข้อมูลบันทึก โปรดตรวจสอบรายละเอียดด้านล่างแล้วลองใหม่อีกครั้ง"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:295
+#: ../Tomboy/Synchronization/SyncDialog.cs:291
 msgid "Synchronization Complete"
 msgstr "การปรับข้อมูลให้ตรงกันเสร็จสมบูรณ์"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:296
+#: ../Tomboy/Synchronization/SyncDialog.cs:292
 msgid "Synchronization is complete"
 msgstr "การปรับข้อมูลให้ตรงกันเสร็จสมบูรณ์"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:298
+#: ../Tomboy/Synchronization/SyncDialog.cs:294
 #, csharp-format
 msgid "{0} note updated."
 msgid_plural "{0} notes updated."
 msgstr[0] "ปรับข้อมูลบันทึกแล้ว {0} ฉบับ"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:303
+#: ../Tomboy/Synchronization/SyncDialog.cs:299
 msgid "Your notes are now up to date."
 msgstr "บันทึกของคุณกลายเป็นฉบับล่าสุดแล้ว"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:307
+#: ../Tomboy/Synchronization/SyncDialog.cs:303
 msgid "Synchronization Canceled"
 msgstr "การปรับข้อมูลให้ตรงกันถูกยกเลิก"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:308
+#: ../Tomboy/Synchronization/SyncDialog.cs:304
 msgid "Synchronization was canceled"
 msgstr "การปรับข้อมูลให้ตรงกันถูกยกเลิก"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:309
+#: ../Tomboy/Synchronization/SyncDialog.cs:305
 msgid "You canceled the synchronization.  You may close the window now."
 msgstr "คุณยกเลิกการปรับข้อมูลให้ตรงกัน คุณอาจปิดหน้าต่างนี้ได้"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:313
+#: ../Tomboy/Synchronization/SyncDialog.cs:309
 msgid "Synchronization Not Configured"
 msgstr "การปรับข้อมูลให้ตรงกันไม่ได้ตั้งค่าไว้"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:314
+#: ../Tomboy/Synchronization/SyncDialog.cs:310
 msgid "Synchronization is not configured"
 msgstr "การปรับข้อมูลให้ตรงกันไม่ได้ตั้งค่าไว้"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:315
+#: ../Tomboy/Synchronization/SyncDialog.cs:311
 msgid "Please configure synchronization in the preferences dialog."
 msgstr "โปรดตั้งค่าการปรับข้อมูลให้ตรงกันในกล่องโต้ตอบปรับแต่ง"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:319
+#: ../Tomboy/Synchronization/SyncDialog.cs:315
 msgid "Synchronization Service Error"
 msgstr "บริการปรับข้อมูลให้ตรงกันผิดพลาด"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:320
+#: ../Tomboy/Synchronization/SyncDialog.cs:316
 msgid "Service error"
 msgstr "บริการผิดพลาด"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:321
+#: ../Tomboy/Synchronization/SyncDialog.cs:317
 msgid "Error connecting to the synchronization service.  Please try again."
 msgstr "เกิดข้อผิดพลาดขณะเชื่อมต่อไปยังบริการปรับข้อมูลให้ตรงกัน โปรดลองใหม่อีกครั้ง"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:338
+#: ../Tomboy/Synchronization/SyncDialog.cs:334
 msgid "Deleted locally"
 msgstr "ลบบันทึกในเครื่องแล้ว"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:341
+#: ../Tomboy/Synchronization/SyncDialog.cs:337
 msgid "Deleted from server"
 msgstr "ลบออกจากเซิร์ฟเวอร์แล้ว"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:344
+#: ../Tomboy/Synchronization/SyncDialog.cs:340
 msgid "Updated"
 msgstr "ปรับข้อมูลแล้ว"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:347
+#: ../Tomboy/Synchronization/SyncDialog.cs:343
 msgid "Added"
 msgstr "เพิ่มแล้ว"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:350
+#: ../Tomboy/Synchronization/SyncDialog.cs:346
 msgid "Uploaded changes to server"
 msgstr "อัปโหลดการเปลี่ยนแปลงไปยังเซิร์ฟเวอร์แล้ว"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:353
+#: ../Tomboy/Synchronization/SyncDialog.cs:349
 msgid "Uploaded new note to server"
 msgstr "อัปโหลดบันทึกใหม่ไปยังเซิร์ฟเวอร์แล้ว"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:501
+#: ../Tomboy/Synchronization/SyncDialog.cs:496
 msgid "Note Conflict"
 msgstr "ความขัดแย้งของบันทึก"
 
 #. Suggest renaming note by appending " (old)" to the existing title
-#: ../Tomboy/Synchronization/SyncDialog.cs:507
+#: ../Tomboy/Synchronization/SyncDialog.cs:502
 msgid " (old)"
 msgstr " (เก่า)"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:546
+#: ../Tomboy/Synchronization/SyncDialog.cs:541
 msgid "Rename local note:"
 msgstr "เปลี่ยนชื่อบันทึกในเครื่อง:"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:552
+#: ../Tomboy/Synchronization/SyncDialog.cs:547
 msgid "Update links in referencing notes"
 msgstr "ปรับปรุงลิงก์ในบันทึกที่อ้างถึง"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:559
+#: ../Tomboy/Synchronization/SyncDialog.cs:554
 msgid "Overwrite local note"
 msgstr "เขึยนทับบันทึกในเครื่อง"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:563
+#: ../Tomboy/Synchronization/SyncDialog.cs:558
 msgid "Always perform this action"
 msgstr "เลือกปฎิบัติการนี้เสมอ"
 
 #. Set initial dialog text
-#: ../Tomboy/Synchronization/SyncDialog.cs:569
+#: ../Tomboy/Synchronization/SyncDialog.cs:564
 msgid "Note conflict detected"
 msgstr "ตรวจพบความขัดแย้งของบันทึก"
 
-#: ../Tomboy/Synchronization/SyncDialog.cs:570
+#: ../Tomboy/Synchronization/SyncDialog.cs:565
 #, csharp-format
 msgid ""
 "The server version of \"{0}\" conflicts with your local note.  What do you "
@@ -2030,7 +2218,7 @@ msgstr ""
 "บันทึก \"{0}\" ฉบับที่เซิร์ฟเวอร์ขัดแย้งกับบันทึกในเครื่องคุณ "
 "คุณต้องการทำอย่างไรกับบันทึกในเครื่องของคุณ?"
 
-#: ../Tomboy/Synchronization/SyncManager.cs:159
+#: ../Tomboy/Synchronization/SyncManager.cs:161
 msgid "_Tools"
 msgstr "เ_ครื่องมือ"
 
@@ -2065,6 +2253,33 @@ msgstr ""
 "\n"
 "เพื่อหลีกเลี่ยงข้อความเตือนนี้ในครั้งต่อไป คุณควรโหลด FUSE ตั้งแต่เปิดเครื่อง โดยเพิ่ม \"modprobe "
 "fuse\" ใน /etc/init.d/boot.local หรือเพิ่ม \"fuse\" ใน /etc/modules"
+
+#~ msgid "_Browse..."
+#~ msgstr "_ท่องดู..."
+
+#~ msgid "D-BUS remote control disabled.\n"
+#~ msgstr "การควบคุมระยะไกลผ่าน D-BUS ปิดอยู่\n"
+
+#~ msgid ""
+#~ "Tomboy: unsupported option '{0}'\n"
+#~ "Try 'tomboy --help' for more information.\n"
+#~ "D-BUS remote control disabled."
+#~ msgstr ""
+#~ "Tomboy: ตัวเลือกใช้ไม่ได้ '{0}'\n"
+#~ "ลองเรียก 'tomboy --help' เพื่อดูข้อมูลเพิ่มเติม\n"
+#~ "การควบคุมระยะไกลผ่าน D-BUS ปิดอยู่"
+
+#~ msgid "Click Here After Authorizing"
+#~ msgstr "คลิกที่นี่หลังจากยืนยันสิทธิ์ผ่านแล้ว"
+
+#~ msgid "Processing..."
+#~ msgstr "กำลังดำเนินการ..."
+
+#~ msgid "_Connect to Server"
+#~ msgstr "เ_ชื่อมต่อไปยังเซิร์ฟเวอร์"
+
+#~ msgid "C_ase Sensitive"
+#~ msgstr "ตัวพิมพ์ใหญ่-เ_ล็กตรงกัน"
 
 #~ msgid "Really delete these notes?"
 #~ msgstr "ยืนยันว่าจะลบบันทึกเหล่านี้หรือไม่?"
@@ -2218,28 +2433,28 @@ msgstr ""
 #~ msgstr "รายการต้องทำ"
 
 #~ msgid "New _Task"
-#~ msgstr "_งานใหม่"
+#~ msgstr "_ภารกิจใหม่"
 
 #~ msgid "Create a new task"
-#~ msgstr "สร้างงานใหม่"
+#~ msgstr "สร้างภารกิจใหม่"
 
 #~ msgid "_Options..."
 #~ msgstr "_ตัวเลือก..."
 
 #~ msgid "Open the selected task"
-#~ msgstr "เปิดงานที่เลือก"
+#~ msgstr "เปิดภารกิจที่เลือก"
 
 #~ msgid "Delete the selected task"
-#~ msgstr "ลบงานที่เลือกออก"
+#~ msgstr "ลบภารกิจที่เลือกออก"
 
 #~ msgid "Open Associated _Note"
 #~ msgstr "เปิดบัน_ทึกที่เกี่ยวข้อง"
 
 #~ msgid "Open the note containing the task"
-#~ msgstr "เปิดบันทึกที่บรรยายงานนี้"
+#~ msgstr "เปิดบันทึกที่บรรยายภารกิจนี้"
 
 #~ msgid "Tasks Help"
-#~ msgstr "วิธีใช้งาน"
+#~ msgstr "วิธีใช้ภารกิจ"
 
 #~ msgid "Summary"
 #~ msgstr "โดยสรุป"
@@ -2267,16 +2482,16 @@ msgstr ""
 
 #~ msgid "Total: {0} task"
 #~ msgid_plural "Total: {0} tasks"
-#~ msgstr[0] "ทั้งหมด: {0} งาน"
+#~ msgstr[0] "ภารกิจทั้งหมด: {0} ชิ้น"
 
 #~ msgid "New Task {0}"
-#~ msgstr "งานใหม่ {0}"
+#~ msgstr "ภารกิจใหม่ {0}"
 
 #~ msgid "Really delete this task?"
-#~ msgstr "ยืนยันว่าลบงานนี้หรือไม่?"
+#~ msgstr "ยืนยันว่าลบภารกิจนี้หรือไม่?"
 
 #~ msgid "If you delete a task it is permanently lost."
-#~ msgstr "ถ้าคุณลบ งานจะสูญหายอย่างถาวร"
+#~ msgstr "ถ้าคุณลบ ภารกิจจะสูญหายอย่างถาวร"
 
 #~ msgid "Learn About Tomboy"
 #~ msgstr "เรียนรู้เกี่ยวกับ Tomboy"
@@ -2292,10 +2507,10 @@ msgstr ""
 #~ "คลิกที่ไอคอน Tomboy ในพาเนลของคุณและเลือก \"เริ่มที่นี่\"  คุณจะเห็นคำแนะนำถึงวิธีใช้ "
 #~ "Tomboy อีกมากภายในบันทึก \"เริ่มที่นี่\" \n"
 #~ "\n"
-#~ "เมื่อคุณเปิดบันทึก \"เริ่มที่นี่\" ถือเป็นการทำเครื่องหมายงานชิ้นนี้ว่าเสร็จเรียบร้อย"
+#~ "เมื่อคุณเปิดบันทึก \"เริ่มที่นี่\" ถือเป็นการทำเครื่องหมายภารกิจชิ้นนี้ว่าเสร็จเรียบร้อย"
 
 #~ msgid "Task Options"
-#~ msgstr "ตัวเลือกสำหรับงาน"
+#~ msgstr "ตัวเลือกสำหรับภารกิจ"
 
 #~ msgid "_Summary:"
 #~ msgstr "โดย_สรุป:"
@@ -2313,10 +2528,10 @@ msgstr ""
 #~ msgstr "ต้องทำ"
 
 #~ msgid "Open To Do List"
-#~ msgstr "เปิดรายการงานต้องทำ"
+#~ msgstr "เปิดรายการสิ่งที่ต้องทำ"
 
 #~ msgid "To Do Options"
-#~ msgstr "ต้วเลือกงานต้องทำ"
+#~ msgstr "ต้วเลือกสิ่งที่ต้องทำ"
 
 #~ msgid "Mark Undone"
 #~ msgstr "ทำเครื่องหมายว่ายังไม่เสร็จ"
@@ -2421,9 +2636,6 @@ msgstr ""
 #~ msgstr ""
 #~ "<b>สารบัญ</b> แสดงรายการบันทึกทั้งหมดของคุณ\n"
 #~ "ดับเบิลคลิกเพื่อเปิดดูบันทึก"
-
-#~ msgid "Search Note"
-#~ msgstr "ค้นหาบันทึก"
 
 #~ msgid "Search _Results"
 #~ msgstr "_ผลการค้นหา"

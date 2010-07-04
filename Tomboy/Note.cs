@@ -252,7 +252,7 @@ namespace Tomboy
 			}
 			set {
 				buffer = value;
-				buffer.Changed += BufferChanged;
+				buffer.Changed += OnBufferChanged;
 				buffer.TagApplied += BufferTagApplied;
 				buffer.TagRemoved += BufferTagRemoved;
 
@@ -325,7 +325,7 @@ namespace Tomboy
 
 		// Callbacks
 
-		void BufferChanged (object sender, EventArgs args)
+		void OnBufferChanged (object sender, EventArgs args)
 		{
 			InvalidateText ();
 		}
@@ -353,6 +353,7 @@ namespace Tomboy
 
 		bool save_needed;
 		bool is_deleting;
+		bool enabled = true;
 
 		NoteManager manager;
 		NoteWindow window;
@@ -512,10 +513,12 @@ namespace Tomboy
 		// depending on the change...
 		//
 
-		void BufferChanged (object sender, EventArgs args)
+		void OnBufferChanged (object sender, EventArgs args)
 		{
-			DebugSave ("BufferChanged queueing save");
+			DebugSave ("OnBufferChanged queueing save");
 			QueueSave (ChangeType.ContentChanged);
+			if (BufferChanged != null)
+				BufferChanged (this);
 		}
 
 		void BufferTagApplied (object sender, Gtk.TagAppliedArgs args)
@@ -732,17 +735,108 @@ namespace Tomboy
 				return data.Data.Title;
 			}
 			set {
-				if (data.Data.Title != value) {
-					if (window != null)
-						window.Title = value;
+				SetTitle (value, false);
+			}
+		}
 
-					string old_title = data.Data.Title;
-					data.Data.Title = value;
+		public void SetTitle (string new_title, bool from_user_action)
+		{
+			if (data.Data.Title != new_title) {
+				if (window != null)
+					window.Title = new_title;
 
-					if (Renamed != null)
-						Renamed (this, old_title);
+				string old_title = data.Data.Title;
+				data.Data.Title = new_title;
 
-					QueueSave (ChangeType.ContentChanged); // TODO: Right place for this?
+				if (from_user_action)
+					ProcessRenameLinkUpdate (old_title);
+
+				if (Renamed != null)
+					Renamed (this, old_title);
+
+				QueueSave (ChangeType.ContentChanged); // TODO: Right place for this?
+			}
+		}
+
+		private void ProcessRenameLinkUpdate (string old_title)
+		{
+			List<Note> linkingNotes = new List<Note> ();
+			foreach (Note note in manager.Notes) {
+				// Technically, containing text does not imply linking,
+				// but this is less work
+				if (note != this && note.ContainsText (old_title))
+					linkingNotes.Add (note);
+			}
+
+			if (linkingNotes.Count > 0) {
+				NoteRenameBehavior behavior = (NoteRenameBehavior)
+					Preferences.Get (Preferences.NOTE_RENAME_BEHAVIOR);
+				if (behavior == NoteRenameBehavior.AlwaysShowDialog) {
+					var dlg = new NoteRenameDialog (linkingNotes, old_title, this);
+					Gtk.ResponseType response = (Gtk.ResponseType) dlg.Run ();
+					if (response != Gtk.ResponseType.Cancel &&
+					    dlg.SelectedBehavior != NoteRenameBehavior.AlwaysShowDialog)
+						Preferences.Set (Preferences.NOTE_RENAME_BEHAVIOR, (int) dlg.SelectedBehavior);
+					foreach (var pair in dlg.Notes) {
+						if (pair.Value && response == Gtk.ResponseType.Yes) // Rename
+							pair.Key.RenameLinks (old_title, this);
+						else
+							pair.Key.RemoveLinks (old_title, this);
+					}
+					dlg.Destroy ();
+				} else if (behavior == NoteRenameBehavior.AlwaysRemoveLinks)
+					foreach (var note in linkingNotes)
+						note.RemoveLinks (old_title, this);
+				else if (behavior == NoteRenameBehavior.AlwaysRenameLinks)
+					foreach (var note in linkingNotes)
+						note.RenameLinks (old_title, this);
+			}
+		}
+
+		private bool ContainsText (string text)
+		{
+			return TextContent.IndexOf (text, StringComparison.InvariantCultureIgnoreCase) > -1;
+		}
+
+		private void RenameLinks (string old_title, Note renamed)
+		{
+			HandleLinkRename (old_title, renamed, true);
+		}
+
+		private void RemoveLinks (string old_title, Note renamed)
+		{
+			HandleLinkRename (old_title, renamed, false);
+		}
+
+		private void HandleLinkRename (string old_title, Note renamed, bool rename_links)
+		{
+			// Check again, things may have changed
+			if (!ContainsText (old_title))
+				return;
+
+			string old_title_lower = old_title.ToLower ();
+
+			NoteTag link_tag = TagTable.LinkTag;
+
+			// Replace existing links with the new title.
+			TextTagEnumerator enumerator = new TextTagEnumerator (Buffer, link_tag);
+			foreach (TextRange range in enumerator) {
+				if (range.Text.ToLower () != old_title_lower)
+					continue;
+
+				if (!rename_links) {
+					Logger.Debug ("Removing link tag from text '{0}'",
+					              range.Text);
+					Buffer.RemoveTag (link_tag, range.Start, range.End);
+				} else {
+					Logger.Debug ("Replacing '{0}' with '{1}'",
+					              range.Text,
+					              renamed.Title);
+					Gtk.TextIter start_iter = range.Start;
+					Gtk.TextIter end_iter = range.End;
+					Buffer.Delete (ref start_iter, ref end_iter);
+					start_iter = range.Start;
+					Buffer.InsertWithTags (ref start_iter, renamed.Title, link_tag);
 				}
 			}
 		}
@@ -802,62 +896,59 @@ namespace Tomboy
 			xmlDoc.LoadXml (foreignNoteXml);
 			xmlDoc = null;
 
-			StringReader reader = new StringReader (foreignNoteXml);
-			XmlTextReader xml = new XmlTextReader (reader);
-			xml.Namespaces = false;
-
 			// Remove tags now, since a note with no tags has
 			// no "tags" element in the XML
 			List<Tag> newTags = new List<Tag> ();
-			DateTime date;
 
-			while (xml.Read ()) {
-				switch (xml.NodeType) {
-				case XmlNodeType.Element:
-					switch (xml.Name) {
-					case "title":
-						Title = xml.ReadString ();
-						break;
-					case "text":
-						XmlContent = xml.ReadInnerXml ();
-						break;
-					case "last-change-date":
-						if (DateTime.TryParse (xml.ReadString (), out date))
-							data.Data.ChangeDate = date;
-						else
-							data.Data.ChangeDate = DateTime.Now;
-						break;
-					case "last-metadata-change-date":
-						if (DateTime.TryParse (xml.ReadString (), out date))
-							data.Data.MetadataChangeDate = date;
-						else
-							data.Data.MetadataChangeDate = DateTime.Now;
-						break;
-					case "create-date":
-						if (DateTime.TryParse (xml.ReadString (), out date))
-							data.Data.CreateDate = date;
-						else
-							data.Data.CreateDate = DateTime.Now;
-						break;
-					case "tags":
-						XmlDocument doc = new XmlDocument ();
-						List<string> tag_strings = ParseTags (doc.ReadNode (xml.ReadSubtree ()));
-						foreach (string tag_str in tag_strings) {
-							Tag tag = TagManager.GetOrCreateTag (tag_str);
-							newTags.Add (tag);
+			using (var xml = new XmlTextReader (new StringReader (foreignNoteXml)) {Namespaces = false}) {
+				DateTime date;
+	
+				while (xml.Read ()) {
+					switch (xml.NodeType) {
+					case XmlNodeType.Element:
+						switch (xml.Name) {
+						case "title":
+							Title = xml.ReadString ();
+							break;
+						case "text":
+							XmlContent = xml.ReadInnerXml ();
+							break;
+						case "last-change-date":
+							if (DateTime.TryParse (xml.ReadString (), out date))
+								data.Data.ChangeDate = date;
+							else
+								data.Data.ChangeDate = DateTime.Now;
+							break;
+						case "last-metadata-change-date":
+							if (DateTime.TryParse (xml.ReadString (), out date))
+								data.Data.MetadataChangeDate = date;
+							else
+								data.Data.MetadataChangeDate = DateTime.Now;
+							break;
+						case "create-date":
+							if (DateTime.TryParse (xml.ReadString (), out date))
+								data.Data.CreateDate = date;
+							else
+								data.Data.CreateDate = DateTime.Now;
+							break;
+						case "tags":
+							XmlDocument doc = new XmlDocument ();
+							List<string> tag_strings = ParseTags (doc.ReadNode (xml.ReadSubtree ()));
+							foreach (string tag_str in tag_strings) {
+								Tag tag = TagManager.GetOrCreateTag (tag_str);
+								newTags.Add (tag);
+							}
+							break;
+						case "open-on-startup":
+							bool isStartup;
+							if (bool.TryParse (xml.ReadString (), out isStartup))
+								IsOpenOnStartup = isStartup;
+							break;
 						}
 						break;
-					case "open-on-startup":
-						bool isStartup;
-						if (bool.TryParse (xml.ReadString (), out isStartup))
-							IsOpenOnStartup = isStartup;
-						break;
 					}
-					break;
 				}
 			}
-
-			xml.Close ();
 
 			foreach (Tag oldTag in Tags)
 				if (!newTags.Contains (oldTag))
@@ -978,7 +1069,7 @@ namespace Tomboy
 					data.Buffer = buffer;
 
 					// Listen for further changed signals
-					buffer.Changed += BufferChanged;
+					buffer.Changed += OnBufferChanged;
 					buffer.TagApplied += BufferTagApplied;
 					buffer.TagRemoved += BufferTagRemoved;
 					buffer.MarkSet += BufferInsertMarkSet;
@@ -994,6 +1085,22 @@ namespace Tomboy
 			}
 		}
 
+		private Gtk.Widget focusWidget;
+		public bool Enabled
+		{
+			get { return enabled; }
+			set {
+				enabled = value;
+				if (window != null) {
+					if (!enabled)
+						focusWidget = window.Focus;
+					window.Sensitive = enabled;
+					if (enabled)
+						window.Focus = focusWidget;
+				}
+			}
+		}
+
 		public NoteWindow Window
 		{
 			get {
@@ -1001,6 +1108,8 @@ namespace Tomboy
 					window = new NoteWindow (this);
 					window.Destroyed += WindowDestroyed;
 					window.ConfigureEvent += WindowConfigureEvent;
+					// TODO: What about a disabled set where you can still copy text?
+					window.Editor.Sensitive = Enabled;
 
 					if (data.Data.HasExtent ())
 						window.SetDefaultSize (data.Data.Width,
@@ -1108,6 +1217,7 @@ namespace Tomboy
 		public event TagAddedHandler TagAdded;
 		public event TagRemovingHandler TagRemoving;
 		public event TagRemovedHandler TagRemoved;
+		public event Action<Note> BufferChanged;
 	}
 
 	// Singleton - allow overriding the instance for easy sensing in
@@ -1154,15 +1264,34 @@ namespace Tomboy
 
 		public virtual NoteData ReadFile (string read_file, string uri)
 		{
-			NoteData note = new NoteData (uri);
-			string version = "";
+			NoteData data;
+			string version;
+			using (var xml = new XmlTextReader (new StreamReader (read_file, System.Text.Encoding.UTF8)) {Namespaces = false})
+				data = Read (xml, uri, out version);
 
-			StreamReader reader = new StreamReader (read_file,
-			                                        System.Text.Encoding.UTF8);
-			XmlTextReader xml = new XmlTextReader (reader);
-			xml.Namespaces = false;
+			if (version != NoteArchiver.CURRENT_VERSION) {
+				// Note has old format, so rewrite it.  No need
+				// to reread, since we are not adding anything.
+				Logger.Log ("Updating note XML to newest format...");
+				NoteArchiver.Write (read_file, data);
+			}
+
+			return data;
+		}
+
+		public virtual NoteData Read (XmlTextReader xml, string uri)
+		{
+			string version; // discarded
+			NoteData data = Read (xml, uri, out version);
+			return data;
+		}
+
+		private NoteData Read (XmlTextReader xml, string uri, out string version)
+		{
+			NoteData note = new NoteData (uri);
 			DateTime date;
 			int num;
+			version = String.Empty;
 
 			while (xml.Read ()) {
 				switch (xml.NodeType) {
@@ -1234,15 +1363,6 @@ namespace Tomboy
 					break;
 				}
 			}
-			reader.Close ();
-			xml.Close ();
-
-			if (version != NoteArchiver.CURRENT_VERSION) {
-				// Note has old format, so rewrite it.  No need
-				// to reread, since we are not adding anything.
-				Logger.Log ("Updating note XML to newest format...");
-				NoteArchiver.Write (read_file, note);
-			}
 
 			return note;
 		}
@@ -1250,9 +1370,8 @@ namespace Tomboy
 		public static string WriteString(NoteData note)
 		{
 			StringWriter str = new StringWriter ();
-			XmlWriter xml = XmlWriter.Create (str, XmlEncoder.DocumentSettings);
-			Instance.Write (xml, note);
-			xml.Close ();
+			using (var xml = XmlWriter.Create (str, XmlEncoder.DocumentSettings))
+				Instance.Write (xml, note);
 			str.Flush();
 			return str.ToString ();
 		}
@@ -1266,9 +1385,8 @@ namespace Tomboy
 		{
 			string tmp_file = write_file + ".tmp";
 
-			XmlWriter xml = XmlWriter.Create (tmp_file, XmlEncoder.DocumentSettings);
-			Write (xml, note);
-			xml.Close ();
+			using (var xml = XmlWriter.Create (tmp_file, XmlEncoder.DocumentSettings))
+				Write (xml, note);
 
 			if (File.Exists (write_file)) {
 				string backup_path = write_file + "~";
@@ -1296,9 +1414,8 @@ namespace Tomboy
 
 		public void WriteFile (TextWriter writer, NoteData note)
 		{
-			XmlWriter xml = XmlWriter.Create (writer, XmlEncoder.DocumentSettings);
-			Write (xml, note);
-			xml.Close ();
+			using (var xml = XmlWriter.Create (writer, XmlEncoder.DocumentSettings))
+				Write (xml, note);
 		}
 
 		void Write (XmlWriter xml, NoteData note)
@@ -1444,50 +1561,68 @@ namespace Tomboy
 		public static void ShowDeletionDialog (List<Note> notes, Gtk.Window parent)
 		{
 			string message;
+
+			if ((bool) Preferences.Get (Preferences.ENABLE_DELETE_CONFIRM)) {
+				// show confirmation dialog
+				if (notes.Count == 1)
+					message = Catalog.GetString ("Really delete this note?");
+				else
+					message = string.Format (Catalog.GetPluralString (
+						"Really delete this {0} note?",
+						"Really delete these {0} notes?",
+						notes.Count), notes.Count);
 			
-			if (notes.Count == 1)
-				message = Catalog.GetString ("Really delete this note?");
-			else
-				message = string.Format (Catalog.GetPluralString (
-					"Really delete this {0} note?",
-					"Really delete these {0} notes?",
-					notes.Count), notes.Count);
-			
-			HIGMessageDialog dialog =
-			        new HIGMessageDialog (
-			        parent,
-			        Gtk.DialogFlags.DestroyWithParent,
-			        Gtk.MessageType.Question,
-			        Gtk.ButtonsType.None,
-			        message,
-			        Catalog.GetString ("If you delete a note it is " +
+				HIGMessageDialog dialog =
+				        new HIGMessageDialog (
+				        parent,
+				        Gtk.DialogFlags.DestroyWithParent,
+				        Gtk.MessageType.Question,
+				        Gtk.ButtonsType.None,
+				        message,
+				        Catalog.GetString ("If you delete a note it is " +
 			                           "permanently lost."));
 
-			Gtk.Button button;
+				Gtk.Button button;
 
-			button = new Gtk.Button (Gtk.Stock.Cancel);
-			button.CanDefault = true;
-			button.Show ();
-			dialog.AddActionWidget (button, Gtk.ResponseType.Cancel);
-			dialog.DefaultResponse = Gtk.ResponseType.Cancel;
+				button = new Gtk.Button (Gtk.Stock.Cancel);
+				button.CanDefault = true;
+				button.Show ();
+				dialog.AddActionWidget (button, Gtk.ResponseType.Cancel);
+				dialog.DefaultResponse = Gtk.ResponseType.Cancel;
 
-			button = new Gtk.Button (Gtk.Stock.Delete);
-			button.CanDefault = true;
-			button.Show ();
-			dialog.AddActionWidget (button, 666);
+				button = new Gtk.Button (Gtk.Stock.Delete);
+				button.CanDefault = true;
+				button.Show ();
+				dialog.AddActionWidget (button, 666);
 
-			int result = dialog.Run ();
-			if (result == 666) {
+				int result = dialog.Run ();
+				if (result == 666) {
+					foreach (Note note in notes) {
+						note.Manager.Delete (note);
+					}
+				}
+
+				dialog.Destroy();
+			} else {
+				// no confirmation dialog, just delete
 				foreach (Note note in notes) {
 					note.Manager.Delete (note);
 				}
 			}
-
-			dialog.Destroy();
 		}
 		
 		public static void ShowIOErrorDialog (Gtk.Window parent)
 		{
+			string errorMsg = Catalog.GetString ("An error occurred while saving your notes. " +
+			                                     "Please check that you have sufficient disk " +
+			                                     "space, and that you have appropriate rights " +
+			                                     "on {0}. Error details can be found in " +
+			                                     "{1}.");
+			string logPath = System.IO.Path.Combine (Services.NativeApplication.LogDirectory,
+			                                         "tomboy.log");
+			errorMsg = String.Format (errorMsg,
+			                          Services.NativeApplication.DataDirectory,
+			                          logPath);
 			HIGMessageDialog dialog =
 				new HIGMessageDialog (
 				                      parent,
@@ -1495,11 +1630,7 @@ namespace Tomboy
 				                      Gtk.MessageType.Error,
 				                      Gtk.ButtonsType.Ok,
 				                      Catalog.GetString ("Error saving note data."),
-				                      Catalog.GetString ("An error occurred while saving your notes. " +
-				                                         "Please check that you have sufficient disk " +
-				                                         "space, and that you have appropriate rights " +
-				                                         "on ~/.tomboy. Error details can be found in " +
-				                                         "~/.tomboy.log."));
+				                      errorMsg);
 			dialog.Run ();
 			dialog.Destroy ();
 		}

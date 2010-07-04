@@ -4,12 +4,6 @@ using System.IO;
 using System.Xml;
 using Mono.Unix;
 
-#if FIXED_PANELAPPLET
-using Gnome;
-#elif !WIN32 && !MAC
-using _Gnome;
-#endif
-
 using Tomboy.Sync;
 
 namespace Tomboy
@@ -17,6 +11,7 @@ namespace Tomboy
 	public class Tomboy : Application
 	{
 		static bool debugging;
+		static bool uninstalled;
 		static NoteManager manager;
 		static TomboyTrayIcon tray_icon;
 		static TomboyTray tray = null;
@@ -24,11 +19,10 @@ namespace Tomboy
 		static bool is_panel_applet = false;
 		static PreferencesDialog prefs_dlg;
 		static SyncDialog sync_dlg;
-#if ENABLE_DBUS || WIN32 || MAC
 		static RemoteControl remote_control;
-#endif
 		static Gtk.IconTheme icon_theme = null;
 
+		[STAThread]
 		public static void Main (string [] args)
 		{
 			// TODO: Extract to a PreInit in Application, or something
@@ -60,56 +54,87 @@ namespace Tomboy
 				                                    Path.PathSeparator +
 				                                    Environment.GetEnvironmentVariable ("PATH"));
 #endif
-			// Initialize GETTEXT
 			Catalog.Init ("tomboy", Defines.GNOME_LOCALE_DIR);
 
 			TomboyCommandLine cmd_line = new TomboyCommandLine (args);
 			debugging = cmd_line.Debug;
-			Logger.LogLevel = debugging ? Level.DEBUG : Level.INFO;
-			is_panel_applet = cmd_line.UsePanelApplet;
+			uninstalled = cmd_line.Uninstalled;
 
-#if ENABLE_DBUS || WIN32 || MAC // Run command-line earlier with DBus enabled
-			if (cmd_line.NeedsExecute) {
+			if (!RemoteControlProxy.FirstInstance) {
+				if (!cmd_line.NeedsExecute)
+					cmd_line = new TomboyCommandLine (new string [] {"--search"});
 				// Execute args at an existing tomboy instance...
 				cmd_line.Execute ();
+				Console.WriteLine ("Tomboy is already running.  Exiting...");
 				return;
 			}
-#endif // ENABLE_DBUS || WIN32
+
+			Logger.LogLevel = debugging ? Level.DEBUG : Level.INFO;
+#if PANEL_APPLET
+			is_panel_applet = cmd_line.UsePanelApplet;
+#else
+			is_panel_applet = false;
+#endif
 
 			// NOTE: It is important not to use the Preferences
 			//       class before this call.
-			Initialize ("tomboy", "tomboy", "tomboy", args);
+			Initialize ("tomboy", "Tomboy", "tomboy", args);
 
 			// Add private icon dir to search path
 			icon_theme = Gtk.IconTheme.Default;
 			icon_theme.AppendSearchPath (Path.Combine (Path.Combine (Defines.DATADIR, "tomboy"), "icons"));
 
-//   PluginManager.CheckPluginUnloading = cmd_line.CheckPluginUnloading;
-
 			// Create the default note manager instance.
 			string note_path = GetNotePath (cmd_line.NotePath);
 			manager = new NoteManager (note_path);
 
-			SyncManager.Initialize ();
-
-			// Register the manager to handle remote requests.
-			RegisterRemoteControl (manager);
-
 			SetupGlobalActions ();
 			ActionManager am = Tomboy.ActionManager;
 
-			ApplicationAddin [] addins =
-			        manager.AddinManager.GetApplicationAddins ();
-			foreach (ApplicationAddin addin in addins) {
-				addin.Initialize ();
-			}
+			// TODO: Instead of just delaying, lazy-load
+			//       (only an issue for add-ins that need to be
+			//       available at Tomboy startup, and restoring
+			//       previously-opened notes)
+			GLib.Timeout.Add (500, () => {
+				manager.Initialize ();
+				SyncManager.Initialize ();
 
-#if !ENABLE_DBUS && !WIN32 && !MAC
-			if (cmd_line.NeedsExecute) {
-				cmd_line.Execute ();
-			}
+				ApplicationAddin [] addins =
+				        manager.AddinManager.GetApplicationAddins ();
+				foreach (ApplicationAddin addin in addins) {
+					addin.Initialize ();
+				}
+
+				// Register the manager to handle remote requests.
+				RegisterRemoteControl (manager);
+				if (cmd_line.NeedsExecute) {
+					// Execute args on this instance
+					cmd_line.Execute ();
+				}
+#if WIN32
+				if (Environment.OSVersion.Platform == PlatformID.Win32NT) {
+					var os_version = Environment.OSVersion.Version;
+					if (( os_version.Major == 6 && os_version.Minor > 0 ) || os_version.Major > 6) {
+						JumpListManager.CreateJumpList (manager);
+
+						manager.NoteAdded += delegate (object sender, Note changed) {
+							JumpListManager.CreateJumpList (manager);
+						};
+
+						manager.NoteRenamed += delegate (Note sender, string old_title) {
+							JumpListManager.CreateJumpList (manager);
+						};
+
+						manager.NoteDeleted += delegate (object sender, Note changed) {
+							JumpListManager.CreateJumpList (manager);
+						};
+					}
+				}
 #endif
+				return false;
+			});
 
+#if PANEL_APPLET
 			if (is_panel_applet) {
 				tray_icon_showing = true;
 
@@ -120,13 +145,13 @@ namespace Tomboy
 				RegisterPanelAppletFactory ();
 				Logger.Log ("All done.  Ciao!");
 				Exit (0);
-			} else {
-				RegisterSessionManagerRestart (
-				        Environment.GetEnvironmentVariable ("TOMBOY_WRAPPER_PATH"),
-				        args,
-				        new string [] { "TOMBOY_PATH=" + note_path  });
-				StartTrayIcon ();
 			}
+#endif
+			RegisterSessionManagerRestart (
+			        Environment.GetEnvironmentVariable ("TOMBOY_WRAPPER_PATH"),
+			        args,
+			        new string [] { "TOMBOY_PATH=" + note_path  }); // TODO: Pass along XDG_*?
+			StartTrayIcon ();
 
 			Logger.Log ("All done.  Ciao!");
 		}
@@ -136,6 +161,11 @@ namespace Tomboy
 			get { return debugging; }
 		}
 
+		public static bool Uninstalled
+		{
+			get { return uninstalled; }
+		}
+
 		static string GetNotePath (string override_path)
 		{
 			// Default note location, as specified in --note-path or $TOMBOY_PATH
@@ -143,17 +173,19 @@ namespace Tomboy
 			        override_path :
 			        Environment.GetEnvironmentVariable ("TOMBOY_PATH");
 			if (note_path == null)
-				note_path = Services.NativeApplication.ConfDir;
+				note_path = Services.NativeApplication.DataDirectory;
 
 			// Tilde expand
-			return note_path.Replace ("~", Environment.GetEnvironmentVariable ("HOME"));
+			return note_path.Replace ("~", Environment.GetEnvironmentVariable ("HOME")); // TODO: Wasted work
 		}
 
 		static void RegisterPanelAppletFactory ()
 		{
 			// This will block if there is no existing instance running
 #if !WIN32 && !MAC
-			PanelAppletFactory.Register (typeof (TomboyApplet));
+#if PANEL_APPLET
+			Gnome.PanelAppletFactory.Register (typeof (TomboyApplet));
+#endif
 #endif
 		}
 
@@ -181,7 +213,8 @@ namespace Tomboy
 			// instead, launch the Search All Notes window so the user can
 			// can still use Tomboy.
 #if !MAC
-			if (tray_icon_showing == false)
+			if (tray_icon_showing == false &&
+			    (bool) Preferences.Get (Preferences.ENABLE_TRAY_ICON))
 				ActionManager ["ShowSearchAllNotesAction"].Activate ();
 #endif
 			
@@ -190,7 +223,6 @@ namespace Tomboy
 
 		static void RegisterRemoteControl (NoteManager manager)
 		{
-#if ENABLE_DBUS || WIN32 || MAC
 			try {
 				remote_control = RemoteControlProxy.Register (manager);
 				if (remote_control != null) {
@@ -205,14 +237,13 @@ namespace Tomboy
 						remote.DisplaySearch ();
 					} catch {}
 
-					Logger.Log ("Tomboy is already running.  Exiting...");
+					Logger.Info ("Tomboy is already running.  Exiting...");
 					System.Environment.Exit (-1);
 				}
 			} catch (Exception e) {
 				Logger.Log ("Tomboy remote control disabled (DBus exception): {0}",
 				            e.Message);
 			}
-#endif
 		}
 
 		// These actions can be called from anywhere in Tomboy
@@ -300,25 +331,74 @@ namespace Tomboy
 				tray_icon.GetGeometry (out screen, out area, out orientation);
 #endif
 			}
-			GuiUtils.ShowHelp("tomboy.xml", null,
-			                  screen,
-			                  null);
+			GuiUtils.ShowHelp ("tomboy", null, screen, null);
 
 		}
 
 		static void OnShowAboutAction (object sender, EventArgs args)
 		{
 			string [] authors = new string [] {
-				"Alex Graveley <alex@beatniksoftware.com>",
-				"Boyd Timothy <btimothy@gmail.com>",
-				"Chris Scobell <chris@thescobells.com>",
-				"David Trowbridge <trowbrds@gmail.com>",
-				"Ryan Lortie <desrt@desrt.ca>",
-				"Sandy Armstrong <sanfordarmstrong@gmail.com>",
-				"Sebastian Rittau <srittau@jroger.in-berlin.de>",
-				"Kevin Kubasik <kevin@kubasik.net>",
-				"Stefan Schweizer <steve.schweizer@gmail.com>",
-				"Benjamin Podszun <benjamin.podszun@gmail.com>"
+				Catalog.GetString ("Primary Development:"),
+				"\tAlex Graveley (original author)",
+				"\tBoyd Timothy (retired maintainer)",
+				"\tSandy Armstrong (maintainer)",
+				"\t\t<sanfordarmstrong@gmail.com>",
+				"",
+				Catalog.GetString ("Contributors:"),
+				"\tAaron Bockover",
+				"\tAlexey Nedilko",
+				"\tAlex Kloss",
+				"\tAnders Petersson",
+				"\tAndrew Fister",
+				"\tBenjamin Podszun",
+				"\tBuchner Johannes",
+				"\tChris Scobell",
+				"\tClemens N. Buss",
+				"\tDave Foster",
+				"\tDavid Trowbridge",
+				"\tDoug Johnston",
+				"\tEveraldo Canuto",
+				"\tFrederic Crozat",
+				"\tGabriel Burt",
+				"\tGabriel de Perthuis",
+				"\tGreg Poirier",
+				"\tJakub Steiner",
+				"\tJames Westby",
+				"\tJamin Philip Gray",
+				"\tJan Rüegg",
+				"\tJay R. Wren",
+				"\tJeffrey Stedfast",
+				"\tJeff Tickle",
+				"\tJerome Haltom",
+				"\tJoe Shaw",
+				"\tJohn Anderson",
+				"\tJohn Carr",
+				"\tJon Lund Steffensen",
+				"\tJP Rosevear",
+				"\tKevin Kubasik",
+				"\tLaurent Bedubourg",
+				"\tŁukasz Jernaś",
+				"\tMark Wakim",
+				"\tMathias Hasselmann",
+				"\tMatt Johnston",
+				"\tMatt Jones",
+				"\tMike Mazur",
+				"\tNathaniel Smith",
+				"\tOlivier Le Thanh Duong",
+				"\tPaul Cutler",
+				"\tPrzemysław Grzegorczyk",
+				"\tRobert Buchholz",
+				"\tRobin Sonefors",
+				"\tRodrigo Moya",
+				"\tRomain Tartiere",
+				"\tRyan Lortie",
+				"\tSebastian Dröge",
+				"\tSebastian Rittau",
+				"\tStefan Cosma",
+				"\tStefan Schweizer",
+				"\tTommi Asiala",
+				"\tWouter Bolsterlee",
+				"\tYonatan Oren"
 			};
 
 			string [] documenters = new string [] {
@@ -344,7 +424,7 @@ namespace Tomboy
 			                                    "note-taking application.");
 			Gtk.AboutDialog.SetUrlHook (delegate (Gtk.AboutDialog dialog, string link) {
 				try {
-					Services.NativeApplication.OpenUrl (link);
+					Services.NativeApplication.OpenUrl (link, null);
 				} catch (Exception e) {
 					GuiUtils.ShowOpeningLocationError (dialog, link, e.Message);
 				}
@@ -355,8 +435,10 @@ namespace Tomboy
 			about.Documenters = documenters;
 			about.TranslatorCredits = translators;
 			about.IconName = "tomboy";
-			about.Run ();
-			about.Destroy ();
+			about.Response += delegate {
+				about.Destroy ();
+			};
+			about.Present ();
 		}
 
 		static void OpenSearchAll (object sender, EventArgs args)
@@ -374,6 +456,8 @@ namespace Tomboy
 		public static bool TrayIconShowing
 		{
 			get {
+				tray_icon_showing = !is_panel_applet && tray_icon != null &&
+					tray_icon.IsEmbedded && tray_icon.Visible;
 				return tray_icon_showing;
 			}
 		}
@@ -416,7 +500,6 @@ namespace Tomboy
 		string note_path;
 		string search_text;
 		bool open_search;
-//  bool check_plugin_unloading;
 
 		public TomboyCommandLine (string [] args)
 		{
@@ -427,6 +510,12 @@ namespace Tomboy
 		public bool Debug
 		{
 			get { return debug; }
+		}
+
+		// TODO: Document this option
+		public bool Uninstalled
+		{
+			get; private set;
 		}
 
 		public bool UsePanelApplet
@@ -455,11 +544,6 @@ namespace Tomboy
 			}
 		}
 
-//  public bool CheckPluginUnloading
-//  {
-//   get { return check_plugin_unloading; }
-//  }
-
 		public static void PrintAbout ()
 		{
 			string about =
@@ -483,8 +567,7 @@ namespace Tomboy
 			                "directory.\n" +
 			                "  --search [text]\t\tOpen the search all notes window with " +
 			                "the search text.\n");
-
-#if ENABLE_DBUS || WIN32 || MAC
+			// This odd concatenation preserved to avoid wasting time retranslating these strings
 			usage +=
 			        Catalog.GetString (
 			                "  --new-note\t\t\tCreate and display a new note.\n" +
@@ -495,17 +578,6 @@ namespace Tomboy
 			                "  --start-here\t\t\tDisplay the 'Start Here' note.\n" +
 			                "  --highlight-search [text]\tSearch and highlight text " +
 			                "in the opened note.\n");
-#endif
-
-// TODO: Restore this functionality with addins
-//   usage +=
-//    Catalog.GetString (
-//     "  --check-plugin-unloading\tCheck if plugins are " +
-//     "unloaded properly.\n");
-
-#if !ENABLE_DBUS && !WIN32 && !MAC
-			usage += Catalog.GetString ("D-BUS remote control disabled.\n");
-#endif
 
 			Console.WriteLine (usage);
 		}
@@ -524,7 +596,9 @@ namespace Tomboy
 				case "--debug":
 					debug = true;
 					break;
-#if ENABLE_DBUS || WIN32 || MAC
+				case "--uninstalled":
+					Uninstalled = true;
+					break;
 				case "--new-note":
 					// Get optional name for new note...
 					if (idx + 1 < args.Length
@@ -578,21 +652,6 @@ namespace Tomboy
 					++idx;
 					highlight_search = args [idx];
 					break;
-#else
-				case "--new-note":
-				case "--open-note":
-				case "--start-here":
-				case "--highlight-search":
-					string unknown_opt =
-					        Catalog.GetString (
-					                "Tomboy: unsupported option '{0}'\n" +
-					                "Try 'tomboy --help' for more " +
-					                "information.\n" +
-					                "D-BUS remote control disabled.");
-					Console.WriteLine (unknown_opt, args [idx]);
-					quit = true;
-					break;
-#endif // ENABLE_DBUS || WIN32
 
 				case "--panel-applet":
 					panel_applet = true;
@@ -631,10 +690,6 @@ namespace Tomboy
 					open_search = true;
 					break;
 
-//    case "--check-plugin-unloading":
-//     check_plugin_unloading = true;
-//     break;
-
 				case "--version":
 					PrintAbout ();
 					PrintVersion();
@@ -659,7 +714,6 @@ namespace Tomboy
 
 		public void Execute ()
 		{
-#if ENABLE_DBUS || WIN32 || MAC
 			IRemoteControl remote = null;
 			try {
 				remote = RemoteControlProxy.GetInstance ();
@@ -752,19 +806,6 @@ namespace Tomboy
 				else
 					remote.DisplaySearch ();
 			}
-#else
-			if (open_search) {
-				NoteRecentChanges recent_changes =
-				        NoteRecentChanges.GetInstance (Tomboy.DefaultNoteManager);
-				if (recent_changes == null)
-					return;
-
-				if (search_text != null)
-					recent_changes.SearchText = search_text;
-
-				recent_changes.Present ();
-			}
-#endif // ENABLE_DBUS || WIN32
 		}
 	}
 }

@@ -40,7 +40,13 @@ namespace Tomboy
 
 		public void Log (Level lvl, string msg, params object[] args)
 		{
-			msg = string.Format ("[{0}]: {1}", Enum.GetName (typeof (Level), lvl), msg);
+			Console.Write ("[{0} {1:00}:{2:00}:{3:00}.{4:000}]",
+			               Enum.GetName (typeof (Level), lvl),
+			               DateTime.Now.Hour,
+			               DateTime.Now.Minute,
+			               DateTime.Now.Second,
+			               DateTime.Now.Millisecond);
+			msg = string.Format (" {0}", msg);
 			if (args.Length > 0)
 				Console.WriteLine (msg, args);
 			else
@@ -57,17 +63,14 @@ namespace Tomboy
 		{
 			console = new ConsoleLogger ();
 
-#if WIN32
+			string logDir = Services.NativeApplication.LogDirectory;
 			string logfile = Path.Combine(
-				Services.NativeApplication.ConfDir,
+				logDir,
 				"tomboy.log");
-#else
-			string logfile = Path.Combine(
-				Environment.GetEnvironmentVariable ("HOME"),
-				".tomboy.log");
-#endif
 
 			try {
+				if (!Directory.Exists (logDir))
+					Directory.CreateDirectory (logDir);
 				log = File.CreateText (logfile);
 				log.Flush ();
 			} catch (IOException iox) {

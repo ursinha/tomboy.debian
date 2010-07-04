@@ -107,6 +107,36 @@
     </schema>
 
     <schema>
+      <key>/schemas/apps/tomboy/enable_delete_confirm</key>
+      <applyto>/apps/tomboy/enable_delete_confirm</applyto>
+      <owner>tomboy</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+         <short>Enable the Delete Note confirmation dialog</short>
+         <long>
+	  If disabled, the "Delete Note" confirmation dialog will be suppressed.
+         </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/tomboy/enable_tray_icon</key>
+      <applyto>/apps/tomboy/enable_tray_icon</applyto>
+      <owner>tomboy</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+         <short>Enable Tray Icon</short>
+         <long>
+	   If true, Tomboy's tray icon will be displayed in the notification area.
+	   Disabling this may be useful when another application is providing
+	   the functionality of the tray icon.
+         </long>
+      </locale>
+    </schema>
+
+    <schema>
       <key>/schemas/apps/tomboy/start_note</key>
       <applyto>/apps/tomboy/start_note</applyto>
       <owner>tomboy</owner>
@@ -148,6 +178,21 @@
          <long>
 	   Whitespace-separated list of note URIs for notes that should always
 	   appear in the Tomboy note menu.
+         </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/tomboy/tray_menu_item_max_length</key>
+      <applyto>/apps/tomboy/tray_menu_item_max_length</applyto>
+      <owner>tomboy</owner>
+      <type>int</type>
+      <default>100</default>
+      <locale name="C">
+         <short>Maximum note title length to show in tray menu.</short>
+         <long>
+	   Maximum characters of note title to show in the Tomboy tray or
+	   panel applet note menu.
          </long>
       </locale>
     </schema>
@@ -491,11 +536,12 @@
       <applyto>/apps/tomboy/sync_sshfs_port</applyto>
       <owner>tomboy</owner>
       <type>int</type>
-      <default>22</default>
+      <default>-1</default>
       <locale name="C">
          <short>SSHFS Synchronization Server Port</short>
          <long>
 	   The port to use when connecting to the synchronization server via SSH.
+	   Set to -1 or less if default SSH port settings should be used instead.
          </long>
       </locale>
     </schema>
@@ -528,6 +574,43 @@
 	   the user.  The values map to an internal enumeration.  0 indicates
 	   that the user wishes to be prompted when a conflict occurs, so that
 	   they may handle each conflict situation on a case-by-case basis.
+         </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/tomboy/sync/autosync_timeout</key>
+      <applyto>/apps/tomboy/sync/autosync_timeout</applyto>
+      <owner>tomboy</owner>
+      <type>int</type>
+      <default>-1</default>
+      <locale name="C">
+         <short>Automatic Background Synchronization Timeout</short>
+         <long>
+	   Integer value indicating how frequently to perform a background sync
+	   of your notes (when sync is configured).  Any value less than 1
+	   indicates that autosync is disabled.  The lowest acceptable positive
+	   value is 5.  Value is in minutes.
+         </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/tomboy/note_rename_behavior</key>
+      <applyto>/apps/tomboy/note_rename_behavior</applyto>
+      <owner>tomboy</owner>
+      <type>int</type>
+      <default>0</default>
+      <locale name="C">
+         <short>Link Updating Behavior on Note Rename</short>
+         <long>
+	   Integer value indicating if there is a preference to always perform
+	   a specific link updating behavior when a note is renamed, instead of prompting
+	   the user.  The values map to an internal enumeration.  0 indicates
+	   that the user wishes to be prompted when renaming a note may impact links
+	   that exist in other notes. 1 indicates that links should automatically
+	   be removed. 2 indicates that link text should be updated to the new note name
+	   so that it will continue linking to the renamed note.
          </long>
       </locale>
     </schema>

@@ -31,21 +31,36 @@ namespace Tomboy
 
 		public event System.EventHandler ApplicationAddinListChanged;
 
-		public AddinManager (string tomboy_conf_dir)
+		public AddinManager (string tomboy_conf_dir) : this (tomboy_conf_dir, null)
+		{
+		}
+
+		public AddinManager (string tomboy_conf_dir, string old_tomboy_conf_dir)
 		{
 			this.tomboy_conf_dir = tomboy_conf_dir;
 			app_addins = new Dictionary<string, ApplicationAddin> ();
 			note_addins = new Dictionary<Note, List<NoteAddinInfo>> ();
 			note_addin_infos = new Dictionary<string, List<NoteAddinInfo>> ();
 
-			InitializeMonoAddins ();
+			InitializeMonoAddins (old_tomboy_conf_dir);
 		}
 
-		void InitializeMonoAddins ()
+		void InitializeMonoAddins (string old_conf_dir)
 		{
 			Logger.Info ("Initializing Mono.Addins");
 
-			string addins_dir = Path.Combine (tomboy_conf_dir, "addins");
+			// Perform migration if necessary
+			if (!String.IsNullOrEmpty (old_conf_dir)) {
+				foreach (string dir_path in Directory.GetDirectories (old_conf_dir, "addin*")) {
+					string new_dir_path =
+						Path.Combine (tomboy_conf_dir, Path.GetFileName (dir_path));
+					if (!Directory.Exists (new_dir_path))
+						IOUtils.CopyDirectory (dir_path, new_dir_path);
+				}
+			}
+
+			string addins_dir = Tomboy.Uninstalled ? ".":
+				Path.Combine (tomboy_conf_dir, "addins");
 			if (!Directory.Exists (addins_dir))
 				Directory.CreateDirectory (addins_dir);
 
@@ -69,13 +84,13 @@ namespace Tomboy
 				                                      "<Addins>\n" +
 				                                      "\t<Directory>{0}</Directory>\n" +
 				                                      "</Addins>\n",
-				                                      Defines.SYS_ADDINS_DIR);
+				                                      Tomboy.Uninstalled ? "./addins" : Defines.SYS_ADDINS_DIR);
 				sw.Write (addins_file_contents);
 			}
 
 			Mono.Addins.AddinManager.AddinLoaded += OnAddinLoaded;
 			Mono.Addins.AddinManager.AddinUnloaded += OnAddinUnloaded;
-			Mono.Addins.AddinManager.Initialize (tomboy_conf_dir);
+			Mono.Addins.AddinManager.Initialize (Tomboy.Uninstalled ? "." : tomboy_conf_dir);
 			UpgradeOldAddinConfig ();
 			if (Tomboy.Debugging) {
 				Mono.Addins.AddinManager.Registry.Rebuild (null);

@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using Mono.Unix;
 using System.Runtime.InteropServices;
+#if !WIN32 && !MAC
+using GtkBeans;
+#endif
 
 namespace Tomboy
 {
@@ -31,7 +34,9 @@ namespace Tomboy
 		{
 			this.note = note;
 			Image = new Gtk.Image (note_icon);
-
+#if HAS_GTK_2_16
+			this.SetAlwaysShowImage (true);
+#endif
 			if (show_pin) {
 				Gtk.HBox box = new Gtk.HBox (false, 0);
 				Gtk.Widget child = Child;
@@ -57,10 +62,10 @@ namespace Tomboy
 		static string GetDisplayName (Note note)
 		{
 			string display_name = note.Title;
-			int max_length = 100;
+			int max_length = (int) Preferences.Get (Preferences.MENU_ITEM_MAX_LENGTH);
 
 			if (note.IsNew) {
-				string new_string = Catalog.GetString(" (new)");
+				string new_string = Catalog.GetString (" (new)");
 				max_length -= new_string.Length;
 				display_name = Ellipsify (display_name, max_length)
 					+ new_string;
@@ -137,15 +142,27 @@ namespace Tomboy
 		TomboyTray tray;
 		TomboyPrefsKeybinder keybinder;
 		Gtk.Menu context_menu;
+		Gtk.ImageMenuItem sync_menu_item;
 
 		public TomboyTrayIcon (NoteManager manager)
 		{
 			tray = new TomboyTray (manager, this);
 			keybinder = new TomboyPrefsKeybinder (manager, this);
 			int panel_size = 22;
-			Pixbuf = GuiUtils.GetIcon ("tomboy", panel_size);
+			// Load Icon to display in the notification area.
+			// First we try the "tomboy-panel" icon. This icon can be replaced
+			// by the user's icon theme. If the theme does not have this icon
+			// then we fall back to the Tomboy Menu icon named "tomboy".
+			Pixbuf = GuiUtils.GetIcon ("tomboy-panel", panel_size) ??
+				GuiUtils.GetIcon ("tomboy", panel_size);
 
 			Tooltip = TomboyTrayUtils.GetToolTipText ();
+
+			Visible = (bool) Preferences.Get (Preferences.ENABLE_TRAY_ICON);
+			Preferences.SettingChanged += (o, args) => {
+				if (args.Key == Preferences.ENABLE_TRAY_ICON)
+					Visible = (bool) args.Value;
+			};
 
 			Tomboy.ExitingEvent += OnExit;
 #if MAC
@@ -179,14 +196,14 @@ namespace Tomboy
 			if (context_menu != null)
 				context_menu.Hide ();
 
-			TomboyTrayUtils.UpdateTomboyTrayMenu (tray, null);
-			if (select_first_item)
-				tray.TomboyTrayMenu.SelectFirst (false);
+			tray.NoteManager.GtkInvoke (() => {
+				TomboyTrayUtils.UpdateTomboyTrayMenu (tray, null);
+				if (select_first_item)
+					tray.TomboyTrayMenu.SelectFirst (false);
 
-			
-				
-			GuiUtils.PopupMenu (tray.TomboyTrayMenu, null, 
-				new Gtk.MenuPositionFunc (GetTrayMenuPosition));
+				GuiUtils.PopupMenu (tray.TomboyTrayMenu, null,
+					new Gtk.MenuPositionFunc (GetTrayMenuPosition));
+			});
 		}
 		
 		public void GetTrayMenuPosition (Gtk.Menu menu,
@@ -222,7 +239,21 @@ namespace Tomboy
 				Logger.Error ("Exception in GetTrayMenuPosition: " + e.ToString ());
 			}
 		}
-		
+
+		void Preferences_SettingChanged (object sender, EventArgs args)
+		{
+			// Update items based on configuration.
+			UpdateMenuItems ();
+		}
+
+		void UpdateMenuItems ()
+		{
+			// Is synchronization configured and active?
+			string sync_addin_id = Preferences.Get (Preferences.SYNC_SELECTED_SERVICE_ADDIN)
+				as string;
+			sync_menu_item.Sensitive = !string.IsNullOrEmpty (sync_addin_id);
+		}
+
 		Gtk.Menu GetRightClickMenu ()
 		{
 			if (tray.TomboyTrayMenu != null)
@@ -239,6 +270,15 @@ namespace Tomboy
 			context_menu.AccelGroup = accel_group;
 
 			Gtk.ImageMenuItem item;
+
+			sync_menu_item = new Gtk.ImageMenuItem (Catalog.GetString ("S_ynchronize Notes"));
+			sync_menu_item.Image = new Gtk.Image (Gtk.Stock.Convert, Gtk.IconSize.Menu);
+			UpdateMenuItems();
+			Preferences.SettingChanged += Preferences_SettingChanged;
+			sync_menu_item.Activated += SyncNotes;
+			context_menu.Append (sync_menu_item);
+
+			context_menu.Append (new Gtk.SeparatorMenuItem ());
 
 			item = new Gtk.ImageMenuItem (Catalog.GetString ("_Preferences"));
 			item.Image = new Gtk.Image (Gtk.Stock.Preferences, Gtk.IconSize.Menu);
@@ -269,6 +309,11 @@ namespace Tomboy
 		void ShowPreferences (object sender, EventArgs args)
 		{
 			Tomboy.ActionManager ["ShowPreferencesAction"].Activate ();
+		}
+
+		void SyncNotes (object sender, EventArgs args)
+		{
+			Tomboy.ActionManager ["NoteSynchronizationAction"].Activate ();
 		}
 
 		void ShowHelpContents (object sender, EventArgs args)

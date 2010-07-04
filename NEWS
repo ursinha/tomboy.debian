@@ -9,6 +9,129 @@ Please send questions and suggestions to
 Please report bugs using http://bugzilla.gnome.org/
 (http://bugzilla.gnome.org/enter_bug.cgi?product=Tomboy).
 
+Version 1.3.1
+* Disable panel applet support by default (Javier Jardón, #603423, #580422)
+* New topic-based help (Paul Cutler and the rest of the docs team, #622228)
+* Add libproxy support to web sync (Alejandro Cura, #621249)
+* Support LaTeX add-in on Mac (Tobias Abenius, #618577)
+* Fix `make run` for developers (#431833)
+* Document --debug option in manpage (Carlos Arenas, #602376)
+* Translation updates: de, es, et, gl, he, hu, ms, nb
+
+Version 1.3.0
+* Use GNOME Session D-Bus API for session management (Aaron Borden, #580422)
+* Fix indentation of bullet list items when printing (Owen Williams, LP#516494)
+* Fix keyboard navigation in bullet lists (Stefan Schweizer, #433244)
+* Applet now uses correct icon (Brian Mattern, #614795)
+* Add hidden preference for quiet note deletion (Jeff Stoner, #585040)
+* Add hidden preference for disabling tray icon (Matthew Pirocchi, #594682)
+* HIG menu item clean-ups on Mac (Brion Vibber, #616238)
+* Proper formatting when typing in timestamp text (Stefan Schweizer, #612755)
+* Allow building with -DGSEAL_ENABLE (#616195)
+* Fix crash in autosync when certain server types are unavailable (#620812)
+* Clean up stream usage in attempt to fix LP#556628
+
+Version 1.2.0
+* Handle new application/x-note mimetype (#611865, Olivier Le Thanh Duong)
+* Add a text/path-list target when drag-and-dropping from Search window,
+  allowing basic note transfer via Empathy (#611858, Olivier Le Thanh Duong)
+* Allow icon themes to customize the panel/tray icon separately (#612887)
+* Fix icon embedding in Mac build (#612893)
+* Fix errors when using GTK+ >= 2.19.7
+* Translation updates: bn, da, el, eu, fi, gl, it, ko, nb, lt, pa, pt, ru, sv, uk
+
+Version 1.1.4
+* Autosync improvements:
+  - Enable the preference in the UI
+  - Try to only sync when idle (to avoid interrupting your writing)
+  - Do not attempt to sync when the server is unavailable
+  - Fix focus/cursor issues that were occurring after autosync
+* Other fixes: #611564, #611801
+* Translation updates: bg, cs, de, en_GB, el, es, et, eu, fr, gl, hu, it, lv,
+                       pl, pt_BR, ro, ru, sl, sv, ta
+
+Version 1.1.3
+* Translation updates: de, es, et, eu, gl, nb, pt_BR, ro, sl, ta, zh_HK, zh_TW
+
+Version 1.1.2
+* Experimental automatic background synchronization support (#562097)
+  See the bug report for information about enabling and testing this new feature
+* Allow user to decide if links are updated when renaming a note (#574485)
+* Fix crashers related to new Jump List feature (#608779, #608940, Stefan Cosma)
+* Translation updates: de, th
+
+Version 1.1.1
+* Awesome new Jump List support on Windows 7 (#587330, Stefan Cosma)
+* Copy rich text from notes to apps like Evolution and OpenOffice.org Writer.
+  Feature requires gtk-sharp 2.12.10 (#431014, Gabriel Burt)
+* Rearrange Tomboy startup so icon appears within 0.5-1.0 seconds
+* Prevent crash when entering empty notebook name (#602483, Greg Poirier)
+* Other fixes: #594662, #592985, #541663
+* New translations: ast, en@shaw
+* Translation updates: bg, bn, es, et, eu, he, it, nb, sl, sv, uk, zh_CN
+
+Version 1.1.0
+* Add support for Ubuntu One and others using OAuth 1.0a (#594046, Rodrigo Moya)
+* Fix printing in Windows Vista and Windows 7 (#576554)
+* Various Windows bug fixes (#585297, #601067, #599688, Stefan Cosma)
+* Add CreateNamedNoteWithUri method to dbus interface (#580525, Matt Jones)
+* Add dbus methods for working with notebooks (#576329, Clemens Buss)
+* Always show icons for note items in recent notes menu (#590653)
+* Add Sync menu item to panel applet (#597569)
+* Stop cutting off message text in the Sync dialog (#553615)
+* Other fixes: #596416, #596395, #597139
+* Translation updates: ca, id, it, lv, nb, pl, ro, sl
+
+Version 1.0.0
+* Fix crash when showing Search from panel applet (#595098).
+* Redirect complete applet output to ~/.config/tomboy/tomboy-panel.log.
+* Every patch contributor goes in the About dialog now.
+* Add Underline add-in to Windows/Mac builds.
+* WebSync fixes on Windows.
+* New Translations: ca@valencia, id
+* Translation updates: as, bg, bn_IN, br, ca@valencia, cs, da, de, el, en_GB,
+                       es, et, eu, fi, fr, gl, gu, he, hi, hu, id, it, kn, ko,
+                       lt, ml, mr, nb, or, pa, pl, pt, pt_BR, ro, sl, sr,
+                       sr@latin, sv, ta, te, th, uk, zh_HK, zh_TW
+
+Version 0.15.7
+WebSync updates:
+* Update for latest (hopefully final) REST API spec (Rodrigo Moya).
+* Initial support for OAuth 1.0a servers (#594046).
+* Drop heavy System.Web dependency by bundling HttpUtility class.
+* Fix parsing bug that caused Tomboy to upload empty notes to the server.
+* More streamlined initial auth procedure (less clicks).
+* Fix error when connecting before logged in to Snowy (#591455).
+Other updates:
+* Prevent crash on PPC and ARM when showing menus (#586605, #593422).
+* Don't connect to session manager when running as applet (#533537).
+* When closing search window, do not quit if Tomboy icon is visible (#584910).
+* Translation updates: bn, bn_IN, de, es, et, eu, fr, nb, pl, pt, pt_BR,
+                       sr, sr@latin, sv, ta, zh_HK, zh_TW
+
+Version 0.15.6
+* Migrate notes from ~/.tomboy, following Free Desktop standards on Linux and
+  appropriate conventions on Windows and Mac OS X (#518585, #557288).
+* Don't force port 22 when no port is specified for SSH sync (#574517).
+* Add preference in GConf for maximum width of note menu (#417145, Jeff Tickle).
+* New Translations: br, ga
+* Translation updates: bg, de, es, et, fi, fr, sv, th, zh_HK, zh_TW
+
+Version 0.15.5
+* Option to sync from Tomboy icon's contextual menu (#468459, Buchner Johannes).
+* Rename notebooks from the Search window (#435734).
+* Clean up wasted space in Search and Preferences windows (#574155 and more).
+* Maintain scroll position when notes change while Search window open (#588593).
+* Fix Notebook toolbar button appearance with 'text beside icons' setting.
+* Translation updates: ca, gl, nb, pt_BR
+
+Version 0.15.4
+* Improved behavior when changing font sizes (Stefan Schweizer).
+* Builds fixes on Windows and Mac OS X (Matt Johnston, Sandy Armstrong).
+* Require gtk+ 2.14 and stop using obsolete libgnome APIs.
+* New Help Translations: cs
+* Translation updates: ca, et, he, pt_BR, zh_CN, zh_HK
+
 Version 0.15.3
 * New underline formatting add-in (disabled by default) from Mark Wakim.
 * Add ctrl +/- shortcuts for changing font size (#488822, Stefan Schweizer).

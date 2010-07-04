@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.IO;
 using System.Xml;
 
@@ -61,26 +62,26 @@ namespace Tomboy
 		// calling this.
 		public static void PopupMenu (Gtk.Menu menu, Gdk.EventButton ev)
 		{
-			menu.Deactivated += DeactivateMenu;
-			menu.Popup (null,
-			            null,
-			            new Gtk.MenuPositionFunc (GetMenuPosition),
-			            (ev == null) ? 0 : ev.Button,
-			            (ev == null) ? Gtk.Global.CurrentEventTime : ev.Time);
-
-			// Highlight the parent
-			if (menu.AttachWidget != null)
-				menu.AttachWidget.State = Gtk.StateType.Selected;
+			PopupMenu (menu, ev, new Gtk.MenuPositionFunc (GetMenuPosition));
 		}
 
 		public static void PopupMenu (Gtk.Menu menu, Gdk.EventButton ev, Gtk.MenuPositionFunc mpf)
 		{
 			menu.Deactivated += DeactivateMenu;
-			menu.Popup (null,
-			            null,
-			            mpf,
-			            (ev == null) ? 0 : ev.Button,
-			            (ev == null) ? Gtk.Global.CurrentEventTime : ev.Time);
+			try {
+				menu.Popup (null,
+				            null,
+				            mpf,
+				            (ev == null) ? 0 : ev.Button,
+				            (ev == null) ? Gtk.Global.CurrentEventTime : ev.Time);
+			} catch {
+				Logger.Debug ("Menu popup failed with custom MenuPositionFunc; trying again without");
+				menu.Popup (null,
+				            null,
+				            null,
+				            (ev == null) ? 0 : ev.Button,
+				            (ev == null) ? Gtk.Global.CurrentEventTime : ev.Time);
+			}
 
 			// Highlight the parent
 			if (menu.AttachWidget != null)
@@ -104,7 +105,7 @@ namespace Tomboy
 				return ret.ScaleSimple (size, size, Gdk.InterpType.Bilinear);
 			} catch (ArgumentException) {}
 
-			Logger.Log ("Unable to load icon '{0}'.", resource_name);
+			Logger.Debug ("Unable to load icon '{0}'.", resource_name);
 			return null;
 		}
 
@@ -131,22 +132,19 @@ namespace Tomboy
 			return MakeImageButton (image, label);
 		}
 
-		public static void ShowHelp (string filename,
-		                             string link_id,
+		public static void ShowHelp (string project,
+		                             string page,
 		                             Gdk.Screen screen,
 		                             Gtk.Window parent)
 		{
 			try {
-				Services.NativeApplication.DisplayHelp (
-					filename,
-					link_id,
-					screen);
+				Services.NativeApplication.DisplayHelp (project, page, screen);
 			} catch {
-			string message =
-			Catalog.GetString ("The \"Tomboy Notes Manual\" could " +
-			"not be found.  Please verify " +
-			"that your installation has been " +
-			"completed successfully.");
+				string message =
+					Catalog.GetString ("The \"Tomboy Notes Manual\" could " +
+					"not be found.  Please verify " +
+					"that your installation has been " +
+					"completed successfully.");
 				HIGMessageDialog dialog =
 				        new HIGMessageDialog (parent,
 				                              Gtk.DialogFlags.DestroyWithParent,
@@ -239,6 +237,31 @@ namespace Tomboy
 				             date.ToString (Catalog.GetString ("MMMM d yyyy"));
 
 			return pretty_str;
+		}
+
+		/// <summary>
+		/// Invoke a method on the GUI thread, and wait for it to
+		/// return. If the method raises an exception, it will be
+		/// thrown from this method.
+		/// </summary>
+		/// <param name="a">
+		/// The action to invoke.
+		/// </param>
+		public static void GtkInvokeAndWait (Action a)
+		{
+			Exception mainThreadException = null;
+			AutoResetEvent evt = new AutoResetEvent (false);
+			Gtk.Application.Invoke (delegate {
+				try {
+					a.Invoke ();
+				} catch (Exception e) {
+					mainThreadException = e;
+				}
+				evt.Set ();
+			});
+			evt.WaitOne ();
+			if (mainThreadException != null)
+				throw mainThreadException;
 		}
 	}
 
@@ -955,6 +978,23 @@ namespace Tomboy
 			get {
 				return action_manager;
 			}
+		}
+	}
+
+	public static class IOUtils
+	{
+		/// <summary>
+		/// Recursively copy the directory specified by old_path to
+		/// new_path. Assumes that old_path is an existing directory
+		/// and new_path does not exist.
+		/// </summary>
+		public static void CopyDirectory (string old_path, string new_path)
+		{
+			Directory.CreateDirectory (new_path);
+			foreach (string file_path in Directory.GetFiles (old_path))
+				File.Copy (file_path, Path.Combine (new_path, Path.GetFileName (file_path)));
+			foreach (string dir_path in Directory.GetDirectories (old_path))
+				CopyDirectory (dir_path, Path.Combine (new_path, Path.GetFileName (dir_path)));
 		}
 	}
 }

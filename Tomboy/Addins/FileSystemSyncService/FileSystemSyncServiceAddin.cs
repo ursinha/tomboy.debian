@@ -14,7 +14,7 @@ namespace Tomboy.Sync
 		// that supports a field, a username, and password.  This could be useful
 		// in quickly building SshSyncServiceAddin, FtpSyncServiceAddin, etc.
 
-		private Entry pathEntry;
+		private FileChooserButton pathButton;
 		private string path;
 		private bool initialized = false;
 
@@ -81,7 +81,9 @@ namespace Tomboy.Sync
 		/// </summary>
 		public override Gtk.Widget CreatePreferencesControl ()
 		{
-			Gtk.Table table = new Gtk.Table (1, 3, false);
+			Gtk.Table table = new Gtk.Table (1, 2, false);
+			table.RowSpacing = 5;
+			table.ColumnSpacing = 10;
 
 			// Read settings out of gconf
 			string syncPath;
@@ -90,47 +92,23 @@ namespace Tomboy.Sync
 
 			Label l = new Label (Catalog.GetString ("_Folder Path:"));
 			l.Xalign = 1;
-			table.Attach (l, 0, 1, 0, 1);
+			table.Attach (l, 0, 1, 0, 1,
+			              Gtk.AttachOptions.Fill,
+			              Gtk.AttachOptions.Expand | Gtk.AttachOptions.Fill,
+			              0, 0);
 
-			pathEntry = new Entry ();
-			pathEntry.Text = syncPath;
-			table.Attach (pathEntry, 1, 2, 0, 1);
-			l.MnemonicWidget = pathEntry;
+			pathButton = new FileChooserButton (Catalog.GetString ("Select Synchronization Folder..."),
+			                                    FileChooserAction.SelectFolder);
+			l.MnemonicWidget = pathButton;
+			pathButton.SetFilename (syncPath);
 
-			Image browseImage = new Image (Stock.Open, IconSize.Button);
-			Label browseLabel = new Label (Catalog.GetString ("_Browse..."));
-
-			HBox browseBox = new HBox (false, 0);
-			browseBox.PackStart (browseImage);
-			browseBox.PackStart (browseLabel);
-
-			Button browseButton = new Button ();
-			browseButton.Add (browseBox);
-			browseLabel.MnemonicWidget = browseButton;
-			browseButton.Clicked += OnBrowseButtonClicked;
-			table.Attach (browseButton, 2, 3, 0, 1, AttachOptions.Shrink, AttachOptions.Expand, 0, 0);
+			table.Attach (pathButton, 1, 2, 0, 1,
+			              Gtk.AttachOptions.Expand | Gtk.AttachOptions.Fill,
+			              Gtk.AttachOptions.Expand | Gtk.AttachOptions.Fill,
+			              0, 0);
 
 			table.ShowAll ();
 			return table;
-		}
-
-		private void OnBrowseButtonClicked (object sender, EventArgs args)
-		{
-			FileChooserDialog chooserDlg =
-			        new FileChooserDialog (Catalog.GetString ("Select Synchronization Folder..."),
-			                               null,
-			                               FileChooserAction.SelectFolder,
-			                               Stock.Cancel, ResponseType.Cancel,
-			                               Stock.Ok, ResponseType.Ok);
-			chooserDlg.DefaultResponse = ResponseType.Cancel;
-			chooserDlg.SetFilename (pathEntry.Text);
-
-			ResponseType response = (ResponseType) chooserDlg.Run ();
-
-			if (response == ResponseType.Ok)
-				pathEntry.Text = chooserDlg.Filename;
-
-			chooserDlg.Destroy ();
 		}
 
 		/// <summary>
@@ -140,7 +118,7 @@ namespace Tomboy.Sync
 		/// </summary>
 		public override bool SaveConfiguration ()
 		{
-			string syncPath = pathEntry.Text.Trim ();
+			string syncPath = pathButton.Filename;
 
 			if (syncPath == string.Empty) {
 				// TODO: Figure out a way to send the error back to the client

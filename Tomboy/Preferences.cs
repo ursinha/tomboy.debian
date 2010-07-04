@@ -15,11 +15,14 @@ namespace Tomboy
 		public const string ENABLE_AUTO_BULLETED_LISTS = "/apps/tomboy/enable_bulleted_lists";
 		public const string ENABLE_ICON_PASTE = "/apps/tomboy/enable_icon_paste";
 		public const string ENABLE_CLOSE_NOTE_ON_ESCAPE = "/apps/tomboy/enable_close_note_on_escape";
+		public const string ENABLE_TRAY_ICON = "/apps/tomboy/enable_tray_icon";
+		public const string ENABLE_DELETE_CONFIRM = "/apps/tomboy/enable_delete_confirm";
 
 		public const string START_NOTE_URI = "/apps/tomboy/start_note";
 		public const string CUSTOM_FONT_FACE = "/apps/tomboy/custom_font_face";
 		public const string MENU_NOTE_COUNT = "/apps/tomboy/menu_note_count";
 		public const string MENU_PINNED_NOTES = "/apps/tomboy/menu_pinned_notes";
+		public const string MENU_ITEM_MAX_LENGTH = "/apps/tomboy/tray_menu_item_max_length";
 
 		public const string KEYBINDING_SHOW_NOTE_MENU = "/apps/tomboy/global_keybindings/show_note_menu";
 		public const string KEYBINDING_OPEN_START_HERE = "/apps/tomboy/global_keybindings/open_start_here";
@@ -37,6 +40,9 @@ namespace Tomboy
 		public const string SYNC_LOCAL_PATH = "/apps/tomboy/sync/sync_local_path";
 		public const string SYNC_SELECTED_SERVICE_ADDIN = "/apps/tomboy/sync/sync_selected_service_addin";
 		public const string SYNC_CONFIGURED_CONFLICT_BEHAVIOR = "/apps/tomboy/sync/sync_conflict_behavior";
+		public const string SYNC_AUTOSYNC_TIMEOUT = "/apps/tomboy/sync/autosync_timeout";
+
+		public const string NOTE_RENAME_BEHAVIOR = "/apps/tomboy/note_rename_behavior";
 
 		public const string INSERT_TIMESTAMP_FORMAT = "/apps/tomboy/insert_timestamp/format";
 		
@@ -82,6 +88,12 @@ namespace Tomboy
 			case ENABLE_CLOSE_NOTE_ON_ESCAPE:
 				return true;
 
+			case ENABLE_TRAY_ICON:
+				return true;
+
+			case ENABLE_DELETE_CONFIRM:
+				return true;
+
 			case START_NOTE_URI:
 				return String.Empty;
 
@@ -93,6 +105,9 @@ namespace Tomboy
 
 			case MENU_PINNED_NOTES:
 				return string.Empty;
+
+			case MENU_ITEM_MAX_LENGTH:
+				return 100;
 
 			case KEYBINDING_SHOW_NOTE_MENU:
 				return "<Alt>F12";
@@ -127,6 +142,12 @@ namespace Tomboy
 				return string.Empty;
 
 			case SYNC_CONFIGURED_CONFLICT_BEHAVIOR:
+				return 0;
+
+			case SYNC_AUTOSYNC_TIMEOUT:
+				return -1;
+
+			case NOTE_RENAME_BEHAVIOR:
 				return 0;
 
 			case INSERT_TIMESTAMP_FORMAT:

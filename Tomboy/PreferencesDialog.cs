@@ -18,6 +18,9 @@ namespace Tomboy
 		Gtk.Widget syncAddinPrefsWidget;
 		Gtk.Button resetSyncAddinButton;
 		Gtk.Button saveSyncAddinButton;
+		Gtk.CheckButton autosyncCheck;
+		Gtk.SpinButton autosyncSpinner;
+		Gtk.ComboBox rename_behavior_combo;
 		readonly AddinManager addin_manager;
 		
 		Gtk.Button font_button;
@@ -61,7 +64,6 @@ namespace Tomboy
 			Resizable = true;
 			Title = Catalog.GetString ("Tomboy Preferences");
 
-			VBox.Spacing = 5;
 			ActionArea.Layout = Gtk.ButtonBoxStyle.End;
 
 			addin_prefs_dialogs =
@@ -73,7 +75,6 @@ namespace Tomboy
 
 			Gtk.Notebook notebook = new Gtk.Notebook ();
 			notebook.TabPos = Gtk.PositionType.Top;
-			notebook.BorderWidth = 5;
 			notebook.Show ();
 
 			notebook.AppendPage (MakeEditingPane (),
@@ -122,6 +123,32 @@ namespace Tomboy
 
 			AddActionWidget (button, Gtk.ResponseType.Close);
 			DefaultResponse = Gtk.ResponseType.Close;
+
+			Preferences.SettingChanged += HandlePreferencesSettingChanged;
+		}
+
+		void HandlePreferencesSettingChanged (object sender, NotifyEventArgs args)
+		{
+			if (args.Key == Preferences.NOTE_RENAME_BEHAVIOR) {
+				int rename_behavior = (int) args.Value;
+				if (rename_behavior < 0 || rename_behavior > 2) {
+					rename_behavior = 0;
+					Preferences.Set (Preferences.NOTE_RENAME_BEHAVIOR, rename_behavior);
+				}
+				if (rename_behavior_combo.Active != rename_behavior)
+					rename_behavior_combo.Active = rename_behavior;
+			} else if (args.Key == Preferences.SYNC_AUTOSYNC_TIMEOUT) {
+				int timeout = (int) args.Value;
+				if (timeout <= 0 && autosyncCheck.Active)
+					autosyncCheck.Active = false;
+				else if (timeout > 0) {
+					timeout = (timeout >= 5 && timeout < 1000) ? timeout : 5;
+					if (!autosyncCheck.Active)
+						autosyncCheck.Active = true;
+					if ((int) autosyncSpinner.Value != timeout)
+						autosyncSpinner.Value = timeout;
+				}
+			}
 		}
 		
 		// Page 1
@@ -186,24 +213,43 @@ namespace Tomboy
 			SetupPropertyEditor (bullet_peditor);
 
 			// Custom font...
-
+			Gtk.HBox font_box = new Gtk.HBox (false, 0);
 			check = MakeCheckButton (Catalog.GetString ("Use custom _font"));
-			options_list.PackStart (check, false, false, 0);
+			font_box.PackStart (check);
 
 			font_peditor =
 			        Services.Factory.CreatePropertyEditorToggleButton (Preferences.ENABLE_CUSTOM_FONT,
 			                                        check);
 			SetupPropertyEditor (font_peditor);
 
-			align = new Gtk.Alignment (0.5f, 0.5f, 0.4f, 1.0f);
-			align.Show ();
-			options_list.PackStart (align, false, false, 0);
-
 			font_button = MakeFontButton ();
 			font_button.Sensitive = check.Active;
-			align.Add (font_button);
+			font_box.PackStart (font_button);
+			font_box.ShowAll ();
+			options_list.PackStart (font_box, false, false, 0);
 
 			font_peditor.AddGuard (font_button);
+
+			// Note renaming bahvior
+			Gtk.HBox rename_behavior_box = new Gtk.HBox (false, 0);
+			label = MakeLabel (Catalog.GetString ("When renaming a linked note: "));
+			rename_behavior_box.PackStart (label);
+			rename_behavior_combo = new Gtk.ComboBox (new string [] {
+				Catalog.GetString ("Ask me what to do"),
+				Catalog.GetString ("Never rename links"),
+				Catalog.GetString ("Always rename links")});
+			int rename_behavior = (int) Preferences.Get (Preferences.NOTE_RENAME_BEHAVIOR);
+			if (rename_behavior < 0 || rename_behavior > 2) {
+				rename_behavior = 0;
+				Preferences.Set (Preferences.NOTE_RENAME_BEHAVIOR, rename_behavior);
+			}
+			rename_behavior_combo.Active = rename_behavior;
+			rename_behavior_combo.Changed += (o, e) =>
+				Preferences.Set (Preferences.NOTE_RENAME_BEHAVIOR,
+				                 rename_behavior_combo.Active);
+			rename_behavior_box.PackStart (rename_behavior_combo);
+			rename_behavior_box.ShowAll ();
+			options_list.PackStart (rename_behavior_box, false, false, 0);
 			
 			// New Note Template
 			// Translators: This is 'New Note' Template, not New 'Note Template'
@@ -448,9 +494,43 @@ namespace Tomboy
 
 			syncAddinPrefsWidget.Show ();
 			syncAddinPrefsContainer = new Gtk.VBox (false, 0);
-			syncAddinPrefsContainer.PackStart (syncAddinPrefsWidget, true, true, 0);
+			syncAddinPrefsContainer.PackStart (syncAddinPrefsWidget, false, false, 0);
 			syncAddinPrefsContainer.Show ();
-			vbox.PackStart (syncAddinPrefsContainer, true, true, 0);
+			vbox.PackStart (syncAddinPrefsContainer, true, true, 10);
+
+			// Autosync preference
+			int timeout = (int) Preferences.Get (Preferences.SYNC_AUTOSYNC_TIMEOUT);
+			if (timeout > 0 && timeout < 5) {
+				timeout = 5;
+				Preferences.Set (Preferences.SYNC_AUTOSYNC_TIMEOUT, 5);
+			}
+			Gtk.HBox autosyncBox = new Gtk.HBox (false, 5);
+			// Translators: This is and the next string go together.
+			// Together they look like "Automatically Sync in Background Every [_] Minutes",
+			// where "[_]" is a GtkSpinButton.
+			autosyncCheck =
+				new Gtk.CheckButton (Catalog.GetString ("Automaticall_y Sync in Background Every"));
+			autosyncSpinner = new Gtk.SpinButton (5, 1000, 1);
+			autosyncSpinner.Value = timeout >= 5 ? timeout : 10;
+			Gtk.Label autosyncExtraText =
+				// Translators: See above comment for details on
+				// this string.
+				new Gtk.Label (Catalog.GetString ("Minutes"));
+			autosyncCheck.Active = autosyncSpinner.Sensitive = timeout >= 5;
+			EventHandler updateTimeoutPref = (o, e) => {
+				Preferences.Set (Preferences.SYNC_AUTOSYNC_TIMEOUT,
+				                 autosyncCheck.Active ? (int) autosyncSpinner.Value : -1);
+			};
+			autosyncCheck.Toggled += (o, e) => {
+				autosyncSpinner.Sensitive = autosyncCheck.Active;
+				updateTimeoutPref (o, e);
+			};
+			autosyncSpinner.ValueChanged += updateTimeoutPref;
+
+			autosyncBox.PackStart (autosyncCheck);
+			autosyncBox.PackStart (autosyncSpinner);
+			autosyncBox.PackStart (autosyncExtraText);
+			vbox.PackStart (autosyncBox, false, true, 0);
 
 			Gtk.HButtonBox bbox = new Gtk.HButtonBox ();
 			bbox.Spacing = 4;
@@ -543,7 +623,7 @@ namespace Tomboy
 			get_more_link.Clicked += delegate(object sender, EventArgs args) {
 				string uri = ((Gtk.LinkButton) sender).Uri;
 				try {
-					Services.NativeApplication.OpenUrl (uri);
+					Services.NativeApplication.OpenUrl (uri, Screen);
 				} catch (Exception e) {
 					GuiUtils.ShowOpeningLocationError (this, uri, e.Message);
 				}
@@ -1037,7 +1117,7 @@ namespace Tomboy
 					}
 
 					syncAddinPrefsWidget.Show ();
-					syncAddinPrefsContainer.PackStart (syncAddinPrefsWidget, true, true, 0);
+					syncAddinPrefsContainer.PackStart (syncAddinPrefsWidget, false, false, 0);
 
 					resetSyncAddinButton.Sensitive = false;
 					saveSyncAddinButton.Sensitive = true;
@@ -1185,11 +1265,15 @@ namespace Tomboy
 
 				// Give the user a visual letting them know that connecting
 				// was successful.
-				if (errorMsg == null)
+				if (errorMsg == null) {
 					errorMsg = Catalog.GetString ("Sorry, but something went wrong.  " +
 					                              "Please check your information and " +
-					                              "try again.  The ~/.tomboy.log might " +
+					                              "try again.  The {0} might " +
 					                              "be useful too.");
+					string logPath = System.IO.Path.Combine (Services.NativeApplication.LogDirectory,
+					                                         "tomboy.log");
+					errorMsg = String.Format (errorMsg, logPath);
+				}
 				dialog =
 				        new HIGMessageDialog (this,
 				                              Gtk.DialogFlags.Modal,
