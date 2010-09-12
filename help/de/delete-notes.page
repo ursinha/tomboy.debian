@@ -22,12 +22,8 @@
 
   <title>Eine Notiz löschen</title>    
   
-  <p>You can delete a note by pressing the <gui>Delete</gui> icon in the 
-  toolbar of the note you wish to delete.</p>
+  <p>Sie können eine Notiz löschen, indem Sie auf das <gui>Löschen</gui>-Symbol in der Werkzeugleiste der Notiz klicken, welche Sie löschen wollen.</p>
   
-<note style="warning">
-	<p>Deleting a note is permanent.  After deletion, the note is 
-	not recoverable.</p>  You will be prompted <gui>Diese Notiz wirklich löschen?</gui> when deleting a note.  
-</note>
+<note style="warning"><p>Eine Notiz wird stets dauerhaft gelöscht. Nach dem Löschen lässt sich eine Notiz nicht wiederherstellen.</p> Beim Löschen einer Notiz wird Ihnen die Frage <gui>Diese Notiz wirklich löschen?</gui> gestellt .</note>
 	
 </page>

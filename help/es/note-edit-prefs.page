@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#prefs"/>
-    <desc>Note editing preferences.</desc>
+    <desc>Preferencias de edición de notas.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,7 +18,7 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Note preferences</title>
+ <title>Preferencias de las notas</title>
  
  	<p>You can change the default settings when typing notes
  	in Tomboy.  To change your note settings, open
@@ -32,35 +32,27 @@
 	</p>
  
  <section id="spellcheck">
-   <title>Spell Check</title>
-   <p>Tomboy can check the spelling of your words as you type in a note.
-   Spell check is enabled by default and Tomboy will underline any 
-   misspelled words.  You can see spelling suggestions by using your mouse
-   to right click on the misspelled word.
-   </p>
+   <title>Revisor ortográfico</title>
+   <p>Tomboy puede revisar la ortografía de las palabras a medida que las escribe en una nota. El revisor ortográfico está activado de manera predeterminada y Tomboy subrayará cualquier palabra incorrecta. Puede ver las sugerencias usando su ratón para pulsar con el botón derecho sobre la palabra incorrecta.</p>
    
-   <p>To disable automatic spell checking, use your mouse or the spacebar
-   to uncheck <gui>Spell check while typing</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Para desactivar la corrección automática de ortografía, use su ratón o la barra espaciadora para desmarcar <gui>Corrección ortográfica al escribir</gui> en la solapa <gui>Editando</gui> de las preferencias de Tomboy.</p>
    
  </section>
 
  <section id="wikiwords">
-   <title>WikiWords</title>
+   <title>Wikipalabras</title>
    <p>Tomboy can highlight words that <gui>LookLikeThis</gui>.  By 
    capitalizing multiple words together without using spaces, similar to how
    a wiki works, Tomboy will highlight the word and make it a link.  Clicking
    the link will create a new note with the WikiWord as the note title.
    </p>
    
-   <p>WikiWords are disabled by default.  To enable WikiWords, use your mouse
-   or the spacebar to check the box to enable <gui>Highlight WikiWords</gui> in
-    the <gui>Editing</gui> tab of Tomboy's Preferences.</p>
+   <p>Las WikiPalabras están desactivadas de manera predeterminada. Para activar las wikipalabras, use su ratón o la barra espaciadora para marcar la casilla para activar <gui>Resaltar wikipalabras</gui> en la solapa <gui>Editando</gui> de las preferencias de Tomboy.</p>
    
  </section>
 
  <section id="bullets">
-   <title>Auto-Bulleted Lists</title>
+   <title>Lista de topos automática</title>
    <p>Tomboy can create bulleted list automatically.  This option is enabled
    by default and when you are editing a note, typing <key>*</key> followed
    by the text and pressing <key>Enter</key> will automatically create a 
@@ -75,10 +67,8 @@
  </section>
 
  <section id="customfont">
-   <title>Custom Fonts</title>
-   <p>You can choose to use a font or font size in Tomboy different than the
-    default font of your desktop.  This feature is disabled by default.
-   </p>
+   <title>Tipografías personalizadas</title>
+   <p>Puede elegir usar una tipografía o tamaño de tipografía en Tomboy diferente de la tipografía predeterminada de su escritorio. Esta característica está desactivada de manera predeterminada.</p>
    
    <p>To enable a different font, use your mouse or the spacebar
    to uncheck <gui>Use custom font</gui> in the <gui>Editing</gui>
@@ -93,7 +83,7 @@
 
  <section id="renamelinks">
  
-   <title>Renaming a Linked Notes</title>
+   <title>Renombrar notas enlazadas</title>
    <p>Tomboy automatically creates links between notes when you type the
    title of a saved note in your current note.  If you try to rename a note
    that has links to it in other notes in Tomboy, you can choose the default
@@ -101,25 +91,19 @@
    </p>
    
    <list>
-     <item><p><gui>Ask me what to do</gui>: Tomboy will prompt you each
-     time it detects a change with one of the below options.</p></item>
+     <item><p><gui>Preguntarme qué hacer</gui>: Tomboy le preguntará cada vez que detecte un cambio en alguna de las siguientes opciones:</p></item>
      <item><p><gui>Never rename links</gui>: Tomboy will leave the other
      notes as they are and unlink the notes.</p></item>
-     <item><p><gui>Always rename links</gui>: Tomboy will automatically
-     rename all the links in other notes to the note you have renamed.
-     </p></item>
+     <item><p><gui>Siempre renombrar los enlaces</gui>: Tomboy renombrará automáticamente todos los enlaces de otras notas que apunten a la nota que ha renombrado.</p></item>
    </list>
    
-   <p>Choose one of the above options from the drop down box to the 
-   right of <gui>When renaming a linked note:</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Seleccione una de las siguientes opciones de la caja desplegable a la derecha de <gui>Al renombrar una nota enlazada:</gui> en la solapa <gui>Editando</gui> de las preferencias de Tomboy.</p>
    
  </section>
 
 <section id="newnotetemplate">
-  <title>Create a New Note Template</title>
-  <p>You can create a new template that is displayed every time you create 
-  a new note.</p>
+  <title>Crear una plantilla de nota nueva</title>
+  <p>Puede crear una plantilla que se muestre cada vez que cree una nota nueva.</p>
   
   <p>Press the <gui>Open New Note Template</gui> button in the 
   <gui>Editing</gui> tab of Tomboy's Preferences. A new template will be

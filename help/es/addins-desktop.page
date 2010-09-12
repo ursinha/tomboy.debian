@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="addins#manage"/>
-    <desc>Plugins to integrate with other applications and websites.</desc>
+    <desc>Complementos para integrar con otras aplicaciones y sitios web.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,13 +18,12 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Desktop Integration Addins</title>
+ <title>Complementos de integración del escritorio</title>
 
-	<p>Desktop Integration addins interact with other applications
-	or websites and Tomboy.</p>
+	<p>Los complementos de integración del escritorio interactúan con otras aplicaciones o sitios web y con Tomboy.</p>
 
 <section id="bugzilla">
-  <title>Bugzilla Links</title>
+  <title>Enlaces Bugzilla</title>
   <p>The Bugzilla Links addin allows you to drag a Bugzilla URL from your
 	browser into Tomboy.  After dragging a link into a Tomboy note, Tomboy
 	will display the bug number as an active link next to bug icon to show
@@ -33,17 +32,13 @@
 </section>
 
 <section id="evolution">
-  <title>Evolution Mail Integration</title>
-  <p>The Evolution Mail Integration plugin allows you to drag an email from Evolution
-	into a Tomboy note.  Your note will display an envelope icon and the 
-	subject of the note will be displayed as a link.  Clicking this link
-	will open the email using Evolution.  </p>
+  <title>Integración con correo de Evolution</title>
+  <p>El complemento de integración con Evolution le permite arrastrar un correo desde Evolution hasta una nota Tomboy. Su nota mostrará un icono de un sobre y el asunto de la nota se mostrará como un enlace. Al pulsar en este enlace se abrirá el correo usando Evolution.</p>
 </section>
 
 <section id="printing">
-  <title>Printing Support</title>
-  <p>This addin is enabled by default and allows you print notes out.
-	If you disable this addin you will no longer be able to print notes.</p>
+  <title>Soporte para impresión</title>
+  <p>Este complemento se activa de manera predeterminada y le permite imprimir sus notas. Si desactiva este complemento, no podrá imprimir sus notas.</p>
 </section>
 
 

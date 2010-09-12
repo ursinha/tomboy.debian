@@ -22,14 +22,11 @@
 
   <title>Eine neue Notiz anlegen</title>    
   
-  <p>You can create a new note in Tomboy by clicking on the Tomboy icon in the 
-  GNOME panel, Windows taskbar, or OS X dock, and then choosing 
-  <gui>Create New Note</gui>.  You can also use the keyboard shortcuts by 
-  pressing <keyseq><key>Alt + F12</key></keyseq>.</p>
+  <p>Sie können in Tomboy eine neue Notiz erstellen, indem Sie auf das Tomboy-Symbol im GNOME-Panel, der Taskbar in Windows oder dem Dock in Mac OS X klicken. Wählen Sie anschließend <gui>Neue Notiz anlegen</gui>. Das gleiche Ziel erreichen Sie über die Tastenkombination <keyseq><key>Alt + F12</key></keyseq>.</p>
   
   <p>The new note will display a new window with the title New Note <em>N</em>.
   The note contains a toolbar, with options to search your notes, link notes, 
-  format the text wihin a note, and more.  For more information, see 
+  format the text within a note, and more.  For more information, see
   <link xref="edit-notes"/>.
   </p>
 	
