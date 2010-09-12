@@ -5,7 +5,7 @@
     <link type="guide" xref="index#notes"/>
     <link type="seealso" xref="create-notes"/>
     <link type="seealso" xref="delete-notes"/>
-    <desc>Edit and format your notes.</desc>
+    <desc>Editar y formatear sus notas.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -20,29 +20,23 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Edit notes</title>    
+  <title>Editar notas</title>    
   
-		<p>Tomboy Notes allows you to format the text within a note in 
-		a number of different ways, including undo and redo, bold, 
-		italics, underline, and more.</p>
+		<p>Notas Tomboy le permite formatear el texto de una nota de diferentes maneras, incluyendo deshacer y rehacer, negrita, cursiva, subrayado y más.</p>
 		
    <section id="redo-undo">
 	
-	<title>Undo and Redo</title>
+	<title>Deshacer y rehacer</title>
 	
-		<p>To undo the last action, including typing a word or 
-		formatting text, press the <gui>Text</gui>
-		icon in the toolbar and choose <gui>Undo</gui>.</p>
+		<p>Para deshacer la última acción, incluyendo la escritura de una palabra o el formateo del texto, pulse el icono  <gui>Texto</gui> en la barra de herramientas y elija <gui>Deshacer</gui>.</p>
 
-		<p>If you want to redo a word or text after using Undo, 
-		press the <gui>Text</gui> icon in the toolbar and choose 
-		<gui>Redo</gui>.</p>
+		<p>Si quiere rehacer una palabra o un texto después de usar Deshacer, pulse el icono <gui>Texto</gui> en la barra de herramientas y elija <gui>Rehacer</gui>.</p>
 	
   </section>
 	 
   <section id="text-format">
 	
-	<title>Formatting Text</title>
+	<title>Formatear texto</title>
 	
 		<p>You can format the text of your notes in a number of 
 		different ways, including underlining words,
@@ -52,21 +46,17 @@
 	 
   <section id="text-size">
 	
-	<title>Changing the Text Size</title>
+	<title>Cambiar el tamaño del texto</title>
 	
 		<p>You can change the size of the text in your notes one of two ways.</p>
-		<p>Highlight the text that you want to make bigger or smaller, and press 
-		<keyseq><key>Ctrl</key><key>+</key></keyseq> to make your text bigger or 
-		<keyseq><key>Ctrl</key><key>-</key></keyseq> to make your text smaller.</p>
-		<p>Alternatively, you can press the <gui>Text</gui> icon in the 
-		toolbar and choose from one of four
-		preset sizes including small, normal, large and huge.</p>
+		<p>Seleccione el texto que quiere hacer más grande o más pequeño, y pulse <keyseq><key>Ctrl</key><key>+</key></keyseq> para hacerlo más grande o <keyseq><key>Ctrl</key><key>-</key></keyseq> para hacerlo más pequeño.</p>
+		<p>Alternativamente, puede pulsar el icono <gui>Texto</gui> en la barra de herramientas y elegir uno de los cuatro tamaños predefinidos, incluyendo pequeño, normal, grande y enorme.</p>
 	
   </section>
 	 
   <section id="bullets">
 	
-	<title>Formatting Bullets</title>
+	<title>Formatear topos</title>
 	
 		<p>Bullets can be created by using the keyboard or the 
 		<gui>Text</gui> icon in the toolbar.</p>

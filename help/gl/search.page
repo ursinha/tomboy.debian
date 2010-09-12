@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notebook"/>
+    <desc>Buscar as súas notas.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+        <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Buscar notas</title>
+
+
+	<p>Vostede pode localizar unha palabra ou frase en calquera das súas notas usando a ferramenta Buscar. Prema co botón dereito sobre a icona de Tomboy no seu panel ou prema a icona <gui>Buscar</gui> na barra de ferramentas das notas para mostrar o diálogo Buscar en todas as notas.</p>
+	<p>Enter your search term in the <gui>Search</gui> box and press
+	<key>Enter</key>, and all notes containing your search term will be listed.</p>
+	<p>If you have organized your notes into notebooks, you can also search
+	for specific terms only in that notebook by selecting the notebook
+	you want to search and then entering your search criteria.</p>
+
+ </page>

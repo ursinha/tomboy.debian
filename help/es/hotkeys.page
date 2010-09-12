@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#prefs"/>
-    <desc>Preferences for hotkeys and shortcut keys.</desc>
+    <desc>Preferencias de teclas rápidas y atajos de teclado.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -35,17 +35,17 @@
 	</guiseq>.
 	</p>	
 	
-	<p>The actions available in Tomboy to be activated by hotkeys are:</p>
+	<p>Las acciones disponibles en Tomboy para activarse con teclas rápidas son:</p>
 	
 	<list>
-	  <item><p><gui>Show notes menu</gui>: <keyseq><key>Alt</key><key>F12
-	  </key></keyseq></p></item>
-	  <item><p><gui>Open "Start Here"</gui>: <keyseq><key>Alt</key><key>F11
-	  </key></keyseq></p></item>
+	  <item><p><gui>Show notes menu</gui>: <keyseq><key>Alt</key>
+	  <key>F12</key></keyseq></p></item>
+	  <item><p><gui>Open "Start Here"</gui>: <keyseq><key>Alt</key>
+	  <key>F11</key></keyseq></p></item>
 	  <item><p><gui>Show notes menu</gui>: Disabled by default.  You can
-	  enter a key sequence in this feild to create a hotkey.</p></item>	  
+	  enter a key sequence in this field to create a hotkey.</p></item>
 	  <item><p><gui>Show notes menu</gui>: Disabled by default.  You can
-	  enter a key sequence in this feild to create a hotkey.</p></item>	
+	  enter a key sequence in this field to create a hotkey.</p></item>
 	</list>  
 	    
  </page>

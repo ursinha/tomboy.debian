@@ -22,14 +22,8 @@
  <title>Notizen durchsuchen</title>
 
 
-	<p>You can locate a word or phrase in any of your notes by using
-	the Search tool.  Right click the Tomboy icon in your panel or press 
-	the <gui>Search</gui> icon in a note's toolbar to bring up the 
-	Search All Notes dialog.</p>
-	<p>Enter your search term in the <gui>Search</gui> box and press
-	<key>Enter</key>, and all notes containing your search term will be listed.</p>
-	<p>If you have organized your notes into notebooks, you can also search
-	for specific terms only in that notebook by selecting the notebook
-	you want to search and then entering your search criteria.</p>
+	<p>Sie können ein Wort oder einen Ausdruck nun über das Suchwerkzeug finden. Klicken Sie mit der rechten Maustaste auf das Symbol von <app>Tomboy</app> in Ihrem Panel oder klicken Sie auf das <gui>Suchen</gui>-Symbol in der Werkzeugleiste einer Notiz, um den Dialog zum Durchsuchen aller Notizen anzuzeigen.</p>
+	<p>Geben Sie Ihren Suchbegriff in das <gui>Suchen</gui>-Feld ein und drücken Sie die <gui>Eingabetaste</gui>. Daraufhin werden alle Notizen aufgelistet, die Ihren Suchbegriff enthalten.</p>
+	<p>Falls Sie Ihre Notizen in Notizbücher eingeordnet haben, können Sie die Suche nach einem Begriff auch auf ein bestimmtes Notizbuch beschränken. Wählen Sie hierzu zunächst das Notizbuch aus, welches Sie durchsuchen wollen, und geben Sie dann Ihre Suchkriterien ein.</p>
 
  </page>

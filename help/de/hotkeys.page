@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#prefs"/>
-    <desc>Preferences for hotkeys and shortcut keys.</desc>
+    <desc>Einstellungen für Tastenkombinationen.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -20,32 +20,21 @@
 
  <title>Tastenkombinationen</title>
 
-	<p>Hotkeys allow you to access your notes and Tomboy features from
-	anywhere, even when using other applications on your desktop.  Hotkeys
-	are activated by pressing multiple keys on your keyboard
-	together.
-	</p>
+	<p>Schnellzugriffe ermöglichen Ihnen, auf Ihre Notizen und andere Tomboy-Funktionsmerkmale zuzugreifen, selbst wenn Sie in Ihrer Arbeitsumgebung gerade mit anderen Anwendungen arbeiten. Schnellzugriffe werden ausgelöst, wenn Sie mehrere Tasten auf Ihrer Tastatur gemeinsam drücken.</p>
 	
-	<p>You can enable Hotkeys by opening <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock and choose <gui>Preferences</gui> and then select
-	the <gui>Hotkeys</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>	
+	<p>Zum Aktivieren der Schnellzugriffe öffnen Sie die <gui>Tomboy-Einstellungen</gui> durch einen Klick mit der rechten Maustaste auf das Tomboy-Symbol in Ihrem Panel, Ihrer Taskbar oder Ihrem Dock. Wählen Sie anschließend <gui>Einstellungen</gui> und klicken Sie auf den Reiter <gui>Tastenkombinationen</gui>. Wahlweise können Sie die <gui>Tomboy-Einstellungen</gui> auch im Dialog <gui>Alle Notizen durchsuchen</gui> öffnen. Wählen Sie im Menü <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui></guiseq>.</p>	
 	
-	<p>The actions available in Tomboy to be activated by hotkeys are:</p>
+	<p>Folgende Aktionen können Sie in Tomboy über Tastenkombinationen aktiviert werden:</p>
 	
 	<list>
-	  <item><p><gui>Show notes menu</gui>: <keyseq><key>Alt</key><key>F12
-	  </key></keyseq></p></item>
-	  <item><p><gui>Open "Start Here"</gui>: <keyseq><key>Alt</key><key>F11
-	  </key></keyseq></p></item>
+	  <item><p><gui>Show notes menu</gui>: <keyseq><key>Alt</key>
+	  <key>F12</key></keyseq></p></item>
+	  <item><p><gui>Open "Start Here"</gui>: <keyseq><key>Alt</key>
+	  <key>F11</key></keyseq></p></item>
 	  <item><p><gui>Show notes menu</gui>: Disabled by default.  You can
-	  enter a key sequence in this feild to create a hotkey.</p></item>	  
+	  enter a key sequence in this field to create a hotkey.</p></item>
 	  <item><p><gui>Show notes menu</gui>: Disabled by default.  You can
-	  enter a key sequence in this feild to create a hotkey.</p></item>	
+	  enter a key sequence in this field to create a hotkey.</p></item>
 	</list>  
 	    
  </page>

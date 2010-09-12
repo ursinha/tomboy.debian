@@ -1,5 +1,6 @@
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Xml;
@@ -29,7 +30,7 @@ namespace Tomboy.ExportToHtml
 					xsl = new XslTransform ();
 		
 					if (File.Exists (stylesheet_file)) {
-						Logger.Log ("ExportToHTML: Using user-custom {0} file.",
+						Logger.Info ("ExportToHTML: Using user-custom {0} file.",
 						            stylesheet_name);
 						xsl.Load (stylesheet_file);
 					} else {
@@ -39,7 +40,7 @@ namespace Tomboy.ExportToHtml
 							xsl.Load (reader, null, null);
 							resource.Close ();
 						} else {
-							Logger.Log ("Unable to find HTML export template '{0}'.",
+							Logger.Error ("Unable to find HTML export template '{0}'.",
 							            stylesheet_name);
 						}
 					}
@@ -81,7 +82,7 @@ namespace Tomboy.ExportToHtml
 				return;
 			}
 
-			Logger.Log ("Exporting Note '{0}' to '{1}'...", Note.Title, output_path);
+			Logger.Debug ("Exporting Note '{0}' to '{1}'...", Note.Title, output_path);
 
 			StreamWriter writer = null;
 			string error_message = null;
@@ -107,7 +108,7 @@ namespace Tomboy.ExportToHtml
 					Services.NativeApplication.OpenUrl (output_uri.AbsoluteUri,
 					                                    Note.Window.Screen);
 				} catch (Exception ex) {
-					Logger.Log ("Could not open exported note in a web browser: {0}",
+					Logger.Error ("Could not open exported note in a web browser: {0}",
 					            ex);
 
 					string detail = String.Format (
@@ -132,7 +133,7 @@ namespace Tomboy.ExportToHtml
 			} catch (DirectoryNotFoundException) {
 				error_message = Catalog.GetString ("Folder does not exist.");
 			} catch (Exception e) {
-				Logger.Log ("Could not export: {0}", e);
+				Logger.Error ("Could not export: {0}", e);
 
 				error_message = e.Message;
 			} finally {
@@ -142,7 +143,7 @@ namespace Tomboy.ExportToHtml
 
 			if (error_message != null)
 			{
-				Logger.Log ("Could not export: {0}", error_message);
+				Logger.Error ("Could not export: {0}", error_message);
 
 				string msg = String.Format (
 				                     Catalog.GetString ("Could not save the file \"{0}\""),
@@ -184,7 +185,7 @@ namespace Tomboy.ExportToHtml
 			args.AddParam ("export-linked-all", "", export_linked_all);
 			args.AddParam ("root-note", "", note.Title);
 			args.AddExtensionObject ("http://beatniksoftware.com/tomboy",
-				new TransformExtension ());
+				new TransformExtension (note.Manager, note));
 
 			if ((bool) Preferences.Get (Preferences.ENABLE_CUSTOM_FONT)) {
 				string font_face = (string) Preferences.Get (Preferences.CUSTOM_FONT_FACE);
@@ -195,20 +196,42 @@ namespace Tomboy.ExportToHtml
 				args.AddParam ("font", "", font);
 			}
 
-			NoteNameResolver resolver = new NoteNameResolver (note.Manager, note);
-			NoteXsl.Transform (doc, args, writer, resolver);
+			NoteXsl.Transform (doc, args, writer);
 		}
 	}
 
 	/// <summary>
 	/// Makes <see cref="System.String.ToLower"/> available in the
-	/// XSL stylesheet.
+	/// XSL stylesheet and manages access to the file path of notes,
+	/// making sure that each note is only exported once.
 	/// </summary>
 	public class TransformExtension
 	{
+		NoteManager manager;
+		List<string> resolved_notes;
+
+		public TransformExtension (NoteManager manager, Note root_note)
+		{
+			this.manager = manager;
+			this.resolved_notes = new List<string> ();
+			this.resolved_notes.Add (root_note.Title.ToLower());
+		}
+
 		public String ToLower (string s)	
 		{
 			return s.ToLower ();
+		}
+
+		public string GetPath (string title)
+		{
+			if (string.IsNullOrEmpty (title))
+				return string.Empty;
+
+			if (resolved_notes.Contains (title.ToLower()))
+				return string.Empty;
+
+			resolved_notes.Add (title.ToLower());
+			return manager.Find (title).FilePath;
 		}
 	}
 }
