@@ -38,16 +38,14 @@
 -->
 
 	<item>
-		<p>Select <guiseq><gui>Notebooks</gui> 
-		<gui>New Notebook</gui></guiseq>.</p>
+		<p>Seleccione <guiseq><gui>Cadernos de notas</gui><gui>Caderno de notas novo</gui></guiseq>.</p>
 	</item>
 	<item>
 		<p>Introduza un nome para o caderno de notas novo.</p>
 	</item>
 </steps>
 
-	<p>To create a new notebook from the <gui>Search All Notes</gui> 
-	dialog:</p>
+	<p>Para crear un caderno de notas novo desde o diálogo <gui>Buscar en todas as notas</gui>:</p>
 
 <steps>
 	<item>

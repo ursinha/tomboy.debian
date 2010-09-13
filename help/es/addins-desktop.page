@@ -24,11 +24,7 @@
 
 <section id="bugzilla">
   <title>Enlaces Bugzilla</title>
-  <p>The Bugzilla Links addin allows you to drag a Bugzilla URL from your
-	browser into Tomboy.  After dragging a link into a Tomboy note, Tomboy
-	will display the bug number as an active link next to bug icon to show
-	you this is a Bugzilla link.  Clicking the link in the Tomboy note
-	will open a browser window taking you to that Bugzilla page.</p>
+  <p>El complemento Enlaces de Bugzilla le permite arrastrar un URL de Bugzilla desde su navegador hasta Tomboy. Después de arrastrar un enlace en una nota de Tomboy, se mostrará en número del bug como un enlace activo cerca del icono del bug para indicar que es un enlace a Bugzilla. Al pulsar en enlace en la nota de Tomboy se abrirá un navegador llevándole a esa página de Bugzilla.</p>
 </section>
 
 <section id="evolution">

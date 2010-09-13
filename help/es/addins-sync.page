@@ -25,27 +25,17 @@
 
 <section id="local">
   <title>Servicio de sincronización de carpetas locales</title>
-  <p>The Local Directory Sync Service is enabled by default and allows
-	Tomboy to sync its notes to another directory on your computer.
-	This is helpful to create a backup of your notes.</p>
+  <p>El servicio de sincronización de carpeta local está activado de manera predeterminada y permite a Tomboy sincronizar sus notas con otra carpeta en su equipo. Esto es útil para crear copias de respaldo de sus notas.</p>
 </section>
 
 <section id="ssh">
   <title>Servicio de sincronización SSH</title>
-  <p>The SSH Sync Service allows you to sync your notes with another computer
-	via the SSH protocol.  This plugin is disabled by default.  You may
-	need to install the <em>sshfs</em> package for your Linux distribution
-	to make this addin work, which is outside the scope of this help 
-	document.</p>
+  <p>El servicio de sincronización SSH le permite sincronizar sus notas con otro equipo a través del protocolo SSH. Este complemento está desactivado de manera predeterminada. Es posible que deba instalar el paquete <em>sshfs</em> para su distribución de Linux para hacer que este complemento funcione, algo que está fuera del objetivo de este documento de ayuda.</p>
 </section>
 
 <section id="webdav">
   <title>Servicio de sincronización WebDav</title>
-  <p>The WebDav Sync Service addin is enabled by default and allows you to
-	sync your notes with a WebDav remote server.  You may need to have
-	the <em>wdfs FUSE file system</em> package installed for your Linux
-	distribution to make this addin work which is outside the scope of 
-	this help document.</p>
+  <p>El complemento de servicio de sincronización WebDav está activado de manera predeterminada y le permite sincronizar sus notas con un servidor WebDav remoto. Puede necesitar tener instalado el paquete <em>wdfs FUSE file system</em> en su distribución Linux para que este complemento funcione, lo que está fuera del objetivo de este documento.</p>
 </section>
 
 <section id="webservice">

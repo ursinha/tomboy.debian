@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="addins#manage"/>
-    <desc>Enable additional note functionality.</desc>
+    <desc>Ενεργοποίηση πρόσθετης λειτουργικότητας σημειώσεων.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,57 +18,38 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Tomboy Tools Addins</title>
+ <title>Πρόσθετες λειτουργίες εργαλείων Tomboy</title>
 
  <section id="desc">
-	<title>Tools addins add additional functionality to your Tomboy notes.</title>
+	<title>Πρόσθετες λειτουργίες εργαλείων και πρόσθετη λειτουργικότητα για τις σημειώσεις σας στο Tomboy.</title>
 </section>
 
   <section id="backlinks">
     <title>Backlinks</title>
-	<p>The <gui>Backlinks</gui> addin is enabled by default and allows you
-	to see which notes link to the note you are currently viewing.</p> 
+	<p>Η πρόσθετη λειτουργία <gui>Σύνδεσμοι επιστροφής</gui> είναι εξ ορισμού ενεργοποιημένη και σας επιτρέπει να δείτε ποιες σημειώσεις συνδέονται με τη σημείωση που βλέπετε αυτή τη στιγμή.</p> 
   </section>
 
 <section id="html-export">
   <title>Εξαγωγή σε HTML</title>
-  <p>The <gui>Export to HTML</gui> addin is enabled by default and will export
-	an individual note to HTML.</p>
-	<p>To export a note to HTML, press the <gui>Tools</gui> icon in the note
-	toolbar and choose <gui>Export to HTML</gui>.  You will immediately be
-	presented with a dialog to save the note.  Choose the directory you 
-	wish to save the note in and change the name of note's new html file if 
-	you wish it to be different than the note name.  The note will then be
-	saved as an HTML file and automatically displayed in your browser.</p>
+  <p>Η πρόσθετη λειτουργία <gui>Εξαγωγή σε HTML</gui> είναι εξ ορισμού ενεργοποιημένη και θα εξάγει μία συγκεκριμένη σημείωση σε HTML.</p>
+	<p>Για να εξάγετε μία σημείωση σε HTML, πιέστε το εικονίδιο <gui>Εργαλεία</gui> στην εργαλειοθήκη της σημείωσης και επιλέξτε <gui>Εξαγωγή σε HTML</gui>. Θα εμφανιστεί άμεσα ένα παράθυρο διαλόγου για την αποθήκευση της σημείωσης. Επιλέξτε τον κατάλογο που επιθυμείτε να αποθηκευτεί η σημείωση και τροποποιήστε το όνομα του νέου html αρχείου της σημείωσης αν επιθυμείτε αυτό να είναι διαφορετικό από το υπάρχον όνομά της. Η σημείωση θα αποθηκευτεί ως HTML αρχείο και θα εμφανιστεί αυτόματα στον περιηγητή σας.</p>
 </section>
 
 <section id="timestamp">
-  <title>Insert Timestamp</title>
-  <p>The <gui>Insert Timestamp</gui> addin is disabled by default.  To enable it,
-	choose the <gui>Insert Timestamp</gui> addin and then press
-	<gui>Enable</gui> in the Tomboy Preferences.</p>
-	<p>To add a timestamp to your notes, press the <gui>Tools</gui> icon in
-	the note toolbar and choose <gui>Insert Timestamp</gui> or press 
-	<key>Ctrl + D</key>.</p>
+  <title>Εισαγωγή υπόδειξης χρόνου</title>
+  <p>Η πρόσθετη λειτουργία <gui>Εισαγωγή υπόδειξης χρόνου</gui> είναι εξ ορισμού απενεργοποιημένη. Για να την ενεργοποιήσετε, επιλέξτε την πρόσθετη λειτουργία <gui>Εισαγωγή υπόδειξης χρόνου</gui> και ύστερα πιέστε την <gui>Ενεργοποίηση</gui> στις προτιμήσεις του Tomboy.</p>
+	<p>Για να προσθέσετε μία υπόδειξη χρόνου στις σημειώσεις σας, πιέστε το εικονίδιο <gui>Εργαλεία</gui> στην εργαλειοθήκη της σημείωσης και επιλέξτε <gui>Εισαγωγή υπόδειξης χρόνου</gui> ή πιέστε το συνδυασμό πλήκτρων <key>Ctrl + D</key>.</p>
 </section>
 
 <section id="noteoftheday">
   <title>Note of the Day</title>
-  <p>The <gui>Note of the Day</gui> addin is disabled by default.  To enable,
-	choose the <gui>Note of the Day</gui> addin and then press
-	<gui>Enable</gui> in the Tomboy Preferences.</p>
-	<p><gui>Note of the Day</gui> addin will create a new note daily with the 
-	title <em>Today: Thursday, January 21 2010</em> for example.  The note will
-	also add rows for <em>Tasks</em> and <em>Appointment</em> automatically.</p>
+  <p>Η πρόσθετη λειτουργία <gui>Σημείωση της ημέρας</gui> είναι εξ ορισμού απενεργοποιημένη. Για να την ενεργοποιήσετε, επιλέξτε την πρόσθετη λειτουργία <gui>Σημείωση της ημέρας</gui> και ύστερα πιέστε <gui>Ενεργοποίηση</gui> στις προτιμήσεις του Tomboy.</p>
+	<p>Η πρόσθετη λειτουργία <gui>Σημείωση της ημέρας</gui> θα δημιουργεί μία νέα σημείωση καθημερινά με τον τίτλο <em>Σήμερα: Πέμπτη, 21 Ιανουαρίου 2010</em> για παράδειγμα. Η σημείωση θα προσθέσει επίσης συτόματα γραμμές για <em>Εργασίες</em> και <em>Ραντεβού</em>.</p>
 </section>
 
 <section id="watcher">
-  <title>Note Directory Watcher</title>
-  <p>The Note Directory Watcher addin monitors the directory your Tomboy notes
-	are saved in.  If the addin detects changes to your notes, it will apply
-	those changes and they will be displayed in your notes.  This addin is
-	typically used with 3rd party sync services such as Dropbox.  Setting
-	up 3rd party sync services is outside the scope of this help.</p>
+  <title>Παρακολούθηση καταλόγου σημειώσεων</title>
+  <p>Η πρόσθετη λειτουργία Παρακολούθηση καταλόγου σημειώσεων σαρώνει τον κατάλογο στον οποίο έχετε αποθηκεύσει τις σημειώσεις του Tomboy. Αν η πρόσθετη λειτουργία εντοπίσει αλλαγές στις σημειώσεις σας, θα εφαρμόσει τις αλλαγές αυτές και αυτές να εμφανίζονται στις σημειώσεις σας. Η πρόσθετη λειτουργία αυτή χρησιμοποιείται τυπικά με υπηρεσίες συγχρονισμού του 3ου μέρους όπως το Dropbox. Η ρύθμιση τέτοιου είδους υπηρεσιών δε συμπεριλαμβάνεται στους σκοπούς αυτής της βοήθειας.</p>
 </section>
 
  </page>

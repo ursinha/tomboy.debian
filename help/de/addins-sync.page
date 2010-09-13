@@ -30,20 +30,12 @@
 
 <section id="ssh">
   <title>SSH-Abgleichdienst</title>
-  <p>The SSH Sync Service allows you to sync your notes with another computer
-	via the SSH protocol.  This plugin is disabled by default.  You may
-	need to install the <em>sshfs</em> package for your Linux distribution
-	to make this addin work, which is outside the scope of this help 
-	document.</p>
+  <p>Der SSH-Abgleichdienst ermöglicht Ihnen den Abgleich Ihrer Notizen mit einem anderen Rechner über das SSH-Protokoll. Dieses Plugin ist standardmäßog deaktiviert. Um die Funktionsfähigkeit sicherzustellen, müssen Sie das <em>sshfs</em>-Paket Ihrer Distribution installieren. Weiterführende Informationen hierzu stellt dieses Hilfedokument nicht bereit.</p>
 </section>
 
 <section id="webdav">
   <title>WebDav-Abgleichdienst</title>
-  <p>The WebDav Sync Service addin is enabled by default and allows you to
-	sync your notes with a WebDav remote server.  You may need to have
-	the <em>wdfs FUSE file system</em> package installed for your Linux
-	distribution to make this addin work which is outside the scope of 
-	this help document.</p>
+  <p>Der WebDav-Abgleichdienst ist standardmäßig aktiviert und ermöglicht Ihnen den Abgleich Ihrer Notizen mit einem entfernten WebDav-Server. Um die Funktionsfähigkeit sicherzustellen, müssen Sie das Paket des <em>wdfs-FUSE-Dateisystems</em> Ihrer Distribution installieren. Weiterführende Informationen hierzu stellt dieses Hilfedokument nicht bereit.</p>
 </section>
 
 <section id="webservice">

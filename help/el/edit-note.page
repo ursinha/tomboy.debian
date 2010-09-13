@@ -5,7 +5,7 @@
     <link type="guide" xref="index#notes"/>
     <link type="seealso" xref="create-notes"/>
     <link type="seealso" xref="delete-notes"/>
-    <desc>Edit and format your notes.</desc>
+    <desc>Επεξεργασία και μορφοποίηση των σημειώσεών σας.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -20,67 +20,44 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Edit notes</title>    
+  <title>Επεξεργασία σημειώσεων</title>    
   
-		<p>Tomboy Notes allows you to format the text within a note in 
-		a number of different ways, including undo and redo, bold, 
-		italics, underline, and more.</p>
+		<p>Οι Σημειώσεις Tomboy σας πειτρέπουν να μορφοποιήσετε το κείμενο μέσα σε μία σημείωση με διάφοροτς τρόπους, συμπεριλαμβανομένης της αναίρεσης και της επανάληψης, τη χρήση έντονης, πλάγιας, υπογραμμισμένης γραφής και άλλων.</p>
 		
    <section id="redo-undo">
 	
-	<title>Undo and Redo</title>
+	<title>Επαναφορά και επανάληψη ενεργειών</title>
 	
-		<p>To undo the last action, including typing a word or 
-		formatting text, press the <gui>Text</gui>
-		icon in the toolbar and choose <gui>Undo</gui>.</p>
+		<p>Για να αναιρέσετε την τελευταία ενέργεια, συμπεριλαμβανομένης της πληκτρολόγησης μίας λέξης ή της μορφοποίησης κειμένου, πιέστε το εικονίδιο <gui>Κείμενο</gui> στην εργαλειοθήκη και επιλέξτε <gui>Αναίρεση</gui>.</p>
 
-		<p>If you want to redo a word or text after using Undo, 
-		press the <gui>Text</gui> icon in the toolbar and choose 
-		<gui>Redo</gui>.</p>
+		<p>Αν θέλετε να επαναλάβετε την πληκτρολόγηση μίας λέκης ή κειμένου ύστερα από την χρήση της Αναίρεσης, πιέστε το εικονίδιο <gui>Κείμενο</gui> στην εργαλειοθήκη και επιλέξτε <gui>Επανάληψη</gui>.</p>
 	
   </section>
 	 
   <section id="text-format">
 	
-	<title>Formatting Text</title>
+	<title>Μορφοποίηση κειμένου</title>
 	
-		<p>You can format the text of your notes in a number of 
-		different ways, including underlining words,
-		making text bold or italics, highlighting words or phrases, 
-		or striking through text.</p>
+		<p>Μπορείτε να μορφοποιήσετε το κείμενο των σημειώσεών σας με διάφορους τρόπους, συμπεριλαμβανομένης και της υπογράμμισης λέξεων, του έντονου και πλάγιου κειμένου, της επισήμανσης λέεξων ή φράσεων, ή της ορατής διαγραφής κειμένου.</p>
   </section>
 	 
   <section id="text-size">
 	
-	<title>Changing the Text Size</title>
+	<title>Αλλαγή μεγέθους κειμένου</title>
 	
-		<p>You can change the size of the text in your notes one of two ways.</p>
-		<p>Highlight the text that you want to make bigger or smaller, and press 
-		<keyseq><key>Ctrl</key><key>+</key></keyseq> to make your text bigger or 
-		<keyseq><key>Ctrl</key><key>-</key></keyseq> to make your text smaller.</p>
-		<p>Alternatively, you can press the <gui>Text</gui> icon in the 
-		toolbar and choose from one of four
-		preset sizes including small, normal, large and huge.</p>
+		<p>Μπορείτε να αλλάξετε το μέγεθος του κειμένου στις σημειώσεις σας με έναν από τους δύο τρόπους.</p>
+		<p>Επισημάνετε το κέιμενο που θεέλτε να εστιάσετε ή να σμικρύνετε και, πιέστε το συνδυασμό πλήκτρων <keyseq><key>Ctrl</key><key>+</key></keyseq> για να γίνει εστίαση του κειμένου ή <keyseq><key>Ctrl</key><key>-</key></keyseq> για να σμικρύνει το κείμενο.</p>
+		<p>Εναλλακτικά, μπορείτε να πιέστε το εικονίδιο <gui>Κείμενο</gui> στην εργαλειοθήκη και επιλέξτε ένα από τα τέσσερα προκαθορισμένα μεγέθη που περιλαμβάνουν το μικρό, το κανονικό, το μεγάλο και το τεράστιο.</p>
 	
   </section>
 	 
   <section id="bullets">
 	
-	<title>Formatting Bullets</title>
+	<title>Μορφοποίηση κουκκίδων</title>
 	
-		<p>Bullets can be created by using the keyboard or the 
-		<gui>Text</gui> icon in the toolbar.</p>
-		<p>To manually create a bullet, type the asterisk key 
-		<key>*</key> and then type your text.  After pressing
-		enter, Tomboy will automatically convert a line starting 
-		with an asterisk into a bullet, and the next
-		line will be auto-formatted as a bullet as well.  If you want 
-		to create a sub-bullet, press <key>Tab</key>
-		immediately after pressing <key>Enter</key>.</p>
-		<p>You can also highlight a specific line and choose the 
-		<gui>Text</gui> icon in the toolbar check the 
-		<gui>Bullets</gui> checkbox to change a specific line to be 
-		bulleted.</p>
+		<p>Οι κουκκίδες μπορούν να δημιουργηθούν χρησιμοποιώντας το πληκτρολόγιο ή το εικονίδιο <gui>Κείμενο</gui> στην εργαλειοθήκη.</p>
+		<p>Για να δημιουργήσετε χειροκίνητα μία κουκκίδα, πληκτρολογήστε το πλήκτρο του αστερίσκου <key>*</key> και ύστερα το κείμενό σας. Αφού πιέστε το πλήκτρο enter, το Tomboy θα μετατρέψει αυτόματα μία γραμμή που αρχίζιε με αστερίσκο σε κουκκίδα, και η επόμενη γραμμή θα μορφοποιηθεί αυτόματα ως κουκκίδα επίσης. Αν θελετε να δημιουργήσετε μία υποκουκκίδα, πιέστε άμεσα το πλήκτρο <key>Tab</key> ύστερα από το <key>Enter</key>.</p>
+		<p>Μπορείτε επίσης να επισημάνετε κάποια γραμμή και να επιλέξετε το εικονίδιο <gui>Κείμενο</gui> στην επιλογή της εργαλειοθήκης <gui>Κουκκίδες</gui> για να προσθέσετε κουκκίδα σε μία συγκεκριμένη γραμμή.</p>
 
 	
   </section>
