@@ -20,32 +20,17 @@
 
  <title>Teclas rápidas</title>
 
-	<p>Hotkeys allow you to access your notes and Tomboy features from
-	anywhere, even when using other applications on your desktop.  Hotkeys
-	are activated by pressing multiple keys on your keyboard
-	together.
-	</p>
+	<p>Las teclas rápidas le permiten acceder a sus notas y a las características de Tomboy desde cualquier lugar, incluso usando otras aplicaciones en su escritorio. Las teclas rápidas se activan pulsando múltiples teclas juntas en su teclado.</p>
 	
-	<p>You can enable Hotkeys by opening <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock and choose <gui>Preferences</gui> and then select
-	the <gui>Hotkeys</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>	
+	<p>Puede activar las teclas rápidas abriendo las <gui>Preferencias de Tomboy</gui> usando su ratón para pulsar con el botón derecho en el icono de Tomboy en su panel, barra de tareas o «dock», elija <gui>Preferencias</gui> y seleccione la solapa <gui>Teclas rápidas</gui>. También puede abrir las <gui>Preferencias de Tomboy</gui> desde el diálogo <gui>Buscar en todas las notas</gui>. Desde el menú, elija <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>	
 	
 	<p>Las acciones disponibles en Tomboy para activarse con teclas rápidas son:</p>
 	
 	<list>
-	  <item><p><gui>Show notes menu</gui>: <keyseq><key>Alt</key>
-	  <key>F12</key></keyseq></p></item>
-	  <item><p><gui>Open "Start Here"</gui>: <keyseq><key>Alt</key>
-	  <key>F11</key></keyseq></p></item>
-	  <item><p><gui>Show notes menu</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
-	  <item><p><gui>Show notes menu</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
+	  <item><p><gui>Menú mostrar notas</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
+	  <item><p><gui>Abrir «Comenzar aquí»</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
+	  <item><p><gui>Menu mostrar notas</gui>: desactivado de manera predeterminada. Puede introducir una secuencia de teclas en este campo para crear una tecla rápida.</p></item>
+	  <item><p><gui>Menu mostrar notas</gui>: desactivado de manera predeterminada. Puede introducir una secuencia de teclas en este campo para crear una tecla rápida.</p></item>
 	</list>  
 	    
  </page>

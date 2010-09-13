@@ -38,17 +38,14 @@
 	
 	<title>Formatear texto</title>
 	
-		<p>You can format the text of your notes in a number of 
-		different ways, including underlining words,
-		making text bold or italics, highlighting words or phrases, 
-		or striking through text.</p>
+		<p>Puede formatear el texto de sus notas de diferentes maneras, incluyendo subrayado de palabras, texto en negrita o en cursiva, resaltado de palabras o frases, o tachado de texto.</p>
   </section>
 	 
   <section id="text-size">
 	
 	<title>Cambiar el tamaño del texto</title>
 	
-		<p>You can change the size of the text in your notes one of two ways.</p>
+		<p>Puede cambiar el tamaño del texto en sus notas de dos maneras.</p>
 		<p>Seleccione el texto que quiere hacer más grande o más pequeño, y pulse <keyseq><key>Ctrl</key><key>+</key></keyseq> para hacerlo más grande o <keyseq><key>Ctrl</key><key>-</key></keyseq> para hacerlo más pequeño.</p>
 		<p>Alternativamente, puede pulsar el icono <gui>Texto</gui> en la barra de herramientas y elegir uno de los cuatro tamaños predefinidos, incluyendo pequeño, normal, grande y enorme.</p>
 	
@@ -58,19 +55,9 @@
 	
 	<title>Formatear topos</title>
 	
-		<p>Bullets can be created by using the keyboard or the 
-		<gui>Text</gui> icon in the toolbar.</p>
-		<p>To manually create a bullet, type the asterisk key 
-		<key>*</key> and then type your text.  After pressing
-		enter, Tomboy will automatically convert a line starting 
-		with an asterisk into a bullet, and the next
-		line will be auto-formatted as a bullet as well.  If you want 
-		to create a sub-bullet, press <key>Tab</key>
-		immediately after pressing <key>Enter</key>.</p>
-		<p>You can also highlight a specific line and choose the 
-		<gui>Text</gui> icon in the toolbar check the 
-		<gui>Bullets</gui> checkbox to change a specific line to be 
-		bulleted.</p>
+		<p>Los topos se pueden crear usando el teclado o el icono <gui>Texto</gui> de la barra de herramientas.</p>
+		<p>Para crear un topo manualmente, pulse la tecla asterisco <key>*</key> y escriba el texto. Después de pulsar intro, Tomboy convertirá automáticamente una línea que comience por un asterisco en un topo, y la siguiente línea se autoformateará también como un topo. Si quiere crear un subtopo, pulse <key>Tab</key> inmediatamente después de pulsar <key>Intro</key>.</p>
+		<p>También puede resaltar una línea en concreto, elegir el icono <gui>Texto</gui> en la barra de herramientas y marcar la casilla <gui>Topos</gui> para añadir topos a una línea en concreto.</p>
 
 	
   </section>

@@ -20,38 +20,21 @@
 
  <title>Preferencias das notas</title>
  
- 	<p>You can change the default settings when typing notes
- 	in Tomboy.  To change your note settings, open
- 	 <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock, and choose <gui>Preferences</gui> and  select
-	the <gui>Hotkeys</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>
+ 	<p>Pode cambiar as configuracións predefinidas ao escribir as notas no Tomboy. Para cambiar as súas configuracións de notas abra as <gui>Preferencias de Tomboy</gui> usando o seu rato co botón dereito sobre a icona de Tomboy no seu panel, barra de tarefas ou doca e seleccione <gui>Preferencias</gui> e seleccione o separador <gui>Teclas rápidas</gui>. Tamén pode abrir <gui>Preferencias de Tomboy</gui> desde o diálogo <gui>Buscar en todas as notasseq&gt;. Desde o menEditarPreferencias.</gui></p>
  
  <section id="spellcheck">
    <title>Revisión ortográfica</title>
    <p>Tomboy pode verificar a ortografía das súas palabras mentres escribe nunha nota. A verificación ortográfica está activada de forma predefinida e Tomboy subliñará calquera palabra mal escrita. Vostede pode ver as suxestións ortográficas usando o seu botón dereito do seu rado sobre a palabra incorrecta.</p>
    
-   <p>To disable automatic spell checking, use your mouse or the spacebar
-   to uncheck <gui>Spell check while typing</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Para desactivar a verificación ortográfica use o seu rato ou a barra de espazo para desmarcar <gui>Verificar a ortografía mentres se escribe</gui> no separador de <gui>Edición</gui> das Preferencias de Tomboy.</p>
    
  </section>
 
  <section id="wikiwords">
    <title>PalabrasWiki</title>
-   <p>Tomboy can highlight words that <gui>LookLikeThis</gui>.  By 
-   capitalizing multiple words together without using spaces, similar to how
-   a wiki works, Tomboy will highlight the word and make it a link.  Clicking
-   the link will create a new note with the WikiWord as the note title.
-   </p>
+   <p>Tomboy pode resaltar palabras que <gui>SemellanComoIsto</gui>. Ao poñer en maiúsculas varias palabras xuntas sen usar espazos, de forma similar a como funcionan os Wikis, Tomboy resaltará a palabra e converteraa nunha ligazón. Se preme na ligazón crearase unha nova nota coa PalabraWiki como o seu título de nota.</p>
    
-   <p>WikiWords are disabled by default.  To enable WikiWords, use your mouse
-   or the spacebar to check the box to enable <gui>Highlight WikiWords</gui> in
-    the <gui>Editing</gui> tab of Tomboy's Preferences.</p>
+   <p>PalabrasWiki está desactivado por omisión. Para activalo use o seu rato ou barra espaciadora para activar a caixa para activar <gui>Resaltar as PalabrasWiki</gui> no separador <gui>Edición</gui> das Preferencias do Tomboy.</p>
    
  </section>
 

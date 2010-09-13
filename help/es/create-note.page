@@ -24,10 +24,6 @@
   
   <p>Puede crear una nota nueva en Tomboy pulsando en el icono de Tomboy en el panel de GNOME, la barra de tareas de Windows o en el «dock» de OS X, y eligiendo <gui>Crear nota nueva</gui>. También puede usar los atajos de teclado, pulsando <keyseq><key>Alt + F12</key></keyseq>.</p>
   
-  <p>The new note will display a new window with the title New Note <em>N</em>.
-  The note contains a toolbar, with options to search your notes, link notes, 
-  format the text within a note, and more.  For more information, see
-  <link xref="edit-notes"/>.
-  </p>
+  <p>La nota nueva mostrara una ventana nueva con el título «Nota nueva <em>N</em>». La nota contiene una barra de herramientas con opciones para buscar sus notas, enlazar notas, formatear el texto de la nota y más. Para obtener más información, consulte la <link xref="edit-notes"/>.</p>
 	
 </page>

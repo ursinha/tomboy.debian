@@ -35,7 +35,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
-	$(top_srcdir)/Makefile.include COPYING
+	$(top_srcdir)/Makefile.include
 subdir = Tomboy/Addins/PrintNotes
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.in
@@ -284,8 +284,7 @@ addins_DATA = \
 
 EXTRA_DIST = \
 	$(CSFILES) \
-	$(srcdir)/$(ADDIN_NAME).addin.xml \
-	COPYING
+	$(srcdir)/$(ADDIN_NAME).addin.xml
 
 CLEANFILES = \
 	$(TARGET).mdb \

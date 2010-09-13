@@ -40,14 +40,7 @@
  	
  	<p>Tomboy pode sincronizar automaticamente as súas notas por vostede en segundo plano. Recoméndase configurar como se deben xestionar os conflitos nas notas antes de activar a sincronización automaticamente. Vostede pode saber máis sobre os conflitos coas notas na páxina <link xref="sync-setup#conflicts"/> Configurar a sincronización.</p>
  	
- 	<p>You can enable sync by opening <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock and choose <gui>Preferences</gui> and then select
-	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>
+ 	<p>Pode activar a sincronización abrindo as <gui>Preferencias de Tomboy</gui> usando o botón dereito do seu rato sobre a icona de Tomboy no seu panel, barra de tarefas ou doca e seleccione <gui>Preferencias</gui> e logo <gui>Sincronización</gui>. Tamén pode abrir as <gui>Preferencias de Tomboy</gui> desde o diálogo de <gui>Buscar en todas as notas</gui>. Desde o menú seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
 	
 	<p>Para activar a autosincronización, comprobe que a caixa de verificación <gui>Sincronizar automaticamente en segundo plano cada x Minutos</gui> na parte inferior do separador Sincronización.</p>
 	

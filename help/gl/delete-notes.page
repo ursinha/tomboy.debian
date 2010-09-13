@@ -22,12 +22,8 @@
 
   <title>Eliminar unha nota</title>    
   
-  <p>You can delete a note by pressing the <gui>Delete</gui> icon in the 
-  toolbar of the note you wish to delete.</p>
+  <p>Pode eliminar unha nota premendo a icona <gui>Eliminar</gui> na barra de ferramentas da nota que quere eliminar.</p>
   
-<note style="warning">
-	<p>Deleting a note is permanent.  After deletion, the note is 
-	not recoverable.</p>  You will be prompted <gui>Está seguro que quere eliminar esta nota?</gui> when deleting a note.  
-</note>
+<note style="warning"><p>Eliminar unha nota é permanente. Despois de eliminala, a nota non se poderá eliminar.</p>Preguntaráselle <gui>Está seguro que quere eliminar esta nota?</gui> cando elimine unha nota.</note>
 	
 </page>

@@ -22,9 +22,7 @@
 
   <title>Editar notas</title>    
   
-		<p>Tomboy Notes allows you to format the text within a note in 
-		a number of different ways, including undo and redo, bold, 
-		italics, underline, and more.</p>
+		<p>Notas de Tomboy permítelle formatar o texto dentro dunha nota de diferentes formas, incluíndo desfacer e refacer, negriña, itálicas, subliñado e moito máis.</p>
 		
    <section id="redo-undo">
 	
@@ -34,9 +32,7 @@
 		formatting text, press the <gui>Text</gui>
 		icon in the toolbar and choose <gui>Undo</gui>.</p>
 
-		<p>If you want to redo a word or text after using Undo, 
-		press the <gui>Text</gui> icon in the toolbar and choose 
-		<gui>Redo</gui>.</p>
+		<p>Se quere refacer unha palabra ou texto logo de Desfacerla, prema a icona <gui>Texto</gui> na barra de ferramentas e seleccione <gui>Refacer</gui>.</p>
 	
   </section>
 	 
@@ -66,7 +62,7 @@
 	 
   <section id="bullets">
 	
-	<title>Formatting Bullets</title>
+	<title>Formatar viñetas</title>
 	
 		<p>Bullets can be created by using the keyboard or the 
 		<gui>Text</gui> icon in the toolbar.</p>

@@ -38,26 +38,13 @@
  
  	<title>Sincronizar sus notas automáticamente</title>
  	
- 	<p>Tomboy can automatically sync your notes for you in the background.
- 	It is recommended that you configure how you handle note conflicts
- 	before enabling syncing automatically.  You can learn about handling
- 	note conflicts in the <link xref="sync-setup#conflicts"/>
- 	Configure and Setup Sync page.</p>
+ 	<p>Tomboy puede sincronizar sus notas automáticamente por usted en segundo plano. Se recomienda que configure cómo manejar los conflictos entre notas antes de activar la sincronización automática. Puede aprender acerca de el manejo de conflictos entre notas en la página Configurar y establecer sincronización <link xref="sync-setup#conflicts"/>.</p>
  	
- 	<p>You can enable sync by opening <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock and choose <gui>Preferences</gui> and then select
-	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>
+ 	<p>Puede activar las sincronización abriendo las <gui>Preferencias de Tomboy</gui> usando su ratón para pulsar con el botón derecho en el icono de Tomboy en su panel, barra de tareas o «dock», elija <gui>Preferencias</gui> y seleccione la solapa <gui>Sincronización</gui>. También puede abrir las <gui>Preferencias de Tomboy</gui> desde el diálogo <gui>Buscar en todas las notas</gui>. Desde el menú, elija <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
 	
 	<p>Para activar la sincronización automática, marque la casilla <gui>Sincronizar automáticamente en segundo plano cada x minutos</gui> en la parte inferior de la solapa Sincronización.</p>
 	
-	<p>Tomboy's default option is to autosync every 10 minutes.  To change
-	how often Tomboy should sync enter the number of minutes in the dialog
-	or use your mouse to move the time up or down.</p>
+	<p>La opción predeterminada de Tomboy es sincronizar automáticamente cada 10 minutos. Para cambiar la frecuencia con que Tomboy debe sincronizar, introduzca el número de minutos en el diálogo o use su ratón para aumentar o disminuir el tiempo.</p>
 	
 	<p>Para desactivar la sincronización automática, desmarque la casilla <gui>Sincronizar automáticamente en segundo plano cada x minutos</gui>.</p>
 	

@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#sync"/>
-    <desc>Sync your Tomboy notes with other computers.</desc>
+    <desc>Συγχρνονισμών των σημειώσεων Tomboy με άλλους υπολογιστές.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,55 +18,35 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Sync your notes</title>
+ <title>Συγχρονισμός των σημειώσεών σας</title>
 
  <section id="sync">
 
-	<title>Manually Syncing Notes</title>
+	<title>Σημειώσεις χειροκίνητου συγχρονισμού</title>
 	
-	<p>You can sync your notes one of three ways:</p>
+	<p>Μπορείτε να συγχρονίσετε τις σημειώσεις με τους εξής τρεις τρόπους:</p>
 	
 	<list type="numbered">
-	  <item><p>From any note click the <gui>Tools</gui> icon
-	  and choose <gui>Synchronize Notes</gui>.</p></item>
-	  <item><p>In the <gui>Search All Notes</gui> dialog choose
-	  <guiseq><gui>Tools</gui><gui>Synchronize Notes</gui>
-	  </guiseq>.</p></item>
-	  <item><p>Using your mouse, right click on the Tomboy icon
-	  in your panel, taskbar or dock and choose <gui>Synchronize All Notes
-	  </gui>.</p></item>
+	  <item><p>Από οποιαδήποτε σημείωσε κάντε κλικ στο εικονίδιο του <gui>Εργαλεία</gui> και επιλέξτε <gui>Συγχρονισμός σημειώσεων</gui>.</p></item>
+	  <item><p>Στο διάλογο <gui>Αναζήτηση σε όλες τις σημειώσεις</gui> επιλέξτε <guiseq><gui>Εργαλεία</gui><gui>Συγχρονισμός σημειώσεων</gui></guiseq>.</p></item>
+	  <item><p>Χρησιμοποιώντας το ποντίκι, κάντε δεξί κλικ στο εικονίδιο του Tomboy στον πίνακα εργασίας, στη γραμμή εργασίων ή οπουδήποτε αλλού στην επιφάνεια και επιλέξτε <gui>Συγχρονισμός όλων των σημειώσεων </gui>.</p></item>
 	</list>
 
  </section>
  
  <section id="autosync">
  
- 	<title>Sync Your Notes Automatically</title>
+ 	<title>Αυτόματος συγχρονισμός των σημειώσεών σας</title>
  	
- 	<p>Tomboy can automatically sync your notes for you in the background.
- 	It is recommended that you configure how you handle note conflicts
- 	before enabling syncing automatically.  You can learn about handling
- 	note conflicts in the <link xref="sync-setup#conflicts"/>
- 	Configure and Setup Sync page.</p>
+ 	<p>Το Tomboy μπορεί αυτόματα να συγχρονίζει για εσάς τις σημειώσεις στο παρασκήνιο. Προτείνεται να ρυθμίσετε τον τρόπου που θα διαχειρίζεται τις συγκρούσεις σημειώσεων πριν την ενεργοποίηση του αυτόματου συγχρονισμού. Μπορείτε να μάθετε περισσότερα σχετικά με τη διαχείριση συγκρούσεων σημειώσεων στη <link xref="sync-setup#conflicts"/> Σελίδα ρυθμίσεων και προσαρμογής συγχρονισμού.</p>
  	
- 	<p>You can enable sync by opening <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock and choose <gui>Preferences</gui> and then select
-	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>
+ 	<p>Μπορείτε να ενεργοποιήσετε το συγχρονισμό ανοίγοντας τις <gui>Προτιμήσεις Tomboy</gui> χρησιμοποιώντας το ποντίκι σας με δεξί κλικ στο εικονίδιο του Tomboy στον πίνακα εφαρμογών σας, τη γραμμή εργασιών ή το dock και επιλέξτε <gui>Προτιμήσεις</gui> και ύστερα την καρτέλα <gui>Συγχρονισμός</gui>. Μπορείτε επίσης να ανοίξετε τις <gui>Προτιμήσεις Tomboy</gui> από το διάλογο <gui>Αναζήτηση σε όλες τις σημειώσεις</gui>. Από το μενού επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui></guiseq>.</p>
 	
-	<p>To enable autosync, check the <gui>Automatically Sync in Background
-	Every x Minutes</gui> box at the bottom of the Synchronization tab.</p>
+	<p>Για να ενεργοποιήσετε τον αυτόματο συγχρονισμό, επιλέξτε το πεδίο <gui>Αυτόματος συγχρονισμός στο παρασκήνιο κάθε x λεπτά</gui> στο κάτω μέρος της καρτέλας Συγχρονισμός.</p>
 	
-	<p>Tomboy's default option is to autosync every 10 minutes.  To change
-	how often Tomboy should sync enter the number of minutes in the dialog
-	or use your mouse to move the time up or down.</p>
+	<p>Η προεπιλεγμένη ρύμθμιση του Tomboy είναι ο αυτόματος συγχρονισμός κάθε 10 λεπτά. Για να την τροποποιήσετε, εισάγετε τον αριθμό των λεπτών στο διάλογο ή χρησιμοποιήστε το ποντίκι σας για να μετακινήσετε το χρόνο κάτω ή πάνω.</p>
 	
-	<p>To disable autosync, uncheck  the <gui>Automatically Sync in	
-	Background Every x Minutes</gui> box.</p>
+	<p>Για να απενεργοποιήσετε τον αυτόματο συγχρονισμό, αποεπιλέξτε το κουτί <gui>Αυτόματος συγχρονισμός στο παρασκήνιο κάθε x λεπτά</gui>.</p>
 	
   </section>
 

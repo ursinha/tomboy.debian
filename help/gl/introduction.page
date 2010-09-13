@@ -39,7 +39,7 @@
     <title>Xanela de <gui>Notas de Tomboy</gui></title>
     <desc>Xanela principal de <app>Notas de Tomboy</app></desc>
     <media type="image" src="figures/tomboy.png" mime="image/png" style="right">
-      <p><app>Tomboy</app> default note.</p>
+      <p>Nota predefinida de <app>Tomboy</app>.</p>
     </media>
   </figure>
 

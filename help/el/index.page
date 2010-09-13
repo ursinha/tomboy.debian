@@ -19,31 +19,31 @@
   <title>Σημειώσεις Tomboy</title>
 
   <section id="notes" style="2column">
-    <title>Managing Notes</title>
+    <title>Διαχείριση σημειώσεων</title>
   </section>
 
   <section id="notebooks" style="2column">
-    <title>Organizing Notes</title>
+    <title>Οργάνωση σημειώσεων</title>
   </section>
   
   <section id="sync" style="2column">
-    <title>Syncing Notes</title>
+    <title>Συγχρονισμός σημειώσεων</title>
   </section>  
   
   <section id="prefs" style="2column">
-	<title>Tomboy Preferences</title>
+	<title>Προτιμήσεις Tomboy</title>
   </section>
 
   <section id="advanced" style="2column">
-    <title>Advanced Actions</title>
+    <title>Εξειδικευμένες ενέργειες</title>
   </section>
 
   <section id="problems">
-    <title>Common Problems</title>
+    <title>Κοινά προβλήματα</title>
   </section>
 
   <section id="new">
-    <title>What's New</title>
+    <title>Τι καινούριο υπάρχει</title>
   </section>
 
 </page>

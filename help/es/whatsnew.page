@@ -21,15 +21,9 @@
   <title>Lo nuevo en <app>Tomboy</app></title>
 
   <p><app>Tomboy</app> incorpora varias funcionalidades nuevas. Tomboy debería iniciarse notablemente más rápido gracias a las mejoras realizadas en el tiempo de arranque de Tomboy.</p>
-  <p>
-	Copying and pasting from Tomboy to other applications has been improved to support
-	 formatting into other applications that can understand HTML, such as Evolution, OpenOffice.org
-	and other applications.
-  </p>
+  <p>Se ha mejorado el copiar/pegar desde Tomboy hacia otras aplicaciones para soportar el formateo en otras aplicaciones que pueden entender HTML, tales como Evolution, OpenOffice.org y otras.</p>
   <p>Ahora <app>Tomboy</app> puede sincronizar sus notas automáticamente por usted cuando tenga la sincronización activada.</p>
 
-  <p>Support for Microsoft Windows 7 jump lists have been added helping you access your notes,
-	search or create a new note faster directly from the Windows taskbar.
-  </p>
+  <p>Se ha añadido soporte para Microsoft Windows 7 para ayudarle a acceder a sus notas, buscar o crear una nota nueva más rápido, directamente desde la barra de tareas de Windows.</p>
 
 </page>
