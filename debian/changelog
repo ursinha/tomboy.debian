@@ -1,6 +1,7 @@
 tomboy (1.3.4-1) UNRELEASED; urgency=low
 
   * [40c7e88] Imported Upstream version 1.3.4
+    + Stop building libtomboy with *DISABLE_DEPRECATED flags (for now)
 
  -- Iain Lane <laney@ubuntu.com>  Mon, 20 Sep 2010 12:49:20 +0100
 
