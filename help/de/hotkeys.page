@@ -29,8 +29,8 @@
 	<list>
 	  <item><p><gui>Notizmenü anzeigen</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
 	  <item><p><gui>»Hier starten« öffnen</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
-	  <item><p><gui>Notizmenü anzeigen</gui>: Standardmäßig deaktiviert. Sie können in diesem Feld eine Tastenkombination eingeben, um ein Tastenkürzel zu erstellen.</p></item>
-	  <item><p><gui>Notizmenü anzeigen</gui>: Standardmäßig deaktiviert. Sie können in diesem Feld eine Tastenkombination eingeben, um ein Tastenkürzel zu erstellen.</p></item>
+	  <item><p><gui>Neue Notiz erstellen</gui>: Standardmäßig deaktiviert. Sie können in diesem Feld eine Tastenkombination eingeben, um ein Tastenkürzel zu erstellen.</p></item>
+	  <item><p><gui>»Alle Notizen durchsuchen« öffnen</gui>: Standardmäßig deaktiviert. Sie können in diesem Feld eine Tastenkombination eingeben, um ein Tastenkürzel zu erstellen.</p></item>
 	</list>  
 	    
  </page>

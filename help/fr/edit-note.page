@@ -5,7 +5,7 @@
     <link type="guide" xref="index#notes"/>
     <link type="seealso" xref="create-notes"/>
     <link type="seealso" xref="delete-notes"/>
-    <desc>Edit and format your notes.</desc>
+    <desc>Modifier et formater vos notes.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -20,67 +20,44 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Edit notes</title>    
+  <title>Modification de notes</title>    
   
-		<p>Tomboy Notes allows you to format the text within a note in 
-		a number of different ways, including undo and redo, bold, 
-		italics, underline, and more.</p>
+		<p>Notes Tomboy vous permet de formater le texte d'une note de multiples façons dont les fonctions annuler et refaire, la mise en gras ou en italique, le soulignement et plus encore.</p>
 		
    <section id="redo-undo">
 	
-	<title>Undo and Redo</title>
+	<title>Fonction annuler et refaire</title>
 	
-		<p>To undo the last action, including typing a word or 
-		formatting text, press the <gui>Text</gui>
-		icon in the toolbar and choose <gui>Undo</gui>.</p>
+		<p>Pour annuler la dernière action, y compris la saisie d'un mot ou le formatage du texte, cliquez sur l'icône <gui>Texte</gui> dans la barre d'outils et choisissez <gui>Annuler</gui>.</p>
 
-		<p>If you want to redo a word or text after using Undo, 
-		press the <gui>Text</gui> icon in the toolbar and choose 
-		<gui>Redo</gui>.</p>
+		<p>Si vous souhaitez refaire votre dernière action sur un mot ou un texte, cliquez sur l'icône <gui>Texte</gui> dans la barre d'outils et choisissez <gui>Refaire</gui>.</p>
 	
   </section>
 	 
   <section id="text-format">
 	
-	<title>Formatting Text</title>
+	<title>Formatage du texte</title>
 	
-		<p>You can format the text of your notes in a number of 
-		different ways, including underlining words,
-		making text bold or italics, highlighting words or phrases, 
-		or striking through text.</p>
+		<p>Vous pouvez formater le texte de vos notes de plusieurs façons dont le soulignement, la mise en gras ou en italique, le surlignage des mots ou des phrases ou la rature.</p>
   </section>
 	 
   <section id="text-size">
 	
-	<title>Changing the Text Size</title>
+	<title>Modification de la taille du texte</title>
 	
-		<p>You can change the size of the text in your notes one of two ways.</p>
-		<p>Highlight the text that you want to make bigger or smaller, and press 
-		<keyseq><key>Ctrl</key><key>+</key></keyseq> to make your text bigger or 
-		<keyseq><key>Ctrl</key><key>-</key></keyseq> to make your text smaller.</p>
-		<p>Alternatively, you can press the <gui>Text</gui> icon in the 
-		toolbar and choose from one of four
-		preset sizes including small, normal, large and huge.</p>
+		<p>Vous pouvez modifier la taille du texte dans vos notes de deux façons.</p>
+		<p>Sélectionnez le texte que vous souhaitez agrandir ou diminuer et appuyez sur les touches <keyseq><key>Ctrl</key><key>+</key></keyseq> pour agrandir ou <keyseq><key>Ctrl</key><key>-</key></keyseq> pour diminuer.</p>
+		<p>Vous pouvez également cliquer sur l'icône <gui>texte</gui> dans la barre d'outils et choisir l'une des quatre tailles prédéfinies, petite, normale, grande et énorme.</p>
 	
   </section>
 	 
   <section id="bullets">
 	
-	<title>Formatting Bullets</title>
+	<title>Formatage des puces</title>
 	
-		<p>Bullets can be created by using the keyboard or the 
-		<gui>Text</gui> icon in the toolbar.</p>
-		<p>To manually create a bullet, type the asterisk key 
-		<key>*</key> and then type your text.  After pressing
-		enter, Tomboy will automatically convert a line starting 
-		with an asterisk into a bullet, and the next
-		line will be auto-formatted as a bullet as well.  If you want 
-		to create a sub-bullet, press <key>Tab</key>
-		immediately after pressing <key>Enter</key>.</p>
-		<p>You can also highlight a specific line and choose the 
-		<gui>Text</gui> icon in the toolbar check the 
-		<gui>Bullets</gui> checkbox to change a specific line to be 
-		bulleted.</p>
+		<p>Les puces peuvent être créées à l'aide du clavier ou en cliquant sur l'icône <gui>texte</gui> dans la barre d'outils.</p>
+		<p>Pour créer une puce manuellement, saisissez la clé astérisque <key>*</key> et ensuite votre texte. Après avoir appuyé sur la touche Entrée, Tomboy convertit automatiquement les lignes commençant par un astérisque en puce et la ligne suivante commence aussi par une puce. Si vous souhaitez créer une sous-puce, appuyez sur <key>Tab</key> immédiatement après avoir appuyé sur <key>Entrée</key>.</p>
+		<p>Vous pouvez aussi sélectionner une ligne spécifique et choisir l'icône <gui>Texte</gui> dans la barre d'outils, puis cocher la case <gui>Puces</gui> pour ajouter une puce à une ligne.</p>
 
 	
   </section>

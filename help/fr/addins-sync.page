@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="addins#manage"/>
-    <desc>Enable additional ways to sync your notes with other devices.</desc>
+    <desc>Activer d'autres moyens de synchronisation de vos notes avec d'autres périphériques.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,42 +18,29 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Sync Addins</title>
+ <title>Greffons de synchronisation</title>
 
-	<p>Sync Addins allow you to choose different methods and places
-	to sync your Tomboy notes.  For more information on configuring sync,
-	visit the <link xref="sync-notes"/> help page.</p>
+	<p>Les greffons de synchronisation vous permettent de choisir différentes méthodes et emplacements pour synchroniser vos notes Tomboy. Pour plus d'informations, consultez la page d'aide <link xref="sync-notes"/>.</p>
 
 
 <section id="local">
-  <title>Local Directory Sync Service</title>
-  <p>The Local Directory Sync Service is enabled by default and allows
-	Tomboy to sync its notes to another directory on your computer.
-	This is helpful to create a backup of your notes.</p>
+  <title>Service de synchronisation de dossiers locaux</title>
+  <p>Le service de synchronisation de dossiers locaux est activé par défaut et permet à Tomboy de synchroniser ses notes avec un autre dossier sur votre ordinateur. Cela facilite la création d'une sauvegarde de vos notes.</p>
 </section>
 
 <section id="ssh">
-  <title>SSH Sync Service</title>
-  <p>The SSH Sync Service allows you to sync your notes with another computer
-	via the SSH protocol.  This plugin is disabled by default.  You may
-	need to install the <em>sshfs</em> package for your Linux distribution
-	to make this addin work, which is outside the scope of this help 
-	document.</p>
+  <title>Service de synchronisation SSH</title>
+  <p>Le service de synchronisation SSH vous permet de synchroniser vos notes avec un autre ordinateur via le protocole SSH. Ce greffon est désactivé par défaut. Il se peut que vous ayez besoin d'installer sur votre distribution Linux le paquet <em>sshfs</em> pour que ce greffon fonctionne, ce qui n'est pas le propos de ce manuel.</p>
 </section>
 
 <section id="webdav">
-  <title>WebDav Sync Service</title>
-  <p>The WebDav Sync Service addin is enabled by default and allows you to
-	sync your notes with a WebDav remote server.  You may need to have
-	the <em>wdfs FUSE file system</em> package installed for your Linux
-	distribution to make this addin work which is outside the scope of 
-	this help document.</p>
+  <title>Service de synchronisation Webdav</title>
+  <p>Le service de synchronisation WebDav est activé par défaut et permet de synchroniser vos notes avec un serveur distant WebDav. Il se peut que vous ayez besoin d'installer sur votre distribution Linux le paquet <em>système de fichiers FUSE wdfs</em> pour que ce greffon fonctionne, ce qui n'est pas le propos de ce manuel.</p>
 </section>
 
 <section id="webservice">
-  <title>Web Sync Service</title>
-  <p>The Web Sync Service addin allows you to sync your notes to a remote 
-	web server or service, such as Tomboy Online.  At the time of writing, the Tomboy Online service has not launched.</p>
+  <title>Service de synchronisation Web</title>
+  <p>Le service de synchronisation Web vous permet de synchroniser vos notes vers un serveur ou un service Web distant, comme Tomboy Online. Au moment de la rédaction de ce document, le service Tomboy Online n'est pas encore lancé.</p>
 </section>
 
  </page>

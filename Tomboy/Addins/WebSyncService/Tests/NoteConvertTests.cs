@@ -78,9 +78,9 @@ namespace Tomboy.WebSync.Tests
 		public void ToNoteInfoTest ()
 		{
 			// Note content stress tests
-			string [] titles = new string [15];
-			string [] contents = new string [15];
-			string [] expectedInfoContents = new string [15];
+			string [] titles = new string [18];
+			string [] contents = new string [18];
+			string [] expectedInfoContents = new string [18];
 			
 			titles [0] = "(Untitled 238)";
 			contents [0] = @"<note-content version=""0.1"">
@@ -211,9 +211,27 @@ Describe your new note here.";
 
 Describe your new note here.</note-content>";
 			expectedInfoContents [14] = @"Describe your new note here.";
+
+			titles [15] = "New Note 331";
+			contents [15] = @"<note-content xmlns:link=""http://beatniksoftware.com/tomboy/link"" xmlns:size=""http://beatniksoftware.com/tomboy/size"" version=""0.1"">New Note 331
+
+Describe your new note here.</note-content>";
+			expectedInfoContents [15] = @"Describe your new note here.";
+
+			titles [16] = "New Note 331";
+			contents [16] = @"<note-content xmlns:link=""http://beatniksoftware.com/tomboy/link"" version=""0.1"" xmlns:size=""http://beatniksoftware.com/tomboy/size"">New Note 331
+
+Describe your new note here.</note-content>";
+			expectedInfoContents [16] = @"Describe your new note here.";
+
+			titles [17] = "New Note 331";
+			contents [17] = @"<note-content version=""0.1"" xmlns:size=""http://beatniksoftware.com/tomboy/size"">New Note 331
+
+Describe your new note here.</note-content>";
+			expectedInfoContents [17] = @"Describe your new note here.";
 			
 
-			for (int i =0; i < titles.Length; i++) {
+			for (int i = 0; i < titles.Length; i++) {
 				NoteData data = new NoteData ("note://tomboy/12345");
 				data.Title = titles [i];
 				data.Text = contents [i];
@@ -225,9 +243,9 @@ Describe your new note here.</note-content>";
 				Note note = Note.CreateExistingNote (data, tmpFileName, null);
 				
 				NoteInfo info = NoteConvert.ToNoteInfo (note);
-				Assert.AreEqual (titles [i], info.Title, "Title");
-				Assert.AreEqual (expectedInfoContents [i], info.NoteContent, "NoteContent");
-				Assert.AreEqual (0.1, info.NoteContentVersion.Value, "NoteContentVersion");
+				Assert.AreEqual (titles [i], info.Title, "Title " + i.ToString ());
+				Assert.AreEqual (expectedInfoContents [i], info.NoteContent, "NoteContent " + i.ToString ());
+				Assert.AreEqual (0.1, info.NoteContentVersion.Value, "NoteContentVersion " + i.ToString ());
 			}
 		}
 	}

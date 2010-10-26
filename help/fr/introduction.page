@@ -4,9 +4,7 @@
   <info>
     <link type="guide" xref="index"/>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
-    <desc>
-      Introduction to <app>Tomboy Notes</app>.
-    </desc>
+    <desc>Introduction à <app>Notes Tomboy</app>.</desc>
     <credit type="author">
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
@@ -22,26 +20,15 @@
 
   <title>Introduction</title>
 
-  <p>
-    <app>Tomboy</app> is a note taking application for the GNOME Desktop, Microsoft Windows, and Mac OS X.
-    <app>Tomboy</app> is easy to use, and helps you organize the ideas and information you work
-    with everyday.
-  </p>
-  <p>
-    <app>Tomboy</app> includes features that help you better organize and remember your information and
-    allows you to link your notes together to make it easier to find and sort your information.  You can
-    also organize multiple notes in a notebook to make grouping notes together easier.
-  </p>
-  <p>
-    You can also sync your notes across multiple computers, making it easy to take your notes with you 
-    wherever you are.
-  </p>
+  <p><app>Tomboy</app> est une application de prise de notes pour le bureau GNOME, Microsoft Windows et Mac OS X. <app>Tomboy</app> est simple d'utilisation et permet d'organiser les idées et les informations de tous les jours.</p>
+  <p><app>Tomboy</app> inclut des fonctionnalités qui vous aident à organiser et à vous souvenir de vos informations et permettent de relier vos notes entre elles pour vous aider à les retrouver et les trier. Vous pouvez aussi organiser plusieurs notes dans un bloc-notes afin de regrouper vos notes plus facilement.</p>
+  <p>Vous pouvez aussi synchroniser vos notes entre différents ordinateurs ce qui vous permet d'emporter vos notes avec vous où que vous soyez.</p>
 
   <figure>
-    <title><gui>Tomboy Notes</gui> window</title>
-    <desc><app>Tomboy Notes</app> main window</desc>
+    <title>Fenêtre des <gui>Notes Tomboy</gui></title>
+    <desc>Fenêtre principale des <app>Notes Tomboy</app></desc>
     <media type="image" src="figures/tomboy.png" mime="image/png" style="right">
-      <p><app>Tomboy</app> default note.</p>
+      <p>Note par défaut de <app>Tomboy</app>.</p>
     </media>
   </figure>
 
