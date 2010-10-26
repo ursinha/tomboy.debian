@@ -29,8 +29,8 @@
 	<list>
 	  <item><p><gui>Menú mostrar notas</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
 	  <item><p><gui>Abrir «Comenzar aquí»</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
-	  <item><p><gui>Menu mostrar notas</gui>: desactivado de manera predeterminada. Puede introducir una secuencia de teclas en este campo para crear una tecla rápida.</p></item>
-	  <item><p><gui>Menu mostrar notas</gui>: desactivado de manera predeterminada. Puede introducir una secuencia de teclas en este campo para crear una tecla rápida.</p></item>
+	  <item><p><gui>Crear nota nueva</gui>: desactivado de manera predeterminada. Puede introducir una secuencia de teclas en este campo para crear una tecla rápida.</p></item>
+	  <item><p><gui>Abrir «Buscar en todas las notas»</gui>: desactivado de manera predeterminada. Puede introducir una secuencia de teclas en este campo para crear una tecla rápida.</p></item>
 	</list>  
 	    
  </page>

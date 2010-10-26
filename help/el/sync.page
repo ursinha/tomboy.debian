@@ -38,7 +38,11 @@
  
  	<title>Αυτόματος συγχρονισμός των σημειώσεών σας</title>
  	
- 	<p>Το Tomboy μπορεί αυτόματα να συγχρονίζει για εσάς τις σημειώσεις στο παρασκήνιο. Προτείνεται να ρυθμίσετε τον τρόπου που θα διαχειρίζεται τις συγκρούσεις σημειώσεων πριν την ενεργοποίηση του αυτόματου συγχρονισμού. Μπορείτε να μάθετε περισσότερα σχετικά με τη διαχείριση συγκρούσεων σημειώσεων στη <link xref="sync-setup#conflicts"/> Σελίδα ρυθμίσεων και προσαρμογής συγχρονισμού.</p>
+ 	<p>Tomboy can automatically sync your notes for you in the background.
+ 	It is recommended that you configure how you handle note conflicts
+ 	before enabling syncing automatically.  You can learn about handling
+ 	note conflicts in the <link xref="sync-setup#conflict"/> 
+ 	page.</p>
  	
  	<p>Μπορείτε να ενεργοποιήσετε το συγχρονισμό ανοίγοντας τις <gui>Προτιμήσεις Tomboy</gui> χρησιμοποιώντας το ποντίκι σας με δεξί κλικ στο εικονίδιο του Tomboy στον πίνακα εφαρμογών σας, τη γραμμή εργασιών ή το dock και επιλέξτε <gui>Προτιμήσεις</gui> και ύστερα την καρτέλα <gui>Συγχρονισμός</gui>. Μπορείτε επίσης να ανοίξετε τις <gui>Προτιμήσεις Tomboy</gui> από το διάλογο <gui>Αναζήτηση σε όλες τις σημειώσεις</gui>. Από το μενού επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui></guiseq>.</p>
 	

@@ -19,31 +19,31 @@
   <title>阿帖便笺</title>
 
   <section id="notes" style="2column">
-    <title>Managing Notes</title>
+    <title>管理便笺</title>
   </section>
 
   <section id="notebooks" style="2column">
-    <title>Organizing Notes</title>
+    <title>组织便笺</title>
   </section>
   
   <section id="sync" style="2column">
-    <title>Syncing Notes</title>
+    <title>同步笔记</title>
   </section>  
   
   <section id="prefs" style="2column">
-	<title>Tomboy Preferences</title>
+	<title>阿帖便笺首选项</title>
   </section>
 
   <section id="advanced" style="2column">
-    <title>Advanced Actions</title>
+    <title>高级操作</title>
   </section>
 
   <section id="problems">
-    <title>Common Problems</title>
+    <title>常见问题</title>
   </section>
 
   <section id="new">
-    <title>What's New</title>
+    <title>新功能</title>
   </section>
 
 </page>

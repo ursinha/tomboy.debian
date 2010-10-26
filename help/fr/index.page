@@ -19,31 +19,31 @@
   <title>Notes Tomboy</title>
 
   <section id="notes" style="2column">
-    <title>Managing Notes</title>
+    <title>Gestion des notes</title>
   </section>
 
   <section id="notebooks" style="2column">
-    <title>Organizing Notes</title>
+    <title>Organisation des notes</title>
   </section>
   
   <section id="sync" style="2column">
-    <title>Syncing Notes</title>
+    <title>Synchronisation des notes</title>
   </section>  
   
   <section id="prefs" style="2column">
-	<title>Tomboy Preferences</title>
+	<title>Préférences de Tomboy</title>
   </section>
 
   <section id="advanced" style="2column">
-    <title>Advanced Actions</title>
+    <title>Actions avancées</title>
   </section>
 
   <section id="problems">
-    <title>Common Problems</title>
+    <title>Problèmes courants</title>
   </section>
 
   <section id="new">
-    <title>What's New</title>
+    <title>Nouveautés</title>
   </section>
 
 </page>

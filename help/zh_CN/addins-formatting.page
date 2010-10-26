@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="addins#manage"/>
-    <desc>Plugins to add addition note formatting.</desc>
+    <desc>添加便笺文本格式的扩展插件。</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,22 +18,16 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Formatting Addins</title>
+ <title>文本格式扩展</title>
 
 <section id="fixedwidth">
-  <title>Fixed Width Addin</title>
-  <p>The Fixed Width addin changes your text to be of a fixed width in the Tomboy note.
-	This addin is disabled by default.  To enable, press the <gui>Enable</gui> button.</p>
+  <title>固定宽度扩展</title>
+  <p>固定宽度扩展允许您在便笺中，设定文本使用等宽字体。这个扩展默认是禁用的，要启用它，点 <gui>启用</gui> 按钮。</p>
 </section>
 
 <section id="underline">
-  <title>Underline Addin</title>
-  <p>The Underline addin allows you to underline specific text in your note using
-	the <gui>Text</gui> icon in a note toolbar.  This addin is disabled by
-	 default.  To enable, press the <gui>Enable</gui> button.  Highlight
-	the text you would like to underline, press the <gui>Text</gui>
-	icon in the note toolbar, and choose <gui>Underline</gui> or press
-	<keyseq><key>CONTROL + U</key></keyseq>.</p>
+  <title>下划线扩展</title>
+  <p>下划线扩展允许您点工具栏上的 <gui>文本</gui> 图标，为文本添加下划线。这个扩展默认是禁用的，要启用它，点 <gui>启用</gui> 按钮。选中文本后点工具栏上的 <gui>文本</gui> 图标，然后选 <gui>下划线</gui> 或者按组合键 <keyseq><key>Ctrl + U</key></keyseq>。</p>
 </section>
 
  </page>

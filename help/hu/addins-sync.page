@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="sync-addins-sync">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>További módszerek jegyzetei más eszközökkel való szinkronizálására.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Szinkronizáló bővítmények</title>
+
+	<p>A Szinkronizáló bővítmények lehetővé teszik különböző módszerek és helyek kiválasztását a Tomboy jegyzetei szinkronizálására. A szinkronizálás beállításával kapcsolatos további információkért lásd a <link xref="sync-notes"/> oldalt.</p>
+
+
+<section id="local">
+  <title>Helyi könyvtár szinkronizálási szolgáltatás</title>
+  <p>A Helyi könyvtár szinkronizálási szolgáltatás alapértelmezésben engedélyezett, és lehetővé teszi a Tomboy számára a jegyzetek másik könyvtárba szinkronizálását a számítógépen. Ez a jegyzetek biztonsági mentéséhez hasznos.</p>
+</section>
+
+<section id="ssh">
+  <title>SSH szinkronizálási szolgáltatás</title>
+  <p>Az SSH szinkronizálási szolgáltatás lehetővé teszi jegyzeteinek szinkronizálását másik számítógéppel az SSH protokollon. Ez a bővítmény alapértelmezésben le van tiltva. Ezen bővítmény működéséhez szükség lehet az <em>sshfs</em> csomag telepítésére az Ön által használt Linux disztribúció tárolóiból.</p>
+</section>
+
+<section id="webdav">
+  <title>WebDav szinkronizálási szolgáltatás</title>
+  <p>A WebDav szinkronizálási szolgáltatás bővítmény alapértelmezésben engedélyezett, és lehetővé teszi jegyzetei szinkronizálását egy távoli WebDav kiszolgálóval. Ezen bővítmény működéséhez szükség lehet a <em>wdfs FUSE fájlrendszer</em> csomag telepítésére az Ön által használt Linux disztribúció tárolóiból.</p>
+</section>
+
+<section id="webservice">
+  <title>Webes szinkronizálási szolgáltatás</title>
+  <p>A webes szinkronizálási szolgáltatás bővítmény lehetővé teszi jegyzetei szinkronizálását egy távoli webkiszolgálóval vagy szolgáltatással, mint a Tomboy Online. Ezen súgó készítésekor a Tomboy Online szolgáltatás még nem működik.</p>
+</section>
+
+ </page>

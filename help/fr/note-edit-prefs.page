@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#prefs"/>
-    <desc>Note editing preferences.</desc>
+    <desc>Préférences d'édition de notes.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,116 +18,64 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Note preferences</title>
+ <title>Préférences des notes</title>
  
- 	<p>You can change the default settings when typing notes
- 	in Tomboy.  To change your note settings, open
- 	 <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock, and choose <gui>Preferences</gui> and  select
-	the <gui>Hotkeys</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>
+ 	<p>Vous pouvez modifier les paramètres par défaut utilisés lors de la saisie de notes dans Tomboy. Pour modifier les paramètres de votre note, ouvrez les <gui>Préférences de Tomboy</gui> à l'aide de la souris en faisant un clic droit sur l'icône de Tomboy dans votre tableau de bord, barre des tâches ou dock et choisissez <gui>Préférences</gui> et sélectionnez l'onglet <gui>Édition</gui>. Vous pouvez aussi ouvrir les <gui>Préférences de Tomboy</gui> depuis la boîte de dialogue <gui>Rechercher dans toutes les notes</gui>. Choisissez <guiseq><gui>Édition</gui><gui>Préférences</gui></guiseq> dans le menu.</p>
  
  <section id="spellcheck">
-   <title>Spell Check</title>
-   <p>Tomboy can check the spelling of your words as you type in a note.
-   Spell check is enabled by default and Tomboy will underline any 
-   misspelled words.  You can see spelling suggestions by using your mouse
-   to right click on the misspelled word.
-   </p>
+   <title>Vérification orthographique</title>
+   <p>Tomboy peut vérifier l'orthographe des mots lors de la saisie d'une note. La vérification orthographique est activée par défaut et Tomboy souligne les mots mal orthographiés. Pour visualiser les suggestions orthographiques à l'aide de la souris, faites un clic droit sur le mot mal orthographié.</p>
    
-   <p>To disable automatic spell checking, use your mouse or the spacebar
-   to uncheck <gui>Spell check while typing</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Pour désactiver la correction orthographique automatique, utilisez la souris ou la barre d'espace pour décocher <gui>Vérification orthographique automatique</gui> dans l'onglet <gui>Édition</gui> des <gui>Préférences de Tomboy</gui>.</p>
    
  </section>
 
  <section id="wikiwords">
-   <title>WikiWords</title>
-   <p>Tomboy can highlight words that <gui>LookLikeThis</gui>.  By 
-   capitalizing multiple words together without using spaces, similar to how
-   a wiki works, Tomboy will highlight the word and make it a link.  Clicking
-   the link will create a new note with the WikiWord as the note title.
-   </p>
+   <title>Mots Wiki</title>
+   <p>Tomboy peut surligner les mots <gui>CommeCeluiCi</gui>. En mettant une majuscule à plusieurs mots sans utiliser d'espace, de la même manière que dans un wiki, Tomboy surligne le mot et en fait un lien. Cliquez sur le lien pour créer une nouvelle note dont le titre est le mot Wiki.</p>
    
-   <p>WikiWords are disabled by default.  To enable WikiWords, use your mouse
-   or the spacebar to check the box to enable <gui>Highlight WikiWords</gui> in
-    the <gui>Editing</gui> tab of Tomboy's Preferences.</p>
+   <p>Les mots Wiki sont désactivés par défaut. Pour activer les mots Wiki, utilisez la souris ou la barre d'espace pour cocher la case <gui>Surligner les mots Wiki</gui> dans l'onglet <gui>Édition</gui> des préférences de Tomboy.</p>
    
  </section>
 
  <section id="bullets">
-   <title>Auto-Bulleted Lists</title>
-   <p>Tomboy can create bulleted list automatically.  This option is enabled
-   by default and when you are editing a note, typing <key>*</key> followed
-   by the text and pressing <key>Enter</key> will automatically create a 
-   bulleted list.  After pressing <key>Enter</key>, the next line will start 
-   with a bullet too.
-   </p>
+   <title>Listes à puces automatiques</title>
+   <p>Tomboy peut créer des listes à puces automatiquement. Cette option est activée par défaut et quand vous saisissez une note, la saisie de <key>*</key> suivi du texte et de l'appui sur <key>Entrée</key> crée automatiquement une liste à puces. Après avoir appuyé sur <key>Entrée</key> la ligne suivante est aussi précédée d'une puce.</p>
    
-   <p>To disable auto-bulleted lists, use your mouse or the spacebar
-   to uncheck <gui>Enable auto-bulleted lists</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Pour désactiver les listes à puces automatiques, utilisez la souris ou la barre d'espace pour décocher <gui>Activer les listes à puces automatique</gui> dans l'onglet <gui>Édition</gui> des <gui>Préférences de Tomboy</gui>.</p>
    
  </section>
 
  <section id="customfont">
-   <title>Custom Fonts</title>
-   <p>You can choose to use a font or font size in Tomboy different than the
-    default font of your desktop.  This feature is disabled by default.
-   </p>
+   <title>Polices personnalisées</title>
+   <p>Vous pouvez choisir d'utiliser dans Tomboy une police et une taille de caractère différente de celle utilisée par défaut par votre bureau. Cette option est désactivée par défaut.</p>
    
-   <p>To enable a different font, use your mouse or the spacebar
-   to uncheck <gui>Use custom font</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Pour activer l'utilisation d'une police personnalisée, utilisez la souris ou la barre d'espace pour cocher <gui>Utiliser une police personnalisée</gui> dans l'onglet <gui>Édition</gui> des <gui>Préférences de Tomboy</gui>.</p>
 
-   <p>You can then press the font button and a font dialog box will appear,
-    allowing you to choose which font you wish to use, the style, such as bold
-    or italic, and the size of the font.  Press <key>Ok</key> to save your 
-    selection.</p>
+   <p>Vous pouvez alors cliquer sur le bouton de la police, une boîte de dialogue s'ouvre pour vous permettre de choisir la police, son style (gras ou italique) et sa taille. Cliquez sur <key>Valider</key> pour enregistrer votre sélection.</p>
    
  </section>
 
  <section id="renamelinks">
  
-   <title>Renaming a Linked Notes</title>
-   <p>Tomboy automatically creates links between notes when you type the
-   title of a saved note in your current note.  If you try to rename a note
-   that has links to it in other notes in Tomboy, you can choose the default
-   behavior Tomboy should use when detecting a change.  Your options include:
-   </p>
+   <title>Renommage d'une note liée</title>
+   <p>Tomboy crée automatiquement un lien entre les notes lorsque vous saisissez le titre d'une note enregistrée dans la note actuelle. Si vous essayez de renommer une note qui possède des liens vers d'autres notes de Tomboy, vous pouvez choisir le comportement par défaut de Tomboy lorsqu'il détecte un changement. Les options sont :</p>
    
    <list>
-     <item><p><gui>Ask me what to do</gui>: Tomboy will prompt you each
-     time it detects a change with one of the below options.</p></item>
-     <item><p><gui>Never rename links</gui>: Tomboy will leave the other
-     notes as they are and unlink the notes.</p></item>
-     <item><p><gui>Always rename links</gui>: Tomboy will automatically
-     rename all the links in other notes to the note you have renamed.
-     </p></item>
+     <item><p><gui>Me demander quoi faire</gui> : chaque fois que Tomboy détecte un changement, il propose les options qui suivent.</p></item>
+     <item><p><gui>Ne jamais renommer les liens</gui> : Tomboy laisse les autres notes telles qu'elles sont et supprime les liens des notes.</p></item>
+     <item><p><gui>Toujours renommer les liens</gui> : Tomboy renomme automatiquement tous les liens des autres notes vers la note que vous avez renommé.</p></item>
    </list>
    
-   <p>Choose one of the above options from the drop down box to the 
-   right of <gui>When renaming a linked note:</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Choisissez une des options précédentes dans la liste déroulante située à droite du texte <gui>Lors du renommage d'une note liée :</gui> dans l'onglet <gui>Édition</gui> des préférences de Tomboy.</p>
    
  </section>
 
 <section id="newnotetemplate">
-  <title>Create a New Note Template</title>
-  <p>You can create a new template that is displayed every time you create 
-  a new note.</p>
+  <title>Création d'un nouveau modèle de notes</title>
+  <p>Vous pouvez créer un nouveau modèle qui s'affiche à chaque fois que vous créez une nouvelle note.</p>
   
-  <p>Press the <gui>Open New Note Template</gui> button in the 
-  <gui>Editing</gui> tab of Tomboy's Preferences. A new template will be
-  displayed that looks similar to a Tomboy Note.  Replace the <gui>Describe
-  your new note here.</gui> text in the note with the text that should be the
-  new template.  Close the note to complete creating a new template.
-  Each time you create a new note that template will be displayed in the new 
-  note.</p>
+  <p>Cliquez sur le bouton <gui>Ouvrir le modèle de nouvelle note</gui> dans l'onglet <gui>Édition</gui> des préférences de Tomboy. Un nouveau modèle s'affiche qui ressemble à une note de Tomboy. Remplacez le texte <gui>Décrivez votre nouvelle note ici.</gui> de la note par le texte qui doit s'afficher dans le nouveau modèle. Fermez la note pour terminer la création du nouveau modèle. Chaque fois que vous créez une nouvelle note, ce modèle s'affiche dans la nouvelle note.</p>
    
 </section>
 
