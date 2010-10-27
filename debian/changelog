@@ -1,4 +1,4 @@
-tomboy (1.2.2-1) UNRELEASED; urgency=low
+tomboy (1.2.2-1) unstable; urgency=low
 
   * New upstream bugfix release 1.2.2:
     + Fix potential sync dataloss bug for former Gnote users
