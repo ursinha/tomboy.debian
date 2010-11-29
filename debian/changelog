@@ -1,3 +1,15 @@
+tomboy (1.2.2-2) UNRELEASED; urgency=high
+
+  * [bc0695b] Fix insecure LD_LIBRARY_PATH. A vulnerability existed
+    where if LD_LIBRARY_PATH were set but empty, a trailing : as a path
+    separator would still be appended to the path, exposing an
+    insecure/invalid search path. Using :+: instead of +: prevents this
+    as ${X:+:$X} returns X iff X is set and not empty whereas ${X+:$X}
+    returns X iff X is set (it may be empty). References: CVE-2010-4005
+    (Closes: #605096)
+
+ -- Iain Lane <laney@ubuntu.com>  Mon, 29 Nov 2010 18:59:02 +0000
+
 tomboy (1.2.2-1) unstable; urgency=low
 
   * New upstream bugfix release 1.2.2:
