@@ -1,4 +1,4 @@
-tomboy (1.2.2-2) UNRELEASED; urgency=high
+tomboy (1.2.2-2) unstable; urgency=high
 
   * [bc0695b] Fix insecure LD_LIBRARY_PATH. A vulnerability existed
     where if LD_LIBRARY_PATH were set but empty, a trailing : as a path
