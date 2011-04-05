@@ -22,11 +22,11 @@
 
   <p><app>阿帖便笺</app> 是 GNOME 桌面中的一款笔记程序，也可运行在 Microsoft Windows 和 Mac OS X 之上。它简单易用，能帮助您随时整理思路保存信息。</p>
   <p><app>阿帖便笺</app> 包括许多功能特性，帮助您整理思路保存信息，允许您把它们相互关联起来，便于查找和排序，您还可以轻松地将多个便笺组织成一个笔记本。</p>
-  <p>您也可以在多台计算机上同步您的便笺，无论在哪都能很方便使用便笺。</p>
+  <p>您也可以在多台计算机上同步您的便笺，无论在哪都能很方便地使用便笺。</p>
 
   <figure>
     <title><app>阿帖便笺</app> 窗口</title>
-    <desc>阿帖便笺</desc>
+    <desc><app>阿帖便笺</app> 主窗口</desc>
     <media type="image" src="figures/tomboy.png" mime="image/png" style="right">
       <p><app>阿帖便笺</app> 内置的便签</p>
     </media>

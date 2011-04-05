@@ -1,258 +1,206 @@
-# Slovak translation for tomboy.
-# Copyright (C) 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the tomboy package.
-# Pavol Klačanský <pavol@klacansky.com>, 2007, 2008, 2009, 2010.
-#
+# Uyghur translation for tomboy.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Gheyret Kenji<gheyret@yahoo.com>,2010.
+# Sahran <sahran.ug@gmail.com>, 2010.
+# Zeper <zeper@msn.com>, 2010.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: tomboy\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=tomboy&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-03-11 13:36+0000\n"
-"PO-Revision-Date: 2010-12-27 12:09+0100\n"
-"Last-Translator: Pavol Klačanský <pavol@klacansky.com>\n"
-"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=tomboy&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-19 14:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Gheyret Kenji<gheyret@yahoo.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../data/GNOME_TomboyApplet.server.in.in.h:1
 msgid "Accessories"
-msgstr "Príslušenstvo"
+msgstr "قوشۇمچە"
 
 #: ../data/GNOME_TomboyApplet.server.in.in.h:2
 msgid "Simple and easy to use note-taking"
-msgstr "Jednoduché a ľahko použiteľné písanie poznámok"
+msgstr "ئاددىي ۋە ئوڭاي ئىزاھ يېزىش"
 
 #: ../data/GNOME_TomboyApplet.server.in.in.h:3
 msgid "Tomboy Applet Factory"
-msgstr "Vytváracie rozhranie apletu Tomboy"
+msgstr "Tomboy قوللانچاق زاۋۇتى"
 
 #: ../data/GNOME_TomboyApplet.server.in.in.h:4 ../data/tomboy.desktop.in.h:3
 #: ../Tomboy/Tray.cs:579
 msgid "Tomboy Notes"
-msgstr "Tomboy - poznámky"
+msgstr "Tomboy ئىزاھلىرى"
 
-# PŠ: nevhodne zvolený akcelerátor
 #: ../data/GNOME_TomboyApplet.xml.h:1 ../Tomboy/ActionManager.cs:179
 #: ../Tomboy/Tray.cs:274
 msgid "S_ynchronize Notes"
-msgstr "S_ynchronizovať poznámky"
+msgstr "ئىزاھلارنى ماس قەدەملەشتۈرۈش(_Y)"
 
 #: ../data/GNOME_TomboyApplet.xml.h:2 ../Tomboy/ActionManager.cs:164
 msgid "_About"
-msgstr "_O programe"
+msgstr "ھەققىدە(_A)"
 
 #: ../data/GNOME_TomboyApplet.xml.h:3 ../Tomboy/ActionManager.cs:157
 #: ../Tomboy/Tray.cs:288
 msgid "_Help"
-msgstr "_Pomocník"
+msgstr "ياردەم(_H)"
 
 #: ../data/GNOME_TomboyApplet.xml.h:4 ../Tomboy/ActionManager.cs:153
 #: ../Tomboy/Tray.cs:283
 msgid "_Preferences"
-msgstr "Nas_tavenia"
+msgstr "مايىللىق(_P)"
 
 #: ../data/tomboy.desktop.in.h:1
 msgid "Note-taker"
-msgstr "Poznámkovač"
+msgstr "ئىزاھ يازغۇ"
 
 #: ../data/tomboy.desktop.in.h:2
 msgid "Take notes, link ideas, and stay organized"
-msgstr "Píšte poznámky, spájajte nápady, a zostaňte zorganizovaný"
+msgstr "ئىزاھلارنى يازىدۇ، ئوي-پىكىرلەرنى ئۇلايدۇ ۋە ئۇلارنى تەرتىپلىك قىلىدۇ"
 
 #: ../data/tomboy.schemas.in.h:1
 msgid "Accept SSL Certificates"
-msgstr "Akceptovať SSL certifikáty"
+msgstr "SSL ئىسپاتنامىسىنى قوبۇل قىلىش"
 
-# PŠ: a čo s tým limitom? Asi vypršal, že?
 #: ../data/tomboy.schemas.in.h:2
 msgid "Automatic Background Synchronization Timeout"
-msgstr "Časový limit pre automatickú synchronizáciu na pozadí"
+msgstr ""
 
 #: ../data/tomboy.schemas.in.h:3
 msgid "Create a new Note"
-msgstr "Vytvoriť novú poznámku"
+msgstr "يېڭى ئىزاھ قۇرىدۇ"
 
-# PŠ: "druh písma" je presnejšie
 #: ../data/tomboy.schemas.in.h:4
 msgid "Custom Font Face"
-msgstr "Vlastný štýl písma"
+msgstr "ئىختىيارىي خەت نۇسخىسى"
 
-# okna Hľadanie
-# PK: Preco? okno s takym nazvom neexistuje podla mna
-# Peter: Ide o okno Hľadať vo všetkých poznámkach- V originále je termín Search window s veľkým S z toho sa dá usudzovať že ide o názov okna - Vyžiadaj TC
-# * https://bugzilla.gnome.org/show_bug.cgi?id=631000
 #: ../data/tomboy.schemas.in.h:5
 msgid "Determines X coordinate of Search window; stored on Tomboy exit."
-msgstr ""
-"Určuje súradnicu X okna hľadania; ukladá sa pri ukončení programu Tomboy."
+msgstr "ئىزدەش كۆزنىكىنىڭ X كوئوردېناتىنى بېكىتىدۇ؛  stored on Tomboy exit."
 
-# okna Hľadanie
-# PK: Preco? okno s takym nazvom neexistuje podla mna
-# * https://bugzilla.gnome.org/show_bug.cgi?id=631000
 #: ../data/tomboy.schemas.in.h:6
 msgid "Determines Y coordinate of Search window; stored on Tomboy exit."
-msgstr ""
-"Určuje súradnicu Y okna hľadania; ukladá sa pri ukončení programu Tomboy."
+msgstr "ئىزدەش كۆزنىكىنىڭ Y كوئوردېناتىنى بېكىتىدۇ؛  stored on Tomboy exit."
 
-# výšku okna Hľadanie v pixeloch
-# PK: Preco? okno s takym nazvom neexistuje podla mna
-# * https://bugzilla.gnome.org/show_bug.cgi?id=631000
 #: ../data/tomboy.schemas.in.h:7
 msgid "Determines pixel height of Search window; stored on Tomboy exit."
-msgstr ""
-"Určuje výšku v pixeloch okna hľadania; ukladá sa pri ukončení programu "
-"Tomboy."
+msgstr "ئىزدەش كۆزنىكىنىڭ پىكسېللىق ئېگىزلىكىنى بېكىتىدۇ؛  stored on Tomboy exit."
 
-# šírku okna Hľadanie v pixeloch
-# PK: Preco? okno s takym nazvom neexistuje podla mna
-# * https://bugzilla.gnome.org/show_bug.cgi?id=631000
 #: ../data/tomboy.schemas.in.h:8
 msgid "Determines pixel width of Search window; stored on Tomboy exit."
-msgstr ""
-"Určuje šírku v pixeloch okna hľadania; ukladá sa pri ukončení programu "
-"Tomboy."
+msgstr "ئىزدەش كۆزنىكىنىڭ پىكسېللىق كەڭلىكىنى بېكىتىدۇ؛  stored on Tomboy exit."
 
 #: ../data/tomboy.schemas.in.h:9
 msgid "Enable Auto bulleted lists."
-msgstr "Povoliť automaticky odrážkované zoznamy."
+msgstr ""
 
 #: ../data/tomboy.schemas.in.h:10
 msgid "Enable Middle-Click Paste On Icon."
-msgstr "Povoliť vloženie kliknutím prostredného tlačidla na ikonu."
+msgstr "ئوتتۇرا توپچا چېكىلسە چاپلايدىغان بولسۇن."
 
 #: ../data/tomboy.schemas.in.h:11
 msgid "Enable Tray Icon"
-msgstr "Povoliť ikonu v oblasti upozornení"
+msgstr "قونداق سىنبەلگىسىنى قوزغات"
 
-# Wikislová? to je čo?
-# PK: slova, ktore sa zvyraznia, napr. PavolKlacansky
-# Peter: ja si pod wikislovom predstavujem slovo z wikipedie. Vyžiadaj si  prosím TC
-# * https://bugzilla.gnome.org/show_bug.cgi?id=631002
 #: ../data/tomboy.schemas.in.h:12
 msgid "Enable WikiWord highlighting"
-msgstr "Povoliť zvýrazňovanie WikiSlov"
+msgstr "WikiWord يورۇتۇشنى قوزغات"
 
 #: ../data/tomboy.schemas.in.h:13
 msgid "Enable closing notes with escape."
-msgstr "Povoliť zatváranie poznámok klávesom Esc."
+msgstr "Esc  كۇنۇپكىسىدا ئىزاھلارنى تاقىسۇن."
 
 #: ../data/tomboy.schemas.in.h:14
 msgid "Enable custom font"
-msgstr "Povoliť vlastné písmo"
+msgstr "ئىختىيارىي خەت نۇسخىسىنى ئىشلەتسۇن"
 
 #: ../data/tomboy.schemas.in.h:15
 msgid "Enable global keybindings"
-msgstr "Povoliť globálne klávesové skratky"
+msgstr ""
 
 #: ../data/tomboy.schemas.in.h:16
 msgid "Enable spellchecking"
-msgstr "Povoliť kontrolu pravopisu"
+msgstr "ئىملا تەكشۈرۈشنى ئىشلەتسۇن"
 
 #: ../data/tomboy.schemas.in.h:17
 msgid "Enable startup notes"
-msgstr "Povoliť otvorenie poznámok pri štarte"
+msgstr "قوزغالغان ھامان ئىزاھ ئاچسۇن"
 
-# dialógové  okno Odstrániť poznámku
-# PK: existuje okno s takym nazvom? lebo ja som ziadne nenasiel
-# Delete Note confirmation dialog je kapitalkami z toho sa dá usudzovat ze ide o názov dialógu - Vyziadaj si TC
-# PK: asi by to bolo v uvodzovkach keby to bol nazov ale tak mas aj TC ;-)
-# * https://bugzilla.gnome.org/show_bug.cgi?id=631005
 #: ../data/tomboy.schemas.in.h:18
 msgid "Enable the Delete Note confirmation dialog"
-msgstr "Povoliť potvrdzovacie dialógové okno pri odstraňovaní poznámky"
+msgstr "«ئىزاھ ئۆچۈرۈش» سۆزلەشكۈسىنى ئىشلەتسۇن"
 
 #: ../data/tomboy.schemas.in.h:19
 msgid ""
 "Enable this option if you want bulleted lists to be automatic when you place "
 "- or * at the beginning of a line."
 msgstr ""
-"Povoľte túto možnosť, ak chcete, aby boli zoznamy s odrážkami automaticky "
-"vytvorené, keď dáte na začiatok riadka - alebo *."
 
 #: ../data/tomboy.schemas.in.h:20
 msgid ""
 "Enable this option if you want to be able to middle-click the Tomboy icon to "
 "paste timestamped content into the Start Here note."
-msgstr ""
-"Povoľte túto možnosť, ak chcete kliknutím prostredného tlačidla na ikonu "
-"programu Tomboy vkladať do poznámky Začnite tu obsah schránky označený "
-"časovou značkou."
+msgstr "Tomboy سىنبەلگىسىنى چاشقىنەكنىڭ ئوتتۇرا توپچىسىدا چېكىپ «باشلاش» تىكى ئىزاھقا ۋاقىتنى چاپلىماقچى بولسىڭىز بۇنى ئىشلىتىڭ."
 
 #: ../data/tomboy.schemas.in.h:21
 msgid ""
 "Enable this option to highlight words ThatLookLikeThis. Clicking the word "
 "will create a note with that name."
-msgstr ""
-"Povolením tejto možnosti zvýrazníte slová, KtoréVyzerajúTakto. Kliknutím na "
-"takéto slovo vytvoríte poznámku s rovnakým názvom."
+msgstr "«ThatLookLikeThis» دېگەندەك سۆزلەرنى يورۇتۇش ئۈچۈن بۇنى ئىشلىتىڭ. بۇ سۆزنى چەكسە شۇنى ئات قىلىپ بىر ئىزاھ قۇرغىلى بولىدۇ."
 
 #: ../data/tomboy.schemas.in.h:22
 msgid "FUSE Mounting Timeout (ms)"
-msgstr "Časový limit pripájania FUSE (ms)"
+msgstr "FUSE ئېگەرلەش مۆھلىتى(ms)"
 
 #: ../data/tomboy.schemas.in.h:23
 msgid "HTML Export All Linked Notes"
-msgstr "Exportovať do HTML všetky previazané poznámky"
+msgstr "بارلىق ئۇلانمىلىق ئىزاھلارنى HTML غا ئېكسپورت"
 
 #: ../data/tomboy.schemas.in.h:24
 msgid "HTML Export Last Directory"
-msgstr "Exportovať do HTML posledný adresár"
+msgstr "ئەڭ ئاخىرقى مۇندەرىجىنى HTML غا ئېكسپورت"
 
 #: ../data/tomboy.schemas.in.h:25
 msgid "HTML Export Linked Notes"
-msgstr "Exportovať do HTML previazané poznámky"
+msgstr "ئۇلانمىلىق ئىزاھلارنى HTML غا ئېكسپورت"
 
 #: ../data/tomboy.schemas.in.h:26
 msgid ""
 "If disabled, the \"Delete Note\" confirmation dialog will be suppressed."
-msgstr ""
-"Ak je zakázané, potvrdzovacie dialógové okno \"Odstrániť poznámku\" bude "
-"potlačené."
+msgstr "ئەگەر ئىشلىتىلمىسە، «ئىزاھ ئۆچۈرۈش» سۆزلەشكۈسى كۆرسىتىلمەيدۇ."
 
-# PŠ: príliš kostrbatý preklad - skús preformulovať s menším počtom vedľajších viet
 #: ../data/tomboy.schemas.in.h:27
 msgid ""
 "If enable_custom_font is true, the font name set here will be used as the "
 "font when displaying notes."
-msgstr ""
-"Ak je hodnota enable_custom_font nastavená na pravda, tak nastavený názov "
-"písma bude použitý ako písmo, v ktorom sa zobrazia poznámky."
+msgstr "enable_custom_font نى true قىلسا، بۇ يەردە بېكىتىلگەن خەت نۇسخىسى ئىزاھلارنى كۆرسىتىشتە ئىشلىتىلىدۇ."
 
 #: ../data/tomboy.schemas.in.h:28
 msgid ""
 "If enabled, all notes that were open when Tomboy quit will automatically be "
 "reopened at startup."
-msgstr ""
-"Ak je povolené, tak všetky poznámky, ktoré boli otvorené pri ukončení "
-"programu Tomboy, budú automaticky znovu otvorené pri spustení."
+msgstr "ئەگەر ئىشلىتىلسە، Tomboy ئاخىرلىشىدىغان چاغدا ئېچىلغان بارلىق ئىزاھلار، Tomboy قايتا قوزغالغاندا ئېچىلىدۇ."
 
 #: ../data/tomboy.schemas.in.h:29
 msgid "If enabled, an opened note can be closed by hitting the escape key."
-msgstr ""
-"Ak je povolené, tak môže byť otvorená poznámka zatvorená stlačením klávesu "
-"Esc."
+msgstr "ئەگەر ئىشلىتىلسە، ئېچىلغان ئىزاھ «Esc» كۇنۇپكىسى چېكىلگەن ھامان يېپىلىدۇ."
 
 #: ../data/tomboy.schemas.in.h:30
 msgid ""
 "If true, Tomboy's tray icon will be displayed in the notification area. "
 "Disabling this may be useful when another application is providing the "
 "functionality of the tray icon."
-msgstr ""
-"Ak je hodnota nastavená na pravda, systémová ikona programu Tomboy bude "
-"zobrazená v oblasti upozornení. Zakázanie tohto môže byť užitočné, keď iná "
-"aplikácia poskytuje funkčnosť systémovej ikony."
+msgstr "ئەگەر ئىشلىتىلسە، Tomboy نىڭ سىنبەلگىسى ئۇقتۇرۇش رايونىدا كۆرسىتىلىدۇ. ئىشلەتمىگەندە باشقا پروگراممىلارنىڭ قونداق سىنبەلگىسىنى كۆرسىتىش قۇلاي بولىدۇ."
 
 #: ../data/tomboy.schemas.in.h:31
 msgid ""
 "If true, misspellings will be underlined in red, and correct spelling "
 "suggestions shown in the right-click menu."
-msgstr ""
-"Ak je hodnota nastavená na pravda, pravopisné chyby budú červeno "
-"podčiarknuté a pravopisne správne návrhy budú zobrazené v ponuke, ktorá sa "
-"otvorí po kliknutí pravým tlačidlom."
+msgstr "ئەگەر ئىشلىتىلسە، ئىملاسى خاتا سۆزلەرنىڭ ئاستىغا قىزىق سىزىق سىزىلىدۇ، ھەمدە توغرا سۆزلەر چاشقىنەك ئوڭ كۇنۇپكىسى چېكىلگەندە چىقىدىغان تىزىملىكتە كۆرسىتىلىدۇ."
 
 #: ../data/tomboy.schemas.in.h:32
 msgid ""
@@ -260,34 +208,24 @@ msgid ""
 "global_keybindings will be enabled, allowing for useful Tomboy actions to be "
 "available from any application."
 msgstr ""
-"Ak je hodnota nastavená na pravda, tak klávesové skratky nastavené v /apps/"
-"tomboy/global_keybindings budú dostupné aj v ostatných aplikáciach, kde "
-"sprístupnia užitočné akcie pre program Tomboy."
 
 #: ../data/tomboy.schemas.in.h:33
 msgid ""
 "If true, the font name set in custom_font_face will be used as the font when "
 "displaying notes. Otherwise the desktop default font will be used."
-msgstr ""
-"Ak je hodnota nastavená na pravda, tak názov písma nastaveného v "
-"custom_font_face bude použitý ako písmo pri zobrazovaní poznámok. Inak bude "
-"použité písmo pracovného prostredia."
+msgstr "ئەگەر ئىشلىتىلسە، custom_font_face غا بېكىتىلگەن خەت نۇسخىسى ئىزاھلارنى كۆرسىتىش ئۈچۈن ئىشلىتىلىدۇ. بولمىسا ئۈستەلئۈستى خەت نۇسخىسى ئىشلىتىلىدۇ."
 
 #: ../data/tomboy.schemas.in.h:34
 msgid ""
 "Indicates that the Sticky Note Importer plugin has not been run, so it "
 "should run automatically the next time Tomboy starts."
-msgstr ""
-"Indikuje to, že zásuvný modul Importér zo Sticky Notes nebol spustený, mal "
-"by sa spustiť automaticky pri ďalšom štarte programu Tomboy."
+msgstr "«Sticky ئىزاھ ئىمپورت قىلغۇچ» قىستۇرمىسىنىڭ تېخى ئىجرا بولمىغانلىقىنى كۆرسىتىدۇ، شۇڭا، ئۇ كېيىنكى قېتىم Tomboy ئىجرا قىلىنغاندا ئاپتوماتىك ئىجرا بولۇشى كېرەك."
 
 #: ../data/tomboy.schemas.in.h:35
 msgid ""
 "Integer determining the minimum number of notes to show in the Tomboy note "
 "menu."
-msgstr ""
-"Celé číslo určujúce minimálny počet poznámok, ktoré sa zobrazia v ponuke "
-"poznámok programu Tomboy."
+msgstr "Tomboy ئىزاھنىڭ تىزىملىكىدە كۆرسىتىلىدىغان ئىزاھلارنىڭ ئەڭ كىچىك سانىنى بەلگىلەيدۇ."
 
 #: ../data/tomboy.schemas.in.h:36
 msgid ""
@@ -296,10 +234,6 @@ msgid ""
 "autosync is disabled. The lowest acceptable positive value is 5. Value is in "
 "minutes."
 msgstr ""
-"Celočíselná hodnota vyjadruje ako často sa má vykonávať synchronizácia "
-"vašich poznámok na pozadí (ak je nastavená). Akákoľvek hodnota menšia ako 1 "
-"vyjadruje, že automatická synchronizácia je zakázaná. Najnižšia prijateľná "
-"kladná hodnota je 5. Hodnota je v minútach."
 
 #: ../data/tomboy.schemas.in.h:37
 msgid ""
@@ -309,11 +243,6 @@ msgid ""
 "wishes to be prompted when a conflict occurs, so that they may handle each "
 "conflict situation on a case-by-case basis."
 msgstr ""
-"Celočíselná hodnota, ktorá určuje, či používateľ vždy uprednostňuje "
-"konkrétne správanie pri zistení konfliktu namiesto zobrazenia výzvy "
-"používateľovi. Hodnoty sa interne mapujú na vymenovaný typ. 0 znamená, že si "
-"používateľ pri výskyte konfliktu želá zobraziť výzvu aby mohol rozhodovať v "
-"konfliktnej situácii prípad od prípadu."
 
 #: ../data/tomboy.schemas.in.h:38
 msgid ""
@@ -325,139 +254,118 @@ msgid ""
 "indicates that link text should be updated to the new note name so that it "
 "will continue linking to the renamed note."
 msgstr ""
-"Celočíselná hodnota, ktorá určuje, či používateľ vždy uprednostňuje "
-"konkrétne správanie aktualizácie odkazov pri zistení konfliktu namiesto "
-"zobrazenia výzvy používateľovi. Hodnoty sa interne mapujú na vymenovaný typ. "
-"0 znamená, že si používateľ želá, aby bola zobrazená výzva pri premenovaní "
-"poznámky, ktoré môže ovplyvniť existujúce odkazy v iných poznámkach. 2 "
-"znamená, že text odkazu by mal byť aktualizovaný podľa nového názvu "
-"poznámky, takže bude stále odkazovať na premenovanú poznámku."
 
 #: ../data/tomboy.schemas.in.h:39
 msgid "Link Updating Behavior on Note Rename"
-msgstr "Spôsob aktualizácie odkazov pri premenovaní poznámky"
+msgstr ""
 
 #: ../data/tomboy.schemas.in.h:40
 msgid "List of pinned notes."
-msgstr "Zoznam pripnutých poznámok."
+msgstr "pinned ئىزاھنىڭ تىزىمى."
 
 #: ../data/tomboy.schemas.in.h:41
 msgid ""
 "Maximum characters of note title to show in the Tomboy tray or panel applet "
 "note menu."
 msgstr ""
-"Maximálny počet znakov v názve poznámky zobrazený v oblasti upozornení "
-"Tomboy alebo v ponuke poznámkového apletu v paneli."
 
 #: ../data/tomboy.schemas.in.h:42
 msgid "Maximum note title length to show in tray menu."
-msgstr ""
-"Maximálna dĺžka názvu poznámky zobrazenej v ponuke v oblasti upozornení."
+msgstr "ئىزاھنىڭ قونداق تىزىملىكتە كۆرسىتىلىدىغان ماۋزۇسىنىڭ ئەڭ چوڭ ئۇزۇنلۇقى."
 
 #: ../data/tomboy.schemas.in.h:43
 msgid "Minimum number of notes to show in menu"
-msgstr "Minimálny počet poznámok, ktoré sa zobrazia v ponuke"
+msgstr "ئىزاھنىڭ قونداق تىزىملىكتە كۆرسىتىلىدىغان ماۋزۇسىنىڭ ئەڭ كىچىك ئۇزۇنلۇقى."
 
 #: ../data/tomboy.schemas.in.h:44
 msgid "Note Synchronization Conflict Saved Behavior"
-msgstr "Uložené správanie pre konflikt pri synchronizácií poznámok"
+msgstr ""
 
-# Otvoriť Nedávne zmeny
-# PK: preco?
-# Mám pocit ze ide o názov okna - Vyziadaj TC
-# * https://bugzilla.gnome.org/show_bug.cgi?id=631007
 #: ../data/tomboy.schemas.in.h:45
 msgid "Open Recent Changes"
-msgstr "Otvoriť nedávne zmeny"
+msgstr "يېقىنقى ئۆزگىرىشلەرنى ئېچىش"
 
 #: ../data/tomboy.schemas.in.h:46
 msgid "Open Search Dialog"
-msgstr "Otvoriť dialógové okno hľadania"
+msgstr "ئىزدەش سۆزلەشكۈسىنى ئېچىش"
 
 #: ../data/tomboy.schemas.in.h:47
 msgid "Open Start Here"
-msgstr "Otvoriť Začnite tu"
+msgstr "«باشلاش» نى ئېچىش"
 
 #: ../data/tomboy.schemas.in.h:48
 msgid "Path on SSH server to Tomboy synchronization directory (optional)."
-msgstr "Cesta k synchronizačnému adresáru Tomboy na SSH serveri (voliteľné)."
+msgstr "SSH مۇلازىمېتىرىدىكى Tomboy نى ماس قەدەملەشتۈرىدىغان مۇندەرىجە(ئىختىيارى)."
 
 #: ../data/tomboy.schemas.in.h:49
 msgid ""
 "Path to the synchronization server when using the filesystem synchronization "
 "service addin."
-msgstr ""
-"Cesta k synchronizačnému serveru pri používaní doplnku služby synchronizácie "
-"súborového systému."
+msgstr "ھۆججەت سىستېمىسىنى ماس قەدەملەشتۈرۈش مۇلازىمىتىدە ئىشلىتىلىدىغان مۇلازىمېتىرنىڭ يولى."
 
 #: ../data/tomboy.schemas.in.h:50
 msgid "SSHFS Remote Synchronization Folder"
-msgstr "Vzdialený synchronizačný priečinok SSHFS"
+msgstr "SSHFS دە ئىشلىتىلىدىغان يىراقتىكى ماس قەدەملەشتۈرۈش قىسقۇچى"
 
 #: ../data/tomboy.schemas.in.h:51
 msgid "SSHFS Remote Synchronization User Name"
-msgstr "Použivateľské meno vzdialenej synchronizácie SSHFS"
+msgstr "SSHFS دە ئىشلىتىلىدىغان يىراقتىكى ماس قەدەملەشتۈرۈش ئىشلەتكۈچى ئاتى"
 
 #: ../data/tomboy.schemas.in.h:52
 msgid "SSHFS Synchronization Server Port"
-msgstr "Port servera pre synchronizáciu SSHFS"
+msgstr "SSHFS دە ئىشلىتىلىدىغان يىراقتىكى ماس قەدەملەشتۈرۈش مۇلازىمېتىر ئېغىزى"
 
 #: ../data/tomboy.schemas.in.h:53
 msgid "SSHFS Synchronization Server URL"
-msgstr "URL servera pre synchronizáciu SSHFS"
+msgstr "SSHFS دە ئىشلىتىلىدىغان يىراقتىكى ماس قەدەملەشتۈرۈش مۇلازىمېتىر URL سى"
 
-# okna Hľadanie
-# oprav to prosím všade
-# PK: preco? take okno aj existuje?
-# Peter: opat kapitálka tak podla mna ide o názov okna
-# PK: ale akeho? ked take neexistuje
 #: ../data/tomboy.schemas.in.h:54
 msgid "Saved height of Search window"
-msgstr "Uložená výška okna hľadania"
+msgstr "ئىزدەش كۆزنىكىنىڭ ساقلانغان ئېگىزلىكى"
 
 #: ../data/tomboy.schemas.in.h:55
 msgid "Saved horizontal position of Search window"
-msgstr "Uložená vodorovná pozícia okna hľadania"
+msgstr "ئىزدەش كۆزنىكىنىڭ ساقلانغان توغرا(گورىزونتال) ئورنى"
 
 #: ../data/tomboy.schemas.in.h:56
 msgid "Saved vertical position of Search window"
-msgstr "Uložená zvislá pozícia okna hľadania"
+msgstr "ئىزدەش كۆزنىكىنىڭ ساقلانغان تىك(ۋېرتىكال) ئورنى"
 
 #: ../data/tomboy.schemas.in.h:57
 msgid "Saved width of Search window"
-msgstr "Uložená šírka okna hľadania"
+msgstr "ئىزدەش كۆزنىكىنىڭ ساقلانغان كەڭلىكى"
 
 #: ../data/tomboy.schemas.in.h:58
 msgid "Selected Synchronization Service Addin"
-msgstr "Označený doplnok synchronizačnej služby"
+msgstr "تاللانغان ماس قەدەملەشتۈرۈش مۇلازىمىتى قىستۇرمىسى"
 
 #: ../data/tomboy.schemas.in.h:59
 msgid "Set to TRUE to activate"
-msgstr "Nastavte na TRUE pre aktiváciu"
+msgstr "ئاكتىپلاش ئۈچۈن TRUE قىلىپ بېكىتىڭ"
 
 #: ../data/tomboy.schemas.in.h:60
 msgid "Show applet menu"
-msgstr "Zobraziť ponuku apletu"
+msgstr "قوللانچاق تىزىملىكىنى كۆرسىتىش"
 
 #: ../data/tomboy.schemas.in.h:61
 msgid "Start Here Note"
-msgstr "Poznámka Začnite tu"
+msgstr "«باشلاش» ئىزاھاتى"
 
 #: ../data/tomboy.schemas.in.h:62
 msgid "Sticky Note Importer First Run"
-msgstr "Prvé spustenie importéra poznámok Sticky Note"
+msgstr "«Sticky ئىزاھ ئىمپورت قىلغۇچ» دەسلەپتە ئىجرا بولسۇن"
 
 #: ../data/tomboy.schemas.in.h:63
 msgid "Synchronization Client ID"
-msgstr "Identifikátor synchronizačného klienta"
+msgstr ""
 
 #: ../data/tomboy.schemas.in.h:64
 msgid "Synchronization Local Server Path"
-msgstr "Cesta miestneho synchronizačného servera"
+msgstr "ماس قەدەملەشتۈرۈش يەرلىك مۇلازىمەت يولى"
 
 #: ../data/tomboy.schemas.in.h:65
 msgid "The date format that is used for the timestamp."
-msgstr "Formát dátumu používaný pre časovú značku."
+msgstr "ئىشلىتىلىدىغان چېسلا فورماتى."
 
 #: ../data/tomboy.schemas.in.h:66
 msgid ""
@@ -468,12 +376,6 @@ msgid ""
 "option to the special string \"disabled\", then there will be no keybinding "
 "for this action."
 msgstr ""
-"Globálna klávesová skratkn na vytvorenie a zobrazenie novej poznámky. Formát "
-"vyzerá takto: \"&lt;Control&gt;a\" alebo \"&lt;Shift&gt;&lt;Alt&gt;F1\". "
-"Syntaktický analyzátor je značne tolerantný a povoľuje veľké aj malé "
-"písmená, a tiež skratky ako \"&lt;Ctl&gt;\" a \"&lt;Ctrl&gt;\". Ak nastavíte "
-"možnosť na špeciálny reťazec \"disabled\", tak táto akcia nebude mať "
-"priradenú žiadnu klávesovú skratku."
 
 #: ../data/tomboy.schemas.in.h:67
 msgid ""
@@ -484,12 +386,6 @@ msgid ""
 "special string \"disabled\", then there will be no keybinding for this "
 "action."
 msgstr ""
-"Globálna klávesová skratka na otvorenie poznámky \"Začnite tu\". Formát "
-"vyzerá takto: \"&lt;Control&gt;a\" alebo \"&lt;Shift&gt;&lt;Alt&gt;F1\". "
-"Syntaktický analyzátor je značne tolerantný a povoľuje veľké aj malé "
-"písmená, a tiež skratky ako \"&lt;Ctl&gt;\" a \"&lt;Ctrl&gt;\". Ak nastavíte "
-"možnosť na špeciálny reťazec \"disabled\", tak táto akcia nebude mať "
-"priradenú žiadnu klávesovú skratku."
 
 #: ../data/tomboy.schemas.in.h:68
 msgid ""
@@ -500,12 +396,6 @@ msgid ""
 "special string \"disabled\", then there will be no keybinding for this "
 "action."
 msgstr ""
-"Globálna klávesová skratka na otvorenie dialógového okna hľadania poznámok. "
-"Formát vyzerá takto \"&lt;Control&gt;a\" alebo \"&lt;Shift&gt;&lt;Alt&gt;F1"
-"\". Syntaktický analyzátor je značne tolerantný a povoľuje veľké aj malé "
-"písmená, a tiež skratky ako \"&lt;Ctl&gt;\" a \"&lt;Ctrl&gt;\". Ak nastavíte "
-"možnosť na špeciálny reťazec \"disabled\", tak táto akcia nebude mať "
-"priradenú žiadnu klávesovú skratku."
 
 #: ../data/tomboy.schemas.in.h:69
 msgid ""
@@ -516,12 +406,6 @@ msgid ""
 "option to the special string \"disabled\", then there will be no keybinding "
 "for this action."
 msgstr ""
-"Globálna klávesová skratka na otvorenie dialógu Nedávne zmeny.Formát vyzerá "
-"takto \"&lt;Control&gt;a\" alebo \"&lt;Shift&gt;&lt;Alt&gt;F1\".Syntaktický "
-"analyzátor je značne tolerantný a povoľuje veľké aj malé písmená, a tiež "
-"skratky ako \"&lt;Ctl&gt;\" a \"&lt;Ctrl&gt;\", Ak nastavíte možnosť na "
-"špeciálny reťazec \"disabled\", tak táto akcia nebude mať priradenú žiadnu "
-"klávesovú skratku."
 
 #: ../data/tomboy.schemas.in.h:70
 msgid ""
@@ -532,31 +416,21 @@ msgid ""
 "special string \"disabled\", then there will be no keybinding for this "
 "action."
 msgstr ""
-"Globálna klávesová skratka na zobrazenie ponuky apletu Tomboy. Formát vyzerá "
-"takto: \"&lt;Control&gt;a\" alebo \"&lt;Shift&gt;&lt;Alt&gt;F1\".Syntaktický "
-"analyzátor je značne tolerantný a povoľuje veľké a malé písmená,a zvyčajne "
-"skratky ako \"&lt;Ctl&gt;\" a \"&lt;Ctrl&gt;\", Ak nastavíte možnosť na "
-"špeciálny reťazec \"disabled\", tak tu nebude žiadna klávesová skratka pre "
-"túto akciu."
 
 #: ../data/tomboy.schemas.in.h:71
 msgid "The handler for \"note://\" URLs"
-msgstr "Program na otváranie URL adries v tvare \"note://\""
+msgstr "\"note://\" URLs نى بىر تەرەپ قىلىدىغان پروگرامما"
 
 #: ../data/tomboy.schemas.in.h:72
 msgid ""
 "The last directory a note was exported to using the Export To HTML plugin."
-msgstr ""
-"Posledný adresár kam boli poznámky exportované pomocou zásuvného modulu "
-"Exportovať do HTML."
+msgstr "Export To HTML قىستۇرمىسىدا ئېكسپورت قىلىشتا ئىشلىتىلگەن ئەڭ ئاخىرقى مۇندەرىجە."
 
 #: ../data/tomboy.schemas.in.h:73
 msgid ""
 "The last setting for the 'Export linked notes' checkbox in the Export to "
 "HTML plugin."
 msgstr ""
-"Posledný stav zaškratávacieho tlačidla 'Exportovať previazané poznámky' v "
-"zásuvnom module Exportovať do HTML."
 
 #: ../data/tomboy.schemas.in.h:74
 msgid ""
@@ -565,11 +439,6 @@ msgid ""
 "Export Linked Notes' setting and is used to specify whether all notes (found "
 "recursively) should be included during an export to HTML."
 msgstr ""
-"Posledný stav zaškratávacieho tlačidla 'Vložiť všetky ostatné previazané "
-"poznámky' v zásuvnom module Exportovať do HTML. Toto nastavenie je použité v "
-"spolupráci s nastavením 'Exportovať previazané poznámky do HTML', a je "
-"použité na presné určenie, či by mali byť zahrnuté  všetky poznámky (nájdené "
-"rekurzívne) počas exportu do HTML."
 
 #: ../data/tomboy.schemas.in.h:75
 msgid ""
@@ -577,387 +446,360 @@ msgid ""
 "which is always placed at the bottom of the Tomboy note menu and also "
 "accessible by hotkey."
 msgstr ""
-"URI poznámky, považovaná za poznámku \"Začnite tu\", ktorá je vždy "
-"umiestnená dole v ponuke programu Tomboy, a tiež prístupná klávesovou "
-"skratkou."
 
 #: ../data/tomboy.schemas.in.h:76
 msgid ""
 "The port to use when connecting to the synchronization server via SSH. Set "
 "to -1 or less if default SSH port settings should be used instead."
-msgstr ""
-"Port, ktorý sa použije pri pripájaní k synchronizačnému serveru cez SSH. "
-"Nastavte na -1 alebo menej, ak majú byť použité predvolené nastavenia SSH "
-"portu."
+msgstr "SSH ئارقىلىق ماس قەدەملەشتۈرۈش مۇلازىمېتىرىغا باغلىنىشتا ئىشلىتىلىدىغان ئېغىز. كۆڭۈلدىكى SSH ئېغىزىنى ئىشلەتمەكچى بولسىڭىز -1 ياكى ئۇنىڭدىنمۇ كىچىك قىممەتنى بەلگىلەڭ."
 
 #: ../data/tomboy.schemas.in.h:77
 msgid ""
 "Time (in milliseconds) Tomboy should wait for a response when using FUSE to "
 "mount a sync share."
 msgstr ""
-"Čas (v milisekundách), počas ktorého by mal Tomboy čakať na odpoveď, keď sa "
-"na pripojenie zdieľaného obsahu synchronizácie používa FUSE."
 
 #: ../data/tomboy.schemas.in.h:78
 msgid "Timestamp format"
-msgstr "Formát časovej značky"
+msgstr "ۋاقىت"
 
 #: ../data/tomboy.schemas.in.h:79
 msgid "URL of SSH server containing Tomboy synchronization directory."
-msgstr ""
-"URL SSH servera, ktorý obsahuje synchronizačný adresár programu Tomboy."
+msgstr "SSH مۇلازىمېتىرىنىڭ URL ئادرېسى(Tomboy ماس قەدەملەشتۈرۈش مۇندەرىجىسىنىمۇ ئوز ئىچىگە ئالغان)."
 
 #: ../data/tomboy.schemas.in.h:80
 msgid ""
 "Unique identifier for the currently configured note synchronization service "
 "addin."
-msgstr ""
-"Unikátny identifikator pre aktuálne nastavený doplnok pre synchronizáciu "
-"poznámok."
+msgstr "نۆۋەتتە سەپلەنگەن ئىزاھ ماس قەدەملەشتۈرۈش مۇلازىمەت قىستۇرمىسىنىڭ بىردىنبىر كىملىكى(identifier)"
 
 #: ../data/tomboy.schemas.in.h:81
 msgid ""
 "Unique identifier for this Tomboy client, used when communicating with a "
 "sychronization server."
-msgstr ""
-"Unikátny identifikátor tohto klienta Tomboy, ktorý sa použije pri "
-"komunikácii so synchronizačným serverom."
+msgstr "Tomboy client نىڭ بىردىنبىر كىملىكى(بۇ ماس قەدەملەشتۈرۈش مۇلازىمىتى بىلەن ئالاقە قىلغاندا ئىشلىتىلىدۇ)."
 
 #: ../data/tomboy.schemas.in.h:82
 msgid ""
 "Use wdfs option \"-ac\" to accept SSL certificates without prompting the "
 "user."
 msgstr ""
-"Použiť voľby \"-ac\" pre wdfs, aby sa SSL certifikáty akceptovali bez "
-"pýtania sa používateľa."
 
 #: ../data/tomboy.schemas.in.h:83
 msgid "User name to use when connecting to the synchronization server via SSH."
-msgstr ""
-"Používateľské meno, ktoré sa použije pri pripájaní k synchronizačnému "
-"serveru cez SSH."
+msgstr "SSH ئارقىلىق ماس قەدەملەشتۈرۈش مۇلازىمېتىرىغا باغلىنىشتا ئىشلىتىلىدىغان ئىشلەتكۈچى ئاتى."
 
 #: ../data/tomboy.schemas.in.h:84
 msgid ""
 "Whitespace-separated list of note URIs for notes that should always appear "
 "in the Tomboy note menu."
 msgstr ""
-"Zoznamu URI poznámok oddelených bielymi znakmi, ktoré by sa mali vždy zjaviť "
-"v ponuke poznámok programu Tomboy."
 
 #: ../Tomboy/ActionManager.cs:127
 msgid "_File"
-msgstr "_Súbor"
+msgstr "ھۆججەت(_F)"
 
 #: ../Tomboy/ActionManager.cs:130
 msgid "_New"
-msgstr "_Nový"
+msgstr "يېڭى(_N)"
 
 #: ../Tomboy/ActionManager.cs:131 ../Tomboy/ActionManager.cs:172
 msgid "Create a new note"
-msgstr "Vytvoriť novú poznámku"
+msgstr "يېڭى ئىزاھ قۇرىدۇ"
 
 #: ../Tomboy/ActionManager.cs:134
 msgid "_Open..."
-msgstr "_Otvoriť..."
+msgstr "ئاچ(_O)…"
 
 #: ../Tomboy/ActionManager.cs:135
 msgid "Open the selected note"
-msgstr "Otvoriť označenú poznámku"
+msgstr "تاللانغان ئىزاھنى ئاچىدۇ"
 
 #: ../Tomboy/ActionManager.cs:138
 msgid "_Delete"
-msgstr "O_dstrániť"
+msgstr "ئۆچۈر(_D)"
 
 #: ../Tomboy/ActionManager.cs:139
 msgid "Delete the selected note"
-msgstr "Odstrániť označenú poznámku"
+msgstr "تاللانغان ئىزاھنى ئۆچۈرىدۇ"
 
 #: ../Tomboy/ActionManager.cs:142 ../Tomboy/NoteWindow.cs:406
 msgid "_Close"
-msgstr "Za_vrieť"
+msgstr "ياپ(_C)"
 
 #: ../Tomboy/ActionManager.cs:143
 msgid "Close this window"
-msgstr "Zavrieť toto okno"
+msgstr "بۇ كۆزنەكنى ياپىدۇ"
 
 #: ../Tomboy/ActionManager.cs:146 ../Tomboy/Tray.cs:300
 msgid "_Quit"
-msgstr "U_končiť"
+msgstr "چېكىن(_Q)"
 
 #: ../Tomboy/ActionManager.cs:147
 msgid "Quit Tomboy"
-msgstr "Ukončiť Tomboy"
+msgstr "Tomboy نى ئاخىرلاشتۇرىدۇ"
 
 #: ../Tomboy/ActionManager.cs:150
 msgid "_Edit"
-msgstr "_Upraviť"
+msgstr "تەھرىر(_E)"
 
 #: ../Tomboy/ActionManager.cs:154 ../Tomboy/PreferencesDialog.cs:65
 msgid "Tomboy Preferences"
-msgstr "Nastavenia Tomboy"
+msgstr "Tomboy تەڭشەكلىرى"
 
 #: ../Tomboy/ActionManager.cs:160
 msgid "_Contents"
-msgstr "Ob_sah"
+msgstr "مەزمۇنلار(_C)"
 
 #: ../Tomboy/ActionManager.cs:161
 msgid "Tomboy Help"
-msgstr "Pomocník Tomboy"
+msgstr "Tomboy ياردىمى"
 
 #: ../Tomboy/ActionManager.cs:165 ../Tomboy/MacApplication.cs:233
 msgid "About Tomboy"
-msgstr "O programe Tomboy"
+msgstr "Tomboy ھەققىدە"
 
 #: ../Tomboy/ActionManager.cs:168
 msgid "TrayIcon"
-msgstr "Ikona v oblasti upozornení"
+msgstr "قونداق سىنبەلگىسى"
 
 #: ../Tomboy/ActionManager.cs:171
 msgid "Create _New Note"
-msgstr "Vytvoriť _novú poznámku"
+msgstr "يېڭى ئىزاھ قۇر(_N)"
 
 #: ../Tomboy/ActionManager.cs:175 ../Tomboy/NoteWindow.cs:349
 msgid "_Search All Notes"
-msgstr "_Hľadať vo všetkých poznámkach"
+msgstr "ھەممە ئىزاھلارنى ئىزدە(_S)"
 
 #: ../Tomboy/ActionManager.cs:176
 msgid "Open the Search All Notes window"
-msgstr "Otvoriť okno Hľadať vo všetkých poznámkach"
+msgstr "«ھەممە ئىزاھنى ئىزدە» كۆزنىكىنى ئاچىدۇ"
 
 #: ../Tomboy/ActionManager.cs:180
 msgid "Start synchronizing notes"
-msgstr "Spustiť synchronizáciu poznámok"
+msgstr "ئىزاھلارنى ماس قەدەملەشتۈرۈشنى باشلايدۇ"
 
 #: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:38
 msgid "What links here?"
-msgstr "Čo sem odkazuje?"
+msgstr "بۇ يەرگە نېمە ئۇلىنىدۇ؟"
 
 #: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:84
 msgid "(none)"
-msgstr "(nič)"
+msgstr "(يوق)"
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:23
 msgid ""
 "You can use any bugzilla just by dragging links into notes.  If you want a "
 "special icon for certain hosts, add them here."
 msgstr ""
-"Môžete používať akúkoľvek bugzillu. Stačí, ak pretiahnete odkazy do "
-"poznámok. Ak chcete špeciálnu ikonu pre istých hostiteľov, tak ich sem "
-"pridajte."
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:41
 msgid "Host Name"
-msgstr "Názov hostiteľa"
+msgstr "باش ماشىنا ئاتى"
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:58
 msgid "Icon"
-msgstr "Ikona"
+msgstr "سىنبەلگە"
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:176
 msgid "Select an icon..."
-msgstr "Zvoliť ikonu..."
+msgstr "سىنبەلگە تاللايدۇ..."
 
 #. Extra Widget
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:191
 msgid "_Host name:"
-msgstr "Názov _hostiteľa:"
+msgstr "باش ماشىنا ئاتى(_H):"
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:220
 msgid "No host name specified"
-msgstr "Nebol zadaný názov hostiteľa"
+msgstr "باش ماشىنا ئاتى بەلگىلەنمىگەن"
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:221
 msgid "You must specify the Bugzilla host name to use with this icon."
-msgstr ""
-"Musíte uviesť názov hostiteľa programu Bugzilla, aby sa zobrazila s ním táto "
-"ikona."
+msgstr "بۇ سىنبەلگىنى ئىشلىتىش ئۈچۈن Bugzilla باش ماشىنا ئاتىنى بەلگىلىشىڭىز زۆرۈر."
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:247
 msgid "Error saving icon"
-msgstr "Chyba pri ukladaní ikony"
+msgstr "سىنبەلگە ساقلاۋاتقاندا خاتالىق كۆرۈلدى"
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:248
 msgid "Could not save the icon file."
-msgstr "Nepodarilo sa uložiť súbor ikony."
+msgstr "سىنبەلگە ھۆججىتىنى ساقلىيالمىدى"
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:302
 msgid "Really remove this icon?"
-msgstr "Naozaj odstrániť túto ikonu?"
+msgstr "راستلا بۇ سىنبەلگىنى چىقىرىۋېتەمدۇ؟"
 
 #: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:303
 msgid "If you remove an icon it is permanently lost."
-msgstr "Ak ikonu zmažete, tak bude navždy stratená."
+msgstr "ئەگەر سىنبەلگىنى چىقىرىۋەتسىڭىز، ئۇ مەڭگۈلۈككە يوقىلىدۇ."
 
 #: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:67
 msgid "Export to HTML"
-msgstr "Exportovať do HTML"
+msgstr "HTML غا ئېكسپورت قىل"
 
 #: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:115
 #, csharp-format
 msgid "Your note was exported to \"{0}\"."
-msgstr "Vaša poznámka bola vyexportovaná do \"{0}\"."
+msgstr "ئىزاھىڭىز \"{0}\" غا ئېكسپورت قىلىندى."
 
 #: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:126
 msgid "Note exported successfully"
-msgstr "Poznámky boli úspešne vyexportované"
+msgstr "ئىزاھ مۇۋەپپەقىيەتلىك ئېكسپورت قىلىندى"
 
 #: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:132
 msgid "Access denied."
-msgstr "Prístup odmietnutý."
+msgstr "زىيارەت رەت قىلىندى."
 
 #: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:134
 msgid "Folder does not exist."
-msgstr "Priečinok neexistuje."
+msgstr "قىسقۇچ مەۋجۇت ئەمەس."
 
 #: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:149
 #, csharp-format
 msgid "Could not save the file \"{0}\""
-msgstr "Nemohol byť uložený súbor \"{0}\""
+msgstr "ھۆججەت \"{0}\" نى ساقلىيالمىدى"
 
 #: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:13
 msgid "Destination for HTML Export"
-msgstr "Cieľ pre HTML export"
+msgstr "HTML ئېكسپورت قىلىشنىڭ مەنزىلى"
 
 #: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:23
 msgid "Export linked notes"
-msgstr "Exportovať previazané poznámky"
+msgstr "ئۇلانغان ئىزاھلارنى ئېكسپورت قىل"
 
 #: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:28
 msgid "Include all other linked notes"
-msgstr "Zahrnúť všetky ostatné previazané poznámky"
+msgstr "باشقا ئۇلانغان ئىزاھلارنىمۇ ئوز ئىچىگە ئالىدۇ"
 
 #: ../Tomboy/Addins/Evolution/EvolutionNoteAddin.cs:273
 msgid "Cannot open email"
-msgstr "Nedá sa otvoriť email"
+msgstr "ئېلخەتنى ئاچقىلى بولمىدى"
 
 #: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:93
 msgid "_Folder Path:"
-msgstr "Ces_ta k priečinku:"
+msgstr "قىسقۇچ يولى(_F):"
 
 #: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:100
 msgid "Select Synchronization Folder..."
-msgstr "Vybrať synchronizačný priečinok..."
+msgstr "ماس قەدەملەشتۈرۈش قىسقۇچىنى تاللاش..."
 
 #: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:126
 msgid "Folder path field is empty."
-msgstr "Cesta k priečinku je prázdna."
+msgstr "قىسقۇچ خەت بۆلىكى قۇرۇق."
 
 #: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:135
 msgid ""
 "Specified folder path does not exist, and Tomboy was unable to create it."
-msgstr "Zadaná cesta k priečinku neexistuje, a Tomboy ju nedokázal vytvoriť."
+msgstr "بەلگىلەنگەن يوق مەۋجۇت ئەمەس. شۇڭا Tomboy ئۇنى قۇرالمىدى."
 
 #: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:213
 msgid "Local Folder"
-msgstr "Miestny priečinok"
+msgstr "يەرلىك قىسقۇچ"
 
 #: ../Tomboy/Addins/FixedWidth/FixedWidthMenuItem.cs:13
 msgid "Fixed Wid_th"
-msgstr "Pev_ná šírka"
+msgstr "مۇقىم كەڭلىك(_T)"
 
 #: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:244
 #, csharp-format
 msgid "Cannot contact '{0}'"
-msgstr "Nedá sa spojiť s '{0}'"
+msgstr "'{0}' بىلەن ئالاقە قىلالمىدى"
 
 #: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:247
 #, csharp-format
 msgid "Error running gaim-remote: {0}"
-msgstr "Chyba pri spúšťaní gaim-remote: {0}"
+msgstr "gaim-remote نى ئىجرا قىلىۋاتقاندا خاتالىق كۆرۈلدى: {0}"
 
 #: ../Tomboy/Addins/InsertTimestamp/InsertTimestampNoteAddin.cs:29
 msgid "Insert Timestamp"
-msgstr "Vložiť časovú značku"
+msgstr "ۋاقىت(Timestamp) قىستۇرۇش"
 
 #. initial newline
 #: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:29
 #: ../Tomboy/Applet.cs:223 ../Tomboy/Preferences.cs:154
 msgid "dddd, MMMM d, h:mm tt"
-msgstr "hh:mm, dddd d. MMMM"
+msgstr "dddd، MMMM d، h:mm tt"
 
 #: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:54
 msgid "Choose one of the predefined formats or use your own."
-msgstr "Zvoľte jeden z preddefinovaných formátov alebo použite vlastný."
+msgstr "ئالدىن بەلگىلەنگەن فورماتنى تاللاڭ ياكى ئۆزىڭىزنىڭكىنى ئىشلىتىڭ."
 
 #: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:62
 msgid "Use _Selected Format"
-msgstr "Použiť zvo_lený formát"
+msgstr "تاللانغان فورماتنى ئىشلەت(_S)"
 
 #: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:87
 msgid "_Use Custom Format"
-msgstr "Použiť vlastný f_ormát"
+msgstr "ئىختىيارىي فورماتنى ئىشلەت(_U)"
 
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:10
 msgid "Today: Template"
-msgstr "Dnes: Šablóna"
+msgstr "بۈگۈن: قېلىپ"
 
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:12
 msgid "Today: "
-msgstr "Dnes: "
+msgstr "بۈگۈن: "
 
 #. Format: "Today: Friday, July 01 2005"
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:17
 msgid "dddd, MMMM d yyyy"
-msgstr "dddd d. MMMM yyyy"
+msgstr "dddd، MMMM d yyyy"
 
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:43
 msgid "Tasks"
-msgstr "Úlohy"
+msgstr "ۋەزىپىلەر"
 
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:44
 msgid "Appointments"
-msgstr "Schôdzky"
+msgstr "دېيىشمىلەر"
 
-# PŠ: toto hovorí asi o niečom inom
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:16
 msgid ""
 "Change the <span weight=\"bold\">Today: Template</span> note to customize "
 "the text that new Today notes have."
 msgstr ""
-"Zmeňte poznámku <span weight=\"bold\">Dnes: Šablóna</span> ak si chcete "
-"prispôsobiť text novej poznámky, ktorú dnes vytvoríte."
 
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:24
 msgid "_Open Today: Template"
-msgstr "_Otvoriť poznámku Dnes: Šablóna"
+msgstr "بۈگۈن: قېلىپ نى ئاچ(_O)"
 
 #: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:52
 msgid "Print"
-msgstr "Tlačiť"
+msgstr "بېسىپ چىقار"
 
 #: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:82
 msgid "Error printing note"
-msgstr "Chyba pri tlači poznámky"
+msgstr "ئىزاھنى بېسىۋاتقاندا خاتالىق كۆرۈلدى"
 
 #: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:223
 #, csharp-format
 msgid "Page {0} of {1}"
-msgstr "Strana {0}. z {1}"
+msgstr "بەت {0} / {1}"
 
 #. Translators: Explanation of the date and time format specifications can be found here:
 #. * http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.aspx
 #: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:242
 msgid "dddd MM/dd/yyyy, hh:mm:ss tt"
-msgstr "hh:mm:ss, dddd dd.MM.yyyy"
+msgstr "dddd MM/dd/yyyy، hh:mm:ss tt"
 
 #: ../Tomboy/Addins/Sketching/SketchingNoteAddin.cs:19
 msgid "Add a sketch"
-msgstr "Pridať náčrt"
+msgstr "قىستۇرما رەسىم قوشىدۇ"
 
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:47
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:59
 msgid "Se_rver:"
-msgstr "Se_rver:"
+msgstr "مۇلازىمېتىر(_R):"
 
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:51
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:59
 msgid "User_name:"
-msgstr "Používateľské me_no:"
+msgstr "ئىشلەتكۈچى ئاتى(_N):"
 
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:55
 msgid "_Folder Path (optional):"
-msgstr "Ces_ta k priečinku (nepovinné):"
+msgstr "قىسقۇچ يولى(ئىختىيار)(_F):"
 
 #. Text for label describing setup required for SSH sync addin to work
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:58
@@ -965,12 +807,10 @@ msgid ""
 "SSH synchronization requires an existing SSH key for this server and user, "
 "added to a running SSH daemon."
 msgstr ""
-"SSH synchronizácia vyžaduje existujúci SSH kľúč pre tento server a "
-"používateľa, pridané do bežiaceho SSH démona."
 
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:82
 msgid "Server or username field is empty."
-msgstr "Pole server alebo používateľské meno je prázdne."
+msgstr "مۇلازىمېتىر ياكى ئىشلەتكۈچى ئاتى قۇرۇق."
 
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:130
 msgid "SSH (sshfs FUSE)"
@@ -980,76 +820,69 @@ msgstr "SSH (sshfs FUSE)"
 msgid ""
 "Timeout connecting to server. Please ensure that your SSH key has been added "
 "to a running SSH daemon."
-msgstr ""
-"Vypršal časový limit pre pripojenie k serveru. Zaistite, prosím, aby bol váš "
-"SSH kľúč pridaný do bežiaceho SSH démona."
+msgstr "مۇلازىمېتىرغا باغلىنىش مۆھلەتتىن ئېشىپ كەتتى. SSH ئاچقۇچى ئىجرا بولۇۋاتقان SSH daemon غا قوشۇلغانمۇ تەكشۈرۈڭ."
 
 #: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:50
 msgid "Import from Sticky Notes"
-msgstr "Importovať z programu Sticky Notes"
+msgstr "Sticky ئىزاھتىن ئىمپورت قىلىش"
 
 #: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:133
 msgid "No Sticky Notes found"
-msgstr "Neboli nájdené žiadne poznámky Sticky Notes"
+msgstr "Sticky ئىزاھ تېپىلمىدى"
 
 #: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:134
 #, csharp-format
 msgid "No suitable Sticky Notes file was found at \"{0}\"."
-msgstr "Nebol nájdený žiadny vhodný súbor pre poznámky Sticky Notes v \"{0}\"."
+msgstr "\"{0}\" دىن مۇۋاپىق Sticky ئىزاھ ھۆججىتى تېپىلمىدى."
 
 #: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:143
 msgid "Sticky Notes import completed"
-msgstr "Poznámky zo Sticky Notes boli importované"
+msgstr "Sticky ئىزاھنى ئىمپورت قىلىش تاماملاندى"
 
 #: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:144
 #, csharp-format
 msgid "<b>{0}</b> of <b>{1}</b> Sticky Notes were successfully imported."
-msgstr ""
-"<b>{0}</b> z <b>{1}</b> poznámok zo Sticky Notes bolo úspešne importovaných."
+msgstr "<b>{0}</b> of <b>{1}</b>Sticky ئىزاھ مۇۋەپپەقىيەتلىك ئىمپورت قىلىندى."
 
 #: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:156
 msgid "Untitled"
-msgstr "Nepomenovaná"
+msgstr "ماۋزۇسىز"
 
 #: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:185
 msgid "Sticky Note: "
-msgstr "Poznámka Sticky Notes:"
+msgstr "Sticky ئىزاھ: "
 
 #: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:62
 msgid "Tasque"
 msgstr "Tasque"
 
-# je to dobre?
-# PK: podla mna ano, aj podla komentara
-# peter: pokial tomu dobre rozumiem tak to má byt prelozené rovnako ako category translation in Tasque - o čo ide? je to tam preložené rovnako?
-# PK: tasque je neprelozene, takze aj tu to musi byt ak oroginal, aby to sedelo, vysvetlenie je v TC
 #. Note to translators: "All" here must match up with the "All"
 #. category translation in Tasque for this to work properly.  "All"
 #. is used here to allow Tasque to decide which default category
 #. will be used to create the new task.
 #: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:86
 msgid "All"
-msgstr "All"
+msgstr "ھەممىسى"
 
 #: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:145
 msgid "--- Tasque is not running ---"
-msgstr "--- Tasque nebeží ---"
+msgstr "--- Tasque ئىجرا قىلىنمىغان ---"
 
 #: ../Tomboy/Addins/Underline/UnderlineMenuItem.cs:12
 msgid "_Underline"
-msgstr "Podtrhn_uté"
+msgstr "ئاستى سىزىق(_U)"
 
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:55
 msgid "_URL:"
-msgstr "_URL:"
+msgstr "URL(_U):"
 
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:64
 msgid "_Password:"
-msgstr "_Heslo:"
+msgstr "ئىم(_P):"
 
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:77
 msgid "URL, username, or password field is empty."
-msgstr "Pole URL, používateľské meno alebo heslo je prázdne."
+msgstr "URL، ئىشلەتكۈچى ئاتى ياكى ئىم قۇرۇق."
 
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:119
 msgid "WebDAV (wdfs FUSE)"
@@ -1059,9 +892,7 @@ msgstr "WebDAV (wdfs FUSE)"
 msgid ""
 "There was an error connecting to the server.  This may be caused by using an "
 "incorrect user name and/or password."
-msgstr ""
-"Chyba pri pripájaní na server. Môže to byť spôsobené používaním nesprávneho "
-"používateľského mena a/alebo hesla."
+msgstr "مۇلازىمېتىرغا باغلىنىشتا خاتالىق كۆرۈلدى. سەۋەبى ئىشلەتكۈچى ئاتى ياكى ئىم خاتا"
 
 #. TODO: If the above fails (no keyring daemon), save all but password
 #. to GConf, and notify user.
@@ -1071,68 +902,62 @@ msgstr ""
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:254
 msgid ""
 "Saving configuration to the GNOME keyring failed with the following message:"
-msgstr ""
-"Ukladanie nastavení do zväzku kľúčov GNOME zlyhalo s nasledujúcou správou:"
+msgstr "GNOME keyring غا سەپلىمىلەرنى ساقلاش مەغلۇپ بولدى. چىققان ئۈچۈن تۆۋەندىكىدەك:"
 
 #: ../Tomboy/Addins/WebSyncService/WebSyncServiceAddin.cs:70
 msgid "Tomboy Web"
-msgstr "Web programu Tomboy"
+msgstr "Tomboy تورى"
 
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:66
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:96
 msgid "Connect to Server"
-msgstr "Pripojiť sa k serveru"
+msgstr "مۇلازىمېتىرغا باغلا"
 
-# PK: ten program je pripojeny, je to ked si napr. das sync s Ubuntu One
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:68
 msgid "Connected"
-msgstr "Pripojený"
+msgstr "ئۇلاندى"
 
 #. Translators: The web service supporting Tomboy WebSync is not responding as expected
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:125
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:156
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:170
 msgid "Server not responding. Try again later."
-msgstr "Server neodpovedá. Neskôr to skúste znovu."
+msgstr "مۇلازىمېتىردىن جاۋاب يوق. كېيىن قايتا سىناڭ."
 
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:201
 msgid "Authorization Failed, Try Again"
-msgstr "Overenie totožnosti zlyhalo, skúste to znovu"
+msgstr "سالاھىيەت تەكشۈرۈش مەغلۇپ بولدى، قايتا سىناڭ"
 
 #. Translators: Title of web page presented to user after they authorized Tomboy for sync
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:210
 msgid "Tomboy Web Authorization Successful"
-msgstr "Webové overenie totožnosti pre program Tomboy bolo úspešné"
+msgstr "Tomboy تور سالاھىيەت تەكشۈرۈشى مۇۋەپپەقىيەتلىك بولدى"
 
 #. Translators: Body of web page presented to user after they authorized Tomboy for sync
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:212
 msgid ""
 "Please return to the Tomboy Preferences window and press Save to start "
 "synchronizing."
-msgstr ""
-"Prosím, vráťte sa do okna nastavení Tomboy a kliknite na Uložiť, aby sa "
-"začala synchronizácia."
+msgstr "Tomboy تەڭشەكلىرى كۆزنىكىگە قايتىپ «ساقلا» نى چەكسىڭىز، ماس قەدەملەشتۈرۈش باشلىنىدۇ."
 
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:221
 msgid "Connected. Press Save to start synchronizing"
-msgstr "Pripojený. Na začatie synchronizácie kliknite na Uložiť"
+msgstr "باغلاندى. «ساقلا» نى چەكسىڭىز، ماس قەدەملەشتۈرۈش باشلىنىدۇ"
 
 #. Translators: The user must take action in their web browser to continue the authorization process
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:227
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:239
 msgid "Authorizing in browser (Press to reset connection)"
-msgstr ""
-"Prebieha overenie totožnosti v prehliadači (kliknite pre resetovanie "
-"pripojenia)"
+msgstr "توركۆرگۈدە دەلىللەش(چېكىلسە باغلىنىش ئەسلىگە قايتىدۇ)"
 
 #. Translators: Sometimes a user's default browser is not set, so we recommend setting it and trying again
 #: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:235
 msgid "Set the default browser and try again"
-msgstr "Nastavte predvolený prehliadač a skúste to znovu"
+msgstr "كۆڭۈلدىكى توركۆرگۈنى بەلگىلەپ قايتا سىناڭ"
 
 #: ../Tomboy/JumpListManager.cs:96 ../Tomboy/RecentChanges.cs:83
 msgid "Search All Notes"
-msgstr "Hľadať vo všetkých poznámkach"
+msgstr "بارلىق ئىزاھلارنى ئىزدەش"
 
 #. IShellLink new_notebook = CreateShellLink("New Notebook", topmboy_path, "--new-notebook",
 #. icons_path, (int)TomboyIcons.NewNotebook);
@@ -1140,48 +965,48 @@ msgstr "Hľadať vo všetkých poznámkach"
 #. object_collection.AddObject(new_notebook);
 #: ../Tomboy/JumpListManager.cs:106
 msgid "Create New Note"
-msgstr "Vytvoriť novú poznámku"
+msgstr "يېڭى ئىزاھ قۇرۇش"
 
 #: ../Tomboy/JumpListManager.cs:136
 #, csharp-format
 msgid "{0} (new)"
-msgstr "{0} (nová)"
+msgstr "{0} (يېڭى)"
 
 #: ../Tomboy/JumpListManager.cs:158
 msgid "Recent Notes"
-msgstr "Nedávne poznámky"
+msgstr "يېقىنقى ئىزاھلار"
 
 #. Translators: This is the name of "Window" menu in the Mac menubar
 #: ../Tomboy/MacApplication.cs:215
 msgid "_Window"
-msgstr "_Okno"
+msgstr "كۆزنەك(_W)"
 
 #: ../Tomboy/MacApplication.cs:234
 msgid "Preferences..."
-msgstr "Nastavenia..."
+msgstr "مايىللىق…"
 
 #: ../Tomboy/Notebooks/CreateNotebookDialog.cs:24
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:53
 msgid "Create a new notebook"
-msgstr "Vytvoriť nový zápisník"
+msgstr "يېڭى دەپتەر قۇرىدۇ"
 
 #: ../Tomboy/Notebooks/CreateNotebookDialog.cs:25
 msgid "Type the name of the notebook you'd like to create."
-msgstr "Napíšte názov zápisníka, ktorý chcete vytvoriť."
+msgstr "قۇرماقچى بولغان دەپتەرنىڭ ئاتىنى كىرگۈزۈڭ."
 
 #: ../Tomboy/Notebooks/CreateNotebookDialog.cs:31
 msgid "N_otebook name:"
-msgstr "Názov _zápisníka:"
+msgstr "دەپتەر ئاتى(_o):"
 
 #: ../Tomboy/Notebooks/CreateNotebookDialog.cs:45
 msgid "Name already taken"
-msgstr "Názov je už zadaný"
+msgstr "بۇ ئات ئىشلىتىلىپ بولغان"
 
 #. Translation note: This is the Create button in the Create
 #. New Note Dialog.
 #: ../Tomboy/Notebooks/CreateNotebookDialog.cs:59
 msgid "C_reate"
-msgstr "Vy_tvoriť"
+msgstr "قۇر(_R)"
 
 #. The templateNoteTite should show the name of the
 #. notebook.  For example, if the name of the notebooks
@@ -1193,74 +1018,72 @@ msgstr "Vy_tvoriť"
 #: ../Tomboy/Notebooks/Notebook.cs:79
 #, csharp-format
 msgid "{0} Notebook Template"
-msgstr "{0} šablóna zápisníka"
+msgstr "{0} دەپتەر قېلىپى"
 
 #: ../Tomboy/Notebooks/Notebook.cs:183
 msgid "All Notes"
-msgstr "Všetky poznámky"
+msgstr "بارلىق ئىزاھلار"
 
 #: ../Tomboy/Notebooks/Notebook.cs:215
 msgid "Unfiled Notes"
-msgstr "Nezaradené poznámky"
+msgstr "رەتلەنمىگەن ئىزاھلار"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:48
 msgid "Note_books"
-msgstr "Zá_pisníky"
+msgstr "دەپتەرلەر(_B)"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:49
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:69
 msgid "Create a new note in a notebook"
-msgstr "Vytvoriť novú poznámku v zápisníku"
+msgstr "دەپتەرگە يېڭىدىن ئىزاھ قۇرىدۇ"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:52
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:223
 msgid "New Note_book..."
-msgstr "Nový zá_pisník..."
+msgstr "يېڭى دەپتەر(_B)…"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:56
 msgid "_New Note"
-msgstr "_Nová poznámka"
+msgstr "يېڭى ئىزاھ(_N)"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:57
 msgid "Create a new note in this notebook"
-msgstr "Vytvoriť novú poznámku v tomto zápisníku"
+msgstr "بۇ دەپتەرگە يېڭىدىن ئىزاھ قۇرىدۇ"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:60
 msgid "_Open Template Note"
-msgstr "_Otvoriť šablónu poznámky"
+msgstr "قېلىپ ئىزاھنى ئاچ(_O)"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:61
 msgid "Open this notebook's template note"
-msgstr "Otvoriť šablónu poznámky tohto zápisníka"
+msgstr "بۇ دەپتەرنىڭ قېلىپ ئىزاھىنى ئاچىدۇ"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:64
 msgid "Delete Note_book"
-msgstr "Odstrániť zá_pisník"
+msgstr "دەپتەرنى ئۆچۈر(_B)"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:65
 msgid "Delete the selected notebook"
-msgstr "Odstrániť označený zápisník"
+msgstr "تاللانغان دەپتەرنى ئۆچۈرىدۇ"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:68
 #: ../Tomboy/RecentChanges.cs:260
 msgid "Notebooks"
-msgstr "Zapisníky"
+msgstr "دەپتەرلەر"
 
 #: ../Tomboy/Notebooks/NotebookManager.cs:361
 msgid "Really delete this notebook?"
-msgstr "Naozaj odstrániť tento zápisník?"
+msgstr "بۇ دەپتەرنى راستلا ئۆچۈرەمسىز؟"
 
 #: ../Tomboy/Notebooks/NotebookManager.cs:363
 msgid ""
 "The notes that belong to this notebook will not be deleted, but they will no "
 "longer be associated with this notebook.  This action cannot be undone."
-msgstr ""
-"Poznámky patriace do tohto zápisníka nebudú odstránené, ale už nebudú "
-"priradené k tomuto zápisníku. Táto akcia je nevratná."
+msgstr "بۇ دەپتەردىكى ئىزاھلار ئۆچۈرۈلمەيدۇ، بىراق ئۇلارنىڭ دەپتەر بىلەن بولغان مۇناسىۋىتى يوق بولىدۇ. بۇ مەشغۇلاتتىن يېنىۋالغىلى بولمايدۇ."
 
 #: ../Tomboy/Notebooks/NotebookMenuItem.cs:14
 msgid "No notebook"
-msgstr "Žiadny zápisník"
+msgstr "دەپتەر يوق"
 
 #. Translators should preserve the "{0}" in the following
 #. string.  After being formatted for a notebook named,
@@ -1269,35 +1092,33 @@ msgstr "Žiadny zápisník"
 #: ../Tomboy/Notebooks/NotebookNewNoteMenuItem.cs:27
 #, csharp-format
 msgid "New \"{0}\" Note"
-msgstr "Nová poznámka v \"{0}\""
+msgstr "يېڭى \"{0}\" ئىزاھ"
 
 #: ../Tomboy/Notebooks/NotebookNoteAddin.cs:46
 msgid "Place this note into a notebook"
-msgstr "Vložte túto poznámku do zápisníka"
+msgstr "بۇ ئىزاھنى دەپتەرگە سېلىڭ"
 
 #: ../Tomboy/Notebooks/NotebookNoteAddin.cs:127
 msgid "Notebook"
-msgstr "Zápisník"
+msgstr "دەپتەر"
 
 #: ../Tomboy/Notebooks/NotebookNoteAddin.cs:156
 msgid "_New notebook..."
-msgstr "_Nový zápisník..."
+msgstr "يېڭى دەپتەر(_N)…"
 
 #: ../Tomboy/Note.cs:1568
 msgid "Really delete this note?"
-msgstr "Skutočne odstrániť túto poznámku?"
+msgstr "بۇ ئىزاھنى راستلا ئۆچۈرەمسىز؟"
 
 #: ../Tomboy/Note.cs:1571
 #, csharp-format
 msgid "Really delete this {0} note?"
 msgid_plural "Really delete these {0} notes?"
-msgstr[0] "Skutočne odstrániť týchto {0} poznámok?"
-msgstr[1] "Skutočne odstrániť túto poznámku?"
-msgstr[2] "Skutočne odstrániť tieto {0} poznámky?"
+msgstr[0] "بۇ {0} ئىزاھلارنى راستلا ئۆچۈرەمسىز؟"
 
 #: ../Tomboy/Note.cs:1582
 msgid "If you delete a note it is permanently lost."
-msgstr "Ak odstránite poznámku, bude navždy stratená."
+msgstr "بۇنى ئىزاھنى ئۆچۈرسىڭىز ئۇ مەڭگۈلۈككە يوقىلىدۇ."
 
 #: ../Tomboy/Note.cs:1616
 #, csharp-format
@@ -1305,26 +1126,23 @@ msgid ""
 "An error occurred while saving your notes. Please check that you have "
 "sufficient disk space, and that you have appropriate rights on {0}. Error "
 "details can be found in {1}."
-msgstr ""
-"Počas ukladania vašich poznámok sa vyskytla chyba. Skontrolujte, prosím, či "
-"máte dostatok miesta na disku, a či máte vhodné práva v {0}. Podrobnosti o "
-"chybe môžete nájsť v {1}."
+msgstr "ئىزاھلارنى ساقلاۋاتقاندا خاتالىق كۆرۈلدى. دىسكىدا يېتەرلىك بوشلۇق بارمۇ، {0} دا ھوقۇقىڭىز بارمۇ تەكشۈرۈڭ. خاتالىق تەپسىلاتى {1} دە بار."
 
 #: ../Tomboy/Note.cs:1632
 msgid "Error saving note data."
-msgstr "Chyba pri ukladaní údajov poznámky."
+msgstr "ئىزاھ سانلىق-مەلۇماتىنى ساقلاشتا خاتالىق كۆرۈلدى:"
 
 #. New Note Template
 #. Translators: This is 'New Note' Template, not New 'Note Template'
 #: ../Tomboy/NoteManager.cs:21 ../Tomboy/PreferencesDialog.cs:256
 msgid "New Note Template"
-msgstr "Šablóna novej poznámky"
+msgstr "يېڭى ئىزاھ قېلىپى"
 
 #. Create migration notification note
 #. Translators: The title of the data migration note
 #: ../Tomboy/NoteManager.cs:147
 msgid "Your Notes Have Moved!"
-msgstr "Vaše poznámky boli presunuté!"
+msgstr "ئىزاھلىرىڭىز يۆتكەلگەن!"
 
 #. Translators: The contents (not including the title) of the data migration note. {0}, {1}, {2}, {3}, and {4} are replaced by directory paths and should not be changed
 #: ../Tomboy/NoteManager.cs:160
@@ -1352,28 +1170,6 @@ msgid ""
 "\n"
 "Ciao!"
 msgstr ""
-"V najnovšej verzii Tomboy boli vaše súbory s poznámkami presunuté. "
-"Pravdepodobne by vás nemalo nikdy zaujímať, kde sú vaše poznámky uložené, a "
-"ak vás to nezaujíma, tak prosím, pokračujte a <bold>odstráňte túto poznámku</"
-"bold>.  :-)\n"
-"\n"
-"Váš starý priečinok s poznámkami je stále živý a zdravý v <link:url>{0}</"
-"link:url> . Ak sa vrátite k staršej verzii programu Tomboy, poznámky bude "
-"hľadať v ňom.\n"
-"\n"
-"My sme ale prekopírovali vaše poznámky a konfiguráciu do nových priečinkov, "
-"ktoré sa budú odteraz používať.\n"
-"\n"
-"<list><list-item dir=\"ltr\">Poznámky môžete nájsť v <link:url>{1}</link:"
-"url>\n"
-"</list-item><list-item dir=\"ltr\">Konfigurácia je v <link:url>{2}</link:"
-"url>\n"
-"</list-item><list-item dir=\"ltr\">Zásuvné moduly môžete inštalovať do <link:"
-"url>{3}</link:url>\n"
-"</list-item><list-item dir=\"ltr\">Súbory so záznamami môžete nájsť v <link:"
-"url>{4}</link:url></list-item></list>\n"
-"\n"
-"Veľa šťastia!"
 
 #: ../Tomboy/NoteManager.cs:265
 msgid ""
@@ -1395,25 +1191,6 @@ msgid ""
 "Tomboy</link:internal> it automatically gets underlined?  Click on the link "
 "to open the note.</note-content>"
 msgstr ""
-"<note-content>Začnite tu\n"
-"\n"
-"<bold>Vitajte v programe Tomboy!</bold>\n"
-"\n"
-"Poznámku \"Začnite tu\" použite na začiatku organizovania vašich nápadov a "
-"myšlienok.\n"
-"\n"
-"Pomocou položky \"Vytvoriť novú poznámku\" môžete vytvoriť nové poznámky v "
-"ponuke poznámok programu Tomboy vo vašom GNOME paneli. Vaša poznámka bude "
-"uložená automaticky.\n"
-"\n"
-"Po zorganizovaní poznámok príbuzné poznámky prepojte odkazmi a nápady máte "
-"spolu!\n"
-"\n"
-"Vytvorili sme poznámku, ktorá sa volá <link:internal>Používanie odkazov v "
-"programe Tomboy</link:internal>. Všimli ste si, že zakaždým keď zadáte <link:"
-"internal>Používanie odkazov v programe Tomboy</link:internal> sa to "
-"automaticky podčiarklo? Kliknite na odkaz na otvorenie poznámky.</note-"
-"content>"
 
 #: ../Tomboy/NoteManager.cs:284
 msgid ""
@@ -1430,50 +1207,38 @@ msgid ""
 "Also, if you type the name of another note in your current note, it will "
 "automatically be linked for you.</note-content>"
 msgstr ""
-"<note-content>Používanie odkazov v programe Tomboy\n"
-"\n"
-"Poznámky v programe Tomboy sa dajú navzájom previazať označením textu v "
-"súčasnej poznámke a kliknutím na tlačidlo <bold>Odkaz</bold> hore v lište "
-"nástrojov. Tým sa vytvorí nová poznámká a tiež sa podčiarkne názov poznámky "
-"v súčasnej poznámke.\n"
-"\n"
-"Zmenením názvu poznámky sa aktualizujú odkazy v ostatných poznámkach. Tým sa "
-"predíde porušeniu odkazov pri premenovaní poznámky.\n"
-"\n"
-"Taktiež ak zadáte názov inej poznámky v súčasnej poznámke, tak s ňou bude "
-"automaticky previazaná.</note-content>"
 
 #. Attempt to find an existing Start Here note
 #: ../Tomboy/NoteManager.cs:299 ../Tomboy/NoteManager.cs:369
 msgid "Start Here"
-msgstr "Začnite tu"
+msgstr "«باشلاش»"
 
 #: ../Tomboy/NoteManager.cs:304
 msgid "Using Links in Tomboy"
-msgstr "Používanie odkazov v programe Tomboy"
+msgstr "Tomboy دا ئۇلانمىلارنى ئىشلىتىلسۇن"
 
 #: ../Tomboy/NoteManager.cs:449
 #, csharp-format
 msgid "New Note {0}"
-msgstr "Nová poznámka {0}"
+msgstr "يېڭى ئىزاھ {0}"
 
 #. Use a simple "Describe..." body and highlight
 #. it so it can be easily overwritten
 #: ../Tomboy/NoteManager.cs:522 ../Tomboy/NoteManager.cs:615
 msgid "Describe your new note here."
-msgstr "Sem napíšte obsah novej poznámky."
+msgstr "يېڭى ئىزاھنى بۇ يەردە بايان قىلىڭ."
 
 #: ../Tomboy/NoteRenameDialog.cs:50
 msgid "Rename Note Links?"
-msgstr "Premenovať odkazy poznámok?"
+msgstr "ئىزاھ ئۇلانمىلىرىنىڭ ئاتى ئۆزگەرتىلسۇنمۇ؟"
 
 #: ../Tomboy/NoteRenameDialog.cs:56
 msgid "_Rename Links"
-msgstr "P_remenovať odkazy"
+msgstr "ئۇلانمىلارنىڭ ئاتىنى ئۆزگەرتىش(_R)"
 
 #: ../Tomboy/NoteRenameDialog.cs:59
 msgid "_Don't Rename Links"
-msgstr "_Nepremenovať odkazy"
+msgstr "ئۇلانمىلارنىڭ ئاتىنى ئۆزگەرتمە(_D)"
 
 #: ../Tomboy/NoteRenameDialog.cs:67
 #, csharp-format
@@ -1483,269 +1248,254 @@ msgid ""
 "\n"
 "If you do not rename the links, they will no longer link to anything."
 msgstr ""
-"Premenovať odkazy v ostatných poznámkach z \"<span underline=\"single\">{0}</"
-"span>\" na \"<span underline=\"single\">{1}</span>\"?\n"
-"Ak nepremenujete odkazy, tak potom už viac nebudú odkazovať na nič."
 
 #: ../Tomboy/NoteRenameDialog.cs:83
 msgid "Rename Links"
-msgstr "Premenovať odkazy"
+msgstr "ئۇلانما ئاتىنى ئۆزگەرتىش"
 
 #: ../Tomboy/NoteRenameDialog.cs:95
 #: ../Tomboy/Synchronization/SyncDialog.cs:119
 msgid "Note Title"
-msgstr "Názov poznámky"
+msgstr "ئىزاھ ماۋزۇسى"
 
 #. Translators: This button causes all notes in the list to be selected
 #: ../Tomboy/NoteRenameDialog.cs:118
 msgid "Select All"
-msgstr "Vybrať všetky"
+msgstr "ھەممىنى تاللا"
 
 #. Translators: This button causes all notes in the list to be unselected
 #: ../Tomboy/NoteRenameDialog.cs:127
 msgid "Select None"
-msgstr "Odznačiť všetky"
+msgstr "ھەممىنى تاللىما"
 
 #: ../Tomboy/NoteRenameDialog.cs:144
 msgid "Ad_vanced"
-msgstr "_Pokročilé"
+msgstr "ئالىي(_V)"
 
 #: ../Tomboy/NoteRenameDialog.cs:147
 msgid "Always show this _window"
-msgstr "Vždy zobraziť toto _okno"
+msgstr "بۇ كۆزنەكنى ھەمىشە كۆرسەت(_W)"
 
 #: ../Tomboy/NoteRenameDialog.cs:155
 msgid "Never rename _links"
-msgstr "_Nikdy nepremenovať odkazy"
+msgstr "ئۇلانمىلارنىڭ ئاتى قەتئىي ئۆزگەرتىلمىسۇن(_L)"
 
 #: ../Tomboy/NoteRenameDialog.cs:163
 msgid "Alwa_ys rename links"
-msgstr "Vžd_y premenovať odkazy"
+msgstr "ئۇلانمىلار ئاتى ھەمىشە ئۆزگەرتىلسۇن(_Y)"
 
 #: ../Tomboy/NoteWindow.cs:58
 msgid "Find in This Note"
-msgstr "Nájsť v tejto poznámke"
+msgstr "بۇ ئىزاھتىن تېپىش"
 
 #: ../Tomboy/NoteWindow.cs:361
 msgid "_Link to New Note"
-msgstr "O_dkaz na novú poznámku"
+msgstr "يېڭى ئىزاھقا ئۇلا(_L)"
 
 #: ../Tomboy/NoteWindow.cs:373
 msgid "Te_xt"
-msgstr "Te_xt"
+msgstr "تېكىست(_X)"
 
 #: ../Tomboy/NoteWindow.cs:381
 msgid "_Find in This Note"
-msgstr "_Nájsť v tejto poznámke"
+msgstr "بۇ ئىزاھتىن تاپ(_F)"
 
 #: ../Tomboy/NoteWindow.cs:396
 msgid "Clos_e All Notes"
-msgstr "Z_avrieť všetky poznámky"
+msgstr "ھەممە ئىزاھلارنى ياپ(_E)"
 
 #: ../Tomboy/NoteWindow.cs:436
 msgid "Search"
-msgstr "Hľadať"
+msgstr "ئىزدە"
 
 #: ../Tomboy/NoteWindow.cs:439
 msgid "Search your notes (Ctrl-Shift-F)"
-msgstr "Hľadať vo vašich poznámkach (Ctrl-Shift-F)"
+msgstr "ئىزاھ ئىزدەش (Ctrl-Shift-F)"
 
 #: ../Tomboy/NoteWindow.cs:451
 msgid "Link"
-msgstr "Odkaz"
+msgstr "ئۇلانما"
 
 #: ../Tomboy/NoteWindow.cs:457
 msgid "Link selected text to a new note (Ctrl-L)"
-msgstr "Vytvoriť novú poznámku odkazujúcu na vybraný text (Ctrl-L)"
+msgstr "تاللانغان تېكىستنى يېڭى ئىزاھقا ئۇلاش(Ctrl-L)"
 
 #: ../Tomboy/NoteWindow.cs:470
 msgid "_Text"
-msgstr "_Text"
+msgstr "تېكىست(_T)"
 
 #: ../Tomboy/NoteWindow.cs:475
 msgid "Set properties of text"
-msgstr "Nastaviť vlastnosti textu"
+msgstr "تېكىستنىڭ خاسلىقىنى بەلگىلەيدۇ"
 
 #: ../Tomboy/NoteWindow.cs:480
 msgid "T_ools"
-msgstr "Nástr_oje"
+msgstr "قورال(_O)"
 
 #: ../Tomboy/NoteWindow.cs:484
 msgid "Use tools on this note"
-msgstr "Použiť nástroje na tejto poznámke"
+msgstr "بۇ ئىزاھلاردا قورال ئىشلىتىدۇ"
 
 #: ../Tomboy/NoteWindow.cs:492
 msgid "Delete this note"
-msgstr "Odstrániť túto poznámku"
+msgstr "بۇ ئىزاھنى ئۆچۈرىدۇ"
 
 #: ../Tomboy/NoteWindow.cs:500 ../Tomboy/Synchronization/SyncManager.cs:163
 msgid "Synchronize Notes"
-msgstr "Synchronizovať poznámky"
+msgstr "ئىزاھلارنى ماس قەدەملەشتۈرۈش"
 
 #: ../Tomboy/NoteWindow.cs:562
 msgid "_Find..."
-msgstr "_Nájsť..."
+msgstr "ئىزدە(_F)…"
 
 #: ../Tomboy/NoteWindow.cs:573
 msgid "Find _Next"
-msgstr "_Hľadať ďalšie"
+msgstr "كېيىنكىسىنى ئىزدە(_N)"
 
-# je tu správny rod?
-# PK: ano
-# Peter: podľa mna next a previou sú opozitá a v preklade ďalej a predchádzajúce nie sú opozitá a podla mna by mali byt ak tam má byť "ďalej" tak tu nemá byť skôr?
-# PK: chcem to takto, je to tak aj inde
 #: ../Tomboy/NoteWindow.cs:586
 msgid "Find _Previous"
-msgstr "Nájsť pre_dchádzajúce"
+msgstr "ئالدىنقىنى ئىزدە(_P)"
 
 #: ../Tomboy/NoteWindow.cs:674
 msgid "Cannot create note"
-msgstr "Nedá sa vytvoriť poznámka"
+msgstr "ئىزاھ قۇرغىلى بولمىدى"
 
 #: ../Tomboy/NoteWindow.cs:755
 msgid "_Find:"
-msgstr "_Nájsť:"
+msgstr "ئىزدە(_F):"
 
-# je tu správny rod
-# PK: ano, aj v inych programoch je to tak prelozene
 #: ../Tomboy/NoteWindow.cs:766
 msgid "_Previous"
-msgstr "_Predchádzajúce"
+msgstr "ئالدىنقىسى(_P)"
 
 #: ../Tomboy/NoteWindow.cs:775
 msgid "_Next"
-msgstr "Ď_aľšie"
+msgstr "كېيىنكىسى(_N)"
 
 #: ../Tomboy/NoteWindow.cs:1258
 msgid "_Bold"
-msgstr "_Tučné"
+msgstr "توم(_B)"
 
 #: ../Tomboy/NoteWindow.cs:1270
 msgid "_Italic"
-msgstr "_Kurzíva"
+msgstr "يانتۇ(_I)"
 
 #: ../Tomboy/NoteWindow.cs:1282
 msgid "_Strikeout"
-msgstr "_Preškrtnuté"
+msgstr "ئۆچۈرۈش سىزىقى(_S)"
 
 #: ../Tomboy/NoteWindow.cs:1294
 msgid "_Highlight"
-msgstr "_Zvýraznené"
+msgstr "يورۇتۇش(_H)"
 
 #: ../Tomboy/NoteWindow.cs:1307
 msgid "Font Size"
-msgstr "Veľkosť písma"
+msgstr "خەت چوڭلۇقى"
 
 #: ../Tomboy/NoteWindow.cs:1310
 msgid "_Normal"
-msgstr "Normá_lne"
+msgstr "نورمال(_N)"
 
 #: ../Tomboy/NoteWindow.cs:1327
 msgid "Hu_ge"
-msgstr "Ob_rovské"
+msgstr "بەك چوڭ(_G)"
 
 #: ../Tomboy/NoteWindow.cs:1335
 msgid "_Large"
-msgstr "V_eľké"
+msgstr "چوڭ(_L)"
 
 #: ../Tomboy/NoteWindow.cs:1343
 msgid "S_mall"
-msgstr "_Malé"
+msgstr "كىچىك(_M)"
 
 #: ../Tomboy/NoteWindow.cs:1352
 msgid "Increase Font Size"
-msgstr "Zväčšiť veľkosť písma"
+msgstr "خەت چوڭلۇقىنى چوڭايتىش"
 
 #: ../Tomboy/NoteWindow.cs:1370
 msgid "Decrease Font Size"
-msgstr "Zmenšiť veľkosť písma"
+msgstr "خەت چوڭلۇقىنى كىچىكلىتىش"
 
 #: ../Tomboy/NoteWindow.cs:1390
 msgid "Bullets"
-msgstr "Odrážky"
+msgstr "Bullets"
 
 #: ../Tomboy/PreferencesDialog.cs:81
 msgid "Editing"
-msgstr "Upravovanie"
+msgstr "تەھرىرلەۋاتىدۇ"
 
 #: ../Tomboy/PreferencesDialog.cs:84
 msgid "Hotkeys"
-msgstr "Klávesové skratky"
+msgstr "تېزلەتمە كۇنۇپكىلار"
 
 #: ../Tomboy/PreferencesDialog.cs:86
 msgid "Synchronization"
-msgstr "Synchronizácia"
+msgstr "ماس قەدەملەشتۈرۈش"
 
 #: ../Tomboy/PreferencesDialog.cs:88
 msgid "Add-ins"
-msgstr "Doplnky"
+msgstr "قىستۇرمىلار"
 
 #: ../Tomboy/PreferencesDialog.cs:173
 msgid "_Spell check while typing"
-msgstr "Kontrolovať pravopi_s počas písania"
+msgstr "كىرگۈزۈۋاتقاندا ئىملاسى تەكشۈرۈلسۇن(_S)"
 
 #: ../Tomboy/PreferencesDialog.cs:182
 msgid ""
 "Misspellings will be underlined in red, with correct spelling suggestions "
 "shown in the context menu."
-msgstr ""
-"Chyby budú podtrhnuté červenou a návrhy správneho zápisu budú zobrazené v "
-"kontextovej ponuke."
+msgstr "ئىملاسى خاتالىرىنىڭ ئاستىغا قىزىل سىزىق سىزىلىدۇ، ماس نامزاتلار مەزمۇن تىزىملىكىدە كۆرسىتىلىدۇ."
 
 #. WikiWords...
 #: ../Tomboy/PreferencesDialog.cs:193
 msgid "Highlight _WikiWords"
-msgstr "Zvýrazňovať _WikiSlová"
+msgstr "_WikiWords  يورۇتۇلسۇن"
 
 #: ../Tomboy/PreferencesDialog.cs:201
 msgid ""
 "Enable this option to highlight words <b>ThatLookLikeThis</b>. Clicking the "
 "word will create a note with that name."
-msgstr ""
-"Povolením tejto možnosti zvýrazníte slová <b>KtoréVyzerajúTakto</b>. "
-"Kliknutím na to slovo vytvoríte poznámku s takým názvom."
+msgstr "«ThatLookLikeThis» دېگەن سۆزنى يورۇتۇش ئۈچۈن بۇنى ئىشلىتىڭ. بۇ سۆزنى چەكسە شۇنى ئات قىلىپ بىر ئىزاھ قۇرغىلى بولىدۇ."
 
 #. Auto bulleted list
 #: ../Tomboy/PreferencesDialog.cs:208
 msgid "Enable auto-_bulleted lists"
-msgstr "Povoliť automaticky o_drážkované zoznamy"
+msgstr ""
 
 #: ../Tomboy/PreferencesDialog.cs:217
 msgid "Use custom _font"
-msgstr "Použiť vlastné písm_o"
+msgstr "ئىختىيارى خەت نۇسخىسى ئىشلىتىلسۇن(_F)"
 
 #: ../Tomboy/PreferencesDialog.cs:235
 msgid "When renaming a linked note: "
-msgstr "Keď sa premenúva previazaná poznámka: "
+msgstr "ئۇلانمىلىق ئىزاھنىڭ ئاتى ئۆزگەرتىلگەندە: "
 
 #: ../Tomboy/PreferencesDialog.cs:238
 msgid "Ask me what to do"
-msgstr "Opýtať sa ma čo spraviť"
+msgstr "قانداق قىلىشنى مەندىن سورا"
 
 #: ../Tomboy/PreferencesDialog.cs:239
 msgid "Never rename links"
-msgstr "Nikdy nepremenovať odkazy"
+msgstr "ئۇلانما ئاتىنى زادى ئۆزگەرتمە"
 
 #: ../Tomboy/PreferencesDialog.cs:240
 msgid "Always rename links"
-msgstr "Vždy premenovať odkazy"
+msgstr "ئۇلانمىنى ئاتىنى ھەمىشە ئۆزگەرت"
 
 #: ../Tomboy/PreferencesDialog.cs:260
 msgid ""
 "Use the new note template to specify the text that should be used when "
 "creating a new note."
-msgstr ""
-"Použite šablónu novej poznámky na určenie textu, ktorý by mal byť použitý "
-"pri vytváraní novej poznámky."
+msgstr "ئىزاھ قېلىپى ئىشلىتىپ، يېڭى ئىزاھ قۇرغاندا قېلىپتىكى تېكىستنى ئىشلەتكىلى بولىدۇ."
 
 #: ../Tomboy/PreferencesDialog.cs:269
 msgid "Open New Note Template"
-msgstr "Otvoriť šablónu novej poznámky"
+msgstr "يېڭى ئىزاھ قېلىپىنى ئېچىش"
 
 #. Hotkeys...
 #: ../Tomboy/PreferencesDialog.cs:326
 msgid "Listen for _Hotkeys"
-msgstr "Očakávať klávesové _skratky"
+msgstr ""
 
 #: ../Tomboy/PreferencesDialog.cs:335
 msgid ""
@@ -1753,122 +1503,114 @@ msgid ""
 "keypress. Example Hotkeys: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;"
 "Alt&gt;N</b>"
 msgstr ""
-"Klávesové skratky vám umožnia rýchlo pristupovať k vašim poznámkam kdekoľvek "
-"stlačením klávesu. Príklad klávesových skratiek: <b>&lt;Control&gt;&lt;"
-"Shift&gt;F11</b>, <b>&lt;Alt&gt;N</b>"
 
 #. Show notes menu keybinding...
 #: ../Tomboy/PreferencesDialog.cs:355
 msgid "Show notes _menu"
-msgstr "Zobraziť ponuku k _poznámkam"
+msgstr "ئىزاھلار تىزىملىكىنى كۆرسەت(_M)"
 
 #. Open Start Here keybinding...
 #: ../Tomboy/PreferencesDialog.cs:372
 msgid "Open \"_Start Here\""
-msgstr "Otvoriť \"_Začnite tu\""
+msgstr "«باشلاش» نى ئاچ(_S)"
 
 #. Create new note keybinding...
 #: ../Tomboy/PreferencesDialog.cs:389
 msgid "Create _new note"
-msgstr "Vytvoriť _novú poznámku"
+msgstr "يېڭى ئىزاھ قۇر(_N)"
 
 #. Open Search All Notes window keybinding...
 #: ../Tomboy/PreferencesDialog.cs:406
 msgid "Open \"Search _All Notes\""
-msgstr "Otvoriť \"_Hľadať vo všetkých poznámkach\""
+msgstr "«ھەممە ئىزاھنى ئىزدە» نى ئاچ(_A)"
 
 #: ../Tomboy/PreferencesDialog.cs:433
 msgid "Ser_vice:"
-msgstr "Služ_ba:"
+msgstr "مۇلازىمەت(_V):"
 
 #: ../Tomboy/PreferencesDialog.cs:486 ../Tomboy/PreferencesDialog.cs:1113
 msgid "Not configurable"
-msgstr "Nekonfigurovateľné"
+msgstr "سەپلەنمەيدۇ"
 
 #: ../Tomboy/PreferencesDialog.cs:512
 msgid "Automaticall_y Sync in Background Every"
-msgstr "Automatick_y synchronizovať na pozadí každých"
+msgstr ""
 
 #. Translators: See above comment for details on
 #. this string.
 #: ../Tomboy/PreferencesDialog.cs:518
 msgid "Minutes"
-msgstr "Minút"
+msgstr "مىنۇت"
 
 #. "Advanced..." button to bring up extra sync config dialog
 #: ../Tomboy/PreferencesDialog.cs:540
 msgid "_Advanced..."
-msgstr "_Pokročilé..."
+msgstr "ئالىي تەڭشەك(_A)..."
 
 #: ../Tomboy/PreferencesDialog.cs:601
 msgid "The following add-ins are installed"
-msgstr "Nasledujúce doplnky sú nainštalované"
+msgstr "تۆۋەندىكى قىستۇرمىلار ئورنىتىلغان"
 
 #: ../Tomboy/PreferencesDialog.cs:622
 msgid "Get More Add-Ins..."
-msgstr "Získať viac doplnkov..."
+msgstr "تېخى كوپ قىستۇرمىلارنى قوشۇش…"
 
 #: ../Tomboy/PreferencesDialog.cs:648
 msgid "_Enable"
-msgstr "_Povoliť"
+msgstr "قوزغات(_E)"
 
 #: ../Tomboy/PreferencesDialog.cs:654
 msgid "_Disable"
-msgstr "Z_akázať"
+msgstr "قوزغاتما(_D)"
 
 #: ../Tomboy/PreferencesDialog.cs:785
 msgid "Not Implemented"
-msgstr "Nenaimplementované"
+msgstr "ئەمەلگە ئاشۇرۇلمىغان"
 
 #: ../Tomboy/PreferencesDialog.cs:799
 #, csharp-format
 msgid "{0} Preferences"
-msgstr "Nastavenia {0}"
+msgstr "{0}  مايىللىقى"
 
 #: ../Tomboy/PreferencesDialog.cs:938
 msgid "Choose Note Font"
-msgstr "Zvoľte písmo poznámky"
+msgstr "ئىزاھ خەت نۇسخىسىنى تاللاش"
 
 #: ../Tomboy/PreferencesDialog.cs:982
 msgid "Other Synchronization Options"
-msgstr "Ostatné možnosti synchronizácie"
+msgstr "باشقا ماس قەدەملەشتۈرۈش تاللانمىلىرى"
 
 #: ../Tomboy/PreferencesDialog.cs:988
 msgid ""
 "When a conflict is detected between a local note and a note on the "
 "configured synchronization server:"
-msgstr ""
-"Keď je zistený rozpor medzi miestnou poznámkou a poznámkou na nastavenom "
-"synchronizačnom serveri:"
+msgstr "يەرلىك ئىزاھ بىلەن سەپلەنگەن مۇلازىمېتىردىكى ئىزاھ ئارىسىدا توقۇنۇش كۆرۈلسە:"
 
 #: ../Tomboy/PreferencesDialog.cs:995
 msgid "Always ask me what to do."
-msgstr "Vždy sa opýtať čo spraviť."
+msgstr "نېمە قىلىش كېرەكلىكىنى مەندىن دائىم سورا."
 
 #: ../Tomboy/PreferencesDialog.cs:999
 msgid "Rename my local note."
-msgstr "Premenovať miestnu poznámku."
+msgstr "يەرلىك ئىزاھ ئاتىنى ئۆزگەرت."
 
 #: ../Tomboy/PreferencesDialog.cs:1003
 msgid "Replace my local note with the server's update."
-msgstr "Nahradiť miestnu poznámku aktuálnejšou zo servera."
+msgstr "مۇلازىمېتىردىكى يېڭىلانمىنى كومپيۇتېردىكىسىگە ئالماشتۇر."
 
 #: ../Tomboy/PreferencesDialog.cs:1149
 msgid "WARNING: Are you sure?"
-msgstr "UPOZORNENIE: Ste si istý?"
+msgstr "ئاگاھلاندۇرۇش: راستمۇ؟"
 
 #: ../Tomboy/PreferencesDialog.cs:1151
 msgid ""
 "Clearing your synchronization settings is not recommended.  You may be "
 "forced to synchronize all of your notes again when you save new settings."
-msgstr ""
-"Vymazanie vašich synchronizačných nastavení sa neodporúča.  Mali by ste "
-"znovu vynútiť synchronizáciu všetkých vašich poznámok, keď uložíte nové "
-"nastavenia."
+msgstr "ماس قەدەملەشتۈرۈش تەڭشىكىنى تازىلاش تەۋسىيە قىلىنىدۇ. يېڭى تەڭشەكلەرنى ساقلاپ بولغاندا، ئىزاھلىرىڭىزنى قايتا ماس قەدەملەشتۈرۈڭ."
 
 #: ../Tomboy/PreferencesDialog.cs:1164
 msgid "Resetting Synchronization Settings"
-msgstr "Nulovanie synchronizačných nastavení"
+msgstr "ماس قەدەملەشتۈرۈش تەڭشەكلىرىنى ئەسلىگە قايتۇر"
 
 #: ../Tomboy/PreferencesDialog.cs:1166
 msgid ""
@@ -1876,137 +1618,122 @@ msgid ""
 "synchronization settings will now be cleared.  You may be forced to "
 "synchronize all of your notes again when you save new settings"
 msgstr ""
-"Zakázali ste nastavený synchronizačný server.  Vaše nastavenia "
-"synchronizácie budú vymazané.  Mali by ste znovu vynútiť synchronizáciu "
-"všetkých vašich poznámok, keď uložíte nové nastavenia"
 
 #: ../Tomboy/PreferencesDialog.cs:1244
 msgid "Success! You're connected!"
-msgstr "Hotovo! Ste pripojený!"
+msgstr "مۇبارەك! باغلاندىڭىز!"
 
 #: ../Tomboy/PreferencesDialog.cs:1246
 msgid ""
 "Tomboy is ready to synchronize your notes. Would you like to synchronize "
 "them now?"
-msgstr ""
-"Tomboy je pripravený na synchronizáciu vašich poznámok. Prajete si ich "
-"synchronizovať teraz?"
+msgstr "Tomboy ئىزاھلىرىڭىزنى ماس قەدەملەشتۈرۈشكە تەييار بولدى. ھازىرلا مەست قەدەملەشتۈرەمسىز؟"
 
 #: ../Tomboy/PreferencesDialog.cs:1269
 #, csharp-format
 msgid ""
 "Sorry, but something went wrong.  Please check your information and try "
 "again.  The {0} might be useful too."
-msgstr ""
-"Prepáčte, ale niečo bolo nesprávne.  Skontrolujte, prosím, vami zadané "
-"informácie a skúste to znovu.  Nápomocný by mohol byť tiež {0}."
+msgstr "كەچۈرۈڭ، ئازراق مەسىلە بار. ئۇچۇرلىرىڭىزنى تەكشۈرۈپ قايتا سىناڭ. {0} نىڭ پايدىسى تېگەرمىكىن."
 
 #: ../Tomboy/PreferencesDialog.cs:1282
 msgid "Error connecting :("
-msgstr "Chyba pri pripájaní :("
+msgstr "باغلىنىۋاتقاندا خاتالىق كۆرۈلدى :("
 
 #: ../Tomboy/PreferencesDialog.cs:1358
 msgid "Version:"
-msgstr "Verzia:"
+msgstr "نەشرى:"
 
 #: ../Tomboy/PreferencesDialog.cs:1365
 msgid "Author:"
-msgstr "Autor:"
+msgstr "ئاپتور:"
 
 #: ../Tomboy/PreferencesDialog.cs:1372
 msgid "Copyright:"
-msgstr "Autorské práva:"
+msgstr "نەشر ھوقۇقى:"
 
 #: ../Tomboy/PreferencesDialog.cs:1378
 msgid "Add-in Dependencies:"
-msgstr "Závislosti doplnku"
+msgstr "قىستۇرما زۆرۈرىيەتلىرى:"
 
 #: ../Tomboy/RecentChanges.cs:98
 msgid "_Search:"
-msgstr "_Hľadať:"
+msgstr "ئىزدە(_S):"
 
 #: ../Tomboy/RecentChanges.cs:331
 msgid "Note"
-msgstr "Poznámka"
+msgstr "ئىزاھ"
 
 #: ../Tomboy/RecentChanges.cs:353
 msgid "Last Changed"
-msgstr "Naposledy zmenené"
+msgstr "ئاخىرقى ئۆزگەرتىلگەن"
 
 #: ../Tomboy/RecentChanges.cs:484
 msgid "Matches"
-msgstr "Zhody"
+msgstr "تېپىلغانلىرى"
 
 #: ../Tomboy/RecentChanges.cs:535
 #, csharp-format
 msgid "{0} match"
 msgid_plural "{0} matches"
-msgstr[0] "{0} zhôd"
-msgstr[1] "{0} zhoda"
-msgstr[2] "{0} zhody"
+msgstr[0] "{0} تېپىلدى"
 
 #: ../Tomboy/RecentChanges.cs:549
 #, csharp-format
 msgid "Total: {0} note"
 msgid_plural "Total: {0} notes"
-msgstr[0] "Spolu: {0} poznámok"
-msgstr[1] "Spolu: {0} poznámka"
-msgstr[2] "Spolu: {0} poznámky"
+msgstr[0] "جەمئىي: {0} ئىزاھ"
 
 #: ../Tomboy/RecentChanges.cs:560
 #, csharp-format
 msgid "Matches: {0} note"
 msgid_plural "Matches: {0} notes"
-msgstr[0] "Zhoduje sa: {0} poznámok"
-msgstr[1] "Zhoduje sa: {0} poznámka"
-msgstr[2] "Zhodujú sa: {0} poznámky"
+msgstr[0] "تېپىلغانلىرى: {0} ئىزاھ"
 
 #: ../Tomboy/RecentChanges.cs:696
 msgid "Notes"
-msgstr "Poznámky"
+msgstr "ئىزاھ"
 
 #: ../Tomboy/Tomboy.cs:251
 msgid "Cannot create new note"
-msgstr "Nie je možné vytvoriť novú poznámku"
+msgstr "يېڭى ئىزاھ قۇرالمىدى"
 
 #: ../Tomboy/Tomboy.cs:317
 msgid "Primary Development:"
-msgstr "Primárny vývoj:"
+msgstr "دەسلەپكى ئىجادىيەت:"
 
 #: ../Tomboy/Tomboy.cs:323
 msgid "Contributors:"
-msgstr "Prispievatelia:"
+msgstr "تۆھپىكارلار:"
 
 #: ../Tomboy/Tomboy.cs:401
 msgid "translator-credits"
-msgstr "Pavol Klačanský <pavol@klacansky.com>"
+msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
+"Sahran<sahran@live.com>\n"
+"Muhemmed Erdem <misran_erdem@hotmail.com>"
 
 #: ../Tomboy/Tomboy.cs:410
 msgid ""
 "Copyright © 2004-2007 Alex Graveley\n"
 "Copyright © 2004-2010 Others\n"
-msgstr ""
-"Autorské právo © 2004-2007 Alex Graveley\n"
-"Autorské právo © 2004-2010 ostatní\n"
+msgstr "نەشر ھوقۇقى © 2004-2007 Alex Graveley\n"
+"نەشر ھوقۇقى  © 2004-2010 باشقىلار\n"
 
 #: ../Tomboy/Tomboy.cs:412
 msgid "A simple and easy to use desktop note-taking application."
-msgstr ""
-"Jednoduchá a ľahko používateľná\n"
-"aplikácia na vytváranie poznámok na pracovnej ploche."
+msgstr "ئاددىي ۋە ئىشلىتىش ئوڭاي بولغان ئۈستەلئۈستى ئىزاھ يېزىش پروگراممىسى"
 
 #: ../Tomboy/Tomboy.cs:422
 msgid "Homepage"
-msgstr "Domovská stránka"
+msgstr "باش بەت"
 
 #: ../Tomboy/Tomboy.cs:540
 msgid ""
 "Tomboy: A simple, easy to use desktop note-taking application.\n"
 "Copyright (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
 "\n"
-msgstr ""
-"Tomboy: Jednoduchá, ľahko používateľná aplikácia na prácu s poznámkami.\n"
-"Copyright (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
+msgstr "Tomboy: ئاددىي ۋە ئىشلىتىش ئوڭاي بولغان ئۈستەلئۈستى ئىزاھ يېزىش پروگراممىسىدۇر\n"
+"نەشر ھوقۇقى (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
 "\n"
 
 #: ../Tomboy/Tomboy.cs:552
@@ -2016,14 +1743,11 @@ msgid ""
 "  --help\t\t\tPrint this usage message.\n"
 "  --note-path [path]\t\tLoad/store note data in this directory.\n"
 "  --search [text]\t\tOpen the search all notes window with the search text.\n"
-msgstr ""
-"Použitie:\n"
-"  --version\t\t\tZobraziť informácie o verzii.\n"
-"  --help\t\t\tZobraziť túto správu o používaní.\n"
-"  --note-path [cesta k adresáru]\t\tNahrať/uskladniť údaje poznámok v tomto "
-"adresári.\n"
-"  --search [text]\t\tOtvoriť okno hľadania vo všetkých poznámkach s textom "
-"na hľadanie.\n"
+msgstr "ئىشلىتىش ئۇسۇلى:\n"
+"  --version\t\t\tنەشر ئۇچۇرىنى چىقىرىدۇ.\n"
+"  --help\t\t\tئىشلىتىش ئۇچۇرىنى چىقىرىدۇ.\n"
+"  --note-path [path]\t\tبۇ مۇندەرىجىدىكى سانلىق-مەلۇماتلارنى ئوقۇيدۇ/ساقلايدۇ.\n"
+"  --search [text]\t\tھەممە ئىزاھتىن ئىزدەش كۆزنىكىنى كۆرسىتىدۇ(ئىزدەيدىغان تېكىستنىمۇ).\n"
 
 #: ../Tomboy/Tomboy.cs:562
 msgid ""
@@ -2032,413 +1756,378 @@ msgid ""
 "  --open-note [title/url]\tDisplay the existing note matching title.\n"
 "  --start-here\t\t\tDisplay the 'Start Here' note.\n"
 "  --highlight-search [text]\tSearch and highlight text in the opened note.\n"
-msgstr ""
-"  --new-note\t\t\tVytvoriť a zobraziť novú poznámku.\n"
-"  --new-note [názov]\t\tVytvoriť a zobraziť novú poznámku s názvom.\n"
-"  --open-note [názov/url]\tZobraziť existujúcu poznámku zodpovedajúcu "
-"názvu.\n"
-"  --start-here\t\t\tZobraziť poznámku 'Začnite tu'.\n"
-"  --highlight-search [text]\tHľadať a zvýrazniť text v otvorenej poznámke.\n"
+msgstr "  --new-note\t\t\tيېڭى ئىزاھ قۇرىدۇ ۋە كۆرسىتىدۇ.\n"
+"  --new-note [title]\t\tماۋزۇلۇق يېڭى ئىزاھ قۇرىدۇ ۋە كۆرسىتىدۇ.\n"
+"  --open-note [title/url]\tماۋزۇسى ماس كەلگەن ئىزاھنى كۆرسىتىدۇ.\n"
+"  --start-here\t\t\t«باشلاش» ئىزاھىنى كۆرسىتىدۇ.\n"
+"  --highlight-search [text]\tئېچىلغان ئىزاھتىكى تېكىستنى ئىزدەيدۇ ياكى يورۇتىدۇ.\n"
 
 #: ../Tomboy/Tomboy.cs:576
 #, csharp-format
 msgid "Version {0}"
-msgstr "Verzia {0}"
+msgstr "نەشرى {0}"
 
 #: ../Tomboy/Tray.cs:68
 msgid " (new)"
-msgstr " (nová)"
+msgstr " (يېڭى)"
 
 #: ../Tomboy/Tray.cs:293
 msgid "_About Tomboy"
-msgstr "_O programe Tomboy"
+msgstr "Tomboy ھەققىدە(_A)"
 
-# príručka k porgramu Tomboy (-poznámky)
-# tu som to myslel tak ze Tomboy - poznámky alebo iba Tomboy a dal by som príručku ... sa nepodarilo nájsť
-# PK: takto sa mi to zda najlepsie
 #: ../Tomboy/Utils.cs:189
 msgid ""
 "The \"Tomboy Notes Manual\" could not be found.  Please verify that your "
 "installation has been completed successfully."
-msgstr ""
-"Príručku k programu \"Tomboy - poznámky\" sa nepodarilo nájsť. Skontrolujte, "
-"prosím, či bola inštalácia úspešne dokončená."
+msgstr "«Tomboy ئىزاھ قوللانمىسى» تېپىلمىدى. توغرا ئورنىتىلغانمۇ تەكشۈرۈڭ."
 
 #: ../Tomboy/Utils.cs:198
 msgid "Help not found"
-msgstr "Pomocník nebol nájdený"
+msgstr "ياردەم تېپىلمىدى"
 
 #: ../Tomboy/Utils.cs:214
 msgid "Cannot open location"
-msgstr "Nedá sa otvoriť umiestnenie"
+msgstr "ئورۇننى ئاچقىلى بولمىدى"
 
 #: ../Tomboy/Utils.cs:236
 #, csharp-format
 msgid "Today, {0}"
-msgstr "Dnes, {0}"
+msgstr "بۈگۈن، {0}"
 
 #: ../Tomboy/Utils.cs:238
 msgid "Today"
-msgstr "Dnes"
+msgstr "بۈگۈن"
 
 #: ../Tomboy/Utils.cs:242
 #, csharp-format
 msgid "Yesterday, {0}"
-msgstr "Včera, {0}"
+msgstr "تۈنۈگۈن، {0}"
 
 #: ../Tomboy/Utils.cs:244
 msgid "Yesterday"
-msgstr "Včera"
+msgstr "تۈنۈگۈن"
 
 #: ../Tomboy/Utils.cs:249
 #, csharp-format
 msgid "{0} day ago, {1}"
 msgid_plural "{0} days ago, {1}"
-msgstr[0] "Pred {0} dňami, {1}"
-msgstr[1] "Včera, {1}"
-msgstr[2] "Pred {0} dňami, {1}"
+msgstr[0] "{0} كۈن بۇرۇن، {1}"
 
 #: ../Tomboy/Utils.cs:253
 #, csharp-format
 msgid "{0} day ago"
 msgid_plural "{0} days ago"
-msgstr[0] "Pred {0} dňami"
-msgstr[1] "Včera"
-msgstr[2] "Pred {0} dňami"
+msgstr[0] "{0} كۈن بۇرۇن"
 
 #: ../Tomboy/Utils.cs:259
 #, csharp-format
 msgid "Tomorrow, {0}"
-msgstr "Zajtra, {0}"
+msgstr "ئەتە، {0}"
 
 #: ../Tomboy/Utils.cs:261
 msgid "Tomorrow"
-msgstr "Zajtra"
+msgstr "ئەتە"
 
 #: ../Tomboy/Utils.cs:266
 #, csharp-format
 msgid "In {0} day, {1}"
 msgid_plural "In {0} days, {1}"
-msgstr[0] "O {0} dní, {1}"
-msgstr[1] "O {0} deň, {1}"
-msgstr[2] "O {0} dni, {1}"
+msgstr[0] "{0} كۈن ئىچىدە، {1}"
 
 #: ../Tomboy/Utils.cs:270
 #, csharp-format
 msgid "In {0} day"
 msgid_plural "In {0} days"
-msgstr[0] "O {0} dní"
-msgstr[1] "O {0} deň"
-msgstr[2] "O {0} dni"
+msgstr[0] "{0} كۈن ئىچىدە"
 
 #: ../Tomboy/Utils.cs:275
 msgid "MMMM d, h:mm tt"
-msgstr "hh:mm, d. MMMM"
+msgstr "MMMM d، h:mm tt"
 
 #: ../Tomboy/Utils.cs:276
 msgid "MMMM d"
-msgstr "d. MMMM"
+msgstr "MMMM d"
 
 #: ../Tomboy/Utils.cs:278
 msgid "No Date"
-msgstr "Žiadny dátum"
+msgstr "چېسلا يوق"
 
 #: ../Tomboy/Utils.cs:281
 msgid "MMMM d yyyy, h:mm tt"
-msgstr "hh:mm, d. MMMM yyyy"
+msgstr "MMMM d yyyy، h:mm tt"
 
 #: ../Tomboy/Utils.cs:282
 msgid "MMMM d yyyy"
-msgstr "d. MMMM yyyy"
+msgstr "MMMM d yyyy"
 
-# je tu správny rod?
 #: ../Tomboy/Watchers.cs:155
 #, csharp-format
 msgid "(Untitled {0})"
-msgstr "(Nepomenované {0})"
+msgstr "(ماۋزۇسىز{0})"
 
 #: ../Tomboy/Watchers.cs:189
 #, csharp-format
 msgid ""
 "A note with the title <b>{0}</b> already exists. Please choose another name "
 "for this note before continuing."
-msgstr ""
-"Poznámka s názvom <b>{0}</b> už existuje. Pred pokračovaním vyberte, prosím, "
-"iný názov pre túto poznámku."
+msgstr "<b>{0}</b> ماۋزۇلۇق ئىزاھ بار. بۇ ئىزاھقا باشقا ئات بېكىتىڭ."
 
 #: ../Tomboy/Watchers.cs:204
 msgid "Note title taken"
-msgstr "Zadaný názov poznámky"
+msgstr "ئىزاھ ئاتى ئىشلىتىلىپ بولغان"
 
 #: ../Tomboy/Watchers.cs:549
 msgid "_Copy Link Address"
-msgstr "_Kopírovať adresu odkazu"
+msgstr "ئۇلانما ئاتىنى كۆچۈر(_C)"
 
 #: ../Tomboy/Watchers.cs:554
 msgid "_Open Link"
-msgstr "_Otvoriť odkaz"
+msgstr "ئۇلانما ئاچ(_O)"
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:94
 #, csharp-format
 msgid ""
 "This synchronization addin is not supported on your computer. Please make "
 "sure you have FUSE and {0} correctly installed and configured"
-msgstr ""
-"Tento synchronizačný doplnok nie je na vašom počítači podporovaný. Preverte, "
-"prosím, či máte správne nainštalované a nastavené FUSE a {0}"
+msgstr "بۇ ماس قەدەملەشتۈرۈش قىستۇرمىسىنى كومپيۇتېرىڭىزدا ئىشلەتكىلى بولمايدىكەن. FUSE ۋە {0} ئورنىتىلىپ توغرا تەڭشەلگەنمۇ تەكشۈرۈڭ"
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:129
 msgid "Could not read testfile."
-msgstr "Nepodarilo sa prečítať testovací súbor."
+msgstr "سىناق ھۆججىتىنى ئوقۇيالمىدى."
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:132
 msgid "Write test failed."
-msgstr "Skúška zápisu zlyhala."
+msgstr "يېزىش سىنىقى مەغلۇپ بولدى."
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:176
 msgid "Timeout connecting to server."
-msgstr "Vypršal časový limit pripájania k serveru."
+msgstr "مۇلازىمېتىرغا باغلىنىۋاتقاندا (ۋاقىت)مۆھلەتتىن ئېشىپ كەتتى."
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:184
 msgid "Error connecting to server."
-msgstr "Chyba pri pripájaní k serveru."
+msgstr "مۇلازىمېتىرغا باغلىنىۋاتقاندا خاتالىق كۆرۈلدى."
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:198
 msgid "FUSE could not be enabled."
-msgstr "Nepodarilo sa povoliť FUSE."
+msgstr "FUSE نى قوزغاتقىلى بولمىدى."
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:233
 msgid "An error ocurred while connecting to the specified server:"
-msgstr "Vyskytla sa chyba počas pripájania k zadanému serveru:"
+msgstr "بەلگىلەنگەن مۇلازىمېتىرغا باغلىنىۋاتقاندا خاتالىق يۈز بەردى:"
 
 #. Expander containing TreeView
 #: ../Tomboy/Synchronization/SyncDialog.cs:89
 msgid "Details"
-msgstr "Podrobnosti"
+msgstr "تەپسىلاتى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:126
 msgid "Status"
-msgstr "Stav"
+msgstr "ھالەت"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:236
 msgid "Acquiring sync lock..."
-msgstr "Získava sa synchronizačný zámok..."
+msgstr ""
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:239
 msgid "Committing changes..."
-msgstr "Odovzdávajú sa zmeny..."
+msgstr "ئۆزگىرىشلەرنى تاپشۇرۇۋاتىدۇ..."
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:242
 msgid "Synchronizing Notes"
-msgstr "Synchronizujú sa poznámky"
+msgstr "ئىزاھلارنى ماس قەدەملەشتۈرۈش"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:243
 msgid "Synchronizing your notes..."
-msgstr "Synchronizujú sa vaše poznámky..."
+msgstr "ئىزاھلىرىڭىزنى ماس قەدەملەشتۈرىدۇ…"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:244
 msgid "This may take a while, kick back and enjoy!"
-msgstr "Môže to chvíľu trvať, oddýchnite si!"
+msgstr "ئازراق ۋاقىت كېتىدۇ، بىردەم باشقا ئىشلارنى قىلىپ تۇرۇڭ!"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:246
 msgid "Connecting to the server..."
-msgstr "Pripája sa k serveru..."
+msgstr "مۇلازىمېتىرغا باغلىنىۋاتىدۇ…"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:252
 msgid "Deleting notes off of the server..."
-msgstr "Odstraňujú sa poznámky zo servera..."
+msgstr "مۇلازىمېتىردىن ئىزاھلارنى ئۆچۈرۈۋاتىدۇ…"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:256
 msgid "Downloading new/updated notes..."
-msgstr "Sťahujú sa nové/aktualizované poznámky..."
+msgstr "يېڭى/يېڭىلانغان ئىزاھلارنى چۈشۈرۈۋاتىدۇ..."
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:268
 msgid "Server Locked"
-msgstr "Server uzamknutý"
+msgstr "مۇلازىمېتىر قۇلۇپلانغان"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:269
 msgid "Server is locked"
-msgstr "Server je uzamknutý"
+msgstr "مۇلازىمېتىر قۇلۇپلانغان"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:270
 msgid ""
 "One of your other computers is currently synchronizing.  Please wait 2 "
 "minutes and try again."
-msgstr ""
-"Jeden z iných vašich počítačov sa práve synchronizuje. Počkajte, prosím, 2 "
-"minúty a skúste to znovu."
+msgstr "سىز باشقا بىر كومپيۇتېرىڭىز ماس قەدەملەشتۈرۈش مەشغۇلاتى قىلىۋېتىپتۇ. 2 مىنۇت ساقلاپ قايتا سىناڭ."
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:274
 msgid "Preparing to download updates from server..."
-msgstr "Pripravuje sa stiahnutie aktualizácií zo servera..."
+msgstr "مۇلازىمېتىردىن يېڭىلانمىلارنى چۈشۈرۈشكە تەييارلىنىۋاتىدۇ…"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:277
 msgid "Preparing to upload updates to server..."
-msgstr "Pripravuje sa nahratie aktualizácií na server..."
+msgstr "مۇلازىمېتىرغا يېڭىلانمىلارنى يۈكلەشكە تەييارلىنىۋاتىدۇ…"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:280
 msgid "Uploading notes to server..."
-msgstr "Nahrávajú sa poznámky na server..."
+msgstr "ئىزاھلارنى مۇلازىمېتىرغا يۈكلەۋاتىدۇ…"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:283
 msgid "Synchronization Failed"
-msgstr "Synchronizácia zlyhala"
+msgstr "ماس قەدەملەشتۈرۈش مەغلۇپ بولدى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:284
 msgid "Failed to synchronize"
-msgstr "Zlyhala synchronizácia"
+msgstr "ماس قەدەملەشتۈرۈش مەغلۇپ بولدى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:285
 msgid "Could not synchronize notes.  Check the details below and try again."
-msgstr ""
-"Nepodarilo sa synchronizovať poznámky. Skontrolujte podrobnosti nižšie a "
-"skúste to znovu."
+msgstr "ئىزاھلارنى ماس قەدەملەشتۈرگىلى بولمىدى. تۆۋەندىكى تەپسىلاتنى كۆرۈپ قايتا سىناڭ."
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:291
 msgid "Synchronization Complete"
-msgstr "Synchronizácia dokončená"
+msgstr "ماس قەدەملەشتۈرۈش تامام"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:292
 msgid "Synchronization is complete"
-msgstr "Synchronizácia je dokončená"
+msgstr "ماس قەدەملەشتۈرۈش تاماملاندى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:294
 #, csharp-format
 msgid "{0} note updated."
 msgid_plural "{0} notes updated."
-msgstr[0] "{0} poznámok aktualizovaných."
-msgstr[1] "{0} poznámka aktualizovaná."
-msgstr[2] "{0} poznámky aktualizované."
+msgstr[0] "{0} ئىزاھ يېڭىلاندى."
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:299
 msgid "Your notes are now up to date."
-msgstr "Vaše poznámky sú teraz aktuálne."
+msgstr "ئىزاھلىرىڭىز ئەڭ يېڭى ھالەتتە."
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:303
 msgid "Synchronization Canceled"
-msgstr "Synchronizácia zrušená"
+msgstr "ماس قەدەملەشتۈرۈش ئەمەلدىن قالدۇرۇلدى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:304
 msgid "Synchronization was canceled"
-msgstr "Synchronizácia bola zrušená"
+msgstr "ماس قەدەملەشتۈرۈش ئەمەلدىن قالدۇرۇلدى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:305
 msgid "You canceled the synchronization.  You may close the window now."
-msgstr "Prerušili ste synchronizáciu.  Teraz môžete zavrieť okno."
+msgstr "ماس قەدەملەشتۈرۈش ئەمەلدىن قالدۇرۇلدى. بۇ كۆزنەكنى ئەمدى ئېتىۋەتسىڭىز بولىدۇ."
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:309
 msgid "Synchronization Not Configured"
-msgstr "Synchronizácia nenastavená"
+msgstr "ماس قەدەملەشتۈرۈش سەپلەنمىگەن"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:310
 msgid "Synchronization is not configured"
-msgstr "Synchronizácia nie je nastavená"
+msgstr "ماس قەدەملەشتۈرۈش سەپلەنمىگەن"
 
-# je potrebné zalomenie
-# PK: nahlasil so mto ako bug, neviem ci je to uz opravene
 #: ../Tomboy/Synchronization/SyncDialog.cs:311
 msgid "Please configure synchronization in the preferences dialog."
-msgstr ""
-"Nastavte si prosím synchronizáciu v dialógovom\n"
-"okne nastavení."
+msgstr "ماس قەدەملەشتۈرۈشنى مايىللىق سۆزلەشكۈسىدە سەپلەڭ."
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:315
 msgid "Synchronization Service Error"
-msgstr "Chyba synchronizačnej služby"
+msgstr "ماس قەدەملەشتۈرۈش ئەمەلدىن قالدۇرۇلدى مۇلازىمىتى خاتا"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:316
 msgid "Service error"
-msgstr "Chyba služby"
+msgstr "مۇلازىمەت خاتالىقى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:317
 msgid "Error connecting to the synchronization service.  Please try again."
-msgstr ""
-"Chyba pri pripájaní k synchronizačnej službe. Skúste to, prosím, znovu."
+msgstr "ماس قەدەملەشتۈرۈش مۇلازىمىتىگە باغلىنىۋاتقاندا خاتالىق كۆرۈلدى. قايتا سىناڭ."
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:334
 msgid "Deleted locally"
-msgstr "Odstránené miestne"
+msgstr "يەرلىكتىن ئۆچۈرۈلدى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:337
 msgid "Deleted from server"
-msgstr "Odstránené zo servera"
+msgstr "مۇلازىمەتتىن ئۆچۈرۈلدى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:340
 msgid "Updated"
-msgstr "Aktualizované"
+msgstr "يېڭىلاندى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:343
 msgid "Added"
-msgstr "Pridané"
+msgstr "قوشۇلدى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:346
 msgid "Uploaded changes to server"
-msgstr "Zmeny nahrané na server"
+msgstr "مۇلازىمېتىرغا يۈكلەنگەن ئۆزگىرىشلەر"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:349
 msgid "Uploaded new note to server"
-msgstr "Nová poznámka nahraná na server"
+msgstr "مۇلازىمېتىرغا يۈكلەنگەن يېڭى ئىزاھ"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:496
 msgid "Note Conflict"
-msgstr "Rozpor medzi poznámkami"
+msgstr "ئىزاھ توقۇنۇشى"
 
 #. Suggest renaming note by appending " (old)" to the existing title
 #: ../Tomboy/Synchronization/SyncDialog.cs:502
 msgid " (old)"
-msgstr " (stará)"
+msgstr " (كونا)"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:541
 msgid "Rename local note:"
-msgstr "Premenovať miestnu poznámku:"
+msgstr "يەرلىكتىكى ئىزاھ ئاتىنى ئۆزگەرتىش:"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:547
 msgid "Update links in referencing notes"
-msgstr "Aktualizovať odkazy v odkazujúcich poznámkach"
+msgstr "پايدىلىنىۋاتقان ئىزاھتىكى ئۇلانمىنى يېڭىلاش"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:554
 msgid "Overwrite local note"
-msgstr "Prepísať miestnu poznámku"
+msgstr "يەرلىكتىكى ئىزاھنى قاپلاش"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:558
 msgid "Always perform this action"
-msgstr "Vždy vykonať túto akciu"
+msgstr "بۇ مەشغۇلاتنى دائىم قىل"
 
 #. Set initial dialog text
 #: ../Tomboy/Synchronization/SyncDialog.cs:564
 msgid "Note conflict detected"
-msgstr "Bol zistený rozpor medzi poznámkami"
+msgstr "ئىزاھ توقۇنۇشى بايقالدى"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:565
 #, csharp-format
 msgid ""
 "The server version of \"{0}\" conflicts with your local note.  What do you "
 "want to do with your local note?"
-msgstr ""
-"Verzia na serveri \"{0}\" je v rozpore s miestnou poznámkou. Čo chcete "
-"spraviť s miestnou poznámkou?"
+msgstr "نەشرى \"{0}\" بولغان مۇلازىمېتىر يەرلىك ئىزاھ بىلەن توقۇنۇشۇپ قالدى. يەرلىك ئىزاھنى قانداق قىلىسىز؟"
 
 #: ../Tomboy/Synchronization/SyncManager.cs:161
 msgid "_Tools"
-msgstr "Nás_troje"
+msgstr "قوراللار(_T)"
 
 #: ../Tomboy/Synchronization/SyncUtils.cs:119
 #: ../Tomboy/Synchronization/SyncUtils.cs:163
 msgid "Could not enable FUSE"
-msgstr "Nepodarilo sa povoliť FUSE"
+msgstr "FUSE نى ئىناۋەتلىك قىلالمىدى"
 
 #: ../Tomboy/Synchronization/SyncUtils.cs:120
 #: ../Tomboy/Synchronization/SyncUtils.cs:164
 msgid ""
 "The FUSE module could not be loaded. Please check that it is installed "
 "properly and try again."
-msgstr ""
-"FUSE modul nemohol byť nahratý. Skontrolujte, prosím, či je správne "
-"nainštalovaný a skúste to znovu."
+msgstr "FUSE بۆلىكىنى ئوقۇيالمىدى. ئۇ توغرا ئورنىتىلغانمۇ تەكشۈرۈڭ ئاندىن قايتا سىناڭ."
 
 #: ../Tomboy/Synchronization/SyncUtils.cs:135
 msgid "Enable FUSE?"
-msgstr "Povoliť FUSE?"
+msgstr "FUSE نى قوزغاتسۇنمۇ؟"
 
 #. TODO: This message isn't entirely accurate.
 #. We should fix it.
@@ -2450,8 +2139,3 @@ msgid ""
 "startup.  Add \"modprobe fuse\" to /etc/init.d/boot.local or \"fuse\" to /"
 "etc/modules."
 msgstr ""
-"Vami zvolená ynchronizácia vyžaduje, aby ste mali nahratý modul FUSE.\n"
-"\n"
-"Ak nechcete dostávať túto výzvu, mali by ste pri štarte nahrať FUSE. "
-"Pridajte \"modprobe fuse\" do /etc/init.d/boot.local alebo \"fuse\" do /etc/"
-"modules."

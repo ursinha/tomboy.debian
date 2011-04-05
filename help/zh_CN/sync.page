@@ -38,11 +38,7 @@
  
  	<title>自动同步便笺</title>
  	
- 	<p>Tomboy can automatically sync your notes for you in the background.
- 	It is recommended that you configure how you handle note conflicts
- 	before enabling syncing automatically.  You can learn about handling
- 	note conflicts in the <link xref="sync-setup#conflict"/> 
- 	page.</p>
+ 	<p>阿帖便笺可以在后台自动同步便笺，建议您在启用自动同步前，配置好如何处理便笺冲突。您可以在 <link xref="sync-setup#conflicts"/> 页，学习配置和设置同步便笺。</p>
  	
  	<p>您可以通过在面板、任务栏、浮动面板的阿帖便笺图标上点右键，然后选 <gui>首选项</gui> 来打开 <gui>阿帖便笺首选项</gui>，再选 <gui>同步便笺</gui> 标签。也可以在 <gui>搜索全部便笺</gui> 对话框里，打开 <gui>首选项</gui>，点菜单 <guiseq><gui>编辑</gui><gui>首选项</gui></guiseq>。</p>
 	

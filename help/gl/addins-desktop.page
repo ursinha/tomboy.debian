@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="addins#manage"/>
-    <desc>Plugins to integrate with other applications and websites.</desc>
+    <desc>Complementos para integrar con outros aplicativos e sitios web.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -20,30 +20,21 @@
 
  <title>Engadidos de integración co escritorio</title>
 
-	<p>Desktop Integration addins interact with other applications
-	or websites and Tomboy.</p>
+	<p>Os complementos de integración do escritorio interactúan con outros aplicativos ou sitios web e con Tomboy.</p>
 
 <section id="bugzilla">
   <title>Ligazóns de Bugzilla</title>
-  <p>The Bugzilla Links addin allows you to drag a Bugzilla URL from your
-	browser into Tomboy.  After dragging a link into a Tomboy note, Tomboy
-	will display the bug number as an active link next to bug icon to show
-	you this is a Bugzilla link.  Clicking the link in the Tomboy note
-	will open a browser window taking you to that Bugzilla page.</p>
+  <p>O complemento Ligazóns de Bugzilla permítelle arrastrar un URL de Bugzilla desde o seu navegador até o Tomboy. Despois de arrastrar unha ligazón nunha nota de Tomboy, mostraráselle o número do bug como unha ligazón activo ao carón da icona do bug para indicar que é unha ligazón de Bugzilla. Ao premer na ligazón da nota de Tomboy abrirase un navegador levándolle a esa páxina de Bugzilla.</p>
 </section>
 
 <section id="evolution">
   <title>Integración co correo de Evolution</title>
-  <p>The Evolution Mail Integration plugin allows you to drag an email from Evolution
-	into a Tomboy note.  Your note will display an envelope icon and the 
-	subject of the note will be displayed as a link.  Clicking this link
-	will open the email using Evolution.  </p>
+  <p>O complemento de integración con Evolution permítelle arrastrar un correo desde Evolution até unha nota de Tomboy. A súa nota mostrará unha icona dun sobre e o asunto da nota mostraráselle como unha ligazón. Ao premer nesta ligazón abrirase o correo usando Evolution.</p>
 </section>
 
 <section id="printing">
   <title>Compatibilidade para impresión</title>
-  <p>This addin is enabled by default and allows you print notes out.
-	If you disable this addin you will no longer be able to print notes.</p>
+  <p>Este complemento actívase de maneira predeterminada e permítelle imprimir as súas notas. Se desactiva este complemento, non poderá imprimir as súas notas.</p>
 </section>
 
 

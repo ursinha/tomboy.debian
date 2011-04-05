@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#prefs"/>
-    <desc>Preferences for hotkeys and shortcut keys.</desc>
+    <desc>Opcje klawiszy skrótów.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -20,32 +20,17 @@
 
  <title>Klawisze skrótów</title>
 
-	<p>Hotkeys allow you to access your notes and Tomboy features from
-	anywhere, even when using other applications on your desktop.  Hotkeys
-	are activated by pressing multiple keys on your keyboard
-	together.
-	</p>
+	<p>Klawisze skrótów pozwalają na szybki dostęp do notatek i funkcji programu również z innych programów pulpitu. Klawisze skrótów uruchamia się naciskając równocześnie kilka klawiszy.</p>
 	
-	<p>You can enable Hotkeys by opening <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock and choose <gui>Preferences</gui> and then select
-	the <gui>Hotkeys</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>	
+	<p>Aby włączyć klawisze skrótów, należy otworzyć okno <gui>Preferencje</gui>, klikając prawym przyciskiem myszy na ikonę programu w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X, a następnie wybrać w oknie <gui>Preferencje</gui> kartę <gui>Klawisze skrótów</gui>. Okno <gui>Preferencje</gui> można także otworzyć w oknie <gui>"Przeszukiwanie notatek"</gui>, wybierając z menu opcje <guiseq><gui>Edycja</gui><gui>Preferencje</gui></guiseq>.</p>	
 	
-	<p>The actions available in Tomboy to be activated by hotkeys are:</p>
+	<p>Działania programu Tomboy, które można uruchomić za pomocą klawiszy skrótów:</p>
 	
 	<list>
-	  <item><p><gui>Show notes menu</gui>: <keyseq><key>Alt</key>
-	  <key>F12</key></keyseq></p></item>
-	  <item><p><gui>Open "Start Here"</gui>: <keyseq><key>Alt</key>
-	  <key>F11</key></keyseq></p></item>
-	  <item><p><gui>Create new note</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
-	  <item><p><gui>Open "Search All Notes"</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
+	  <item><p><gui>Wyświetlanie menu notatek</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
+	  <item><p><gui>Otwarcie notatki "Start"</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
+	  <item><p><gui>Utworzenie nowej notatki</gui>: Opcja domyślnie wyłączona. Aby utworzyć klawisz skrótu, należy wpisać w polu sekwencję klawiszy.</p></item>
+	  <item><p><gui>Otwarcie okna "Przeszukiwanie notatek"</gui>: Opcja domyślnie wyłączona. Aby utworzyć klawisz skrótu, należy wpisać w polu sekwencję klawiszy.</p></item>
 	</list>  
 	    
  </page>

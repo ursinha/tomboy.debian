@@ -30,7 +30,7 @@
 
 <section id="ssh">
   <title>SSH-Abgleichdienst</title>
-  <p>Der SSH-Abgleichdienst ermöglicht Ihnen den Abgleich Ihrer Notizen mit einem anderen Rechner über das SSH-Protokoll. Dieses Plugin ist standardmäßog deaktiviert. Um die Funktionsfähigkeit sicherzustellen, müssen Sie das <em>sshfs</em>-Paket Ihrer Distribution installieren. Weiterführende Informationen hierzu stellt dieses Hilfedokument nicht bereit.</p>
+  <p>Der SSH-Abgleichdienst ermöglicht Ihnen den Abgleich Ihrer Notizen mit einem anderen Rechner über das SSH-Protokoll. Dieses Plugin ist standardmäßig deaktiviert. Um die Funktionsfähigkeit sicherzustellen, müssen Sie das <em>sshfs</em>-Paket Ihrer Distribution installieren. Weiterführende Informationen hierzu stellt dieses Hilfedokument nicht bereit.</p>
 </section>
 
 <section id="webdav">

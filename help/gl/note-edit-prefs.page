@@ -20,7 +20,16 @@
 
  <title>Preferencias das notas</title>
  
- 	<p>Pode cambiar as configuracións predefinidas ao escribir as notas no Tomboy. Para cambiar as súas configuracións de notas abra as <gui>Preferencias de Tomboy</gui> usando o seu rato co botón dereito sobre a icona de Tomboy no seu panel, barra de tarefas ou doca e seleccione <gui>Preferencias</gui> e seleccione o separador <gui>Teclas rápidas</gui>. Tamén pode abrir <gui>Preferencias de Tomboy</gui> desde o diálogo <gui>Buscar en todas as notas</gui>. Desde o menú, seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
+ 	<p>You can change the default settings when typing notes
+ 	in Tomboy.  To change your note settings, open
+ 	 <gui>Tomboy Preferences</gui> by 
+	using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock, and choose <gui>Preferences</gui> and  select
+	the <gui>Editing</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
  
  <section id="spellcheck">
    <title>Revisión ortográfica</title>
@@ -40,73 +49,42 @@
 
  <section id="bullets">
    <title>Listas automáticas</title>
-   <p>Tomboy can create bulleted list automatically.  This option is enabled
-   by default and when you are editing a note, typing <key>*</key> followed
-   by the text and pressing <key>Enter</key> will automatically create a 
-   bulleted list.  After pressing <key>Enter</key>, the next line will start 
-   with a bullet too.
-   </p>
+   <p>Tomboy pode crear listas de viñetas automaticamente. Esta opción está activada de maneira predeterminada cando está editando unha nota. Escribindo <key>*</key> seguido do texto e premendo <key>Intro</key>, crearase automaticamente unha lista con viñetas. Despois de premer <key>Intro</key>, a seguinte liña tamén empezará con unha viñeta.</p>
    
-   <p>To disable auto-bulleted lists, use your mouse or the spacebar
-   to uncheck <gui>Enable auto-bulleted lists</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Para desactivar a lista de viñetas automáticas, use o rato ou a barra espaciadora para desmarcar <gui>Activar lista de viñetas automáticas</gui> na lapela <gui>Editando</gui> das preferenzas de Tomboy.</p>
    
  </section>
 
  <section id="customfont">
    <title>Tipos de fonte personalizadas</title>
-   <p>You can choose to use a font or font size in Tomboy different than the
-    default font of your desktop.  This feature is disabled by default.
-   </p>
+   <p>Pode elixir usar unha tipografía ou tamaño de tipografía en Tomboy diferente da tipografía predeterminada do seu escritorio. Esta característica está desactivada de maneira predeterminada.</p>
    
-   <p>To enable a different font, use your mouse or the spacebar
-   to check <gui>Use custom font</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Para activar un tipo de letra diferente, use o seu rato ou a barra espaciadora para marcar <gui>Usar tipo de letra personalizado</gui> na lapela <gui>Editarndo</gui> das Preferencias de Tomboy.</p>
 
-   <p>You can then press the font button and a font dialog box will appear,
-    allowing you to choose which font you wish to use, the style, such as bold
-    or italic, and the size of the font.  Press <key>Ok</key> to save your 
-    selection.</p>
+   <p>Pode premer o botón de tipo de letra e aparecerá un cadro de diálogo de tipos de letra, permitíndolle elixir que tipo de letra quere usar, o estilo, tal como negriña ou cursiva, e o tamaño do tipo de letra. Prema <key>Aceptar</key> para gardar a súa selección.</p>
    
  </section>
 
  <section id="renamelinks">
  
    <title>Renomear notas ligadas</title>
-   <p>Tomboy automatically creates links between notes when you type the
-   title of a saved note in your current note.  If you try to rename a note
-   that has links to it in other notes in Tomboy, you can choose the default
-   behavior Tomboy should use when detecting a change.  Your options include:
-   </p>
+   <p>Tomboy crea automaticamente ligazóns entre as notas cando escribe o título dunha nota na súa nota actual. Se tenta renomear unha nota ligada a outras notas en Tomboy, pode seleccionar o comportamento predeterminado de que Tomboy debería usar ao detectar o cambio. As súas opcións inclúen:</p>
    
    <list>
-     <item><p><gui>Ask me what to do</gui>: Tomboy will prompt you each
-     time it detects a change with one of the below options.</p></item>
-     <item><p><gui>Never rename links</gui>: Tomboy will leave the other
-     notes as they are and unlink the notes.</p></item>
-     <item><p><gui>Always rename links</gui>: Tomboy will automatically
-     rename all the links in other notes to the note you have renamed.
-     </p></item>
+     <item><p><gui>Preguntarme que facer</gui>: Tomboy preguntaralle cada vez que detecte un cambio nalgunha das seguintes opcións:</p></item>
+     <item><p><gui>Non renomear nunca ligazóns</gui>: Tomboy deixará as outras notas como están e desligaráas.</p></item>
+     <item><p><gui>Sempre renomear as ligazóns</gui>: Tomboy renomeará automaticamente todas as ligazóns doutras notas que apunten á nota que renomeou.</p></item>
    </list>
    
-   <p>Choose one of the above options from the drop down box to the 
-   right of <gui>When renaming a linked note:</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Elixa unha das opcións desde a lista despregábel á dereita <gui>Ao renomear unha nota ligada:</gui> na lapela <gui>Editando</gui> das Preferencias de Tomboy.</p>
    
  </section>
 
 <section id="newnotetemplate">
   <title>Crear un modelo de nota nova</title>
-  <p>You can create a new template that is displayed every time you create 
-  a new note.</p>
+  <p>Pode crear un novo modelo que se mostrará cada vez que crea unha nova nota.</p>
   
-  <p>Press the <gui>Open New Note Template</gui> button in the 
-  <gui>Editing</gui> tab of Tomboy's Preferences. A new template will be
-  displayed that looks similar to a Tomboy Note.  Replace the <gui>Describe
-  your new note here.</gui> text in the note with the text that should be the
-  new template.  Close the note to complete creating a new template.
-  Each time you create a new note that template will be displayed in the new 
-  note.</p>
+  <p>Prema o botón <gui>Abrir un novo modelo de nota</gui> na lapela <gui>Editando</gui> das Preferencias de Tomboy. Un novo modelo mostrarase que semella similar a unha Nota de Tomboy. Substitúa o texto <gui>Describa a súa nota aquí.</gui> na nota co texto que debería ser un novo modelo. Peche a nota para completar a creación do novo modelo. Cada vez que cree unha nova nota dito modelo mostrarase na mesma.</p>
    
 </section>
 

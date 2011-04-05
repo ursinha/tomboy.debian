@@ -20,7 +20,16 @@
 
  <title>Προτιμήσεις σημειώσεων</title>
  
- 	<p>Μπορείτε να τροποποιήσετε τις προεπιλεγμένες ρυθμίσεις κατά την πληκτρολόγηση σημειώσεων στο Tomboy. Για να το κάνετε αυτό, ανοίξτε τις <gui>Προτιμήσεις Tomboy</gui> χρησιμοποιώντας το δεξί κλικ του ποντικιού σας στο εικονίδιο του Tomboy στον πίνακα εργασίας σας, στη γραμμή εργασίων ή στο dock και επιλέξτε <gui>Προτιμήσεις</gui>, ύστερα επιλέξτε την καρτέλα <gui>Πλήκτρα ενεργειών</gui>. Μπορείτε επίσης να ανοίξετε τις <gui>Προτιμήσεις Tomboy</gui> από το διάλογο <gui>Αναζήτηση όλων των σημειώσεων</gui>. Από το μενού, επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui></guiseq>.</p>
+ 	<p>You can change the default settings when typing notes
+ 	in Tomboy.  To change your note settings, open
+ 	 <gui>Tomboy Preferences</gui> by 
+	using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock, and choose <gui>Preferences</gui> and  select
+	the <gui>Editing</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
  
  <section id="spellcheck">
    <title>Ορθογραφικός έλεγχος</title>
@@ -50,9 +59,7 @@
    <title>Προσαρμοσμένες γραμματοσειρές</title>
    <p>Μπορείτε να επιλέξετε να χρησιμοποιήσετε μία γραμματοσειρά ή μέγεθος γραμαμτοσειράς στο Tomboy που να είναι διαφορετική από την προεπιλεγμένη γραμματοσειρά της επιφάνειας εργασίας σας. Η λειτουργία αυτή είναι εξ ορισμού απενεργοποιημένη.</p>
    
-   <p>To enable a different font, use your mouse or the spacebar
-   to check <gui>Use custom font</gui> in the <gui>Editing</gui>
-   tab of Tomboy's Preferences.</p>
+   <p>Για να ενεργοποιήσετε κάποια άλλη γραμματοσειρά, χρησιμοποιήστε το ποντίκι σας ή το πλήκτρο κενού και επιλέξτε <gui>Χρήση προσαρμοσμένης γραμματοσειράς</gui> στην καρτέλα <gui>Επεξεργασία</gui> των πριτμήσεων του Tomboy.</p>
 
    <p>Μπορείτε ύστερα να πιέσετε το πλήκτρο γραμματοσειράς και θα ανοίξει ένα πεδίο διαλόγου γραμματοσειράς, που σας επιτρέπει να επιλέξετε ποια γραματοσειρά επιθυμείτε να χρησιμοποιείτε, όπως έντονη ή πλάγια, και το μέγεθος της γραμαμτοσειράς. Πιέστε το <key>Εντάξει</key> για να αποθηκεύσετε την επιλογή σας.</p>
    

@@ -19,31 +19,31 @@
   <title>Poznámky Tomboy</title>
 
   <section id="notes" style="2column">
-    <title>Managing Notes</title>
+    <title>Správa poznámek</title>
   </section>
 
   <section id="notebooks" style="2column">
-    <title>Organizing Notes</title>
+    <title>Uspořádání poznámek</title>
   </section>
   
   <section id="sync" style="2column">
-    <title>Syncing Notes</title>
+    <title>Synchronizace poznámek</title>
   </section>  
   
   <section id="prefs" style="2column">
-	<title>Tomboy Preferences</title>
+	<title>Předvolby aplikace Tomboy</title>
   </section>
 
   <section id="advanced" style="2column">
-    <title>Advanced Actions</title>
+    <title>Pokročilé akce</title>
   </section>
 
   <section id="problems">
-    <title>Common Problems</title>
+    <title>Běžné problémy</title>
   </section>
 
   <section id="new">
-    <title>What's New</title>
+    <title>Co je nového</title>
   </section>
 
 </page>

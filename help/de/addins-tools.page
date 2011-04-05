@@ -20,9 +20,7 @@
 
  <title>Tomboy-Werkzeuge-Addins</title>
 
- <section id="desc">
-	<title>Addins fügen zusätzliche Funktionalität zu Ihren Tomboy-Notizen hinzu.</title>
-</section>
+	<p>Addins fügen zusätzliche Funktionalität zu Ihren Tomboy-Notizen hinzu.</p>
 
   <section id="backlinks">
     <title>Backlinks</title>
@@ -49,7 +47,7 @@
 
 <section id="watcher">
   <title>Notizordner-Überwachung</title>
-  <p>Das Addin zur Notizordner-Überwachung überwacht den Ordner, in dem Ihre Tomboy-Notizen gespeichert sind. Falls das Addin Änderungen an Ihren Notizen feststellt, werden diese Änderungen wirksam und in Ihren Notizen dargestellt. Dieses Addin wird üblicherweise von Abgleichdiensten von Drittanbietern wie Dropbox genutzt. Informationen zur Nutzung solcher Dienste werden von diesem Hilfedokument nicht bereitsgestellt.</p>
+  <p>Das Addin zur Notizordner-Überwachung überwacht den Ordner, in dem Ihre Tomboy-Notizen gespeichert sind. Falls das Addin Änderungen an Ihren Notizen feststellt, werden diese Änderungen wirksam und in Ihren Notizen dargestellt. Dieses Addin wird üblicherweise von Abgleichdiensten von Drittanbietern wie Dropbox genutzt. Informationen zur Nutzung solcher Dienste werden von diesem Hilfedokument nicht bereitgestellt.</p>
 </section>
 
  </page>

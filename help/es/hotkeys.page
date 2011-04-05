@@ -22,7 +22,7 @@
 
 	<p>Las teclas rápidas le permiten acceder a sus notas y a las características de Tomboy desde cualquier lugar, incluso usando otras aplicaciones en su escritorio. Las teclas rápidas se activan pulsando múltiples teclas juntas en su teclado.</p>
 	
-	<p>Puede activar las teclas rápidas abriendo las <gui>Preferencias de Tomboy</gui> usando su ratón para pulsar con el botón derecho en el icono de Tomboy en su panel, barra de tareas o «dock», elija <gui>Preferencias</gui> y seleccione la solapa <gui>Teclas rápidas</gui>. También puede abrir las <gui>Preferencias de Tomboy</gui> desde el diálogo <gui>Buscar en todas las notas</gui>. Desde el menú, elija <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>	
+	<p>Puede activar las teclas rápidas abriendo las <gui>Preferencias de Tomboy</gui> usando su ratón para pulsar con el botón derecho en el icono de Tomboy en su panel, barra de tareas o «dock», elija <gui>Preferencias</gui> y seleccione la pestaña <gui>Teclas rápidas</gui>. También puede abrir las <gui>Preferencias de Tomboy</gui> desde el diálogo <gui>Buscar en todas las notas</gui>. Desde el menú, elija <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>	
 	
 	<p>Las acciones disponibles en Tomboy para activarse con teclas rápidas son:</p>
 	

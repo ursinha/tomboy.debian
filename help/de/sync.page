@@ -38,15 +38,11 @@
  
  	<title>Ihre Notizen automatisch abgleichen</title>
  	
- 	<p>Tomboy can automatically sync your notes for you in the background.
- 	It is recommended that you configure how you handle note conflicts
- 	before enabling syncing automatically.  You can learn about handling
- 	note conflicts in the <link xref="sync-setup#conflict"/> 
- 	page.</p>
+ 	<p>Tomboy kann Ihre Notizen automatisch im Hintergrund abgleichen. Es ist empfehlenswert, zunächst das Verhalten bei Notizkonflikten einzustellen, bevor Sie erstmals einen solchen automatischen Abgleich vornehmen. Weitere Informationen hierzu finden Sie auf der Seite <link xref="sync-setup#conflict"/>.</p>
  	
  	<p>Um den Abgleich zu aktivieren, öffnen Sie die <gui>Tomboy-Einstellungen</gui> durch einen Klick mit der rechten Maustaste auf das Tomboy-Symbol in Ihrem Panel, Ihrer Taskbar oder Ihrem Dock und wählen Sie <gui>Einstellungen</gui>. Wählen Sie anschließend den Reiter <gui>Abgleich</gui>. Sie können die <gui>Tomboy-Einstellungen</gui> auch aus dem Dialog <gui>Alle Notizen durchsuchen</gui> heraus öffnen. Wählen Sie hierzu <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui></guiseq>.</p>
 	
-	<p>Um den automatischen Abgleich einzuschalten, aktivieren Sie das Ankreuzfeld <gui>Automatisch im Hintergrund abgleichen alle … Minuten</gui> am unteren Rand des Reiters »Abgleich«.</p>
+	<p>Um den automatischen Abgleich einzuschalten, aktivieren Sie das Ankreuzfeld <gui>Automatisch im Hintergrund abgleichen alle … Minuten</gui> am unteren Rand des Reiters <gui>Abgleich</gui>.</p>
 	
 	<p>Die Vorgabeoption für Tomboy ist, den automatischen Abgleich alle 10 Minuten auszuführen. Um anzupassen, wie oft der Abgleich ausgeführt werden soll, geben Sie die Anzahl der Minuten im Dialog ein oder benutzen Sie die Maus, um die Zeitspanne zu vergrößern oder zu verkleinern.</p>
 	
