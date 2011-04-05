@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="addins#manage"/>
-    <desc>Plugins to integrate with other applications and websites.</desc>
+    <desc>Dodatki integracji z innymi programami i stronami internetowymi.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,32 +18,23 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Desktop Integration Addins</title>
+ <title>Dodatki integracji z pulpitem</title>
 
-	<p>Desktop Integration addins interact with other applications
-	or websites and Tomboy.</p>
+	<p>Dodatki integracji z pulpitem współdziałają z innymi programami lub stronami internetowymi i programem Tomboy.</p>
 
 <section id="bugzilla">
   <title>Bugzilla Links</title>
-  <p>The Bugzilla Links addin allows you to drag a Bugzilla URL from your
-	browser into Tomboy.  After dragging a link into a Tomboy note, Tomboy
-	will display the bug number as an active link next to bug icon to show
-	you this is a Bugzilla link.  Clicking the link in the Tomboy note
-	will open a browser window taking you to that Bugzilla page.</p>
+  <p>Dodatek Bugzilla Links umożliwia użytkownikowi przeciąganie adresu URL Bugzilli z przeglądarki do programu Tomboy. Po przeciągnięciu adresu numer błędu zostanie wyświetlony jako aktywny odnośnik. Kliknięcie adresu otworzy odpowiednią stronę serwisu Bugzilla w przeglądarce użytkownika.</p>
 </section>
 
 <section id="evolution">
   <title>Evolution Mail Integration</title>
-  <p>The Evolution Mail Integration plugin allows you to drag an email from Evolution
-	into a Tomboy note.  Your note will display an envelope icon and the 
-	subject of the note will be displayed as a link.  Clicking this link
-	will open the email using Evolution.  </p>
+  <p>Dodatek Evolution Mail Integration umożliwia użytkownikowi przeciąganie wiadomości e-mail do notatki programu Tomboy. W notatce pojawi się ikona koperty, a nazwa notatki będzie odnośnikiem, którego kliknięcie otworzy wiadomość w programie Evolution.</p>
 </section>
 
 <section id="printing">
-  <title>Printing Support</title>
-  <p>This addin is enabled by default and allows you print notes out.
-	If you disable this addin you will no longer be able to print notes.</p>
+  <title>Obsługa drukowania</title>
+  <p>Dodatek umożliwia użytkownikowi drukowanie notatek i jest domyślnie włączony. Jeśli dodatek zostanie wyłączony, opcja drukowania notatek będzie niedostępna.</p>
 </section>
 
 

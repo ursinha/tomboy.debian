@@ -27,7 +27,7 @@
 
 <section id="underline">
   <title>Unterstreichen-Addin</title>
-  <p>Das Unterstreichen-Addin ermöglicht Ihnen das Unterstreichen eines bestimmten Texts in Ihrer Notiz mit Hilfe des <gui>Text</gui>-Symbols in der Werkzeugleiste einer Notiz. Dieses Addin ist standardmäßig deaktiviert. Um es zu aktivieren, klicken Sie auf den <gui>Aktivieren</gui>-Knopf. Markieren Sie den Text, den Sie unterstreichen wollen, klicken Sie auf das <gui>Text</gui>-Symbol in der Werkzeugleiste der Notiz und wählen Sie <gui>Understreichen</gui> oder drücken Sie <keyseq><key>Strg</key><key>U</key></keyseq>.</p>
+  <p>Das Unterstreichen-Addin ermöglicht Ihnen das Unterstreichen eines bestimmten Texts in Ihrer Notiz mit Hilfe des <gui>Text</gui>-Symbols in der Werkzeugleiste einer Notiz. Dieses Addin ist standardmäßig deaktiviert. Um es zu aktivieren, klicken Sie auf den <gui>Aktivieren</gui>-Knopf. Markieren Sie den Text, den Sie unterstreichen wollen, klicken Sie auf das <gui>Text</gui>-Symbol in der Werkzeugleiste der Notiz und wählen Sie <gui>Unterstreichen</gui> oder drücken Sie <keyseq><key>Strg</key><key>U</key></keyseq>.</p>
 </section>
 
  </page>

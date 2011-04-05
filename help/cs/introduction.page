@@ -4,9 +4,7 @@
   <info>
     <link type="guide" xref="index"/>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
-    <desc>
-      Introduction to <app>Tomboy Notes</app>.
-    </desc>
+    <desc>Úvod do <app>Poznámek Tomboy</app>.</desc>
     <credit type="author">
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
@@ -22,26 +20,15 @@
 
   <title>Úvod</title>
 
-  <p>
-    <app>Tomboy</app> is a note taking application for the GNOME Desktop, Microsoft Windows, and Mac OS X.
-    <app>Tomboy</app> is easy to use, and helps you organize the ideas and information you work
-    with everyday.
-  </p>
-  <p>
-    <app>Tomboy</app> includes features that help you better organize and remember your information and
-    allows you to link your notes together to make it easier to find and sort your information.  You can
-    also organize multiple notes in a notebook to make grouping notes together easier.
-  </p>
-  <p>
-    You can also sync your notes across multiple computers, making it easy to take your notes with you 
-    wherever you are.
-  </p>
+  <p><app>Tomboy</app> je aplikace na poznámky na pracovní ploše pro GNOME, Microsoft Windows a Mac OS X. Je snadno použitelná a pomůže vám uspořádat si své nápady a informace, se kterými pracujete dennodenně.</p>
+  <p><app>Tomboy</app> obsahuje funkce, které vám pomohou si lépe uspořádat a zapamatovat informace a umožní vám provázat poznámky mezi sebou, abyste informace snadněji nalezli. Poznámky si může uspořádat do sešitu, což slouží k jejich jednoduchému seskupení.</p>
+  <p>Poznámky můžete rovněž synchronizovat mezi více počítači, takže je máte snadno dostupné kdekoliv se nacházíte.</p>
 
   <figure>
-    <title><gui>Tomboy Notes</gui> window</title>
-    <desc><app>Tomboy Notes</app> main window</desc>
+    <title>Okno aplikace <gui>Poznámky Tomboy</gui></title>
+    <desc>Hlavní okno aplikace <app>Poznámky Tomboy</app></desc>
     <media type="image" src="figures/tomboy.png" mime="image/png" style="right">
-      <p><app>Tomboy</app> default note.</p>
+      <p>Výchozí poznámka <app>Tomboy</app>.</p>
     </media>
   </figure>
 

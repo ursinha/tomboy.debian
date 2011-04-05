@@ -24,9 +24,9 @@
 
 	<title>Activar sincronización</title>
 	
-	<p><app>Tomboy</app> puede sincronizar sus notas entre varios equipos. Esto le permite tener un respaldo de sus notas en otros equipos o comparar sus notas entre otros equipos de tal forma que siempre tenga acceso a ellas.</p>
+	<p><app>Tomboy</app> puede sincronizar sus notas entre varios equipos. Esto le permite tener un respaldo de sus notas en otros equipos o compartir sus notas entre otros equipos de tal forma que siempre tenga acceso a ellas.</p>
 	
-	<p>Puede activar las sincronización abriendo las <gui>Preferencias de Tomboy</gui> usando su ratón para pulsar con el botón derecho en el icono de Tomboy en su panel, barra de tareas o «dock», elija <gui>Preferencias</gui> y seleccione la solapa <gui>Sincronización</gui>. También puede abrir las <gui>Preferencias de Tomboy</gui> desde el diálogo <gui>Buscar en todas las notas</gui>. Desde el menú, elija <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
+	<p>Puede activar las sincronización abriendo las <gui>Preferencias de Tomboy</gui> usando su ratón para pulsar con el botón derecho en el icono de Tomboy en su panel, barra de tareas o «dock», elija <gui>Preferencias</gui> y seleccione la pestaña <gui>Sincronización</gui>. También puede abrir las <gui>Preferencias de Tomboy</gui> desde el diálogo <gui>Buscar en todas las notas</gui>. Desde el menú, elija <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
 
  </section>
 
@@ -72,7 +72,7 @@
 	
 	<p>Se recomienda usar un tercer equipo o servidor como el equipo remoto en el que almacenar las notas sincronizadas que se van a sincronizar entre múltiples equipos.</p>
 
-	<p>Abra <app>Contraseñas y claves de cifrado</app> eligiendo <guiseq><gui>Aplicaciones</gui><gui>Accesorios</gui><gui>Contraseñas y claves de cifrado</gui></guiseq>. Pulse sobre su clave y elija en el menú <guiseq><gui>Remota</gui><gui>Configurar clave para Shell segura...</gui></guiseq> e introduzca el nombre de dominio o dirección IP del equipo con el que quiere sincronizar en <gui>Equipo</gui>. Introduzca el nombre de usuario del equipo remoto en <gui>Equipo</gui> y pulse <gui>Configurar</gui>. Cuando se le pregunte, introduzca la contraseña y habrá finalizado la configuración de su clave.</p>
+	<p>Abra <app>Contraseñas y claves de cifrado</app> eligiendo <guiseq><gui>Aplicaciones</gui><gui>Accesorios</gui><gui>Contraseñas y claves de cifrado</gui></guiseq>. Pulse sobre su clave y elija en el menú <guiseq><gui>Remota</gui><gui>Configurar clave para Shell segura...</gui></guiseq> e introduzca el nombre de dominio o dirección IP del equipo con el que quiere sincronizar en <gui>Equipo</gui>. Introduzca el nombre de usuario del equipo remoto en <gui>Usuario</gui> y pulse <gui>Configurar</gui>. Cuando se le pregunte, introduzca la contraseña y habrá finalizado la configuración de su clave.</p>
 	
 	<p>En Tomboy, elija <gui>SSH</gui> de la lista desplegable <gui>Servicio</gui>. Rellene la información para su servidor y después pulse el botón <gui>Guardar</gui>. Ahora está listo para sincronizar sus notas. La opción <gui>Ruta de la carpeta</gui>, aunque opcional, debería apuntar a una carpeta vacía. Ahora está listo para sincronizar sus notas.</p>
 

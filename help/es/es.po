@@ -3,13 +3,13 @@
 #
 # Claudio Saavedra <csaavedra@alumnos.utalca.cl>, 2007.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2010.
-# Jorge González <jorgegonz@svn.gnome.org>, 2006, 2007, 2008, 2009, 2010.
+# Jorge González <jorgegonz@svn.gnome.org>, 2006, 2007, 2008, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tomboy.help.master\n"
-"POT-Creation-Date: 2010-10-22 22:40+0000\n"
-"PO-Revision-Date: 2010-10-24 13:12+0200\n"
+"POT-Creation-Date: 2011-04-02 14:54+0000\n"
+"PO-Revision-Date: 2011-04-02 20:49+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -87,7 +87,6 @@ msgstr ""
 "de tareas de Windows."
 
 #: C/sync-setup.page:8(desc)
-#| msgid "Configure note synchronization"
 msgid "Configure Tomboy to synchronize your notes."
 msgstr "Configurar Tomboy para sincronizar sus notas"
 
@@ -102,12 +101,12 @@ msgstr "Activar sincronización"
 #: C/sync-setup.page:29(p)
 msgid ""
 "<app>Tomboy</app> can synchronize your notes between multiple computers. "
-"This allows you to have a backup of your notes on another computer of share "
-"your notes between computers so you always have access to your notes."
+"This allows you to have a backup of your notes on another computer or to "
+"share your notes between computers so you always have access to your notes."
 msgstr ""
 "<app>Tomboy</app> puede sincronizar sus notas entre varios equipos. Esto le "
-"permite tener un respaldo de sus notas en otros equipos o comparar sus notas "
-"entre otros equipos de tal forma que siempre tenga acceso a ellas."
+"permite tener un respaldo de sus notas en otros equipos o compartir sus "
+"notas entre otros equipos de tal forma que siempre tenga acceso a ellas."
 
 #: C/sync-setup.page:35(p) C/sync.page:54(p)
 msgid ""
@@ -121,13 +120,12 @@ msgstr ""
 "Puede activar las sincronización abriendo las <gui>Preferencias de Tomboy</"
 "gui> usando su ratón para pulsar con el botón derecho en el icono de Tomboy "
 "en su panel, barra de tareas o «dock», elija <gui>Preferencias</gui> y "
-"seleccione la solapa <gui>Sincronización</gui>. También puede abrir las "
+"seleccione la pestaña <gui>Sincronización</gui>. También puede abrir las "
 "<gui>Preferencias de Tomboy</gui> desde el diálogo <gui>Buscar en todas las "
 "notas</gui>. Desde el menú, elija <guiseq><gui>Editar</"
 "gui><gui>Preferencias</gui></guiseq>."
 
 #: C/sync-setup.page:48(title)
-#| msgid "Managing Notes"
 msgid "Managing Note Conflict"
 msgstr "Gestionar conflictos de notas"
 
@@ -212,11 +210,6 @@ msgstr ""
 "instalado el Depósito de claves de GNOME."
 
 #: C/sync-setup.page:99(p)
-#| msgid ""
-#| "Choose <guimenuitem>WebDAV</guimenuitem> from the <guilabel>Service</"
-#| "guilabel> drop-down list. Fill in the connection information for your "
-#| "server, and then select the <guibutton>Save</guibutton> button. You are "
-#| "now ready to synchronize your notes."
 msgid ""
 "Choose <gui>WebDAV</gui> from the <gui>Service</gui> drop-down list. Fill in "
 "the connection information for your server, and then select the <gui>Save</"
@@ -231,21 +224,13 @@ msgid "Configure Sync using SSH"
 msgstr "Configurar sincronización usando SSH"
 
 #: C/sync-setup.page:110(p)
-#| msgid ""
-#| "In order to synchronize your notes with an SSH server, you will need the "
-#| "sshfs FUSE file system installed. Follow the documentation for your "
-#| "operating system to set up FUSE for your user. You will also need an SSH "
-#| "key for your SSH server account, which should be added to a running SSH "
-#| "daemon. This can be done using the GNOME <application>Seahorse</"
-#| "application> application, which is also known as <application>Passwords "
-#| "and Encryption Keys</application>."
 msgid ""
 "In order to synchronize your notes with an SSH server, you will need the "
-"FUSE file system, also called <app>sshfs</app>installed. Follow the "
+"FUSE file system, also called <app>sshfs</app> installed. Follow the "
 "documentation for your operating system to set up FUSE for your user. You "
-"will also need an SSH key for your SSH server account, whi<app>GNOME "
-"Seahorse</app> application, which is also known as <app>Passwords and "
-"Encryption Keys</app>."
+"will also need an SSH key for your SSH server account that can be provided "
+"by the <app>GNOME Seahorse</app> application, which is also known as "
+"<app>Passwords and Encryption Keys</app>."
 msgstr ""
 "Para poder sincronizar sus notas contra un servidor SSH debe tener el "
 "sistema de archivos <app>sshfs</app> FUSE instalado. Siga la documentación "
@@ -257,7 +242,7 @@ msgstr ""
 #: C/sync-setup.page:118(p)
 msgid ""
 "It is recommended to use a third computer or server as the remote computer "
-"to store the syncronized notes that are to be synced between multiple "
+"to store the synchronized notes that are to be synced between multiple "
 "computers."
 msgstr ""
 "Se recomienda usar un tercer equipo o servidor como el equipo remoto en el "
@@ -265,17 +250,6 @@ msgstr ""
 "múltiples equipos."
 
 #: C/sync-setup.page:122(p)
-#| msgid ""
-#| "Open <application>Passwords and Encryption Keys</application> by choosing "
-#| "<menuchoice><guimenu>Applications</guimenu><guimenu>Accessories</"
-#| "guimenu><guimenu>Passwords and Encryption Keys</guimenu></menuchoice>. "
-#| "Click on your key, and from the menu choose <menuchoice><guimenu>Remote</"
-#| "guimenu><guimenu>Configure Key for Secure Shell...</guimenu></menuchoice> "
-#| "and enter the domain name or IP address of the computer you want to sync "
-#| "to in <guimenu>Computer Name</guimenu>. Enter the username of the remote "
-#| "computer in <guimenu>Computer Name:</guimenu> and click <guimenu>Set Up</"
-#| "guimenu>. When prompted, enter the password, and setting up your key will "
-#| "be completed."
 msgid ""
 "Open <app>Passwords and Encryption Keys</app> by choosing "
 "<guiseq><gui>Applications</gui><gui>Accessories</gui><gui>Passwords and "
@@ -283,8 +257,8 @@ msgid ""
 "<guiseq><gui>Remote</gui><gui>Configure Key for Secure Shell</gui></guiseq> "
 "and enter the domain name or IP address of the computer you want to sync to "
 "in <gui>Computer Name</gui>. Enter the username of the remote computer in "
-"<gui>Computer Name:</gui> and press <gui>Set Up</gui>. When prompted, enter "
-"the password and setting up your key will be completed."
+"<gui>Login Name:</gui> and press <gui>Set Up</gui>. When prompted, enter the "
+"password and setting up your key will be completed."
 msgstr ""
 "Abra <app>Contraseñas y claves de cifrado</app> eligiendo "
 "<guiseq><gui>Aplicaciones</gui><gui>Accesorios</gui><gui>Contraseñas y "
@@ -292,18 +266,11 @@ msgstr ""
 "<guiseq><gui>Remota</gui><gui>Configurar clave para Shell segura...</gui></"
 "guiseq> e introduzca el nombre de dominio o dirección IP del equipo con el "
 "que quiere sincronizar en <gui>Equipo</gui>. Introduzca el nombre de usuario "
-"del equipo remoto en <gui>Equipo</gui> y pulse <gui>Configurar</gui>. Cuando "
-"se le pregunte, introduzca la contraseña y habrá finalizado la configuración "
-"de su clave."
+"del equipo remoto en <gui>Usuario</gui> y pulse <gui>Configurar</gui>. "
+"Cuando se le pregunte, introduzca la contraseña y habrá finalizado la "
+"configuración de su clave."
 
 #: C/sync-setup.page:134(p)
-#| msgid ""
-#| "In <application>Tomboy</application>, choose <guimenuitem>SSH</"
-#| "guimenuitem> from the <guilabel>Service</guilabel> drop-down list. Fill "
-#| "in the connection information for your server, and then select the "
-#| "<guibutton>Save</guibutton> button. The <guimenuitem>Folder Path</"
-#| "guimenuitem>, while optional, should point at an empty folder. You are "
-#| "now ready to synchronize your notes."
 msgid ""
 "In Tomboy, choose <gui>SSH</gui> from the <gui>Service</gui> drop-down list. "
 "Fill in the connection information for your server, and select the "
@@ -317,7 +284,6 @@ msgstr ""
 "carpeta vacía. Ahora está listo para sincronizar sus notas."
 
 #: C/sync-setup.page:144(title)
-#| msgid "Configure note synchronization service (Local Folder)"
 msgid "Configure Sync to a local folder"
 msgstr "Configurar la sincronización a una carpeta local"
 
@@ -332,12 +298,6 @@ msgstr ""
 "servidor remoto."
 
 #: C/sync-setup.page:151(p)
-#| msgid ""
-#| "Choose <guimenuitem>Local Folder</guimenuitem> from the "
-#| "<guilabel>Service</guilabel> drop-down list. Choose the desired "
-#| "synchronization <guilabel>Folder Path</guilabel>, and then select the "
-#| "<guibutton>Save</guibutton> button. You are now ready to synchronize your "
-#| "notes."
 msgid ""
 "Choose Local Folder from the <gui>Service</gui> drop-down list. Choose the "
 "desired synchronization <gui>Folder Path</gui> and then click the <gui>Save</"
@@ -393,12 +353,6 @@ msgid "Sync Your Notes Automatically"
 msgstr "Sincronizar sus notas automáticamente"
 
 #: C/sync.page:48(p)
-#| msgid ""
-#| "Tomboy can automatically sync your notes for you in the background. It is "
-#| "recommended that you configure how you handle note conflicts before "
-#| "enabling syncing automatically. You can learn about handling note "
-#| "conflicts in the <link xref=\"sync-setup#conflict\"/> Configure and Setup "
-#| "Sync page."
 msgid ""
 "Tomboy can automatically sync your notes for you in the background. It is "
 "recommended that you configure how you handle note conflicts before enabling "
@@ -418,7 +372,7 @@ msgid ""
 msgstr ""
 "Para activar la sincronización automática, marque la casilla "
 "<gui>Sincronizar automáticamente en segundo plano cada x minutos</gui> en la "
-"parte inferior de la solapa Sincronización."
+"parte inferior de la pestaña Sincronización."
 
 #: C/sync.page:66(p)
 msgid ""
@@ -515,11 +469,19 @@ msgid "Note preferences"
 msgstr "Preferencias de las notas"
 
 #: C/note-edit-prefs.page:25(p)
+#| msgid ""
+#| "You can change the default settings when typing notes in Tomboy. To "
+#| "change your note settings, open <gui>Tomboy Preferences</gui> by using "
+#| "your mouse to right click on the Tomboy icon in your panel, taskbar or "
+#| "dock, and choose <gui>Preferences</gui> and select the <gui>Hotkeys</gui> "
+#| "tab. You can also open <gui> Tomboy Preferences</gui> from the "
+#| "<gui>Search All Notes</gui> dialog. From the menu, choose "
+#| "<guiseq><gui>Edit</gui><gui>Preferences</gui></guiseq>."
 msgid ""
 "You can change the default settings when typing notes in Tomboy. To change "
 "your note settings, open <gui>Tomboy Preferences</gui> by using your mouse "
 "to right click on the Tomboy icon in your panel, taskbar or dock, and choose "
-"<gui>Preferences</gui> and select the <gui>Hotkeys</gui> tab. You can also "
+"<gui>Preferences</gui> and select the <gui>Editing</gui> tab. You can also "
 "open <gui> Tomboy Preferences</gui> from the <gui>Search All Notes</gui> "
 "dialog. From the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui></"
 "guiseq>."
@@ -528,7 +490,7 @@ msgstr ""
 "Para cambiar la configuración de su nota, abra las <gui>Preferencias de "
 "Tomboy</gui> usando su ratón para pulsar con el botón derecho en el icono de "
 "Tomboy en su panel, barra de tareas o «dock», elija <gui>Preferencias</gui> "
-"y seleccione la solapa <gui>Teclas rápidas</gui>. También puede abrir las "
+"y seleccione la pestaña <gui>Edición</gui>. También puede abrir las "
 "<gui>Preferencias de Tomboy</gui> desde el diálogo <gui>Buscar en todas las "
 "notas</gui>. Desde el menú, elija <guiseq><gui>Editar</"
 "gui><gui>Preferencias</gui></guiseq>."
@@ -557,7 +519,7 @@ msgid ""
 msgstr ""
 "Para desactivar la corrección automática de ortografía, use su ratón o la "
 "barra espaciadora para desmarcar <gui>Corrección ortográfica al escribir</"
-"gui> en la solapa <gui>Editando</gui> de las preferencias de Tomboy."
+"gui> en la pestaña <gui>Editando</gui> de las preferencias de Tomboy."
 
 #: C/note-edit-prefs.page:51(title)
 msgid "WikiWords"
@@ -583,7 +545,7 @@ msgid ""
 msgstr ""
 "Las Wikipalabras están desactivadas de manera predeterminada. Para activar "
 "las wikipalabras, use su ratón o la barra espaciadora para marcar la casilla "
-"para activar <gui>Resaltar wikipalabras</gui> en la solapa <gui>Editando</"
+"para activar <gui>Resaltar wikipalabras</gui> en la pestaña <gui>Editando</"
 "gui> de las preferencias de Tomboy."
 
 #: C/note-edit-prefs.page:65(title)
@@ -612,7 +574,7 @@ msgid ""
 msgstr ""
 "Para desactivar las listas de topos automáticas, use su ratón o la barra "
 "espaciadora para desmarcar <gui>Activar listas de topos automáticas</gui> en "
-"la solapa <gui>Editando</gui> de las preferencias de Tomboy."
+"la pestaña <gui>Editando</gui> de las preferencias de Tomboy."
 
 #: C/note-edit-prefs.page:80(title)
 msgid "Custom Fonts"
@@ -633,7 +595,7 @@ msgid ""
 "custom font</gui> in the <gui>Editing</gui> tab of Tomboy's Preferences."
 msgstr ""
 "Para activar una tipografía diferente, use su ratón o la barra espaciadora "
-"para desmarcar <gui>Usar tipografía personalizada</gui>, en la solapa "
+"para desmarcar <gui>Usar tipografía personalizada</gui>, en la pestaña "
 "<gui>Editando</gui> de las preferencias de Tomboy."
 
 #: C/note-edit-prefs.page:89(p)
@@ -696,7 +658,7 @@ msgid ""
 "Tomboy's Preferences."
 msgstr ""
 "Seleccione una de las siguientes opciones de la caja desplegable a la "
-"derecha de <gui>Al renombrar una nota enlazada:</gui> en la solapa "
+"derecha de <gui>Al renombrar una nota enlazada:</gui> en la pestaña "
 "<gui>Editando</gui> de las preferencias de Tomboy."
 
 #: C/note-edit-prefs.page:122(title)
@@ -719,7 +681,7 @@ msgid ""
 "the note to complete creating a new template. Each time you create a new "
 "note that template will be displayed in the new note."
 msgstr ""
-"Pulse el botón <gui>Abrir la plantilla Nota nueva</gui> en la solapa "
+"Pulse el botón <gui>Abrir la plantilla Nota nueva</gui> en la pestaña "
 "<gui>Editando</gui> de las preferencias de Tomboy. Se mostrará una plantilla "
 "nueva parecida a una nota de Tomboy. Reemplace el texto <gui>Describa aquí "
 "su nota nueva.</gui> en la nota con el texto que debería estar en la "
@@ -839,7 +801,7 @@ msgstr ""
 "Puede activar las teclas rápidas abriendo las <gui>Preferencias de Tomboy</"
 "gui> usando su ratón para pulsar con el botón derecho en el icono de Tomboy "
 "en su panel, barra de tareas o «dock», elija <gui>Preferencias</gui> y "
-"seleccione la solapa <gui>Teclas rápidas</gui>. También puede abrir las "
+"seleccione la pestaña <gui>Teclas rápidas</gui>. También puede abrir las "
 "<gui>Preferencias de Tomboy</gui> desde el diálogo <gui>Buscar en todas las "
 "notas</gui>. Desde el menú, elija <guiseq><gui>Editar</"
 "gui><gui>Preferencias</gui></guiseq>."
@@ -1156,15 +1118,15 @@ msgstr "Activar funcionalidad adicional de la nota."
 msgid "Tomboy Tools Addins"
 msgstr "Complementos de herramientas de Tomboy"
 
-#: C/addins-tools.page:25(title)
+#: C/addins-tools.page:24(p)
 msgid "Tools addins add additional functionality to your Tomboy notes."
 msgstr "Los complementos añaden funcionalidad adicional a sus notas Tomboy."
 
-#: C/addins-tools.page:29(title)
+#: C/addins-tools.page:27(title)
 msgid "Backlinks"
 msgstr "Retroenlaces"
 
-#: C/addins-tools.page:30(p)
+#: C/addins-tools.page:28(p)
 msgid ""
 "The <gui>Backlinks</gui> addin is enabled by default and allows you to see "
 "which notes link to the note you are currently viewing."
@@ -1173,11 +1135,11 @@ msgstr ""
 "predeterminada y le permite ver qué notas enlazan con la nota que está "
 "viendo actualmente."
 
-#: C/addins-tools.page:35(title)
+#: C/addins-tools.page:33(title)
 msgid "Export to HTML"
 msgstr "Exportar a HTML"
 
-#: C/addins-tools.page:36(p)
+#: C/addins-tools.page:34(p)
 msgid ""
 "The <gui>Export to HTML</gui> addin is enabled by default and will export an "
 "individual note to HTML."
@@ -1185,7 +1147,7 @@ msgstr ""
 "El complemento <gui>Exportar a HTML</gui> está activado de manera "
 "predeterminada, y exportará una nota individual a HTML."
 
-#: C/addins-tools.page:38(p)
+#: C/addins-tools.page:36(p)
 msgid ""
 "To export a note to HTML, press the <gui>Tools</gui> icon in the note "
 "toolbar and choose <gui>Export to HTML</gui>. You will immediately be "
@@ -1202,11 +1164,11 @@ msgstr ""
 "se guardará como un archivo HTML y se mostrará automáticamente en su "
 "navegador."
 
-#: C/addins-tools.page:47(title)
+#: C/addins-tools.page:45(title)
 msgid "Insert Timestamp"
 msgstr "Insertar marca de tiempo"
 
-#: C/addins-tools.page:48(p)
+#: C/addins-tools.page:46(p)
 msgid ""
 "The <gui>Insert Timestamp</gui> addin is disabled by default. To enable it, "
 "choose the <gui>Insert Timestamp</gui> addin and then press <gui>Enable</"
@@ -1217,7 +1179,7 @@ msgstr ""
 "<gui>Insertar marca de tiempo</gui> y pulse <gui>Activar</gui> en las "
 "preferencias de Tomboy."
 
-#: C/addins-tools.page:51(p)
+#: C/addins-tools.page:49(p)
 msgid ""
 "To add a timestamp to your notes, press the <gui>Tools</gui> icon in the "
 "note toolbar and choose <gui>Insert Timestamp</gui> or press <key>Ctrl + D</"
@@ -1227,11 +1189,11 @@ msgstr ""
 "<gui>Herramientas</gui> en la barra de herramientas de la nota y elija "
 "<gui>Insertar marca de tiempo</gui> o pulse <key>Ctrl + D</key>."
 
-#: C/addins-tools.page:57(title)
+#: C/addins-tools.page:55(title)
 msgid "Note of the Day"
 msgstr "Nota del día"
 
-#: C/addins-tools.page:58(p)
+#: C/addins-tools.page:56(p)
 msgid ""
 "The <gui>Note of the Day</gui> addin is disabled by default. To enable, "
 "choose the <gui>Note of the Day</gui> addin and then press <gui>Enable</gui> "
@@ -1241,7 +1203,7 @@ msgstr ""
 "predeterminada. Para activarlo, elija el complemento <gui>Nota del día</gui> "
 "y pulse <gui>Activar</gui> en las preferencias de Tomboy."
 
-#: C/addins-tools.page:61(p)
+#: C/addins-tools.page:59(p)
 msgid ""
 "<gui>Note of the Day</gui> addin will create a new note daily with the title "
 "<em>Today: Thursday, January 21 2010</em> for example. The note will also "
@@ -1251,11 +1213,11 @@ msgstr ""
 "<em>Hoy: jueves, 21 de enero de 2010</em>, por ejemplo. La nota también "
 "añadirá filas a <em>Tareas</em> y <em>Citas</em> automáticamente."
 
-#: C/addins-tools.page:67(title)
+#: C/addins-tools.page:65(title)
 msgid "Note Directory Watcher"
 msgstr "Vigilante de la carpeta de notas"
 
-#: C/addins-tools.page:68(p)
+#: C/addins-tools.page:66(p)
 msgid ""
 "The Note Directory Watcher addin monitors the directory your Tomboy notes "
 "are saved in. If the addin detects changes to your notes, it will apply "
@@ -2644,7 +2606,7 @@ msgstr ""
 #~ "configured by selecting the <guibutton>Advanced...</guibutton> button."
 #~ msgstr ""
 #~ "Puede configurar las preferencias de sincronización de sus notas en la "
-#~ "solapa <guilabel>Sincronización</guilabel> del diálogo "
+#~ "pestaña <guilabel>Sincronización</guilabel> del diálogo "
 #~ "<interface>Preferencias de Tomboy</interface>. El comportamiento "
 #~ "predeterminado ante conflictos se puede configurar seleccionando el botón "
 #~ "<guibutton>Avanzado...</guibutton>."
@@ -2724,8 +2686,8 @@ msgstr ""
 #~ "on or off."
 #~ msgstr ""
 #~ "La sección de edición le permite definir preferencias relacionadas a la "
-#~ "edición de notas. Existen tres casillas en esta solapa, las cuales pueden "
-#~ "ser activadas o desactivadas."
+#~ "edición de notas. Existen tres casillas en esta pestaña, las cuales "
+#~ "pueden ser activadas o desactivadas."
 
 #~ msgid "Spellcheck While Typing"
 #~ msgstr "Corregir ortografía al escribir"
@@ -2781,7 +2743,7 @@ msgstr ""
 #~ "<keycombo><keycap>Alt</keycap><keycap>H</keycap></keycombo> to toggle "
 #~ "this option."
 #~ msgstr ""
-#~ "La solapa de teclas rápidas le permite definir las combinaciones de "
+#~ "La pestaña de teclas rápidas le permite definir las combinaciones de "
 #~ "teclas globales que le permitirán realizar distintas tareas en Tomboy. "
 #~ "Para activar las combinaciones de teclas, debe tener la casilla "
 #~ "<guibutton>Teclas rápidas</guibutton> activada. Use la combinación de "

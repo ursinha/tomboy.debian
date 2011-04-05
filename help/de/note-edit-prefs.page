@@ -20,7 +20,7 @@
 
  <title>Notizeinstellungen</title>
  
- 	<p>Sie können die Standardeinstellungen beim Eingeben von Notizen in Tomboy ändern. Um die Notizeinstellungen zu ändern, öffnen Sie die <gui>Tomboy-Einstellungen</gui>, indem Sie mit der rechten Maustaste auf das Tomboy-Symbol in Ihrem Panel, Ihrer Taskbar oder Ihrem Dock klicken. Wählen Sie anschließend <gui>Einstellungen</gui> und klicken Sie auf den Reiter <gui>Tastenkombinationen</gui>. Sie können die <gui>Tomboy-Einstellungen</gui> auch aus dem Dialog <gui>Alle Notizen durchsuchen</gui> heraus öffnen. Wählen Sie im Menü <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui></guiseq>.</p>
+ 	<p>Sie können die Standardeinstellungen beim Eingeben von Notizen in Tomboy ändern. Um die Notizeinstellungen zu ändern, öffnen Sie die <gui>Tomboy-Einstellungen</gui>, indem Sie mit der rechten Maustaste auf das Tomboy-Symbol in Ihrem Panel, Ihrer Taskbar oder Ihrem Dock klicken. Wählen Sie anschließend <gui>Einstellungen</gui> und klicken Sie auf den Reiter <gui>Bearbeiten</gui>. Sie können die <gui>Tomboy-Einstellungen</gui> auch aus dem Dialog <gui>Alle Notizen durchsuchen</gui> heraus öffnen. Wählen Sie im Menü <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui></guiseq>.</p>
  
  <section id="spellcheck">
    <title>Rechtschreibprüfung</title>

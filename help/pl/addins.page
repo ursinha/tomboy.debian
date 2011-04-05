@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#prefs"/>
-    <desc>Add additional functionality to Tomboy.</desc>
+    <desc>Dodawanie nowych funkcji do programu Tomboy.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,13 +18,13 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Tomboy Addins</title>
+  <title>Dodatki do programu Tomboy</title>
 
   <section id="manage" style="2column">
     <info>
-      <title type="link">Tomboy Addins</title>
+      <title type="link">Dodatki do programu Tomboy</title>
     </info>
-    <title>Manage addins for Tomboy</title>
+    <title>Zarządzanie dodatkami do programu Tomboy</title>
   </section>
 
 

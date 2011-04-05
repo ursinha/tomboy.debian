@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="addins#manage"/>
-    <desc>Enable additional note functionality.</desc>
+    <desc>Włączanie dodatkowych funkcji notatek.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,57 +18,36 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Tomboy Tools Addins</title>
+ <title>Dodatki narzędziowe do programu</title>
 
- <section id="desc">
-	<title>Tools addins add additional functionality to your Tomboy notes.</title>
-</section>
+	<p>Dodatki narzędziowe dodają do programu nowe funkcje.</p>
 
   <section id="backlinks">
     <title>Backlinks</title>
-	<p>The <gui>Backlinks</gui> addin is enabled by default and allows you
-	to see which notes link to the note you are currently viewing.</p> 
+	<p>Dodatek <gui>Backlinks</gui> jest domyślnie włączony. Dodatek umożliwia użytkownikowi podgląd notatek, które zawierają odnośniki do otworzonej notatki.</p> 
   </section>
 
 <section id="html-export">
   <title>Eksportuj do formatu HTML</title>
-  <p>The <gui>Export to HTML</gui> addin is enabled by default and will export
-	an individual note to HTML.</p>
-	<p>To export a note to HTML, press the <gui>Tools</gui> icon in the note
-	toolbar and choose <gui>Export to HTML</gui>.  You will immediately be
-	presented with a dialog to save the note.  Choose the directory you 
-	wish to save the note in and change the name of note's new html file if 
-	you wish it to be different than the note name.  The note will then be
-	saved as an HTML file and automatically displayed in your browser.</p>
+  <p>Dodatek <gui>Eksportuj do formatu HTML</gui> jest domyślnie włączony. Dodatek umożliwia użytkownikowi eksportowanie wybranej notatki do formatu HTML.</p>
+	<p>Aby eksportować notatkę do formatu HTML, należy kliknąć na pasku narzędziowym notatki ikonę <gui>Narzędzia</gui>, a następnie wybrać polecenie <gui>Eksportuj do formatu HTML</gui>. Zostanie wyświetlone okno dialogowe zapisu. Należy wybrać katalog, w którym ma być zapisana notatka i opcjonalnie zmienić nazwę pliku HTML. Notatka zapisana jako plik HTML zostanie automatycznie otworzona w przeglądarce internetowej użytkownika.</p>
 </section>
 
 <section id="timestamp">
-  <title>Insert Timestamp</title>
-  <p>The <gui>Insert Timestamp</gui> addin is disabled by default.  To enable it,
-	choose the <gui>Insert Timestamp</gui> addin and then press
-	<gui>Enable</gui> in the Tomboy Preferences.</p>
-	<p>To add a timestamp to your notes, press the <gui>Tools</gui> icon in
-	the note toolbar and choose <gui>Insert Timestamp</gui> or press 
-	<key>Ctrl + D</key>.</p>
+  <title>Insert Timestamp (Wstaw znacznik czasu)</title>
+  <p>Dodatek <gui>Insert Timestamp</gui> jest domyślnie wyłączony. Aby włączyć dodatek, należy zaznaczyć nazwę dodatku, a następnie kliknąć w preferencjach programu polecenie <gui>Włącz</gui>.</p>
+	<p>Aby dodać znacznik czasu do notatki, należy kliknąć na pasku narzędziowym notatki ikonę <gui>Narzędzia</gui>, a następnie wybrać polecenie <gui>Wstaw znacznik czasu</gui> lub nacisnąć kombinację klawiszy <key>Ctrl + D</key>.</p>
 </section>
 
 <section id="noteoftheday">
   <title>Note of the Day</title>
-  <p>The <gui>Note of the Day</gui> addin is disabled by default.  To enable,
-	choose the <gui>Note of the Day</gui> addin and then press
-	<gui>Enable</gui> in the Tomboy Preferences.</p>
-	<p><gui>Note of the Day</gui> addin will create a new note daily with the 
-	title <em>Today: Thursday, January 21 2010</em> for example.  The note will
-	also add rows for <em>Tasks</em> and <em>Appointment</em> automatically.</p>
+  <p>Dodatek <gui>Note of the Day</gui> jest domyślnie wyłączony. Aby włączyć dodatek, należy zaznaczyć nazwę dodatku, a następnie kliknąć w preferencjach programu polecenie <gui>Włącz</gui>.</p>
+	<p>Dodatek <gui>Note of the Day</gui> tworzy codziennie nową notatkę o tytule stanowiącym datę danego dnia, np. <em>Dzisiaj: czwartek, 21 stycznia 2010</em>. Do tabel <em>Zadania</em> i <em>Spotkania</em> zostaną automatycznie dodane wiersze.</p>
 </section>
 
 <section id="watcher">
   <title>Note Directory Watcher</title>
-  <p>The Note Directory Watcher addin monitors the directory your Tomboy notes
-	are saved in.  If the addin detects changes to your notes, it will apply
-	those changes and they will be displayed in your notes.  This addin is
-	typically used with 3rd party sync services such as Dropbox.  Setting
-	up 3rd party sync services is outside the scope of this help.</p>
+  <p>Dodatek Note Directory Watcher monitoruje katalog, w którym zapisywane są notatki. Jeśli dodatek wykryje zmiany, zostaną one zapisane i pojawią się w notatkach. Dodatku Note Directory Watcher zwykle używa się z usługami synchronizacyjnymi strony trzeciej, np. Dropbox. Informacje na temat instalacji usług synchronizacyjnych strony trzeciej nie znajdują się w niniejszym dokumencie pomocy.</p>
 </section>
 
  </page>

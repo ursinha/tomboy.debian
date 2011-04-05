@@ -38,11 +38,7 @@
  
  	<title>Jegyzetek automatikus szinkronizálása</title>
  	
- 	<p>Tomboy can automatically sync your notes for you in the background.
- 	It is recommended that you configure how you handle note conflicts
- 	before enabling syncing automatically.  You can learn about handling
- 	note conflicts in the <link xref="sync-setup#conflict"/> 
- 	page.</p>
+ 	<p>A Tomboy képes jegyzetei automatikus szinkronizálására a háttérben. Az automatikus szinkronizálás beállítása előtt javasolt a jegyzetütközések kezelési módját is beállítani. A jegyzetütközések kezeléséről lásd a <link xref="sync-setup#conflict"/> oldalt.</p>
  	
  	<p>A szinkronizálást engedélyezheti a <gui>Tomboy beállításai</gui> megnyitásával a jobb egérgombbal kattintva a panelen, tálcán vagy dokkon lévő Tomboy ikonra, és a <gui>Beállítások</gui> menüpont, majd a <gui>Szinkronizálás</gui> lap kiválasztásával. Megnyithatja a <gui>Tomboy beállításait</gui> a <gui>Keresés minden jegyzetben</gui> ablakból is. Itt a menüből válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> menüpontot.</p>
 	

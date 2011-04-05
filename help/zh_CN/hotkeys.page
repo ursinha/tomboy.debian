@@ -29,10 +29,8 @@
 	<list>
 	  <item><p><gui>显示便笺菜单</gui>: <keyseq><key>Alt</key><key>F12 </key></keyseq></p></item>
 	  <item><p><gui>打开“从这里开始”便笺</gui>: <keyseq><key>Alt</key><key>F11 </key></keyseq></p></item>
-	  <item><p><gui>Create new note</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
-	  <item><p><gui>Open "Search All Notes"</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
+	  <item><p><gui>创建新便笺</gui>: 默认被禁用，您可以在此文本框内顺序输入按键来创建热键。</p></item>
+	  <item><p><gui>打开“搜索全部便笺”</gui>: 默认被禁用，您可以在此文本框内顺序输入按键来创建热键。</p></item>
 	</list>  
 	    
  </page>

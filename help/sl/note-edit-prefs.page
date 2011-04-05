@@ -20,7 +20,16 @@
 
  <title>Možnosti sporočilc</title>
  
- 	<p>Med tipkanjem sporočilc v Tomboyu lahko spremenite privzete nastavitve. Za spremembo svojih nastavitev sporočilc odprite <gui>Možnosti Tomboy</gui>. To lahko storite z desnim klikom na ikono Tomboy v pultu, opravilni vrstici ali sidrišču in izberite <gui>Možnosti</gui> in izberite zavihek <gui>Hitre tipke</gui>. <gui>Možnosti Tomboy</gui> lahko izberete tudi v pogovornem oknu <gui>Iskanje vseh sporočilc</gui>. V meniju izberite <guiseq><gui>Uredi</gui><gui>Možnosti</gui></guiseq>.</p>
+ 	<p>You can change the default settings when typing notes
+ 	in Tomboy.  To change your note settings, open
+ 	 <gui>Tomboy Preferences</gui> by 
+	using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock, and choose <gui>Preferences</gui> and  select
+	the <gui>Editing</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
  
  <section id="spellcheck">
    <title>Preverjanje črkovanja</title>

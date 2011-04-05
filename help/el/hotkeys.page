@@ -29,10 +29,8 @@
 	<list>
 	  <item><p><gui>Προβολή μενού σημειώσεων</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
 	  <item><p><gui>Άνοιγμα του "Ξεκινήστε εδώ"</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
-	  <item><p><gui>Create new note</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
-	  <item><p><gui>Open "Search All Notes"</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
+	  <item><p><gui>Δημιουργία νέας σημείωσης</gui>: Απενεργοποιημένο εξ ορισμού. Μπορείτε να εισάγετε μία ακολουθία πλήκτρων σε αυτό το πεδίο για να δημιουργήσετε ένα πλήκτρο ενεργειών.</p></item>
+	  <item><p><gui>Άνοιγμα"Αναζήτηση όλων των σημειώσεων"</gui>: Απενεργοποιημένο εξ ορισμού. Μπορείτε να εισάγετε μία ακολουθία πλήκτρων σε αυτό το πεδίο για να δημιουργήσετε ένα πλήκτρο ενεργειών.</p></item>
 	</list>  
 	    
  </page>

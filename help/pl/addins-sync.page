@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="addins#manage"/>
-    <desc>Enable additional ways to sync your notes with other devices.</desc>
+    <desc>Włączanie dodatkowych metod synchronizacji notatek z innymi urządzeniami.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,42 +18,29 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Sync Addins</title>
+ <title>Dodatki synchronizacji</title>
 
-	<p>Sync Addins allow you to choose different methods and places
-	to sync your Tomboy notes.  For more information on configuring sync,
-	visit the <link xref="sync-notes"/> help page.</p>
+	<p>Dodatki synchronizacji umożliwiają użytkownikowi wybór różnych metod oraz miejsc synchronizacji notatek programu Tomboy. Więcej informacji na temat konfiguracji synchronizacji: strona pomocy <link xref="sync-notes"/>.</p>
 
 
 <section id="local">
-  <title>Local Directory Sync Service</title>
-  <p>The Local Directory Sync Service is enabled by default and allows
-	Tomboy to sync its notes to another directory on your computer.
-	This is helpful to create a backup of your notes.</p>
+  <title>Usługa synchronizacji z katalogiem lokalnym</title>
+  <p>Usługa synchronizacji z katalogiem lokalnym jest domyślnie włączona. Usługa umożliwia synchronizację notatek do innego katalogu na komputerze użytkownika, pozwalając na łatwiejsze tworzenie kopii zapasowych notatek.</p>
 </section>
 
 <section id="ssh">
-  <title>SSH Sync Service</title>
-  <p>The SSH Sync Service allows you to sync your notes with another computer
-	via the SSH protocol.  This plugin is disabled by default.  You may
-	need to install the <em>sshfs</em> package for your Linux distribution
-	to make this addin work, which is outside the scope of this help 
-	document.</p>
+  <title>Usługa synchronizacji SSH</title>
+  <p>Usługa synchronizacji protokołu SSH umożliwia synchronizację notatek z innym komputerem poprzez protokół SSH. Wtyczka jest domyślnie wyłączona. Aby dodatek działał prawidłowo, należy zainstalować pakiet <em>sshfs</em> odpowiedni dla dystrybucji systemu Linux użytkownika. Informacje na temat instalacji pakietu nie znajdują się w niniejszym dokumencie pomocy.</p>
 </section>
 
 <section id="webdav">
-  <title>WebDav Sync Service</title>
-  <p>The WebDav Sync Service addin is enabled by default and allows you to
-	sync your notes with a WebDav remote server.  You may need to have
-	the <em>wdfs FUSE file system</em> package installed for your Linux
-	distribution to make this addin work which is outside the scope of 
-	this help document.</p>
+  <title>Usługa synchronizacji WebDav</title>
+  <p>Dodatek synchronizacji z serwerem WebDav jest domyślnie włączony. Pozwala on użytkownikowi na synchronizowanie notatek przy użyciu zdalnego serwera WebDav. Aby opcja działała prawidłowo, należy zainstalować odpowiedni dla dystrybucji systemu Linux użytkownika pakiet <em>system plików wdfs FUSE</em>. Informacje na temat instalacji pakietu nie znajdują się w niniejszym dokumencie pomocy.</p>
 </section>
 
 <section id="webservice">
-  <title>Web Sync Service</title>
-  <p>The Web Sync Service addin allows you to sync your notes to a remote 
-	web server or service, such as Tomboy Online.  At the time of writing, the Tomboy Online service has not launched.</p>
+  <title>Usługa synchronizacji sieciowej</title>
+  <p>Usługa synchronizacji sieciowej umożliwia synchronizację notatek do zdalnego serwera sieciowego lub usługi sieciowej, np. Tomboy Online. W trakcie tworzenia dokumentu pomocy usługa Tomboy Online nie została jeszcze uruchomiona.</p>
 </section>
 
  </page>

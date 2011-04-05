@@ -1,19 +1,21 @@
 # tomboy ja.po.
-# Copyright (C) 2004-2010 Free Software Foundation, Inc.
+# Copyright (C) 2004-2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the tomboy package.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2004-2009.
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010.
+# Hiroyuki Sekihara <hiroyuki.sekihara@gmail.com>, 2010.
+# Jiro Matsuzawa <matsuzawa.jr@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tomboy gnome-2-32\n"
+"Project-Id-Version: tomboy master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=tomboy&component=general\n"
-"POT-Creation-Date: 2010-10-14 15:47+0000\n"
-"PO-Revision-Date: 2010-10-19 20:23+0900\n"
-"Last-Translator: Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>\n"
+"product=tomboy&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-20 16:16+0000\n"
+"PO-Revision-Date: 2011-03-24 22:18+0900\n"
+"Last-Translator: Jiro Matsuzawa <matsuzawa.jr@gmail.com>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -160,8 +162,8 @@ msgid ""
 "Enable this option to highlight words ThatLookLikeThis. Clicking the word "
 "will create a note with that name."
 msgstr ""
-"TRUE の場合、単語を強調表示します。その単語をクリックすると、単語の名前をタイ"
-"トルにした新しいメモを作成します。"
+"TRUE の場合、ThatLookLikeThis のような単語を強調表示します。その単語をクリッ"
+"クすると、単語の名前をタイトルにした新しいメモを作成します。"
 
 #: ../data/tomboy.schemas.in.h:22
 msgid "FUSE Mounting Timeout (ms)"
@@ -376,7 +378,7 @@ msgstr "検索ウィンドウの幅"
 
 #: ../data/tomboy.schemas.in.h:58
 msgid "Selected Synchronization Service Addin"
-msgstr "選択した同期サービスのプラグイン"
+msgstr "選択した Synchronization サービス アドイン"
 
 #: ../data/tomboy.schemas.in.h:59
 msgid "Set to TRUE to activate"
@@ -494,16 +496,16 @@ msgstr "URI \"note://\" で使用するハンドラ"
 msgid ""
 "The last directory a note was exported to using the Export To HTML plugin."
 msgstr ""
-"\"HTMLのエクスポート\" プラグインを使って、最後にエクスポートしたメモの HTML "
-"を格納したフォルダです。"
+"\"Export To HTML\" アドインを使って、最後にエクスポートしたメモの HTML を格納"
+"したフォルダです。"
 
 #: ../data/tomboy.schemas.in.h:73
 msgid ""
 "The last setting for the 'Export linked notes' checkbox in the Export to "
 "HTML plugin."
 msgstr ""
-"\"HTML へエクスポート\" プラグインの \"メモのエクスポート\" で最後に設定した"
-"チェックボックスの状態です。"
+"\"Export To HTML\" アドインの \"メモのエクスポート\" で最後に設定したチェック"
+"ボックスの状態です。"
 
 #: ../data/tomboy.schemas.in.h:74
 msgid ""
@@ -512,10 +514,10 @@ msgid ""
 "Export Linked Notes' setting and is used to specify whether all notes (found "
 "recursively) should be included during an export to HTML."
 msgstr ""
-"HTML にエクスポートするプラグインで設定した \"その他のリンク付きメモをすべて"
-"含める\" のチェックボックスの最後の状態です。この設定は \"リンク付きメモを "
-"HTML にエクスポートする\" 設定と連動して、(再帰的に検出した) メモをすべて "
-"HTML 形式にエクスポートするかどうかを指定する際に使用します。"
+"Export To HTML アドインで設定した \"その他のリンク付きメモをすべて含める\" の"
+"チェックボックスの最後の状態です。この設定は \"リンク付きメモを HTML にエクス"
+"ポートする\" 設定と連動して、(再帰的に検出した) メモをすべて HTML 形式にエク"
+"スポートするかどうかを指定する際に使用します。"
 
 #: ../data/tomboy.schemas.in.h:75
 msgid ""
@@ -555,7 +557,8 @@ msgstr "Tomboy の同期フォルダを格納した SSH サーバの URL です�
 msgid ""
 "Unique identifier for the currently configured note synchronization service "
 "addin."
-msgstr "メモの同期サービス・プラグインで現在設定している重複しない識別子です。"
+msgstr ""
+"Synchronization サービス・アドインで現在設定している重複しない識別子です。"
 
 #: ../data/tomboy.schemas.in.h:81
 msgid ""
@@ -779,7 +782,7 @@ msgstr "同期するフォルダの選択..."
 
 #: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:126
 msgid "Folder path field is empty."
-msgstr "フォルダのパス名が空です"
+msgstr "フォルダのパス名が空です。"
 
 #: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:135
 msgid ""
@@ -818,7 +821,7 @@ msgstr "MMMMd日 (dddd) tth:mm"
 #: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:54
 msgid "Choose one of the predefined formats or use your own."
 msgstr ""
-"事前に用意された書式から一つ選択するか、または独自の書式を指定してください:"
+"事前に用意された書式から一つ選択するか、または独自の書式を指定してください。"
 
 #: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:62
 msgid "Use _Selected Format"
@@ -839,7 +842,7 @@ msgstr "今日: "
 #. Format: "Today: Friday, July 01 2005"
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:17
 msgid "dddd, MMMM d yyyy"
-msgstr "MMMM d日 (dddd) tth:mm"
+msgstr "yyyy年 MMMM d日 (dddd)"
 
 #: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:43
 msgid "Tasks"
@@ -909,7 +912,7 @@ msgstr ""
 
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:82
 msgid "Server or username field is empty."
-msgstr "サーバ名またはユーザ名のエントリが空です"
+msgstr "サーバ名またはユーザ名のエントリが空です。"
 
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:130
 msgid "SSH (sshfs FUSE)"
@@ -984,7 +987,7 @@ msgstr "パスワード(_P): "
 
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:77
 msgid "URL, username, or password field is empty."
-msgstr "URL または ユーザ名、あるいはパスワードのエントリが空です"
+msgstr "URL または ユーザ名、あるいはパスワードのエントリが空です。"
 
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:119
 msgid "WebDAV (wdfs FUSE)"
@@ -1177,11 +1180,11 @@ msgstr "選択したノートを削除します"
 msgid "Notebooks"
 msgstr "ノート"
 
-#: ../Tomboy/Notebooks/NotebookManager.cs:356
+#: ../Tomboy/Notebooks/NotebookManager.cs:361
 msgid "Really delete this notebook?"
 msgstr "このノートを本当に削除してもよろしいですか?"
 
-#: ../Tomboy/Notebooks/NotebookManager.cs:358
+#: ../Tomboy/Notebooks/NotebookManager.cs:363
 msgid ""
 "The notes that belong to this notebook will not be deleted, but they will no "
 "longer be associated with this notebook.  This action cannot be undone."
@@ -1366,7 +1369,7 @@ msgstr ""
 "す。</note-content>"
 
 #. Attempt to find an existing Start Here note
-#: ../Tomboy/NoteManager.cs:299 ../Tomboy/NoteManager.cs:368
+#: ../Tomboy/NoteManager.cs:299 ../Tomboy/NoteManager.cs:369
 msgid "Start Here"
 msgstr "ここから開始"
 
@@ -1374,14 +1377,14 @@ msgstr "ここから開始"
 msgid "Using Links in Tomboy"
 msgstr "Tomboy でリンクを利用する"
 
-#: ../Tomboy/NoteManager.cs:445
+#: ../Tomboy/NoteManager.cs:449
 #, csharp-format
 msgid "New Note {0}"
 msgstr "新しいメモ {0}"
 
 #. Use a simple "Describe..." body and highlight
 #. it so it can be easily overwritten
-#: ../Tomboy/NoteManager.cs:518 ../Tomboy/NoteManager.cs:611
+#: ../Tomboy/NoteManager.cs:522 ../Tomboy/NoteManager.cs:615
 msgid "Describe your new note here."
 msgstr "新しいメモをここに記述してください。"
 
@@ -1455,7 +1458,7 @@ msgstr "新しいメモへのリンク(_L)"
 
 #: ../Tomboy/NoteWindow.cs:373
 msgid "Te_xt"
-msgstr "文字の種類(_X)"
+msgstr "テキスト(_X)"
 
 #: ../Tomboy/NoteWindow.cs:381
 msgid "_Find in This Note"
@@ -1483,7 +1486,7 @@ msgstr "指定した部分を新しいメモへリンクします (Ctrl-L)"
 
 #: ../Tomboy/NoteWindow.cs:470
 msgid "_Text"
-msgstr "文字の種類(_T)"
+msgstr "テキスト(_T)"
 
 #: ../Tomboy/NoteWindow.cs:475
 msgid "Set properties of text"
@@ -1595,7 +1598,7 @@ msgstr "同期"
 
 #: ../Tomboy/PreferencesDialog.cs:88
 msgid "Add-ins"
-msgstr "プラグイン"
+msgstr "アドイン"
 
 #: ../Tomboy/PreferencesDialog.cs:173
 msgid "_Spell check while typing"
@@ -1619,8 +1622,8 @@ msgid ""
 "Enable this option to highlight words <b>ThatLookLikeThis</b>. Clicking the "
 "word will create a note with that name."
 msgstr ""
-"このオプションを有効にすると<b>こんな感じ</b>で単語を強調表示します。その単語"
-"をクリックすると、それをタイトルにした新しいメモを作成します。"
+"このオプションを有効にすると <b>ThatLookLikeThis</b> の単語を強調表示します。"
+"その単語をクリックすると、それをタイトルにした新しいメモを作成します。"
 
 #. Auto bulleted list
 #: ../Tomboy/PreferencesDialog.cs:208
@@ -1718,7 +1721,7 @@ msgstr "拡張(_A)..."
 
 #: ../Tomboy/PreferencesDialog.cs:601
 msgid "The following add-ins are installed"
-msgstr "次のプラグインが拡張機能としてインストールされています"
+msgstr "次のアドインが拡張機能としてインストールされています"
 
 #: ../Tomboy/PreferencesDialog.cs:622
 msgid "Get More Add-Ins..."
@@ -1829,7 +1832,7 @@ msgstr "著作権:"
 
 #: ../Tomboy/PreferencesDialog.cs:1378
 msgid "Add-in Dependencies:"
-msgstr "プラグインの依存関係:"
+msgstr "アドインの依存関係:"
 
 #: ../Tomboy/RecentChanges.cs:98
 msgid "_Search:"
@@ -1888,15 +1891,16 @@ msgstr ""
 "佐藤 暁 <ss@gnome.gr.jp>\n"
 "やまねひでき <henrich@debian.or.jp>\n"
 "草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n"
+"Hiroyuki Sekihara <hiroyuki.sekihara@gmail.com>\n"
 "日本GNOMEユーザー会 <http://www.gnome.gr.jp/>"
 
 #: ../Tomboy/Tomboy.cs:410
 msgid ""
 "Copyright © 2004-2007 Alex Graveley\n"
-"Copyright © 2004-2009 Others\n"
+"Copyright © 2004-2010 Others\n"
 msgstr ""
 "Copyright © 2004-2007 Alex Graveley\n"
-"Copyright © 2004-2009 Others\n"
+"Copyright © 2004-2010 Others\n"
 
 #: ../Tomboy/Tomboy.cs:412
 msgid "A simple and easy to use desktop note-taking application."
@@ -2078,28 +2082,28 @@ msgid ""
 "This synchronization addin is not supported on your computer. Please make "
 "sure you have FUSE and {0} correctly installed and configured"
 msgstr ""
-"お使いのシステムでは同期プラグインがサポートされていません。FUSE と {0} が正"
-"しくインストールされ設定されているか確認してください。"
+"お使いのシステムでは Synchronization アドインがサポートされていません。FUSE "
+"と {0} が正しくインストールされ設定されているか確認してください。"
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:129
 msgid "Could not read testfile."
-msgstr "読み込みのテストが失敗しました"
+msgstr "読み込みのテストが失敗しました。"
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:132
 msgid "Write test failed."
-msgstr "書き込みのテストが失敗しました"
+msgstr "書き込みのテストが失敗しました。"
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:176
 msgid "Timeout connecting to server."
-msgstr "サーバへの接続がタイムアウトしました"
+msgstr "サーバへの接続がタイムアウトしました。"
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:184
 msgid "Error connecting to server."
-msgstr "サーバへ接続する際にエラーが発生しました"
+msgstr "サーバへ接続する際にエラーが発生しました。"
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:198
 msgid "FUSE could not be enabled."
-msgstr "FUSE を有効にできませんでした"
+msgstr "FUSE を有効にできませんでした。"
 
 #: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:233
 msgid "An error ocurred while connecting to the specified server:"
@@ -2199,7 +2203,7 @@ msgstr "同期が完了しました"
 #, csharp-format
 msgid "{0} note updated."
 msgid_plural "{0} notes updated."
-msgstr[0] "{0}個のメモを同期しました"
+msgstr[0] "{0}個のメモを同期しました。"
 
 #: ../Tomboy/Synchronization/SyncDialog.cs:299
 msgid "Your notes are now up to date."
@@ -2343,6 +2347,3 @@ msgstr ""
 "しておく必要があります。\"modprobe fuse\" という文を /etc/init.d/boot.local "
 "ファイルに追加するか、または \"fuse\" という文を /etc/modules ファイルに追加"
 "しておいてください。"
-
-#~ msgid "_Browse..."
-#~ msgstr "参照(_B)..."

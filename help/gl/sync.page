@@ -38,11 +38,7 @@
  
  	<title>Sincronizar as súas notas automaticamente</title>
  	
- 	<p>Tomboy can automatically sync your notes for you in the background.
- 	It is recommended that you configure how you handle note conflicts
- 	before enabling syncing automatically.  You can learn about handling
- 	note conflicts in the <link xref="sync-setup#conflict"/> 
- 	page.</p>
+ 	<p>Tomboy pode sincronizar automaticamente as súas notas en segundo plano. Recoméndase que configure como se deben xestionar os conflitos nas notas antes de activar a sincronización automática. Pode saber máis sobre os conflitos coas notas na páxina <link xref="sync-setup#conflicts"/>.</p>
  	
  	<p>Pode activar a sincronización abrindo as <gui>Preferencias de Tomboy</gui> usando o botón dereito do seu rato sobre a icona de Tomboy no seu panel, barra de tarefas ou doca e seleccione <gui>Preferencias</gui> e logo <gui>Sincronización</gui>. Tamén pode abrir as <gui>Preferencias de Tomboy</gui> desde o diálogo de <gui>Buscar en todas as notas</gui>. Desde o menú seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
 	

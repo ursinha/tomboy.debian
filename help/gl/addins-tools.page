@@ -20,55 +20,34 @@
 
  <title>Engadidos de ferramentas de Tomboy</title>
 
- <section id="desc">
-	<title>Os engadidos de ferramentas engaden novas funcionalidades ás Notas de Tomboy.</title>
-</section>
+	<p>Os engadidos de ferramentas engaden novas funcionalidades ás Notas de Tomboy.</p>
 
   <section id="backlinks">
     <title>Retroligazóns</title>
-	<p>The <gui>Backlinks</gui> addin is enabled by default and allows you
-	to see which notes link to the note you are currently viewing.</p> 
+	<p>O complemento <gui>Retroligazóns</gui> está activado de maneira predeterminada e permítelle ver que notas ligan coa nota que está vendo actualmente.</p> 
   </section>
 
 <section id="html-export">
   <title>Exportar a HTML</title>
-  <p>The <gui>Export to HTML</gui> addin is enabled by default and will export
-	an individual note to HTML.</p>
-	<p>To export a note to HTML, press the <gui>Tools</gui> icon in the note
-	toolbar and choose <gui>Export to HTML</gui>.  You will immediately be
-	presented with a dialog to save the note.  Choose the directory you 
-	wish to save the note in and change the name of note's new html file if 
-	you wish it to be different than the note name.  The note will then be
-	saved as an HTML file and automatically displayed in your browser.</p>
+  <p>O complemento <gui>Exportar a HTML</gui> está activado de maneira predeterminada e exportará unha nota individual a HTML.</p>
+	<p>Para exportar unha nota a HTML, prema na icona <gui>Ferramentas</gui> na barra de ferramentas da nota e elixa <gui>Exportar a HTML</gui>. Inmediatamente aparecerá un diálogo para gardar a nota. Seleccione o cartafol no que quere gardar a nota e cambie o nome do ficheiro html novo da nota se quere que sexa diferente do nome da nota. A nota gardarase como un ficheiro HTML e mostrarase automaticamente no seu navegador.</p>
 </section>
 
 <section id="timestamp">
   <title>Inserir marca de tempo</title>
-  <p>The <gui>Insert Timestamp</gui> addin is disabled by default.  To enable it,
-	choose the <gui>Insert Timestamp</gui> addin and then press
-	<gui>Enable</gui> in the Tomboy Preferences.</p>
-	<p>To add a timestamp to your notes, press the <gui>Tools</gui> icon in
-	the note toolbar and choose <gui>Insert Timestamp</gui> or press 
-	<key>Ctrl + D</key>.</p>
+  <p>O complemento <gui>Insertar marca de tempo</gui> está desactivado de maneira predeterminada. Para activalo, seleccione o complemento <gui>Insertar marca de tempo</gui> e prema <gui>Activar</gui> nas preferencias de Tomboy.</p>
+	<p>Para engadir unha marca de tempo ás súas notas, prema sobre a icona <gui>Ferramentas</gui> na barra de ferramentas da nota e elixa <gui>Insertar marca de tempo</gui> ou prema <key>Ctrl+D</key>.</p>
 </section>
 
 <section id="noteoftheday">
   <title>Nota do día</title>
-  <p>The <gui>Note of the Day</gui> addin is disabled by default.  To enable,
-	choose the <gui>Note of the Day</gui> addin and then press
-	<gui>Enable</gui> in the Tomboy Preferences.</p>
-	<p><gui>Note of the Day</gui> addin will create a new note daily with the 
-	title <em>Today: Thursday, January 21 2010</em> for example.  The note will
-	also add rows for <em>Tasks</em> and <em>Appointment</em> automatically.</p>
+  <p>O complemento <gui>Nota do día</gui> está desactivado de maneira predeterminada. Para activalo, elixa o complemento <gui>Nota do día</gui> e prema <gui>Activar</gui> nas preferencias de Tomboy.</p>
+	<p>O complemento <gui>Nota do día</gui> creará unha nota diaria co título <em>Hoxe: Luns, 21 de xaneiro de 2010</em>, por exemplo. A nota tamén engadirá filas a <em>Tarefas</em> e <em>Citas</em> automaticamente.</p>
 </section>
 
 <section id="watcher">
-  <title>Note Directory Watcher</title>
-  <p>The Note Directory Watcher addin monitors the directory your Tomboy notes
-	are saved in.  If the addin detects changes to your notes, it will apply
-	those changes and they will be displayed in your notes.  This addin is
-	typically used with 3rd party sync services such as Dropbox.  Setting
-	up 3rd party sync services is outside the scope of this help.</p>
+  <title>Vixiante do cartafol de notas</title>
+  <p>O complemento Vixilante do cartafol de notas monitoriza o cartafol no que Tomboy garda as súas notas. Se o complemento detecta cambios nas súas notas, aplicará estes cambios e mostraranse nas súas notas. Este complemento úsase a miúdo con servizos de sincronización de terceiras partes tales como Dropbox. A configuración de servizos de sincronización de terceiras partes está fora de obxectivo deste documento.</p>
 </section>
 
  </page>

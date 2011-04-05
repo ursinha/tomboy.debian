@@ -22,15 +22,11 @@
 
   <title>Crear un caderno de notas</title>    
   
-  <p>Notebooks allow you to group related notes together.  
-    You can add a note to a notebook in the Search All Notes window or directly 
-    inside of a Note.</p>
+  <p>Os cadernos de notas permítenlle agrupar notas relacionadas. Pode engadir unha nota a un caderno de notas na xanela Buscar en todas as notas ou directamente dentro dunha nota.</p>
   
 <steps>
 	<item>
-	<p>Click on the Tomboy note icon present in the GNOME Panel, 
-	the taskbar in Microsoft Windows, or the dock in Mac OS X.  
-        A menu will appear.</p>
+	<p>Prema sobre a icona de Tomboy presente no panel de GNOME, a barra de tarefas en Microsoft Windows, ou o «dock» en Mac OS X. Aparecerá un menú.</p>
 	</item>
 	
 <!--
@@ -49,14 +45,10 @@
 
 <steps>
 	<item>
-		<p>Open <gui>Search All Notes</gui> by choosing it from the 
-		Tomboy icon on the GNOME Panel, the taskbar in Microsoft 
-		Windows, or the dock in Mac OS X, or click on Search from 
-		an open note.</p>
+		<p>Abra <gui>Buscar en todas as notas</gui> elixindo desde a icona de Tomboy no panel de GNOME, a barra de tarefas en Microsoft Windows, ou o «dock» en Mac OS X, ou prema Buscar nunha nota aberta.</p>
 	</item>
 	<item>
-		<p>Using your mouse, right click in the left hand box and 
-		choose <gui>New Notebook</gui>.</p>
+		<p>Usando o seu rato, prema co botón dereito na caixa da esquerda e elixa <gui>Novo caderno de notas</gui>.</p>
 	</item>
 	<item>
 		<p>Introduza un nome para o caderno de notas novo.</p>
@@ -67,9 +59,7 @@
 	
 <steps>
 	<item>
-		<p>With <gui>Search All Notes</gui> open, choose 
-		<guiseq><gui>File</gui> 
-		<gui>Notebooks</gui> <gui>New Notebook</gui></guiseq>.</p>
+		<p>Con <gui>Buscar en todas as notas</gui> aberto, elixa <guiseq><gui>Ficheiro</gui><gui>Cadernos</gui><gui>Caderno de notas novo</gui></guiseq>.</p>
 	</item>
 	<item>
 		<p>Introduza un nome para o caderno de notas novo.</p>

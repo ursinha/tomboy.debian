@@ -20,20 +20,9 @@
 
   <title>Introdución</title>
 
-  <p>
-    <app>Tomboy</app> is a note taking application for the GNOME Desktop, Microsoft Windows, and Mac OS X.
-    <app>Tomboy</app> is easy to use, and helps you organize the ideas and information you work
-    with everyday.
-  </p>
-  <p>
-    <app>Tomboy</app> includes features that help you better organize and remember your information and
-    allows you to link your notes together to make it easier to find and sort your information.  You can
-    also organize multiple notes in a notebook to make grouping notes together easier.
-  </p>
-  <p>
-    You can also sync your notes across multiple computers, making it easy to take your notes with you 
-    wherever you are.
-  </p>
+  <p><app>Tomboy</app> é un aplicativo para tomar notas no escritorio GNOME, Microsoft Windows e Mac OS X. <app>Tomboy</app> é sinxelo de usar e permítelle organizar as ideas e información coa que trata a diario.</p>
+  <p><app>Tomboy</app> inclúe características que lle axudan a organizarse mellor e a recordar a súa información e permítelle ligar as súas notas entre si para encontrar e organizar as súa información de máis facilmente. Tamén pode organizar múltiples notas en cadernos de notas para agrupar notas xuntas máis facilmente.</p>
+  <p>Tamén pode sincronizar as súas notas con múltiples equipos, facendo máis sinxelo levarse as súas notas estea onde estea.</p>
 
   <figure>
     <title>Xanela de <gui>Notas de Tomboy</gui></title>
