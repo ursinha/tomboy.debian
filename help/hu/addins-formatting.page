@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-formatting">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Bővítmények további jegyzetformázási lehetőségekhez.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Formázó bővítmények</title>
+
+<section id="fixedwidth">
+  <title>Rögzített szélesség bővítmény</title>
+  <p>A Rögzített szélesség bővítmény a Tomboy jegyzet szövegét rögzített szélességűvé teszi. Ez a bővítmény alapértelmezésben ki van kapcsolva. Engedélyezéséhez nyomja meg az <gui>Engedélyezés</gui> gombot.</p>
+</section>
+
+<section id="underline">
+  <title>Aláhúzás bővítmény</title>
+  <p>Az Aláhúzás bővítmény lehetővé teszi adott szövegrészek aláhúzását a jegyzet eszköztárának <gui>Szöveg</gui> gombja segítségével. Ez a bővítmény alapértelmezésben ki van kapcsolva. Az engedélyezéséhez nyomja meg az <gui>Engedélyezés</gui> gombot. Jelölje ki az aláhúzni kívánt szöveget, nyomja meg a jegyzet eszköztárán lévő <gui>Szöveg</gui> gombot, és válassza ki az <gui>Aláhúzás</gui> lehetőséget, vagy nyomja meg a <keyseq><key>CONTROL + U</key></keyseq> kombinációt.</p>
+</section>
+
+ </page>

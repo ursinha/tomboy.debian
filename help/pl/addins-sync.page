@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="sync-addins-sync">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Włączanie dodatkowych metod synchronizacji notatek z innymi urządzeniami.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Dodatki synchronizacji</title>
+
+	<p>Dodatki synchronizacji umożliwiają użytkownikowi wybór różnych metod oraz miejsc synchronizacji notatek programu Tomboy. Więcej informacji na temat konfiguracji synchronizacji: strona pomocy <link xref="sync-notes"/>.</p>
+
+
+<section id="local">
+  <title>Usługa synchronizacji z katalogiem lokalnym</title>
+  <p>Usługa synchronizacji z katalogiem lokalnym jest domyślnie włączona. Usługa umożliwia synchronizację notatek do innego katalogu na komputerze użytkownika, pozwalając na łatwiejsze tworzenie kopii zapasowych notatek.</p>
+</section>
+
+<section id="ssh">
+  <title>Usługa synchronizacji SSH</title>
+  <p>Usługa synchronizacji protokołu SSH umożliwia synchronizację notatek z innym komputerem poprzez protokół SSH. Wtyczka jest domyślnie wyłączona. Aby dodatek działał prawidłowo, należy zainstalować pakiet <em>sshfs</em> odpowiedni dla dystrybucji systemu Linux użytkownika. Informacje na temat instalacji pakietu nie znajdują się w niniejszym dokumencie pomocy.</p>
+</section>
+
+<section id="webdav">
+  <title>Usługa synchronizacji WebDav</title>
+  <p>Dodatek synchronizacji z serwerem WebDav jest domyślnie włączony. Pozwala on użytkownikowi na synchronizowanie notatek przy użyciu zdalnego serwera WebDav. Aby opcja działała prawidłowo, należy zainstalować odpowiedni dla dystrybucji systemu Linux użytkownika pakiet <em>system plików wdfs FUSE</em>. Informacje na temat instalacji pakietu nie znajdują się w niniejszym dokumencie pomocy.</p>
+</section>
+
+<section id="webservice">
+  <title>Usługa synchronizacji sieciowej</title>
+  <p>Usługa synchronizacji sieciowej umożliwia synchronizację notatek do zdalnego serwera sieciowego lub usługi sieciowej, np. Tomboy Online. W trakcie tworzenia dokumentu pomocy usługa Tomboy Online nie została jeszcze uruchomiona.</p>
+</section>
+
+ </page>

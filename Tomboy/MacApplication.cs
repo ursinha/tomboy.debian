@@ -230,6 +230,9 @@ namespace Tomboy
 			Gtk.MenuItem prefs_item = uiManager.GetWidget ("/MainWindowMenubar/EditMenu/ShowPreferences") as Gtk.MenuItem;
 			Gtk.MenuItem quit_item  = uiManager.GetWidget ("/MainWindowMenubar/FileMenu/QuitTomboy") as Gtk.MenuItem;
 			
+			(about_item.Child as Gtk.Label).Text = Catalog.GetString ("About Tomboy");
+			(prefs_item.Child as Gtk.Label).Text = Catalog.GetString ("Preferences...");
+
 			IgeMacMenuGroup about_group = IgeMacMenu.AddAppMenuGroup ();
 			IgeMacMenuGroup prefs_group = IgeMacMenu.AddAppMenuGroup ();
 
@@ -283,10 +286,10 @@ namespace Tomboy
 			system ("open \"" + url + "\"");
 		}
 
-		public virtual void DisplayHelp (string help_uri, Gdk.Screen screen)
+		public virtual void DisplayHelp (string project, string page, Gdk.Screen screen)
 		{
-			Match version = Regex.Match (Defines.VERSION, @"^\d+\.\d+");
-			OpenUrl (string.Format ("http://library.gnome.org/users/tomboy/{0}/", version.Value), screen);
+			string version = Defines.VERSION.Remove (Defines.VERSION.LastIndexOf ('.'));
+			OpenUrl (string.Format ("http://library.gnome.org/users/{0}/{1}", project, version), screen);
 		}
 
 		#endregion

@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<legalnotice id="legalnotice">
-         <para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko, Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1 bertsioan edo berriago batean ezarritako baldintzetan, atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
-          <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu lizentzian bertan, 6. atalean azaltzen den bezala.</para>
- 
-         <para>Enpresek beren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatzen direnean, izen horiek maiuskulaz idatzita agertuko dira, osorik edo hasierako letra bakarrik.</para>
- 
-         <para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
-                 <listitem>
-                   <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN, ETA EZIN IZANGO DA INONGO ZIRKUNSTANTZIA EDO LEGE-TEORIARIK OINARRI HARTU —EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA) EZ KONTRATUARI BURUZKORIK, EZ BESTERIK— DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK GABE), BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
-                 </listitem>
-           </orderedlist></para>
-   </legalnotice>
+<license xmlns="http://projectmallard.org/1.0/" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<p>This work is licensed under a
+<link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported License</link>.</p>
+<p>As a special exception, the copyright holders give you permission to copy,
+modify, and distribute the example code contained in this document under the
+terms of your choosing, without restriction.</p>
+</license>

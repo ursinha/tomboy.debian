@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Activer des fonctionnalités de note supplémentaires.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Greffons d'outils Tomboy</title>
+
+	<p>Les greffons outils ajoutent des fonctionnalités supplémentaires à votre application Tomboy.</p>
+
+  <section id="backlinks">
+    <title>Backlinks</title>
+	<p>Le greffon <gui>Backlinks</gui> est activé par défaut et permet de voir quelles notes sont liées à celle que vous visualisez actuellement.</p> 
+  </section>
+
+<section id="html-export">
+  <title>Exportation en HTML</title>
+  <p>Le greffon <gui>Exporter en HTML</gui> est activé par défaut et exporte une note individuelle dans un fichier HTML.</p>
+	<p>Pour exporter une note en HTML, cliquez sur l'icône <gui>Outils</gui> dans la barre d'outils et choisissez <gui>Exporter en HTML</gui>. Une boîte de dialogue s'ouvre pour vous permettre d'enregistrer la note. Choisissez le répertoire dans lequel vous souhaitez enregistrer le fichier et modifiez le nom du nouveau fichier html de la note si vous voulez qu'il soit différent du nom de la note. La note est alors enregistrée en tant que fichier HTML et automatiquement affichée dans votre navigateur.</p>
+</section>
+
+<section id="timestamp">
+  <title>Insertion de date</title>
+  <p>Le greffon <gui>Insérer la date</gui> est désactivé par défaut. Pour l'activer, choisissez le greffon <gui>Insérer la date</gui> dans les préférences Tomboy et cliquez sur <gui>Activer</gui>.</p>
+	<p>Pour insérer la date dans vos notes, cliquez sur l'icône <gui>Outils</gui> dans la barre d'outils de la note et choisissez <gui>Insérer la date</gui> ou pressez <key>Ctrl + D</key>.</p>
+</section>
+
+<section id="noteoftheday">
+  <title>Note du jour</title>
+  <p>Le greffon <gui>Note du jour</gui> est désactivé par défaut. Pour l'activer, choisissez le greffon <gui>Note du jour</gui> dans les préférences Tomboy et cliquez sur <gui>Activer</gui>.</p>
+	<p>Le greffon <gui>Note du jour</gui> crée une nouvelle note avec par exemple le titre <em>Aujourd'hui : jeudi 21 janvier 2010</em>. La note contient aussi automatiquement les lignes <em>Tâches</em> et <em>Rendez-vous</em>.</p>
+</section>
+
+<section id="watcher">
+  <title>Surveillance de dossier de notes</title>
+  <p>Le greffon de surveillance de dossier surveille le répertoire où vos notes Tomboy sont enregistrées. Si le greffon détecte des modifications dans les notes, il applique ses modifications et elles sont reproduites dans vos notes. Ce greffon est employé en général avec un service de synchronisation tierce tel que Dropbox. Configurer un service de synchronisation tierce n'est pas le propos de ce manuel.</p>
+</section>
+
+ </page>

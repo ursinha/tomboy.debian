@@ -151,6 +151,8 @@ PACKAGE_VERSION = @PACKAGE_VERSION@
 PANELAPPLET_SERVER_DIR = @PANELAPPLET_SERVER_DIR@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PKG_CONFIG = @PKG_CONFIG@
+PKG_CONFIG_LIBDIR = @PKG_CONFIG_LIBDIR@
+PKG_CONFIG_PATH = @PKG_CONFIG_PATH@
 POFILES = @POFILES@
 POSUB = @POSUB@
 PO_IN_DATADIR_FALSE = @PO_IN_DATADIR_FALSE@
@@ -224,7 +226,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 CSC = $(GMCS)
-TARGET = TomboyTest.dll
+TARGET = $(top_builddir)/bin/TomboyTest.dll
 CSFLAGS = \
 	-debug				\
 	-define:DEBUG			\
@@ -240,8 +242,8 @@ CSFILES = \
 ASSEMBLIES = \
 	$(NUNIT_LIBS)						\
 	$(TOMBOY_LIBS)						\
-	-r:$(top_builddir)/Tomboy/Tomboy.exe			\
-	-r:$(top_builddir)/Tomboy/Plugins/ExportToHTML.dll
+	-r:$(LINK_TOMBOY_EXE)			\
+	-r:$(top_builddir)/bin/ExportToHTML.dll
 
 MONO_PATH = $(top_builddir)/Tomboy:$(top_builddir)/Tomboy/Plugins
 RESSOURCES = 
@@ -439,7 +441,7 @@ uninstall-am:
 	mostlyclean-libtool pdf pdf-am ps ps-am uninstall uninstall-am
 
 
-$(TARGET): $(CSFILES) $(top_builddir)/Tomboy/Tomboy.exe
+$(TARGET): $(CSFILES) $(TOMBOY_EXE_PATH)
 	$(CSC) -out:$@ $(CSFLAGS) $(CSFILES) $(ASSEMBLIES) $(RESSOURCES)
 
 test: $(TARGET)

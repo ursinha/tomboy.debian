@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="sync-addins-sync">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Activar formas adicionais de sincronizar as súas notas con outros dispositivos.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Sincronizar complementos</title>
+
+	<p>Os complementos de sincronización permítelle elixir diferentes métodos e lugares para sincronizar as súas notas Tomboy. Para obter máis información, ou configuración da sincronización, consulte a páxina de axuda <link xref="sync-notes"/>.</p>
+
+
+<section id="local">
+  <title>Servizo de sincronización de cartafoles locais</title>
+  <p>O servizo de sincronización de cartafol local está activado de maneira predeterminada e permítelle a Tomboy sincronizar as súas notas con outro cartafol no seu equipo. Isto é útil para crear copias de respaldo das súas notas.</p>
+</section>
+
+<section id="ssh">
+  <title>Servizo de sincronización SSH</title>
+  <p>O servizo de sincronización SSH permítelle sincronizar as súas notas con outro equipo a través do protocolo SSH. Este complemento está desactivado de maneira predeterminada. É posíbel que deba instalar o paquete <em>sshfs</em> para a súa distribución de Linux para facer que este complemento funcione, algo que está fora do obxectivo deste documento de axuda.</p>
+</section>
+
+<section id="webdav">
+  <title>Servizo de sincronización WebDav</title>
+  <p>O complemento de servizo de sincronización WebDAV está activado de maneira predeterminada e pemítelle sincronizar as súas notas con un servidor WebDAV remoto. Pode necesitar ter instalado o paquete <em>wdfs FUSE file system</em> na súa distribución Linux para que este complemento funcione, o que está fora do obxectivo deste documento.</p>
+</section>
+
+<section id="webservice">
+  <title>Servizo de sincronización Web</title>
+  <p>O complemento de servizo de sincronización web permítelle sincronizar as súas notas con un servizo ou un servidor web remoto, como Tomboy online. No momento de escribir isto, o servizo Tomboy Online non se iniciou.</p>
+</section>
+
+ </page>

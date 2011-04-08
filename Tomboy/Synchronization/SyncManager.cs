@@ -292,7 +292,17 @@ namespace Tomboy.Sync
 			var addin = GetConfiguredSyncService ();
 			if (addin != null) {
 				// TODO: block sync while checking
-				var server = addin.CreateSyncServer ();
+				SyncServer server = null;
+				try {
+					server = addin.CreateSyncServer ();
+					if (server == null)
+						throw new Exception ("addin.CreateSyncServer () returned null");
+				} catch (Exception e) {
+					Logger.Debug ("BackgroundSyncChecker: Exception while creating SyncServer: {0}\n{1}", e.Message, e.StackTrace);
+					addin.PostSyncCleanup ();// TODO: Needed?
+					return;
+					// TODO: Figure out a clever way to get the specific error up to the GUI
+				}
 				bool serverHasUpdates = false;
 				bool clientHasUpdates = client.DeletedNoteTitles.Count > 0;
 				if (!clientHasUpdates) {
@@ -313,6 +323,7 @@ namespace Tomboy.Sync
 				} catch {
 					// TODO: A libnotify bubble might be nice
 					Logger.Debug ("BackgroundSyncChecker: Error connecting to server");
+					addin.PostSyncCleanup ();
 					return;
 				}
 
@@ -381,7 +392,7 @@ namespace Tomboy.Sync
 						throw new Exception ("addin.CreateSyncServer () returned null");
 				} catch (Exception e) {
 					SetState (SyncState.SyncServerCreationFailed);
-					Logger.Log ("Exception while creating SyncServer: {0}\n{1}", e.Message, e.StackTrace);
+					Logger.Error ("Exception while creating SyncServer: {0}\n{1}", e.Message, e.StackTrace);
 					SetState (SyncState.Idle);
 					syncThread = null;
 					addin.PostSyncCleanup ();// TODO: Needed?
@@ -396,7 +407,7 @@ namespace Tomboy.Sync
 				// TODO: We should really throw exceptions from BeginSyncTransaction ()
 				if (!server.BeginSyncTransaction ()) {
 					SetState (SyncState.Locked);
-					Logger.Log ("PerformSynchronization: Server locked, try again later");
+					Logger.Warn ("PerformSynchronization: Server locked, try again later");
 					SetState (SyncState.Idle);
 					syncThread = null;
 					addin.PostSyncCleanup ();

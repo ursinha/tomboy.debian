@@ -176,6 +176,8 @@ PACKAGE_VERSION = @PACKAGE_VERSION@
 PANELAPPLET_SERVER_DIR = @PANELAPPLET_SERVER_DIR@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PKG_CONFIG = @PKG_CONFIG@
+PKG_CONFIG_LIBDIR = @PKG_CONFIG_LIBDIR@
+PKG_CONFIG_PATH = @PKG_CONFIG_PATH@
 POFILES = @POFILES@
 POSUB = @POSUB@
 PO_IN_DATADIR_FALSE = @PO_IN_DATADIR_FALSE@
@@ -248,8 +250,9 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
+TOMBOY_EXE_PATH = $(top_builddir)/bin/Tomboy.exe
 LINK_TOMBOY_EXE = \
-	-r:$(top_builddir)/Tomboy/Tomboy.exe
+	-r:$(TOMBOY_EXE_PATH)
 
 LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
 CSC_FLAGS = -debug
@@ -272,7 +275,7 @@ ASSEMBLIES = \
 #
 # SSH Sync Service Addin
 #
-TARGET = SshSyncServiceAddin.dll
+TARGET = $(top_builddir)/bin/addins/SshSyncServiceAddin.dll
 CSFILES = \
 	$(srcdir)/SshSyncServiceAddin.cs
 
@@ -504,8 +507,8 @@ uninstall-am: uninstall-addinsDATA
 
 $(TARGET).mdb: $(TARGET)
 
-$(TARGET): $(CSFILES) $(top_builddir)/Tomboy/Tomboy.exe
-	$(CSC) -out:$@ $(CSFLAGS) $(ASSEMBLIES) $(CSFILES) $(RESOURCES)
+$(TARGET): $(CSFILES) $(TOMBOY_EXE_PATH)
+	mkdir -p `dirname $(TARGET)` && $(CSC) -out:$@ $(CSFLAGS) $(ASSEMBLIES) $(CSFILES) $(RESOURCES)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

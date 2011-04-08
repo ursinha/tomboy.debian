@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="sync-addins-sync">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Omogočite dodatne načine za usklajevanje svojih sporočilc z drugimi napravami.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Vstavki usklajevanja</title>
+
+	<p>Vstavek usklajevanja vam omogoča izbiro različnih načinov in mest za usklajevanje vaših sporočilc Tomboy. Za več podrobnosti o nastavljanju usklajevanje, obiščite stran pomoči <link xref="sync-notes"/>.</p>
+
+
+<section id="local">
+  <title>Storitev krajevne mape usklajevanja</title>
+  <p>Storitev krajevne mape usklajevanja je privzeto omogočena in Tomboyu omogoča usklajevanje njegovih sporočilc v drugo mapo na vašem računalniku. To pride prav pri ustvarjanju varnostnih kopij vaših sporočilc.</p>
+</section>
+
+<section id="ssh">
+  <title>Storitev usklajevanja SSH</title>
+  <p>Storitev usklajevanja SSH vam omogoča usklajevanje vaših sporočilc z drugim računalnikom preko protokola SSH. Vstavek je privzeto onemogočen. Za delovanje tega vstavka boste morda morali namestiti paket <em>sshfs</em> za svojo Linux distribucijo. To je izven obsega tega dokumenta pomoči.</p>
+</section>
+
+<section id="webdav">
+  <title>Storitev usklajevanja WebDac</title>
+  <p>Vstavek storitve usklajevanja WebDav je privzeto omogočen in vam omogoča usklajevanje svojih sporočilc z oddaljenim strežnikom WebDav. Morda boste morali namestiti paket <em>datotečnega sistema wdfs FUSE</em> za svojo Linux distribucijo. To je izven obsega tega dokumenta pomoči.</p>
+</section>
+
+<section id="webservice">
+  <title>Storitev spletnega usklajevanja</title>
+  <p>Vstavek storitve spletnega usklajevanja vam omogoča usklajevanje svojih sporočilc z oddaljenim spletnim strežnikom ali storitvijo kot je Tomboy Online. V času pisanja storitev Tomboy Online še ni delovala.</p>
+</section>
+
+ </page>

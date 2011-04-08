@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-formatting">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Πρόσθετες λειτουργίες για προσθήκη μορφοποίησης σημειώσεων</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Μορφοποίηση πρόσθετων λειτουργιών</title>
+
+<section id="fixedwidth">
+  <title>Πρόσθετη λειτουργία σταθερού πλάτους</title>
+  <p>Η σταθερή πρόσθετη λειτουργία πλάτους τροποποιεί το κείμενό σας για να έχει σταθερό πλάτος στη σημείωση Tomboy. Αυτή η πρόσθετη λειτουργία εξ ορισμού είναι απενεργοποιημένη. Για να την ενεργοποιήσετε, πιέστε το κουμπί <gui>Ενεργοποίηση</gui>.</p>
+</section>
+
+<section id="underline">
+  <title>Υπογράμμιση πρόσθετης λειτουργίας</title>
+  <p>Η πρόσθετη λειτουργία υπογράμμισης σας επιτρέπει να υπογραμμίζετε κάποιο κείμενο στη σημείωσή σας χρησιμοποιώντας το εικονίδιο <gui>Κείμενο</gui> στην εργαλειοθήκη μίας σημείωσης. Αυτή η πρόσθετη λειτουργία είναι απενεργοποιημένη εξ ορισμού. Για να την ενεργοποιήσετε, πιέστε το κουμπί <gui>Ενεργοποίηση</gui>. Επισημάνετε το κείμενο που θέλετε να υπογραμμίσετε, πιέστε το εικονίδιο <gui>Κείμενο</gui> στην εργαλειοθήκη της σημείωσης και, επιλέξτε <gui>Υπογράμμιση</gui> ή πιέστε το συνδυασμό πλήκτρων <keyseq><key>CONTROL + U</key></keyseq>.</p>
+</section>
+
+ </page>

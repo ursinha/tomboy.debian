@@ -118,10 +118,10 @@ namespace Tomboy
 			}
 		}
 
-		public virtual void DisplayHelp (string help_uri, Gdk.Screen screen)
+		public virtual void DisplayHelp (string project, string page, Gdk.Screen screen)
 		{
-			Match version = Regex.Match (Defines.VERSION, @"^\d+\.\d+");
-			OpenUrl (string.Format("http://library.gnome.org/users/tomboy/{0}/", version.Value), screen);
+			string version = Defines.VERSION.Remove (Defines.VERSION.LastIndexOf ('.'));
+			OpenUrl (string.Format ("http://library.gnome.org/users/{0}/{1}", project, version), screen);
 		}
 
 		#endregion

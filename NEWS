@@ -1,7 +1,7 @@
-
 Tomboy NEWS
 
 Copyright (C) 2004-2009 Alex Graveley <alex@beatniksoftware.com>
+              2005-2010 Tomboy Contributors
 
 Please send questions and suggestions to
 <tomboy-list@lists.beatniksoftware.com>.
@@ -9,16 +9,78 @@ Please send questions and suggestions to
 Please report bugs using http://bugzilla.gnome.org/
 (http://bugzilla.gnome.org/enter_bug.cgi?product=Tomboy).
 
-Version 1.2.2
-* Fix potential sync dataloss bug for former Gnote users (#632535)
-* Support latest GTK# installer on Windows
-* Translation updates: hu, id
+Version 1.6.0
+* Grammar and language fixes (#642156)
+* Changed GetSelectedNotebook from private to public so it can be used by add-ins (Robert Nordan)
+* Fix tomboy insecure LD_LIBRARY_PATH (#635614, Luis Medinas)
+* Fix CVE-2010-4005 (Luis Medinas). Originally found by Ludwig Nussel <lnussel@novell.com>
+* Fix Remove title format from add-ins descriptions (#636606, Paul Cutler)
+* Fix Replace Computer Name with Login Name in SSH sync setup (#633605, Paul Cutler)
+* Translation Updates: es, br, io, bg, cn, cz, dut, fr, gl, de, el, gu, he, hu, in, ja, ko, lv, no, pl, pt, ru, sk, sl, sv, th, ug, and zh.
+* Added new translation Luganda (ug).
 
-Version 1.2.1
-* Fix bullet list indentation when printing (LP#516494, Owen Williams)
-* Add timestamp to logger messages, useful for watching autosync output, etc
-* Other fixes: LP#556628
-* Translation updates: ca@valencia, el, et, nl, th
+Version 1.5.2
+* Fix potential sync dataloss bug for former Gnote users (#632535)
+* Mac-only fixes:
+  + Fix loading of notebooks on startup (#612992, Stefan Schweizer)
+  + User hand cursor when hovering on links (#616317, Stefan Schweizer)
+  + Support building from command line with xbuild
+* Documentation fixes (#623633, Claude Paroz and Paul Cutler)
+* Translation updates: el, es, fr, gl, he, ja, sl
+
+Version 1.5.1
+* Fix Mac build, link to correct Help (#632440, Stefan Schweizer)
+* Translation updates: hu, ko, ro, sl
+
+Version 1.5.0
+* Fix windows crash when libproxy not available (#624885, Jeff V Stein)
+* Stop using deprecated GDK API in libtomboy
+* Translation updates: ca, de, es, fr
+
+Version 1.4.0
+* Various documentation bugs fixed (Paul Cutler, #630600, #630602, #630620)
+* Translation updates: af, da, et, fr, hu, ja, lt, pt_BR, zh_CN
+
+Version 1.3.4
+* Stop building libtomboy with *DISABLE_DEPRECATED flags (for now)
+* Translation updates: pl
+
+Version 1.3.3
+* Update Print add-in license to LGPL (not GPL)
+* Translation updates: bg, cs, de, el, en_GB, es, et, gl, hu, ja, pt, sr,
+                       sr@latin, sv, zh_HK, zh_TW
+
+Version 1.3.2
+* Fix ExportToHtml to export linked notes on Windows (#586682)
+* Fix GtkPopup focus problems on Windows (Cory Thomas, #574627, #595848)
+* Various help text fixes (Stefan Schweizer & Laurent Coudeur, #625806, #626361)
+* Fix Windows installer to require .Net 3.5 support upgrades (#610409, #603811)
+* Don't open the search dialog if tray is not ready (Stefan Schweizer, #443655)
+* Allow empty username field for SSH sync (Greg Poirier, #606572)
+* Fix Windows installer to detect GTK# >=2.12.10 (Sandy Armstrong)
+* Translation updates: eo, es, sk, gl, zh, de, ta, sv, pa, id, fr, it, ru
+
+Version 1.3.1
+* Disable panel applet support by default (Javier Jardón, #603423, #580422)
+* New topic-based help (Paul Cutler and the rest of the docs team, #622228)
+* Add libproxy support to web sync (Alejandro Cura, #621249)
+* Support LaTeX add-in on Mac (Tobias Abenius, #618577)
+* Fix `make run` for developers (#431833)
+* Document --debug option in manpage (Carlos Arenas, #602376)
+* Translation updates: de, es, et, gl, he, hu, ms, nb
+
+Version 1.3.0
+* Use GNOME Session D-Bus API for session management (Aaron Borden, #580422)
+* Fix indentation of bullet list items when printing (Owen Williams, LP#516494)
+* Fix keyboard navigation in bullet lists (Stefan Schweizer, #433244)
+* Applet now uses correct icon (Brian Mattern, #614795)
+* Add hidden preference for quiet note deletion (Jeff Stoner, #585040)
+* Add hidden preference for disabling tray icon (Matthew Pirocchi, #594682)
+* HIG menu item clean-ups on Mac (Brion Vibber, #616238)
+* Proper formatting when typing in timestamp text (Stefan Schweizer, #612755)
+* Allow building with -DGSEAL_ENABLE (#616195)
+* Fix crash in autosync when certain server types are unavailable (#620812)
+* Clean up stream usage in attempt to fix LP#556628
 
 Version 1.2.0
 * Handle new application/x-note mimetype (#611865, Olivier Le Thanh Duong)

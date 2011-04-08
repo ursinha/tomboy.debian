@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Zapíná rozšiřující funkcionalitu poznámek.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Rozšiřující nástroje Tomboy</title>
+
+	<p>Rozšiřující nástroje přidávají rozšiřující funkcionalitu do vašich poznámek Tomboy.</p>
+
+  <section id="backlinks">
+    <title>Zpětné odkazy</title>
+	<p>Rozšíření <gui>Zpětné odkazy</gui> je standardně zapnuté a umožňuje vám vidět, které poznámky se odkazují na poznámku, kterou máte právě zobrazenou.</p> 
+  </section>
+
+<section id="html-export">
+  <title>Export do HTML</title>
+  <p>Rozšíření  <gui>Export to HTML</gui> je standardně zapnuté a provádí export jednotlivých poznámek do HTML.</p>
+	<p>Pokud chcete poznámku exportovat do HTML, zmáčkněte ikonu <gui>Nástroje</gui> na liště nástrojů a zvolte <gui>Exportovat to HTML</gui>. Ihned se vám zobrazí dialogové okno pro uložení poznámky. Zvolte složku, do které si přejete poznámku uložit a změňte název nového souboru html, pokud chcete, aby se jmenoval jinak než je název poznámky. Poznámka bude uložena do souboru HTML a automaticky zobrazena ve vašem webovém prohlížeči.</p>
+</section>
+
+<section id="timestamp">
+  <title>Vkládání časového razítka</title>
+  <p>Rozšíření <gui>Vkládání časového razítka</gui> je standardně vypnuté. Jestli jej chcete zapnout, zvolte rozšíření <gui>Vkládání časového razítka</gui> a zmáčkněte <gui>Povolit</gui> v předvolbách aplikace Tomboy.</p>
+	<p>Když chcete do své poznámky přidat časové razítko, zmáčkněte ikonu <gui>Nástroje</gui> na liště nástrojů a zvolte <gui>Vložit časové razítko</gui> nebo zmáčkněte <key>Ctrl + D</key>.</p>
+</section>
+
+<section id="noteoftheday">
+  <title>Poznámka pro dnešek</title>
+  <p>Rozšíření <gui>Poznámka pro dnešek</gui> je standardně vypnuté. Jestli jej chcete zapnout, zvolte rozšíření <gui>Poznámka pro dnešek</gui> a zmáčkněte tlačítko <gui>Povolit</gui> v předvolbách aplikace Tomboy.</p>
+	<p>Rozšíření <gui>Poznámka pro dnešek</gui> bude denně vytvářet nové poznámky s názvem kupříkladu <em>Dnes: úterý, 21. leden 2010</em>. Rovněž se do poznámky automaticky přidají řádky <em>Úkoly</em> a <em>Události</em>.</p>
+</section>
+
+<section id="watcher">
+  <title>Sledování složky s poznámkami</title>
+  <p>Rozšíření <gui>Sledování složky s poznámkami</gui> sleduje složku, ve které jsou uložené vaše poznámky Tomboy. Jakmile rozšíření zjistí ve vašich poznámkách změny, použije tyto změny a zobrazí je ve vašich poznámkách. Toto rozšíření se typicky používá ve spolupráci se synchronizačními službami třetích stran, jako je třeba Dropbox. Nastavení synchronizačních služeb třetích stran je mimo rámec této nápovědy.</p>
+</section>
+
+ </page>

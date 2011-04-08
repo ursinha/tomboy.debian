@@ -10,13 +10,14 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tomboy 1.2.0\n"
+"Project-Id-Version: tomboy MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=tomboy&component=general\n"
-"POT-Creation-Date: 2010-04-01 06:41+0000\n"
-"PO-Revision-Date: 2010-03-07 09:46+0200\n"
+"POT-Creation-Date: 2010-12-17 13:37+0000\n"
+"PO-Revision-Date: 2010-11-02 07:40+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,7 +42,7 @@ msgid "_About"
 msgstr "_Tomboy'st lähemalt"
 
 msgid "_Help"
-msgstr "_Abi"
+msgstr "A_bi"
 
 msgid "_Preferences"
 msgstr "_Eelistused"
@@ -84,6 +85,9 @@ msgstr "Täpploetelude lubamine."
 msgid "Enable Middle-Click Paste On Icon."
 msgstr "Ikoonile keskmise nupuga asetamise lubamine."
 
+msgid "Enable Tray Icon"
+msgstr "Salveikooni lubamine"
+
 msgid "Enable WikiWord highlighting"
 msgstr "WikiWord esiletõstmise lubamine"
 
@@ -101,6 +105,9 @@ msgstr "Õigekirjakontrolli lubamine"
 
 msgid "Enable startup notes"
 msgstr "Märkmete avamine käivitamisel"
+
+msgid "Enable the Delete Note confirmation dialog"
+msgstr "Märkme kustutamise kinnitusdialoogi lubamine"
 
 msgid ""
 "Enable this option if you want bulleted lists to be automatic when you place "
@@ -138,6 +145,12 @@ msgid "HTML Export Linked Notes"
 msgstr "Viidatud märkmete HTML-eksport"
 
 msgid ""
+"If disabled, the \"Delete Note\" confirmation dialog will be suppressed."
+msgstr ""
+"Kui keelatud, siis toimub märkme kustutamine ilma kasutajalt kinnitust "
+"küsimata."
+
+msgid ""
 "If enable_custom_font is true, the font name set here will be used as the "
 "font when displaying notes."
 msgstr ""
@@ -154,6 +167,15 @@ msgstr ""
 msgid "If enabled, an opened note can be closed by hitting the escape key."
 msgstr ""
 "Kui lubatud, siis on võimalik avatud märget sulgeda escape-klahvi abil."
+
+msgid ""
+"If true, Tomboy's tray icon will be displayed in the notification area. "
+"Disabling this may be useful when another application is providing the "
+"functionality of the tray icon."
+msgstr ""
+"Kui märgitud, siis näidatakse teatealal Tomboy salveikooni. Ikooni näitamise "
+"keelamine võib vajalik olla juhul, kui mõni muu rakendus asendab Tomboy "
+"salveikooni."
 
 msgid ""
 "If true, misspellings will be underlined in red, and correct spelling "
@@ -862,6 +884,9 @@ msgstr "Viimased märkmed"
 msgid "_Window"
 msgstr "_Aken"
 
+msgid "Preferences..."
+msgstr "Eelistused..."
+
 msgid "Create a new notebook"
 msgstr "Uue märkmiku loomine"
 
@@ -1428,7 +1453,7 @@ msgstr ""
 "sünkroniseerima."
 
 msgid "Resetting Synchronization Settings"
-msgstr "Sünkroniseerimissätete algväärtustamine"
+msgstr "Sünkroniseerimissätete lähtestamine"
 
 msgid ""
 "You have disabled the configured synchronization service.  Your "
@@ -1523,10 +1548,10 @@ msgstr ""
 
 msgid ""
 "Copyright © 2004-2007 Alex Graveley\n"
-"Copyright © 2004-2009 Others\n"
+"Copyright © 2004-2010 Others\n"
 msgstr ""
 "Copyright © 2004-2007 Alex Graveley\n"
-"Copyright © 2004-2009 ülejäänud\n"
+"Copyright © 2004-2010 ülejäänud\n"
 
 msgid "A simple and easy to use desktop note-taking application."
 msgstr "Lihtne ja kergestikasutatav märkmete tegemise programm."
@@ -1690,7 +1715,7 @@ msgid "Could not read testfile."
 msgstr "Testfaili pole võimalik lugeda."
 
 msgid "Write test failed."
-msgstr "Tõrge testi kirjutamisel."
+msgstr "Kirjutamistest nurjus."
 
 msgid "Timeout connecting to server."
 msgstr "Serveriga ühenduse võtmine ületas ajapiirangu."

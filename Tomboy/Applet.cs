@@ -6,11 +6,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using Mono.Unix;
 
-#if FIXED_PANELAPPLET
 using Gnome;
-#else
-using _Gnome;
-#endif
 
 namespace Tomboy
 {
@@ -18,7 +14,6 @@ namespace Tomboy
 	{
 		NoteManager manager;
 		TomboyPanelAppletEventBox applet_event_box;
-		TomboyPrefsKeybinder keybinder;
 
 		// Keep referenced so our callbacks don't get reaped.
 		static BonoboUIVerb [] menu_verbs;
@@ -48,7 +43,8 @@ namespace Tomboy
 
 			manager = Tomboy.DefaultNoteManager;
 			applet_event_box = new TomboyPanelAppletEventBox (manager);
-			keybinder = new TomboyPrefsKeybinder (manager, applet_event_box);
+			// No need to keep the reference
+			new TomboyPrefsKeybinder (manager, applet_event_box);
 
 			Flags |= PanelAppletFlags.ExpandMinor;
 
@@ -101,7 +97,7 @@ namespace Tomboy
 		{
 			// Don't use the ActionManager in this case because
 			// the handler won't know about the Screen.
-			GuiUtils.ShowHelp ("ghelp:tomboy", Screen, null);
+			GuiUtils.ShowHelp ("tomboy", null, Screen, null);
 		}
 
 		void ShowAboutVerb ()
@@ -378,7 +374,8 @@ namespace Tomboy
 			else if (icon_size <= 47)
 				icon_size = 32;
 
-			Gdk.Pixbuf new_icon = GuiUtils.GetIcon ("tomboy", icon_size);
+			Gdk.Pixbuf new_icon = GuiUtils.GetIcon ("tomboy-panel", icon_size) ??
+				GuiUtils.GetIcon ("tomboy", icon_size);
 			image.Pixbuf = new_icon;
 		}
 

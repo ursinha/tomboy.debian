@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="sync-addins-sync">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Zapíná rozšiřující způsoby synchronizace vašich poznámek s ostatními zařízeními.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Rozšíření synchronizace</title>
+
+	<p>Rozšíření synchronizace vám umožní zvolit si různé způsoby a místa pro synchronizaci vašich poznámek Tomboy. Pokud chcete o nastavení synchronizace více informací, podívejte se na stránku nápovědy <link xref="sync-notes"/>.</p>
+
+
+<section id="local">
+  <title>Služba synchronizace přes místní složku</title>
+  <p>Služba synchronizace přes místní složku je standardně zapnutá a umožňuje aplikaci Tomboy synchronizovat poznámky do jiné složky ve vašem počítači. To je užitečné pro vytváření záloh vašich poznámek.</p>
+</section>
+
+<section id="ssh">
+  <title>Služba synchronizace přes SSH</title>
+  <p>Služba synchronizace přes SSH vám umožňuje synchronizovat své poznámky s jiným počítačem přes protokol SSH. Zásuvný modul je standardně vypnutý. Aby toto rozšíření fungovalo, budete možná muset nainstalovat balíček <em>sshfs</em> ve vaší distribuci, ale to přesahuje rámec této nápovědy.</p>
+</section>
+
+<section id="webdav">
+  <title>Služba synchronizace přes WebDav</title>
+  <p>Služba synchronizace přes WebDav je standardně zapnutá a umožňuje vám synchronizovat své poznámky se vzdáleným serverem WebDav. Aby toto rozšíření fungovalo, budete možná muset nainstalovat balíček <em>souborového systému wdfs FUSE</em> ve vaší distribuci, ale to přesahuje rámec této nápovědy.</p>
+</section>
+
+<section id="webservice">
+  <title>Služba synchronizace přes Web</title>
+  <p>Služba synchronizace přes Web vám umožňuje synchronizovat své poznámky přes webovou službu nebo službu jako je Tomboy Online. V době psaní nebyla služba Tomboy Online spuštěna.</p>
+</section>
+
+ </page>

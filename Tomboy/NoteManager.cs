@@ -38,7 +38,7 @@ namespace Tomboy
 
 		public NoteManager (string directory, string backup_directory)
 		{
-			Logger.Log ("NoteManager created with note path \"{0}\".", directory);
+			Logger.Debug ("NoteManager created with note path \"{0}\".", directory);
 
 			notes_dir = directory;
 			backup_dir = backup_directory;
@@ -315,6 +315,7 @@ Ciao!");
 
 		protected virtual void LoadNotes ()
 		{
+			Logger.Debug ("Loading notes");
 			string [] files = Directory.GetFiles (notes_dir, "*.note");
 
 			foreach (string file_path in files) {
@@ -327,7 +328,7 @@ Ciao!");
 						notes.Add (note);
 					}
 				} catch (System.Xml.XmlException e) {
-					Logger.Log ("Error parsing note XML, skipping \"{0}\": {1}",
+					Logger.Error ("Error parsing note XML, skipping \"{0}\": {1}",
 					            file_path,
 					            e.Message);
 				}
@@ -369,6 +370,9 @@ Ciao!");
 				if (start_note != null)
 					Preferences.Set (Preferences.START_NOTE_URI, start_note.Uri);
 			}
+
+			if (NotesLoaded != null)
+				NotesLoaded (this, EventArgs.Empty);
 		}
 
 		void OnExitingEvent (object sender, EventArgs args)
@@ -383,7 +387,7 @@ Ciao!");
 				}
 			}
 
-			Logger.Log ("Saving unsaved notes...");
+			Logger.Debug ("Saving unsaved notes...");
 			
 			// Use a copy of the notes to prevent bug #510442 (crash on exit
 			// when iterating the notes to save them.
@@ -419,7 +423,7 @@ Ciao!");
 			notes.Remove (note);
 			note.Delete ();
 
-			Logger.Log ("Deleting note '{0}'.", note.Title);
+			Logger.Debug ("Deleting note '{0}'.", note.Title);
 
 			if (NoteDeleted != null)
 				NoteDeleted (this, note);
@@ -694,6 +698,7 @@ Ciao!");
 		public event NoteRenameHandler NoteRenamed;
 		public event NoteSavedHandler NoteSaved;
 		public event Action<Note> NoteBufferChanged;
+		public event EventHandler NotesLoaded;
 	}
 
 	public class TrieController

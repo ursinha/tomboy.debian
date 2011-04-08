@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-desktop">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Vstavki za vključitev z drugimi programi in spletnimi stranmi.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Vstavki vključitve v namizje</title>
+
+	<p>Vstavki vključitve v namizje se sporazumevajo z drugimi programi ali spletnimi stranmi in Tomboyem.</p>
+
+<section id="bugzilla">
+  <title>Povezave Bugzilla</title>
+  <p>Vstavek povezav Bugzilla vam omogoča veliko URL-jev Bugzilla iz vašega brskalnika v Tomboy. Po vlečenju povezave v sporočilce Tomboy, bo Tomboy prikazal številko hrošča kot dejavno povezavo poleg ikone hrošča, ki vam kaže, da je to povezava Bugzilla. Klik na povezavo v Tomboyu bo odprl brskalnik, ki vam to prikazal to stran Bugzilla.</p>
+</section>
+
+<section id="evolution">
+  <title>Vključitev v Evolution Pošto</title>
+  <p>Vstavek vključitve v Evolution Pošto vam omogoča vlečenje elektronske pošte iz programa Evolution v vaše sporočilce Tomboy. Vaše sporočilce bo prikazalo ikono ovojnice in zadeva sporočilca bo prikazana kot povezava. Klik na to povezavo bo elektronsko sporočilo odprl s programom Evolution.</p>
+</section>
+
+<section id="printing">
+  <title>Podpora tiskanja</title>
+  <p>Ta vstavek je privzeto omogočen in vam omogoča tiskanje sporočilc. V primeru, da ta vstavek onemogočite, sporočilc ne boste mogli več tiskati.</p>
+</section>
+
+
+ </page>

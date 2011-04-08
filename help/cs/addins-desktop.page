@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-desktop">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Zásuvný modul pro integraci s ostatními aplikacemi a weby.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Rozšíření pro integraci do pracovního prostředí</title>
+
+	<p>Rozšíření pro integraci do pracovního prostředí komunikují mezi dalšími aplikacemi, případně weby, a aplikací Tomboy.</p>
+
+<section id="bugzilla">
+  <title>Odkazy do systému Bugzilla</title>
+  <p>Rozšíření <gui>Odkazy do systému Bugzilla</gui> vám umožní přetahovat adresy URL systému Bugzilla z vašeho webového prohlížeče do aplikace Tomboy. Po přetažení odkazu do poznámky Tomboy se v poznámce zobrazí číslo chyby v podobě aktivního odkazu následovaného ikonou symbolizující, že se jedná o odkaz do systému Bugzilla. Kliknutím na odkaz v poznámce Tomboy se otevře okno webového prohlížeče s příslušnou stránkou systému Bugzilla.</p>
+</section>
+
+<section id="evolution">
+  <title>Integrace pošty Evolution</title>
+  <p>Zásuvný modul <gui>Integrace pošty Evolution</gui> vám umožňuje přetahovat e-maily z aplikace Evolution do poznámek Tomboy. Vaše poznámka zobrazí ikonu obálky a předmět zprávy v podobě odkazu. Kliknutím na odkaz se otevře e-mailová zpráva pomocí aplikace Evolution.</p>
+</section>
+
+<section id="printing">
+  <title>Podpora tisku</title>
+  <p>Toto rozšíření je standardně zapnuté a umožňuje tisk poznámek. Pokud jej vypnete, nebudete moci poznámky tisknout.</p>
+</section>
+
+
+ </page>

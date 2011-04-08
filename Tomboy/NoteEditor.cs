@@ -93,17 +93,17 @@ namespace Tomboy
 		{
 			if ((bool) Preferences.Get(Preferences.ENABLE_CUSTOM_FONT)) {
 				string fontString = (string) Preferences.Get(Preferences.CUSTOM_FONT_FACE);
-				Logger.Log( "Switching note font to '{0}'...", fontString);
+				Logger.Debug( "Switching note font to '{0}'...", fontString);
 				ModifyFontFromString (fontString);
 			} else {
-				Logger.Log ("Switching back to the default font");
+				Logger.Debug ("Switching back to the default font");
 				ModifyFont (GetGnomeDocumentFontDescription());
 			}
 		}
 
 		void ModifyFontFromString (string fontString)
 		{
-			Logger.Log ("Switching note font to '{0}'...", fontString);
+			Logger.Debug ("Switching note font to '{0}'...", fontString);
 			ModifyFont (Pango.FontDescription.FromString (fontString));
 		}
 
@@ -142,7 +142,7 @@ namespace Tomboy
 				Gtk.TextTag link_tag = Buffer.TagTable.Lookup ("link:url");
 
 				foreach (Uri uri in uri_list) {
-					Logger.Log ("Got Dropped URI: {0}", uri);
+					Logger.Debug ("Got Dropped URI: {0}", uri);
 					string insert;
 					if (uri.IsFile) {
 						// URL-escape the path in case
@@ -188,7 +188,7 @@ namespace Tomboy
 			case Gdk.Key.KP_Enter:
 			case Gdk.Key.Return:
 				// Allow opening notes with Ctrl + Enter
-				if (args.Event.State != Gdk.ModifierType.ControlMask) {
+				if ((args.Event.State & Gdk.ModifierType.ControlMask) == 0) {
 					if ((int) (args.Event.State & Gdk.ModifierType.ShiftMask) != 0) {
 						ret_value = ((NoteBuffer) Buffer).AddNewline (true);
 					} else {

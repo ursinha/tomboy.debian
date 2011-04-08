@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-notes">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Sincronizar as súas notas de Tomboy con outras computadoras.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Sincronizar as súas notas</title>
+
+ <section id="sync">
+
+	<title>Sincronizar notas manualmente</title>
+	
+	<p>Pode sincronizar as súas notas de tres formas:</p>
+	
+	<list type="numbered">
+	  <item><p>Desde calquera nota prema a icona <gui>Ferramentas</gui> e seleccione <gui>Sincronizar notas</gui></p></item>
+	  <item><p>No diálogo <gui>Buscar en todas as notas</gui> e seleccione <guiseq><gui>Ferramentas</gui><gui>Sincronizar notas</gui></guiseq>.</p></item>
+	  <item><p>Usando o seu rato, prema co botón dereito sobre a icona de Tomboy co seu panel, barra de tarefas ou «doca» e elixa <gui>Sincronizar todas as notas</gui>.</p></item>
+	</list>
+
+ </section>
+ 
+ <section id="autosync">
+ 
+ 	<title>Sincronizar as súas notas automaticamente</title>
+ 	
+ 	<p>Tomboy pode sincronizar automaticamente as súas notas en segundo plano. Recoméndase que configure como se deben xestionar os conflitos nas notas antes de activar a sincronización automática. Pode saber máis sobre os conflitos coas notas na páxina <link xref="sync-setup#conflicts"/>.</p>
+ 	
+ 	<p>Pode activar a sincronización abrindo as <gui>Preferencias de Tomboy</gui> usando o botón dereito do seu rato sobre a icona de Tomboy no seu panel, barra de tarefas ou doca e seleccione <gui>Preferencias</gui> e logo <gui>Sincronización</gui>. Tamén pode abrir as <gui>Preferencias de Tomboy</gui> desde o diálogo de <gui>Buscar en todas as notas</gui>. Desde o menú seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
+	
+	<p>Para activar a autosincronización, comprobe que a caixa de verificación <gui>Sincronizar automaticamente en segundo plano cada x Minutos</gui> na parte inferior do separador Sincronización.</p>
+	
+	<p>A opción predefinida de Tomboy é autosincronizar cada 10 minutos. Para cambiar a frecuencia de sincronización introduza o número de minutos no diálogo ou use o rato para mover o tempo cara arriba ou cara abaixo.</p>
+	
+	<p>Para desactivar a sincronización automática, desmarque a caixa de verificación <gui>Sincronizar automaticamente en segundo plano cada x minutos</gui>.</p>
+	
+  </section>
+
+ </page>

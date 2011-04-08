@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-desktop">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Πρόσθετες λειτουργίες για συνεργασία με άλλες εφαρμογές και ιστοσελίδες.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Πρόσθετες λειτουργίες ολοκλήρωσης επιφάνειας εργασίας</title>
+
+	<p>Οι πρόσθετες λειτουργίες ολοκλήρωσης επιφανειών εργασίας αλληλεπιδρούν με άλλες εφαρμογές ή ιστοσελίδες και το Tomboy.</p>
+
+<section id="bugzilla">
+  <title>Σύνδεσμοι Bugzilla</title>
+  <p>Η πρόσθετη λειτουργία Σύνδεσμοι Bugzilla σας επιτρέπει να μεταφέρετε μία διεύθυνση Bugzilla από το περιηγητή σας στο Tomboy. Ύστερα από τη μεταφορά ενός συνδέσμου σε μία σημείωση Tomboy, το Tomboy θα εμφανίσει τον αριθμό σφάλματος ως ενεργό σύνδεσμο δίπλα στο σφάλμα για να σας υποδείξει ότι αυτό είναι ένας σύνδεσμος του Bugzilla. Κάνοντας κλικ στο σύνδεσμο αυτόν στη σημείωση του Tomboy, θα ανοίξει ένα παράθυρο περιηγητή με τη συγκεκριμένη σελίδα Bugzilla.</p>
+</section>
+
+<section id="evolution">
+  <title>Ολοκλήρωση ηλεκτρονικής αλληλογραφίας Evolution</title>
+  <p>Η πρόσθετη λειτουργία ολοκλήρωσης ηλεκτρονικής αλληλογραφίας Evolution σας επιτρέπει να μεταφέρετε ένα ηλεκτρονικό γράμμα από το Evolution σε μία σημείωση του Tomboy. Η σημείωσή σας θα εμφανίσει ένα εικονίδιο φακέλου και το θέμα της σημείωσης θα εμφανιστεί ως σύνδεσμος. Κάνοντας κλικ σε αυτόν το σύνδεσμο θα ανοίξει το ηλεκτρονικό γράμμα χρησιμοποιώντας το Evolution.</p>
+</section>
+
+<section id="printing">
+  <title>Υποστήριξη εκτύπωσης</title>
+  <p>Η πρόσθετη αυτή λειτουργία είναι εξ ορισμού ενεργοποιημένη και σας επιτρέπει να εκτυπώνετε τις σημειώσεις σας. Αν την απενεργοποιήσετε δεν θα μπορείτε πλέον να εκτυπώσετε σημειώσεις.</p>
+</section>
+
+
+ </page>

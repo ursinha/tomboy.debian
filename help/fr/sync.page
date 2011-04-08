@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-notes">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Synchroniser vos notes Tomboy avec d'autres ordinateurs.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Synchronisation de vos notes</title>
+
+ <section id="sync">
+
+	<title>Synchronisation manuelle des notes</title>
+	
+	<p>Vous pouvez synchroniser vos notes de trois façons :</p>
+	
+	<list type="numbered">
+	  <item><p>Depuis n'importe quelle note, cliquez sur l'icône <gui>Outils</gui> et choisissez <gui>Synchroniser les notes</gui>.</p></item>
+	  <item><p>Dans la boîte de dialogue <gui>Rechercher dans toutes les notes</gui>, choisissez <guiseq><gui>Outils</gui><gui>Synchroniser les notes</gui></guiseq>.</p></item>
+	  <item><p>Avec la souris, faites un clic droit sur l'icône de Tomboy de votre tableau de bord, barre des tâches ou dock et choisissez <gui>Synchroniser toutes les notes</gui>.</p></item>
+	</list>
+
+ </section>
+ 
+ <section id="autosync">
+ 
+ 	<title>Synchronisation automatique de vos notes</title>
+ 	
+ 	<p>Tomboy peut synchroniser vos notes automatiquement en arrière-plan. Il est recommandé de configurer la gestion des conflits de notes avant d'activer la synchronisation automatique. Vous pouvez en savoir plus sur la gestion des conflits dans la page <link xref="sync-setup#conflict"/>.</p>
+ 	
+ 	<p>Vous pouvez activer la synchronisation en ouvrant les <gui>Préférences de Tomboy</gui> à l'aide de la souris par un clic droit sur l'icône Tomboy de votre tableau de bord, barre des tâches ou dock et en choisissant l'élément <gui>Préférences</gui>. Sélectionnez ensuite l'onglet <gui>Synchronisation</gui>. Vous pouvez aussi ouvrir les <gui> Préférences de Tomboy</gui> depuis la boîte de dialogue <gui>Rechercher dans toutes les notes</gui> ou dans le menu choisir <guiseq><gui>Édition</gui><gui>Préférences</gui></guiseq>.</p>
+	
+	<p>Pour activer la synchronisation automatique, cochez la case <gui>Synchroniser automatiquement en arrière-plan toutes les x minutes</gui> en bas de l'onglet Synchronisation.</p>
+	
+	<p>L'option par défaut de Tomboy est de synchroniser automatiquement toutes les dix minutes. Pour modifier la fréquence de synchronisation de Tomboy saisissez le nombre de minutes dans la boîte de dialogue ou faites défiler vers le haut ou le bas avec la souris.</p>
+	
+	<p>Pour désactiver la synchronisation automatique, décochez la case <gui>Synchroniser automatiquement en arrière plan toutes les X minutes</gui>.</p>
+	
+  </section>
+
+ </page>

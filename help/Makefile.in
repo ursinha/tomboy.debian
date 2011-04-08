@@ -176,6 +176,8 @@ PACKAGE_VERSION = @PACKAGE_VERSION@
 PANELAPPLET_SERVER_DIR = @PANELAPPLET_SERVER_DIR@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PKG_CONFIG = @PKG_CONFIG@
+PKG_CONFIG_LIBDIR = @PKG_CONFIG_LIBDIR@
+PKG_CONFIG_PATH = @PKG_CONFIG_PATH@
 POFILES = @POFILES@
 POSUB = @POSUB@
 PO_IN_DATADIR_FALSE = @PO_IN_DATADIR_FALSE@
@@ -358,11 +360,51 @@ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
 _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
 _clean_dir = $(if $(DOC_MODULE)$(DOC_ID),clean-doc-dir)
 _doc_install_dir = $(if $(DOC_ID),$(DOC_ID),$(DOC_MODULE))
-DOC_MODULE = tomboy
-DOC_ENTITIES = 
+DOC_ID = tomboy
 DOC_INCLUDES = legal.xml
-DOC_FIGURES = 
-DOC_LINGUAS = ca cs de el en_GB es eu fr it lt oc pl pt_BR ru sv uk vi zh_CN
+DOC_FIGURES = \
+	figures/add-notebook-search.png \
+	figures/add-to-notebook.png \
+	figures/delete-notebook.png \
+	figures/move-notes-search.png \
+	figures/new-notebook.png \
+	figures/notebook-icon.png \
+	figures/note-template.png \
+	figures/tomboy-main-menu.png \
+	figures/tomboy-new-note.png \
+	figures/tomboy-panel.png \
+	figures/tomboy-pindown.png \
+	figures/tomboy-pinup.png \
+	figures/tomboy.png \
+	figures/tomboy-preferences-add-ins.png \
+	figures/tomboy-preferences-editing.png \
+	figures/tomboy-preferences-hotkeys.png \
+	figures/tomboy-preferences-synchronization.png \
+	figures/tomboy-tools.png
+
+DOC_PAGES = \
+	addins-desktop.page \
+	addins-formatting.page \
+	addins.page \
+	addins-sync.page \
+	addins-tools.page \
+	advanced.page \
+	create-notebook.page \
+	create-note.page \
+	delete-notes.page \
+	edit-note.page \
+	hotkeys.page \
+	index.page \
+	introduction.page \
+	note-edit-prefs.page \
+	prefs.page \
+	problems.page \
+	search.page \
+	sync.page \
+	sync-setup.page \
+	whatsnew.page
+
+DOC_LINGUAS = ca cs de el en_GB es eu fr gl hu it lt oc pl pt_BR ru sl sv uk vi zh_CN
 all: all-am
 
 .SUFFIXES:

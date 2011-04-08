@@ -4,12 +4,6 @@ using System.IO;
 using System.Xml;
 using Mono.Unix;
 
-#if FIXED_PANELAPPLET
-using Gnome;
-#elif !WIN32 && !MAC
-using _Gnome;
-#endif
-
 using Tomboy.Sync;
 
 namespace Tomboy
@@ -17,6 +11,7 @@ namespace Tomboy
 	public class Tomboy : Application
 	{
 		static bool debugging;
+		static bool uninstalled;
 		static NoteManager manager;
 		static TomboyTrayIcon tray_icon;
 		static TomboyTray tray = null;
@@ -63,6 +58,7 @@ namespace Tomboy
 
 			TomboyCommandLine cmd_line = new TomboyCommandLine (args);
 			debugging = cmd_line.Debug;
+			uninstalled = cmd_line.Uninstalled;
 
 			if (!RemoteControlProxy.FirstInstance) {
 				if (!cmd_line.NeedsExecute)
@@ -74,11 +70,15 @@ namespace Tomboy
 			}
 
 			Logger.LogLevel = debugging ? Level.DEBUG : Level.INFO;
+#if PANEL_APPLET
 			is_panel_applet = cmd_line.UsePanelApplet;
+#else
+			is_panel_applet = false;
+#endif
 
 			// NOTE: It is important not to use the Preferences
 			//       class before this call.
-			Initialize ("tomboy", "tomboy", "tomboy", args);
+			Initialize ("tomboy", "Tomboy", "tomboy", args);
 
 			// Add private icon dir to search path
 			icon_theme = Gtk.IconTheme.Default;
@@ -134,6 +134,7 @@ namespace Tomboy
 				return false;
 			});
 
+#if PANEL_APPLET
 			if (is_panel_applet) {
 				tray_icon_showing = true;
 
@@ -142,22 +143,27 @@ namespace Tomboy
 				am ["QuitTomboyAction"].Visible = false;
 
 				RegisterPanelAppletFactory ();
-				Logger.Log ("All done.  Ciao!");
+				Logger.Debug ("All done.  Ciao!");
 				Exit (0);
-			} else {
-				RegisterSessionManagerRestart (
-				        Environment.GetEnvironmentVariable ("TOMBOY_WRAPPER_PATH"),
-				        args,
-				        new string [] { "TOMBOY_PATH=" + note_path  }); // TODO: Pass along XDG_*?
-				StartTrayIcon ();
 			}
+#endif
+			RegisterSessionManagerRestart (
+			        Environment.GetEnvironmentVariable ("TOMBOY_WRAPPER_PATH"),
+			        args,
+			        new string [] { "TOMBOY_PATH=" + note_path  }); // TODO: Pass along XDG_*?
+			StartTrayIcon ();
 
-			Logger.Log ("All done.  Ciao!");
+			Logger.Debug ("All done.  Ciao!");
 		}
 
 		public static bool Debugging
 		{
 			get { return debugging; }
+		}
+
+		public static bool Uninstalled
+		{
+			get { return uninstalled; }
 		}
 
 		static string GetNotePath (string override_path)
@@ -177,7 +183,9 @@ namespace Tomboy
 		{
 			// This will block if there is no existing instance running
 #if !WIN32 && !MAC
-			PanelAppletFactory.Register (typeof (TomboyApplet));
+#if PANEL_APPLET
+			Gnome.PanelAppletFactory.Register (typeof (TomboyApplet));
+#endif
 #endif
 		}
 
@@ -186,30 +194,7 @@ namespace Tomboy
 			// Create the tray icon and run the main loop
 			tray_icon = new TomboyTrayIcon (manager);
 			tray = tray_icon.Tray;
-
-			// Give the TrayIcon 2 seconds to appear.  If it
-			// doesn't by then, open the SearchAllNotes window.
-			tray_icon_showing = tray_icon.IsEmbedded && tray_icon.Visible;
-			if (!tray_icon_showing)
-				GLib.Timeout.Add (2000, CheckTrayIconShowing);
-
 			StartMainLoop ();
-		}
-
-		static bool CheckTrayIconShowing ()
-		{
-			tray_icon_showing = tray_icon.IsEmbedded && tray_icon.Visible;
-			
-			// Check to make sure the tray icon is showing.  If it's not,
-			// it's likely that the Notification Area isn't available.  So
-			// instead, launch the Search All Notes window so the user can
-			// can still use Tomboy.
-#if !MAC
-			if (tray_icon_showing == false)
-				ActionManager ["ShowSearchAllNotesAction"].Activate ();
-#endif
-			
-			return false; // prevent GLib.Timeout from calling this method again
 		}
 
 		static void RegisterRemoteControl (NoteManager manager)
@@ -217,7 +202,7 @@ namespace Tomboy
 			try {
 				remote_control = RemoteControlProxy.Register (manager);
 				if (remote_control != null) {
-					Logger.Log ("Tomboy remote control active.");
+					Logger.Debug ("Tomboy remote control active.");
 				} else {
 					// If Tomboy is already running, open the search window
 					// so the user gets some sort of feedback when they
@@ -228,11 +213,11 @@ namespace Tomboy
 						remote.DisplaySearch ();
 					} catch {}
 
-					Logger.Info ("Tomboy is already running.  Exiting...");
+					Logger.Error ("Tomboy is already running.  Exiting...");
 					System.Environment.Exit (-1);
 				}
 			} catch (Exception e) {
-				Logger.Log ("Tomboy remote control disabled (DBus exception): {0}",
+				Logger.Warn ("Tomboy remote control disabled (DBus exception): {0}",
 				            e.Message);
 			}
 		}
@@ -291,7 +276,7 @@ namespace Tomboy
 			if (Tomboy.IsPanelApplet)
 				return; // Ignore the quit action
 
-			Logger.Log ("Quitting Tomboy.  Ciao!");
+			Logger.Debug ("Quitting Tomboy.  Ciao!");
 			Exit (0);
 		}
 
@@ -322,7 +307,7 @@ namespace Tomboy
 				tray_icon.GetGeometry (out screen, out area, out orientation);
 #endif
 			}
-			GuiUtils.ShowHelp ("ghelp:tomboy", screen, null);
+			GuiUtils.ShowHelp ("tomboy", null, screen, null);
 
 		}
 
@@ -331,20 +316,31 @@ namespace Tomboy
 			string [] authors = new string [] {
 				Catalog.GetString ("Primary Development:"),
 				"\tAlex Graveley (original author)",
+				"\tAaron Borden (maintainer)",
+				"\t\t<adborden@live.com>",
+				"\tBenjamin Podszun (maintainer)",
+				"\t\t<benjamin.podszun@gmail.com>",
+				"\tGreg Poirier (maintainer)",
+				"\t\t<grep@binary-snobbery.com>",
+				"\tJared Jennings (maintainer)",
+				"\t\t<jaredljennings@gmail.com>",
+				"\tSandy Armstrong (retired maintainer)",
 				"\tBoyd Timothy (retired maintainer)",
-				"\tSandy Armstrong (maintainer)",
-				"\t\t<sanfordarmstrong@gmail.com>",
 				"",
 				Catalog.GetString ("Contributors:"),
 				"\tAaron Bockover",
+				"\tAlejandro Cura",
 				"\tAlexey Nedilko",
 				"\tAlex Kloss",
 				"\tAnders Petersson",
 				"\tAndrew Fister",
-				"\tBenjamin Podszun",
+				"\tBrian Mattern",
+				"\tBrion Vibber",
 				"\tBuchner Johannes",
+				"\tCarlos Arenas",
 				"\tChris Scobell",
 				"\tClemens N. Buss",
+				"\tCory Thomas",
 				"\tDave Foster",
 				"\tDavid Trowbridge",
 				"\tDoug Johnston",
@@ -352,13 +348,14 @@ namespace Tomboy
 				"\tFrederic Crozat",
 				"\tGabriel Burt",
 				"\tGabriel de Perthuis",
-				"\tGreg Poirier",
 				"\tJakub Steiner",
 				"\tJames Westby",
 				"\tJamin Philip Gray",
 				"\tJan Rüegg",
+				"\tJavier Jardón",
 				"\tJay R. Wren",
 				"\tJeffrey Stedfast",
+				"\tJeff Stoner",
 				"\tJeff Tickle",
 				"\tJerome Haltom",
 				"\tJoe Shaw",
@@ -371,11 +368,13 @@ namespace Tomboy
 				"\tŁukasz Jernaś",
 				"\tMark Wakim",
 				"\tMathias Hasselmann",
+				"\tMatthew Pirocchi",
 				"\tMatt Johnston",
 				"\tMatt Jones",
 				"\tMike Mazur",
 				"\tNathaniel Smith",
 				"\tOlivier Le Thanh Duong",
+				"\tOwen Williams",
 				"\tPaul Cutler",
 				"\tPrzemysław Grzegorczyk",
 				"\tRobert Buchholz",
@@ -387,6 +386,7 @@ namespace Tomboy
 				"\tSebastian Rittau",
 				"\tStefan Cosma",
 				"\tStefan Schweizer",
+				"\tTobias Abenius",
 				"\tTommi Asiala",
 				"\tWouter Bolsterlee",
 				"\tYonatan Oren"
@@ -396,8 +396,10 @@ namespace Tomboy
 				"Alex Graveley <alex@beatniksoftware.com>",
 				"Boyd Timothy <btimothy@gmail.com>",
 				"Brent Smith <gnome@nextreality.net>",
+				"Laurent Codeur <laurentc@iol.ie>",
 				"Paul Cutler <pcutler@foresightlinux.org>",
-				"Sandy Armstrong <sanfordarmstrong@gmail.com>"
+				"Sandy Armstrong <sanfordarmstrong@gmail.com>",
+				"Stefan Schweizer <steve.schweizer@gmail.com>"
 			};
 
 			string translators = Catalog.GetString ("translator-credits");
@@ -410,7 +412,7 @@ namespace Tomboy
 			about.Logo = GuiUtils.GetIcon ("tomboy", 48);
 			about.Copyright =
 			        Catalog.GetString ("Copyright \xa9 2004-2007 Alex Graveley\n" +
-				                   "Copyright \xa9 2004-2009 Others\n");
+				                   "Copyright \xa9 2004-2010 Others\n");
 			about.Comments = Catalog.GetString ("A simple and easy to use desktop " +
 			                                    "note-taking application.");
 			Gtk.AboutDialog.SetUrlHook (delegate (Gtk.AboutDialog dialog, string link) {
@@ -503,6 +505,12 @@ namespace Tomboy
 			get { return debug; }
 		}
 
+		// TODO: Document this option
+		public bool Uninstalled
+		{
+			get; private set;
+		}
+
 		public bool UsePanelApplet
 		{
 			get {
@@ -580,6 +588,9 @@ namespace Tomboy
 				switch (args [idx]) {
 				case "--debug":
 					debug = true;
+					break;
+				case "--uninstalled":
+					Uninstalled = true;
 					break;
 				case "--new-note":
 					// Get optional name for new note...
@@ -700,7 +711,7 @@ namespace Tomboy
 			try {
 				remote = RemoteControlProxy.GetInstance ();
 			} catch (Exception e) {
-				Logger.Log ("Unable to connect to Tomboy remote control: {0}",
+				Logger.Error ("Unable to connect to Tomboy remote control: {0}",
 				            e.Message);
 			}
 

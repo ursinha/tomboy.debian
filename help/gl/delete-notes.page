@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="delete-notes">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-note"/>
+    <link type="seealso" xref="edit-notes"/>
+    <desc>Eliminar unha nota en Tomboy.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+        <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Eliminar unha nota</title>    
+  
+  <p>Pode eliminar unha nota premendo a icona <gui>Eliminar</gui> na barra de ferramentas da nota que quere eliminar.</p>
+  
+<note style="warning"><p>Eliminar unha nota é permanente. Despois de eliminala, a nota non se poderá eliminar.</p>Preguntaráselle <gui>Está seguro que quere eliminar esta nota?</gui> cando elimine unha nota.</note>
+	
+</page>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-setup">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Nastavite Tomboy za usklajevanje vaših sporočilc.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Nastavite usklajevanje</title>
+
+ <section id="enablesync">
+
+	<title>Omogoči usklajevanje usklajevanja</title>
+	
+	<p><app>Tomboy</app> can synchronize your notes between multiple
+	computers.  This allows you to have a backup of your notes on another
+	computer or to share your notes between computers so you always have 
+	access to your notes.
+	</p>
+	
+	<p>Usklajevanje lahko omogočite z odpiranjem <gui>Možnosti Tomboy</gui>, kar storite z desnim klikom na ikono Tomboy v vašem pultu, opravilni vrstici ali sidrišču in izbiro <gui>Možnosti</gui> in nato izbiro zavihka <gui>Usklajevanje</gui>. <gui>Možnosti Tomboy lahko odprete tudi iz pogovornega okna <gui>Iskanje vseh sporočilc</gui>. V meniju izberite <guiseq><gui>Uredi</gui><gui>Možnosti</gui></guiseq>.</gui></p>
+
+ </section>
+
+ <section id="conflict">
+
+	<title>Upravljanje sporov sporočilc</title>
+	
+	<p>Nastavite lahko privzeto obnašanje, ko Tomboy zazna spor. To se lahko zgodi, če sporočilc ne usklajujete redno.</p>
+	
+	<p>V pogovornem oknu <gui>Možnosti</gui> izberite gumb <gui>Napredno</gui>. Izberete lahko med tremi možnostmi privzetega obnašanja za upravljanje sporočilc:</p>
+	
+	<list>
+		<item><p><gui>Vedno me vprašaj kaj storiti.</gui> To je privzeta izbira. Ko Tomboy naleti na spor, vas bo vedno pozval, če želite krajevno sporočilce preimenovati ali ga zamenjati s sporočilcem shranjenim na strežniku.</p></item>
+		<item><p><gui>Preimenuj moje krajevno sporočilce.</gui> V primeru, da je izbrana ta možnost, bo Tomboy samodejno zamenjal sporočilce s kopijo z oddaljenega računalnika in sporočilce na vašem računalniku preimenoval. Zato ne boste izgubili nobenih podatkov v svojem sporočilcu.</p>
+		</item>
+		
+		<item><p><gui>Zamenjaj moje krajevno sporočilce s posodobitvijo strežnika. </gui>. V primeru, da ste izbrali to možnost, bo Tomboy prepisal in zamenjal sporočilce shranjeno na vašem računalniku s kopijo z oddaljenega računalnika.</p></item>
+		
+		<note style="warning">
+		<p>Samodejno prepisovanje sporočilca je trajno. Vaše krajevno sporočilce bo zamenjala kopija na oddaljenem računalniku in izgubili boste vse podatke, shranjene pred usklajevanjem.</p>
+		</note>
+		
+	</list>
+		
+
+ </section> 
+ 
+  <section id="webdav">
+
+	<title>Nastavite usklajevanje z uporabo WebDav</title>
+	
+	<p>Za usklajevanje vaših sporočilc s strežnikom WebDAV boste potrebovali nameščen datotečni sistem wdfs FUSE. Sledite dokumentaciji za vaš operacijski sistem za nastavitev FUSE za vašega uporabnika. Potrebovali boste tudi GNOME zbirko ključev.</p>
+	
+	<p>V spustnemu seznamu <gui>Storitev</gui> izberite <gui>WebDAV</gui>. Izpolnite podrobnosti povezave za svoj strežnik in izberite gumb <gui>Shrani</gui>. Sedaj ste pripravljeni na usklajevanje svojih sporočilc.</p>
+
+ </section>
+ 
+  <section id="ssh">
+
+	<title>Nastavi usklajevanje z uporabo SSH</title>
+	
+	<p>In order to synchronize your notes with an SSH server, you will need
+      	the FUSE file system, also called <app>sshfs</app> installed.  Follow the
+      	documentation for your operating system to set up FUSE for your user.  
+      	You will also need an SSH key for your SSH server account that can be
+	provided by the <app>GNOME Seahorse</app> application, which is also known as 
+      	<app>Passwords and Encryption Keys</app>.
+	</p>
+	
+	<p>It is recommended to use a third computer or server as the remote 
+	computer to store the synchronized notes that are to be synced between 
+	multiple computers.</p>
+
+	<p>Odprite <app>Gesla in šifrirni ključi</app> z izbiro <guiseq><gui>Programi</gui><gui>Pripomočki</gui><gui>Gesla in šifrirni ključi</gui></guiseq>. Kliknite na svoj ključ in v meniju izberite  <guiseq><gui>Oddaljeno</gui><gui>Nastavi ključ za varno lupino ...</gui></guiseq> in v <gui>Ime računalnika</gui> vnesite ime domene ali IP naslov računalnika, s katerim želite usklajevati. Vnesite uporabniško ime oddaljenega računalnika v <gui>Ime računalnika:</gui> in kliknite <gui>Nastavitev</gui>. Ob pozivu vnesite geslo in nastavljanje vašega ključa bo končano.</p>
+	
+	<p>V spustnem seznamu <gui>Storitev</gui> izberite <gui>SSH</gui>. Zapolnite podrobnosti povezave za svoj strežnik in nato izberite gumb <gui>Shrani</gui>. <gui>Pot mape</gui> je izbirna, vendar mora kazati na prazno mapo. Sedaj ste pripravljeni na usklajevanje svojih sporočilc.</p>
+
+ </section>
+
+ <section id="local">
+
+	<title>Nastavite usklajevanje v krajevno mapo</title>
+	
+	<p>Morda želite svoja sporočilca uskladiti s krajevno mapo, če je ta mapa na voljo drugim vašim sistemom ali če ta mapa predstavlja krajevni priklop oddaljenega strežnika.</p>
+
+	<p>V spustnemu seznamu <gui>Storitev</gui> izberite <guimenuitem>Krajevna mapa</guimenuitem>. Izberite želeno <guilabel>Pot mape</guilabel> usklajevanja in nato izberite gumb <guibutton>Shrani</guibutton>. Sedaj ste pripravljeni na usklajevanje svojih sporočilc.</p>
+
+ </section>
+ 
+ </page>
