@@ -1,3 +1,18 @@
+tomboy (1.6.0-1) UNRELEASED; urgency=low
+
+  * [3460d94] Imported Upstream version 1.6.0
+    + Changed GetSelectedNotebook from private to public so it can be used by
+    add-ins
+    + Fix tomboy insecure LD_LIBRARY_PATH
+    + Fix CVE-2010-4005
+    + Fix Remove title format from add-ins descriptions
+    + Fix Replace Computer Name with Login Name in SSH sync setup
+  * [71513fe] Add BD on libproxy-dev for proxy support
+  * [e6de4c3] Remove no longer needed PrintNotes DLLMap
+  * [e88f9be] Add DLLMap for WebSyncServiceAddin to map libproxy
+
+ -- Iain Lane <laney@ubuntu.com>  Thu, 07 Apr 2011 23:00:15 +0100
+
 tomboy (1.2.2-2) unstable; urgency=high
 
   * [bc0695b] Fix insecure LD_LIBRARY_PATH. A vulnerability existed
@@ -10,6 +25,19 @@ tomboy (1.2.2-2) unstable; urgency=high
 
  -- Iain Lane <laney@ubuntu.com>  Mon, 29 Nov 2010 18:59:02 +0000
 
+tomboy (1.5.2-1) experimental; urgency=low
+
+  * [40c7e88] Imported Upstream version 1.3.4
+    + Stop building libtomboy with *DISABLE_DEPRECATED flags (for now)
+  * [d8bee18] Imported Upstream version 1.5.2
+    + Fix potential sync dataloss bug for former Gnote users
+    + Documentation fixes
+    + Fix windows crash when libproxy not available
+    + Stop using deprecated GDK API in libtomboy
+    + Various documentation bugs fixed
+
+ -- Iain Lane <laney@ubuntu.com>  Tue, 26 Oct 2010 21:26:50 +0100
+
 tomboy (1.2.2-1) unstable; urgency=low
 
   * New upstream bugfix release 1.2.2:
@@ -18,6 +46,56 @@ tomboy (1.2.2-1) unstable; urgency=low
     + Translation updates: hu, id
 
  -- Iain Lane <laney@ubuntu.com>  Tue, 26 Oct 2010 20:26:32 +0100
+
+tomboy (1.3.3-1) experimental; urgency=low
+
+  * [c12a7eb] Imported Upstream version 1.3.2
+    + Fix ExportToHtml to export linked notes on Windows
+    + Fix GtkPopup focus problems on Windows
+    + Various help text fixes
+    + Fix Windows installer to require .Net 3.5 support upgrades
+    + Don't open the search dialog if tray is not ready
+    + Allow empty username field for SSH sync
+    + Fix Windows installer to detect GTK# >=2.12.10
+  * [980af20] Imported Upstream version 1.3.3
+    + Update Print add-in license to LGPL (not GPL)
+  * [7656f59] Standards-Version → 3.9.1, no changes required
+
+ -- Iain Lane <laney@ubuntu.com>  Tue, 14 Sep 2010 00:02:37 +0100
+
+tomboy (1.3.1-1) experimental; urgency=low
+
+  * New upstream release 1.3.1
+   + Disable panel applet support by default
+   + New topic-based help
+   + Add libproxy support to web sync
+   + Support LaTeX add-in on Mac
+   + Fix `make run` for developers
+   + Document --debug option in manpage
+  * New upstream release 1.3.0
+   + Use GNOME Session D-Bus API for session management
+   + Fix indentation of bullet list items when printing
+   + Fix keyboard navigation in bullet lists
+   + Applet now uses correct icon
+   + Add hidden preference for quiet note deletion
+   + Add hidden preference for disabling tray icon
+   + HIG menu item clean-ups on Mac
+   + Proper formatting when typing in timestamp text
+   + Allow building with -DGSEAL_ENABLE
+   + Fix crash in autosync when certain server types are unavailable
+   + Clean up stream usage in attempt to fix LP#556628
+  * [803d6e9] Add debian/gbp.conf to build for exp
+  * [d5362ee] Update build-deps to match new configure checks
+  * [1e80e86] Enable panel applet
+  * [10012c1] debian/patches/*: Add patch headers
+  * [5c308ae] 30_fix_manpage_syntax: Remove line in manpage which causes
+    warning
+  * [b57ab2b] debian/{control,rules}: Replace manual autoreconf with dh-
+    autoreconf
+  * [2fe5306] Increase Standards-Version to 3.9.0, no changes required
+
+ -- Iain Lane <laney@ubuntu.com>  Sun, 04 Jul 2010 19:07:59 +0100
+>>>>>>> master-devel
 
 tomboy (1.2.1-1) unstable; urgency=low
 

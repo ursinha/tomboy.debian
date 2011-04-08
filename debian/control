@@ -5,14 +5,13 @@ Maintainer: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.
 Uploaders: Sebastian Dröge <slomo@debian.org>, Iain Lane <laney@ubuntu.com>
 Build-Depends: debhelper (>= 7.0.50),
                quilt (>= 0.46-7~),
-               autotools-dev,
-               libtool,
+               dh-autoreconf,
                intltool,
                pngquant,
                mono-devel (>= 2.4.3),
                libgtk2.0-cil-dev (>= 2.10.4),
-               libgconf2.0-cil-dev,
-               libgnome2.0-cil-dev,
+               libgconf2.0-cil-dev (>= 2.24),
+               libgnome2.0-cil-dev (>= 2.24),
                libgnomepanel2.24-cil-dev,
                libgtkspell-dev (>= 2.0.9),
                libpanel-applet2-dev,
@@ -26,8 +25,9 @@ Build-Depends: debhelper (>= 7.0.50),
                libndesk-dbus1.0-cil-dev (>= 0.4),
                libndesk-dbus-glib1.0-cil-dev (>= 0.3),
                libmono-addins-cil-dev (>= 0.3),
-               libmono-addins-gui-cil-dev (>= 0.3)
-Standards-Version: 3.8.4
+               libmono-addins-gui-cil-dev (>= 0.3),
+               libproxy-dev
+Standards-Version: 3.9.1
 Homepage: http://www.gnome.org/projects/tomboy/
 Vcs-Git: git://git.debian.org/pkg-cli-apps/packages/tomboy.git
 Vcs-Browser: http://git.debian.org/?p=pkg-cli-apps/packages/tomboy.git
