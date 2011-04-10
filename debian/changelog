@@ -1,4 +1,4 @@
-tomboy (1.6.0-1) UNRELEASED; urgency=low
+tomboy (1.6.0-1) unstable; urgency=low
 
   * [3460d94] Imported Upstream version 1.6.0
     + Changed GetSelectedNotebook from private to public so it can be used by
