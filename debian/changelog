@@ -1,3 +1,10 @@
+tomboy (1.6.0-1ubuntu1) UNRELEASED; urgency=low
+
+  * [8a1e57b] Drop dh_autoreconf, no longer necessary and causes FTBFS due to
+    a bug somewhere (Closes: #622207)
+
+ -- Iain Lane <laney@ubuntu.com>  Mon, 11 Apr 2011 21:15:28 +0100
+
 tomboy (1.6.0-1) unstable; urgency=low
 
   * [3460d94] Imported Upstream version 1.6.0
