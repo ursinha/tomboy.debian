@@ -1,21 +1,94 @@
 Description: Enabling the unit tests causes a binary dep on ndesk-dbus to be created. Patch them out.
 Forwarded: not-needed
 Author: Iain Lane <laney@ubuntu.com>
-Index: tomboy.git/configure.in
+Index: tomboy.git/Tomboy/Addins/WebSyncService/Api/Tests/NoteInfoTests.cs
 ===================================================================
---- tomboy.git.orig/configure.in	2010-07-04 15:03:35.208602782 +0100
-+++ tomboy.git/configure.in	2010-07-04 15:28:43.618602487 +0100
-@@ -272,10 +272,10 @@
- #
- # NUnit required for (optional) unit tests
- #
--PKG_CHECK_MODULES(NUNIT, mono-nunit, HAVE_NUNIT="yes", HAVE_NUNIT="no")
-+#PKG_CHECK_MODULES(NUNIT, mono-nunit, HAVE_NUNIT="yes", HAVE_NUNIT="no")
- AM_CONDITIONAL(HAVE_NUNIT, test "$HAVE_NUNIT" = "yes")
--AC_SUBST(NUNIT_LIBS)
--AC_PATH_PROG(NUNIT, nunit-console)
-+#AC_SUBST(NUNIT_LIBS)
-+#AC_PATH_PROG(NUNIT, nunit-console)
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/Api/Tests/NoteInfoTests.cs	2011-04-12 19:36:26.686442375 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/Api/Tests/NoteInfoTests.cs	2011-04-12 19:36:07.697186613 +0100
+@@ -23,7 +23,7 @@
+ //      Sandy Armstrong <sanfordarmstrong@gmail.com>
+ // 
  
- #
- # Check for X11 libraries
+-#if ENABLE_TESTS
++#if false
+ 
+ using System;
+ 
+Index: tomboy.git/Tomboy/Addins/WebSyncService/Api/Tests/ResourceReferenceTests.cs
+===================================================================
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/Api/Tests/ResourceReferenceTests.cs	2011-04-12 19:36:26.626444727 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/Api/Tests/ResourceReferenceTests.cs	2011-04-12 19:36:07.667187789 +0100
+@@ -23,7 +23,7 @@
+ //      Sandy Armstrong <sanfordarmstrong@gmail.com>
+ // 
+ 
+-#if ENABLE_TESTS
++#if false
+ 
+ using System;
+ 
+Index: tomboy.git/Tomboy/Addins/WebSyncService/Api/Tests/UserInfoTests.cs
+===================================================================
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/Api/Tests/UserInfoTests.cs	2011-04-12 19:36:26.736440417 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/Api/Tests/UserInfoTests.cs	2011-04-12 19:36:07.707186221 +0100
+@@ -23,7 +23,7 @@
+ //      Sandy Armstrong <sanfordarmstrong@gmail.com>
+ // 
+ 
+-#if ENABLE_TESTS
++#if false
+ 
+ using System;
+ 
+Index: tomboy.git/Tomboy/Addins/WebSyncService/Hyena.Json/Tests/DeserializerTests.cs
+===================================================================
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/Hyena.Json/Tests/DeserializerTests.cs	2011-04-12 19:36:27.016429443 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/Hyena.Json/Tests/DeserializerTests.cs	2011-04-12 19:36:07.717185829 +0100
+@@ -26,7 +26,7 @@
+ // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ //
+ 
+-#if ENABLE_TESTS
++#if false
+ 
+ using System;
+ using System.Reflection;
+Index: tomboy.git/Tomboy/Addins/WebSyncService/Hyena.Json/Tests/SerializerTests.cs
+===================================================================
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/Hyena.Json/Tests/SerializerTests.cs	2011-04-12 19:36:26.956431795 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/Hyena.Json/Tests/SerializerTests.cs	2011-04-12 19:36:07.707186221 +0100
+@@ -23,7 +23,7 @@
+ //      Sandy Armstrong <sanfordarmstrong@gmail.com>
+ // 
+ 
+-#if ENABLE_TESTS
++#if false
+ 
+ using System;
+ 
+Index: tomboy.git/Tomboy/Addins/WebSyncService/Hyena.Json/Tests/TokenizerTests.cs
+===================================================================
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/Hyena.Json/Tests/TokenizerTests.cs	2011-04-12 19:36:27.066427483 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/Hyena.Json/Tests/TokenizerTests.cs	2011-04-12 19:36:07.727185437 +0100
+@@ -26,7 +26,7 @@
+ // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ //
+ 
+-#if ENABLE_TESTS
++#if false
+ 
+ using System;
+ using System.Reflection;
+Index: tomboy.git/Tomboy/Addins/WebSyncService/Tests/NoteConvertTests.cs
+===================================================================
+--- tomboy.git.orig/Tomboy/Addins/WebSyncService/Tests/NoteConvertTests.cs	2011-04-12 19:36:26.476450605 +0100
++++ tomboy.git/Tomboy/Addins/WebSyncService/Tests/NoteConvertTests.cs	2011-04-12 19:36:07.737185045 +0100
+@@ -23,7 +23,7 @@
+ //      Sandy Armstrong <sanfordarmstrong@gmail.com>
+ // 
+ 
+-#if ENABLE_TESTS
++#if false
+ 
+ using System;
+ using System.Collections.Generic;
