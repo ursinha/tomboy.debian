@@ -2,6 +2,8 @@ tomboy (1.6.0-2) UNRELEASED; urgency=low
 
   * [8a1e57b] Drop dh_autoreconf, no longer necessary and causes FTBFS due to
     a bug somewhere (Closes: #622207)
+  * [fb9dcfe] Disable unit tests in a way that doesn't require autoreconfing
+  * [bf19fc0] Patch tomboy.exe dllmap to use DLL names as in the source
 
  -- Iain Lane <laney@ubuntu.com>  Mon, 11 Apr 2011 21:15:28 +0100
 
