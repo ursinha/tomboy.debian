@@ -1,3 +1,12 @@
+tomboy (1.6.1-1) UNRELEASED; urgency=low
+
+  * [e32a2d3] Imported Upstream version 1.6.1
+    + Hungarian and Catalan translation updates
+  * [780d74b] Standards-Version → 3.9.2, no changes required
+  * [a296fa0] Update to use my d.o email address
+
+ -- Iain Lane <laney@debian.org>  Wed, 25 May 2011 15:18:03 +0100
+
 tomboy (1.6.0-2) unstable; urgency=low
 
   * [8a1e57b] Drop dh_autoreconf, no longer necessary and causes FTBFS due to
