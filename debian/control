@@ -2,7 +2,7 @@ Source: tomboy
 Section: gnome
 Priority: optional
 Maintainer: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
-Uploaders: Sebastian Dröge <slomo@debian.org>, Iain Lane <laney@ubuntu.com>
+Uploaders: Sebastian Dröge <slomo@debian.org>, Iain Lane <laney@debian.org>
 Build-Depends: debhelper (>= 7.0.50),
                quilt (>= 0.46-7~),
                intltool,
