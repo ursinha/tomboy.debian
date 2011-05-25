@@ -20,16 +20,7 @@
 
  <title>Jegyzet beállításai</title>
  
- 	<p>You can change the default settings when typing notes
- 	in Tomboy.  To change your note settings, open
- 	 <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock, and choose <gui>Preferences</gui> and  select
-	the <gui>Editing</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>
+ 	<p>A jegyzetek írásának alapértelmezett beállításai módosíthatók. Jegyzetbeállításainak módosításához nyissa meg a <gui>Tomboy beállításait</gui> a jobb egérgombbal kattintva a panelen, tálcán vagy dokkon lévő Tomboy ikonra, és a <gui>Beállítások</gui> menüpont, majd a <gui>Szerkesztés</gui> lap kiválasztásával. Megnyithatja a <gui>Tomboy beállításait</gui> a <gui>Keresés minden jegyzetben</gui> ablakból is. Itt a menüből válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> menüpontot.</p>
  
  <section id="spellcheck">
    <title>Helyesírás-ellenőrzés</title>
