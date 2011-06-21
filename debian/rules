@@ -15,7 +15,7 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 		--disable-scrollkeeper \
 		--disable-update-mimedb \
-		--enable-panel-applet \
+		--disable-panel-applet \
 		LDFLAGS="$(LDFLAGS)" \
 		GMCS=/usr/bin/mono-csc
 
