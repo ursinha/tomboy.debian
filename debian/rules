@@ -1,6 +1,5 @@
 #!/usr/bin/make -f
 
-include /usr/share/quilt/quilt.make
 include /usr/share/cli-common/cli.make
 
 LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
@@ -43,6 +42,6 @@ get-orig-source:
 		--rename
 
 %:
-	dh --with=quilt $@
+	dh $@
 
 .PHONY: get-orig-source
