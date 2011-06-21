@@ -1,4 +1,4 @@
-tomboy (1.7.0-1) UNRELEASED; urgency=low
+tomboy (1.7.0-1) experimental; urgency=low
 
   * [de22824] Modify watch file to look for bz2 orig files
     + Search does not give preference to note title 
