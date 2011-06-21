@@ -4,17 +4,17 @@
 # Spanish translation for tomboy
 # Copyright (C) 2004 Adam Weinberger and the GNOME Foundation
 # This file is distributed under the same licence as the Tomboy package.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2009, 2010.
 # Jorge González <jorgegonz@svn.gnome.org>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tomboy.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=tomboy&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-03-19 14:45+0000\n"
-"PO-Revision-Date: 2011-04-02 20:50+0200\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"POT-Creation-Date: 2011-04-21 21:03+0000\n"
+"PO-Revision-Date: 2011-04-27 12:22+0200\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -83,28 +83,39 @@ msgid "Custom Font Face"
 msgstr "Personalizar tipografía"
 
 #: ../data/tomboy.schemas.in.h:5
-msgid "Determines X coordinate of Search window; stored on Tomboy exit."
+#| msgid "Determines X coordinate of Search window; stored on Tomboy exit."
+msgid ""
+"Determines X coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
 msgstr ""
-"Determina la coordenada X de la ventana de búsqueda; almacenado en Tomboy al "
-"salir."
+"Determina la coordenada X de la ventana «Buscar todas las notas»; almacenado "
+"en Tomboy al salir."
 
 #: ../data/tomboy.schemas.in.h:6
-msgid "Determines Y coordinate of Search window; stored on Tomboy exit."
+#| msgid "Determines Y coordinate of Search window; stored on Tomboy exit."
+msgid ""
+"Determines Y coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
 msgstr ""
-"Determina la coordenada Y de la ventana de búsqueda; almacenado en Tomboy al "
-"salir."
+"Determina la coordenada Y de la ventana «Buscar todas las notas»; almacenado "
+"en Tomboy al salir."
 
 #: ../data/tomboy.schemas.in.h:7
-msgid "Determines pixel height of Search window; stored on Tomboy exit."
+#| msgid "Determines pixel height of Search window; stored on Tomboy exit."
+msgid ""
+"Determines pixel height of \"Search All Notes\" window; stored on Tomboy "
+"exit."
 msgstr ""
-"Determina la altura en píxeles de la ventana de búsqueda; almacenado en "
-"Tomboy al salir."
+"Determina la altura en píxeles de la ventana «Buscar todas las notas»; "
+"almacenado en Tomboy al salir."
 
 #: ../data/tomboy.schemas.in.h:8
-msgid "Determines pixel width of Search window; stored on Tomboy exit."
+#| msgid "Determines pixel width of Search window; stored on Tomboy exit."
+msgid ""
+"Determines pixel width of \"Search All Notes\" window; stored on Tomboy exit."
 msgstr ""
-"Determina la anchura en píxeles de la ventana de búsqueda; almacenado en "
-"Tomboy al salir."
+"Determina la anchura en píxeles de la ventana «Buscar todas las notas»; "
+"almacenado en Tomboy al salir."
 
 #: ../data/tomboy.schemas.in.h:9
 msgid "Enable Auto bulleted lists."
@@ -385,20 +396,24 @@ msgid "SSHFS Synchronization Server URL"
 msgstr "URL del servidor de sincronización remota SSHFS"
 
 #: ../data/tomboy.schemas.in.h:54
-msgid "Saved height of Search window"
-msgstr "Altura guardada de la ventana de búsqueda"
+#| msgid "Saved height of Search window"
+msgid "Saved height of \"Search All Notes\" window"
+msgstr "Altura guardada de la ventana «Buscar todas las notas»"
 
 #: ../data/tomboy.schemas.in.h:55
-msgid "Saved horizontal position of Search window"
-msgstr "Posición horizontal guardada de la ventana de búsqueda"
+#| msgid "Saved horizontal position of Search window"
+msgid "Saved horizontal position of \"Search All Notes\" window"
+msgstr "Posición horizontal guardada de la ventana «Buscar todas las notas»"
 
 #: ../data/tomboy.schemas.in.h:56
-msgid "Saved vertical position of Search window"
-msgstr "Posición vertical guardada de la ventana de búsqueda"
+#| msgid "Saved vertical position of Search window"
+msgid "Saved vertical position of \"Search All Notes\" window"
+msgstr "Posición vertical guardada de la ventana «Buscar todas las notas»"
 
 #: ../data/tomboy.schemas.in.h:57
-msgid "Saved width of Search window"
-msgstr "Anchura guardada de la ventana de búsqueda"
+#| msgid "Saved width of Search window"
+msgid "Saved width of \"Search All Notes\" window"
+msgstr "Anchura guardada de la ventana «Buscar todas las notas»"
 
 #: ../data/tomboy.schemas.in.h:58
 msgid "Selected Synchronization Service Addin"
@@ -506,9 +521,9 @@ msgid ""
 "action."
 msgstr ""
 "Combinación de teclas global para mostrar el menú de miniaplicaciones de "
-"Tomboy. El formato sería \"&lt;Control&gt;a\" o \"&lt;Shift&gt;&lt;Alt&gt;"
-"F1\". El analizador léxico es bastante tolerante y permite letras mayúsculas "
-"o minúsculas, y abreviaciones tales como \"&lt;Ctl&gt;\" y \"&lt;Ctrl&gt;\". "
+"Tomboy. El formato sería \"&lt;Control&gt;a\" o \"&lt;Shift&gt;&lt;Alt&gt;F1"
+"\". El analizador léxico es bastante tolerante y permite letras mayúsculas o "
+"minúsculas, y abreviaciones tales como \"&lt;Ctl&gt;\" y \"&lt;Ctrl&gt;\". "
 "Si activa la opción de cadena especial \"disabled\" (desactivada) no habrá "
 "combinación de teclas para esta acción."
 
@@ -528,8 +543,8 @@ msgid ""
 "The last setting for the 'Export linked notes' checkbox in the Export to "
 "HTML plugin."
 msgstr ""
-"Las última casilla de preferencias para «Exportar las notas enlazadas a "
-"HTML» en el complemento Exportar a HTML."
+"Las última casilla de preferencias para «Exportar las notas enlazadas a HTML» "
+"en el complemento Exportar a HTML."
 
 #: ../data/tomboy.schemas.in.h:74
 msgid ""
@@ -538,10 +553,10 @@ msgid ""
 "Export Linked Notes' setting and is used to specify whether all notes (found "
 "recursively) should be included during an export to HTML."
 msgstr ""
-"El último ajuste para la casilla de «Incluir todas las notas enlazadas» en "
-"el complemento de exportar a HTML. Esta opción se usa junto con los ajustes "
-"de «Exportar las notas enlazadas a HTML» y se usa para especificar si todas "
-"las notas (encontradas recursivamente) deberían ser incluídas durante la "
+"El último ajuste para la casilla de «Incluir todas las notas enlazadas» en el "
+"complemento de exportar a HTML. Esta opción se usa junto con los ajustes de "
+"«Exportar las notas enlazadas a HTML» y se usa para especificar si todas las "
+"notas (encontradas recursivamente) deberían ser incluídas durante la "
 "exportación a HTML."
 
 #: ../data/tomboy.schemas.in.h:75
@@ -943,8 +958,8 @@ msgid "Server or username field is empty."
 msgstr "El campo del usuario o del servidor está vacío."
 
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:130
-msgid "SSH (sshfs FUSE)"
-msgstr "SSH (sshfs FUSE)"
+msgid "SSH"
+msgstr "SSH"
 
 #: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:179
 msgid ""
@@ -1017,8 +1032,8 @@ msgid "URL, username, or password field is empty."
 msgstr "El campo URL, usuario o contraseña está vacío."
 
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:119
-msgid "WebDAV (wdfs FUSE)"
-msgstr "WebDAV (wdfs FUSE)"
+msgid "WebDAV"
+msgstr "WebDAV"
 
 #: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:178
 msgid ""
@@ -1444,8 +1459,8 @@ msgid ""
 "\n"
 "If you do not rename the links, they will no longer link to anything."
 msgstr ""
-"Renombrar enlaces en otras notas de «<span underline=\"single\">{0}</span>» "
-"a «<span underline=\"single\">{1}</span>»?\n"
+"Renombrar enlaces en otras notas de «<span underline=\"single\">{0}</span>» a "
+"«<span underline=\"single\">{1}</span>»?\n"
 "\n"
 "Si no renombra los enlaces, no apuntarán a nada."
 
@@ -1810,8 +1825,8 @@ msgid "Replace my local note with the server's update."
 msgstr "Reemplazar mi nota local con la actualización del servidor."
 
 #: ../Tomboy/PreferencesDialog.cs:1149
-msgid "WARNING: Are you sure?"
-msgstr "ADVERTENCIA: ¿Está seguro?"
+msgid "Are you sure?"
+msgstr "¿Está seguro?"
 
 #: ../Tomboy/PreferencesDialog.cs:1151
 msgid ""
@@ -1836,8 +1851,8 @@ msgstr ""
 "notas de nuevo cuando guarde los nuevos ajustes."
 
 #: ../Tomboy/PreferencesDialog.cs:1244
-msgid "Success! You're connected!"
-msgstr "Está conectado."
+msgid "Connection successful"
+msgstr "Conectado correctamente"
 
 #: ../Tomboy/PreferencesDialog.cs:1246
 msgid ""
@@ -1850,29 +1865,29 @@ msgstr ""
 #: ../Tomboy/PreferencesDialog.cs:1269
 #, csharp-format
 msgid ""
-"Sorry, but something went wrong.  Please check your information and try "
-"again.  The {0} might be useful too."
+"Please check your information and try again.  The log file {0} may contain "
+"more information about the error."
 msgstr ""
-"Lo siento pero algo fue mal. Compruebe su información e inténtelo de nuevo. "
-"El archivo {0} puede ser útil."
+"Compruebe su información e inténtelo de nuevo. El archivo {0} puede contener "
+"información útil sobre el error."
 
-#: ../Tomboy/PreferencesDialog.cs:1282
-msgid "Error connecting :("
+#: ../Tomboy/PreferencesDialog.cs:1281
+msgid "Error connecting"
 msgstr "Error al conectar"
 
-#: ../Tomboy/PreferencesDialog.cs:1358
+#: ../Tomboy/PreferencesDialog.cs:1357
 msgid "Version:"
 msgstr "Versión:"
 
-#: ../Tomboy/PreferencesDialog.cs:1365
+#: ../Tomboy/PreferencesDialog.cs:1364
 msgid "Author:"
 msgstr "Autor:"
 
-#: ../Tomboy/PreferencesDialog.cs:1372
+#: ../Tomboy/PreferencesDialog.cs:1371
 msgid "Copyright:"
 msgstr "Copyright:"
 
-#: ../Tomboy/PreferencesDialog.cs:1378
+#: ../Tomboy/PreferencesDialog.cs:1377
 msgid "Add-in Dependencies:"
 msgstr "Dependencias de los complementos:"
 
@@ -1880,40 +1895,44 @@ msgstr "Dependencias de los complementos:"
 msgid "_Search:"
 msgstr "_Buscar:"
 
-#: ../Tomboy/RecentChanges.cs:331
+#: ../Tomboy/RecentChanges.cs:334
 msgid "Note"
 msgstr "Nota"
 
-#: ../Tomboy/RecentChanges.cs:353
+#: ../Tomboy/RecentChanges.cs:356
 msgid "Last Changed"
 msgstr "Último cambio"
 
-#: ../Tomboy/RecentChanges.cs:484
+#: ../Tomboy/RecentChanges.cs:487
 msgid "Matches"
 msgstr "Coincidencias"
 
-#: ../Tomboy/RecentChanges.cs:535
+#: ../Tomboy/RecentChanges.cs:538
+msgid "Title match"
+msgstr "Coincidir con el título"
+
+#: ../Tomboy/RecentChanges.cs:541
 #, csharp-format
 msgid "{0} match"
 msgid_plural "{0} matches"
 msgstr[0] "{0} coincidencia"
 msgstr[1] "{0} coincidencias"
 
-#: ../Tomboy/RecentChanges.cs:549
+#: ../Tomboy/RecentChanges.cs:555
 #, csharp-format
 msgid "Total: {0} note"
 msgid_plural "Total: {0} notes"
 msgstr[0] "Total: {0} nota"
 msgstr[1] "Total: {0} notas"
 
-#: ../Tomboy/RecentChanges.cs:560
+#: ../Tomboy/RecentChanges.cs:566
 #, csharp-format
 msgid "Matches: {0} note"
 msgid_plural "Matches: {0} notes"
 msgstr[0] "Coincide con: {0} nota"
 msgstr[1] "Coincide con: {0} notas"
 
-#: ../Tomboy/RecentChanges.cs:696
+#: ../Tomboy/RecentChanges.cs:702
 msgid "Notes"
 msgstr "Notas"
 
@@ -1925,17 +1944,17 @@ msgstr "No se puede crear una nota nueva"
 msgid "Primary Development:"
 msgstr "Desarrollo inicial:"
 
-#: ../Tomboy/Tomboy.cs:323
+#: ../Tomboy/Tomboy.cs:330
 msgid "Contributors:"
 msgstr "Colaboradores:"
 
-#: ../Tomboy/Tomboy.cs:401
+#: ../Tomboy/Tomboy.cs:405
 msgid "translator-credits"
 msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2009\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2004-2009"
 
-#: ../Tomboy/Tomboy.cs:410
+#: ../Tomboy/Tomboy.cs:414
 msgid ""
 "Copyright © 2004-2007 Alex Graveley\n"
 "Copyright © 2004-2010 Others\n"
@@ -1943,16 +1962,16 @@ msgstr ""
 "Copyright © 2004-2007 Alex Graveley\n"
 "Copyright © 2004-2010 Otros\n"
 
-#: ../Tomboy/Tomboy.cs:412
+#: ../Tomboy/Tomboy.cs:416
 msgid "A simple and easy to use desktop note-taking application."
 msgstr ""
 "Una aplicación simple y fácil de usar para tomar notas en el escritorio."
 
-#: ../Tomboy/Tomboy.cs:422
+#: ../Tomboy/Tomboy.cs:426
 msgid "Homepage"
 msgstr "Página web"
 
-#: ../Tomboy/Tomboy.cs:540
+#: ../Tomboy/Tomboy.cs:544
 msgid ""
 "Tomboy: A simple, easy to use desktop note-taking application.\n"
 "Copyright (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
@@ -1963,7 +1982,7 @@ msgstr ""
 "Copyright (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
 "\n"
 
-#: ../Tomboy/Tomboy.cs:552
+#: ../Tomboy/Tomboy.cs:556
 msgid ""
 "Usage:\n"
 "  --version\t\t\tPrint version information.\n"
@@ -1979,7 +1998,7 @@ msgstr ""
 "  --search [texto]\t\tAbre la ventana de búsqueda de todas las notas con el "
 "texto buscado.\n"
 
-#: ../Tomboy/Tomboy.cs:562
+#: ../Tomboy/Tomboy.cs:566
 msgid ""
 "  --new-note\t\t\tCreate and display a new note.\n"
 "  --new-note [title]\t\tCreate and display a new note, with a title.\n"
@@ -1995,7 +2014,7 @@ msgstr ""
 "  --highlight-search [texto]\tBuscar y resaltar texto coincidente en la nota "
 "abierta\n"
 
-#: ../Tomboy/Tomboy.cs:576
+#: ../Tomboy/Tomboy.cs:580
 #, csharp-format
 msgid "Version {0}"
 msgstr "Versión {0}"
@@ -2398,6 +2417,15 @@ msgstr ""
 "Para evitar que se le muestre este mensaje en el futuro, debería cargar FUSE "
 "al inicio. Añada \"modprobe fuse\" a /etc/init.d/boot.local o \"fuse\" a /"
 "etc/modules."
+
+#~ msgid "SSH (sshfs FUSE)"
+#~ msgstr "SSH (sshfs FUSE)"
+
+#~ msgid "WebDAV (wdfs FUSE)"
+#~ msgstr "WebDAV (wdfs FUSE)"
+
+#~ msgid "Success! You're connected!"
+#~ msgstr "Está conectado."
 
 #~ msgid "_Browse..."
 #~ msgstr "_Examinar…"
