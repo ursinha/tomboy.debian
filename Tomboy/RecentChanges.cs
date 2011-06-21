@@ -206,7 +206,30 @@ namespace Tomboy
 			// until the note's QueueSave () kicks in.
 			Notebooks.NotebookManager.NoteAddedToNotebook += OnNoteAddedToNotebook;
 			Notebooks.NotebookManager.NoteRemovedFromNotebook += OnNoteRemovedFromNotebook;
+			
+			// Set the focus chain for the top-most containers Bug #512175
+			Gtk.Widget[] vbox_focus = new Gtk.Widget[2];
+			vbox_focus[0] = hbox;
+			vbox_focus[1] = hpaned;
+			vbox.FocusChain = vbox_focus;
 
+			// Set focus chain for sub widgits of first top-most container
+			Gtk.Widget[] table_focus = new Gtk.Widget[2];
+			table_focus[0] = find_combo;
+			table_focus[1] = matches_window;
+			hbox.FocusChain = table_focus;
+			
+			// set focus chain for sub widgits of seconf top-most container
+			Gtk.Widget[] hpaned_focus = new Gtk.Widget[2];
+			hpaned_focus[0] = matches_window;
+			hpaned_focus[1] = notebooksPane;
+			hpaned.FocusChain = hpaned_focus;
+			
+			// get back to the beginning of the focus chain
+			Gtk.Widget[] scroll_right = new Gtk.Widget[1];
+			scroll_right[0] = tree;
+			matches_window.FocusChain = scroll_right;
+			
 			Tomboy.ExitingEvent += OnExitingEvent;
 		}
 
@@ -317,9 +340,12 @@ namespace Tomboy
 			tree.Selection.Mode = Gtk.SelectionMode.Multiple;
 			tree.Selection.Changed += OnSelectionChanged;
 			tree.ButtonPressEvent += OnTreeViewButtonPressed;
+			tree.KeyPressEvent += OnTreeViewKeyPressed;
 			tree.MotionNotifyEvent += OnTreeViewMotionNotify;
 			tree.ButtonReleaseEvent += OnTreeViewButtonReleased;
 			tree.DragDataGet += OnTreeViewDragDataGet;
+			tree.FocusInEvent += OnTreeViewFocused;
+			tree.FocusOutEvent += OnTreeViewFocusedOut;
 
 			tree.EnableModelDragSource (Gdk.ModifierType.Button1Mask | Gdk.ModifierType.Button3Mask,
 						    targets,
@@ -530,7 +556,10 @@ namespace Tomboy
 			if (note != null) {
 				int match_count;
 				if (current_matches.TryGetValue (note.Uri, out match_count)) {
-					if (match_count > 0) {
+					if (match_count == int.MaxValue) {
+						match_str = string.Format (
+								    Catalog.GetString ("Title match"));
+					} else if (match_count > 0) {
 						match_str = string.Format (
 								    Catalog.GetPluralString ("{0} match",
 											     "{0} matches",
@@ -724,7 +753,7 @@ namespace Tomboy
 			if (selected_notes == null || selected_notes.Count == 0) {
 				Tomboy.ActionManager ["OpenNoteAction"].Sensitive = false;
 				Tomboy.ActionManager ["DeleteNoteAction"].Sensitive = false;
-			} else if (selected_notes.Count == 1) {
+			} else if (selected_notes.Count > 0) {
 				Tomboy.ActionManager ["OpenNoteAction"].Sensitive = true;
 				Tomboy.ActionManager ["DeleteNoteAction"].Sensitive = true;
 			} else {
@@ -809,6 +838,30 @@ namespace Tomboy
 		}
 
 		[GLib.ConnectBefore]
+		void OnTreeViewKeyPressed (object sender, Gtk.KeyPressEventArgs args)
+		{
+			switch (args.Event.Key) {
+			case Gdk.Key.Menu:
+				// Pop up the context menu if a note is selected
+				List<Note> selected_notes = GetSelectedNotes ();
+				if (selected_notes != null && selected_notes.Count > 0) {
+						Gtk.Menu menu = Tomboy.ActionManager.GetWidget (
+						"/MainWindowContextMenu") as Gtk.Menu;
+					PopupContextMenuAtLocation (menu, 0, 0);
+					args.RetVal = true;
+				}
+
+				break;
+			case Gdk.Key.Return:
+			case Gdk.Key.KP_Enter:
+				// Open all selected notes
+				OnOpenNote (this, args);
+				args.RetVal = true;
+				break;
+			}
+		}
+
+		[GLib.ConnectBefore]
 		void OnTreeViewMotionNotify (object sender, Gtk.MotionNotifyEventArgs args)
 		{
 			if ((args.Event.State & Gdk.ModifierType.Button1Mask) == 0) {
@@ -844,6 +897,20 @@ namespace Tomboy
 				tree.Selection.SelectPath (path);
 			}
 		}
+		
+		// called when the user moves the focus into the notes TreeView
+		void OnTreeViewFocused (object sender, EventArgs args)
+		{
+			// enable the Delete Note option in the menu bar 
+			Tomboy.ActionManager ["DeleteNoteAction"].Sensitive = true;
+		}
+		
+		// called when the focus moves out of the notes TreeView
+		void OnTreeViewFocusedOut (object sender, EventArgs args)
+		{
+			// Disable the Delete Note option in the menu bar (bug #647462)
+			Tomboy.ActionManager ["DeleteNoteAction"].Sensitive = false;
+		}
 
 		void PopupContextMenuAtLocation (Gtk.Menu menu, int x, int y)
 		{
@@ -874,30 +941,36 @@ namespace Tomboy
 		void PositionContextMenu (Gtk.Menu menu,
 					  out int x, out int y, out bool push_in)
 		{
-			Gtk.TreeIter iter;
+			int pos_x;
+			int pos_y;
 			Gtk.TreePath path;
-			Gtk.TreeSelection selection;
+			Gtk.TreePath [] selected_rows;
+			Gdk.Rectangle cell_rect;
 
 			// Set default "return" values
-			push_in = false; // not used
+			push_in = true;
 			x = 0;
 			y = 0;
 
-			selection = tree.Selection;
-			if (!selection.GetSelected (out iter))
-				return;
+			// Are we currently in the note list?
+			// else, assume we're in the notebook list
+			Gtk.TreeView currentTree = (tree.HasFocus) ? tree : notebooksTree;
 
-			path = store_sort.GetPath (iter);
+			selected_rows = currentTree.Selection.GetSelectedRows ();
+			// Get TreeView's coordinates
+			currentTree.GdkWindow.GetOrigin (out pos_x, out pos_y);
 
-			int pos_x = 0;
-			int pos_y = 0;
+			if (selected_rows.Length > 0) {
+				// Popup near the selection
+				path = selected_rows [0];
+				cell_rect = currentTree.GetCellArea (path, currentTree.Columns [0]);
 
-			GetWidgetScreenPos (tree, ref pos_x, ref pos_y);
-			Gdk.Rectangle cell_rect = tree.GetCellArea (path, tree.Columns [0]);
+				// Add 100 to x, so it isn't too close to the left border
+				x = pos_x + cell_rect.X + 100;
+				// Add 47 to y, so it's right at the bottom of the selected row
+				y = pos_y + cell_rect.Y + 47;
 
-			// Add 100 to x so it's not be at the far left
-			x = pos_x + cell_rect.X + 100;
-			y = pos_y + cell_rect.Y;
+			}
 		}
 
 		// Walk the widget hiearchy to figure out
@@ -965,10 +1038,9 @@ namespace Tomboy
 		void OnOpenNote (object sender, EventArgs args)
 		{
 			List<Note> selected_notes = GetSelectedNotes ();
-			if (selected_notes == null || selected_notes.Count != 1)
-				return;
-
-			selected_notes [0].Window.Present ();
+			if (selected_notes != null)
+				foreach (Note note in selected_notes)
+					note.Window.Present ();
 		}
 
 		void OnDeleteNote (object sender, EventArgs args)
@@ -1030,16 +1102,6 @@ namespace Tomboy
 			case Gdk.Key.Escape:
 				// Allow Escape to close the window
 				OnCloseWindow (this, EventArgs.Empty);
-				break;
-			case Gdk.Key.Menu:
-				// Pop up the context menu if a note is selected
-				List<Note> selected_notes = GetSelectedNotes ();
-				if (selected_notes != null && selected_notes.Count > 0) {
-						Gtk.Menu menu = Tomboy.ActionManager.GetWidget (
-						"/MainWindowContextMenu") as Gtk.Menu;
-				    PopupContextMenuAtLocation (menu, 0, 0);
-				}
-
 				break;
 			}
 		}

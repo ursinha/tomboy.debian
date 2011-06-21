@@ -329,9 +329,11 @@ namespace Tomboy
 				"",
 				Catalog.GetString ("Contributors:"),
 				"\tAaron Bockover",
+				"\tAbhinav Upadhyay",
 				"\tAlejandro Cura",
 				"\tAlexey Nedilko",
 				"\tAlex Kloss",
+				"\tAlex Tereschenko",
 				"\tAnders Petersson",
 				"\tAndrew Fister",
 				"\tBrian Mattern",
@@ -348,6 +350,7 @@ namespace Tomboy
 				"\tFrederic Crozat",
 				"\tGabriel Burt",
 				"\tGabriel de Perthuis",
+				"\tIain Lane",
 				"\tJakub Steiner",
 				"\tJames Westby",
 				"\tJamin Philip Gray",
@@ -371,13 +374,17 @@ namespace Tomboy
 				"\tMatthew Pirocchi",
 				"\tMatt Johnston",
 				"\tMatt Jones",
+				"\tMichael Fletcher",
 				"\tMike Mazur",
 				"\tNathaniel Smith",
+				"\tOlav Vitters",
 				"\tOlivier Le Thanh Duong",
 				"\tOwen Williams",
 				"\tPaul Cutler",
+				"\tPavol Klačanský",
 				"\tPrzemysław Grzegorczyk",
 				"\tRobert Buchholz",
+				"\tRobert Nordan",
 				"\tRobin Sonefors",
 				"\tRodrigo Moya",
 				"\tRomain Tartiere",
@@ -412,7 +419,7 @@ namespace Tomboy
 			about.Logo = GuiUtils.GetIcon ("tomboy", 48);
 			about.Copyright =
 			        Catalog.GetString ("Copyright \xa9 2004-2007 Alex Graveley\n" +
-				                   "Copyright \xa9 2004-2010 Others\n");
+				                   "Copyright \xa9 2004-2011 Others\n");
 			about.Comments = Catalog.GetString ("A simple and easy to use desktop " +
 			                                    "note-taking application.");
 			Gtk.AboutDialog.SetUrlHook (delegate (Gtk.AboutDialog dialog, string link) {
