@@ -1,3 +1,27 @@
+tomboy (1.7.0-1) UNRELEASED; urgency=low
+
+  * [de22824] Modify watch file to look for bz2 orig files
+    + Search does not give preference to note title 
+    + Cleanup strings in sync dialog dialogs 
+    + Context-menu key now opens next to selected notes 
+    + Fix string references to *Search All Notes* window 
+    + Disable Delete action when note list not in focus 
+    + Allow the user to open multiple notes via keypress or menu 
+    + Update tar usage to ensure OpenBSD compatibility 
+    + Switch from NDesk Dbus to dbus-sharp 
+    + Specify utf8 encoding for sync confirmation page 
+    + Fix focus chain in Search All Notes window 
+    + New addin for removing broken links from notes 
+    + Remove unmanaged window present code 
+    + Improvements for translators 
+    + Don't save unchanged new notes 
+  * [aafe1b2] Imported Upstream version 1.7.0
+  * [309d0af] Switch BDs from ndesk-dbus to dbus-sharp
+  * [0e77616] Disable panel applet, panel will be deprecated with GNOME 3
+  * [645383d] Convert to 3.0 (quilt) for bz2 orig support
+
+ -- Iain Lane <laney@debian.org>  Tue, 21 Jun 2011 16:42:35 +0100
+
 tomboy (1.6.1-1) unstable; urgency=low
 
   * [e32a2d3] Imported Upstream version 1.6.1
