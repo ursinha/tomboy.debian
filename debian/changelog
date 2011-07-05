@@ -1,3 +1,23 @@
+tomboy (1.7.1-1) UNRELEASED; urgency=low
+
+  * [dbee52f] Imported Upstream version 1.7.1
+   + New addin to Export All Notes
+   + Drop dependency for gconf-sharp-peditors
+   + Fix delete key behavior in bullet lists
+   + Resolve relative paths when exporting notes
+   + Fix string in Preferences UI
+   + Handle ending slashes in sync URLs
+   + Don't allow rename of special notebooks
+   + Don't open URL twice in Addin preferences
+   + Handle invalid files when loading notes
+   + Add UI for no search results in notebook
+   + Update copyright to 2011
+   + Handle matching brackets in links
+  * [e324eb0] Drop gnome# BD in line with upstream's configure
+  * [d31575d] Disable schema install in the build
+
+ -- Iain Lane <laney@debian.org>  Tue, 05 Jul 2011 23:17:55 +0100
+
 tomboy (1.7.0-1) experimental; urgency=low
 
   * [de22824] Modify watch file to look for bz2 orig files
