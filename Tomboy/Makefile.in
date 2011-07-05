@@ -277,7 +277,6 @@ libdir = @libdir@
 libexecdir = @libexecdir@
 localedir = @localedir@
 localstatedir = @localstatedir@
-lt_ECHO = @lt_ECHO@
 mandir = @mandir@
 mkdir_p = @mkdir_p@
 oldincludedir = @oldincludedir@
@@ -342,11 +341,15 @@ PANELAPPLET_CSFILES = \
 	$(srcdir)/Applet.cs
 
 GNOME_CSFILES = \
-	$(srcdir)/GConfPreferencesClient.cs	\
-	$(srcdir)/GnomeApplication.cs		\
-	$(srcdir)/GnomeFactory.cs		\
-	$(srcdir)/GnomeSession.cs		\
-	$(srcdir)/XKeybinder.cs			\
+	$(srcdir)/GConf.PropertyEditors/PropertyEditor.cs		\
+	$(srcdir)/GConf.PropertyEditors/PropertyEditorBool.cs		\
+	$(srcdir)/GConf.PropertyEditors/PropertyEditorEntry.cs		\
+	$(srcdir)/GConf.PropertyEditors/PropertyEditorToggleButton.cs	\
+	$(srcdir)/GConfPreferencesClient.cs				\
+	$(srcdir)/GnomeApplication.cs					\
+	$(srcdir)/GnomeFactory.cs					\
+	$(srcdir)/GnomeSession.cs					\
+	$(srcdir)/XKeybinder.cs						\
 	$(srcdir)/gtk-sharp-beans/*.cs
 
 @ENABLE_PANEL_APPLET_TRUE@PANEL_APPLET_CSFLAGS = -define:PANEL_APPLET
@@ -379,6 +382,7 @@ CSFILES = \
 	$(srcdir)/AddinPreferenceFactory.cs	\
 	$(srcdir)/ApplicationAddin.cs		\
 	$(srcdir)/Contrast.cs		\
+	$(srcdir)/ExportAllApplicationAddin.cs		\
 	$(srcdir)/Keybinder.cs			\
 	$(srcdir)/Logger.cs			\
 	$(srcdir)/NativeApplication.cs		\
