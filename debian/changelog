@@ -1,4 +1,4 @@
-tomboy (1.7.1-1) UNRELEASED; urgency=low
+tomboy (1.7.1-1) experimental; urgency=low
 
   * [dbee52f] Imported Upstream version 1.7.1
    + New addin to Export All Notes
