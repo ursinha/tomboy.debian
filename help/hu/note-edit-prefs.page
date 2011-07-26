@@ -26,7 +26,7 @@
    <title>Helyesírás-ellenőrzés</title>
    <p>A Tomboy képes ellenőrizni a helyesírást a jegyzet szövegének gépelésekor. A helyesírás-ellenőrzés alapértelmezésben be van kapcsolva, és a Tomboy aláhúzza az elgépelt szavakat. A helyesírási javaslatokat az elgépelt szavakra való jobb kattintással jelenítheti meg.</p>
    
-   <p>Az automatikus helyesírás-ellenőrzés kikapcsolásával törölje a Tomboy beállításai <gui>Szerkesztés</gui> lapjának <gui>Helyesírás-ellenőrzés gépelés közben</gui> négyzetét.</p>
+   <p>Az automatikus helyesírás-ellenőrzés kikapcsolásához törölje a Tomboy beállításai <gui>Szerkesztés</gui> lapjának <gui>Helyesírás-ellenőrzés gépelés közben</gui> négyzetét.</p>
    
  </section>
 

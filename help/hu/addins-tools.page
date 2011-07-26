@@ -30,7 +30,7 @@
 <section id="html-export">
   <title>Exportálás HTML-be</title>
   <p>Az <gui>Exportálás HTML-be</gui> bővítmény alapértelmezésben engedélyezett, és lehetővé teszi az egyes jegyzetek HTML-be történő exportálását.</p>
-	<p>Jegyzet HTML-be exportálásához nyomja meg a jegyzet eszköztárán lévő <gui>Eszközök</gui> ikont, és válassza az <gui>Exportálás HTML-be</gui> menüpontot. Azonnal megjelenik egy ablak, amelyben elmentheti a jegyzetet. Válassza ki a könyvtárat, amelybe menteni szeretné a jegyzetet, és adja meg az új HTML fájl nevét, ha jegyzet nevétől különböző nevet szeretne használni. A jegyzet elmentésre kerül HTML formátumba, és megjelenik böngészőjében.</p>
+	<p>Jegyzet HTML-be exportálásához nyomja meg a jegyzet eszköztárán lévő <gui>Eszközök</gui> ikont, és válassza az <gui>Exportálás HTML-be</gui> menüpontot. Azonnal megjelenik egy ablak, amelyben elmentheti a jegyzetet. Válassza ki a könyvtárat, amelybe menteni szeretné a jegyzetet, és adja meg az új HTML fájl nevét, ha a jegyzet nevétől különböző nevet szeretne használni. A jegyzet elmentésre kerül HTML formátumba, és megjelenik böngészőjében.</p>
 </section>
 
 <section id="timestamp">
@@ -41,7 +41,7 @@
 
 <section id="noteoftheday">
   <title>A nap jegyzete</title>
-  <p>A <gui>A nap jegyzete</gui> bővítmény alapértelmezetten le van tiltva. Engedélyezéséhez válassza a Tomboy beállításaiban az <gui>Időbélyeg beillesztése</gui> bővítményt, és nyomja meg az <gui>Engedélyezés</gui> gombot.</p>
+  <p>Az <gui>A nap jegyzete</gui> bővítmény alapértelmezetten le van tiltva. Engedélyezéséhez válassza a Tomboy beállításaiban az <gui>A nap jegyzete</gui> bővítményt, és nyomja meg az <gui>Engedélyezés</gui> gombot.</p>
 	<p><gui>A nap jegyzete</gui> bővítmény minden nap létrehoz egy jegyzetet a következőhöz hasonló címmel: <em>Ma: vasárnap, 2010. szeptember 26.</em> A jegyzet automatikusan tartalmazni fog egy <em>Feladatok</em> és egy <em>Találkozók</em> sort.</p>
 </section>
 

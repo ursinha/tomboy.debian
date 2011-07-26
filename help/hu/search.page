@@ -24,6 +24,6 @@
 
 	<p>A Keresés eszköz segítségével bármely jegyzetében megtalálhat egy szót vagy kifejezést. Kattintson a jobb egérgombbal a Tomboy ikonra a panelen, vagy kattintson a <gui>Keresés</gui> gombra a jegyzet eszköztárában a Keresés minden jegyzetben ablak megjelenítéséhez.</p>
 	<p>Adja meg a keresett kifejezést a <gui>Keresés</gui> mezőben, és nyomja meg az <key>Enter</key> billentyűt. A keresőkifejezést tartalmazó összes jegyzet felsorolásra kerül.</p>
-	<p>Ha jegyzeteit jegyzettömbökbe szervezte, akkor az adott kifejezésekre keresést leszűkítheti egy adott jegyzettömbre is a kérdéses jegyzettömb a keresőkifejezés megadása előtti kijelölésével.</p>
+	<p>Ha jegyzeteit jegyzettömbökbe szervezte, akkor az adott kifejezésekre keresést leszűkítheti egy adott jegyzettömbre is a kérdéses jegyzettömb kijelölésével a keresőkifejezés megadása előtt.</p>
 
  </page>
