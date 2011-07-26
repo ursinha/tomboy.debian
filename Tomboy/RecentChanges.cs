@@ -161,15 +161,6 @@ namespace Tomboy
 			matches_window = new Gtk.ScrolledWindow ();
 			matches_window.ShadowType = Gtk.ShadowType.In;
 
-			// Reign in the window size if there are notes with long
-			// names, or a lot of notes...
-			Gtk.Requisition tree_req = tree.SizeRequest ();
-			if (tree_req.Height > 420)
-				matches_window.HeightRequest = 420;
-
-			if (tree_req.Width > 480)
-				matches_window.WidthRequest = 480;
-
 			matches_window.HscrollbarPolicy = Gtk.PolicyType.Automatic;
 			matches_window.VscrollbarPolicy = Gtk.PolicyType.Automatic;
 			matches_window.Add (tree);
@@ -357,6 +348,7 @@ namespace Tomboy
 
 			Gtk.TreeViewColumn title = new Gtk.TreeViewColumn ();
 			title.Title = Catalog.GetString ("Note");
+			title.MinWidth = 150; // Fix for bgo 575337 - "Matches" column causes notes name not to be shown. jjennings jul 13, 2011
 			title.Sizing = Gtk.TreeViewColumnSizing.Autosize;
 			title.Expand = true;
 			title.Resizable = true;
