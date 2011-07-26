@@ -1,3 +1,13 @@
+tomboy (1.7.2-1) experimental; urgency=low
+
+  * [6a8551d] Imported Upstream version 1.7.2
+    + New addin for advanced preferences
+    + Remove minumum size on Search All Notes window
+    + Fix note title matching in TrieTree
+    + Enforce minimum size on Name column in Search All Notes window
+
+ -- Iain Lane <laney@debian.org>  Tue, 26 Jul 2011 16:44:05 +0100
+
 tomboy (1.7.1-1) experimental; urgency=low
 
   * [dbee52f] Imported Upstream version 1.7.1
