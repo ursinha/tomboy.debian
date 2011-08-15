@@ -27,8 +27,6 @@ override_dh_auto_install:
 	rm -rf debian/tomboy/usr/lib/tomboy/*.la
 	# crush it good
 	find $(CURDIR)/debian/tomboy/usr/share/gnome/help/tomboy -type f -name "*.png" -exec sh -c 'pngquant 256 < {} > {}.crushed; mv {}.crushed {}' \;
-	# create pot file for Ubuntu - doesn't affect built debs for Debian
-	cd po; intltool-update --pot
 
 # disable tests
 override_dh_auto_test:
