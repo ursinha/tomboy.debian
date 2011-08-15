@@ -1,3 +1,12 @@
+tomboy (1.7.3-1) experimental; urgency=low
+
+  * [25db012] Imported Upstream version 1.7.3
+    + Make NUNIT conditional
+  * [c2709c3] Remove 10_disable_unit_tests patch; now supported via configure
+    flag
+
+ -- Iain Lane <laney@debian.org>  Mon, 15 Aug 2011 22:20:55 +0100
+
 tomboy (1.7.2-1) experimental; urgency=low
 
   * [6a8551d] Imported Upstream version 1.7.2
