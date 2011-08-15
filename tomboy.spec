@@ -1,5 +1,5 @@
 Name:           tomboy
-Version:        1.7.2
+Version:        1.7.3
 Release:        1
 Epoch:          0
 Summary:        Tomboy is a desktop note-taking application for Linux and Unix. 
