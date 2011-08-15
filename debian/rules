@@ -16,6 +16,7 @@ override_dh_auto_configure:
 		--disable-update-mimedb \
 		--disable-panel-applet \
 		--disable-schemas-install \
+		--disable-tests \
 		LDFLAGS="$(LDFLAGS)" \
 		GMCS=/usr/bin/mono-csc
 
