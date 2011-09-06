@@ -1,3 +1,10 @@
+tomboy (1.7.6-1) experimental; urgency=low
+
+  * [e29c8c1] Imported Upstream version 1.7.6
+    + Translation updates
+
+ -- Iain Lane <laney@debian.org>  Tue, 06 Sep 2011 17:04:32 +0100
+
 tomboy (1.7.4-1) experimental; urgency=low
 
   * [aae3ba7] Delete debian/ltmain-as-needed.sh. Not necessary any more.
