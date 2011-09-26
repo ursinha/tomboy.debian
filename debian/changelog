@@ -1,3 +1,13 @@
+tomboy (1.8.0-1) unstable; urgency=low
+
+  * Upload to unstable
+  * [74507b7] Imported Upstream stable version 1.8.0
+    + Translation Updates
+  * [9ccc75f] Remove merge conflict marker in debian/changelog
+  * [d583cfa] Change branches in gbp.conf to unstable
+
+ -- Iain Lane <laney@debian.org>  Mon, 26 Sep 2011 22:26:48 +0100
+
 tomboy (1.7.6-1) experimental; urgency=low
 
   * [e29c8c1] Imported Upstream version 1.7.6
