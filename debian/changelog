@@ -1,4 +1,4 @@
-tomboy (1.9.2-1) UNRELEASED; urgency=low
+tomboy (1.9.2-1) experimental; urgency=low
 
   * [72d7885] Update gbp.conf for experimental
   * [fca59c6] Imported Upstream version 1.9.2
