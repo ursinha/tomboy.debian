@@ -1,3 +1,12 @@
+tomboy (1.9.2-1) UNRELEASED; urgency=low
+
+  * [72d7885] Update gbp.conf for experimental
+  * [fca59c6] Imported Upstream version 1.9.2
+    + Add support for latest versions of Firefox
+    + Translation updates
+
+ -- Iain Lane <laney@debian.org>  Wed, 16 Nov 2011 16:02:47 +0000
+
 tomboy (1.8.3-1) UNRELEASED; urgency=low
 
   * [6d2edf9] Imported Upstream version 1.8.3
