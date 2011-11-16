@@ -1,3 +1,10 @@
+tomboy (1.8.3-1) UNRELEASED; urgency=low
+
+  * [6d2edf9] Imported Upstream version 1.8.3
+    + Translation updates
+
+ -- Iain Lane <laney@debian.org>  Wed, 16 Nov 2011 15:58:39 +0000
+
 tomboy (1.8.0-1) unstable; urgency=low
 
   * Upload to unstable
