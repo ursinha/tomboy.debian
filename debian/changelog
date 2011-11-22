@@ -1,4 +1,4 @@
-tomboy (1.9.3-1) UNRELEASED; urgency=low
+tomboy (1.9.3-1) experimental; urgency=low
 
   * [7e76896] Imported Upstream version 1.9.3
     + Translation updates
