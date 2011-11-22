@@ -1,3 +1,10 @@
+tomboy (1.9.3-1) UNRELEASED; urgency=low
+
+  * [7e76896] Imported Upstream version 1.9.3
+    + Translation updates
+
+ -- Iain Lane <laney@debian.org>  Tue, 22 Nov 2011 14:49:18 +0000
+
 tomboy (1.9.2-1) experimental; urgency=low
 
   * [72d7885] Update gbp.conf for experimental
