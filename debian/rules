@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-include /usr/share/cli-common/cli.make
-
 LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
 
 MAKEFILE = $(firstword $(MAKEFILE_LIST))
@@ -42,6 +40,6 @@ get-orig-source:
 		--rename
 
 %:
-	dh $@
+	dh $@ --with cli
 
 .PHONY: get-orig-source
