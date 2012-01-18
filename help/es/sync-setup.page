@@ -9,12 +9,10 @@
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
-      <name>GNOME Documentation Project</name>
-    </copyright>
--->
+    <credit type="author copyright">
+      <name>Proyecto de documentación de GNOME</name>
+      <years>2010-2012</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -43,11 +41,12 @@
 		<item><p><gui>Renombrar mi nota local</gui>. Si esta opción está seleccionada, Tomboy reemplazará automáticamente la nota con una copia del equipo remoto y renombrará la nota en su equipo de tal forma que no pierda información en su nota.</p>
 		</item>
 		
-		<item><p><gui>Reemplazar mi nota local con la actualización del servidor</gui>. Si ha seleccionado esta opción, al sincronizar Tomboy se sobreescribirán y reemplazarán sus notas almacenadas en su equipo con una copia de las de su equipo remoto.</p></item>
+		<item><p><gui>Reemplazar mi nota local con la actualización del servidor</gui>. Si ha seleccionado esta opción, al sincronizar Tomboy se sobreescribirán y reemplazarán sus notas almacenadas en su equipo con una copia de las de su equipo remoto.</p>
 		
 		<note style="warning">
 		<p>Sobreescribir la nota es permanente. La copia en el equipo remoto reemplazará su nota local y perderá la información almacenada antes de la sincronización.</p>
 		</note>
+                </item>
 		
 	</list>
 		

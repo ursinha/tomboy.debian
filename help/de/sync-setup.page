@@ -9,12 +9,10 @@
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
+    <credit type="author copyright">
       <name>GNOME Documentation Project</name>
-    </copyright>
--->
+      <years>2010-2012</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -43,11 +41,12 @@
 		<item><p><gui>Meine lokale Notiz umbenennen.</gui> Wenn diese Option gewählt ist, so wird Tomboy automatisch die Notiz durch die Kopie des entfernten Rechners ersetzen und die Notiz auf Ihrem Rechner umbenennen. Dadurch wird Ihnen der Inhalt Ihrer Notiz nicht verloren gehen.</p>
 		</item>
 		
-		<item><p><gui>Meine lokale Notiz mit derjenigen des Servers ersetzen.</gui>. Wenn diese Option gewählt ist, so wird Tomboy beim Abgleichen Ihre Notiz überschreiben und durch eine Kopie des entfernten Rechners ersetzen.</p></item>
+		<item><p><gui>Meine lokale Notiz mit derjenigen des Servers ersetzen.</gui>. Wenn diese Option gewählt ist, so wird Tomboy beim Abgleichen Ihre Notiz überschreiben und durch eine Kopie des entfernten Rechners ersetzen.</p>
 		
 		<note style="warning">
 		<p>Automatisches Überschreiben der Notiz ist unwiderruflich. Ihre lokale Notiz wird durch die des entfernten Rechners ersetzt und Sie werden Ihre vor dem Abgleich gespeicherten Informationen verlieren.</p>
 		</note>
+                </item>
 		
 	</list>
 		

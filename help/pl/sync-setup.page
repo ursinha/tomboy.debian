@@ -9,12 +9,10 @@
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
+    <credit type="author copyright">
       <name>GNOME Documentation Project</name>
-    </copyright>
--->
+      <years>2010-2012</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -43,11 +41,12 @@
 		<item><p><gui>Zmień nazwę notatki lokalnej.</gui> Jeśli ta opcja zostanie zaznaczona, notatka zostanie automatycznie zastąpiona kopią z komputera zdalnego, a nazwa lokalnej notatki zostanie zmieniona, zachowując informacje wprowadzone przez użytkownika.</p>
 		</item>
 		
-		<item><p><gui>Zastąp kopię lokalną aktualizacją z serwera.</gui> Jeśli ta opcja zostanie zaznaczona, w czasie synchronizacji notatka przechowywana w komputerze użytkownika zostanie nadpisana i zastąpiona notatką z komputera zdalnego.</p></item>
+		<item><p><gui>Zastąp kopię lokalną aktualizacją z serwera.</gui> Jeśli ta opcja zostanie zaznaczona, w czasie synchronizacji notatka przechowywana w komputerze użytkownika zostanie nadpisana i zastąpiona notatką z komputera zdalnego.</p>
 		
 		<note style="warning">
 		<p>Opcja automatycznego nadpisania notatki jest nieodwracalna. Notatka lokalna zostanie zastąpiona kopią notatki z komputera zdalnego, a użytkownik utraci informacje wprowadzone przed synchronizacją.</p>
 		</note>
+                </item>
 		
 	</list>
 		

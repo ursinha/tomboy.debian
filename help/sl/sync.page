@@ -40,7 +40,7 @@
  	
  	<p>Tomboy lahko v ozadju samodejno uskladi vaša sporočilca. Priporočamo vam, da pred omogočitvijo samodejnega usklajevanja nastavite upravljanje sporov sporočilc. O upravljanju sporov sporočilc si lahko več preberete na strani <link xref="sync-setup#conflict"/>.</p>
  	
- 	<p>Usklajevanje lahko omogočite z odpiranjem <gui>Možnosti Tomboy</gui>, kar storite z desnim klikom na ikono Tomboy v vašem pultu, opravilni vrstici ali sidrišču in izbiro <gui>Možnosti</gui> in nato izbiro zavihka <gui>Usklajevanje</gui>. <gui>Možnosti Tomboy lahko odprete tudi iz pogovornega okna <gui>Iskanje vseh sporočilc</gui>. V meniju izberite <guiseq><gui>Uredi</gui><gui>Možnosti</gui></guiseq>.</gui></p>
+ 	<p>Usklajevanje lahko omogočite z odpiranjem <gui>Možnosti Tomboy</gui>, kar storite z desnim klikom na ikono Tomboy v vašem pultu, opravilni vrstici ali sidrišču in izbiro <gui>Možnosti</gui> in nato izbiro zavihka <gui>Usklajevanje</gui>. <gui>Možnosti Tomboy</gui> lahko odprete tudi iz pogovornega okna <gui>Iskanje vseh sporočilc</gui>. V meniju izberite <guiseq><gui>Uredi</gui><gui>Možnosti</gui></guiseq>.</p>
 	
 	<p>Za omogočitev samodejnega usklajevanja izberite polje <gui>Samodejno uskladi v ozadju vsakih x minut</gui> na dnu zavihka usklajevanje.</p>
 	

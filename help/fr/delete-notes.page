@@ -7,16 +7,15 @@
     <link type="seealso" xref="edit-notes"/>
     <desc>Suppression de notes dans Tomboy.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+
         <credit type="author">
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
+    <credit type="author copyright">
       <name>GNOME Documentation Project</name>
-    </copyright>
--->
+      <years>2010</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -24,6 +23,9 @@
   
   <p>Pour supprimer une note cliquez sur l'icône <gui>Supprimer</gui> de la barre d'outils de la note que vous voulez supprimer.</p>
   
-<note style="warning"><p>La suppression d'une note est permanente. Après sa suppression, la note n'est plus récupérable.</p> il vous sera demandé <gui>Voulez-vous vraiment supprimer cette note ?</gui> quand vous supprimez une note.</note>
+<note style="warning">
+	<p>La suppression d'une note est permanente. Après sa suppression, la note n'est plus récupérable.</p> <p> You will be prompted <gui>Really delete 
+	this note?</gui> when deleting a note.</p>  
+</note>
 	
 </page>

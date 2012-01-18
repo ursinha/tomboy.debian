@@ -7,16 +7,15 @@
     <link type="seealso" xref="edit-notes"/>
     <desc>Eliminar unha nota en Tomboy.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+
         <credit type="author">
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
+    <credit type="author copyright">
       <name>GNOME Documentation Project</name>
-    </copyright>
--->
+      <years>2010</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -24,6 +23,9 @@
   
   <p>Pode eliminar unha nota premendo a icona <gui>Eliminar</gui> na barra de ferramentas da nota que quere eliminar.</p>
   
-<note style="warning"><p>Eliminar unha nota é permanente. Despois de eliminala, a nota non se poderá eliminar.</p>Preguntaráselle <gui>Está seguro que quere eliminar esta nota?</gui> cando elimine unha nota.</note>
+<note style="warning">
+	<p>Eliminar unha nota é permanente. Despois de eliminala, a nota non se poderá eliminar.</p> <p> You will be prompted <gui>Really delete 
+	this note?</gui> when deleting a note.</p>  
+</note>
 	
 </page>

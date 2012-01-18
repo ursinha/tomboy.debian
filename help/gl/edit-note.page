@@ -57,7 +57,7 @@
 	
 		<p>As viñetas pódense crear usando o teclado ou a icona <gui>Texto</gui> da barra de ferramentas.</p>
 		<p>Para crear unha viñeta manualmente, prema a tecla asterisco<key>*</key> e escriba o texto. Despois de premer Intro, Tomboy convertirá automaticamente unha liña que comece por un asterisco nunha viñeta, e a seguinte liña autoformatarase tamén como unha viñeta. Se quere crear unha subviñeta, prema <key>Tab</key> inmediatamente despois de premer <key>Intro</key>.</p>
-		<p>Tamén pode resaltar unha liña en concreto, elixir a icona <gui>Texto</gui> na barra de ferramentas e marcar a casilla <gui>Viñetas<gui>  para engadir viñetas a unha liña en concreto.</gui></gui></p>
+		<p>Tamén pode resaltar unha liña en concreto, elixir a icona <gui>Texto</gui> na barra de ferramentas e marcar a casilla <gui>Viñetas</gui>  para engadir viñetas a unha liña en concreto.</p>
 
 	
   </section>
