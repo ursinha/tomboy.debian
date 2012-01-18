@@ -9,12 +9,10 @@
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
+    <credit type="author copyright">
       <name>GNOME Documentation Project</name>
-    </copyright>
--->
+      <years>2010-2012</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -43,11 +41,12 @@
 		<item><p><gui>Přejmenovat místní poznámku.</gui> Když je vybrána tato volba, bude aplikace Tomboy automaticky nahrazovat poznámku kopií ze vzdáleného počítače a poznámku v vašem počítači přejmenuje, takže informace v poznámce neztratíte.</p>
 		</item>
 		
-		<item><p><gui>Zaměnit místní poznámku s poznámkou na serveru. </gui> Když máte vybránu tuto volbu, pak Tomboy při synchronizaci přepíše a nahradí vaši poznámku uloženou na vašem počítači kopií ze vzdáleného serveru.</p></item>
+		<item><p><gui>Zaměnit místní poznámku s poznámkou na serveru. </gui> Když máte vybránu tuto volbu, pak Tomboy při synchronizaci přepíše a nahradí vaši poznámku uloženou na vašem počítači kopií ze vzdáleného serveru.</p>
 		
 		<note style="warning">
 		<p>Automatické přepsání poznámky je trvalé. Vaše místní poznámka bude přepsána kopií ze vzdáleného počítače a tím se ztratí informace, které jste měli uložené před započetím synchronizace.</p>
 		</note>
+                </item>
 		
 	</list>
 		

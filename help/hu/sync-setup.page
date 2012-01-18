@@ -9,12 +9,10 @@
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
+    <credit type="author copyright">
       <name>GNOME Documentation Project</name>
-    </copyright>
--->
+      <years>2010-2012</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -43,11 +41,12 @@
 		<item><p><gui>Nevezze át a helyi jegyzetet.</gui> Ha ezt választja, akkor a Tomboy automatikusan lecseréli a jegyzetet a távoli számítógépről származó másolattal, és átnevezi a helyi jegyzetet, hogy ne veszítse el a jegyzet információit.</p>
 		</item>
 		
-		<item><p><gui>Cserélje a helyi jegyzetet a kiszolgálón találhatóra.</gui> Ha ezt választja, akkor a Tomboy szinkronizáláskor felülírja a számítógépen levő jegyzetet a távoli gépen lévő jegyzettel.</p></item>
+		<item><p><gui>Cserélje a helyi jegyzetet a kiszolgálón találhatóra.</gui> Ha ezt választja, akkor a Tomboy szinkronizáláskor felülírja a számítógépen levő jegyzetet a távoli gépen lévő jegyzettel.</p>
 		
 		<note style="warning">
 		<p>A jegyzet automatikus felülírása végleges. A helyi jegyzetet lecseréli a távoli gépen lévő másolat, és a szinkronizálás előtt rajta lévő összes információ elvész.</p>
 		</note>
+                </item>
 		
 	</list>
 		

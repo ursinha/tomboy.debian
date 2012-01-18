@@ -9,12 +9,10 @@
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
+    <credit type="author copyright">
       <name>GNOME Documentation Project</name>
-    </copyright>
--->
+      <years>2010-2012</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -30,7 +28,7 @@
 	access to your notes.
 	</p>
 	
-	<p>Usklajevanje lahko omogočite z odpiranjem <gui>Možnosti Tomboy</gui>, kar storite z desnim klikom na ikono Tomboy v vašem pultu, opravilni vrstici ali sidrišču in izbiro <gui>Možnosti</gui> in nato izbiro zavihka <gui>Usklajevanje</gui>. <gui>Možnosti Tomboy lahko odprete tudi iz pogovornega okna <gui>Iskanje vseh sporočilc</gui>. V meniju izberite <guiseq><gui>Uredi</gui><gui>Možnosti</gui></guiseq>.</gui></p>
+	<p>Usklajevanje lahko omogočite z odpiranjem <gui>Možnosti Tomboy</gui>, kar storite z desnim klikom na ikono Tomboy v vašem pultu, opravilni vrstici ali sidrišču in izbiro <gui>Možnosti</gui> in nato izbiro zavihka <gui>Usklajevanje</gui>. <gui>Možnosti Tomboy</gui> lahko odprete tudi iz pogovornega okna <gui>Iskanje vseh sporočilc</gui>. V meniju izberite <guiseq><gui>Uredi</gui><gui>Možnosti</gui></guiseq>.</p>
 
  </section>
 
@@ -47,11 +45,12 @@
 		<item><p><gui>Preimenuj moje krajevno sporočilce.</gui> V primeru, da je izbrana ta možnost, bo Tomboy samodejno zamenjal sporočilce s kopijo z oddaljenega računalnika in sporočilce na vašem računalniku preimenoval. Zato ne boste izgubili nobenih podatkov v svojem sporočilcu.</p>
 		</item>
 		
-		<item><p><gui>Zamenjaj moje krajevno sporočilce s posodobitvijo strežnika. </gui>. V primeru, da ste izbrali to možnost, bo Tomboy prepisal in zamenjal sporočilce shranjeno na vašem računalniku s kopijo z oddaljenega računalnika.</p></item>
+		<item><p><gui>Zamenjaj moje krajevno sporočilce s posodobitvijo strežnika. </gui>. V primeru, da ste izbrali to možnost, bo Tomboy prepisal in zamenjal sporočilce shranjeno na vašem računalniku s kopijo z oddaljenega računalnika.</p>
 		
 		<note style="warning">
 		<p>Samodejno prepisovanje sporočilca je trajno. Vaše krajevno sporočilce bo zamenjala kopija na oddaljenem računalniku in izgubili boste vse podatke, shranjene pred usklajevanjem.</p>
 		</note>
+                </item>
 		
 	</list>
 		

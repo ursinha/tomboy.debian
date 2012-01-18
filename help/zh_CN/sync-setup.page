@@ -9,12 +9,10 @@
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
+    <credit type="author copyright">
       <name>GNOME Documentation Project</name>
-    </copyright>
--->
+      <years>2010-2012</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -43,11 +41,12 @@
 		<item><p><gui>重命名我的本地便笺。</gui>选中此项，便笺将自动从远程计算机复制一份便笺替换本地的，而将本地便笺重命名，这样您就不会丢失您的便笺信息。</p>
 		</item>
 		
-		<item><p><gui>用服务器上的便笺更新我的本地便笺。</gui>选中此项，当您同步便笺时，总是从远程计算机上的便笺替换本地便笺。</p></item>
+		<item><p><gui>用服务器上的便笺更新我的本地便笺。</gui>选中此项，当您同步便笺时，总是从远程计算机上的便笺替换本地便笺。</p>
 		
 		<note style="warning">
 		<p>便笺的替换是永久性的，您本地的便笺将会被远程计算机的便笺所替换，同步前该便笺中存放的信息将会丢失。</p>
 		</note>
+                </item>
 		
 	</list>
 		

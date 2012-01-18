@@ -9,12 +9,10 @@
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
-<!--
-    <copyright>
-      <year>2010</year>
+    <credit type="author copyright">
       <name>GNOME Documentation Project</name>
-    </copyright>
--->
+      <years>2010-2012</years>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -43,11 +41,12 @@
 		<item><p><gui>Renommer ma note locale</gui>. Si cette option est sélectionnée, Tomboy remplace automatiquement la note par une copie de celle de l'ordinateur distant et renomme la note sur votre ordinateur pour que vous ne perdiez pas les informations qu'elle contient.</p>
 		</item>
 		
-		<item><p><gui>Remplacer ma note locale avec celle du serveur</gui>. Si vous avez sélectionné cette option, quand vous synchronisez, Tomboy remplace la note stockée sur votre ordinateur par celle de l'ordinateur distant.</p></item>
+		<item><p><gui>Remplacer ma note locale avec celle du serveur</gui>. Si vous avez sélectionné cette option, quand vous synchronisez, Tomboy remplace la note stockée sur votre ordinateur par celle de l'ordinateur distant.</p>
 		
 		<note style="warning">
 		<p>Remplacer la note automatiquement est définitif. Votre note locale est remplacée par une copie de celle présente sur l'ordinateur distant et vous perdez toutes les informations qui étaient stockées dans cette note avant la synchronisation.</p>
 		</note>
+                </item>
 		
 	</list>
 		
