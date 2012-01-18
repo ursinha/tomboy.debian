@@ -1,3 +1,17 @@
+tomboy (1.9.5-1) experimental; urgency=low
+
+  * [ceb1079] Update watchfile to look for xz tarballs
+  * [ef866ec] Imported Upstream version 1.9.5 (note: no pristine-tar data for
+    this yet, due to missing pristine-xz)
+    * Fix validation errors in docs
+    * Fix delayed logouts with GnomeSession (Closes: #645990)
+    * Sync thread improvements
+    * Add missing commandline options to man pages (#665532)
+    * Add 256x256 icon for GNOME 3
+  * [fcde26a] Drop deprecated cli.make and use --with cli directly
+
+ -- Iain Lane <laney@debian.org>  Wed, 18 Jan 2012 13:16:27 +0000
+
 tomboy (1.9.3-1) experimental; urgency=low
 
   * [7e76896] Imported Upstream version 1.9.3
