@@ -13,7 +13,7 @@
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>GNOME Documentation Project</name>
+      <name>Le projet de documentation GNOME</name>
       <years>2010</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,8 +24,7 @@
   <p>Pour supprimer une note cliquez sur l'icône <gui>Supprimer</gui> de la barre d'outils de la note que vous voulez supprimer.</p>
   
 <note style="warning">
-	<p>La suppression d'une note est permanente. Après sa suppression, la note n'est plus récupérable.</p> <p> You will be prompted <gui>Really delete 
-	this note?</gui> when deleting a note.</p>  
+	<p>La suppression d'une note est permanente. Après sa suppression, la note n'est plus récupérable.</p> <p>Lorsque vous supprimez une note, il vous sera demandé <gui>Voulez-vous vraiment supprimer cette note ?</gui></p>  
 </note>
 	
 </page>

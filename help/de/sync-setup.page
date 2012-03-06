@@ -10,7 +10,7 @@
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>GNOME Documentation Project</name>
+      <name>GNOME-Dokumentationsprojekt</name>
       <years>2010-2012</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>

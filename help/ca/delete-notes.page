@@ -5,7 +5,7 @@
     <link type="guide" xref="index#notes"/>
     <link type="seealso" xref="create-note"/>
     <link type="seealso" xref="edit-notes"/>
-    <desc>Delete a note in Tomboy.</desc>
+    <desc>Supressió d'una nota del Tomboy.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
 
         <credit type="author">
@@ -13,20 +13,18 @@
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>Projecte de documentació del GNOME</name>
+      <name>GNOME Documentation Project</name>
       <years>2010</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Delete a note</title>    
+  <title>Supressió d'una nota</title>    
   
-  <p>You can delete a note by pressing the <gui>Delete</gui> icon in the 
-  toolbar of the note you wish to delete.</p>
+  <p>Per suprimir una nota premeu la icona <gui>Suprimeix aquesta nota</gui> de la barra de tasques de la nota que desitgeu suprimir.</p>
   
 <note style="warning">
-	<p>Deleting a note is permanent.  After deletion, the note is 
-	not recoverable.</p> <p> You will be prompted <gui>Really delete 
+	<p>La supressió d'una nota és permanent. La nota no es pot recuperar quan s'ha suprimit.</p> <p> You will be prompted <gui>Really delete 
 	this note?</gui> when deleting a note.</p>  
 </note>
 	

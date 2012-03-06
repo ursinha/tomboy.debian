@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#prefs"/>
-    <desc>Preferences for hotkeys and shortcut keys.</desc>
+    <desc>Preferències de les tecles de drecera.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -18,34 +18,19 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Dreceres</title>
+ <title>Tecles de drecera</title>
 
-	<p>Hotkeys allow you to access your notes and Tomboy features from
-	anywhere, even when using other applications on your desktop.  Hotkeys
-	are activated by pressing multiple keys on your keyboard
-	together.
-	</p>
+	<p>Les tecles de drecera us permeten l'accés ràpid a les notes i a les funcions del Tomboy des de qualsevol lloc, fins i tot, quan utilitzeu altres aplicacions de l'escriptori. Les tecles de drecera s'activen quan premeu alhora diverses tecles del teclat.</p>
 	
-	<p>You can enable Hotkeys by opening <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock and choose <gui>Preferences</gui> and then select
-	the <gui>Hotkeys</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>	
+	<p>Per habilitar les tecles de drecera obriu les <gui>Preferències del Tomboy</gui>: feu clic amb el botó secundari a la icona del Tomboy al quadre, a la barra de tasques o al llançador d'aplicacions, trieu <gui>Preferències</gui> i després seleccioneu la pestanya <gui>Dreceres</gui>.També podeu obrir les <gui>Preferències del Tomboy</gui> des del diàleg <gui>Cerca totes les notes</gui>: <guiseq><gui>Edita</gui><gui>Preferències</gui></guiseq>.</p>	
 	
-	<p>The actions available in Tomboy to be activated by hotkeys are:</p>
+	<p>Les accions que es poden activar al Tomboy per mitjà de les tecles de drecera són:</p>
 	
 	<list>
-	  <item><p><gui>Show notes menu</gui>: <keyseq><key>Alt</key>
-	  <key>F12</key></keyseq></p></item>
-	  <item><p><gui>Open "Start Here"</gui>: <keyseq><key>Alt</key>
-	  <key>F11</key></keyseq></p></item>
-	  <item><p><gui>Create new note</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
-	  <item><p><gui>Open "Search All Notes"</gui>: Disabled by default.  You can
-	  enter a key sequence in this field to create a hotkey.</p></item>
+	  <item><p><gui>Mostra el menú de les notes</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
+	  <item><p><gui>Obre «Comenceu aquí»</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
+	  <item><p><gui>Crea una nota nova</gui>: per defecte, aquesta opció està inhabilitada. Podeu introduir una seqüència de tecles en aquest camp per crear una tecla de drecera.</p></item>
+	  <item><p><gui>Obre «Cerca totes les notes»</gui>: per defecte, aquesta opció està inhabilitada. Podeu introduir una seqüència de tecles en aquest camp per crear una tecla de drecera.</p></item>
 	</list>  
 	    
  </page>

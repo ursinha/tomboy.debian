@@ -10,7 +10,7 @@
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>GNOME Documentation Project</name>
+      <name>Proxecto de Documentación de GNOME</name>
       <years>2010-2012</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -22,11 +22,7 @@
 
 	<title>Activar a sincronización</title>
 	
-	<p><app>Tomboy</app> can synchronize your notes between multiple
-	computers.  This allows you to have a backup of your notes on another
-	computer or to share your notes between computers so you always have 
-	access to your notes.
-	</p>
+	<p><app>Tomboy</app> pode sincronizar as súas notas entre varios equipos. Isto permítelle ter un respaldo das súas notas noutros equipos ou compartir as súas notas entre outros equipos para que sempre teñan acceso a elas.</p>
 	
 	<p>Pode activar a sincronización abrindo as <gui>Preferencias de Tomboy</gui> usando o botón dereito do seu rato sobre a icona de Tomboy no seu panel, barra de tarefas ou doca e seleccione <gui>Preferencias</gui> e logo <gui>Sincronización</gui>. Tamén pode abrir as <gui>Preferencias de Tomboy</gui> desde o diálogo de <gui>Buscar en todas as notas</gui>. Desde o menú seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
 
@@ -71,17 +67,9 @@
 
 	<title>Configurar sincronización usando SSH</title>
 	
-	<p>In order to synchronize your notes with an SSH server, you will need
-      	the FUSE file system, also called <app>sshfs</app> installed.  Follow the
-      	documentation for your operating system to set up FUSE for your user.  
-      	You will also need an SSH key for your SSH server account that can be
-	provided by the <app>GNOME Seahorse</app> application, which is also known as 
-      	<app>Passwords and Encryption Keys</app>.
-	</p>
+	<p>Para poder sincronizar as súas notas contra un servidor SSH, precisa ter instalado o sistema de ficheiros FUSE <app>sshfs</app>. Siga a documentación para configurar FUSE para o seu sistema operativo e usuario. Tamén deberá ter unha chave SSH para a súa conta no servidor SSH, que se engadirá ao aplicativo <app>GNOME Seahorse</app>, tamén coñecida como <app>Contrasinais e chaves de cifrado</app>.</p>
 	
-	<p>It is recommended to use a third computer or server as the remote 
-	computer to store the synchronized notes that are to be synced between 
-	multiple computers.</p>
+	<p>Recoméndase usar un terceiro equipo ou servidor como o equipo remoto no que almacenar as notas sincronizadas que se van sincronizar entre múltiples equipos.</p>
 
 	<p>Abra <app>Contrasinais e chaves de cifrado</app> elixindo <guiseq><gui>Aplicativos</gui><gui>Accesorios</gui><gui>Contrasinais e chaves de cifrado</gui></guiseq>. Pulse sobre a súa chave e elixa no menú <guiseq><gui>Remota</gui><gui>Configurar chave para Shell segura...</gui></guiseq> e escriba o nome do dominio ou enderezo IP do equipo co que quere sincronizar en <gui>Equipo</gui>. Introduza o nome de usuario do equipo remoto en <gui>Usuario</gui> e prema <gui>Aceptar</gui>. Cando se lle pregutne, escriba o seu contrasinal e rematará a configuración da súa chave.</p>
 	

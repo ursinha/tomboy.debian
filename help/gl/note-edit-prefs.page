@@ -20,16 +20,7 @@
 
  <title>Preferencias das notas</title>
  
- 	<p>You can change the default settings when typing notes
- 	in Tomboy.  To change your note settings, open
- 	 <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock, and choose <gui>Preferences</gui> and  select
-	the <gui>Editing</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>
+ 	<p>Pode cambiar as configuracións predefinidas ao escribir as notas no Tomboy. Para cambiar as súas configuracións de notas abra as <gui>Preferencias de Tomboy</gui> usando o seu rato co botón dereito sobre a icona de Tomboy no seu panel, barra de tarefas ou doca e seleccione <gui>Preferencias</gui> e seleccione a lapela <gui>Teclas rápidas</gui>. Tamén pode abrir <gui>Preferencias de Tomboy</gui> desde o diálogo <gui>Buscar en todas as notas</gui>. Desde o menú, seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
  
  <section id="spellcheck">
    <title>Revisión ortográfica</title>
