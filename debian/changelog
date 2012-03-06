@@ -1,3 +1,11 @@
+tomboy (1.9.9-1) experimental; urgency=low
+
+  * New upstream release 1.9.9 (still no pristine-tar)
+    - Fix link names after HTML export 
+    - fix Export All to HTML
+
+ -- Iain Lane <laney@debian.org>  Tue, 06 Mar 2012 19:00:41 +0000
+
 tomboy (1.9.5-1) experimental; urgency=low
 
   * [ceb1079] Update watchfile to look for xz tarballs
