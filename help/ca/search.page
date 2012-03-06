@@ -4,7 +4,7 @@
   <info>
     <link type="guide" xref="index#notes"/>
     <link type="seealso" xref="create-notebook"/>
-    <desc>Search your notes.</desc>
+    <desc>Cerqueu a les notes.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
         <credit type="author">
       <name>Paul Cutler</name>
@@ -19,17 +19,11 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Searching notes</title>
+ <title>Cerqueu les notes</title>
 
 
-	<p>You can locate a word or phrase in any of your notes by using
-	the Search tool.  Right click the Tomboy icon in your panel or press 
-	the <gui>Search</gui> icon in a note's toolbar to bring up the 
-	Search All Notes dialog.</p>
-	<p>Enter your search term in the <gui>Search</gui> box and press
-	<key>Enter</key>, and all notes containing your search term will be listed.</p>
-	<p>If you have organized your notes into notebooks, you can also search
-	for specific terms only in that notebook by selecting the notebook
-	you want to search and then entering your search criteria.</p>
+	<p>Cerqueu una paraula o una frase a qualsevol de les notes amb l'eina de cerca. Feu clic amb el botó secundari a la icona del quadre o premeu la icona <gui>Cerca</gui> a la barra de tasques d'una nota per mostrar el diàleg «Cerca totes les notes».</p>
+	<p>Introduïu un terme al diàleg de <gui>Cerca</gui> i premeu la <key>Tecla de retorn</key>, es llistaran totes les notes que continguin el terme que heu cercat.</p>
+	<p>Si heu organitzat les notes en blocs de notes, també podeu cercar termes en un bloc de notes determinat si seleccioneu el bloc de notes i introduïu els criteris de cerca que desitgeu.</p>
 
  </page>

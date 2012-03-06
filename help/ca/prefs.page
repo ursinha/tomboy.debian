@@ -16,22 +16,22 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Tomboy Preferences</title>
+  <title>Preferències del Tomboy</title>
 
   <section id="edit-prefs" style="2column">
-    <title>Note editing preferences</title>
+    <title>Preferències d'edició de les notes</title>
   </section>
 
   <section id="hotkeys" style="2column">
-    <title>Tomboy hotkeys</title>
+    <title>Tecles de drecera del Tomboy</title>
   </section>
   
   <section id="sync-prefs" style="2column">
-    <title>Syncing Notes</title>
+    <title>Sincronització de les notes</title>
   </section>
   
   <section id="addin-prefs" style="2column">
-	<title>Tomboy Preferences</title>
+	<title>Preferències del Tomboy</title>
   </section>
 
 </page>

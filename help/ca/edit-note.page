@@ -5,7 +5,7 @@
     <link type="guide" xref="index#notes"/>
     <link type="seealso" xref="create-notes"/>
     <link type="seealso" xref="delete-notes"/>
-    <desc>Edit and format your notes.</desc>
+    <desc>Edició i formatació de les notes.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -20,67 +20,44 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Edit notes</title>    
+  <title>Edició de notes</title>    
   
-		<p>Tomboy Notes allows you to format the text within a note in 
-		a number of different ways, including undo and redo, bold, 
-		italics, underline, and more.</p>
+		<p>El Tomboy us permet formatar el text d'una nota de moltes maneres amb les opcions desfés/refés, negreta, cursiva i subratllat.</p>
 		
    <section id="redo-undo">
 	
-	<title>Undo and Redo</title>
+	<title>Opcions desfés/refés</title>
 	
-		<p>To undo the last action, including typing a word or 
-		formatting text, press the <gui>Text</gui>
-		icon in the toolbar and choose <gui>Undo</gui>.</p>
+		<p>Per desfer la darrera acció, com escriure una paraula o la formatació d'un text, premeu la icona <gui>Text</gui> de la barra de tasques i trieu <gui>Desfés</gui>.</p>
 
-		<p>If you want to redo a word or text after using Undo, 
-		press the <gui>Text</gui> icon in the toolbar and choose 
-		<gui>Redo</gui>.</p>
+		<p>Si voleu refer una paraula o un text després d'haver utilitzat l'opció de desfer, premeu la icona <gui>Text</gui> a la barra de tasques i trieu <gui>Refés</gui>.</p>
 	
   </section>
 	 
   <section id="text-format">
 	
-	<title>Formatting Text</title>
+	<title>Formatació del text</title>
 	
-		<p>You can format the text of your notes in a number of 
-		different ways, including underlining words,
-		making text bold or italics, highlighting words or phrases, 
-		or striking through text.</p>
+		<p>Podeu formatar el text de les notes de moltes maneres amb funcions com, per exemple, el subratllat de paraules, l'escriptura del text en negreta o en cursiva, el realçament de paraules i frases o el barrat del text.</p>
   </section>
 	 
   <section id="text-size">
 	
-	<title>Changing the Text Size</title>
+	<title>Canvi de la mida del text</title>
 	
-		<p>You can change the size of the text in your notes one of two ways.</p>
-		<p>Highlight the text that you want to make bigger or smaller, and press 
-		<keyseq><key>Ctrl</key><key>+</key></keyseq> to make your text bigger or 
-		<keyseq><key>Ctrl</key><key>-</key></keyseq> to make your text smaller.</p>
-		<p>Alternatively, you can press the <gui>Text</gui> icon in the 
-		toolbar and choose from one of four
-		preset sizes including small, normal, large and huge.</p>
+		<p>Podeu canviar la mida del text de les notes de dues maneres.</p>
+		<p>Realceu el text que voleu engrandir o disminuir i premeu <keyseq><key>Ctrl</key><key>+</key></keyseq> per engrandir-lo o <keyseq><key>Ctrl</key><key>-</key></keyseq> per disminuir-lo.</p>
+		<p>També podeu prémer la icona <gui>Text</gui> a la barra de tasques i triar una de les quatre mides predefinides: petita, normal, gran o molt gran.</p>
 	
   </section>
 	 
   <section id="bullets">
 	
-	<title>Formatting Bullets</title>
+	<title>Formatació dels pics</title>
 	
-		<p>Bullets can be created by using the keyboard or the 
-		<gui>Text</gui> icon in the toolbar.</p>
-		<p>To manually create a bullet, type the asterisk key 
-		<key>*</key> and then type your text.  After pressing
-		enter, Tomboy will automatically convert a line starting 
-		with an asterisk into a bullet, and the next
-		line will be auto-formatted as a bullet as well.  If you want 
-		to create a sub-bullet, press <key>Tab</key>
-		immediately after pressing <key>Enter</key>.</p>
-		<p>You can also highlight a specific line and choose the 
-		<gui>Text</gui> icon in the toolbar check the 
-		<gui>Bullets</gui> checkbox to change a specific line to be 
-		bulleted.</p>
+		<p>Els pics es poden crear amb el teclat o amb la icona <gui>Text</gui> de la barra de tasques.</p>
+		<p>Per crear un pic manualment, premeu la tecla <key>*</key> i després escriviu el text. Després de prémer la tecla de retorn, el Tomboy convertirà automàticament la línia que comenci amb un asterisc en un pic i la línia següent també s'autoformatarà amb un pic. Si voleu crear un pic de segon nivell, premeu la <key>Tecla de tabulació</key> després de prémer la <key>Tecla de retorn</key>.</p>
+		<p>També podeu convertir a un element de llista qualsevol línia si la realceu, trieu la icona <gui>Text</gui> de la barra de tasques i activeu la casella de selecció <gui>Pics</gui>.</p>
 
 	
   </section>

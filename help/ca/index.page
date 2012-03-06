@@ -16,34 +16,34 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Tomboy Notes</title>
+  <title>Notes del Tomboy</title>
 
   <section id="notes" style="2column">
-    <title>Managing Notes</title>
+    <title>Gestió de les notes</title>
   </section>
 
   <section id="notebooks" style="2column">
-    <title>Organizing Notes</title>
+    <title>Organització de les notes</title>
   </section>
   
   <section id="sync" style="2column">
-    <title>Syncing Notes</title>
+    <title>Sincronització de les notes</title>
   </section>  
   
   <section id="prefs" style="2column">
-	<title>Tomboy Preferences</title>
+	<title>Preferències del Tomboy</title>
   </section>
 
   <section id="advanced" style="2column">
-    <title>Advanced Actions</title>
+    <title>Opcions avançades</title>
   </section>
 
   <section id="problems">
-    <title>Common Problems</title>
+    <title>Problemes comuns</title>
   </section>
 
   <section id="new">
-    <title>What's New</title>
+    <title>Novetats</title>
   </section>
 
 </page>

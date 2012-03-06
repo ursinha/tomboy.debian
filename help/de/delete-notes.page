@@ -13,7 +13,7 @@
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>GNOME Documentation Project</name>
+      <name>GNOME-Dokumentationsprojekt</name>
       <years>2010</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,8 +24,7 @@
   <p>Sie können eine Notiz löschen, indem Sie auf das <gui>Löschen</gui>-Symbol in der Werkzeugleiste der Notiz klicken, welche Sie löschen wollen.</p>
   
 <note style="warning">
-	<p>Eine Notiz wird stets dauerhaft gelöscht. Nach dem Löschen lässt sich eine Notiz nicht wiederherstellen.</p> <p> You will be prompted <gui>Really delete 
-	this note?</gui> when deleting a note.</p>  
+	<p>Eine Notiz wird stets dauerhaft gelöscht. Nach dem Löschen lässt sich eine Notiz nicht wiederherstellen.</p> <p>Beim Löschen einer Notiz wird Ihnen die Frage <gui>Diese Notiz wirklich löschen?</gui> gestellt.</p>  
 </note>
 	
 </page>

@@ -3,78 +3,48 @@
 
   <info>
     <link type="guide" xref="index#sync"/>
-    <desc>Configure Tomboy to synchronize your notes.</desc>
+    <desc>Configuració del Tomboy per sincronitzar les notes</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>Projecte de documentació del GNOME</name>
+      <name>GNOME Documentation Project</name>
       <years>2010-2012</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
- <title>Configure and Setup Sync</title>
+ <title>Configuració i posada a punt de la sincronització</title>
 
  <section id="enablesync">
 
-	<title>Enable Sync</title>
+	<title>Activació de la sincronització</title>
 	
-	<p><app>Tomboy</app> can synchronize your notes between multiple
-	computers.  This allows you to have a backup of your notes on another
-	computer or to share your notes between computers so you always have 
-	access to your notes.
-	</p>
+	<p>El <app>Tomboy</app> pot sincronitzar les notes entre diversos ordinadors. Això permet tenir una còpia de seguretat de les notes en un altre ordinador o bé compartir-les entre ordinadors per així tenir-les sempre disponibles.</p>
 	
-	<p>You can enable sync by opening <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock and choose <gui>Preferences</gui> and then select
-	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>
+	<p>Per habilitar la sincronització obriu les <gui>Preferències del Tomboy</gui> fent clic amb el botó secundari a la icona del Tomboy al quadre, a la barra de tasques o al llançador d'aplicacions, trieu <gui>Preferències</gui> i després seleccioneu la pestanya <gui>Sincronització</gui>.També podeu obrir les <gui>Preferències del Tomboy</gui> des del diàleg <gui>Cerca totes les notes</gui>: <guiseq><gui>Edita</gui><gui>Preferències</gui></guiseq>.</p>
 
  </section>
 
  <section id="conflict">
 
-	<title>Managing Note Conflict</title>
+	<title>Gestió de conflictes de les notes</title>
 	
-	<p>You can set the default behavior for Tomboy when
-	a note is discovered to be a conflict.  This can occur
-	when notes are not synced on a regular basis.
-	</p>
+	<p>Podeu establir el comportament per defecte del Tomboy quan hi ha un conflicte en la sincronització d'una nota. Això pot passar quan les notes no se sincronitzen de forma habitual.</p>
 	
-	<p>In the <gui>Preferences</gui> dialog press the <gui>Advanced</gui>
-	button.  You can select from three choices as the default behavior
-	in managing conflicts:
-	</p>
+	<p>Quan premeu el botó <gui>Avançat</gui> en el diàleg de <gui>Preferències</gui> podeu triar entre tres opcions per definir el comportament per defecte en la gestió de conflictes:</p>
 	
 	<list>
-		<item><p><gui>Always ask me what to do.</gui> This is the default
-		choice and when Tomboy encounters a conflict Tomboy will
-		always prompt you to ask you if you want to rename the local 
-		note or replace your local note with the note the server has 
-		stored.</p></item>
-		<item><p><gui>Rename my local note.</gui>  If this option is 
-		selected, Tomboy will automatically replace the note with a 
-		copy from the remote computer and rename the note on your
-		computer so you don't lose your information in your note.</p>
+		<item><p><gui>Demana'm sempre què vull fer</gui>. Aquesta és l'opció per defecte. Quan el Tomboy troba un conflicte sempre us preguntarà si voleu canviar el nom de la nota local o voleu reemplaçar la nota local amb la nota que hi ha desada al servidor.</p></item>
+		<item><p><gui>Canvia el nom de la nota local</gui>. Si se selecciona aquesta opció, el Tomboy canviarà la nota amb una còpia de la nota de l'ordinador remot i, tot seguit, canviarà el nom de la nota local perquè no en perdeu la informació.</p>
 		</item>
 		
-		<item><p><gui>Replace my local note with the server's update.
-		</gui>.  If you have selected this option, when you sync 
-		Tomboy will overwrite and replace your note stored on your
-		computer with a copy from the remote computer.</p>
+		<item><p><gui>Reemplaça la nota local amb l'actualització del servidor</gui>. Si heu seleccionat aquesta opció, quan sincronitzeu el Tomboy, sobreescriureu i reemplaçareu la nota de l'ordinador local amb una còpia de l'ordinador remot.</p>
 		
 		<note style="warning">
-		<p>Automatically overwriting the note is permanent.  Your
-		local note will be replaced by the copy on the remote
-		computer and you will lose your information that was
-		stored prior to syncing.</p>
+		<p>Els canvis que es realitzen quan sobreescriviu una nota són permanents a l'instant. La nota local es reemplaçarà amb la còpia que hi hagi a l'ordinador remot i perdreu la informació que hi havia desada abans de la sincronització.</p>
 		</note>
                 </item>
 		
@@ -85,70 +55,35 @@
  
   <section id="webdav">
 
-	<title>Configure Sync using WebDav</title>
+	<title>Configuració de la sincronització amb WebDAV</title>
 	
-	<p>In order to synchronize your notes with a WebDAV server, you will 
-	need the wdfs FUSE file system installed.  Follow the documentation for
-	 your operating system to set up FUSE for your user.  You will also 
-	 need the GNOME Keyring installed.
-	</p>
+	<p>Per sincronitzar les notes amb un servidor WebDAV haureu d'instal·lar el sistema de fitxers wdfs de FUSE (Sistema de fitxers en espai d'usuari). Per configurar el FUSE llegiu la documentació del sistema operatiu. També haureu de tenir instal·lat l'anell de claus del GNOME.</p>
 	
-	<p>Choose <gui>WebDAV</gui> from the <gui>Service</gui>
- 	drop-down list. Fill in the connection information for your server, and
- 	then select the <gui>Save</gui> button.  
- 	You are now ready to synchronize your notes.</p>
+	<p>Trieu <gui>WebDAV</gui> a la llista desplegable <gui>Servei</gui>. Empleneu la informació de la connexió al servidor i llavors feu clic al botó <gui>Desa</gui>. Així el Tomboy estarà preparat per sincronitzar les notes.</p>
 
  </section>
  
   <section id="ssh">
 
-	<title>Configure Sync using SSH</title>
+	<title>Configuració de la sincronització amb SSH</title>
 	
-	<p>In order to synchronize your notes with an SSH server, you will need
-      	the FUSE file system, also called <app>sshfs</app> installed.  Follow the
-      	documentation for your operating system to set up FUSE for your user.  
-      	You will also need an SSH key for your SSH server account that can be
-	provided by the <app>GNOME Seahorse</app> application, which is also known as 
-      	<app>Passwords and Encryption Keys</app>.
-	</p>
+	<p>Per sincronitzar les notes amb un servidor SSH haureu d'instal·lar el sistema de fitxers FUSE anomenat <app>sshfs</app>. Per configurar el FUSE, llegiu la documentació del sistema operatiu. També haureu de tenir una clau SSH per al compte del servidor SSH que us proporciona l'aplicació <app>GNOME Seahorse</app>, que també s'anomena <app>Contrasenyes i claus</app>.</p>
 	
-	<p>It is recommended to use a third computer or server as the remote 
-	computer to store the synchronized notes that are to be synced between 
-	multiple computers.</p>
+	<p>És recomanable utilitzar un tercer ordinador o servidor com a ordinador remot per desar les notes sincronitzades que s'han de sincronitzar entre diversos ordinadors.</p>
 
-	<p>Open <app>Passwords and Encryption Keys</app> by choosing 
-	<guiseq><gui>Applications</gui><gui>Accessories</gui>
-	<gui>Passwords and Encryption Keys</gui></guiseq>.  
-	Click on your key, and from the menu choose <guiseq><gui>Remote</gui>
-	<gui>Configure Key for Secure Shell</gui></guiseq>  
-	and enter the domain name or IP address of the computer you want to 
-	sync to in <gui>Computer Name</gui>.  Enter the username of the 
-	remote computer in <gui>Login Name:</gui> and press <gui>Set Up</gui>. 
-	When prompted, enter the password and setting up your key will 
-	be completed.
-	</p>
+	<p>Obriu l'aplicació <app>Contrasenyes i claus</app> des d'<guiseq><gui>Aplicacions</gui><gui>Accessoris</gui><gui>Contrasenyes i claus</gui></guiseq>. Obriu l'aplicació des del menú <guiseq><gui>Remot</gui><gui>Configura la clau per a l'intèrpret d'ordres</gui></guiseq> i introduïu el nom del domini i l'adreça IP de l'ordinador amb què voleu sincronitzar el vostre ordinador al camp <gui>Nom de l'ordinador</gui>. Introduïu el nom d'usuari a l'ordinador remot a <app>Nom d'usuari:</app> i premeu <guiseq>Configuració<gui>. Quan l'ordinador us ho demani, introduïu la contrasenya i d'aquesta manera haureu finalitzat la instal·lació de la clau.</gui></guiseq></p>
 	
-	<p>In Tomboy, choose <gui>SSH</gui> from the <gui>Service</gui>
-	drop-down list. Fill in the connection information for your server, 
-	and select the <gui>Save</gui> button.  The <gui>Folder Path</gui>, 
-	while optional, should point at an empty folder. You are now ready to 
-	synchronize your notes.</p>
+	<p>Al Tomboy, trieu <gui>SSH</gui> a la llista desplegable <gui>Servei</gui>. Empleneu la informació de la connexió del servidor i llavors feu clic al botó <gui>Desa</gui>. Encara que sigui opcional, el <gui>Camí de la carpeta</gui> ha d'apuntar a una carpeta buida. Així el Tomboy estarà preparat per sincronitzar les notes.</p>
 
  </section>
 
  <section id="local">
 
-	<title>Configure Sync to a local folder</title>
+	<title>Configuració de la sincronització a una carpeta local</title>
 	
-	<p>You may want to synchronize your notes to a local folder if that 
-	folder is available to your other systems, or if that folder represents 
-	a local mount of a remote server.
-	</p>
+	<p>Podeu sincronitzar les notes a una carpeta local si la carpeta està disponible en altres sistemes o si representa un muntatge local d'un servidor remot.</p>
 
-	<p>Choose Local Folder from the <gui>Service</gui>
-	drop-down list. Choose the desired synchronization 
-	<gui>Folder Path</gui> and then click the <gui>Save</gui> button.  
-	You are now ready to synchronize your notes.</p>
+	<p>Trieu <gui>Carpeta local</gui> a la llista desplegable <gui>Servei</gui>. Trieu la sincronització que desitgeu de la <gui>Carpeta local</gui> i llavors feu clic al botó <gui>Desa</gui>. Així el Tomboy estarà preparat per sincronitzar les notes.</p>
 
  </section>
  
