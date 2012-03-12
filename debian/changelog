@@ -1,3 +1,14 @@
+tomboy (1.9.9-2) experimental; urgency=low
+
+  * Merge from unstable
+  * [b6e36a3] Use GMime 2.6 instead of 2.4; the latter is being dropped.
+    (Closes: #663216)
+  * [934f580] Use dh sequence explicitly instead of via deprecated cli.make
+    include
+  * [7cb46e3] Standards-Version → 3.9.3, no changes required
+
+ -- Iain Lane <laney@debian.org>  Mon, 12 Mar 2012 21:44:18 +0000
+
 tomboy (1.9.9-1) experimental; urgency=low
 
   * New upstream release 1.9.9 (still no pristine-tar)
