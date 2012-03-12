@@ -36,6 +36,15 @@ tomboy (1.9.2-1) experimental; urgency=low
 
  -- Iain Lane <laney@debian.org>  Wed, 16 Nov 2011 16:02:47 +0000
 
+tomboy (1.8.3-2) unstable; urgency=low
+
+  * [b6e36a3] Use GMime 2.6 instead of 2.4; the latter is being dropped.
+    (Closes: #663216)
+  * [934f580] Use dh sequence explicitly instead of via deprecated cli.make include
+  * [7cb46e3] Standards-Version → 3.9.3, no changes required
+
+ -- Iain Lane <laney@debian.org>  Mon, 12 Mar 2012 21:28:55 +0000
+
 tomboy (1.8.3-1) unstable; urgency=low
 
   * [6d2edf9] Imported Upstream version 1.8.3
