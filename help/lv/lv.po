@@ -1,24 +1,26 @@
-# Hungarian translation of tomboy-help
-# Copyright (C) 2010, 2011, 2012. Free Software Foundation, Inc.
+# Latvian translation for tomboy.
+# Copyright (C) 2012 tomboy's COPYRIGHT HOLDER
 # This file is distributed under the same license as the tomboy package.
 #
-# Gabor Kelemen <kelemeng at gnome dot hu>, 2010, 2011, 2012.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: tomboy-help master\n"
-"POT-Creation-Date: 2012-01-12 02:38+0000\n"
-"PO-Revision-Date: 2012-03-06 04:20+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
-"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
+"Project-Id-Version: tomboy master\n"
+"POT-Creation-Date: 2012-03-09 16:56+0000\n"
+"PO-Revision-Date: 2012-03-11 23:27+0200\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"Language: lv\n"
+"X-Generator: Lokalize 1.2\n"
 
 #: C/whatsnew.page:9(desc)
 msgid "What's new in <app>Tomboy Notes</app>."
-msgstr "A <app>Tomboy jegyzettömb</app> újdonságai."
+msgstr "Kas jauns <app>Tomboy piezīmēs</app>."
 
 #: C/whatsnew.page:13(name) C/sync-setup.page:11(name) C/sync.page:11(name)
 #: C/search.page:12(name) C/problems.page:11(name) C/prefs.page:9(name)
@@ -46,15 +48,15 @@ msgstr "pcutler@gnome.org"
 
 #: C/whatsnew.page:25(title)
 msgid "What's New in <app>Tomboy</app>"
-msgstr "A <app>Tomboy</app> újdonságai"
+msgstr "Kas jauns <app>Tomboy</app>."
 
 #: C/whatsnew.page:27(p)
 msgid ""
 "<app>Tomboy</app> features a number of new improvements. Tomboy should start "
 "noticeably faster thanks to improvements made in Tomboy's start-up time."
 msgstr ""
-"A <app>Tomboy</app> számos új fejlesztést tartalmaz. A Tomboy észrevehetően "
-"gyorsabban indul az indítási időt érintő fejlesztéseknek köszönhetően."
+"<app>Tomboy</app> iekļauj sevī vairākus jaunus uzlabojumus. Tomboy vajadzētu "
+"startēties ievērojami ātrāk, pateicoties Tomboy uzsākšanas laika uzlabojumos."
 
 #: C/whatsnew.page:31(p)
 msgid ""
@@ -62,17 +64,17 @@ msgid ""
 "support formatting into other applications that can understand HTML, such as "
 "Evolution, OpenOffice.org and other applications."
 msgstr ""
-"A másolás és beillesztés a Tomboyból más alkalmazásokba immár támogatja a "
-"formázást más, HTML-t értő alkalmazásokba, mint például az Evolution, "
-"OpenOffice.org és mások."
+"Kopēšana un ielīmēšana no Tomboy uz citām programmām ir uzlabota, lai "
+"atbalstītu formatēšanu citās programmās, kuras saprot HTML, piemēram, "
+"Evolution, OpenOffice.org u.c."
 
 #: C/whatsnew.page:36(p)
 msgid ""
 "<app>Tomboy</app> can now synchronize your notes automatically for you when "
 "you when you have sync enabled."
 msgstr ""
-"A <app>Tomboy</app> képes jegyzetei automatikus szinkronizálására, ha a "
-"szinkronizálás engedélyezett."
+"Tagad <app>Tomboy</app> spēj automātiski sinhronizēt tavas piezīmes, kad tev "
+"ir aktivēta sinhronizācija."
 
 #: C/whatsnew.page:41(p)
 msgid ""
@@ -80,17 +82,18 @@ msgid ""
 "access your notes, search or create a new note faster directly from the "
 "Windows taskbar."
 msgstr ""
-"A Microsoft Windows 7 Jump listek támogatása segítségével gyorsabban, "
-"közvetlenül a Windows tálcáról érheti el jegyzeteit, kereshet vagy hozhat "
-"létre új jegyzeteket."
+"Ir pievienots atbalsts Microsoft Windows 7 lēcējsarakstiem, kas palīdzēs "
+"tieši no Windows uzdevumu joslas gūt pieeju tavām piezīmēm, meklēt vai "
+"izveidot "
+"jaunas piezīmes."
 
 #: C/sync-setup.page:8(desc)
 msgid "Configure Tomboy to synchronize your notes."
-msgstr "A Tomboy beállítása jegyzetek szinkronizálására."
+msgstr "Konfigurē Tomboy, lai sinhronizētu savas piezīmes."
 
 #: C/sync-setup.page:15(name) C/delete-notes.page:18(name)
 msgid "GNOME Documentation Project"
-msgstr "GNOME dokumentációs projekt"
+msgstr "GNOME Dokumentācijas Projekts"
 
 #: C/sync-setup.page:16(years)
 msgid "2010-2012"
@@ -98,11 +101,11 @@ msgstr "2010-2012"
 
 #: C/sync-setup.page:21(title)
 msgid "Configure and Setup Sync"
-msgstr "Szinkronizálás beállítása"
+msgstr "Konfigurē un uzstādi sinhronizāciju"
 
 #: C/sync-setup.page:25(title)
 msgid "Enable Sync"
-msgstr "Szinkronizálás engedélyezése"
+msgstr "Aktivē sinhronizāciju"
 
 #: C/sync-setup.page:27(p)
 msgid ""
@@ -110,10 +113,9 @@ msgid ""
 "This allows you to have a backup of your notes on another computer or to "
 "share your notes between computers so you always have access to your notes."
 msgstr ""
-"A <app>Tomboy</app> képes jegyzeteinek szinkronizálására több számítógép "
-"között. Ez lehetővé teszi a jegyzetek biztonsági másolatának másik "
-"számítógépen tartását, vagy a jegyzetek megosztását több számítógép között, "
-"hogy mindig elérhesse azokat."
+"<app>Tomboy</app> spēj sinhronizēt tavas piezīmes starp vairākiem datoriem. "
+"Tas tev ļauj izveidot piezīmju rezerves kopijas citā datorā vai dalīties ar "
+"piezīmēm starp citiem datoriem tā, lai tev tām vienmēr būtu pieeja."
 
 #: C/sync-setup.page:33(p) C/sync.page:54(p)
 msgid ""
@@ -124,26 +126,24 @@ msgid ""
 "All Notes</gui> dialog. From the menu choose <guiseq><gui>Edit</"
 "gui><gui>Preferences</gui></guiseq>."
 msgstr ""
-"A szinkronizálást engedélyezheti a <gui>Tomboy beállításai</gui> "
-"megnyitásával a jobb egérgombbal kattintva a panelen, tálcán vagy dokkon "
-"lévő Tomboy ikonra, és a <gui>Beállítások</gui> menüpont, majd a "
-"<gui>Szinkronizálás</gui> lap kiválasztásával. Megnyithatja a <gui>Tomboy "
-"beállításait</gui> a <gui>Keresés minden jegyzetben</gui> ablakból is. Itt a "
-"menüből válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></"
-"guiseq> menüpontot."
+"Tu vari aktivēt sinhronizāciju, atverot <gui>Tomboy Iestatījumi</gui>, "
+"izmantojot savu peli, lai veiktu labo klikšķi uz Tomboy ikonas savā panelī, "
+"uzdevumu joslā vai dokā. Izvēlies <gui>Iestatījumi</gui> un tad izvēlies <gui>"
+"Sinhronizācija</gui> cilni. Tu vari arī atvērt <gui>Tomboy iestatījumi</gui> "
+"no <gui>Meklēt visas piezīmes</gui> izvēlnes. No šīs izvēlnes paņem <guiseq><"
+"gui>Rediģēt</gui><gui>Iestatījumi</gui></guiseq>."
 
 #: C/sync-setup.page:46(title)
 msgid "Managing Note Conflict"
-msgstr "Jegyzetütközés kezelése"
+msgstr "Piezīmju konfliktu pārvaldīšana"
 
 #: C/sync-setup.page:48(p)
 msgid ""
 "You can set the default behavior for Tomboy when a note is discovered to be "
 "a conflict. This can occur when notes are not synced on a regular basis."
 msgstr ""
-"Beállíthatja a Tomboy alapértelmezett viselkedését ütköző jegyzetek "
-"felfedezése esetén. Ez akkor történhet meg, ha jegyzeteit nem szinkronizálja "
-"rendszeresen."
+"Tu vari uzstādīt noklusēto rīcību Tomboy programmai, kad piezīme ir atklāta "
+"kā konfliktējoša. Tas var notikt, kad piezīmes netiek regulāri sinhronizētas."
 
 #: C/sync-setup.page:53(p)
 msgid ""
@@ -151,9 +151,8 @@ msgid ""
 "You can select from three choices as the default behavior in managing "
 "conflicts:"
 msgstr ""
-"A <gui>Beállítások</gui> ablakban nyomja meg a <gui>Speciális</gui> gombot. "
-"Három lehetőség közül választhatja ki az ütközések kezelésének "
-"alapértelmezett módját:"
+"<gui>Iestatījumi</gui> izvēlnē, nospied <gui>Paplašināti</gui> pogu. Tu vari "
+"izvēlēties 1 no 3 iespējām kā noklusēto konfliktu pārvaldīšanas rīcību."
 
 #: C/sync-setup.page:59(p)
 msgid ""
@@ -162,9 +161,9 @@ msgid ""
 "want to rename the local note or replace your local note with the note the "
 "server has stored."
 msgstr ""
-"<gui>Mindig kérdezzen.</gui> Ez az alapbeállítás; ha a Tomboy ütközést "
-"észlel, mindig rákérdez, hogy átnevezi-e a helyi jegyzetet, vagy felülírja a "
-"helyi jegyzetet a kiszolgáló által tárolttal."
+"<gui>Vienmēr jautāt man kā rīkoties.</gui>. Šī ir noklusētā rīcība un, kad "
+"Tomboy sastapsies ar konfliktu, tev vienmēr pieprasīs, vai tu vēlies pārsaukt "
+"lokālo piezīmi vai aizvietot to ar piezīmi no servera."
 
 #: C/sync-setup.page:64(p)
 msgid ""
@@ -173,20 +172,19 @@ msgid ""
 "rename the note on your computer so you don't lose your information in your "
 "note."
 msgstr ""
-"<gui>Nevezze át a helyi jegyzetet.</gui> Ha ezt választja, akkor a Tomboy "
-"automatikusan lecseréli a jegyzetet a távoli számítógépről származó "
-"másolattal, és átnevezi a helyi jegyzetet, hogy ne veszítse el a jegyzet "
-"információit."
+"<gui>Pārsaukt manu lokālo piezīmi.</gui> Ja ir izvēlēta šī iespēja, Tomboy "
+"automātiski aizvietos piezīmi ar kopiju no attālā datora un pārsauks to, lai "
+"tu nepazaudētu tajā esošo informāciju."
 
 #: C/sync-setup.page:70(p)
 msgid ""
-"<gui>Replace my local note with the server's update. </gui>. If you have "
-"selected this option, when you sync Tomboy will overwrite and replace your "
+"<gui>Replace my local note with the server's update.</gui> If you have "
+"selected this option, when you sync, Tomboy will overwrite and replace your "
 "note stored on your computer with a copy from the remote computer."
 msgstr ""
-"<gui>Cserélje a helyi jegyzetet a kiszolgálón találhatóra.</gui> Ha ezt "
-"választja, akkor a Tomboy szinkronizáláskor felülírja a számítógépen levő "
-"jegyzetet a távoli gépen lévő jegyzettel."
+"<gui>Aizvietot manu lokālo piezīmi ar servera atjauninājumu.</gui> Ja ir "
+"paņemta šī iespēja, kad tu sinhronizēsi, Tomboy pārrakstīs un aizvietos tavu "
+"piezīmi ar kopiju no attālā datora."
 
 #: C/sync-setup.page:76(p)
 msgid ""
@@ -194,13 +192,13 @@ msgid ""
 "replaced by the copy on the remote computer and you will lose your "
 "information that was stored prior to syncing."
 msgstr ""
-"A jegyzet automatikus felülírása végleges. A helyi jegyzetet lecseréli a "
-"távoli gépen lévő másolat, és a szinkronizálás előtt rajta lévő összes "
-"információ elvész."
+"Automātiskā piezīmju pārrakstīšana ir neatsaucama. Tava lokālā piezīme tiks "
+"aizvietota ar kopiju no attālā datora un tu pazaudēsi visu informāciju, kura "
+"bija pirms sinhronizēšanas."
 
 #: C/sync-setup.page:90(title)
 msgid "Configure Sync using WebDav"
-msgstr "WebDavot használó szinkronizálás beállítása"
+msgstr "Konfigurē sinhronizāciju, izmantojot WebDav"
 
 #: C/sync-setup.page:92(p)
 msgid ""
@@ -209,9 +207,9 @@ msgid ""
 "system to set up FUSE for your user. You will also need the GNOME Keyring "
 "installed."
 msgstr ""
-"A jegyzetek WebDAV kiszolgálóval való szinkronizálásához telepíteni kell a "
-"wdfs FUSE fájlrendszert. A FUSE beállításához nézze meg operációs rendszere "
-"dokumentációját. A GNOME kulcstartónak is telepítve kell lennie."
+"Lai sinhronizētu piezīmes ar WebDAV serveri, tev vajadzēs wdfs FUSE failu "
+"sistēmu. Vadies pēc savas operētājsistēmas dokumentācijas, lai uzstādītu FUSE "
+"uz sava lietotāja konta. Kā arī būs nepieciešams uzstādīts GNOME Keyring."
 
 #: C/sync-setup.page:98(p)
 msgid ""
@@ -219,14 +217,13 @@ msgid ""
 "the connection information for your server, and then select the <gui>Save</"
 "gui> button. You are now ready to synchronize your notes."
 msgstr ""
-"Válassza a <gui>Szolgáltatás</gui> legördülő lista <gui>WebDAV</gui> "
-"pontját. Adja meg a kiszolgáló kapcsolatinformációit, és nyomja meg a "
-"<gui>Mentés</gui> gombot. Ezzel be is fejezte a jegyzetek szinkronizálásának "
-"előkészítését."
+"Izvēlies <gui>WebDAV</gui> no <gui>Serviss</gui> lejupkrītošā saraksta. "
+"Aizpildi savienojuma informāciju savam serverim un nospied <gui>Saglabāt</gui>"
+" pogu. Tagad tu vari sinhronizēt piezīmes."
 
 #: C/sync-setup.page:107(title)
 msgid "Configure Sync using SSH"
-msgstr "SSH-t használó szinkronizálás beállítása"
+msgstr "Konfigurē sinhronizāciju, izmantojot SSH"
 
 #: C/sync-setup.page:109(p)
 msgid ""
@@ -234,14 +231,15 @@ msgid ""
 "FUSE file system, also called <app>sshfs</app> installed. Follow the "
 "documentation for your operating system to set up FUSE for your user. You "
 "will also need an SSH key for your SSH server account that can be provided "
-"by the <app>GNOME Seahorse</app> application, which is also known as "
+"by the <app>Seahorse</app> application, which is also known as "
 "<app>Passwords and Encryption Keys</app>."
 msgstr ""
-"Jegyzetei SSH-kiszolgálóval való szinkronizálásához az <app>sshfs</app> FUSE "
-"fájlrendszerre lesz szüksége. A FUSE beállításához nézze meg operációs "
-"rendszere dokumentációját. Az SSH-kiszolgáló fiókjához szüksége lesz egy SSH-"
-"kulcsra is, amelyet a <app>Seahorse</app>, más néven <app>Jelszavak és "
-"titkosítási kulcsok</app> alkalmazással állíthat elő."
+"Lai sinhronizētu piezīmes ar SSH serveri, tev ir nepieciešama FUSE failu "
+"sistēma, saukta arī par <app>sshfs</app>. Vadies pēc savas operētājsistēmas "
+"dokumentācijas, lai uzstādītu FUSE savam lietotāja kontam. Tev būs "
+"nepieciešama arī SSH atslēga savam SSH servera kontam, kuru var nodrošināt <"
+"app>Seahorse</app> programma, kura ir pazīstama arī kā <app>Paroles "
+"un atslēgas</app>."
 
 #: C/sync-setup.page:117(p)
 msgid ""
@@ -249,8 +247,9 @@ msgid ""
 "to store the synchronized notes that are to be synced between multiple "
 "computers."
 msgstr ""
-"A több számítógép között szinkronizálandó jegyzetek tárolására javasolt egy "
-"harmadik számítógép vagy kiszolgáló használata távoli számítógépként."
+"Ir ieteicams izmantot trešo datoru vai serveri kā attālināto datoru, lai "
+"uzglabātu sinhronizētās piezīmes, kuras ir plānots sinhronizēt starp "
+"vairākiem datoriem."
 
 #: C/sync-setup.page:121(p)
 msgid ""
@@ -263,15 +262,14 @@ msgid ""
 "<gui>Login Name:</gui> and press <gui>Set Up</gui>. When prompted, enter the "
 "password and setting up your key will be completed."
 msgstr ""
-"Nyissa meg a <app>Jelszavak és titkosítási kulcsok</app> alkalmazást az "
-"<guiseq><gui>Alkalmazások</gui><gui>Kellékek</gui><gui>Jelszavak és "
-"titkosítási kulcsok</gui></guiseq> menüpont kiválasztásával. Kattintson a "
-"kulcsára, és válassza a <guiseq><gui>Távoli</gui><gui>SSH kulcs beállítása</"
-"gui></guiseq> menüpontot, majd a <gui>Számítógép neve</gui> mezőben adja meg "
-"azon számítógép tartománynevét vagy IP-címét, amelyre szinkronizálni "
-"szeretne. A <gui>Bejelentkezési név</gui> mezőben adja meg a távoli "
-"számítógép felhasználónevét, és nyomja meg a <gui>Beállítás</gui> gombot. "
-"Amikor a program kéri, adja meg jelszavát, és a kulcs beállítása befejeződik."
+"Atver <app>Passwords and Encryption Keys</app>, izvēloties  <guiseq><gui>"
+"Lietotnes</gui><gui>Piederumi</gui><gui>Passwords and Encryption Keys</gui>"
+"</guiseq>. Nospied uz savas atslēgas un no izvēlnes, izvēlies <guiseq><gui>"
+"Attālināti</gui><gui>Konfigurē atslēgu drošai čaulai</gui></guiseq> un ievadi "
+"datora, ar kuru vēlies sinhronizēt piezīmes, domēna vārdu vai IP adresi, <gui>"
+"Datora Nosaukums</gui> laukā. Ievadi attālinātā datora lietotājvārdu <gui>"
+"Lietotājvārds</gui> laukā un spied <gui>Uzstādīt</gui>. Kad prasīts, ievadi "
+"paroli un atslēgas uzstādīšana tiks pabeigta."
 
 #: C/sync-setup.page:133(p)
 msgid ""
@@ -280,15 +278,14 @@ msgid ""
 "<gui>Save</gui> button. The <gui>Folder Path</gui>, while optional, should "
 "point at an empty folder. You are now ready to synchronize your notes."
 msgstr ""
-"A Tomboyban válassza a <gui>Szolgáltatás</gui> legördülő lista <gui>SSH</"
-"gui> elemét. Adja meg a kiszolgáló kapcsolatinformációit, és nyomja meg a "
-"<gui>Mentés</gui> gombot. A <gui>Mappaútvonal</gui> elhagyható, és egy üres "
-"mappára kell mutatnia. Ezzel be is fejezte a jegyzetek szinkronizálásának "
-"előkészítését."
+"Tomboy programmā, izvēlies <gui>SSH</gui> no <gui>Serviss</gui> lejupkrītošā "
+"saraksta. Aizpildi servera savienojuma datus un nospied <gui>Saglabāt</gui> "
+"pogu. Kā <gui>Mapes Ceļš</gui>, neobligāts lauks, vajadzētu norādīt uz tukšu "
+"mapi. Tu esi gatavs sinhronizēt savas piezīmes."
 
 #: C/sync-setup.page:143(title)
 msgid "Configure Sync to a local folder"
-msgstr "Helyi mappába való szinkronizálás beállítása"
+msgstr "Konfigurē sinhronizāciju ar lokālu mapi"
 
 #: C/sync-setup.page:145(p)
 msgid ""
@@ -296,8 +293,8 @@ msgid ""
 "available to your other systems, or if that folder represents a local mount "
 "of a remote server."
 msgstr ""
-"Jegyzeteit szinkronizálhatja helyi mappába is, ha az a mappa elérhető más "
-"rendszereken, vagy egy távoli kiszolgáló helyi csatolási pontja."
+"Tu varētu vēlēties sinhronizēt savas piezīmes ar lokālu mapi, ja šī mape ir "
+"pieejama citām sistēmām, vai, ja šī mape ir attālā servera montējums."
 
 #: C/sync-setup.page:150(p)
 msgid ""
@@ -305,55 +302,53 @@ msgid ""
 "desired synchronization <gui>Folder Path</gui> and then click the <gui>Save</"
 "gui> button. You are now ready to synchronize your notes."
 msgstr ""
-"A <gui>Szolgáltatás</gui> legördülő listából válassza a Helyi mappa elemet. "
-"Válassza ki a szinkronizáláshoz használandó <gui>Mappaútvonalat</gui>, és "
-"nyomja meg a <gui>Mentés</gui> gombot. Ezzel be is fejezte a jegyzetek "
-"szinkronizálásának előkészítését."
+"Izvēlies Lokālo mapi no <gui>Serviss</gui> lejupkrītošā saraksta. Izvēlies "
+"vēlamās sinhronizācijas <gui>Mapes Ceļš</gui> un nospied <gui>Saglabāt</gui> "
+"pogu. Tu esi gatavs piezīmju sinhronizācijai."
 
 #: C/sync.page:8(desc)
 msgid "Sync your Tomboy notes with other computers."
-msgstr "Szinkronizálja Tomboy jegyzeteit más számítógépekkel."
+msgstr "Sinhronizē savas Tomboy piezīmes ar citiem datoriem."
 
 #: C/sync.page:23(title)
 msgid "Sync your notes"
-msgstr "Szinkronizálja jegyzeteit"
+msgstr "Sinhronizē savas piezīmes"
 
 #: C/sync.page:27(title)
 msgid "Manually Syncing Notes"
-msgstr "Jegyzetek kézi szinkronizálása"
+msgstr "Pašrocīga piezīmju sinhronizācija"
 
 #: C/sync.page:29(p)
 msgid "You can sync your notes one of three ways:"
-msgstr "Jegyzeteit háromféleképpen szinkronizálhatja:"
+msgstr "Tu vari sinhronizēt savas piezīmes 3 veidos:"
 
 #: C/sync.page:32(p)
 msgid ""
 "From any note click the <gui>Tools</gui> icon and choose <gui>Synchronize "
 "Notes</gui>."
 msgstr ""
-"Bármely jegyzeten kattintson az <gui>Eszközök</gui> ikonra, és válassza a "
-"<gui>Jegyzetek szinkronizálása</gui> menüpontot."
+"No jebkuras piezīmes, nospied <gui>Rīki</gui> ikonu un nospied <gui>"
+"Sinhronizēt piezīmes</gui>."
 
 #: C/sync.page:34(p)
 msgid ""
 "In the <gui>Search All Notes</gui> dialog choose <guiseq><gui>Tools</"
 "gui><gui>Synchronize Notes</gui></guiseq>."
 msgstr ""
-"A <gui>Keresés minden jegyzetben</gui> ablakban válassza az "
-"<guiseq><gui>Eszközök</gui><gui>Jegyzetek szinkronizálása</gui></guiseq> "
-"menüpontot."
+"<gui>Meklēt visas piezīmes</gui> izvēlnē, paņem <guiseq><gui>Rīki</gui><gui>"
+"Sinhronizēt piezīmes</gui></guiseq>."
 
 #: C/sync.page:37(p)
 msgid ""
 "Using your mouse, right click on the Tomboy icon in your panel, taskbar or "
 "dock and choose <gui>Synchronize All Notes </gui>."
 msgstr ""
-"Kattintson a jobb egérgombbal a Tomboy ikonra a panelen, tálcán vagy dokkon, "
-"és válassza a <gui>Jegyzetek szinkronizálása</gui> menüpontot."
+"Izmantojot savu peli, spied labo peles pogu uz Tomboy ikonas savā panelī vai "
+"dokā un izvēlies <gui>Sinhronizēt visas piezīmes</gui>."
 
 #: C/sync.page:46(title)
 msgid "Sync Your Notes Automatically"
-msgstr "Jegyzetek automatikus szinkronizálása"
+msgstr "Sinhronizē piezīmes automātiski"
 
 #: C/sync.page:48(p)
 msgid ""
@@ -362,19 +357,18 @@ msgid ""
 "syncing automatically. You can learn about handling note conflicts in the "
 "<link xref=\"sync-setup#conflict\"/> page."
 msgstr ""
-"A Tomboy képes jegyzetei automatikus szinkronizálására a háttérben. Az "
-"automatikus szinkronizálás beállítása előtt javasolt a jegyzetütközések "
-"kezelési módját is beállítani. A jegyzetütközések kezeléséről lásd a <link "
-"xref=\"sync-setup#conflict\"/> oldalt."
+"Tomboy var automātiski fonā sinhronizēt tavas piezīmes. Ir ieteicams uzstādīt "
+"to, kā tu kontrolē piezīmju konfliktus, pirms automātiskās sinhronizācijas "
+"aktivēšanas. Par piezīmju konfliktu kontrolēšanu lasi <link "
+"xref=\"sync-setup#conflict\"/> lapu."
 
 #: C/sync.page:63(p)
 msgid ""
 "To enable autosync, check the <gui>Automatically Sync in Background Every x "
 "Minutes</gui> box at the bottom of the Synchronization tab."
 msgstr ""
-"Az automatikus szinkronizálás engedélyezéséhez jelölje be az "
-"<gui>Automatikus szinkronizálás a háttérben minden x percben</gui> négyzetet "
-"a Szinkronizálás lapon."
+"Lai aktivētu automātisko sinhronizāciju, atzīmē <gui>Sinhronizēt piezīmes "
+"automātiski fonā katras x minūtes</gui> lauku, Sinhronizācijas cilnes lejā."
 
 #: C/sync.page:66(p)
 msgid ""
@@ -382,24 +376,26 @@ msgid ""
 "Tomboy should sync enter the number of minutes in the dialog or use your "
 "mouse to move the time up or down."
 msgstr ""
-"A Tomboy alapértelmezésben 10 percenként szinkronizál. Ennek módosításához "
-"adja meg a kívánt értéket a léptetőmezőben."
+"Noklusētais automātiskās sinhronizācijas intervāls ir katras 10 minūtes. Lai "
+"pamainītu intervālu, cik bieži Tomboy vajadzētu sinhronizēt piezīmes, ievadi "
+"šo skaitli attiecīgajā laukā vai izmanto peli, lai virzītu laiku uz augšu vai "
+"leju."
 
 #: C/sync.page:70(p)
 msgid ""
 "To disable autosync, uncheck the <gui>Automatically Sync in Background Every "
 "x Minutes</gui> box."
 msgstr ""
-"Az automatikus szinkronizálás kikapcsolásához törölje az <gui>Automatikus "
-"szinkronizálás a háttérben minden x percben</gui> négyzetet."
+"Lai deaktivētu automātisko sinhronizāciju, atslēdz <gui>Sinhronizēt piezīmes "
+"automātiski fonā katras x minūtes</gui> lauku."
 
 #: C/search.page:9(desc)
 msgid "Search your notes."
-msgstr "Keressen jegyzeteiben."
+msgstr "Meklē savās piezīmēs."
 
 #: C/search.page:24(title)
 msgid "Searching notes"
-msgstr "Keresés jegyzetekben"
+msgstr "Piezīmju meklēšana"
 
 #: C/search.page:27(p)
 msgid ""
@@ -407,19 +403,19 @@ msgid ""
 "tool. Right click the Tomboy icon in your panel or press the <gui>Search</"
 "gui> icon in a note's toolbar to bring up the Search All Notes dialog."
 msgstr ""
-"A Keresés eszköz segítségével bármely jegyzetében megtalálhat egy szót vagy "
-"kifejezést. Kattintson a jobb egérgombbal a Tomboy ikonra a panelen, vagy "
-"kattintson a <gui>Keresés</gui> gombra a jegyzet eszköztárában a Keresés "
-"minden jegyzetben ablak megjelenítéséhez."
+"Tu vari sameklēt kādu vārdu vai frāzi jebkurā no savām piezīmēm, izmantojot "
+"Meklēšanas rīku. Veic labo peles klikšķi uz Tomboy ikonas savā panelī vai  "
+"spied <gui>Meklēt</gui> ikonu kādas piezīmes rīkjoslā, lai parādītos Meklēt "
+"Visas Piezīmes logu."
 
 #: C/search.page:31(p)
 msgid ""
 "Enter your search term in the <gui>Search</gui> box and press <key>Enter</"
 "key>, and all notes containing your search term will be listed."
 msgstr ""
-"Adja meg a keresett kifejezést a <gui>Keresés</gui> mezőben, és nyomja meg "
-"az <key>Enter</key> billentyűt. A keresőkifejezést tartalmazó összes jegyzet "
-"felsorolásra kerül."
+"Ievadi savu meklējamo vārdu <gui>Meklēt</gui> laukā un spied <key>Enter</key>"
+", "
+"un visas, tavu meklējamo vārdu saturošās piezīmes, tiks uzskaitītas."
 
 #: C/search.page:33(p)
 msgid ""
@@ -427,45 +423,45 @@ msgid ""
 "specific terms only in that notebook by selecting the notebook you want to "
 "search and then entering your search criteria."
 msgstr ""
-"Ha jegyzeteit jegyzettömbökbe szervezte, akkor az adott kifejezésekre "
-"keresést leszűkítheti egy adott jegyzettömbre is a kérdéses jegyzettömb "
-"kijelölésével a keresőkifejezés megadása előtt."
+"Ja tavas piezīmes ir sakārtotas piezīmju blokos, tu vari meklēt konkrētus "
+"vārdus tikai šajos blokos, izvēloties piezīmju bloku, kurā vēlies meklēt, un "
+"tad ievadīt meklēšanas kritēriju."
 
 #: C/problems.page:8(desc)
 msgid "Common Problems."
-msgstr "Gyakori problémák."
+msgstr "Biežākās problēmas."
 
 #: C/problems.page:23(title)
 msgid "Common problems"
-msgstr "Gyakori problémák"
+msgstr "Biežākās problēmas"
 
 #: C/problems.page:27(title)
 msgid "Backing up and Restoring your notes"
-msgstr "Jegyzetek biztonsági mentése és helyreállítása"
+msgstr "Rezervju kopiju izveidošana un piezīmju atjaunošana"
 
 #: C/prefs.page:21(title) C/prefs.page:36(title) C/index.page:36(title)
 msgid "Tomboy Preferences"
-msgstr "A Tomboy beállításai"
+msgstr "Tomboy iestatījumi"
 
 #: C/prefs.page:24(title)
 msgid "Note editing preferences"
-msgstr "Jegyzetszerkesztés beállításai"
+msgstr "Piezīmju rediģēšanas iestatījumi"
 
 #: C/prefs.page:28(title)
 msgid "Tomboy hotkeys"
-msgstr "Tomboy gyorsbillentyűk"
+msgstr "Tomboy karstie taustiņi"
 
 #: C/prefs.page:32(title) C/index.page:32(title)
 msgid "Syncing Notes"
-msgstr "Jegyzetek szinkronizálása"
+msgstr "Piezīmju sinhronizācija"
 
 #: C/note-edit-prefs.page:8(desc)
 msgid "Note editing preferences."
-msgstr "Jegyzetszerkesztés beállításai."
+msgstr "Piezīmju rediģēšanas iestatījumi"
 
 #: C/note-edit-prefs.page:23(title)
 msgid "Note preferences"
-msgstr "Jegyzet beállításai"
+msgstr "Piezīmju iestatījumi"
 
 #: C/note-edit-prefs.page:25(p)
 msgid ""
@@ -477,17 +473,17 @@ msgid ""
 "dialog. From the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui></"
 "guiseq>."
 msgstr ""
-"A jegyzetek írásának alapértelmezett beállításai módosíthatók. "
-"Jegyzetbeállításainak módosításához nyissa meg a <gui>Tomboy beállításait</"
-"gui> a jobb egérgombbal kattintva a panelen, tálcán vagy dokkon lévő Tomboy "
-"ikonra, és a <gui>Beállítások</gui> menüpont, majd a <gui>Szerkesztés</gui> "
-"lap kiválasztásával. Megnyithatja a <gui>Tomboy beállításait</gui> a "
-"<gui>Keresés minden jegyzetben</gui> ablakból is. Itt a menüből válassza a "
-"<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> menüpontot."
+"Tu vari pamainīt noklusētos iestatījumus, kad raksti piezīmes. Lai nomainītu "
+"piezīmju iestatījumus, atver <gui>Tomboy Iestatījumi</gui>, spiežot labo "
+"peles klikšķi uz Tomboy ikonas savā panelī, uzdevumu joslā vai dokā. "
+"Izvēlies <gui>Iestatījumi</gui> un paņem <gui>Rediģēšana</gui> cilni. "
+"Kā arī, tu vari atvērt <gui>Tomboy Iestatījumi</gui> no <gui>Meklēt visās "
+"piezīmēs</gui> loga. No izvēlnes paņem  <guiseq><gui>Rediģēt</gui><gui>"
+"Iestatījumi</gui></guiseq>."
 
 #: C/note-edit-prefs.page:37(title)
 msgid "Spell Check"
-msgstr "Helyesírás-ellenőrzés"
+msgstr "Pareizrakstības pārbaude"
 
 #: C/note-edit-prefs.page:38(p)
 msgid ""
@@ -496,10 +492,11 @@ msgid ""
 "You can see spelling suggestions by using your mouse to right click on the "
 "misspelled word."
 msgstr ""
-"A Tomboy képes ellenőrizni a helyesírást a jegyzet szövegének gépelésekor. A "
-"helyesírás-ellenőrzés alapértelmezésben be van kapcsolva, és a Tomboy "
-"aláhúzza az elgépelt szavakat. A helyesírási javaslatokat az elgépelt "
-"szavakra való jobb kattintással jelenítheti meg."
+"Tomboy var pārbaudīt tevis uzrakstīto vārdu pareizrakstību rakstīšanas laikā. "
+"Pareizrakstības "
+"pārbaude ir aktivēta pēc noklusējuma un Tomboy pasvītros visus nepareizi "
+"uzrakstītos vārdus. Pareizrakstības ieteikumi ir redzami, ar peles labo pogu "
+"nospiežot uz nepareizi uzrakstītā vārda."
 
 #: C/note-edit-prefs.page:44(p)
 msgid ""
@@ -507,13 +504,14 @@ msgid ""
 "uncheck <gui>Spell check while typing</gui> in the <gui>Editing</gui> tab of "
 "Tomboy's Preferences."
 msgstr ""
-"Az automatikus helyesírás-ellenőrzés kikapcsolásához törölje a Tomboy "
-"beállításai <gui>Szerkesztés</gui> lapjának <gui>Helyesírás-ellenőrzés "
-"gépelés közben</gui> négyzetét."
+"Lai deaktivētu automātisko pareizrakstības pārbaudi, izmanto peli vai "
+"atstarpes taustiņu, lai atslēgtu <gui>Pareizrakstības pārbaude rakstīšanas "
+"laikā</gui> <"
+"gui>Rediģēšana</gui> cilnē, Tomboy iestatījumos."
 
 #: C/note-edit-prefs.page:51(title)
 msgid "WikiWords"
-msgstr "WikiSzavak"
+msgstr "WikiWords"
 
 #: C/note-edit-prefs.page:52(p)
 msgid ""
@@ -522,10 +520,11 @@ msgid ""
 "Tomboy will highlight the word and make it a link. Clicking the link will "
 "create a new note with the WikiWord as the note title."
 msgstr ""
-"A Tomboy képes kiemelni azokat a szavakat, <gui>AmikÍgyNéznekKi</gui>. Több "
-"szót nagybetűvel kezdve és a szóközöket kihagyva a Tomboy kiemeli a szót, és "
-"létrehoz egy hivatkozást, a wiki szoftverekhez hasonlóan. A hivatkozásra "
-"kattintva létrejön egy új jegyzet, amelynek címe a WikiSzó lesz."
+"Tomboy var iezīmēt vārdus, kuri <gui>KasIzskatāsŠādi</gui>. Bez "
+"atstarpēm savienojot kopā vairākus vārdus ar lielajiem sākumburtiem, Tomboy "
+"izcels vārdu "
+"un pārveidos to par saiti, līdzīgi kā strādā Wiki. Uzspiežot uz saites, tiks "
+"izveidota jauna piezīme ar WikiWord kā tās virsrakstu."
 
 #: C/note-edit-prefs.page:58(p)
 msgid ""
@@ -533,13 +532,13 @@ msgid ""
 "the spacebar to check the box to enable <gui>Highlight WikiWords</gui> in "
 "the <gui>Editing</gui> tab of Tomboy's Preferences."
 msgstr ""
-"A WikiSzavak alapértelmezésben ki vannak kapcsolva. A WikiSzavak "
-"engedélyezéséhez jelölje be a Tomboy beállításai <gui>Szerkesztés</gui> "
-"lapján a <gui>Wiki-szavak kiemelése</gui> négyzetet."
+"WikiWords pēc noklusējuma ir deaktivēts. Lai aktivētu WikiWords, izmanto savu "
+"peli vai atstarpes taustiņu lai atzīmētu <gui>Izcelt WikiWords</gui>, <gui>"
+"Rediģēšana</gui> cilnē, Tomboy iestatījumos."
 
 #: C/note-edit-prefs.page:65(title)
 msgid "Auto-Bulleted Lists"
-msgstr "Automatikusan felsorolásjelezett listák"
+msgstr "Automātisko aizzīmju saraksti"
 
 #: C/note-edit-prefs.page:66(p)
 msgid ""
@@ -549,11 +548,12 @@ msgid ""
 "list. After pressing <key>Enter</key>, the next line will start with a "
 "bullet too."
 msgstr ""
-"A Tomboy képes automatikusan felsorolásjelezett listák létrehozására. Ez "
-"alapértelmezésben engedélyezett, és jegyzet szerkesztésekor a <key>*</key> "
-"és szöveg beírása, majd az <key>Enter</key> megnyomása automatikusan "
-"felsorolásjelezett listát hoz létre. Az <key>Enter</key> megnyomása után a "
-"következő sor is felsorolásjellel fog kezdődni."
+"Tomboy var automātiski izveidot aizzīmju sarakstus. Šī iespēja ir aktivēta "
+"pēc noklusējuma. Sākot rindu ar <key>*</key> simbolu un pēc teksta "
+"uzrakstīšanas"
+"nospiežot <key>Enter</key>, automātiski tiek izveidots aizzīmju saraksts. Pēc "
+"vēl viena<key>"
+"Enter</key> nospiešanas, nākošā rinda arī sāksies ar aizzīmi."
 
 #: C/note-edit-prefs.page:73(p)
 msgid ""
@@ -561,31 +561,33 @@ msgid ""
 "<gui>Enable auto-bulleted lists</gui> in the <gui>Editing</gui> tab of "
 "Tomboy's Preferences."
 msgstr ""
-"Az automatikusan felsorolásjelezett listák kikapcsolásához törölje a Tomboy "
-"beállításai ablak <gui>Szerkesztés</gui> lapján a <gui>Automatikusan "
-"felsorolásjelezett listák engedélyezése</gui> négyzetet."
+"Lai deaktivētu automātisko aizzīmju sarakstu, izmanto peli vai atstarpes "
+"taustiņu, lai atceltu <gui>Aktivizēt automātisko aizzīmju sarakstu</gui>, <"
+"gui>"
+"Rediģēšana</gui> cilnē, Tomboy iestatījumos."
 
 #: C/note-edit-prefs.page:80(title)
 msgid "Custom Fonts"
-msgstr "Egyéni betűkészletek"
+msgstr "Pielāgoti fonti"
 
 #: C/note-edit-prefs.page:81(p)
 msgid ""
 "You can choose to use a font or font size in Tomboy different than the "
 "default font of your desktop. This feature is disabled by default."
 msgstr ""
-"A Tomboyban választhat az asztali környezet alapértelmezésétől eltérő "
-"betűkészletet vagy betűméretet. Ez a szolgáltatás alapértelmezésben ki van "
-"kapcsolva."
+"Tu vari izvēlēties izmantot citu fontu vai fonta izmēru Tomboy lietotnē, "
+"atšķirīgu no noklusētās darbvirsmas fonta. Šī iespēja pēc noklusējuma ir "
+"deaktivēta."
 
 #: C/note-edit-prefs.page:85(p)
 msgid ""
 "To enable a different font, use your mouse or the spacebar to check <gui>Use "
 "custom font</gui> in the <gui>Editing</gui> tab of Tomboy's Preferences."
 msgstr ""
-"Eltérő betűkészlet engedélyezéséhez jelölje be a Tomboy beállításai ablak "
-"<gui>Szerkesztés</gui> lapján az <gui>Egyéni betűkészletek használata</gui> "
-"négyzetet."
+"Lai aktivētu kādu citu fontu, izmanto peli vai atstarpes taustiņu, lai "
+"iezīmētu <gui>Lietot pielāgotu fontu</gui>, <gui>Rediģēšana</gui> cilnē, "
+"Tomboy "
+"iestatījumos."
 
 #: C/note-edit-prefs.page:89(p)
 msgid ""
@@ -594,13 +596,15 @@ msgid ""
 "or italic, and the size of the font. Press <key>Ok</key> to save your "
 "selection."
 msgstr ""
-"Ezután megnyomhatja a betűkészlet gombot, és a megjelenő ablakban "
-"kiválaszthatja a betűkészletet, a -stílust és a -méretet. A kijelölés "
-"mentéséhez nyomja meg az <key>OK</key> gombot."
+"Tad tu vari nospiest fonta pogu un tiks parādīts fonta dialoglodziņš, kurā "
+"var "
+"izvēlēties fontu, kuru vēlies izmantot, stilu, piemēram treknrakstu vai "
+"slīprakstu, kā arī fonta lielumu. Nospied <key>Labi</key>, lai saglabātu "
+"izvēli."
 
 #: C/note-edit-prefs.page:98(title)
 msgid "Renaming a Linked Notes"
-msgstr "Hivatkozott jegyzet átnevezése"
+msgstr "Saistīto Piezīmju Pārsaukšana"
 
 #: C/note-edit-prefs.page:99(p)
 msgid ""
@@ -609,35 +613,34 @@ msgid ""
 "links to it in other notes in Tomboy, you can choose the default behavior "
 "Tomboy should use when detecting a change. Your options include:"
 msgstr ""
-"A Tomboy automatikusan hivatkozásokat hoz létre a jegyzetek közt, ha az "
-"aktuális jegyzetbe egy mentett jegyzet nevét írja. Ha átnevez egy olyan "
-"jegyzetet, amelyre más Tomboy jegyzetek hivatkoznak, akkor kiválaszthatja a "
-"Tomboy viselkedését az ilyen módosítás észlelésekor. A lehetőségek:"
+"Tomboy automātiski izveido saites starp piezīmēm, kad tu ierakstīsi "
+"saglabātas piezīmes virsrakstu pašreizējā piezīmē. Ja tu mēģināsi pārsaukt "
+"piezīmi, kurai ir saites citās piezīmēs, tu vari izvēlēties noklusēto rīcību, "
+"kas jāveic Tomboy šādā gadījumā. Iespējamās rīcības ir šādas:"
 
 #: C/note-edit-prefs.page:106(p)
 msgid ""
 "<gui>Ask me what to do</gui>: Tomboy will prompt you each time it detects a "
 "change with one of the below options."
 msgstr ""
-"<gui>Mindig kérdezzen</gui>: A Tomboy minden módosítás észlelésekor "
-"felajánlja az alábbi lehetőségeket."
+"<gui>Jautāt man, kā rīkoties</gui>: Katru reizi, kad Tomboy konstatēs "
+"izmaiņas, tas piedāvās kādu no zemāk redzamajām rīcības iespējām."
 
 #: C/note-edit-prefs.page:108(p)
 msgid ""
 "<gui>Never rename links</gui>: Tomboy will leave the other notes as they are "
 "and unlink the notes."
 msgstr ""
-"<gui>Soha ne nevezze át a hivatkozásokat</gui>: A Tomboy a többi jegyzetet "
-"változatlanul hagyja, és megszünteti a hivatkozást."
+"<gui>Nekad nepārsaukt saites</gui>: Tomboy nemainīs pārējās piezīmēs un "
+"dzēsīs saites starp šīm piezīmēm."
 
 #: C/note-edit-prefs.page:110(p)
 msgid ""
 "<gui>Always rename links</gui>: Tomboy will automatically rename all the "
 "links in other notes to the note you have renamed."
 msgstr ""
-"<gui>Mindig nevezze át a hivatkozásokat</gui>: A Tomboy automatikusan "
-"átnevezi az átnevezett jegyzetre mutató, más jegyzetekben lévő "
-"hivatkozásokat."
+"<gui>Vienmēr pārsaukt saites</gui>: Tomboy automātiski pārsauks saites visās "
+"piezīmēs uz jauno virsrakstu."
 
 #: C/note-edit-prefs.page:115(p)
 msgid ""
@@ -645,21 +648,21 @@ msgid ""
 "<gui>When renaming a linked note:</gui> in the <gui>Editing</gui> tab of "
 "Tomboy's Preferences."
 msgstr ""
-"Válassza ki a fentiek egyikét a Tomboy beállításai ablak <gui>Szerkesztés</"
-"gui> lapján a <gui>Hivatkozott jegyzet átnevezésekor</gui> legördülő "
-"listából."
+"Izvēlies vienu no iepriekšminētajām iespējām no krītošā saraksta, pa labi no "
+"<gui>Pārsaucot saistīto piezīmi:</gui>  <gui>Rediģēšana</gui> cilnē, Tomboy "
+"Iestatījumos."
 
 #: C/note-edit-prefs.page:122(title)
 msgid "Create a New Note Template"
-msgstr "Új jegyzet sablon létrehozása"
+msgstr "Izveido jaunu piezīmju sagatavi"
 
 #: C/note-edit-prefs.page:123(p)
 msgid ""
 "You can create a new template that is displayed every time you create a new "
 "note."
 msgstr ""
-"Létrehozhat egy új sablont, amely új jegyzet létrehozásakor mindig "
-"megjelenik."
+"Tu vari izveidot jaunu sagatavi, kura tiks attēlota katru reizi, kad "
+"izveidosi jaunu piezīmi."
 
 #: C/note-edit-prefs.page:126(p)
 msgid ""
@@ -670,13 +673,12 @@ msgid ""
 "the note to complete creating a new template. Each time you create a new "
 "note that template will be displayed in the new note."
 msgstr ""
-"Nyomja meg a Tomboy beállításai ablak <gui>Szerkesztés</gui> lapján lévő "
-"<gui>Új jegyzetek sablonjának megnyitása</gui> gombot. Egy Tomboy jegyzethez "
-"hasonló új sablon jelenik meg. Cserélje le az új jegyzetben az <gui>Ide "
-"írhatja a jegyzet tartalmát.</gui> szöveget az új sablonként használandó "
-"szövegre. Zárja be a jegyzetet az új sablon létrehozásának befejezéséhez. Új "
-"jegyzet létrehozásakor ezután mindig ez a sablon jelenik meg az új "
-"jegyzetben."
+"Spied <gui>Atvērt jaunu piezīmes sagatavi</gui> pogu, <gui>Rediģēšana</gui> "
+"cilnē, Tomboy Iestatījumos. Tiks izveidota jauna, Tomboy piezīmei līdzīga "
+"sagatave. Aizvieto <gui>Aprakstiet savu piezīmi šeit.</gui> tekstu "
+"piezīmē ar tekstu, kuram vajadzētu būt jaunajā sagatavē. Aizver piezīmi, lai "
+"pabeigtu sagataves izveidi. Katru reizi, kad atvērsi jaunu piezīmi, šī "
+"sagatave tiks attēlota jaunajā piezīmē."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -686,11 +688,11 @@ msgstr "@@image: 'figures/tomboy.png'; md5=5e3c78a4507fadcaba53b74a0d3f30ae"
 
 #: C/introduction.page:8(desc)
 msgid "Introduction to <app>Tomboy Notes</app>."
-msgstr "A <app>Tomboy jegyzettömb</app> bemutatása."
+msgstr "Ievads <app>Tomboy piezīmes</app>."
 
 #: C/introduction.page:24(title)
 msgid "Introduction"
-msgstr "Bevezetés"
+msgstr "Ievads"
 
 #: C/introduction.page:26(p)
 msgid ""
@@ -698,10 +700,9 @@ msgid ""
 "Microsoft Windows, and Mac OS X. <app>Tomboy</app> is easy to use, and helps "
 "you organize the ideas and information you work with everyday."
 msgstr ""
-"A <app>Tomboy</app> egy jegyzetelő alkalmazás a GNOME asztali környezethez, "
-"Microsoft Windows és Mac OS X rendszerekhez. A <app>Tomboy</app> használata "
-"egyszerű, és segít rendszerezni ötleteit és a minden nap használt "
-"információkat."
+"<app>Tomboy</app> ir piezīmju pierakstīšanas programma GNOME Desktop, "
+"Microsoft Windows un Mac OS X. <app>Tomboy</app> ir vienkārši lietot un "
+"palīdz tev organizēt idejas un informāciju, ar ko strādā katru dienu."
 
 #: C/introduction.page:31(p)
 msgid ""
@@ -710,62 +711,62 @@ msgid ""
 "it easier to find and sort your information. You can also organize multiple "
 "notes in a notebook to make grouping notes together easier."
 msgstr ""
-"A <app>Tomboy</app> szolgáltatásai segítenek rendszerezni és megjegyezni az "
-"információkat, valamint lehetővé teszi a jegyzetek összekapcsolását az "
-"információk egyszerűbb keresése és rendezése érdekében. Több jegyzetet "
-"jegyzettömbbé szervezhet, így megkönnyítve a jegyzetek csoportosítását."
+"<app>Tomboy</app> ir funkcijas, kas tev palīdz labāk organizēt un "
+"atcerēties informāciju, un ļauj tev sasaistīt piezīmes kopā, lai tev vieglāk "
+"būtu meklēt un sakārtot informāciju. Kā arī tu vari vairākas piezīmes "
+"sakārtot piezīmju blokos, lai piezīmju grupēšana būtu vieglāka."
 
 #: C/introduction.page:36(p)
 msgid ""
 "You can also sync your notes across multiple computers, making it easy to "
 "take your notes with you wherever you are."
 msgstr ""
-"Jegyzeteit szinkronizálhatja is számítógépei között, egyszerűvé téve "
-"jegyzetei elérését, bárhol is van."
+"Kā arī, tu vari sinhronizēt piezīmes starp vairākiem datoriem, paņemot līdzi "
+"savas piezīmes, lai kur tu būtu."
 
 #: C/introduction.page:42(title)
 msgid "<gui>Tomboy Notes</gui> window"
-msgstr "A <gui>Tomboy jegyzettömb</gui> ablak"
+msgstr "<gui>Tomboy piezīmes</gui> logs"
 
 #: C/introduction.page:43(desc)
 msgid "<app>Tomboy Notes</app> main window"
-msgstr "A <gui>Tomboy jegyzettömb</gui> főablaka"
+msgstr "<app>Tomboy piezīmes</app> galvenais logs"
 
 #: C/introduction.page:45(p)
 msgid "<app>Tomboy</app> default note."
-msgstr "A <gui>Tomboy</gui> alapértelmezett jegyzete."
+msgstr "<app>Tomboy</app> noklusētā piezīme."
 
 #: C/index.page:21(title)
 msgid "Tomboy Notes"
-msgstr "Tomboy jegyzettömb"
+msgstr "Tomboy piezīmes"
 
 #: C/index.page:24(title)
 msgid "Managing Notes"
-msgstr "Jegyzetek kezelése"
+msgstr "Piezīmju pārvaldīšana"
 
 #: C/index.page:28(title)
 msgid "Organizing Notes"
-msgstr "Jegyzetek rendszerezése"
+msgstr "Piezīmju organizēšana"
 
 #: C/index.page:40(title)
 msgid "Advanced Actions"
-msgstr "Speciális műveletek"
+msgstr "Paplašinātas darbības"
 
 #: C/index.page:44(title)
 msgid "Common Problems"
-msgstr "Gyakori problémák"
+msgstr "Biežākās problēmas"
 
 #: C/index.page:48(title)
 msgid "What's New"
-msgstr "Újdonságok"
+msgstr "Kas jauns"
 
 #: C/hotkeys.page:8(desc)
 msgid "Preferences for hotkeys and shortcut keys."
-msgstr "Gyorsbillentyűk beállításai."
+msgstr "Iestatījumi karstajiem taustiņiem un īsinājumtaustiņiem."
 
 #: C/hotkeys.page:23(title)
 msgid "Hotkeys"
-msgstr "Gyorsbillentyűk"
+msgstr "Karstie taustiņi"
 
 #: C/hotkeys.page:25(p)
 msgid ""
@@ -773,10 +774,9 @@ msgid ""
 "even when using other applications on your desktop. Hotkeys are activated by "
 "pressing multiple keys on your keyboard together."
 msgstr ""
-"A gyorsbillentyűk lehetővé teszik a jegyzetek és a Tomboy szolgáltatások "
-"elérését bárhonnan, még ha más alkalmazást is használ az asztali "
-"környezetében. A gyorsbillentyűket a billentyűzet több billentyűjének "
-"egyszerre történő lenyomása aktiválja."
+"Karstie taustiņi ļauj tev piekļūt piezīmēm un Tomboy iespējām no jebkuras "
+"vietas, pat izmantojot citas darbvirsmas programmas. Karstie taustiņi tiek "
+"aktivizēti, nospiežot vairākus tastatūras taustiņus reizē."
 
 #: C/hotkeys.page:31(p)
 msgid ""
@@ -787,89 +787,89 @@ msgid ""
 "All Notes</gui> dialog. From the menu choose <guiseq><gui>Edit</"
 "gui><gui>Preferences</gui></guiseq>."
 msgstr ""
-"A gyorsbillentyűket engedélyezheti a <gui>Tomboy beállításai</gui> "
-"megnyitásával a jobb egérgombbal kattintva a panelen, tálcán vagy dokkon "
-"lévő Tomboy ikonra, és a <gui>Beállítások</gui> menüpont, majd a "
-"<gui>Gyorsbillentyűk</gui> lap kiválasztásával. Megnyithatja a <gui>Tomboy "
-"beállításait</gui> a <gui>Keresés minden jegyzetben</gui> ablakból is. Itt a "
-"menüből válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></"
-"guiseq> menüpontot."
+"Tu vari aktivēt karstos taustiņus, atverot <gui>Tomboy iestatījumi</gui>, "
+"izmantojot peli, lai veiktu labo peles klikšķi uz Tomboy ikonas panelī, "
+"uzdevumu joslā vai dokā. Izvēlies <gui>Iestatījumi</gui> un tad izvēlies <gui>"
+"Karstie taustiņi</gui> cilni. Tu vari arī atvērt <gui>Tomboy Iestatījumi</gui>"
+" no <gui>Meklēt visas piezīmes</gui> izvēlnes. No izvēlnes, izvēlies <guiseq>"
+"<gui>Rediģēt</gui><gui>Iestatījumi</gui></guiseq>."
 
 #: C/hotkeys.page:40(p)
 msgid "The actions available in Tomboy to be activated by hotkeys are:"
-msgstr "A gyorsbillentyűkkel aktiválható Tomboy műveletek a következők:"
+msgstr "Ar karstajiem taustiņiem ir iespējams aktivizēt šādas Tomboy darbības:"
 
 #: C/hotkeys.page:43(p)
-msgid "<gui>Show notes menu</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq>"
+msgid ""
+"<gui>Show notes menu</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq>"
 msgstr ""
-"<gui>Jegyzetek menü megjelenítése</gui>: <keyseq><key>Alt</key><key>F12</"
-"key></keyseq>"
+"<gui>Parādīt piezīmju izvēlni</gui>: <keyseq><key>Alt</key><key>F12</key><"
+"/keyseq>"
 
 #: C/hotkeys.page:45(p)
-msgid "<gui>Open \"Start Here\"</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq>"
+msgid ""
+"<gui>Open \"Start Here\"</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq>"
 msgstr ""
-"<gui>„Kezdje itt!” megnyitása</gui>: <keyseq><key>Alt</key><key>F11</key></"
-"keyseq>"
+"<gui>Atvērt \"Sākt Šeit\" </gui>: <keyseq><key>Alt</key><key>F11</key><"
+"/keyseq>"
 
 #: C/hotkeys.page:47(p)
 msgid ""
 "<gui>Create new note</gui>: Disabled by default. You can enter a key "
 "sequence in this field to create a hotkey."
 msgstr ""
-"<gui>Új jegyzet létrehozása</gui>: Alapértelmezésben ki van kapcsolva. Ebben "
-"a mezőben megadhatja a billentyűsorozatot a gyorsbillentyű létrehozásához."
+"<gui>Izveidot jaunu piezīmi</gui>: Pēc noklusējuma deaktivēts. Tu vari "
+"ievadīt "
+"taustiņu kombināciju šai funkcijai, lai izveidotu karsto taustiņu."
 
 #: C/hotkeys.page:49(p)
 msgid ""
 "<gui>Open \"Search All Notes\"</gui>: Disabled by default. You can enter a "
 "key sequence in this field to create a hotkey."
 msgstr ""
-"<gui>A „Keresés minden jegyzetben” megnyitása</gui>: Alapértelmezésben ki "
-"van kapcsolva. Ebben a mezőben megadhatja a billentyűsorozatot a "
-"gyorsbillentyű létrehozásához."
+"<gui>Atvērt \"Meklēt visas piezīmes\"</gui>: Pēc noklusējuma deaktivēts.Tu "
+"vari ievadīt "
+"taustiņu kombināciju šai funkcijai, lai izveidotu karsto taustiņu."
 
 #: C/edit-note.page:10(desc)
 msgid "Edit and format your notes."
-msgstr "Jegyzetek szerkesztése és formázása."
+msgstr "Rediģē un formatē piezīmes."
 
 #: C/edit-note.page:25(title)
 msgid "Edit notes"
-msgstr "Jegyzetek szerkesztése"
+msgstr "Rediģē piezīmes"
 
 #: C/edit-note.page:27(p)
 msgid ""
 "Tomboy Notes allows you to format the text within a note in a number of "
 "different ways, including undo and redo, bold, italics, underline, and more."
 msgstr ""
-"A Tomboy jegyzettömb lehetővé teszi a jegyzet szövegének különböző "
-"formázását, beleértve a visszavonást és ismételt végrehajtást, a félkövér, "
-"dőlt vagy aláhúzott szöveg használatát, és sok mást."
+"Tomboy piezīmes ļauj tev formatēt tekstu piezīmē vairākos veidos: "
+"treknrakstu, slīprakstu, pasvītrošanu, atsaukšanu, atsaukšanas atcelšanu u.c."
 
 #: C/edit-note.page:33(title)
 msgid "Undo and Redo"
-msgstr "Visszavonás és ismételt végrehajtás"
+msgstr "Atsaukšana un atsaukšanas atcelšana"
 
 #: C/edit-note.page:35(p)
 msgid ""
 "To undo the last action, including typing a word or formatting text, press "
 "the <gui>Text</gui> icon in the toolbar and choose <gui>Undo</gui>."
 msgstr ""
-"Az utolsó művelet, például egy szó beírásának vagy szövegformázás "
-"visszavonásához, nyomja meg az eszköztár <gui>Szöveg</gui> gombját, és "
-"válassza a <gui>Visszavonás</gui> pontot."
+"Lai atsauktu iepriekšējo darbību, t.sk. arī vārda ierakstīšanu vai teksta "
+"formatēšanu, spied <gui>Teksts</gui> ikonu rīkjoslā un izvēlies <gui>Atsaukt<"
+"/gui>."
 
 #: C/edit-note.page:39(p)
 msgid ""
 "If you want to redo a word or text after using Undo, press the <gui>Text</"
 "gui> icon in the toolbar and choose <gui>Redo</gui>."
 msgstr ""
-"Nyomja meg az eszköztár <gui>Szöveg</gui> gombját, és válassza az <gui>Újra</"
-"gui> pontot egy szó vagy szöveg visszaállításához a Visszavonás használata "
-"után."
+"Ja tu vēlies atcelt atsaukšanu, nospied <gui>Teksts</gui> ikonu rīkjoslā un "
+"spied <gui>Atcelt atsaukšanu</gui>."
 
 #: C/edit-note.page:47(title)
 msgid "Formatting Text"
-msgstr "Szöveg formázása"
+msgstr "Teksta formatēšana"
 
 #: C/edit-note.page:49(p)
 msgid ""
@@ -877,17 +877,17 @@ msgid ""
 "including underlining words, making text bold or italics, highlighting words "
 "or phrases, or striking through text."
 msgstr ""
-"A jegyzetei szövegét számos módon formázhatja, beleértve szavak alá- vagy "
-"áthúzását, szöveg félkövérré vagy dőltté tételét, szavak vagy mondatok "
-"kiemelését."
+"Tu vari noformēt piezīmju tekstu vairākos veidos, piemēram, vārdu "
+"pasvītrošanu, treknrakstu, slīprakstu, vārdu vai frāžu iezīmēšanu vai "
+"teksta pārsvītrošanu."
 
 #: C/edit-note.page:57(title)
 msgid "Changing the Text Size"
-msgstr "A szövegméret módosítása"
+msgstr "Teksta izmēra maiņa"
 
 #: C/edit-note.page:59(p)
 msgid "You can change the size of the text in your notes one of two ways."
-msgstr "A szöveg betűméretét kétféleképpen módosíthatja."
+msgstr "Tu vari mainīt teksta izmēru piezīmēs vienā no diviem veidiem."
 
 #: C/edit-note.page:60(p)
 msgid ""
@@ -895,29 +895,31 @@ msgid ""
 "<keyseq><key>Ctrl</key><key>+</key></keyseq> to make your text bigger or "
 "<keyseq><key>Ctrl</key><key>-</key></keyseq> to make your text smaller."
 msgstr ""
-"Jelölje ki a nagyobbá vagy kisebbé tenni kívánt szöveget, és nyomja meg a "
-"<keyseq><key>Ctrl</key><key>+</key></keyseq> kombinációt a nagyobbá, vagy a "
-"<keyseq><key>Ctrl</key><key>-</key></keyseq> kombinációt a kisebbé tételéhez."
+"Iezīmē tekstu, kura izmēru vēlies mainīt, un spied <keyseq><key>Ctrl</key><"
+"key>"
+"+</key></keyseq>, lai to padarītu lielāku, vai <keyseq><key>Ctrl</key><key>-<"
+"/key></keyseq>, lai samazinātu tā izmēru."
 
 #: C/edit-note.page:63(p)
 msgid ""
 "Alternatively, you can press the <gui>Text</gui> icon in the toolbar and "
 "choose from one of four preset sizes including small, normal, large and huge."
 msgstr ""
-"Az eszköztár <gui>Szöveg</gui> gombjára kattintva négy előre beállított "
-"méret közül választhat: kicsi, normál, nagy, óriási."
+"Alternatīvi, tu vari nospiest <gui>Teksts</gui> ikonu rīkjoslā un izvēlēties "
+"vienu no četriem iepriekšnoteiktajiem izmēriem: mazu, normālu, lielu un "
+"milzīgu."
 
 #: C/edit-note.page:71(title)
 msgid "Formatting Bullets"
-msgstr "Felsorolásjelek formázása"
+msgstr "Aizzīmju formatēšana"
 
 #: C/edit-note.page:73(p)
 msgid ""
 "Bullets can be created by using the keyboard or the <gui>Text</gui> icon in "
 "the toolbar."
 msgstr ""
-"Felsorolásjelek hozhatók létre a billentyűzet, vagy az eszköztár "
-"<gui>Szöveg</gui> ikonja segítségével."
+"Aizzīmes var tikt izveidotas, izmantojot tastatūru vai <gui>Teksts</gui> "
+"ikonu rīkjoslā."
 
 #: C/edit-note.page:75(p)
 msgid ""
@@ -927,12 +929,13 @@ msgid ""
 "formatted as a bullet as well. If you want to create a sub-bullet, press "
 "<key>Tab</key> immediately after pressing <key>Enter</key>."
 msgstr ""
-"Felsorolásjel kézi létrehozásához írja be a <key>*</key> jelet, majd a "
-"szöveget. Az Enter megnyomása után a Tomboy automatikusan felsorolássá "
-"alakítja a csillaggal kezdődő sort, és a következő sor is automatikusan "
-"felsorolásként lesz formázva. Ha alpontot kíván létrehozni, akkor az "
-"<key>Enter</key> megnyomása után azonnal nyomja meg a <key>Tab</key> "
-"billentyűt."
+"Lai pašrocīgi izveidotu aizzīmi, ieraksti zvaigznītes simbolu <key>*</key>, "
+"pēc tam "
+" savu tekstu. Pēc Enter nospiešanas, Tomboy automātiski pārveidos "
+"teksta rindu tā, lai zvaigznītes vietā būtu aizzīme un nākamās rindas arī "
+"tiks iesāktas arī ar aizzīmi. Ja vēlies izveidot zemāka līmeņa aizzīmi, "
+"nospied <key>"
+"Tab</key> uzreiz pēc <key>Enter</key> nospiešanas."
 
 #: C/edit-note.page:82(p)
 msgid ""
@@ -940,13 +943,14 @@ msgid ""
 "in the toolbar check the <gui>Bullets</gui> checkbox to change a specific "
 "line to be bulleted."
 msgstr ""
-"Ki is emelhet egy adott sort, és az eszköztár <gui>Szöveg</gui> ikonjára "
-"kattintva a <gui>Felsorolás</gui> pont kiválasztásával az adott sort "
-"felsorolásjelessé alakíthatja."
+"Kā arī tu vari iezīmēt kādu teksta rindu un izvēlēties <gui>Teksts</gui> "
+"ikonu "
+"rīkjoslā un atzīmēt <gui>Aizzīmes</gui> izvēles rūtiņu, lai pievienotu šai "
+"rindai aizzīmi."
 
 #: C/delete-notes.page:10(desc)
 msgid "Delete a note in Tomboy."
-msgstr "Jegyzet törlése a Tomboyban."
+msgstr "Izdzēst piezīmi Tomboy programmā."
 
 #: C/delete-notes.page:19(years)
 msgid "2010"
@@ -954,39 +958,38 @@ msgstr "2010"
 
 #: C/delete-notes.page:24(title)
 msgid "Delete a note"
-msgstr "Jegyzet törlése"
+msgstr "Izdzēst piezīmi"
 
 #: C/delete-notes.page:26(p)
 msgid ""
 "You can delete a note by pressing the <gui>Delete</gui> icon in the toolbar "
 "of the note you wish to delete."
 msgstr ""
-"Egy jegyzet a törölni kívánt jegyzet eszköztárának <gui>Törlés</gui> "
-"gombjának megnyomásával törölhető."
+"Tu vari izdzēst piezīmi, nospiežot <gui>Izdzēst</gui> ikonu, piezīmes, kuru "
+"vēlies izdzēst, rīkjoslā."
 
 #: C/delete-notes.page:30(p)
-msgid "Deleting a note is permanent. After deletion, the note is not recoverable."
-msgstr "A jegyzet törlése végleges. A törlés után a jegyzet nem állítható vissza."
+msgid ""
+"Deleting a note is permanent. After deletion, the note is not recoverable."
+msgstr ""
+"Piezīmju dzēšana ir neatgriezeniska un pēc dzēšanas piezīme nav atgūstama."
 
 #: C/delete-notes.page:31(p)
-#| msgid ""
-#| "<placeholder-1/> You will be prompted <placeholder-2/> when deleting a "
-#| "note."
 msgid ""
 "You will be prompted <gui>Really delete this note?</gui> when deleting a "
 "note."
 msgstr ""
-"Jegyzet törlésekor a <gui>Biztosan törli ezt a jegyzetet?</gui> kérdést "
-"teszi fel a "
-"program."
+"Tev vaicās pēc apstiprinājuma <gui>Vai tiešām izdzēst šo piezīmi?</gui> pirms "
+"piezīmes "
+"dzēšanas."
 
 #: C/create-note.page:10(desc)
 msgid "Create a new note in Tomboy."
-msgstr "Új jegyzet létrehozása a Tomboyban."
+msgstr "Izveidot jaunu piezīmi Tomboy programmā."
 
 #: C/create-note.page:25(title)
 msgid "Create a new note"
-msgstr "Új jegyzet létrehozása"
+msgstr "Izveidot jaunu piezīmi"
 
 #: C/create-note.page:27(p)
 msgid ""
@@ -995,10 +998,11 @@ msgid ""
 "New Note</gui>. You can also use the keyboard shortcuts by pressing "
 "<keyseq><key>Alt + F12</key></keyseq>."
 msgstr ""
-"Új Tomboy jegyzetet a GNOME panelen, Windows tálcán vagy az OS X dokkon lévő "
-"Tomboy ikonra kattintva, és az <gui>Új jegyzet létrehozása</gui> menüpontot "
-"kiválasztva hozhat létre. Használhatja a gyorsbillentyűt is az "
-"<keyseq><key>Alt + F12</key></keyseq> megnyomásával."
+"Tu vari izveidot jaunu piezīmi, nospiežot uz Tomboy ikonas GNOME panelī, OS X "
+"dokā vai Windows uzdevumu joslā, un tad izvēloties <gui>Izveidot Jaunu "
+"Piezīmi<"
+"/gui>. Tu arī vari izmantot tastatūras saīsni, nospiežot <keyseq><key>Alt + "
+"F12</key></keyseq>."
 
 #: C/create-note.page:32(p)
 msgid ""
@@ -1007,51 +1011,50 @@ msgid ""
 "format the text within a note, and more. For more information, see <link "
 "xref=\"edit-notes\"/>."
 msgstr ""
-"Az új jegyzet egy <em>N.</em> új jegyzet című új ablakot jelenít meg. A "
-"jegyzet egy eszköztárat tartalmaz, amely lehetővé teszi a jegyzetek "
-"keresését, jegyzetek összekapcsolását, a jegyzeten belüli szöveg formázását "
-"és sok mást. További információkért lásd a <link xref=\"edit-notes\"/> "
-"oldalt."
+"Jaunā piezīme tiks attēlota jaunā logā ar virsrakstu \"Jauna Piezīme\" <em>N<"
+"/em>. "
+"Piezīme satur rīkjoslu ar iespējām meklēt piezīmes, sasaistīt piezīmes, "
+"formatēt tekstu u.c. Vairāk informācijai, lasi <link xref=\"edit-notes\"/>."
 
 #: C/create-notebook.page:10(desc)
 msgid "Create a new notebook in Tomboy."
-msgstr "Új jegyzettömb létrehozása a Tomboyban."
+msgstr "Izveidot jaunu piezīmju bloku Tomboy programmā."
 
 #: C/create-notebook.page:25(title)
 msgid "Create a notebook"
-msgstr "Új jegyzettömb létrehozása"
+msgstr "Izveidot piezīmju bloku"
 
 #: C/create-notebook.page:27(p)
 msgid ""
 "Notebooks allow you to group related notes together. You can add a note to a "
 "notebook in the Search All Notes window or directly inside of a Note."
 msgstr ""
-"A jegyzettömbök lehetővé teszik a kapcsolódó jegyzetek csoportosítását. A "
-"jegyzettömbhöz a Keresés minden jegyzetben ablakban, vagy közvetlenül a "
-"jegyzeten belül adhat jegyzetet."
+"Piezīmju bloki ļauj tev sagrupēt piezīmes kopā. Tu vari pievienot piezīmi "
+"piezīmju blokam, \"Meklēt visas piezīmes\" logā vai no pašas piezīmes loga."
 
 #: C/create-notebook.page:33(p)
 msgid ""
 "Click on the Tomboy note icon present in the GNOME Panel, the taskbar in "
 "Microsoft Windows, or the dock in Mac OS X. A menu will appear."
 msgstr ""
-"Kattintson a GNOME panelen, Windows tálcán vagy az OS X dokkon lévő Tomboy "
-"ikonra. Megjelenik egy menü."
+"Spied uz Tomboy piezīmes ikonu GNOME panelī, Microsoft Windows rīkjoslā vai "
+"Mac OS X dokā un parādīsies izvēlne."
 
 #: C/create-notebook.page:43(p)
 msgid "Select <guiseq><gui>Notebooks</gui><gui>New Notebook</gui></guiseq>."
 msgstr ""
-"Válassza a <guiseq><gui>Jegyzettömbök</gui><gui>Új jegyzettömb</gui></"
-"guiseq> menüpontot."
+"Izvēlies <guiseq><gui>Piezīmju bloki</gui><gui>Jauns piezīmju bloks</gui>"
+"</guiseq>."
 
 #: C/create-notebook.page:47(p) C/create-notebook.page:66(p)
 #: C/create-notebook.page:79(p)
 msgid "Enter a name for the new notebook."
-msgstr "Adja meg az új jegyzettömb nevét."
+msgstr "Ievadi jaunā piezīmju bloka nosaukumu."
 
 #: C/create-notebook.page:51(p)
 msgid "To create a new notebook from the <gui>Search All Notes</gui> dialog:"
-msgstr "Új jegyzettömb létrehozása a <gui>Keresés minden jegyzetben</gui> ablakban:"
+msgstr ""
+"Lai izveidotu jaunu piezīmju bloku no <gui>Meklēt visas piezīmes</gui> loga:"
 
 #: C/create-notebook.page:56(p)
 msgid ""
@@ -1059,84 +1062,84 @@ msgid ""
 "GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X, or "
 "click on Search from an open note."
 msgstr ""
-"Nyissa meg a <gui>Keresés minden jegyzetben</gui> ablakot a GNOME panelen, "
-"Windows tálcán vagy az OS X dokkon lévő Tomboy ikonra kattintva, vagy "
-"kattintson a Keresés gombra egy megnyitott jegyzetben."
+"Atver <gui>Meklēt visas piezīmes</gui>, izvēloties to no Tomboy ikonas GNOME "
+"panelī, Microsoft Windows rīkjoslā vai Mac OS X dokā, vai spied Meklēt jau "
+"atvērtā piezīmē."
 
 #: C/create-notebook.page:62(p)
 msgid ""
 "Using your mouse, right click in the left hand box and choose <gui>New "
 "Notebook</gui>."
 msgstr ""
-"Kattintson a jobb egérgombbal a bal oldali mezőbe, és válassza az <gui>Új "
-"jegyzettömb</gui> menüpontot."
+"Izmantojot savu peli, veic labo peles klikšķi uz kreisās puses laukā un "
+"izvēlies <gui>Jauns piezīmju bloks</gui>."
 
 #: C/create-notebook.page:70(p)
 msgid "Or:"
-msgstr "Vagy:"
+msgstr "Vai:"
 
 #: C/create-notebook.page:74(p)
 msgid ""
 "With <gui>Search All Notes</gui> open, choose <guiseq><gui>File</"
 "gui><gui>Notebooks</gui><gui>New Notebook</gui></guiseq>."
 msgstr ""
-"A megnyitott <gui>Keresés minden jegyzetben</gui> ablakban válassza a "
-"<guiseq><gui>Fájl</gui><gui>Jegyzettömbök</gui><gui>Új jegyzettömb</gui></"
-"guiseq> menüpontot."
+"Ar <gui>Meklēt visas piezīmes</gui> logu atvēru, izvēlies <guiseq><gui>Fails<"
+"/gui><gui>Piezīmju bloki</gui><gui>Jauns piezīmju bloks</gui><"
+"/guiseq>."
 
 #: C/advanced.page:8(desc)
 msgid "Advanced actions and help."
-msgstr "Speciális műveletek és segítség."
+msgstr "Paplašinātas darbības un palīdzība."
 
 #: C/advanced.page:23(title)
 msgid "Advanced actions"
-msgstr "Speciális műveletek"
+msgstr "Paplašinātas darbības"
 
 #: C/advanced.page:27(title)
 msgid "Creating a Note Template"
-msgstr "Jegyzetsablon létrehozása"
+msgstr "Piezīmju veidnes izveidošana"
 
 #: C/advanced.page:33(title)
 msgid "Tomboy Notes Location"
-msgstr "Tomboy jegyzetek helye"
+msgstr "Tomboy piezīmes atrašanās vieta"
 
 #: C/addins-tools.page:7(desc)
 msgid "Enable additional note functionality."
-msgstr "További jegyzetszolgáltatások bekapcsolása."
+msgstr "Aktivē papildu piezīmju funkcionalitāti."
 
 #: C/addins-tools.page:22(title)
 msgid "Tomboy Tools Addins"
-msgstr "Tomboy eszközbővítmények"
+msgstr "Tomboy Tools pievienojumprogrammas"
 
 #: C/addins-tools.page:24(p)
 msgid "Tools addins add additional functionality to your Tomboy notes."
 msgstr ""
-"Az eszközbővítmények további funkciókat biztosítanak a Tomboy jegyzetek "
-"kezeléséhez."
+"Rīku pievienojumprogrammas papildina funkcionalitāti tavām Tomboy "
+"piezīmēm."
 
 #: C/addins-tools.page:27(title)
 msgid "Backlinks"
-msgstr "Visszahivatkozások"
+msgstr "Atpakaļsaites"
 
 #: C/addins-tools.page:28(p)
 msgid ""
 "The <gui>Backlinks</gui> addin is enabled by default and allows you to see "
 "which notes link to the note you are currently viewing."
 msgstr ""
-"A <gui>Visszahivatkozások</gui> bővítmény alapértelmezésben engedélyezett, "
-"és lehetővé teszi a megjelenített jegyzetre hivatkozó jegyzetek felsorolását."
+"<gui>Atpakaļsaites</gui> pievienojumprogramma pēc noklusējuma ir aktivēta un "
+"ļauj redzēt, kuras piezīmes ir piesaistītas piezīmei, kuru pašreiz skaties."
 
 #: C/addins-tools.page:33(title)
 msgid "Export to HTML"
-msgstr "Exportálás HTML-be"
+msgstr "Eksportēt uz HTML"
 
 #: C/addins-tools.page:34(p)
 msgid ""
 "The <gui>Export to HTML</gui> addin is enabled by default and will export an "
 "individual note to HTML."
 msgstr ""
-"Az <gui>Exportálás HTML-be</gui> bővítmény alapértelmezésben engedélyezett, "
-"és lehetővé teszi az egyes jegyzetek HTML-be történő exportálását."
+"<gui>Eksportēt uz HTML</gui> pievienojumprogramma pēc noklusējuma ir "
+"aktivēta un eksportē individuālu piezīmi uz HTML."
 
 #: C/addins-tools.page:36(p)
 msgid ""
@@ -1147,17 +1150,17 @@ msgid ""
 "to be different than the note name. The note will then be saved as an HTML "
 "file and automatically displayed in your browser."
 msgstr ""
-"Jegyzet HTML-be exportálásához nyomja meg a jegyzet eszköztárán lévő "
-"<gui>Eszközök</gui> ikont, és válassza az <gui>Exportálás HTML-be</gui> "
-"menüpontot. Azonnal megjelenik egy ablak, amelyben elmentheti a jegyzetet. "
-"Válassza ki a könyvtárat, amelybe menteni szeretné a jegyzetet, és adja meg "
-"az új HTML fájl nevét, ha a jegyzet nevétől különböző nevet szeretne "
-"használni. A jegyzet elmentésre kerül HTML formátumba, és megjelenik "
-"böngészőjében."
+"Lai eksportētu piezīmi uz HTML, spied <gui>Rīki</gui> ikonu, piezīmju "
+"rīkjoslā, un izvēlies <gui>Eksportēt uz HTML</gui>. Tev uzreiz tiks dots "
+"piezīmes saglabāšanas logs. Izvēlies mapi, kurā saglabāt piezīmi un izmaini "
+"nosaukumu, ja tu vēlies, lai tas būtu citādāks, nekā piezīmes faila nosaukums."
+" "
+"Piezīme tiks saglabāta HTML formātā un automātiski tiks attēlota tavā "
+"pārlūkprogrammā."
 
 #: C/addins-tools.page:45(title)
 msgid "Insert Timestamp"
-msgstr "Időbélyeg beillesztése"
+msgstr "Ievietot laika spiedogu"
 
 #: C/addins-tools.page:46(p)
 msgid ""
@@ -1165,10 +1168,10 @@ msgid ""
 "choose the <gui>Insert Timestamp</gui> addin and then press <gui>Enable</"
 "gui> in the Tomboy Preferences."
 msgstr ""
-"Az <gui>Időbélyeg beillesztése</gui> bővítmény alapértelmezetten le van "
-"tiltva. Engedélyezéséhez válassza a Tomboy beállításaiban az <gui>Időbélyeg "
-"beillesztése</gui> bővítményt, és nyomja meg az <gui>Engedélyezés</gui> "
-"gombot."
+"<gui>Ievietot laika spiedogu</gui> pievienojumprogramma pēc noklusējuma ir "
+"deaktivēta. Lai to aktivētu, Tomboy iestatījumu logā izvēlies <gui>Ievietot "
+"laika spiedogu</gui> "
+"pievienojumprogrammu un tad nospied <gui>Aktivēt</gui>."
 
 #: C/addins-tools.page:49(p)
 msgid ""
@@ -1176,13 +1179,13 @@ msgid ""
 "note toolbar and choose <gui>Insert Timestamp</gui> or press <key>Ctrl + D</"
 "key>."
 msgstr ""
-"A jegyzeteibe időbélyeg beszúrásához nyomja meg a jegyzet eszköztárán az "
-"<gui>Eszközök</gui> gombot, és válassza az <gui>Időbélyeg beszúrása</gui> "
-"lehetőséget, vagy nyomja meg a <key>Ctrl + D</key> kombinációt."
+"Lai piezīmē ievietotu laika spiedogu, spied <gui>Rīki</gui> ikonu rīkjoslā "
+"un izvēlies <gui>Ievietot laika spiedogu</gui> vai nospied <key>Ctrl + D</key>"
+"."
 
 #: C/addins-tools.page:55(title)
 msgid "Note of the Day"
-msgstr "A nap jegyzete"
+msgstr "Dienas piezīme"
 
 #: C/addins-tools.page:56(p)
 msgid ""
@@ -1190,9 +1193,9 @@ msgid ""
 "choose the <gui>Note of the Day</gui> addin and then press <gui>Enable</gui> "
 "in the Tomboy Preferences."
 msgstr ""
-"Az <gui>A nap jegyzete</gui> bővítmény alapértelmezetten le van tiltva. "
-"Engedélyezéséhez válassza a Tomboy beállításaiban az <gui>A nap jegyzete</"
-"gui> bővítményt, és nyomja meg az <gui>Engedélyezés</gui> gombot."
+"<gui>Dienas piezīme</gui> pievienojumprogramma pēc noklusējuma ir deaktivēta. "
+"Lai to aktivētu, Tomboy iestatījumos izvēlies <gui>Dienas Piezīme</gui> "
+"pievienojumprogrammu un nospied <gui>Aktivēt</gui>."
 
 #: C/addins-tools.page:59(p)
 msgid ""
@@ -1200,14 +1203,15 @@ msgid ""
 "<em>Today: Thursday, January 21 2010</em> for example. The note will also "
 "add rows for <em>Tasks</em> and <em>Appointment</em> automatically."
 msgstr ""
-"<gui>A nap jegyzete</gui> bővítmény minden nap létrehoz egy jegyzetet a "
-"következőhöz hasonló címmel: <em>Ma: vasárnap, 2010. szeptember 26.</em> A "
-"jegyzet automatikusan tartalmazni fog egy <em>Feladatok</em> és egy "
-"<em>Találkozók</em> sort."
+"<gui>Dienas piezīme</gui> pievienojumprogramma izveidos jaunu piezīmi katru "
+"dienu ar tās dienas datuma virsrakstu, piemēram, <em>Šodien: Sestdiena, 25. "
+"decembris, 2011</em>."
+" Piezīmē arī automātiski ievietos tās dienas <em>Uzdevumus</em> un <em>"
+"Tikšanās</em>."
 
 #: C/addins-tools.page:65(title)
 msgid "Note Directory Watcher"
-msgstr "Jegyzetkönyvtár-figyelő"
+msgstr "Piezīmju direktorija uzraugs"
 
 #: C/addins-tools.page:66(p)
 msgid ""
@@ -1217,20 +1221,21 @@ msgid ""
 "typically used with 3rd party sync services such as Dropbox. Setting up 3rd "
 "party sync services is outside the scope of this help."
 msgstr ""
-"A Jegyzetkönyvtár-figyelő bővítmény figyeli a Tomboy jegyzetek tárolására "
-"használt könyvtárat. Ha a bővítmény a jegyzetek változását észleli, akkor "
-"alkalmazza ezeket a változásokat, és azok megjelennek a jegyzetekben. Ez a "
-"bővítmény általában külső szinkronizációs szolgáltatások, mint például a "
-"Dropbox használata esetén hasznos. A külső szinkronizációs szolgáltatások "
-"beállításával ez a súgó nem tud foglalkozni."
+"Piezīmju direktorija uzraugs pievienojumprogramma novēro tavu Tomboy "
+"piezīmju direktoriju. Ja pievienojumprogramma konstatē izmaiņas piezīmēs, tā "
+"automātiski piemēros izmaiņas un tās tiks attēlotas tavās piezīmēs. Šī "
+"pievienojumprogramma parasti tiek izmantota ar 3. puses sinhronizācijas "
+"servisiem, piemēram, Dropbox. 3. pušu sinhronizācijas servisu uzstādīšanas "
+"pamācības "
+"neietilpst šajā Palīdzībā."
 
 #: C/addins-sync.page:7(desc)
 msgid "Enable additional ways to sync your notes with other devices."
-msgstr "További módszerek jegyzetei más eszközökkel való szinkronizálására."
+msgstr "Iespējo papildu veidus, kā sinhronizēt piezīmes ar citām ierīcēm."
 
 #: C/addins-sync.page:22(title)
 msgid "Sync Addins"
-msgstr "Szinkronizáló bővítmények"
+msgstr "Sinhronizācijas pievienojumprogrammas"
 
 #: C/addins-sync.page:24(p)
 msgid ""
@@ -1238,14 +1243,14 @@ msgid ""
 "Tomboy notes. For more information on configuring sync, visit the <link xref="
 "\"sync-notes\"/> help page."
 msgstr ""
-"A Szinkronizáló bővítmények lehetővé teszik különböző módszerek és helyek "
-"kiválasztását a Tomboy jegyzetei szinkronizálására. A szinkronizálás "
-"beállításával kapcsolatos további információkért lásd a <link xref=\"sync-"
-"notes\"/> oldalt."
+"Sinhronizācijas pievienojumprogrammas ļauj tev izvēlēties vairākas dažādus "
+"veidus un vietas piezīmju sinhronizācijai. Vairāk informācijai par "
+"sinhronizācijas konfigurēšanu, lasi <link xref=\"sync-notes\"/> palīdzības "
+"lapu."
 
 #: C/addins-sync.page:30(title)
 msgid "Local Directory Sync Service"
-msgstr "Helyi könyvtár szinkronizálási szolgáltatás"
+msgstr "Vietējā direktorija sinhronizācijas serviss"
 
 #: C/addins-sync.page:31(p)
 msgid ""
@@ -1253,14 +1258,13 @@ msgid ""
 "sync its notes to another directory on your computer. This is helpful to "
 "create a backup of your notes."
 msgstr ""
-"A Helyi könyvtár szinkronizálási szolgáltatás alapértelmezésben "
-"engedélyezett, és lehetővé teszi a Tomboy számára a jegyzetek másik "
-"könyvtárba szinkronizálását a számítógépen. Ez a jegyzetek biztonsági "
-"mentéséhez hasznos."
+"Vietējā direktorija sinhronizācijas serviss pēc noklusējuma ir aktivēts un "
+"ļauj Tomboy sinhronizēt tā piezīmes ar citu direktoriju tavā datorā. Tas ir "
+"noderīgi kopiju izveidošanai datorā."
 
 #: C/addins-sync.page:37(title)
 msgid "SSH Sync Service"
-msgstr "SSH szinkronizálási szolgáltatás"
+msgstr "SSH sinhronizācijas serviss"
 
 #: C/addins-sync.page:38(p)
 msgid ""
@@ -1269,15 +1273,15 @@ msgid ""
 "install the <em>sshfs</em> package for your Linux distribution to make this "
 "addin work, which is outside the scope of this help document."
 msgstr ""
-"Az SSH szinkronizálási szolgáltatás lehetővé teszi jegyzeteinek "
-"szinkronizálását másik számítógéppel az SSH protokollon. Ez a bővítmény "
-"alapértelmezésben le van tiltva. Ezen bővítmény működéséhez szükség lehet az "
-"<em>sshfs</em> csomag telepítésére az Ön által használt Linux disztribúció "
-"tárolóiból."
+"SSH sinhronizācijas serviss ļauj tev sinhronizēt piezīmes ar citu datoru caur "
+"SSH protokolu. Šis spraudnis pēc noklusējuma ir deaktivēts. Tev, iespējams, "
+"vajadzēs instalēt <em>sshfs</em> paku tavai Linux distribūcijai, lai "
+"šī pievienojumprogramma strādātu, bet tā uzstādīšanas pamācības apraksts nav "
+"iekļauts šajā palīdzības dokumentā."
 
 #: C/addins-sync.page:46(title)
 msgid "WebDav Sync Service"
-msgstr "WebDav szinkronizálási szolgáltatás"
+msgstr "WebDav Sinhronizācijas Serviss"
 
 #: C/addins-sync.page:47(p)
 msgid ""
@@ -1286,15 +1290,15 @@ msgid ""
 "FUSE file system</em> package installed for your Linux distribution to make "
 "this addin work which is outside the scope of this help document."
 msgstr ""
-"A WebDav szinkronizálási szolgáltatás bővítmény alapértelmezésben "
-"engedélyezett, és lehetővé teszi jegyzetei szinkronizálását egy távoli "
-"WebDav kiszolgálóval. Ezen bővítmény működéséhez szükség lehet a <em>wdfs "
-"FUSE fájlrendszer</em> csomag telepítésére az Ön által használt Linux "
-"disztribúció tárolóiból."
+"WebDav sinhronizācijas servisa pievienojumprogramma pēc noklusējuma ir "
+"aktivēta un ļauj tev sinhronizēt piezīmes ar attālu WebDav serveri. Tev, "
+"iespējams, būs nepieciešama <em>wdfs FUSE failu sistēmas</em> paka, instalēta "
+"tavai Linux distribūcijai, lai šī pievienojumprogramma strādātu, bet "
+"tās uzstādīšanas pamācības apraksts nav iekļauts šajā palīdzības failā."
 
 #: C/addins-sync.page:55(title)
 msgid "Web Sync Service"
-msgstr "Webes szinkronizálási szolgáltatás"
+msgstr "Tīmekļa sinhronizācijas serviss"
 
 #: C/addins-sync.page:56(p)
 msgid ""
@@ -1302,34 +1306,34 @@ msgid ""
 "server or service, such as Tomboy Online. At the time of writing, the Tomboy "
 "Online service has not launched."
 msgstr ""
-"A webes szinkronizálási szolgáltatás bővítmény lehetővé teszi jegyzetei "
-"szinkronizálását egy távoli webkiszolgálóval vagy szolgáltatással, mint a "
-"Tomboy Online. Ezen súgó készítésekor a Tomboy Online szolgáltatás még nem "
-"működik."
+"Tīmekļa sinhronizācijas servisa pievienojumprogramma ļauj tev sinhronizēt "
+"tavas "
+"piezīmes ar attālu web serveri vai servisu, piemēram Tomboy Online. Pašreiz "
+"Tomboy Online serviss vēl nav palaists."
 
 #: C/addins.page:8(desc)
 msgid "Add additional functionality to Tomboy."
-msgstr "További szolgáltatások a Tomboyhoz."
+msgstr "Pievieno papildus funkcionalitāti Tomboy programmai."
 
 #: C/addins.page:23(title) C/addins.page:27(title)
 msgid "Tomboy Addins"
-msgstr "Tomboy bővítmények"
+msgstr "Tomboy pievienojumprogrammas"
 
 #: C/addins.page:29(title)
 msgid "Manage addins for Tomboy"
-msgstr "Tomboy bővítmények kezelése"
+msgstr "Pārvaldi Tomboy pievienojumprogrammas"
 
 #: C/addins-formatting.page:7(desc)
 msgid "Plugins to add addition note formatting."
-msgstr "Bővítmények további jegyzetformázási lehetőségekhez."
+msgstr "Spraudņi papildus piezīmju formatēšanas iespējām."
 
 #: C/addins-formatting.page:22(title)
 msgid "Formatting Addins"
-msgstr "Formázó bővítmények"
+msgstr "Formatēšanas pievienojumprogrammas"
 
 #: C/addins-formatting.page:25(title)
 msgid "Fixed Width Addin"
-msgstr "Rögzített szélesség bővítmény"
+msgstr "Fixed Width pievienojumprogramma"
 
 #: C/addins-formatting.page:26(p)
 msgid ""
@@ -1337,13 +1341,13 @@ msgid ""
 "note. This addin is disabled by default. To enable, press the <gui>Enable</"
 "gui> button."
 msgstr ""
-"A Rögzített szélesség bővítmény a Tomboy jegyzet szövegét rögzített "
-"szélességűvé teszi. Ez a bővítmény alapértelmezésben ki van kapcsolva. "
-"Engedélyezéséhez nyomja meg az <gui>Engedélyezés</gui> gombot."
+"Fixed Width pievienojumprogramma maina tavu tekstu uz fiksētu platumu Tomboy "
+"piezīmēs. Šī pievienojumprogramma pēc noklusējuma ir deaktivēta. Lai "
+"aktivētu, spied <gui>Aktivēt</gui> pogu."
 
 #: C/addins-formatting.page:31(title)
 msgid "Underline Addin"
-msgstr "Aláhúzás bővítmény"
+msgstr "Underline pievienojumprogramma"
 
 #: C/addins-formatting.page:32(p)
 msgid ""
@@ -1354,33 +1358,32 @@ msgid ""
 "toolbar, and choose <gui>Underline</gui> or press <keyseq><key>CONTROL + U</"
 "key></keyseq>."
 msgstr ""
-"Az Aláhúzás bővítmény lehetővé teszi adott szövegrészek aláhúzását a jegyzet "
-"eszköztárának <gui>Szöveg</gui> gombja segítségével. Ez a bővítmény "
-"alapértelmezésben ki van kapcsolva. Az engedélyezéséhez nyomja meg az "
-"<gui>Engedélyezés</gui> gombot. Jelölje ki az aláhúzni kívánt szöveget, "
-"nyomja meg a jegyzet eszköztárán lévő <gui>Szöveg</gui> gombot, és válassza "
-"ki az <gui>Aláhúzás</gui> lehetőséget, vagy nyomja meg a "
-"<keyseq><key>CONTROL + U</key></keyseq> kombinációt."
+"Underline pievienojumprogramma ļauj tev pasvītrot teksta daļas tavā piezīmē, "
+"izmantojot <gui>Teksts</gui> ikonu rīkjoslā. Šī pievienojumprogramma pēc "
+"noklusējuma ir deaktivēta. Lai aktivētu, spied <gui>Aktivēt</gui> pogu. "
+"Iezīmē tekstu, kuru vēlies pasvītrot, spied <gui>Teksts</gui> ikonu rīkjoslā "
+"un izvēlies <gui>Pasvītrot</gui> vai nospied <keyseq><key>CONTROL + U</key><"
+"/keyseq>."
 
 #: C/addins-desktop.page:7(desc)
 msgid "Plugins to integrate with other applications and websites."
-msgstr "Bővítmények más alkalmazások és weboldalak integrációjához."
+msgstr "Spraudņi integrācijai ar citām programmām un tīmekļa lapām."
 
 #: C/addins-desktop.page:22(title)
 msgid "Desktop Integration Addins"
-msgstr "Asztali integrációs bővítmények"
+msgstr "Darbvirsmas integrācijas pievienojumprogrammas"
 
 #: C/addins-desktop.page:24(p)
 msgid ""
 "Desktop Integration addins interact with other applications or websites and "
 "Tomboy."
 msgstr ""
-"Az Asztali integrációs bővítmények más alkalmazások vagy webhelyek és a "
-"Tomboy együttműködését segítik."
+"Darbvirsmas integrācijas pievienojumprogrammas sadarbojas starp citām "
+"programmām vai tīmekļa lapām un Tomboy."
 
 #: C/addins-desktop.page:28(title)
 msgid "Bugzilla Links"
-msgstr "Bugzilla hivatkozások"
+msgstr "Bugzilla Links"
 
 #: C/addins-desktop.page:29(p)
 msgid ""
@@ -1390,15 +1393,15 @@ msgid ""
 "Bugzilla link. Clicking the link in the Tomboy note will open a browser "
 "window taking you to that Bugzilla page."
 msgstr ""
-"A Bugzilla hivatkozások bővítmény lehetővé teszi egy Bugzilla URL áthúzását "
-"a Tomboyba. A hivatkozás Tomboy jegyzetbe húzása után a Tomboy a hiba ikon "
-"mellett aktív hivatkozásként megjeleníti a hiba számát, így jelezve hogy "
-"Bugzilla hivatkozásról van szó. A hivatkozásra kattintás a Tomboy jegyzetben "
-"megnyit egy böngészőablakot, amely az adott Bugzilla oldalra viszi."
+"Bugzilla Links pievienojumprogramma ļauj tev pārvilkt Bugzilla URL no tavas "
+"pārlūkprogrammas uz Tomboy. Pēc saites pārvilkšanas uz Tomboy piezīmi, Tomboy "
+"attēlos kļūdas numuru kā aktīvu saiti blakus kļūdas ikonai, tādējādi norādot, "
+"ka tā ir Bugzilla saite. Nospiežot uz saites Tomboy piezīmē, tiks atvērts "
+"pārlūks ar Bugzilla lapu."
 
 #: C/addins-desktop.page:37(title)
 msgid "Evolution Mail Integration"
-msgstr "Evolution levelező integrálása"
+msgstr "Evolution Mail Integrācija"
 
 #: C/addins-desktop.page:38(p)
 msgid ""
@@ -1407,29 +1410,29 @@ msgid ""
 "the subject of the note will be displayed as a link. Clicking this link will "
 "open the email using Evolution."
 msgstr ""
-"Az Evolution levelező integrálása bővítmény lehetővé teszi egy e-mail "
-"áthúzását az Evolutionből Tomboy jegyzetbe. A jegyzet megjelenít egy boríték "
-"ikont, és a jegyzet tárgya hivatkozásként jelenik meg. A hivatkozásra "
-"kattintva megnyílik a levél az Evolutionben."
+"Evolution Mail integrācijas spraudnis ļauj tev pārvilkt e-pastu no Evolution "
+"uz Tomboy piezīmi. Tavai piezīmei būs vēstules ikona un piezīmes tēma tiks "
+"norādīta kā saite. Nospiežot uz saites tiks atvērts šis e-pasts Evolution "
+"programmā."
 
 #: C/addins-desktop.page:45(title)
 msgid "Printing Support"
-msgstr "Nyomtatás támogatása"
+msgstr "Drukāšanas atbalsts"
 
 #: C/addins-desktop.page:46(p)
 msgid ""
 "This addin is enabled by default and allows you print notes out. If you "
 "disable this addin you will no longer be able to print notes."
 msgstr ""
-"Ez a bővítmény alapértelmezésben engedélyezett, és lehetővé teszi a "
-"jegyzetek kinyomtatását. A bővítmény letiltása esetén nem lesz képes "
-"kinyomtatni jegyzeteit."
+"Šī pievienojumprogramma pēc noklusējuma ir aktivēta un ļauj tev izdrukāt "
+"piezīmes. Ja tu deaktivēsi šo pievienojumprogrammu, piezīmju drukāšana nebūs "
+"pieejama."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/index.page:0(None)
 msgid "translator-credits"
-msgstr "Kelemen Gábor <kelemeng at gnome dot hu>"
-
-#~ msgid "Really delete this note?"
-#~ msgstr "Valóban törli ezt a jegyzetet?"
+msgstr ""
+"Viesturs Ružāns; viesty@exs.lv; December, 2011.\n"
+"Aija Jauntēva\n"
+"Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>"
 

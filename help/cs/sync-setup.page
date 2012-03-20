@@ -41,7 +41,10 @@
 		<item><p><gui>Přejmenovat místní poznámku.</gui> Když je vybrána tato volba, bude aplikace Tomboy automaticky nahrazovat poznámku kopií ze vzdáleného počítače a poznámku v vašem počítači přejmenuje, takže informace v poznámce neztratíte.</p>
 		</item>
 		
-		<item><p><gui>Zaměnit místní poznámku s poznámkou na serveru. </gui> Když máte vybránu tuto volbu, pak Tomboy při synchronizaci přepíše a nahradí vaši poznámku uloženou na vašem počítači kopií ze vzdáleného serveru.</p>
+		<item><p><gui>Replace my local note with the server's update.</gui>
+  		If you have selected this option, when you sync, 
+		Tomboy will overwrite and replace your note stored on your
+		computer with a copy from the remote computer.</p>
 		
 		<note style="warning">
 		<p>Automatické přepsání poznámky je trvalé. Vaše místní poznámka bude přepsána kopií ze vzdáleného počítače a tím se ztratí informace, které jste měli uložené před započetím synchronizace.</p>
@@ -67,7 +70,13 @@
 
 	<title>Nastavení synchronizace přes SSH</title>
 	
-	<p>Abyste mohli synchronizovat své poznámky se serverem SSH, musíte mít nainstalovaný souborový systém FUSE nazývaný <app>sshfs</app>. Jak nainstalovat FUSE se dozvíte z dokumentace ke svému operačnímu systému. Budete také potřebovat klíč SSH ke svému účtu na serveru SSH, což lze udělat pomocí aplikace <app>GNOME Seahorse</app>, která bývá také nazývaná <app>Hesla a šifrovací klíče</app>.</p>
+	<p>In order to synchronize your notes with an SSH server, you will need
+      	the FUSE file system, also called <app>sshfs</app> installed.  Follow the
+      	documentation for your operating system to set up FUSE for your user.  
+      	You will also need an SSH key for your SSH server account that can be
+	provided by the <app>Seahorse</app> application, which is also known as 
+      	<app>Passwords and Encryption Keys</app>.
+	</p>
 	
 	<p>Je doporučené použít jako vzdálený počítač pro uchování synchronizovaných poznámek třetí počítač nebo server, abyste mohli synchronizaci provádět mezi více počítači.</p>
 
