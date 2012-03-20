@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="addins#manage"/>
+    <desc>Aktivē papildu piezīmju funkcionalitāti.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Tomboy Tools pievienojumprogrammas</title>
+
+	<p>Rīku pievienojumprogrammas papildina funkcionalitāti tavām Tomboy piezīmēm.</p>
+
+  <section id="backlinks">
+    <title>Atpakaļsaites</title>
+	<p><gui>Atpakaļsaites</gui> pievienojumprogramma pēc noklusējuma ir aktivēta un ļauj redzēt, kuras piezīmes ir piesaistītas piezīmei, kuru pašreiz skaties.</p> 
+  </section>
+
+<section id="html-export">
+  <title>Eksportēt uz HTML</title>
+  <p><gui>Eksportēt uz HTML</gui> pievienojumprogramma pēc noklusējuma ir aktivēta un eksportē individuālu piezīmi uz HTML.</p>
+	<p>Lai eksportētu piezīmi uz HTML, spied <gui>Rīki</gui> ikonu, piezīmju rīkjoslā, un izvēlies <gui>Eksportēt uz HTML</gui>. Tev uzreiz tiks dots piezīmes saglabāšanas logs. Izvēlies mapi, kurā saglabāt piezīmi un izmaini nosaukumu, ja tu vēlies, lai tas būtu citādāks, nekā piezīmes faila nosaukums. Piezīme tiks saglabāta HTML formātā un automātiski tiks attēlota tavā pārlūkprogrammā.</p>
+</section>
+
+<section id="timestamp">
+  <title>Ievietot laika spiedogu</title>
+  <p><gui>Ievietot laika spiedogu</gui> pievienojumprogramma pēc noklusējuma ir deaktivēta. Lai to aktivētu, Tomboy iestatījumu logā izvēlies <gui>Ievietot laika spiedogu</gui> pievienojumprogrammu un tad nospied <gui>Aktivēt</gui>.</p>
+	<p>Lai piezīmē ievietotu laika spiedogu, spied <gui>Rīki</gui> ikonu rīkjoslā un izvēlies <gui>Ievietot laika spiedogu</gui> vai nospied <key>Ctrl + D</key>.</p>
+</section>
+
+<section id="noteoftheday">
+  <title>Dienas piezīme</title>
+  <p><gui>Dienas piezīme</gui> pievienojumprogramma pēc noklusējuma ir deaktivēta. Lai to aktivētu, Tomboy iestatījumos izvēlies <gui>Dienas Piezīme</gui> pievienojumprogrammu un nospied <gui>Aktivēt</gui>.</p>
+	<p><gui>Dienas piezīme</gui> pievienojumprogramma izveidos jaunu piezīmi katru dienu ar tās dienas datuma virsrakstu, piemēram, <em>Šodien: Sestdiena, 25. decembris, 2011</em>. Piezīmē arī automātiski ievietos tās dienas <em>Uzdevumus</em> un <em>Tikšanās</em>.</p>
+</section>
+
+<section id="watcher">
+  <title>Piezīmju direktorija uzraugs</title>
+  <p>Piezīmju direktorija uzraugs pievienojumprogramma novēro tavu Tomboy piezīmju direktoriju. Ja pievienojumprogramma konstatē izmaiņas piezīmēs, tā automātiski piemēros izmaiņas un tās tiks attēlotas tavās piezīmēs. Šī pievienojumprogramma parasti tiek izmantota ar 3. puses sinhronizācijas servisiem, piemēram, Dropbox. 3. pušu sinhronizācijas servisu uzstādīšanas pamācības neietilpst šajā Palīdzībā.</p>
+</section>
+
+ </page>

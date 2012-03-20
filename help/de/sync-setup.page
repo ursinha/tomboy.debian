@@ -41,7 +41,7 @@
 		<item><p><gui>Meine lokale Notiz umbenennen.</gui> Wenn diese Option gewählt ist, so wird Tomboy automatisch die Notiz durch die Kopie des entfernten Rechners ersetzen und die Notiz auf Ihrem Rechner umbenennen. Dadurch wird Ihnen der Inhalt Ihrer Notiz nicht verloren gehen.</p>
 		</item>
 		
-		<item><p><gui>Meine lokale Notiz mit derjenigen des Servers ersetzen.</gui>. Wenn diese Option gewählt ist, so wird Tomboy beim Abgleichen Ihre Notiz überschreiben und durch eine Kopie des entfernten Rechners ersetzen.</p>
+		<item><p><gui>Meine lokale Notiz mit derjenigen des Servers ersetzen.</gui>. Wenn diese Option gewählt ist, so wird Tomboy beim Abgleichen Ihre Notiz überschreiben und durch eine Kopie der Notiz des entfernten Rechners ersetzen.</p>
 		
 		<note style="warning">
 		<p>Automatisches Überschreiben der Notiz ist unwiderruflich. Ihre lokale Notiz wird durch die des entfernten Rechners ersetzt und Sie werden Ihre vor dem Abgleich gespeicherten Informationen verlieren.</p>
@@ -67,7 +67,7 @@
 
 	<title>Abgleich mittels SSH konfigurieren</title>
 	
-	<p>Um Ihre Notizen mit einem SSH-Server abzugleichen, müssen Sie das FUSE-Dateisystem installiert haben, das auch <app>sshfs</app> genannt wird. Befolgen Sie den Anweisungen Ihres Betriebssystems, um FUSE für Ihr Benutzerkonto einzurichten. Sie benötigen auch einen SSH-Schlüssel für Ihr Benutzerkonto auf dem SSH-Server, welches durch die Anwendung <app>Seahorse</app> bereitgestellt werden kann, welche auch unter dem Namen <app>Passwörter und Verschlüsselung</app> bekannt ist.</p>
+	<p>Um Ihre Notizen mit einem SSH-Server abzugleichen, müssen Sie das FUSE-Dateisystem installiert haben, das auch <app>sshfs</app> genannt wird. Befolgen Sie die Anweisungen Ihres Betriebssystems, um FUSE für Ihr Benutzerkonto einzurichten. Sie benötigen auch einen SSH-Schlüssel für Ihr Benutzerkonto auf dem SSH-Server, welches durch die Anwendung <app>Seahorse</app> bereitgestellt werden kann, welche auch unter dem Namen <app>Passwörter und Verschlüsselung</app> bekannt ist.</p>
 	
 	<p>Es wird empfohlen, dass ein dritter Rechner oder Server als Gegenstelle zum Speichern der abgeglichenen Notizen verwendet wird, welche zwischen mehreren Rechnern abgeglichen werden sollen.</p>
 

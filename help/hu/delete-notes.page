@@ -13,7 +13,7 @@
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>GNOME Documentation Project</name>
+      <name>GNOME dokumentációs projekt</name>
       <years>2010</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,8 +24,7 @@
   <p>Egy jegyzet a törölni kívánt jegyzet eszköztárának <gui>Törlés</gui> gombjának megnyomásával törölhető.</p>
   
 <note style="warning">
-	<p>A jegyzet törlése végleges. A törlés után a jegyzet nem állítható vissza.</p> <p> You will be prompted <gui>Really delete 
-	this note?</gui> when deleting a note.</p>  
+	<p>A jegyzet törlése végleges. A törlés után a jegyzet nem állítható vissza.</p> <p>Jegyzet törlésekor a <gui>Biztosan törli ezt a jegyzetet?</gui> kérdést teszi fel a program.</p>  
 </note>
 	
 </page>

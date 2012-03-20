@@ -41,7 +41,7 @@
 		<item><p><gui>Renombrar mi nota local</gui>. Si esta opción está seleccionada, Tomboy reemplazará automáticamente la nota con una copia del equipo remoto y renombrará la nota en su equipo de tal forma que no pierda información en su nota.</p>
 		</item>
 		
-		<item><p><gui>Reemplazar mi nota local con la actualización del servidor</gui>. Si ha seleccionado esta opción, al sincronizar Tomboy se sobreescribirán y reemplazarán sus notas almacenadas en su equipo con una copia de las de su equipo remoto.</p>
+		<item><p><gui>Reemplazar mi nota local con la actualización del servidor</gui>. Si ha seleccionado esta opción, al sincronizar Tomboy se sobreescribirán y reemplazarán sus notas almacenadas en su equipo con una copia de las del equipo remoto.</p>
 		
 		<note style="warning">
 		<p>Sobreescribir la nota es permanente. La copia en el equipo remoto reemplazará su nota local y perderá la información almacenada antes de la sincronización.</p>
@@ -67,7 +67,7 @@
 
 	<title>Configurar sincronización usando SSH</title>
 	
-	<p>Para poder sincronizar sus notas contra un servidor SSH debe tener el sistema de archivos <app>sshfs</app> FUSE instalado. Siga la documentación para configurar FUSE para su sistema operativo y usuario. También deberá tener una clave SSH para su cuenta en el servidor SSH, que se añadirá a la aplicación <app>GNOME Seahorse</app>, también conocida como <app>Contraseñas y claves de cifrado</app>.</p>
+	<p>Para poder sincronizar sus notas contra un servidor SSH debe tener instalado el sistema de archivos FUSE, también llamado <app>sshfs</app>. Siga la documentación de su sistema operativo para configurar FUSE para su usuario. También deberá tener una clave SSH para su cuenta en el servidor SSH, que se añadirá a la aplicación <app>Seahorse</app>, también conocida como <app>Contraseñas y claves de cifrado</app>.</p>
 	
 	<p>Se recomienda usar un tercer equipo o servidor como el equipo remoto en el que almacenar las notas sincronizadas que se van a sincronizar entre múltiples equipos.</p>
 

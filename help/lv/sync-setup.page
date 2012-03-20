@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-setup" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Konfigurē Tomboy, lai sinhronizētu savas piezīmes.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <credit type="author copyright">
+      <name>GNOME Dokumentācijas Projekts</name>
+      <years>2010-2012</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Konfigurē un uzstādi sinhronizāciju</title>
+
+ <section id="enablesync">
+
+	<title>Aktivē sinhronizāciju</title>
+	
+	<p><app>Tomboy</app> spēj sinhronizēt tavas piezīmes starp vairākiem datoriem. Tas tev ļauj izveidot piezīmju rezerves kopijas citā datorā vai dalīties ar piezīmēm starp citiem datoriem tā, lai tev tām vienmēr būtu pieeja.</p>
+	
+	<p>Tu vari aktivēt sinhronizāciju, atverot <gui>Tomboy Iestatījumi</gui>, izmantojot savu peli, lai veiktu labo klikšķi uz Tomboy ikonas savā panelī, uzdevumu joslā vai dokā. Izvēlies <gui>Iestatījumi</gui> un tad izvēlies <gui>Sinhronizācija</gui> cilni. Tu vari arī atvērt <gui>Tomboy iestatījumi</gui> no <gui>Meklēt visas piezīmes</gui> izvēlnes. No šīs izvēlnes paņem <guiseq><gui>Rediģēt</gui><gui>Iestatījumi</gui></guiseq>.</p>
+
+ </section>
+
+ <section id="conflict">
+
+	<title>Piezīmju konfliktu pārvaldīšana</title>
+	
+	<p>Tu vari uzstādīt noklusēto rīcību Tomboy programmai, kad piezīme ir atklāta kā konfliktējoša. Tas var notikt, kad piezīmes netiek regulāri sinhronizētas.</p>
+	
+	<p><gui>Iestatījumi</gui> izvēlnē, nospied <gui>Paplašināti</gui> pogu. Tu vari izvēlēties 1 no 3 iespējām kā noklusēto konfliktu pārvaldīšanas rīcību.</p>
+	
+	<list>
+		<item><p><gui>Vienmēr jautāt man kā rīkoties.</gui>. Šī ir noklusētā rīcība un, kad Tomboy sastapsies ar konfliktu, tev vienmēr pieprasīs, vai tu vēlies pārsaukt lokālo piezīmi vai aizvietot to ar piezīmi no servera.</p></item>
+		<item><p><gui>Pārsaukt manu lokālo piezīmi.</gui> Ja ir izvēlēta šī iespēja, Tomboy automātiski aizvietos piezīmi ar kopiju no attālā datora un pārsauks to, lai tu nepazaudētu tajā esošo informāciju.</p>
+		</item>
+		
+		<item><p><gui>Aizvietot manu lokālo piezīmi ar servera atjauninājumu.</gui> Ja ir paņemta šī iespēja, kad tu sinhronizēsi, Tomboy pārrakstīs un aizvietos tavu piezīmi ar kopiju no attālā datora.</p>
+		
+		<note style="warning">
+		<p>Automātiskā piezīmju pārrakstīšana ir neatsaucama. Tava lokālā piezīme tiks aizvietota ar kopiju no attālā datora un tu pazaudēsi visu informāciju, kura bija pirms sinhronizēšanas.</p>
+		</note>
+                </item>
+		
+	</list>
+		
+
+ </section> 
+ 
+  <section id="webdav">
+
+	<title>Konfigurē sinhronizāciju, izmantojot WebDav</title>
+	
+	<p>Lai sinhronizētu piezīmes ar WebDAV serveri, tev vajadzēs wdfs FUSE failu sistēmu. Vadies pēc savas operētājsistēmas dokumentācijas, lai uzstādītu FUSE uz sava lietotāja konta. Kā arī būs nepieciešams uzstādīts GNOME Keyring.</p>
+	
+	<p>Izvēlies <gui>WebDAV</gui> no <gui>Serviss</gui> lejupkrītošā saraksta. Aizpildi savienojuma informāciju savam serverim un nospied <gui>Saglabāt</gui> pogu. Tagad tu vari sinhronizēt piezīmes.</p>
+
+ </section>
+ 
+  <section id="ssh">
+
+	<title>Konfigurē sinhronizāciju, izmantojot SSH</title>
+	
+	<p>Lai sinhronizētu piezīmes ar SSH serveri, tev ir nepieciešama FUSE failu sistēma, saukta arī par <app>sshfs</app>. Vadies pēc savas operētājsistēmas dokumentācijas, lai uzstādītu FUSE savam lietotāja kontam. Tev būs nepieciešama arī SSH atslēga savam SSH servera kontam, kuru var nodrošināt <app>Seahorse</app> programma, kura ir pazīstama arī kā <app>Paroles un atslēgas</app>.</p>
+	
+	<p>Ir ieteicams izmantot trešo datoru vai serveri kā attālināto datoru, lai uzglabātu sinhronizētās piezīmes, kuras ir plānots sinhronizēt starp vairākiem datoriem.</p>
+
+	<p>Atver <app>Passwords and Encryption Keys</app>, izvēloties  <guiseq><gui>Lietotnes</gui><gui>Piederumi</gui><gui>Passwords and Encryption Keys</gui></guiseq>. Nospied uz savas atslēgas un no izvēlnes, izvēlies <guiseq><gui>Attālināti</gui><gui>Konfigurē atslēgu drošai čaulai</gui></guiseq> un ievadi datora, ar kuru vēlies sinhronizēt piezīmes, domēna vārdu vai IP adresi, <gui>Datora Nosaukums</gui> laukā. Ievadi attālinātā datora lietotājvārdu <gui>Lietotājvārds</gui> laukā un spied <gui>Uzstādīt</gui>. Kad prasīts, ievadi paroli un atslēgas uzstādīšana tiks pabeigta.</p>
+	
+	<p>Tomboy programmā, izvēlies <gui>SSH</gui> no <gui>Serviss</gui> lejupkrītošā saraksta. Aizpildi servera savienojuma datus un nospied <gui>Saglabāt</gui> pogu. Kā <gui>Mapes Ceļš</gui>, neobligāts lauks, vajadzētu norādīt uz tukšu mapi. Tu esi gatavs sinhronizēt savas piezīmes.</p>
+
+ </section>
+
+ <section id="local">
+
+	<title>Konfigurē sinhronizāciju ar lokālu mapi</title>
+	
+	<p>Tu varētu vēlēties sinhronizēt savas piezīmes ar lokālu mapi, ja šī mape ir pieejama citām sistēmām, vai, ja šī mape ir attālā servera montējums.</p>
+
+	<p>Izvēlies Lokālo mapi no <gui>Serviss</gui> lejupkrītošā saraksta. Izvēlies vēlamās sinhronizācijas <gui>Mapes Ceļš</gui> un nospied <gui>Saglabāt</gui> pogu. Tu esi gatavs piezīmju sinhronizācijai.</p>
+
+ </section>
+ 
+ </page>

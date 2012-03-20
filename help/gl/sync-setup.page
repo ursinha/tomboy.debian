@@ -41,7 +41,10 @@
 		<item><p><gui>Renomear a miña nota local</gui>. Se esta opción está seleccionada, Tomboy substituirá automaticamente a nota cunha copia do equipo remoto e renomeará a nota no seu equipo de tal forma que non perda información na súa nota.</p>
 		</item>
 		
-		<item><p><gui>Substituír a miña nota local coa actualización do servidor</gui>. Se seleccionou esta opción, ao sincronizar Tomboy sobrescribiranse e substituirán as súas notas almacenadas no seu equipo cunha copia das súas do seu servidor remoto.</p>
+		<item><p><gui>Replace my local note with the server's update.</gui>
+  		If you have selected this option, when you sync, 
+		Tomboy will overwrite and replace your note stored on your
+		computer with a copy from the remote computer.</p>
 		
 		<note style="warning">
 		<p>Sobrescribir a nota é permanente. A copia no equipo remoto substituír a nota local e perderá a información almacenada antes da sincronización.</p>
@@ -67,7 +70,13 @@
 
 	<title>Configurar sincronización usando SSH</title>
 	
-	<p>Para poder sincronizar as súas notas contra un servidor SSH, precisa ter instalado o sistema de ficheiros FUSE <app>sshfs</app>. Siga a documentación para configurar FUSE para o seu sistema operativo e usuario. Tamén deberá ter unha chave SSH para a súa conta no servidor SSH, que se engadirá ao aplicativo <app>GNOME Seahorse</app>, tamén coñecida como <app>Contrasinais e chaves de cifrado</app>.</p>
+	<p>In order to synchronize your notes with an SSH server, you will need
+      	the FUSE file system, also called <app>sshfs</app> installed.  Follow the
+      	documentation for your operating system to set up FUSE for your user.  
+      	You will also need an SSH key for your SSH server account that can be
+	provided by the <app>Seahorse</app> application, which is also known as 
+      	<app>Passwords and Encryption Keys</app>.
+	</p>
 	
 	<p>Recoméndase usar un terceiro equipo ou servidor como o equipo remoto no que almacenar as notas sincronizadas que se van sincronizar entre múltiples equipos.</p>
 

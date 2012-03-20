@@ -41,7 +41,10 @@
 		<item><p><gui>重命名我的本地便笺。</gui>选中此项，便笺将自动从远程计算机复制一份便笺替换本地的，而将本地便笺重命名，这样您就不会丢失您的便笺信息。</p>
 		</item>
 		
-		<item><p><gui>用服务器上的便笺更新我的本地便笺。</gui>选中此项，当您同步便笺时，总是从远程计算机上的便笺替换本地便笺。</p>
+		<item><p><gui>Replace my local note with the server's update.</gui>
+  		If you have selected this option, when you sync, 
+		Tomboy will overwrite and replace your note stored on your
+		computer with a copy from the remote computer.</p>
 		
 		<note style="warning">
 		<p>便笺的替换是永久性的，您本地的便笺将会被远程计算机的便笺所替换，同步前该便笺中存放的信息将会丢失。</p>
@@ -67,7 +70,13 @@
 
 	<title>配置 SSH 同步</title>
 	
-	<p>要使用 SSH 服务来同步便笺，您需要安装 FUSE 文件系统，也叫 <app>ssfs</app>。在安装过程中，系统将会为用户设置 FUSE，您还需要 SSH 服务器的 SSH 密钥，此密钥可以由 <app>GNOME Seahorse</app>提供，也称为<app>密码和加密密钥</app>程序。</p>
+	<p>In order to synchronize your notes with an SSH server, you will need
+      	the FUSE file system, also called <app>sshfs</app> installed.  Follow the
+      	documentation for your operating system to set up FUSE for your user.  
+      	You will also need an SSH key for your SSH server account that can be
+	provided by the <app>Seahorse</app> application, which is also known as 
+      	<app>Passwords and Encryption Keys</app>.
+	</p>
 	
 	<p>推荐使用第三方计算机或服务器作为远程计算机来存放需要在多台计算机之间同步的便笺。</p>
 
