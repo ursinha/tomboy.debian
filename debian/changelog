@@ -1,3 +1,11 @@
+tomboy (1.10.0-1) unstable; urgency=low
+
+  * [277fd7f] Imported Upstream version 1.10.0
+    - Remember last open notes on hard shutdown
+  * [b863565] Stable release; update gbp.conf branches
+
+ -- Iain Lane <laney@debian.org>  Wed, 28 Mar 2012 11:32:48 +0100
+
 tomboy (1.9.10-1) unstable; urgency=low
 
   * [91a0237] Imported Upstream version 1.9.10
