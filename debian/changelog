@@ -1,3 +1,14 @@
+tomboy (1.11.1-1) experimental; urgency=low
+
+  * [decde44] gbp.conf back to exp branches
+  * [4e4e74f] Imported Upstream version 1.11.1
+    - Allow cmdline args to be passed to add-ins
+    - Fix for multi-monitor configurations and notes off the screen
+    - Fix Typo in manpage '---note-path'
+    - Fix for RemoveBrokenLinks-with-search
+
+ -- Iain Lane <laney@debian.org>  Thu, 03 May 2012 20:15:51 +0100
+
 tomboy (1.10.0-1) unstable; urgency=low
 
   * [277fd7f] Imported Upstream version 1.10.0
