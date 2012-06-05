@@ -4,9 +4,9 @@ Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=663216
 
 Index: tomboy/configure.in
 ===================================================================
---- tomboy.orig/configure.in	2012-03-12 21:05:16.128137316 +0000
-+++ tomboy/configure.in	2012-03-12 21:06:16.085786547 +0000
-@@ -232,8 +232,8 @@
+--- tomboy.orig/configure.in	2012-06-05 14:28:11.806991429 +0100
++++ tomboy/configure.in	2012-06-05 14:31:50.962981784 +0100
+@@ -235,8 +235,8 @@
  # Evolution.dll needs GMime#
  #
  if test "x$ENABLE_GNOME" != "xno"; then
