@@ -1,3 +1,15 @@
+tomboy (1.11.2-1) experimental; urgency=low
+
+  * [9be0acb] Imported Upstream version 1.11.2
+    - Performance fix for note deletion
+    - Bump Mono profile to 4.0
+    - Ignore acronyms in spell-check
+    - Update documentation, command-line usage
+  * [b8da4f4] Drop obsolete 30_fix_manpage_syntax patch
+  * [aea1cb8] Refresh other patches
+
+ -- Iain Lane <laney@debian.org>  Tue, 05 Jun 2012 14:28:12 +0100
+
 tomboy (1.11.1-1) experimental; urgency=low
 
   * [decde44] gbp.conf back to exp branches
