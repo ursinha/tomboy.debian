@@ -13,7 +13,7 @@
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>GNOME Documentation Project</name>
+      <name>Έργο Τεκμηρίωσης GNOME</name>
       <years>2010</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,8 +24,7 @@
   <p>Μπορείτε να διαγράψετε μία σημείωση πιέζοντας το εικονίδιο <gui>Διαγραφή</gui> στην εργαλειοθήκη της σημείωσης που επιθυμείτε να διαγράψετε.</p>
   
 <note style="warning">
-	<p>Η διαγραφή μίας σημείωσης είναι μόνιμη. Ύστερα από τη διαγραφή, η σημείωση δεν είναι ανακτήσιμη.</p> <p> You will be prompted <gui>Really delete 
-	this note?</gui> when deleting a note.</p>  
+	<p>Η διαγραφή μίας σημείωσης είναι μόνιμη. Ύστερα από τη διαγραφή, η σημείωση δεν είναι ανακτήσιμη.</p> <p>Θα ειδοποιηθείτε <gui>Είστε βέβαιος πως θέλετε να διαγράψετε αυτήν την σημείωση;</gui> όταν διαγράφετε μία σημείωση.</p>  
 </note>
 	
 </page>

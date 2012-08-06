@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#sync"/>
-    <desc>Configure Tomboy to synchronize your notes.</desc>
+    <desc>Configurar a sincronização de notas do Tomboy.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
     <credit type="author">
       <name>Paul Cutler</name>
@@ -87,11 +87,7 @@
 
 	<title>Configure Sync using WebDav</title>
 	
-	<p>In order to synchronize your notes with a WebDAV server, you will 
-	need the wdfs FUSE file system installed.  Follow the documentation for
-	 your operating system to set up FUSE for your user.  You will also 
-	 need the GNOME Keyring installed.
-	</p>
+	<p>Para sincronizar suas notas com um servidor WebDAV, será necessário possuir o sistema de arquivos wdfs FUSE instalado. Consulte a documentação do seu sistema operacional para configurar o FUSE para o seu usuário. Você também precisará ter o Chaveiro GNOME instalado.</p>
 	
 	<p>Choose <gui>WebDAV</gui> from the <gui>Service</gui>
  	drop-down list. Fill in the connection information for your server, and
@@ -140,10 +136,7 @@
 
 	<title>Configure Sync to a local folder</title>
 	
-	<p>You may want to synchronize your notes to a local folder if that 
-	folder is available to your other systems, or if that folder represents 
-	a local mount of a remote server.
-	</p>
+	<p>Você pode desejar sincronizar suas notas em uma pasta local se essa pasta estiver disponível para outros sistemas ou se ela representar uma montagem local de um servidor remoto.</p>
 
 	<p>Choose Local Folder from the <gui>Service</gui>
 	drop-down list. Choose the desired synchronization 

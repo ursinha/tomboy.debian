@@ -24,7 +24,7 @@
 	or websites and Tomboy.</p>
 
 <section id="bugzilla">
-  <title>Bugzilla Links</title>
+  <title>Link do Bugzilla</title>
   <p>The Bugzilla Links addin allows you to drag a Bugzilla URL from your
 	browser into Tomboy.  After dragging a link into a Tomboy note, Tomboy
 	will display the bug number as an active link next to bug icon to show
@@ -33,7 +33,7 @@
 </section>
 
 <section id="evolution">
-  <title>Evolution Mail Integration</title>
+  <title>Integração de e-mail do Evolution</title>
   <p>The Evolution Mail Integration plugin allows you to drag an email from Evolution
 	into a Tomboy note.  Your note will display an envelope icon and the 
 	subject of the note will be displayed as a link.  Clicking this link
