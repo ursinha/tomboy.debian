@@ -1,3 +1,13 @@
+tomboy (1.11.5-1) experimental; urgency=low
+
+  * [b67c86c] Imported Upstream version 1.11.5
+    - Fix Evolution add-in gmime dependency
+    - Add match count in note search
+    - Sanitize sync url
+  * [3b08591] Delete 40_use_gmime_2.6.patch: applied upstream.
+
+ -- Iain Lane <laney@debian.org>  Mon, 06 Aug 2012 17:56:45 +0100
+
 tomboy (1.11.2-1) experimental; urgency=low
 
   * [9be0acb] Imported Upstream version 1.11.2
