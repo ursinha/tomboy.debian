@@ -22,9 +22,7 @@
 
   <title>Create a notebook</title>    
   
-  <p>Notebooks allow you to group related notes together.  
-    You can add a note to a notebook in the Search All Notes window or directly 
-    inside of a Note.</p>
+  <p>Catálogos permitem que você agrupe notas relacionadas. Você pode adicionar uma nota a um catálogo na janela Pesquisar Todas as Notas ou diretamente dentro de uma nota.</p>
   
 <steps>
 	<item>
@@ -42,7 +40,7 @@
 		<gui>New Notebook</gui></guiseq>.</p>
 	</item>
 	<item>
-		<p>Enter a name for the new notebook.</p>
+		<p>Digite um nome para o novo catálogo.</p>
 	</item>
 </steps>
 
@@ -61,7 +59,7 @@
 		choose <gui>New Notebook</gui>.</p>
 	</item>
 	<item>
-		<p>Enter a name for the new notebook.</p>
+		<p>Digite um nome para o novo catálogo.</p>
 	</item>
 </steps>
 
@@ -74,7 +72,7 @@
 		<gui>Notebooks</gui> <gui>New Notebook</gui></guiseq>.</p>
 	</item>
 	<item>
-		<p>Enter a name for the new notebook.</p>
+		<p>Digite um nome para o novo catálogo.</p>
 	</item>
 </steps>	
 

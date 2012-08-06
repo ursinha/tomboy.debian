@@ -20,16 +20,7 @@
 
  <title>Προτιμήσεις σημειώσεων</title>
  
- 	<p>You can change the default settings when typing notes
- 	in Tomboy.  To change your note settings, open
- 	 <gui>Tomboy Preferences</gui> by 
-	using your mouse to right click on the Tomboy icon in your panel,
-	taskbar or dock, and choose <gui>Preferences</gui> and  select
-	the <gui>Editing</gui> tab.  You can also open <gui> Tomboy
-	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
-	the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
-	</guiseq>.
-	</p>
+ 	<p>Μπορείτε να τροποποιήσετε τις προεπιλεγμένες ρυθμίσεις κατά την πληκτρολόγηση σημειώσεων στο Tomboy. Για να το κάνετε αυτό, ανοίξτε τις <gui>Προτιμήσεις Tomboy</gui> χρησιμοποιώντας το δεξί κλικ του ποντικιού σας στο εικονίδιο του Tomboy στον πίνακα εργασίας σας, στη γραμμή εργασίων ή στο dock και επιλέξτε <gui>Προτιμήσεις</gui>, ύστερα επιλέξτε την καρτέλα <gui>Επεξεργασία</gui>. Μπορείτε επίσης να ανοίξετε τις <gui>Προτιμήσεις Tomboy</gui> από το διάλογο <gui>Αναζήτηση όλων των σημειώσεων</gui>. Από το μενού, επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui></guiseq>.</p>
  
  <section id="spellcheck">
    <title>Ορθογραφικός έλεγχος</title>

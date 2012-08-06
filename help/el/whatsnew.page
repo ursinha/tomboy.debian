@@ -4,7 +4,7 @@
   <info>
     <link type="guide" xref="index#new"/>
     <revision pkgversion="2.30" version="0.1" date="2010-05-29" status="draft"/>
-    <desc>Το καινούριο θα δείτε στις <app>Σημειώσεις Tomboy</app>.</desc>
+    <desc>Τι καινούργιο θα δείτε στις <app>Σημειώσεις Tomboy</app>.</desc>
     <credit type="author">
       <name>Paul Cutler</name>
       <email>pcutler@gnome.org</email>
@@ -18,7 +18,7 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Τι καινούριο θα δείτε στο <app>Tomboy</app></title>
+  <title>Τι καινούργιο θα δείτε στο <app>Tomboy</app></title>
 
   <p>Το <app>Tomboy</app> έχει υποστεί διάφορες νέες βελτιώσεις. Το Tomboy θα πρέπει να εκκινείται αρκετά γρηγορότερα χάρη στις βελτιώσεις που έγιναν στο χρόνο εκκίνησής του.</p>
   <p>Η αντιγραφή και η επικόλληση από το Tomboy σε άλλες εφαρμογές έχουν βελτιωθεί για να υποστηρίζουν τη μορφοποίηση σε άλλες εφαρμογές που μπορούν να κάνουν ανάγνωση αρχείων τύπου HTML, όπως το Evolution, το OpenOffice.org και άλλες.</p>
