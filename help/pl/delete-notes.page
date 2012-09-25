@@ -13,7 +13,7 @@
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>GNOME Documentation Project</name>
+      <name>Projekt dokumentacji GNOME</name>
       <years>2010</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,8 +24,7 @@
   <p>Aby usunąć notatkę, należy kliknąć na pasku narzędziowym usuwanej notatki ikonę <gui>Usuń</gui>.</p>
   
 <note style="warning">
-	<p>Opcja usunięcia notatki jest nieodwracalna. Nie można odzyskać notatki po jej usunięciu.</p> <p> You will be prompted <gui>Really delete 
-	this note?</gui> when deleting a note.</p>  
+	<p>Opcja usunięcia notatki jest nieodwracalna. Nie można odzyskać notatki po jej usunięciu.</p> <p>Podczas usuwania notatki pojawi się monit potwierdzenia <gui>Na pewno usunąć tę notatkę?</gui>.</p>  
 </note>
 	
 </page>

@@ -72,10 +72,10 @@
  </section>
 
 <section id="newnotetemplate">
-  <title>Tworzenie nowego wzorca notatki</title>
-  <p>Użytkownik może tworzyć nowe wzorce notatki przy każdym tworzeniu nowej notatki.</p>
+  <title>Tworzenie nowego wzoru notatki</title>
+  <p>Użytkownik może tworzyć nowe wzory notatki przy każdym tworzeniu nowej notatki.</p>
   
-  <p>Naciśnij przycisk <gui>Otwórz wzorzec nowej notatki</gui> w preferencjach programu na karcie <gui>Modyfikowanie</gui>. Wyświetlony zostanie nowy szablon przypominający notatkę programu. Zamień domyślny tekst w notatce (<gui>"Treść nowej notatki"</gui>) na nowy tekst wzorca. Aby ukończyć tworzenie nowego wzorca, należy zamknąć notatkę. Nowy wzorzec pojawi się każdorazowo przy tworzeniu nowej notatki.</p>
+  <p>Naciśnij przycisk <gui>Otwórz wzór nowej notatki</gui> w preferencjach programu na karcie <gui>Modyfikowanie</gui>. Wyświetlony zostanie nowy szablon przypominający notatkę programu. Zamień domyślny tekst w notatce (<gui>"Treść nowej notatki"</gui>) na nowy tekst wzoru. Aby ukończyć tworzenie nowego wzoru, należy zamknąć notatkę. Nowy wzór pojawi się każdorazowo przy tworzeniu nowej notatki.</p>
    
 </section>
 

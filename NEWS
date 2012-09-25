@@ -9,6 +9,14 @@ Please send questions and suggestions to
 Please report bugs using http://bugzilla.gnome.org/
 (http://bugzilla.gnome.org/enter_bug.cgi?product=Tomboy).
 
+Version 1.12.0
+
+Version 1.11.7
+* Translation updates: en_GB, id, it, ko, lt, pl
+
+Version 1.11.6
+* Translation updates: ja
+
 Version 1.11.5
 * Fix Evolution add-in gmime dependency for Ubuntu 12.04 (Alex Tereschenko)
 * Add match count in note search (#666194)

@@ -28,7 +28,7 @@
     <title>Okno programu <gui>Tomboy</gui></title>
     <desc>Okno główne programu</desc>
     <media type="image" src="figures/tomboy.png" mime="image/png" style="right">
-      <p>Domyślna notatka <app>Tomboy</app>.</p>
+      <p>Domyślna notatka programu <app>Tomboy</app>.</p>
     </media>
   </figure>
 
