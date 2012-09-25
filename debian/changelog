@@ -31,6 +31,12 @@ tomboy (1.11.1-1) experimental; urgency=low
 
  -- Iain Lane <laney@debian.org>  Thu, 03 May 2012 20:15:51 +0100
 
+tomboy (1.10.0-2) unstable; urgency=low
+
+  * [9c1e942] Compress deb data member with xz (Closes: #688706)
+
+ -- Iain Lane <laney@debian.org>  Tue, 25 Sep 2012 09:56:42 +0100
+
 tomboy (1.10.0-1) unstable; urgency=low
 
   * [277fd7f] Imported Upstream version 1.10.0
