@@ -1,3 +1,11 @@
+tomboy (1.12.0-1) experimental; urgency=low
+
+  * [9c1e942] Compress deb data member with xz (Closes: #688706)
+  * [43258af] Imported Upstream version 1.12.0
+    + Translation updates
+
+ -- Iain Lane <laney@debian.org>  Tue, 25 Sep 2012 10:40:40 +0100
+
 tomboy (1.11.5-1) experimental; urgency=low
 
   * [b67c86c] Imported Upstream version 1.11.5
