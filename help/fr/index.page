@@ -33,15 +33,15 @@
   <section id="prefs" style="2column">
 	<title>Préférences de Tomboy</title>
   </section>
-
+<!--
   <section id="advanced" style="2column">
-    <title>Actions avancées</title>
+    <title>Advanced Actions</title>
   </section>
 
   <section id="problems">
-    <title>Problèmes courants</title>
+    <title>Common Problems</title>
   </section>
-
+-->
   <section id="new">
     <title>Nouveautés</title>
   </section>

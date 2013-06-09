@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tomboy-help\n"
-"POT-Creation-Date: 2012-03-08 22:08+0000\n"
-"PO-Revision-Date: 2012-08-24 18:53+0200\n"
+"POT-Creation-Date: 2013-03-16 19:18+0000\n"
+"PO-Revision-Date: 2013-03-20 19:10+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -25,11 +25,10 @@ msgid "What's new in <app>Tomboy Notes</app>."
 msgstr "Nowości w programie <app>Tomboy</app>."
 
 #: C/whatsnew.page:13(name) C/sync-setup.page:11(name) C/sync.page:11(name)
-#: C/search.page:12(name) C/problems.page:11(name) C/prefs.page:9(name)
-#: C/note-edit-prefs.page:11(name) C/introduction.page:12(name)
-#: C/index.page:9(name) C/hotkeys.page:11(name) C/edit-note.page:13(name)
-#: C/delete-notes.page:14(name) C/create-note.page:13(name)
-#: C/create-notebook.page:13(name) C/advanced.page:11(name)
+#: C/search.page:12(name) C/prefs.page:9(name) C/note-edit-prefs.page:11(name)
+#: C/introduction.page:12(name) C/index.page:9(name) C/hotkeys.page:11(name)
+#: C/edit-note.page:13(name) C/delete-notes.page:14(name)
+#: C/create-note.page:13(name) C/create-notebook.page:11(name)
 #: C/addins-tools.page:10(name) C/addins-sync.page:10(name)
 #: C/addins.page:11(name) C/addins-formatting.page:10(name)
 #: C/addins-desktop.page:10(name)
@@ -37,14 +36,13 @@ msgid "Paul Cutler"
 msgstr "Paul Cutler"
 
 #: C/whatsnew.page:14(email) C/sync-setup.page:12(email) C/sync.page:12(email)
-#: C/search.page:13(email) C/problems.page:12(email) C/prefs.page:10(email)
+#: C/search.page:13(email) C/prefs.page:10(email)
 #: C/note-edit-prefs.page:12(email) C/introduction.page:13(email)
 #: C/index.page:10(email) C/hotkeys.page:12(email) C/edit-note.page:14(email)
 #: C/delete-notes.page:15(email) C/create-note.page:14(email)
-#: C/create-notebook.page:14(email) C/advanced.page:12(email)
-#: C/addins-tools.page:11(email) C/addins-sync.page:11(email)
-#: C/addins.page:12(email) C/addins-formatting.page:11(email)
-#: C/addins-desktop.page:11(email)
+#: C/create-notebook.page:12(email) C/addins-tools.page:11(email)
+#: C/addins-sync.page:11(email) C/addins.page:12(email)
+#: C/addins-formatting.page:11(email) C/addins-desktop.page:11(email)
 msgid "pcutler@gnome.org"
 msgstr "pcutler@gnome.org"
 
@@ -443,18 +441,6 @@ msgstr ""
 "wybranych notatnikach. Wybierz notatnik, który chcesz przeszukać, a "
 "następnie wpisz swoje kryteria wyszukiwania."
 
-#: C/problems.page:8(desc)
-msgid "Common Problems."
-msgstr "Częste problemy."
-
-#: C/problems.page:23(title)
-msgid "Common problems"
-msgstr "Częste problemy"
-
-#: C/problems.page:27(title)
-msgid "Backing up and Restoring your notes"
-msgstr "Tworzenie kopii zapasowych i przywracanie notatek"
-
 #: C/prefs.page:21(title) C/prefs.page:36(title) C/index.page:36(title)
 msgid "Tomboy Preferences"
 msgstr "Preferencje programu Tomboy"
@@ -495,8 +481,8 @@ msgstr ""
 "Windows lub w docku systemu Mac OS X, a następnie wybrać opcję "
 "<gui>Preferencje</gui> oraz kartę <gui>Redagowanie</gui>. Okno "
 "<gui>Preferencje</gui> można także otworzyć z okna <gui>\"Przeszukiwanie "
-"notatek\"</gui>. Z menu wybierz opcję <guiseq><gui>Edycja</gui>Preferencje</"
-"gui></guiseq>."
+"notatek\"</gui>. Z menu wybierz opcję <guiseq><gui>Edycja</"
+"gui><gui>Preferencje</gui></guiseq>."
 
 #: C/note-edit-prefs.page:37(title)
 msgid "Spell Check"
@@ -694,8 +680,8 @@ msgstr ""
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/introduction.page:44(None)
-msgid "@@image: 'figures/tomboy.png'; md5=5e3c78a4507fadcaba53b74a0d3f30ae"
-msgstr "@@image: 'figures/tomboy.png'; md5=5e3c78a4507fadcaba53b74a0d3f30ae"
+msgid "@@image: 'figures/tomboy.png'; md5=b9a2efd273d462e5374c3d624a65bd52"
+msgstr "@@image: 'figures/tomboy.png'; md5=b9a2efd273d462e5374c3d624a65bd52"
 
 #: C/introduction.page:8(desc)
 msgid "Introduction to <app>Tomboy Notes</app>."
@@ -759,14 +745,6 @@ msgstr "Zarządzanie notatkami"
 #: C/index.page:28(title)
 msgid "Organizing Notes"
 msgstr "Sortowanie notatek"
-
-#: C/index.page:40(title)
-msgid "Advanced Actions"
-msgstr "Działania zaawansowane"
-
-#: C/index.page:44(title)
-msgid "Common Problems"
-msgstr "Częste problemy"
 
 #: C/index.page:48(title)
 msgid "What's New"
@@ -1028,15 +1006,15 @@ msgstr ""
 "łączenia notatek i formatowania tekstu. Więcej informacji: <link xref=\"edit-"
 "notes\"/>."
 
-#: C/create-notebook.page:10(desc)
+#: C/create-notebook.page:8(desc)
 msgid "Create a new notebook in Tomboy."
 msgstr "Tworzenie nowego notatnika."
 
-#: C/create-notebook.page:25(title)
+#: C/create-notebook.page:23(title)
 msgid "Create a notebook"
 msgstr "Tworzenie nowego notatnika"
 
-#: C/create-notebook.page:27(p)
+#: C/create-notebook.page:25(p)
 msgid ""
 "Notebooks allow you to group related notes together. You can add a note to a "
 "notebook in the Search All Notes window or directly inside of a Note."
@@ -1045,7 +1023,7 @@ msgstr ""
 "Notatkę można dodać do notatnika po otworzeniu okna \"Przeszukiwanie notatek"
 "\" lub bezpośrednio w oknie notatki."
 
-#: C/create-notebook.page:33(p)
+#: C/create-notebook.page:31(p)
 msgid ""
 "Click on the Tomboy note icon present in the GNOME Panel, the taskbar in "
 "Microsoft Windows, or the dock in Mac OS X. A menu will appear."
@@ -1053,22 +1031,22 @@ msgstr ""
 "Kliknij ikonę programu Tomboy w panelu GNOME, na pasku zadań systemu "
 "Microsoft Windows lub w docku systemu Mac OS X. Pojawi się wówczas menu."
 
-#: C/create-notebook.page:43(p)
+#: C/create-notebook.page:41(p)
 msgid "Select <guiseq><gui>Notebooks</gui><gui>New Notebook</gui></guiseq>."
 msgstr ""
 "Z menu podręcznego wybierz <guiseq><gui>Notatniki</gui><gui>Nowy notatnik</"
 "gui></guiseq>."
 
-#: C/create-notebook.page:47(p) C/create-notebook.page:66(p)
-#: C/create-notebook.page:79(p)
+#: C/create-notebook.page:45(p) C/create-notebook.page:64(p)
+#: C/create-notebook.page:77(p)
 msgid "Enter a name for the new notebook."
 msgstr "Wprowadzić nazwę notatnika."
 
-#: C/create-notebook.page:51(p)
+#: C/create-notebook.page:49(p)
 msgid "To create a new notebook from the <gui>Search All Notes</gui> dialog:"
 msgstr "Aby utworzyć nowy notatnik w oknie \"Przeszukiwanie notatek\", należy:"
 
-#: C/create-notebook.page:56(p)
+#: C/create-notebook.page:54(p)
 msgid ""
 "Open <gui>Search All Notes</gui> by choosing it from the Tomboy icon on the "
 "GNOME Panel, the taskbar in Microsoft Windows, or the dock in Mac OS X, or "
@@ -1078,7 +1056,7 @@ msgstr ""
 "programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub "
 "w docku systemu Mac OS X, lub kliknąć przycisk Szukaj w oknie notatki."
 
-#: C/create-notebook.page:62(p)
+#: C/create-notebook.page:60(p)
 msgid ""
 "Using your mouse, right click in the left hand box and choose <gui>New "
 "Notebook</gui>."
@@ -1086,33 +1064,17 @@ msgstr ""
 "Kliknąć prawym przyciskiem myszy w lewej części okna i wybrać polecenie "
 "<gui>Nowy notatnik</gui>."
 
-#: C/create-notebook.page:70(p)
+#: C/create-notebook.page:68(p)
 msgid "Or:"
 msgstr "Lub:"
 
-#: C/create-notebook.page:74(p)
+#: C/create-notebook.page:72(p)
 msgid ""
 "With <gui>Search All Notes</gui> open, choose <guiseq><gui>File</"
 "gui><gui>Notebooks</gui><gui>New Notebook</gui></guiseq>."
 msgstr ""
 "Po otwarciu okna <gui>Przeszukiwanie notatek</gui> należy wybrać z menu "
 "<guiseq><gui>Plik</gui><gui>Notatniki</gui><gui>Nowy notatnik</gui></guiseq>."
-
-#: C/advanced.page:8(desc)
-msgid "Advanced actions and help."
-msgstr "Działania zaawansowane i pomoc."
-
-#: C/advanced.page:23(title)
-msgid "Advanced actions"
-msgstr "Działania zaawansowane"
-
-#: C/advanced.page:27(title)
-msgid "Creating a Note Template"
-msgstr "Tworzenie wzoru notatki"
-
-#: C/advanced.page:33(title)
-msgid "Tomboy Notes Location"
-msgstr "Położenie notatek programu Tomboy"
 
 #: C/addins-tools.page:7(desc)
 msgid "Enable additional note functionality."
@@ -1440,7 +1402,7 @@ msgstr ""
 #: C/index.page:0(None)
 msgid "translator-credits"
 msgstr ""
-"Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2011, 2012\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2011, 2012, 2013\n"
 "Joanna Mazgaj <jmazgaj@aviary.pl>, 2008\n"
 "Aleksander Łukasiewicz <aleksander@lukasiewicz.org>, 2009\n"
 "Asia Słowik <asiaslowik@gmail.com>, 2011"

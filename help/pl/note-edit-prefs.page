@@ -20,7 +20,7 @@
 
  <title>Preferencje notatek</title>
  
- 	<p>Można zmienić domyślne ustawienia tekstu. Aby zmienić ustawienia notatki, należy otworzyć okno <gui>Preferencje</gui>, klikając prawym przyciskiem myszy na ikonę programu w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X, a następnie wybrać opcję <gui>Preferencje</gui> oraz kartę <gui>Redagowanie</gui>. Okno <gui>Preferencje</gui> można także otworzyć z okna <gui>"Przeszukiwanie notatek"</gui>. Z menu wybierz opcję <guiseq><gui>Edycja</gui>Preferencje</guiseq></p>
+ 	<p>Można zmienić domyślne ustawienia tekstu. Aby zmienić ustawienia notatki, należy otworzyć okno <gui>Preferencje</gui>, klikając prawym przyciskiem myszy na ikonę programu w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X, a następnie wybrać opcję <gui>Preferencje</gui> oraz kartę <gui>Redagowanie</gui>. Okno <gui>Preferencje</gui> można także otworzyć z okna <gui>"Przeszukiwanie notatek"</gui>. Z menu wybierz opcję <guiseq><gui>Edycja</gui><gui>Preferencje</gui></guiseq>.</p>
  
  <section id="spellcheck">
    <title>Sprawdzanie pisowni podczas pisania</title>

@@ -105,6 +105,7 @@ namespace Tomboy
 			find_combo.Changed += OnEntryChanged;
 			find_combo.Entry.ActivatesDefault = false;
 			find_combo.Entry.Activated += OnEntryActivated;
+			find_combo.Entry.FocusInEvent += OnEntryFocusIn;
 			if (previous_searches != null) {
 				foreach (string prev in previous_searches) {
 					find_combo.AppendText (prev);
@@ -296,6 +297,7 @@ namespace Tomboy
 			notebooksTree.Selection.Changed += OnNotebookSelectionChanged;
 			notebooksTree.ButtonPressEvent += OnNotebooksTreeButtonPressed;
 			notebooksTree.KeyPressEvent += OnNotebooksKeyPressed;
+			notebooksTree.FocusInEvent += OnNotebooksFocusIn;
 
 			notebooksTree.Show ();
 			Gtk.ScrolledWindow sw = new Gtk.ScrolledWindow ();
@@ -337,8 +339,6 @@ namespace Tomboy
 			tree.MotionNotifyEvent += OnTreeViewMotionNotify;
 			tree.ButtonReleaseEvent += OnTreeViewButtonReleased;
 			tree.DragDataGet += OnTreeViewDragDataGet;
-			tree.FocusInEvent += OnTreeViewFocused;
-			tree.FocusOutEvent += OnTreeViewFocusedOut;
 
 			tree.EnableModelDragSource (Gdk.ModifierType.Button1Mask | Gdk.ModifierType.Button3Mask,
 						    targets,
@@ -952,20 +952,6 @@ namespace Tomboy
 				tree.Selection.SelectPath (path);
 			}
 		}
-		
-		// called when the user moves the focus into the notes TreeView
-		void OnTreeViewFocused (object sender, EventArgs args)
-		{
-			// enable the Delete Note option in the menu bar 
-			Tomboy.ActionManager ["DeleteNoteAction"].Sensitive = true;
-		}
-		
-		// called when the focus moves out of the notes TreeView
-		void OnTreeViewFocusedOut (object sender, EventArgs args)
-		{
-			// Disable the Delete Note option in the menu bar (bug #647462)
-			Tomboy.ActionManager ["DeleteNoteAction"].Sensitive = false;
-		}
 
 		void PopupContextMenuAtLocation (Gtk.Menu menu, int x, int y)
 		{
@@ -1263,6 +1249,13 @@ namespace Tomboy
 			EntryChangedTimeout (null, null);
 		}
 
+		void OnEntryFocusIn (object sender, EventArgs args)
+		{
+			// To make sure DeleteNoteAction gets disabled
+			// when we're not in the notes list (bgo647472)
+			tree.Selection.UnselectAll ();
+		}
+
 		void OnEntryChanged (object sender, EventArgs args)
 		{
 			if (entry_changed_timeout == null) {
@@ -1534,6 +1527,13 @@ namespace Tomboy
 			}
 		}
 
+		void OnNotebooksFocusIn (object sender, EventArgs args)
+		{
+			// To make sure DeleteNoteAction gets disabled
+			// when we're not in the notes list (bgo647472)
+			tree.Selection.UnselectAll ();
+		}
+
 		private void OnNoteAddedToNotebook (Note note, Notebooks.Notebook notebook)
 		{
 			RestoreMatchesWindow ();
@@ -1607,6 +1607,7 @@ namespace Tomboy
 			return;
 
 			new_mon = Screen.GetMonitorAtPoint ((int) x, (int) y);
+			Gdk.Rectangle new_mon_geom = Screen.GetMonitorGeometry (new_mon);
 			Logger.Info ("Monitor number returned by GetMonitorAtPoint (actual) is: {0}", new_mon);
 			Logger.Info ("Saved monitor number is: {0}", mon);
 			Logger.Info ("Saved Search window position is {0} x {1}", (int) x, (int) y);
@@ -1615,18 +1616,31 @@ namespace Tomboy
 			// then it means that something has changed in the monitors layout and saved coordinates may not be valid.
 			// Therefore we'll restore the window to the center of the monitor closest to the saved coordinates.
 			/// It will be returned by the same GetMonitorAtPoint call.
+			/// However if the saved monitor number matches the current one, there's still a chance we'll
+			/// have wrong coordinates saved due to e.g. different monitors (with different resolution)
+			/// used at different times in single-monitor config, also see e.g. bgo#688296 when no explanation was found
+			bool restore_as_is = true;
 			if (new_mon == (int) mon) {
-				Logger.Info ("Saved monitor number does match the actual one - restoring as-is");
+				Logger.Info ("Saved monitor number does match the actual one...");
+				if (new_mon_geom.Contains((int) x, (int) y)) {
+					Logger.Info("...and saved window position is within it - restoring as-is.");
+				} else {
+					Logger.Info("...but saved window position is NOT within it - restoring to the center.");
+					restore_as_is = false;
+				}
+			} else {
+				Logger.Info ("Saved monitor number does NOT match the actual one - restoring to the center.");
+				restore_as_is = false;
+			}
+
+			if (restore_as_is) {
 				new_x = (int) x;
 				new_y = (int) y;
 			} else {
-				Logger.Info ("Saved monitor number does NOT match the actual one - restoring to the center");
-				//getting the monitor size to calculate the center
-				Gdk.Rectangle new_mon_geom = Screen.GetMonitorGeometry (new_mon);
+				//center of the screen
 				new_x = new_mon_geom.Right/2 - (int) width/2;
 				new_y = new_mon_geom.Bottom/2 - (int) height/2;
 			}
-
 			Logger.Info ("Restoring Search window to position {0} x {1} at monitor {2}", new_x, new_y, new_mon);
 			DefaultSize =
 				new Gdk.Size ((int) width, (int) height);
