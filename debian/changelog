@@ -1,3 +1,18 @@
+tomboy (1.14.1-1) UNRELEASED; urgency=low
+
+  * [5449ff8] debian/watch: Use GNOME ftp and track stable releases only
+  * [b0bcc4b] Imported Upstream version 1.14.1
+    + Improve note naming conflict dialog on sync
+    + Fix behavior of max. notes in tray preference
+    + Improved logic for window placement
+    + Update screenshots and links in docs
+    + Add missing documentation
+    + Accept command line args when Tomboy is running
+    + Preferences dialog should not be modal
+  * [a82a4c4] Bump S-V to 3.9.4; BD on debhelper >= 8.1.0 accordingly
+
+ -- Iain Lane <laney@debian.org>  Sun, 09 Jun 2013 19:12:48 +0100
+
 tomboy (1.12.0-1) experimental; urgency=low
 
   * [9c1e942] Compress deb data member with xz (Closes: #688706)
