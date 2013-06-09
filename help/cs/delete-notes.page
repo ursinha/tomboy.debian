@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#notes"/>
-    <link type="seealso" xref="create-note"/>
+    <link type="seealso" xref="create-notes"/>
     <link type="seealso" xref="edit-notes"/>
     <desc>Jak v aplikaci Tomboy odstranit poznámku.</desc>
     <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
@@ -13,7 +13,7 @@
       <email>pcutler@gnome.org</email>
     </credit>    
     <credit type="author copyright">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <years>2010</years>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,8 +24,7 @@
   <p>Poznámku můžete odstranit zmáčknutím ikony <gui>Odstranit</gui> na liště nástrojů u poznámky, kterou si přejete odstranit.</p>
   
 <note style="warning">
-	<p>Odstranění poznámky je trvalé. Po jejím odstranění ji již nelze obnovit.</p> <p> You will be prompted <gui>Really delete 
-	this note?</gui> when deleting a note.</p>  
+	<p>Odstranění poznámky je trvalé. Po jejím odstranění ji již nelze obnovit.</p> <p>Při odstraňování poznámky budete dotázáni <gui>Opravdu odstranit tuto poznámku?</gui>.</p>  
 </note>
 	
 </page>

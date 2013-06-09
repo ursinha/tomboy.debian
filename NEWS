@@ -9,6 +9,45 @@ Please send questions and suggestions to
 Please report bugs using http://bugzilla.gnome.org/
 (http://bugzilla.gnome.org/enter_bug.cgi?product=Tomboy).
 
+Version 1.14.1
+* Translation updates: el, fr, id
+
+Version 1.14.0
+* Translation updates: pl
+
+Version 1.13.6
+* Improve note naming conflict dialog on sync (Alex Tereschenko)
+* Use Xamarin's GTK# for Windows build
+* Translation updates: hu, lt, pl, pt_BR, sr
+
+Version 1.13.5
+* Rev .NET version from 3.5 to 4.0 in Windows build
+* Fix behavior of max. notes in tray preference (Alex Tereschenko)
+* Translation updates: cs, es, pl, sl
+
+Version 1.13.4
+* Improved logic for window placement (Alex Tereschenko)
+* Translation updates: bg, cs, hu, pt_BR, sr, sr@latin
+
+Version 1.13.3
+* Update screenshots and links in docs (Sindhu S, 689722)
+* Add missing documentation (Ekaterina Gerasimova, #689147)
+* Change default setting in ExportNotes add-in (#688187)
+* Fix crash with spellcheck add-in (Alemann Massho, #655067)
+* Include more add-ins in Windows build (Alex Tereschenko)
+* Translation updates: es, lt, pl
+
+Version 1.13.2
+* Bump gmime dependency to 2.6 (Pacho Ramos, #686510)
+* Clarify key binding example in preferences dialog (#687418)
+* Improve window positioning code for multi-monitors
+* Translation updates: cs, es, et, gl, he, sl, sr, sr@latin
+
+Version 1.13.1
+* Accept command line args when Tomboy is running (Matteo Nardi, #670928)
+* Preferences dialog should not be modal (#527177)
+* Translation updates: cs, es, sl
+
 Version 1.12.0
 
 Version 1.11.7

@@ -33,15 +33,15 @@
   <section id="prefs" style="2column">
 	<title>Možnosti Tomboya</title>
   </section>
-
+<!--
   <section id="advanced" style="2column">
-    <title>Napredna dejanja</title>
+    <title>Advanced Actions</title>
   </section>
 
   <section id="problems">
-    <title>Pogoste težave</title>
+    <title>Common Problems</title>
   </section>
-
+-->
   <section id="new">
     <title>Kaj je novega</title>
   </section>

@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the tomboy package.
 # Maintainer: Горан Ракић <grakic@devbase.net>
 # Милош Поповић <gpopac@gmail.com>, 2010.
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011, 2012.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=tomboy"
 "&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-05-01 16:57+0000\n"
-"PO-Revision-Date: 2012-05-20 11:08+0200\n"
+"POT-Creation-Date: 2013-01-20 01:02+0000\n"
+"PO-Revision-Date: 2013-02-20 21:10+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -26,7 +26,7 @@ msgid "Tomboy Applet Factory"
 msgstr "Подршка за програмче Томичине белешке"
 
 #: ../data/GNOME_TomboyApplet.server.in.in.h:2 ../data/tomboy.desktop.in.h:1
-#: ../Tomboy/Tray.cs:579
+#: ../Tomboy/Tray.cs:581
 msgid "Tomboy Notes"
 msgstr "Томичине белешке"
 
@@ -204,10 +204,26 @@ msgstr ""
 "изборнику белешки."
 
 #: ../data/tomboy.schemas.in.h:23
+#| msgid "Minimum number of notes to show in menu"
+msgid "Maximum number of notes to show in menu"
+msgstr "Највећи број белешки за приказ у изборнику"
+
+#: ../data/tomboy.schemas.in.h:24
+#| msgid ""
+#| "Integer determining the minimum number of notes to show in the Tomboy "
+#| "note menu."
+msgid ""
+"Integer determining the maximum number of notes to show in the Tomboy note "
+"menu."
+msgstr ""
+"Цео број који одређује највећи број белешки које ће бити приказане у "
+"изборнику белешки."
+
+#: ../data/tomboy.schemas.in.h:25
 msgid "List of pinned notes."
 msgstr "Листа прибодених белешки."
 
-#: ../data/tomboy.schemas.in.h:24
+#: ../data/tomboy.schemas.in.h:26
 msgid ""
 "Whitespace-separated list of note URIs for notes that should always appear "
 "in the Tomboy note menu."
@@ -215,11 +231,11 @@ msgstr ""
 "Листа УРИ-ја белешки раздвојена празнинама која садржи белешке које ће увек "
 "бити приказане у менију Томице."
 
-#: ../data/tomboy.schemas.in.h:25
+#: ../data/tomboy.schemas.in.h:27
 msgid "Maximum note title length to show in tray menu."
 msgstr "Најмања дужина наслова белешке за приказивање у изборнику панела."
 
-#: ../data/tomboy.schemas.in.h:26
+#: ../data/tomboy.schemas.in.h:28
 msgid ""
 "Maximum characters of note title to show in the Tomboy tray or panel applet "
 "note menu."
@@ -227,11 +243,11 @@ msgstr ""
 "Највећи број знакова наслова белешке који се приказују у иконици панела или "
 "у изборнику програмчета панела."
 
-#: ../data/tomboy.schemas.in.h:27
+#: ../data/tomboy.schemas.in.h:29
 msgid "Enable startup notes"
 msgstr "Омогућава белешке при покретању"
 
-#: ../data/tomboy.schemas.in.h:28
+#: ../data/tomboy.schemas.in.h:30
 msgid ""
 "If enabled, all notes that were open when Tomboy quit will automatically be "
 "reopened at startup."
@@ -239,11 +255,11 @@ msgstr ""
 "Ако је укључено, све отворене белешке у тренутку гашења Томице ће бити "
 "поново отворене при покретању."
 
-#: ../data/tomboy.schemas.in.h:29
+#: ../data/tomboy.schemas.in.h:31
 msgid "Show applet menu"
 msgstr "Приказивање изборника програмчета"
 
-#: ../data/tomboy.schemas.in.h:30
+#: ../data/tomboy.schemas.in.h:32
 msgid ""
 "The global keybinding for showing the Tomboy applet's menu. The format looks "
 "like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
@@ -258,11 +274,11 @@ msgstr ""
 "Ctrl&gt;“. Ако поставите ову опцију на посебну вредност „disabled“ — "
 "искључено,тада неће постојати пречица за ову акцију."
 
-#: ../data/tomboy.schemas.in.h:31
+#: ../data/tomboy.schemas.in.h:33
 msgid "Open Start Here"
 msgstr "Отварање почетне станице"
 
-#: ../data/tomboy.schemas.in.h:32
+#: ../data/tomboy.schemas.in.h:34
 msgid ""
 "The global keybinding for opening the \"Start Here\" note. The format looks "
 "like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
@@ -277,11 +293,11 @@ msgstr ""
 "Ctl&gt;“ и „&lt;Ctrl&gt;“. Ако поставите ову опцију на посебну вредност "
 "„disabled“ — искључено,тада неће постојати пречица за ову акцију."
 
-#: ../data/tomboy.schemas.in.h:33
+#: ../data/tomboy.schemas.in.h:35
 msgid "Create a new Note"
 msgstr "Направите нову белешку"
 
-#: ../data/tomboy.schemas.in.h:34
+#: ../data/tomboy.schemas.in.h:36
 msgid ""
 "The global keybinding for creating and displaying a new Note. The format "
 "looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
@@ -296,11 +312,11 @@ msgstr ""
 "Ctrl&gt;“. Ако поставите ову опцију на посебну вредност „disabled“ — "
 "искључено,тада неће постојати пречица за ову акцију."
 
-#: ../data/tomboy.schemas.in.h:35
+#: ../data/tomboy.schemas.in.h:37
 msgid "Open Search Dialog"
 msgstr "Отварање прозорчета за претрагу"
 
-#: ../data/tomboy.schemas.in.h:36
+#: ../data/tomboy.schemas.in.h:38
 msgid ""
 "The global keybinding for opening the Note Search dialog. The format looks "
 "like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
@@ -315,11 +331,11 @@ msgstr ""
 "Ctl&gt;“и „&lt;Ctrl&gt;“. Ако поставите ову опцију на посебну вредност "
 "„disabled“ — искључено,тада неће постојати пречица за ову акцију."
 
-#: ../data/tomboy.schemas.in.h:37
+#: ../data/tomboy.schemas.in.h:39
 msgid "Open Recent Changes"
 msgstr "Отварање скорашњих измена"
 
-#: ../data/tomboy.schemas.in.h:38
+#: ../data/tomboy.schemas.in.h:40
 msgid ""
 "The global keybinding for opening the Recent Changes dialog. The format "
 "looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
@@ -334,11 +350,11 @@ msgstr ""
 "Ctl&gt;“ и „&lt;Ctrl&gt;“. Ако поставите ову опцију на посебну вредност "
 "„disabled“ — искључено,тада неће постојати пречица за ову акцију."
 
-#: ../data/tomboy.schemas.in.h:39
+#: ../data/tomboy.schemas.in.h:41
 msgid "Saved height of \"Search All Notes\" window"
 msgstr "Сачувана висина прозора „Тражи кроз све белешке“"
 
-#: ../data/tomboy.schemas.in.h:40
+#: ../data/tomboy.schemas.in.h:42
 msgid ""
 "Determines pixel height of \"Search All Notes\" window; stored on Tomboy "
 "exit."
@@ -346,22 +362,22 @@ msgstr ""
 "Одређује у тачкама висину прозора „Тражи кроз све белешке“, чува се приликом "
 "изласка из програма."
 
-#: ../data/tomboy.schemas.in.h:41
+#: ../data/tomboy.schemas.in.h:43
 msgid "Saved width of \"Search All Notes\" window"
 msgstr "Сачувана ширина прозора „Тражи кроз све белешке“"
 
-#: ../data/tomboy.schemas.in.h:42
+#: ../data/tomboy.schemas.in.h:44
 msgid ""
 "Determines pixel width of \"Search All Notes\" window; stored on Tomboy exit."
 msgstr ""
 "Одређује у тачкама ширину прозора „Тражи кроз све белешке“, чува се приликом "
 "изласка из програма."
 
-#: ../data/tomboy.schemas.in.h:43
+#: ../data/tomboy.schemas.in.h:45
 msgid "Saved horizontal position of \"Search All Notes\" window"
 msgstr "Сачуван водоравни положај прозора „Тражи кроз све белешке“"
 
-#: ../data/tomboy.schemas.in.h:44
+#: ../data/tomboy.schemas.in.h:46
 msgid ""
 "Determines X coordinate of \"Search All Notes\" window; stored on Tomboy "
 "exit."
@@ -369,11 +385,11 @@ msgstr ""
 "Одређује X координату прозора „Тражи кроз све белешке“, чува се приликом "
 "изласка из програма."
 
-#: ../data/tomboy.schemas.in.h:45
+#: ../data/tomboy.schemas.in.h:47
 msgid "Saved vertical position of \"Search All Notes\" window"
 msgstr "Сачуван усправни положај прозора „Тражи кроз све белешке“"
 
-#: ../data/tomboy.schemas.in.h:46
+#: ../data/tomboy.schemas.in.h:48
 msgid ""
 "Determines Y coordinate of \"Search All Notes\" window; stored on Tomboy "
 "exit."
@@ -381,33 +397,33 @@ msgstr ""
 "Одређује Y координату прозора „Тражи кроз све белешке“, чува се приликом "
 "изласка из програма."
 
-#: ../data/tomboy.schemas.in.h:47
+#: ../data/tomboy.schemas.in.h:49
 msgid "Last Directory used in HTML Export"
 msgstr "Последњи директоријум коришћен у ХТМЛ извозу"
 
-#: ../data/tomboy.schemas.in.h:48
+#: ../data/tomboy.schemas.in.h:50
 msgid ""
 "The last directory a note was exported to using the Export To HTML plugin."
 msgstr ""
 "Последњи директоријум у који је белешка извезена користећи додатак за извоз "
 "у ХТМЛ."
 
-#: ../data/tomboy.schemas.in.h:49
+#: ../data/tomboy.schemas.in.h:51
 msgid "HTML Export Linked Notes"
 msgstr "Повезане белешке ХТМЛ извоза"
 
-#: ../data/tomboy.schemas.in.h:50
+#: ../data/tomboy.schemas.in.h:52
 msgid ""
 "The last setting for the 'Export linked notes' checkbox in the Export to "
 "HTML plugin."
 msgstr ""
 "Последње подешавање за „Извези повезане белешке“ у додатку за извоз у ХТМЛ."
 
-#: ../data/tomboy.schemas.in.h:51
+#: ../data/tomboy.schemas.in.h:53
 msgid "HTML Export All Linked Notes"
 msgstr "ХТМЛ извоз свих повезаних белешки"
 
-#: ../data/tomboy.schemas.in.h:52
+#: ../data/tomboy.schemas.in.h:54
 msgid ""
 "The last setting for the 'Include all other linked notes' checkbox in the "
 "Export to HTML plugin. This setting is used in conjunction with the 'HTML "
@@ -419,11 +435,11 @@ msgstr ""
 "белешке“ подешавањем, а одређује да ли све белешке (рекурзивно откривене) "
 "требају бити укључене при извозу у ХТМЛ."
 
-#: ../data/tomboy.schemas.in.h:53
+#: ../data/tomboy.schemas.in.h:55
 msgid "Sticky Note Importer First Run"
 msgstr "Прво покретање Увоза Гномових белешки"
 
-#: ../data/tomboy.schemas.in.h:54
+#: ../data/tomboy.schemas.in.h:56
 msgid ""
 "Indicates that the Sticky Note Importer plugin has not been run, so it "
 "should run automatically the next time Tomboy starts."
@@ -431,11 +447,11 @@ msgstr ""
 "Указује да додатак Увозник Гномових белешки није покренут, и да треба бити "
 "самостално покренут при следећем покретању Томице."
 
-#: ../data/tomboy.schemas.in.h:55
+#: ../data/tomboy.schemas.in.h:57
 msgid "Synchronization Client ID"
 msgstr "ИБ клијента усклађивања"
 
-#: ../data/tomboy.schemas.in.h:56
+#: ../data/tomboy.schemas.in.h:58
 msgid ""
 "Unique identifier for this Tomboy client, used when communicating with a "
 "sychronization server."
@@ -443,11 +459,11 @@ msgstr ""
 "Јединствена ознака за овај клијент Томице која се користи при комуникацији "
 "са сервером за усклађивање."
 
-#: ../data/tomboy.schemas.in.h:57
+#: ../data/tomboy.schemas.in.h:59
 msgid "Synchronization Local Server Path"
 msgstr "Локална путања до сервера усклађивања"
 
-#: ../data/tomboy.schemas.in.h:58
+#: ../data/tomboy.schemas.in.h:60
 msgid ""
 "Path to the synchronization server when using the filesystem synchronization "
 "service addin."
@@ -455,21 +471,21 @@ msgstr ""
 "Путања до сервера за усклађивање када се користи додатак за усклађивање "
 "преко система датотека."
 
-#: ../data/tomboy.schemas.in.h:59
+#: ../data/tomboy.schemas.in.h:61
 msgid "Selected Synchronization Service Addin"
 msgstr "Одабрани додатак за сервис усклађивања"
 
-#: ../data/tomboy.schemas.in.h:60
+#: ../data/tomboy.schemas.in.h:62
 msgid ""
 "Unique identifier for the currently configured note synchronization service "
 "addin."
 msgstr "Јединствена ознака за одабрани додатак за усклађивање белешки."
 
-#: ../data/tomboy.schemas.in.h:61
+#: ../data/tomboy.schemas.in.h:63
 msgid "FUSE Mounting Timeout (ms)"
 msgstr "Време истека ФУСЕ монтирања (ms)"
 
-#: ../data/tomboy.schemas.in.h:62
+#: ../data/tomboy.schemas.in.h:64
 msgid ""
 "Time (in milliseconds) Tomboy should wait for a response when using FUSE to "
 "mount a sync share."
@@ -477,39 +493,39 @@ msgstr ""
 "Време (у милисекундама) које Томичине белешке чекају на одговор када се "
 "користи ФУСЕ за монтирање дељена фасцикла за усклађивање."
 
-#: ../data/tomboy.schemas.in.h:63
+#: ../data/tomboy.schemas.in.h:65
 msgid "SSHFS Remote Synchronization Folder"
 msgstr "ССХФС удаљена фасцикла за усклађивање"
 
-#: ../data/tomboy.schemas.in.h:64
+#: ../data/tomboy.schemas.in.h:66
 msgid "Path on SSH server to Tomboy synchronization directory (optional)."
 msgstr ""
 "Путања на ССХ серверу за фасциклу усклађивања Томичиних белешки (опционо)."
 
-#: ../data/tomboy.schemas.in.h:65
+#: ../data/tomboy.schemas.in.h:67
 msgid "SSHFS Synchronization Server URL"
 msgstr "ССХФС адреса за удаљено усклађивање"
 
-#: ../data/tomboy.schemas.in.h:66
+#: ../data/tomboy.schemas.in.h:68
 msgid "URL of SSH server containing Tomboy synchronization directory."
 msgstr ""
 "Адреса ССХ сервера која садржи фасциклу за усклађивање Томичиних белешки."
 
-#: ../data/tomboy.schemas.in.h:67
+#: ../data/tomboy.schemas.in.h:69
 msgid "SSHFS Remote Synchronization User Name"
 msgstr "ССХФС корисничко име за удаљено усклађивање"
 
-#: ../data/tomboy.schemas.in.h:68
+#: ../data/tomboy.schemas.in.h:70
 msgid "User name to use when connecting to the synchronization server via SSH."
 msgstr ""
 "Корисничко име за коришћење приликом повезивања на сервер за усклађивање "
 "преко ССХ протокола."
 
-#: ../data/tomboy.schemas.in.h:69
+#: ../data/tomboy.schemas.in.h:71
 msgid "SSHFS Synchronization Server Port"
 msgstr "ССХФС порт за удаљено усклађивање"
 
-#: ../data/tomboy.schemas.in.h:70
+#: ../data/tomboy.schemas.in.h:72
 msgid ""
 "The port to use when connecting to the synchronization server via SSH. Set "
 "to -1 or less if default SSH port settings should be used instead."
@@ -518,11 +534,11 @@ msgstr ""
 "протокола. Поставите на -1 или мање уколико се користи подразумевани ССХ "
 "порт."
 
-#: ../data/tomboy.schemas.in.h:71
+#: ../data/tomboy.schemas.in.h:73
 msgid "Accept SSL Certificates"
 msgstr "Прихватање ССЛ уверења"
 
-#: ../data/tomboy.schemas.in.h:72
+#: ../data/tomboy.schemas.in.h:74
 msgid ""
 "Use wdfs option \"-ac\" to accept SSL certificates without prompting the "
 "user."
@@ -530,11 +546,11 @@ msgstr ""
 "Коришћење „-ac“ опције wdfs-а за прихватање ССЛ сертификата без питања "
 "корисника."
 
-#: ../data/tomboy.schemas.in.h:73
+#: ../data/tomboy.schemas.in.h:75
 msgid "Note Synchronization Conflict Saved Behavior"
 msgstr "Понашање у случају сукоба при усклађивању белешки"
 
-#: ../data/tomboy.schemas.in.h:74
+#: ../data/tomboy.schemas.in.h:76
 msgid ""
 "Integer value indicating if there is a preference to always perform a "
 "specific behavior when a conflict is detected, instead of prompting the "
@@ -547,11 +563,11 @@ msgstr ""
 "„0“ одређује да треба питати корисника тако да се проблеми решавају од "
 "случаја до случаја."
 
-#: ../data/tomboy.schemas.in.h:75
+#: ../data/tomboy.schemas.in.h:77
 msgid "Automatic Background Synchronization Timeout"
 msgstr "Временско ограничење самосталног позадинског усаглашавања"
 
-#: ../data/tomboy.schemas.in.h:76
+#: ../data/tomboy.schemas.in.h:78
 msgid ""
 "Integer value indicating how frequently to perform a background sync of your "
 "notes (when sync is configured). Any value less than 1 indicates that "
@@ -563,11 +579,11 @@ msgstr ""
 "усклађивање искључено. Најмања прихватљива вредност је 5. Вредност је у "
 "минутима."
 
-#: ../data/tomboy.schemas.in.h:77
+#: ../data/tomboy.schemas.in.h:79
 msgid "Link Updating Behavior on Note Rename"
 msgstr "Понашање ажурирања веза при преименовању белешке"
 
-#: ../data/tomboy.schemas.in.h:78
+#: ../data/tomboy.schemas.in.h:80
 msgid ""
 "Integer value indicating if there is a preference to always perform a "
 "specific link updating behavior when a note is renamed, instead of prompting "
@@ -585,28 +601,28 @@ msgstr ""
 "— значи да текст везе треба ажурирати на ново име белешке тако да веза ка "
 "преименованој белешци настави да постоји."
 
-#: ../data/tomboy.schemas.in.h:79
+#: ../data/tomboy.schemas.in.h:81
 msgid "Timestamp format"
 msgstr "Запис датума и времена"
 
-#: ../data/tomboy.schemas.in.h:80
+#: ../data/tomboy.schemas.in.h:82
 msgid "The date format that is used for the timestamp."
 msgstr "Облик датума коришћеног за ознаку времена."
 
-#: ../data/tomboy.schemas.in.h:81
+#: ../data/tomboy.schemas.in.h:83
 msgid "Enable closing notes with escape."
 msgstr "Омогућава затварање белешке тастером Esc."
 
-#: ../data/tomboy.schemas.in.h:82
+#: ../data/tomboy.schemas.in.h:84
 msgid "If enabled, an opened note can be closed by hitting the escape key."
 msgstr ""
 "Ако је укључено отворена белешка може бити затворена притиском на тастер Esc."
 
-#: ../data/tomboy.schemas.in.h:83
+#: ../data/tomboy.schemas.in.h:85
 msgid "The handler for \"note://\" URLs"
 msgstr "Руковалац „note://“ адреса"
 
-#: ../data/tomboy.schemas.in.h:84
+#: ../data/tomboy.schemas.in.h:86
 msgid "Set to TRUE to activate"
 msgstr "Изаберите да би било укључено"
 
@@ -658,7 +674,7 @@ msgstr "_Изађи из Томице"
 msgid "_Edit"
 msgstr "_Измени"
 
-#: ../Tomboy/ActionManager.cs:154 ../Tomboy/PreferencesDialog.cs:65
+#: ../Tomboy/ActionManager.cs:154 ../Tomboy/PreferencesDialog.cs:63
 msgid "Tomboy Preferences"
 msgstr "Томичине поставке"
 
@@ -695,14 +711,21 @@ msgid "Start synchronizing notes"
 msgstr "Започни усклађивање белешки"
 
 #. Addin's tab caption
-#: ../Tomboy/Addins/AdvancedPreferences/AdvancedPreferencesAddin.cs:38
+#: ../Tomboy/Addins/AdvancedPreferences/AdvancedPreferencesAddin.cs:26
 msgid "Advanced"
 msgstr "Напредно"
 
-#. Menu Note Count option
-#: ../Tomboy/Addins/AdvancedPreferences/AdvancedPreferencesAddin.cs:56
-msgid "Minimum number of notes to show in Recent list (maximum 18)"
-msgstr "Најмањи број белешки за приказивање у списку скорашњих (највише 18)"
+#. Menu Min Note Count option
+#: ../Tomboy/Addins/AdvancedPreferences/MenuMinMaxNoteCountPreference.cs:34
+#| msgid "Minimum number of notes to show in Recent list (maximum 18)"
+msgid "Minimum number of notes to show in Recent list"
+msgstr "Најмањи број белешки за приказивање у списку скорашњих"
+
+#. Menu Max Note Count option
+#: ../Tomboy/Addins/AdvancedPreferences/MenuMinMaxNoteCountPreference.cs:58
+#| msgid "Minimum number of notes to show in Recent list (maximum 18)"
+msgid "Maximum number of notes to show in Recent list"
+msgstr "Највећи број белешки за приказивање у списку скорашњих"
 
 #: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:38
 msgid "What links here?"
@@ -855,7 +878,7 @@ msgstr "Уметни датум и време"
 
 #. initial newline
 #: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:29
-#: ../Tomboy/Applet.cs:223 ../Tomboy/Preferences.cs:155
+#: ../Tomboy/Applet.cs:223 ../Tomboy/Preferences.cs:159
 msgid "dddd, MMMM d, h:mm tt"
 msgstr "dddd, d. MMMM, h:mm tt"
 
@@ -935,7 +958,6 @@ msgid "_Tools"
 msgstr "Ала_ти"
 
 #: ../Tomboy/Addins/RemoveBrokenLinks/RemoveBrokenLinksApplicationAddin.cs:44
-#| msgid "Remove broken links"
 msgid "_Remove broken links"
 msgstr "_Уклони оштећене везе"
 
@@ -1312,7 +1334,7 @@ msgid "Delete the selected notebook"
 msgstr "Обриши одабрану свеску"
 
 #: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:68
-#: ../Tomboy/RecentChanges.cs:276
+#: ../Tomboy/RecentChanges.cs:277
 msgid "Notebooks"
 msgstr "Свеске"
 
@@ -1378,12 +1400,12 @@ msgstr "_Нова свеска..."
 msgid "New Note {0}"
 msgstr "{0}. белешка"
 
-#: ../Tomboy/Note.cs:1607
+#: ../Tomboy/Note.cs:1675
 #, csharp-format
 msgid "Really delete \"{0}\"?"
 msgstr "Стварно да обришем „{0}“?"
 
-#: ../Tomboy/Note.cs:1610
+#: ../Tomboy/Note.cs:1678
 #, csharp-format
 msgid "Really delete this {0} note?"
 msgid_plural "Really delete these {0} notes?"
@@ -1392,11 +1414,11 @@ msgstr[1] "Заиста желите да обришете ове {0} белеш
 msgstr[2] "Заиста желите да обришете ових {0} белешки?"
 msgstr[3] "Заиста желите да обришете ову {0} белешку?"
 
-#: ../Tomboy/Note.cs:1621
+#: ../Tomboy/Note.cs:1689
 msgid "If you delete a note it is permanently lost."
 msgstr "Ако је обришете она ће заувек бити изгубљена."
 
-#: ../Tomboy/Note.cs:1655
+#: ../Tomboy/Note.cs:1723
 #, csharp-format
 msgid ""
 "An error occurred while saving your notes. Please check that you have "
@@ -1407,13 +1429,13 @@ msgstr ""
 "простора на диску и да имате права уписа у фасциклу {0}. Детаљи о грешци су "
 "записани у {1}."
 
-#: ../Tomboy/Note.cs:1671
+#: ../Tomboy/Note.cs:1739
 msgid "Error saving note data."
 msgstr "Грешка при чувању података белешке."
 
 #. New Note Template
 #. Translators: This is 'New Note' Template, not New 'Note Template'
-#: ../Tomboy/NoteManager.cs:21 ../Tomboy/PreferencesDialog.cs:257
+#: ../Tomboy/NoteManager.cs:21 ../Tomboy/PreferencesDialog.cs:263
 msgid "New Note Template"
 msgstr "Шаблон нове белешке"
 
@@ -1453,19 +1475,20 @@ msgstr ""
 "вероватно никад није занимало где су вам белешке ускладиштене, а ако вас ни "
 "сад не занима, продужите и <bold>избришите ову поруку</bold>.  :-)\n"
 "\n"
-"Ваша стара фасцикла са белешкама је и даље сигурна у "
-"<link:url>{0}</link:url> . Ако се вратите на стару верзију Томичиних "
-"белешки, он ће тражити белешке у овој фасцикли.\n"
+"Ваша стара фасцикла са белешкама је и даље сигурна у <link:url>{0}</link:"
+"url> . Ако се вратите на стару верзију Томичиних белешки, он ће тражити "
+"белешке у овој фасцикли.\n"
 "\n"
 "Али ми смо умножили ваше белешке и подешавања у нове фасцикле које ће се од "
 "сада користити:\n"
 "\n"
-"<list><list-item dir=\"ltr\">Белешке се могу наћи у <link:url>{1}</link:url>\n"
+"<list><list-item dir=\"ltr\">Белешке се могу наћи у <link:url>{1}</link:"
+"url>\n"
 "</list-item><list-item dir=\"ltr\">Подешавања су у <link:url>{2}</link:url>\n"
-"</list-item><list-item dir=\"ltr\">Можете инсталирати додатке у  "
-"<link:url>{3}</link:url>\n"
-"</list-item><list-item dir=\"ltr\">Датотеке дневника се могу наћи у "
-"<link:url>{4}</link:url></list-item></list>\n"
+"</list-item><list-item dir=\"ltr\">Можете инсталирати додатке у  <link:url>"
+"{3}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">Датотеке дневника се могу наћи у <link:"
+"url>{4}</link:url></list-item></list>\n"
 "\n"
 "Ћао!"
 
@@ -1710,87 +1733,93 @@ msgstr "Тражи _претходно"
 msgid "Cannot create note"
 msgstr "Не могу да направим белешку"
 
-#: ../Tomboy/NoteWindow.cs:832
+#: ../Tomboy/NoteWindow.cs:833
 msgid "_Find:"
 msgstr "Претра_жи:"
 
-#: ../Tomboy/NoteWindow.cs:843
+#: ../Tomboy/NoteWindow.cs:847
 msgid "_Previous"
 msgstr "_Претходна"
 
-#: ../Tomboy/NoteWindow.cs:852
+#: ../Tomboy/NoteWindow.cs:856
 msgid "_Next"
 msgstr "_Следећа"
 
-#: ../Tomboy/NoteWindow.cs:1335
+#. x of x - specifically Number of Matches and what location is the cursor in the list of matches
+#: ../Tomboy/NoteWindow.cs:885
+#, csharp-format
+msgid "{0} of {1}"
+msgstr "{0} од {1}"
+
+#: ../Tomboy/NoteWindow.cs:1368
 msgid "_Bold"
 msgstr "_Подебљано"
 
-#: ../Tomboy/NoteWindow.cs:1347
+#: ../Tomboy/NoteWindow.cs:1380
 msgid "_Italic"
 msgstr "_Искошено"
 
-#: ../Tomboy/NoteWindow.cs:1359
+#: ../Tomboy/NoteWindow.cs:1392
 msgid "_Strikeout"
 msgstr "Пре_цртано"
 
-#: ../Tomboy/NoteWindow.cs:1371
+#: ../Tomboy/NoteWindow.cs:1404
 msgid "_Highlight"
 msgstr "_Подвучено"
 
-#: ../Tomboy/NoteWindow.cs:1384
+#: ../Tomboy/NoteWindow.cs:1417
 msgid "Font Size"
 msgstr "Величина слова"
 
-#: ../Tomboy/NoteWindow.cs:1387
+#: ../Tomboy/NoteWindow.cs:1420
 msgid "_Normal"
 msgstr "_Нормална"
 
-#: ../Tomboy/NoteWindow.cs:1404
+#: ../Tomboy/NoteWindow.cs:1437
 msgid "Hu_ge"
 msgstr "О_громна"
 
-#: ../Tomboy/NoteWindow.cs:1412
+#: ../Tomboy/NoteWindow.cs:1445
 msgid "_Large"
 msgstr "Ве_лика"
 
-#: ../Tomboy/NoteWindow.cs:1420
+#: ../Tomboy/NoteWindow.cs:1453
 msgid "S_mall"
 msgstr "_Мала"
 
-#: ../Tomboy/NoteWindow.cs:1429
+#: ../Tomboy/NoteWindow.cs:1462
 msgid "Increase Font Size"
 msgstr "Повећај величину фонта"
 
-#: ../Tomboy/NoteWindow.cs:1447
+#: ../Tomboy/NoteWindow.cs:1480
 msgid "Decrease Font Size"
 msgstr "Смањи величину фонта"
 
-#: ../Tomboy/NoteWindow.cs:1467
+#: ../Tomboy/NoteWindow.cs:1500
 msgid "Bullets"
 msgstr "Листа са тачкицама"
 
-#: ../Tomboy/PreferencesDialog.cs:81
+#: ../Tomboy/PreferencesDialog.cs:74
 msgid "Editing"
 msgstr "Измена"
 
-#: ../Tomboy/PreferencesDialog.cs:84
+#: ../Tomboy/PreferencesDialog.cs:77
 msgid "Hotkeys"
 msgstr "Пречице"
 
-#: ../Tomboy/PreferencesDialog.cs:86
+#: ../Tomboy/PreferencesDialog.cs:79
 msgid "Synchronization"
 msgstr "Усклађивање"
 
-#: ../Tomboy/PreferencesDialog.cs:88
+#: ../Tomboy/PreferencesDialog.cs:80
 msgid "Add-ins"
 msgstr "Додаци"
 
-#: ../Tomboy/PreferencesDialog.cs:174
+#: ../Tomboy/PreferencesDialog.cs:180
 msgid "_Spell check while typing"
 msgstr "Провери правопи_с током куцања"
 
-#: ../Tomboy/PreferencesDialog.cs:183
+#: ../Tomboy/PreferencesDialog.cs:189
 msgid ""
 "Misspellings will be underlined in red, with correct spelling suggestions "
 "shown in the context menu."
@@ -1799,11 +1828,11 @@ msgstr ""
 "исправног писања приказаних у приручном изборнику."
 
 #. WikiWords...
-#: ../Tomboy/PreferencesDialog.cs:194
+#: ../Tomboy/PreferencesDialog.cs:200
 msgid "Highlight _WikiWords"
 msgstr "Означи _ВикиРечи"
 
-#: ../Tomboy/PreferencesDialog.cs:202
+#: ../Tomboy/PreferencesDialog.cs:208
 msgid ""
 "Enable this option to highlight words <b>ThatLookLikeThis</b>. Clicking the "
 "word will create a note with that name."
@@ -1812,132 +1841,131 @@ msgstr ""
 "речи ће тада направити нову белешку са тим именом."
 
 #. Auto bulleted list
-#: ../Tomboy/PreferencesDialog.cs:209
+#: ../Tomboy/PreferencesDialog.cs:215
 msgid "Enable auto-_bulleted lists"
 msgstr "Омогући аутоматске _листе"
 
-#: ../Tomboy/PreferencesDialog.cs:218
+#: ../Tomboy/PreferencesDialog.cs:224
 msgid "Use custom _font"
 msgstr "Користи посебан _словни лик"
 
-#: ../Tomboy/PreferencesDialog.cs:236
+#: ../Tomboy/PreferencesDialog.cs:242
 msgid "When renaming a linked note: "
 msgstr "Приликом преименовања повезане белешке: "
 
-#: ../Tomboy/PreferencesDialog.cs:239
+#: ../Tomboy/PreferencesDialog.cs:245
 msgid "Ask me what to do"
 msgstr "Питај ме шта да радим"
 
-#: ../Tomboy/PreferencesDialog.cs:240
+#: ../Tomboy/PreferencesDialog.cs:246
 msgid "Never rename links"
 msgstr "Никад не преименуј везе"
 
-#: ../Tomboy/PreferencesDialog.cs:241
+#: ../Tomboy/PreferencesDialog.cs:247
 msgid "Always rename links"
 msgstr "Увек преименуј везе"
 
-#: ../Tomboy/PreferencesDialog.cs:261
+#: ../Tomboy/PreferencesDialog.cs:267
 msgid ""
 "Use the new note template to specify the text that should be used when "
 "creating a new note."
 msgstr ""
 "Користи шаблон нове белешке за одређивање почетног текста у новим белешкама."
 
-#: ../Tomboy/PreferencesDialog.cs:270
+#: ../Tomboy/PreferencesDialog.cs:276
 msgid "Open New Note Template"
 msgstr "Отвори шаблон нове белешке"
 
 #. Hotkeys...
-#: ../Tomboy/PreferencesDialog.cs:327
+#: ../Tomboy/PreferencesDialog.cs:333
 msgid "Listen for _Hotkeys"
 msgstr "Реагуј на _пречице"
 
-#: ../Tomboy/PreferencesDialog.cs:336
+#: ../Tomboy/PreferencesDialog.cs:342
 msgid ""
 "Hotkeys allow you to quickly access your notes from anywhere with a "
-"keypress. Example Hotkeys: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;"
-"Alt&gt;N</b>"
+"keypress. Example Hotkeys: <b>&lt;ALT&gt;F11</b>, <b>&lt;ALT&gt;N</b>"
 msgstr ""
 "Пречице омогућавају брзи приступ белешкама у сваком тренутку. Пример "
-"пречица: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;Alt&gt;N</b>"
+"пречица: <b>&lt;ALT&gt;F11</b>, <b>&lt;ALT&gt;N</b>"
 
 #. Show notes menu keybinding...
-#: ../Tomboy/PreferencesDialog.cs:356
+#: ../Tomboy/PreferencesDialog.cs:362
 msgid "Show notes _menu"
 msgstr "Приказ _менија са белешкама"
 
 #. Open Start Here keybinding...
-#: ../Tomboy/PreferencesDialog.cs:373
+#: ../Tomboy/PreferencesDialog.cs:379
 msgid "Open \"_Start Here\""
 msgstr "Отвори „Почетну _страницу“"
 
 #. Create new note keybinding...
-#: ../Tomboy/PreferencesDialog.cs:390
+#: ../Tomboy/PreferencesDialog.cs:396
 msgid "Create _new note"
 msgstr "Направи _нову белешку"
 
 #. Open Search All Notes window keybinding...
-#: ../Tomboy/PreferencesDialog.cs:407
+#: ../Tomboy/PreferencesDialog.cs:413
 msgid "Open \"Search _All Notes\""
 msgstr "З_апочни претрагу кроз све белешке"
 
-#: ../Tomboy/PreferencesDialog.cs:434
+#: ../Tomboy/PreferencesDialog.cs:440
 msgid "Ser_vice:"
 msgstr "Сер_вис:"
 
-#: ../Tomboy/PreferencesDialog.cs:487 ../Tomboy/PreferencesDialog.cs:1106
+#: ../Tomboy/PreferencesDialog.cs:493 ../Tomboy/PreferencesDialog.cs:1112
 msgid "Not configurable"
 msgstr "Није подесиво"
 
-#: ../Tomboy/PreferencesDialog.cs:513
+#: ../Tomboy/PreferencesDialog.cs:519
 msgid "Automaticall_y Sync in Background Every"
 msgstr "Аутоматски усагласи белешке сваких"
 
 #. Translators: See above comment for details on
 #. this string.
-#: ../Tomboy/PreferencesDialog.cs:519
+#: ../Tomboy/PreferencesDialog.cs:525
 msgid "Minutes"
 msgstr "минута"
 
 #. "Advanced..." button to bring up extra sync config dialog
-#: ../Tomboy/PreferencesDialog.cs:541
+#: ../Tomboy/PreferencesDialog.cs:547
 msgid "_Advanced..."
 msgstr "_Напредно..."
 
-#: ../Tomboy/PreferencesDialog.cs:602
+#: ../Tomboy/PreferencesDialog.cs:608
 msgid "The following add-ins are installed"
 msgstr "Следећи додаци су инсталирани"
 
-#: ../Tomboy/PreferencesDialog.cs:623
+#: ../Tomboy/PreferencesDialog.cs:629
 msgid "Get More Add-Ins..."
 msgstr "Набави још додатака..."
 
-#: ../Tomboy/PreferencesDialog.cs:641
+#: ../Tomboy/PreferencesDialog.cs:647
 msgid "_Enable"
 msgstr "_Укључи"
 
-#: ../Tomboy/PreferencesDialog.cs:647
+#: ../Tomboy/PreferencesDialog.cs:653
 msgid "_Disable"
 msgstr "_Искључи"
 
-#: ../Tomboy/PreferencesDialog.cs:778
+#: ../Tomboy/PreferencesDialog.cs:784
 msgid "Not Implemented"
 msgstr "Још није направљено"
 
-#: ../Tomboy/PreferencesDialog.cs:792
+#: ../Tomboy/PreferencesDialog.cs:798
 #, csharp-format
 msgid "{0} Preferences"
 msgstr "Поставке за {0}"
 
-#: ../Tomboy/PreferencesDialog.cs:931
+#: ../Tomboy/PreferencesDialog.cs:937
 msgid "Choose Note Font"
 msgstr "Одабери словни лик за белешке"
 
-#: ../Tomboy/PreferencesDialog.cs:975
+#: ../Tomboy/PreferencesDialog.cs:981
 msgid "Other Synchronization Options"
 msgstr "Остале опције усклађивања"
 
-#: ../Tomboy/PreferencesDialog.cs:981
+#: ../Tomboy/PreferencesDialog.cs:987
 msgid ""
 "When a conflict is detected between a local note and a note on the "
 "configured synchronization server:"
@@ -1945,23 +1973,23 @@ msgstr ""
 "Када се догоди сукоб између локални белешке и белешке на одабраном серверу "
 "за усклађивање:"
 
-#: ../Tomboy/PreferencesDialog.cs:988
+#: ../Tomboy/PreferencesDialog.cs:994
 msgid "Always ask me what to do."
 msgstr "Увек ме питај шта да урадиш."
 
-#: ../Tomboy/PreferencesDialog.cs:992
+#: ../Tomboy/PreferencesDialog.cs:998
 msgid "Rename my local note."
 msgstr "Преименуј моју локалну белешку."
 
-#: ../Tomboy/PreferencesDialog.cs:996
+#: ../Tomboy/PreferencesDialog.cs:1002
 msgid "Replace my local note with the server's update."
 msgstr "Замени моју локалну белешку оном са сервера."
 
-#: ../Tomboy/PreferencesDialog.cs:1142
+#: ../Tomboy/PreferencesDialog.cs:1148
 msgid "Are you sure?"
 msgstr "Да ли сте сигурни?"
 
-#: ../Tomboy/PreferencesDialog.cs:1144
+#: ../Tomboy/PreferencesDialog.cs:1150
 msgid ""
 "Clearing your synchronization settings is not recommended.  You may be "
 "forced to synchronize all of your notes again when you save new settings."
@@ -1969,11 +1997,11 @@ msgstr ""
 "Уклањање поставки за усклађивање није препоручено. Може се догодити да мораш "
 "поново да ускладите све ваше белешке када сачувате нове поставке."
 
-#: ../Tomboy/PreferencesDialog.cs:1157
+#: ../Tomboy/PreferencesDialog.cs:1163
 msgid "Resetting Synchronization Settings"
 msgstr "Поново постави поставке за усклађивање"
 
-#: ../Tomboy/PreferencesDialog.cs:1159
+#: ../Tomboy/PreferencesDialog.cs:1165
 msgid ""
 "You have disabled the configured synchronization service.  Your "
 "synchronization settings will now be cleared.  You may be forced to "
@@ -1983,17 +2011,17 @@ msgstr ""
 "ће сада бити обрисане. Може се догодити да ћете морати поново да ускладите "
 "све ваше белешке када сачувате нове поставке."
 
-#: ../Tomboy/PreferencesDialog.cs:1237
+#: ../Tomboy/PreferencesDialog.cs:1243
 msgid "Connection successful"
 msgstr "Веза је успостављена"
 
-#: ../Tomboy/PreferencesDialog.cs:1239
+#: ../Tomboy/PreferencesDialog.cs:1245
 msgid ""
 "Tomboy is ready to synchronize your notes. Would you like to synchronize "
 "them now?"
 msgstr "Томица је спреман да усклади белешке. Желите ли да их ускладите сада?"
 
-#: ../Tomboy/PreferencesDialog.cs:1262
+#: ../Tomboy/PreferencesDialog.cs:1268
 #, csharp-format
 msgid ""
 "Please check your information and try again.  The log file {0} may contain "
@@ -2002,23 +2030,23 @@ msgstr ""
 "Проверите ваше податке и покушајте поново.  Датотека дневника {0} може да "
 "садржи више података о грешци."
 
-#: ../Tomboy/PreferencesDialog.cs:1274
+#: ../Tomboy/PreferencesDialog.cs:1280
 msgid "Error connecting"
 msgstr "Грешка у повезивању"
 
-#: ../Tomboy/PreferencesDialog.cs:1357
+#: ../Tomboy/PreferencesDialog.cs:1364
 msgid "Version:"
 msgstr "Издање:"
 
-#: ../Tomboy/PreferencesDialog.cs:1364
+#: ../Tomboy/PreferencesDialog.cs:1371
 msgid "Author:"
 msgstr "Аутор:"
 
-#: ../Tomboy/PreferencesDialog.cs:1371
+#: ../Tomboy/PreferencesDialog.cs:1378
 msgid "Copyright:"
 msgstr "Права:"
 
-#: ../Tomboy/PreferencesDialog.cs:1377
+#: ../Tomboy/PreferencesDialog.cs:1384
 msgid "Add-in Dependencies:"
 msgstr "Међузависности додатка:"
 
@@ -2081,7 +2109,7 @@ msgstr ""
 msgid "Click here to search across all notebooks"
 msgstr "Кликните овде да потражите у свим свескама"
 
-#: ../Tomboy/RecentChanges.cs:775
+#: ../Tomboy/RecentChanges.cs:780
 msgid "Notes"
 msgstr "Белешке"
 
@@ -2358,11 +2386,11 @@ msgstr ""
 msgid "Cannot create new note"
 msgstr "Не могу да направим нову белешку"
 
-#: ../Tomboy/Tomboy.cs:319
+#: ../Tomboy/Tomboy.cs:316
 msgid "Primary Development:"
 msgstr "Главни развој:"
 
-#: ../Tomboy/Tomboy.cs:332
+#: ../Tomboy/Tomboy.cs:329
 msgid "Contributors:"
 msgstr "Доприносиоци:"
 
@@ -2415,7 +2443,8 @@ msgstr ""
 "Употреба:\n"
 "  --version\t\t\tПриказује податке о издању.\n"
 "  --help\t\t\tПриказује ову помоћ.\n"
-"  --note-path [путања]\t\tУчитава/снима податке о белешкама из/у директоријум.\n"
+"  --note-path [путања]\t\tУчитава/снима податке о белешкама из/у "
+"директоријум.\n"
 "  --search [текст]\t\tТражи унети текст кроз све белешке у прозору за "
 "претрагу.\n"
 
@@ -2444,8 +2473,8 @@ msgid ""
 msgstr ""
 "  --addin:html-export-all [путања]\tИзвози све белешке у ХТМЛ на задатом "
 "месту.\n"
-"  --addin:html-export-all-quit [путања]\tИзвози све белешке у ХТМЛ на задатом "
-"месту и излази.\n"
+"  --addin:html-export-all-quit [путања]\tИзвози све белешке у ХТМЛ на "
+"задатом месту и излази.\n"
 
 #: ../Tomboy/Tomboy.cs:619
 #, csharp-format
@@ -2585,273 +2614,10 @@ msgstr ""
 msgid "Note title taken"
 msgstr "Наслов белешке је заузет"
 
-#: ../Tomboy/Watchers.cs:587
+#: ../Tomboy/Watchers.cs:608
 msgid "_Copy Link Address"
 msgstr "_Умножи адресу везе"
 
-#: ../Tomboy/Watchers.cs:592
+#: ../Tomboy/Watchers.cs:613
 msgid "_Open Link"
 msgstr "_Отвори везу"
-
-#~ msgid "HTML Export Last Directory"
-#~ msgstr "Последњи директоријум за ХТМЛ извоз"
-
-#~ msgid "SSH (sshfs FUSE)"
-#~ msgstr "SSH (sshfs кроз FUSE)"
-
-#~ msgid "WebDAV (wdfs FUSE)"
-#~ msgstr "Веб фасцикла (wdfs кроз FUSE)"
-
-#~ msgid "Really delete this note?"
-#~ msgstr "Заиста желиш да обришеш ову белешку?"
-
-#~ msgid "Search your notes (Ctrl-Shift-F)"
-#~ msgstr "Тражи у белешкама (Ctrl-Shift-F)"
-
-#~ msgid "Success! You're connected!"
-#~ msgstr "Успех! Повезани смо!"
-
-#~ msgid "_Browse..."
-#~ msgstr "_Разгледај..."
-
-#~ msgid "D-BUS remote control disabled.\n"
-#~ msgstr "Удаљено управљање кроз Д-Бас није омогућено.\n"
-
-#~ msgid ""
-#~ "Tomboy: unsupported option '{0}'\n"
-#~ "Try 'tomboy --help' for more information.\n"
-#~ "D-BUS remote control disabled."
-#~ msgstr ""
-#~ "Томица: непозната опција '{0}'\n"
-#~ "Покрените 'tomboy --help' за више информација.\n"
-#~ "Удаљено управљање кроз Д-Бас није омогућено."
-
-#~ msgid "Click Here After Authorizing"
-#~ msgstr "Кликните овде после ауторизације"
-
-#~ msgid "Processing..."
-#~ msgstr "Обрађујем..."
-
-#~ msgid "Add-in"
-#~ msgstr "Додатак"
-
-#~ msgid "Version"
-#~ msgstr "Верзија"
-
-#~ msgid "Other"
-#~ msgstr "Остало"
-
-#~ msgid "Preparing pages..."
-#~ msgstr "Припремам странице..."
-
-#~ msgid "Rendering page %d of %d..."
-#~ msgstr "Формирам страницу %d од %d..."
-
-#~ msgid "Printing page %d of %d..."
-#~ msgstr "Штампам страницу %d од %d..."
-
-#~ msgid "Print preview"
-#~ msgstr "Преглед пред штампу"
-
-#~ msgid "%A %x, %X"
-#~ msgstr "%A %x, %X"
-
-#~ msgid "Configuration"
-#~ msgstr "Подешавање"
-
-#~ msgid "Configuration options for the print job"
-#~ msgstr "Подешавање опција за штампу"
-
-#~ msgid "Source Buffer"
-#~ msgstr "Бафер са изворним кодом"
-
-#~ msgid "GtkTextBuffer object to print"
-#~ msgstr "Који GtkТеxtBuffer објекат се штампа"
-
-#~ msgid "Tabs Width"
-#~ msgstr "Ширина табулатора"
-
-#~ msgid "Width in equivalent space characters of tabs"
-#~ msgstr "Ширина табулатора као број обичних размака"
-
-#~ msgid "Wrap Mode"
-#~ msgstr "Начин прелома"
-
-#~ msgid "Word wrapping mode"
-#~ msgstr "Начин прелома речи"
-
-#~ msgid "Highlight"
-#~ msgstr "Истицање"
-
-#~ msgid "Whether to print the document with highlighted syntax"
-#~ msgstr "Да ли штампати документ са истакнутом синтаксом"
-
-#~ msgid "Font"
-#~ msgstr "Словни лик"
-
-#~ msgid "GnomeFont name to use for the document text (deprecated)"
-#~ msgstr "Име словног лика који се користи за садржај документа (превазиђено)"
-
-#~ msgid "Font Description"
-#~ msgstr "Опис словног лика"
-
-#~ msgid "Font to use for the document text (e.g. \"Monospace 10\")"
-#~ msgstr ""
-#~ "Име словног лика који се користи за садржај документа (нпр. „Monospace "
-#~ "10“)"
-
-#~ msgid "Numbers Font"
-#~ msgstr "Словни лик за бројеве"
-
-#~ msgid "GnomeFont name to use for the line numbers (deprecated)"
-#~ msgstr "Име словног лика који се користи за бројеве редова (превазиђено)"
-
-#~ msgid "Font description to use for the line numbers"
-#~ msgstr "Опис словног лика који се користи за бројеве редова"
-
-#~ msgid "Print Line Numbers"
-#~ msgstr "Штампај бројеве редова"
-
-#~ msgid "Interval of printed line numbers (0 means no numbers)"
-#~ msgstr "Размак штампаних бројева редова (0 означава да нема бројева)"
-
-#~ msgid "Print Header"
-#~ msgstr "Штампај заглавље"
-
-#~ msgid "Whether to print a header in each page"
-#~ msgstr "Да ли да штампа заглавље на свакој страници"
-
-#~ msgid "Print Footer"
-#~ msgstr "Штампај подножје"
-
-#~ msgid "Whether to print a footer in each page"
-#~ msgstr "Да ли да штампа подножје на свакој страници"
-
-#~ msgid "Header and Footer Font"
-#~ msgstr "Словни лик заглавља и подножја"
-
-#~ msgid "GnomeFont name to use for the header and footer (deprecated)"
-#~ msgstr ""
-#~ "Име словног лика који се користи за заглавље и подножје (превазиђено)"
-
-#~ msgid "Header and Footer Font Description"
-#~ msgstr "Опис словног лика заглавља и подножја"
-
-#~ msgid "Font to use for headers and footers (e.g. \"Monospace 10\")"
-#~ msgstr ""
-#~ "Име словног лика који се користи за заглавље и подножје (нпр. „Monospace "
-#~ "10“)"
-
-#~ msgid "Really delete these notes?"
-#~ msgstr "Заиста желиш да обришеш ове белешке?"
-
-#~ msgid "C_ase Sensitive"
-#~ msgstr "Р_азликуј мала и велика слова"
-
-#~ msgid "Note of the Day"
-#~ msgstr "Белешка дана"
-
-#~ msgid "Delete"
-#~ msgstr "Обриши"
-
-#~ msgid "Case _sensitive"
-#~ msgstr "Разликуј мала и велика _слова"
-
-#~ msgid "Default Plugins"
-#~ msgstr "Уграђени додаци"
-
-#~ msgid "Directory containing system-installed Plugins"
-#~ msgstr "Директоријум садржи додатке инсталиране на нивоу система"
-
-#~ msgid "_Open Plugins Folder"
-#~ msgstr "_Отвори фасциклу са додацима"
-
-#~ msgid "Currently enabled plugins."
-#~ msgstr "Тренутно омогућени додаци."
-
-#~ msgid "List containing the names of currently enabled plugins."
-#~ msgstr "Листа са називима тренутно омогућених додатака"
-
-#~ msgid "Tomboy Project"
-#~ msgstr "Томица"
-
-#~ msgid "Cannot fully disable {0}."
-#~ msgstr "Не могу потпуно да искључим додатак {0}."
-
-#~ msgid ""
-#~ "Cannot fully disable {0} as there still are at least {1} reference to "
-#~ "this plugin. This indicates a programming error. Contact the plugin's "
-#~ "author and report this problem.\n"
-#~ "\n"
-#~ "<b>Developer Information:</b> This problem usually occurs when the "
-#~ "plugin's Dispose method fails to disconnect all event handlers. The heap-"
-#~ "shot profiler ({2}) can help to identify leaking references."
-#~ msgstr ""
-#~ "Не могу потпуно да искључим додатак {0} јер постоји макар једна {1} "
-#~ "референца на њега. Ово указује на грешку у програму. Ступите у контакт са "
-#~ "аутором додатка и пријавите му проблем.\n"
-#~ "\n"
-#~ "<b>Назнака за програмере:</b> Овај проблем се углавном појави када "
-#~ "Dispose метод не успе да раскине све претплаћене обраде догађаја. Тада "
-#~ "вам heap-shot профајлер ({2}) може помоћи да пронађете заостале референце."
-
-#~ msgid "Plugins"
-#~ msgstr "Додаци"
-
-#~ msgid "Written by:"
-#~ msgstr "Написао:"
-
-#~ msgid "Web site:"
-#~ msgstr "Веб страна:"
-
-#~ msgid "Settings"
-#~ msgstr "Поставке"
-
-#~ msgid "{0} Settings"
-#~ msgstr "Поставке додатка {0}"
-
-#~ msgid "Homepage & Donations"
-#~ msgstr "Страница на интернету и Донације"
-
-#~ msgid ""
-#~ "  --check-plugin-unloading\tCheck if plugins are unloaded properly.\n"
-#~ msgstr ""
-#~ "  --check-plugin-unloading\tПровери да ли је додатак исправно искључен.\n"
-
-#~ msgid "Use the following:"
-#~ msgstr "Користи следеће:"
-
-#~ msgid "Quick and handy note-taker"
-#~ msgstr "Брз и згодан хватач белешки"
-
-#~ msgid "Welcome to Tomboy!"
-#~ msgstr "Добродошли код Томице!"
-
-#~ msgid ""
-#~ "Use this page as a Start Page for organizing your notes and keeping "
-#~ "unorganized ideas around."
-#~ msgstr ""
-#~ "Ову страницу можеш користити као почетну за груписање бележака и чување "
-#~ "неорганизованих идеја на згодном месту."
-
-#~ msgid "_Search..."
-#~ msgstr "Претра_жи"
-
-#~ msgid "Table of Contents"
-#~ msgstr "Садржај"
-
-#~ msgid ""
-#~ "<b>Table of Contents</b> lists all your notes.\n"
-#~ "Double click to open a note."
-#~ msgstr ""
-#~ "<b>Садржај</b> приказује све твоје белешке.\n"
-#~ "Белешка се отвара на дупли клик."
-
-#~ msgid "Search _Results"
-#~ msgstr "Резултати п_ретраге"
-
-#~ msgid "_Search Notes..."
-#~ msgstr "Претра_жи белешке..."
-
-#~ msgid "NotD: "
-#~ msgstr "Порука дана: "
