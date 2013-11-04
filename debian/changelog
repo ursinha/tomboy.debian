@@ -1,3 +1,9 @@
+tomboy (1.14.1-2) unstable; urgency=low
+
+  * [971fd79] Update libproxy DllMap for new SONAME (Closes: #725495)
+
+ -- Iain Lane <laney@debian.org>  Mon, 04 Nov 2013 12:28:29 +0000
+
 tomboy (1.14.1-1) unstable; urgency=low
 
   * [5449ff8] debian/watch: Use GNOME ftp and track stable releases only
