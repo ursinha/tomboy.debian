@@ -1,0 +1,24 @@
+Index: tomboy/configure.in
+===================================================================
+--- tomboy.orig/configure.in
++++ tomboy/configure.in
+@@ -218,15 +218,15 @@ required_assemblies="Mono.Cairo"
+ #
+ for asm in $required_assemblies
+ do
+-	AC_MSG_CHECKING([for Mono 2.0 GAC for $asm.dll])
++	AC_MSG_CHECKING([for Mono 4.5 GAC for $asm.dll])
+ 	if test \
+-		-e "$($PKG_CONFIG --variable=libdir mono)/mono/2.0/$asm.dll" -o \
+-		-e "$($PKG_CONFIG --variable=prefix mono)/lib/mono/2.0/$asm.dll"; \
++		-e "$($PKG_CONFIG --variable=libdir mono)/mono/4.5/$asm.dll" -o \
++		-e "$($PKG_CONFIG --variable=prefix mono)/lib/mono/4.5/$asm.dll"; \
+ 		then \
+ 		AC_MSG_RESULT([found])
+ 	else
+ 		AC_MSG_RESULT([not found])
+-		AC_MSG_ERROR([missing reqired Mono 2.0 assembly: $asm.dll])
++		AC_MSG_ERROR([missing reqired Mono 4.5 assembly: $asm.dll])
+ 	fi
+ done
+ 
