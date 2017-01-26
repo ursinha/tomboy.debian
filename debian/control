@@ -26,7 +26,9 @@ Build-Depends: debhelper (>= 8.1.0),
                libmono-addins-cil-dev (>= 0.3),
                libmono-addins-gui-cil-dev (>= 0.3),
                libappindicator0.1-cil-dev (>= 0.4.90),
-               libproxy-dev
+               libproxy-dev,
+               autoconf-archive,
+               yelp-tools
 Standards-Version: 3.9.4
 Homepage: http://www.gnome.org/projects/tomboy/
 Vcs-Git: git://git.debian.org/pkg-cli-apps/packages/tomboy.git
