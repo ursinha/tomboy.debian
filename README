@@ -1,3 +1,5 @@
-Originally branched from git://git.debian.org/pkg-cli-apps/packages/tomboy.git to fetch debian files to build tomboy deb from current trunk, with applying TableOfContents addin created by Luc Pionchon (https://github.com/oluc/tomboy). Thanks Luc!
+Originally cloned from git://git.debian.org/pkg-cli-apps/packages/tomboy.git to obtain current debian/ files. 
 
-Bear with me as I'm learning git, I'm aware there are better ways to juggle patches. :)
+These debian/ files allow the creation of a package including the TableOfContents addin created by Luc Pionchon (https://github.com/oluc/tomboy). Thanks Luc!
+
+P.S.: Bear with me as I'm learning git, I'm aware there are better ways to juggle patches. :)
