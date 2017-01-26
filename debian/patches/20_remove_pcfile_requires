@@ -3,10 +3,10 @@ Forwarded: not-needed
 Origin: vendor
 Author: Iain Lane <laney@ubuntu.com>
 
-Index: tomboy.git/data/tomboy-addins.pc.in
+Index: tomboy/data/tomboy-addins.pc.in
 ===================================================================
---- tomboy.git.orig/data/tomboy-addins.pc.in	2010-01-09 14:21:26.260959442 +0000
-+++ tomboy.git/data/tomboy-addins.pc.in	2010-01-09 14:21:30.890958275 +0000
+--- tomboy.orig/data/tomboy-addins.pc.in	2012-05-03 21:16:57.232547251 +0100
++++ tomboy/data/tomboy-addins.pc.in	2012-05-03 21:17:01.720547051 +0100
 @@ -5,6 +5,5 @@
  
  Name: Tomboy Addin Library
