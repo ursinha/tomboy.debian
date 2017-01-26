@@ -1,3 +1,5 @@
 01_dllmaps.patch
 04_app_indicator.patch
 20_remove_pcfile_requires
+35_add_makefile.patch
+40_add_tableofcontents.patch

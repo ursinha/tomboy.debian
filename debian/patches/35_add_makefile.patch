@@ -1,0 +1,27 @@
+From 0a618d8bd78111b19b18f47dad7d7ca423199ee2 Mon Sep 17 00:00:00 2001
+From: Ursula Junque <ursinha@gmail.com>
+Date: Wed, 25 Jan 2017 22:56:23 +0000
+Subject: [PATCH 3/6] sigh
+
+---
+ configure.ac | 1 +
+ 1 file changed, 1 insertion(+)
+
+Index: tomboy.git/configure.ac
+===================================================================
+--- tomboy.git.orig/configure.ac
++++ tomboy.git/configure.ac
+@@ -1,4 +1,5 @@
+ AC_INIT(tomboy, 1.15.7)
++AC_CONFIG_MACRO_DIR([m4])
+ AC_CONFIG_SRCDIR(Tomboy/Tomboy.cs)
+ AM_INIT_AUTOMAKE([dist-xz foreign no-dist-gzip tar-ustar])
+ AM_MAINTAINER_MODE
+@@ -366,6 +367,7 @@ Tomboy/Addins/RemoveBrokenLinks/Makefile
+ Tomboy/Addins/Sketching/Makefile
+ Tomboy/Addins/SshSyncService/Makefile
+ Tomboy/Addins/StickyNoteImport/Makefile
++Tomboy/Addins/TableOfContent/Makefile
+ Tomboy/Addins/Tasque/Makefile
+ Tomboy/Addins/Underline/Makefile
+ Tomboy/Addins/WebDavSyncService/Makefile

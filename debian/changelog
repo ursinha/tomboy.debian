@@ -1,3 +1,12 @@
+tomboy (1.15.7-0ubuntu0) xenial; urgency=medium
+
+  * Packaging new upstream version (1.15.7).
+  * Adding patches to support TableOfContents addin (https://github.com/oluc/tomboy):
+    + patches/35_add_makefile.patch
+    + patches/40_add_tableofcontents.patch
+
+ -- Ursula Junque (Ursinha) <ursinha@gmail.com>  Thu, 26 Jan 2017 03:34:16 +0000
+
 tomboy (1.15.4-0ubuntu3) xenial; urgency=high
 
   * Build with 4.5 Cairo dll.

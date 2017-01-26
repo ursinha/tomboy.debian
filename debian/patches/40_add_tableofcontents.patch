@@ -1,0 +1,471 @@
+From f770bcd57ba8600e06e810ccd6eb83ae8523a221 Mon Sep 17 00:00:00 2001
+From: Ursula Junque <ursinha@gmail.com>
+Date: Wed, 25 Jan 2017 22:15:31 +0000
+Subject: [PATCH 1/6] Adding patches that apply
+
+---
+ Tomboy/Addins/Makefile.am                          |   1 +
+ Tomboy/Addins/TableOfContent/Makefile.am           |  40 ++++
+ Tomboy/Addins/TableOfContent/NEWS                  |  17 ++
+ .../Addins/TableOfContent/TableOfContent.addin.xml |  21 ++
+ .../TableOfContent/TableOfContentMenuItem.cs       |  83 +++++++
+ .../TableOfContent/TableOfContentNoteAddin.cs      | 247 +++++++++++++++++++++
+ 6 files changed, 409 insertions(+)
+ create mode 100644 Tomboy/Addins/TableOfContent/Makefile.am
+ create mode 100644 Tomboy/Addins/TableOfContent/NEWS
+ create mode 100644 Tomboy/Addins/TableOfContent/TableOfContent.addin.xml
+ create mode 100644 Tomboy/Addins/TableOfContent/TableOfContentMenuItem.cs
+ create mode 100644 Tomboy/Addins/TableOfContent/TableOfContentNoteAddin.cs
+
+diff --git a/Tomboy/Addins/Makefile.am b/Tomboy/Addins/Makefile.am
+index b89df2e..51bbbc6 100644
+--- a/Tomboy/Addins/Makefile.am
++++ b/Tomboy/Addins/Makefile.am
+@@ -14,6 +14,7 @@ SUBDIRS =				\
+ 	Sketching			\
+ 	SshSyncService		\
+ 	StickyNoteImport	\
++	TableOfContent		\
+ 	Tasque			\
+ 	NoteDirectoryWatcher			\
+ 	Underline		\
+diff --git a/Tomboy/Addins/TableOfContent/Makefile.am b/Tomboy/Addins/TableOfContent/Makefile.am
+new file mode 100644
+index 0000000..4fd9d23
+--- /dev/null
++++ b/Tomboy/Addins/TableOfContent/Makefile.am
+@@ -0,0 +1,40 @@
++include $(top_srcdir)/Makefile.include
++
++CSFLAGS = 		\
++	-debug 		\
++	-define:DEBUG 	\
++	-target:library
++
++ASSEMBLIES = 					\
++	$(LINK_TOMBOY_EXE)			\
++	$(GTKSHARP_LIBS) 				\
++	$(LINK_MONO_ADDINS)			\
++	-r:Mono.Posix
++
++ADDIN_NAME = TableOfContent
++TARGET = $(top_builddir)/bin/addins/$(ADDIN_NAME).dll
++CSFILES = \
++	$(srcdir)/TableOfContentMenuItem.cs		\
++	$(srcdir)/TableOfContentNoteAddin.cs
++RESOURCES = \
++	-resource:$(srcdir)/$(ADDIN_NAME).addin.xml
++
++$(TARGET).mdb: $(TARGET)
++
++$(TARGET): $(CSFILES) $(TOMBOY_EXE_PATH)
++	mkdir -p `dirname $(TARGET)` && $(CSC) -out:$@ $(CSFLAGS) $(ASSEMBLIES) $(CSFILES) $(RESOURCES)
++
++
++addinsdir = $(pkglibdir)/addins
++addins_DATA = 			\
++	$(TARGET)		\
++	$(TARGET).mdb
++
++EXTRA_DIST =            	\
++	$(CSFILES) \
++	$(srcdir)/$(ADDIN_NAME).addin.xml
++
++CLEANFILES =				\
++	$(TARGET).mdb \
++	$(TARGET)
++
+diff --git a/Tomboy/Addins/TableOfContent/NEWS b/Tomboy/Addins/TableOfContent/NEWS
+new file mode 100644
+index 0000000..e827055
+--- /dev/null
++++ b/Tomboy/Addins/TableOfContent/NEWS
+@@ -0,0 +1,17 @@
++NEWS for Addin: Table of Content
++================================
++
++== 0.4
++  - use bold markup for note title, in toc
++  - on jump, place cursor at header's position.
++  - on Ctrl-1 and Ctrl-2, set header style.
++
++== 0.3
++  - add an explainatory text when TOC is empty
++  - use stock items for icons
++
++== 0.2
++  - mostly working version
++
++== 0.1
++  - basic version
+diff --git a/Tomboy/Addins/TableOfContent/TableOfContent.addin.xml b/Tomboy/Addins/TableOfContent/TableOfContent.addin.xml
+new file mode 100644
+index 0000000..e315664
+--- /dev/null
++++ b/Tomboy/Addins/TableOfContent/TableOfContent.addin.xml
+@@ -0,0 +1,21 @@
++<Addin id="TableOfContentAddin"
++	namespace="Tomboy"
++	name="Table of Content"
++	author="Luc Pionchon"
++	description="This Addin shows in a menu the Table of Content of the current Note. Headers are lines formatted with bold+large or bold+huge. Clicking a menu item jumps to the selected header."
++	category="Tools"
++	defaultEnabled="true"
++	version="0.4">
++
++	<Runtime>
++	<Import assembly="TableOfContent.dll" />
++	</Runtime>
++
++	<Dependencies>
++		<Addin id="Tomboy" version="0.10" />
++	</Dependencies>
++
++	<Extension path="/Tomboy/NoteAddins">
++		<NoteAddin type="Tomboy.TableOfContent.TableOfContentNoteAddin" />
++	</Extension>
++</Addin>
+diff --git a/Tomboy/Addins/TableOfContent/TableOfContentMenuItem.cs b/Tomboy/Addins/TableOfContent/TableOfContentMenuItem.cs
+new file mode 100644
+index 0000000..8a4fef3
+--- /dev/null
++++ b/Tomboy/Addins/TableOfContent/TableOfContentMenuItem.cs
+@@ -0,0 +1,83 @@
++//
++//  "Table of content" is a Note addin for Tomboy.
++//     It lists Note's table of contents in a menu.
++//     Headers are bold/large and bold/huge lines.
++//
++//  Copyright (C) 2011 Luc Pionchon <pionchon.luc@gmail.com>
++//
++//  This library is free software; you can redistribute it and/or
++//  modify it under the terms of the GNU Lesser General Public License
++//  as published by the Free Software Foundation; either version 2.1
++//  of the License, or (at your option) any later version.
++//
++//  This library is distributed in the hope that it will be useful,
++//  but WITHOUT ANY WARRANTY; without even the implied warranty of
++//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++//  Lesser General Public License for more details.
++//
++//  You should have received a copy of the GNU Lesser General Public
++//  License along with this library; if not, write to the Free
++//  Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
++//  02111-1307 USA
++//
++//  Originally based on Tomboy/Addins/Backlinks/*
++
++using System;
++using Gtk;
++using Tomboy;
++
++namespace Tomboy.TableOfContent
++{
++	public class TableOfContentMenuItem : Gtk.ImageMenuItem
++	{
++		Note note;
++		int  header_position;
++
++		public TableOfContentMenuItem (Note   note,
++		                               string header,
++		                               Level  header_level,
++		                               int    header_position)
++		                              : base (header)
++		{
++			this.note            = note;
++			this.header_position = header_position;
++			
++			// Set TOC style
++			/* +------------------+
++			   |[] NOTE TITLE     |
++			   | > Header H2      |
++			   | > Header H2      |
++			   |   └→  Header H3  |
++			   |   └→  Header H3  |
++			   |   └→  Header H3  |
++			   | > Header H2      |
++			   +------------------+ */
++			
++			Gtk.Label label = (Gtk.Label)this.Child;
++			
++			if (header_level == Level.H1) {
++				this.Image = new Gtk.Image (GuiUtils.GetIcon ("note", 16));
++				label.Markup = "<b>"+ note.Title + "</b>";
++			}
++			else if (header_level == Level.H2) {
++				this.Image = new Gtk.Image (Gtk.Stock.GoForward, Gtk.IconSize.Menu);
++			}
++			else if (header_level == Level.H3) {
++				label.Text = "└→  " + header;
++			}
++		}
++
++		protected override void OnActivated ()
++		{
++			if (note == null)
++				return;
++
++			// Jump to the header
++			Gtk.TextIter header_iter;
++			header_iter = this.note.Buffer.GetIterAtOffset (this.header_position);
++			note.Window.Editor.ScrollToIter (header_iter, 0.1, true, 0.0, 0.0);
++			this.note.Buffer.PlaceCursor (header_iter);
++		}
++
++	}/*class TableOfContentMenuItem*/
++}
+diff --git a/Tomboy/Addins/TableOfContent/TableOfContentNoteAddin.cs b/Tomboy/Addins/TableOfContent/TableOfContentNoteAddin.cs
+new file mode 100644
+index 0000000..17c3be3
+--- /dev/null
++++ b/Tomboy/Addins/TableOfContent/TableOfContentNoteAddin.cs
+@@ -0,0 +1,247 @@
++//
++//  "Table of content" is a Note addin for Tomboy.
++//     It lists Note's table of contents in a menu.
++//     Headers are bold/large and bold/huge lines.
++//
++//  Copyright (C) 2011 Luc Pionchon <pionchon.luc@gmail.com>
++//
++//  This library is free software; you can redistribute it and/or
++//  modify it under the terms of the GNU Lesser General Public License
++//  as published by the Free Software Foundation; either version 2.1
++//  of the License, or (at your option) any later version.
++//
++//  This library is distributed in the hope that it will be useful,
++//  but WITHOUT ANY WARRANTY; without even the implied warranty of
++//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++//  Lesser General Public License for more details.
++//
++//  You should have received a copy of the GNU Lesser General Public
++//  License along with this library; if not, write to the Free
++//  Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
++//  02111-1307 USA
++//
++//  Originally based on Tomboy/Addins/Backlinks/*
++
++using System;
++using System.Collections.Generic;
++using Mono.Unix;
++using Gtk;
++using Gdk;
++using Tomboy;
++
++namespace Tomboy.TableOfContent
++{
++	public enum Level {H1, H2, H3, None}; // H1=title, H2:bold/huge, H3:bold/large
++	
++	public class TableOfContentNoteAddin : NoteAddin
++	{
++		Gtk.ImageMenuItem  menu_item;   // TOC menu entry in the plugin menu
++		Gtk.Menu           menu;        // TOC submenu, containing the TOC
++
++		bool submenu_built;
++
++		Gtk.TextTag tag_bold, tag_large, tag_huge;
++
++		public override void Initialize () // Called when tomboy starts
++		{
++			submenu_built = false;
++		}
++
++		public override void Shutdown ()
++		{
++			if (menu      != null)      menu.Hidden    -= OnMenuHidden;
++			if (menu_item != null) menu_item.Activated -= OnMenuItemActivated;
++		}
++
++		public override void OnNoteOpened ()
++		{
++			// Build Addin menu item
++			menu         = new Gtk.Menu ();
++			menu.Hidden += OnMenuHidden;
++			menu.Show();
++
++			menu_item            = new Gtk.ImageMenuItem (Catalog.GetString ("Table of content"));
++			menu_item.Image      = new Gtk.Image (Gtk.Stock.JumpTo, Gtk.IconSize.Menu);
++			menu_item.Submenu    = menu;
++			menu_item.Activated += OnMenuItemActivated;
++			menu_item.Show ();
++
++			this.AddPluginMenuItem (menu_item);
++
++			// Reacts to key press events
++			this.Window.KeyPressEvent += OnKeyPressed;
++
++			// Header tags
++			tag_bold  = this.Buffer.TagTable.Lookup ("bold");
++			tag_large = this.Buffer.TagTable.Lookup ("size:large");
++			tag_huge  = this.Buffer.TagTable.Lookup ("size:huge");
++		}
++
++		private void OnMenuItemActivated (object sender, EventArgs args) // TOC menu entry activated
++		{
++			if (submenu_built == true)
++				return; // submenu already built.  do nothing.
++
++			UpdateMenu ();
++		}
++
++		private void OnMenuHidden (object sender, EventArgs args)
++		{
++			// Force the submenu to rebuild next time it's supposed to show
++			submenu_built = false;
++		}
++
++		private void UpdateMenu ()
++		{
++			// Clear out the old list
++			foreach (Gtk.MenuItem old_item in menu.Children) {
++				menu.Remove (old_item);
++			}
++
++			// Build a new list
++			foreach (TableOfContentMenuItem item in GetTableOfContentMenuItems ()) {
++				item.ShowAll ();
++				menu.Append (item);
++			}
++
++			// If nothing was found, add an explanatory text
++			if (menu.Children.Length == 0) {
++				Gtk.MenuItem item = new Gtk.MenuItem (Catalog.GetString (
++					"The Table of Content is empty\n\n"               +
++					"When you set headers, they will show here\n\n"   +
++					"Headers are lines formatted in 'bold',\n"        +
++					"whith 'large' or 'huge' font size.\n"));
++				item.Sensitive = false;
++				item.ShowAll ();
++				menu.Append (item);
++			}
++
++			submenu_built = true;
++		}
++		
++		private Level RangeLevel (Gtk.TextIter start, Gtk.TextIter end)
++		{
++			if( hasTagOverRange (tag_bold, start, end))
++				if      (hasTagOverRange (tag_huge , start, end)) return Level.H2;
++				else if (hasTagOverRange (tag_large, start, end)) return Level.H3;
++			return Level.None;
++		}
++
++		// Build the menu items
++		private TableOfContentMenuItem [] GetTableOfContentMenuItems ()
++		{
++			List<TableOfContentMenuItem> items = new List<TableOfContentMenuItem> ();
++
++			TableOfContentMenuItem item = null;
++
++			string header = null;
++			Level  header_level;
++			int    header_position;
++
++			Gtk.TextIter iter, eol;
++
++			//for each line of the buffer,
++			//check if the full line has bold and (large or huge) tags
++			header_level = Level.None;
++			iter = this.Note.Buffer.StartIter;
++			
++			while (iter.IsEnd != true) {
++				eol = iter;
++				eol.ForwardToLineEnd();
++				
++				header_level = this.RangeLevel (iter, eol);
++				
++				if (header_level == Level.H2 || header_level == Level.H3) {
++					header_position = iter.Offset;
++					header = iter.GetText(eol);
++					if (items.Count == 0) {
++						//It's the first header found,
++						//we also insert an entry linked to the Note's Title:
++						item = new TableOfContentMenuItem (this.Note, this.Note.Title, Level.H1, 0);
++						items.Add (item);
++					}
++					item = new TableOfContentMenuItem (this.Note, header, header_level, header_position);
++					items.Add (item);
++				}
++				//next line
++				header_level = Level.None;
++				iter.ForwardVisibleLine();
++			}
++			return items.ToArray ();
++		}
++
++		//true if tag is set from start to end
++		static private bool hasTagOverRange (Gtk.TextTag tag, Gtk.TextIter start, Gtk.TextIter end){
++			Gtk.TextIter iter = start;
++			bool has = false;
++			while (iter.Compare(end) != 0 && (has = iter.HasTag(tag))){
++				iter.ForwardChar();
++			}
++			return has;
++		}
++
++		private void OnKeyPressed (object sender, Gtk.KeyPressEventArgs args)
++		{
++			args.RetVal = false; // not treated
++			
++			// Reacts to Ctrl-1 and Ctrl-2
++			switch (args.Event.Key) {
++			
++			case Gdk.Key.Key_1: 
++					if (args.Event.State == Gdk.ModifierType.ControlMask)
++					{
++						this.HeadificationSwitch (Level.H2);
++						args.RetVal = true;
++						return;
++					}
++					break;
++			
++			case Gdk.Key.Key_2:
++					if (args.Event.State == Gdk.ModifierType.ControlMask)
++					{
++						this.HeadificationSwitch (Level.H3);
++						args.RetVal = true;
++						return;
++					}
++					break;
++			
++			default:
++				args.RetVal = false;
++				return;
++			}
++		}/* OnKeyPressed() */
++		
++		
++		private void HeadificationSwitch (Level header_request) 
++		{
++			// Apply the correct header style ==> switch  H2 <--> H3 <--> text
++			
++			Gtk.TextIter start, end;
++			this.Buffer.GetSelectionBounds (out start, out end);
++			
++			Level current_header = this.RangeLevel (start, end);
++			
++			this.Buffer.RemoveAllTags (start, end);//reset all tags
++			
++			if( current_header == Level.H2 && header_request == Level.H3) //existing vs requested
++			{
++				this.Buffer.SetActiveTag ("bold");
++				this.Buffer.SetActiveTag ("size:large");
++			}
++			else if( current_header == Level.H3 && header_request == Level.H2) 
++			{
++				this.Buffer.SetActiveTag ("bold");
++				this.Buffer.SetActiveTag ("size:huge");
++			}
++			else if( current_header == Level.None)
++			{
++				this.Buffer.SetActiveTag ("bold");
++				this.Buffer.SetActiveTag ( (header_request == Level.H2)?"size:huge":"size:large");
++			}
++			else {/*nothing*/}
++			
++		}/* HeadificationSwitch() */
++		
++		
++	}/*class TableOfContentNoteAddin*/
++}
+-- 
+2.7.4
